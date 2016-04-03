@@ -1,12 +1,14 @@
 {
-	"_notes": "Compiled by Tom Collins for initial development/testing purposes.",
+	"_notes": ["Compiled by Tom Collins for initial development/testing purposes.",
+		"compared to mm_109: audits are 6 bytes shorter, adjustments 2 bytes shorter,",
+		"other sections start 8 bytes earlier"],
 	"_copyright": "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
 	"_license": "GNU Lesser General Public License v3.0",
 	"_endian": "big",
-	"_roms": ["mm_109", "mm_109b", "mm_109c"],
+	"_roms": ["mm_10"],
 	"_fileformat": 0.1,
 	"_version": 0.1,
-	
+
 	"last_played": {"start": "0x1800", "encoding": "wpc_rtc", "length": 7},
 	"last_game": [
 		{"start": "0x16A0", "encoding": "bcd", "length": 5},
@@ -16,88 +18,88 @@
 	],
 	"high_scores": [
 		{	"label": "Grand Champion", "short_label": "GC",
-			"initials": {"start": "0x1D4B", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1D4E", "encoding": "bcd", "length": 5}
+			"initials": {"start": "0x1D43", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1D46", "encoding": "bcd", "length": 5}
 		},
 		{	"label": "First Place", "short_label": "1st",
+			"initials": {"start": "0x1D21", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1D24", "encoding": "bcd", "length": 5}
+		},
+		{	"label": "Second Place", "short_label": "2nd",
 			"initials": {"start": "0x1D29", "encoding": "ch", "length": 3},
 			"score": {"start": "0x1D2C", "encoding": "bcd", "length": 5}
 		},
-		{	"label": "Second Place", "short_label": "2nd",
+		{	"label": "Third Place", "short_label": "3rd",
 			"initials": {"start": "0x1D31", "encoding": "ch", "length": 3},
 			"score": {"start": "0x1D34", "encoding": "bcd", "length": 5}
 		},
-		{	"label": "Third Place", "short_label": "3rd",
+		{	"label": "Fourth Place", "short_label": "4th",
 			"initials": {"start": "0x1D39", "encoding": "ch", "length": 3},
 			"score": {"start": "0x1D3C", "encoding": "bcd", "length": 5}
-		},
-		{	"label": "Fourth Place", "short_label": "4th",
-			"initials": {"start": "0x1D41", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1D44", "encoding": "bcd", "length": 5}
 		}
 	],
 	"mode_champions": [
 		{	"label": "Castle Champion", "short_label": "Castle Champ",
-			"initials": {"start": "0x1F89", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1F8C", "encoding": "bcd", "length": 2,
+			"initials": {"start": "0x1F81", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1F84", "encoding": "bcd", "length": 2,
 				"suffix": " Castles Destroyed"}
 		},
 		{	"label": "Joust Champion", "short_label": "Joust Champ",
-			"initials": {"start": "0x1F93", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1F96", "encoding": "bcd", "length": 2,
+			"initials": {"start": "0x1F8B", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1F8E", "encoding": "bcd", "length": 2,
 				"suffix": " Joust Victories"}
 		},
 		{	"label": "Catapult Champion", "short_label": "Catapult Champ",
-			"initials": {"start": "0x1F9D", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1FA0", "encoding": "bcd", "length": 2,
+			"initials": {"start": "0x1F95", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1F98", "encoding": "bcd", "length": 2,
 				"suffix": " Catapult Slams"}
 		},
 		{	"label": "Peasant Champion", "short_label": "Peasant Champ",
-			"initials": {"start": "0x1FA7", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1FAA", "encoding": "bcd", "length": 2,
+			"initials": {"start": "0x1F9F", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1FA2", "encoding": "bcd", "length": 2,
 				"suffix": " Peasant Revolts"}
 		},
 		{	"label": "Damsel Champion", "short_label": "Damsel Champ",
-			"initials": {"start": "0x1FB1", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1FB4", "encoding": "bcd", "length": 2,
+			"initials": {"start": "0x1FA9", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1FAC", "encoding": "bcd", "length": 2,
 				"suffix": " Damsels Saved"}
 		},
 		{	"label": "Troll Champion", "short_label": "Troll Champ",
-			"initials": {"start": "0x1FBB", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1FBE", "encoding": "bcd", "length": 2,
+			"initials": {"start": "0x1FB3", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1FB6", "encoding": "bcd", "length": 2,
 				"suffix": " Trolls Destroyed"}
 		},
 		{	"label": "Madness Champion", "short_label": "Madness Champ",
-			"initials": {"start": "0x1FC5", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1FC8", "encoding": "bcd", "length": 5}
+			"initials": {"start": "0x1FBD", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1FC0", "encoding": "bcd", "length": 5}
 		},
 		{	"label": "King of the Realm #1", "short_label": "King #1",
-			"initials": {"start": "0x1FCF", "encoding": "ch", "length": 3},
+			"initials": {"start": "0x1FC7", "encoding": "ch", "length": 3},
 			"_note": "counter for King X must be > counter for King (X+1)",
-			"counter": {"start": "0x1FD2", "encoding": "bcd", "length": 3},
-			"nth time": {"start": "0x1FD5", "encoding": "bcd", "length": 2},
-			"timestamp": {"start": "0x1D04", "encoding": "wpc_rtc", "length": 7}
+			"counter": {"start": "0x1FCA", "encoding": "bcd", "length": 3},
+			"nth time": {"start": "0x1FCD", "encoding": "bcd", "length": 2},
+			"timestamp": {"start": "0x1CFC", "encoding": "wpc_rtc", "length": 7}
 		},
 		{	"label": "King of the Realm #2", "short_label": "King #2",
+			"initials": {"start": "0x1FCF", "encoding": "ch", "length": 3},
+			"counter": {"start": "0x1FD2", "encoding": "bcd", "length": 3},
+			"nth time": {"start": "0x1FD5", "encoding": "bcd", "length": 2},
+			"timestamp": {"start": "0x1D03", "encoding": "wpc_rtc", "length": 7}
+		},
+		{	"label": "King of the Realm #3", "short_label": "King #3",
 			"initials": {"start": "0x1FD7", "encoding": "ch", "length": 3},
 			"counter": {"start": "0x1FDA", "encoding": "bcd", "length": 3},
 			"nth time": {"start": "0x1FDD", "encoding": "bcd", "length": 2},
-			"timestamp": {"start": "0x1D0B", "encoding": "wpc_rtc", "length": 7}
+			"timestamp": {"start": "0x1D0A", "encoding": "wpc_rtc", "length": 7}
 		},
-		{	"label": "King of the Realm #3", "short_label": "King #3",
+		{	"label": "King of the Realm #4", "short_label": "King #4",
 			"initials": {"start": "0x1FDF", "encoding": "ch", "length": 3},
 			"counter": {"start": "0x1FE2", "encoding": "bcd", "length": 3},
 			"nth time": {"start": "0x1FE5", "encoding": "bcd", "length": 2},
-			"timestamp": {"start": "0x1D12", "encoding": "wpc_rtc", "length": 7}
-		},
-		{	"label": "King of the Realm #4", "short_label": "King #4",
-			"initials": {"start": "0x1FE7", "encoding": "ch", "length": 3},
-			"counter": {"start": "0x1FEA", "encoding": "bcd", "length": 3},
-			"nth time": {"start": "0x1FED", "encoding": "bcd", "length": 2},
-			"timestamp": {"start": "0x1D19", "encoding": "wpc_rtc", "length": 7}
+			"timestamp": {"start": "0x1D11", "encoding": "wpc_rtc", "length": 7}
 		}
 	],
-	
+
 	"audits": {
 		"B.2 Earnings Audits": {
 			"02": {"label": "Recent Left Slot",
@@ -207,14 +209,14 @@
 				"start": "0x18FB", "encoding": "int", "length": 3
 			},
 			"33": {"label": "H.S.T.D. Reset Count",
-				"start": "0x1D57", "encoding": "int", "length": 2
+				"start": "0x1D4F", "encoding": "int", "length": 2
 			},
 			"34": {"label": "Burn-in Time",
 				"start": "0x190D", "encoding": "int", "length": 3,
 				"units": "seconds", "scale": 10
 			},
 			"35": {"label": "1st Replay Level", "suffix": "M",
-				"start": "0x1D7D", "encoding": "bcd", "length": 2
+				"start": "0x1D75", "encoding": "bcd", "length": 2
 			},
 			"36": {"label": "Left Flipper",
 				"start": "0x19FD", "encoding": "int", "length": 3
@@ -305,61 +307,61 @@
 		},
 		"B.6 Timestamps": {
 			"02": {"label": "Totals Cleared",
-				"start": "0x1CB7", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CAF", "encoding": "wpc_rtc", "length": 7
 			},
 			"03": {"label": "Clock Last Set",
-				"start": "0x1CBE", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CB6", "encoding": "wpc_rtc", "length": 7
 			},
 			"04": {"label": "Audits Cleared",
-				"start": "0x1CC5", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CBD", "encoding": "wpc_rtc", "length": 7
 			},
 			"05": {"label": "Coins Cleared",
-				"start": "0x1CCC", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CC4", "encoding": "wpc_rtc", "length": 7
 			},
 			"06": {"label": "Factory Setting",
-				"start": "0x1CD3", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CCB", "encoding": "wpc_rtc", "length": 7
 			},
 			"07": {"label": "Last Game Start",
-				"start": "0x1CDA", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CD2", "encoding": "wpc_rtc", "length": 7
 			},
 			"08": {"label": "Last Replay",
-				"start": "0x1CE1", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CD9", "encoding": "wpc_rtc", "length": 7
 			},
 			"09": {"label": "Last HSTD Reset",
-				"start": "0x1CE8", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CE0", "encoding": "wpc_rtc", "length": 7
 			},
 			"10": {"label": "Champion Reset",
-				"start": "0x1CEF", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CE7", "encoding": "wpc_rtc", "length": 7
 			},
 			"11": {"label": "Last Printout",
-				"start": "0x1CF6", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CEE", "encoding": "wpc_rtc", "length": 7
 			},
 			"12": {"label": "Last Serv. Cred",
-				"start": "0x1CFD", "encoding": "wpc_rtc", "length": 7
+				"start": "0x1CF5", "encoding": "wpc_rtc", "length": 7
 			}
 		}
 	},
-	
+
 	"checksum8": [
-		{"start": "0x1811", "end": "0x1B8E", "groupings": 6, "label": "Audits"}
+		{"start": "0x1811", "end": "0x1B88", "groupings": 6, "label": "Audits"}
 	],
 	"checksum16": [
-		{"start": "0x1B8F", "end": "0x1CB4", "label": "Adjustments"},
-		{"start": "0x1CB7", "end": "0x1D28", "label": "Timestamps"},
-		{"start": "0x1D29", "end": "0x1D4A", "label": "High Scores"},
-		{"start": "0x1D4B", "end": "0x1D54", "label": "Grand Champion"},
-		
-		{"start": "0x1D55", "end": "0x1D5A", "label": "HSTD Reset"},
-		{"start": "0x1D73", "end": "0x1E48", "label": "?? replay level"},
-		
-		{"start": "0x1E49", "end": "0x1F0B", "label": "Custom Message"},
-		{"start": "0x1F89", "end": "0x1F92", "label": "Castle Champion"},
-		{"start": "0x1F93", "end": "0x1F9C", "label": "Joust Champion"},
-		{"start": "0x1F9D", "end": "0x1FA6", "label": "Catapult Champion"},
-		{"start": "0x1FA7", "end": "0x1FB0", "label": "Peasant Champion"},
-		{"start": "0x1FB1", "end": "0x1FBA", "label": "Damsel Champion"},
-		{"start": "0x1FBB", "end": "0x1FC4", "label": "Troll Champion"},
-		{"start": "0x1FC5", "end": "0x1FCE", "label": "Madness Champion"},
-		{"start": "0x1FCF", "end": "0x1FF0", "label": "King of the Realm"}
+		{"start": "0x1B89", "end": "0x1CAC", "label": "Adjustments"},
+		{"start": "0x1CAF", "end": "0x1D20", "label": "Timestamps"},
+		{"start": "0x1D21", "end": "0x1D42", "label": "High Scores"},
+		{"start": "0x1D43", "end": "0x1D4C", "label": "Grand Champion"},
+
+		{"start": "0x1D4D", "end": "0x1D52", "label": "HSTD Reset"},
+		{"start": "0x1D6B", "end": "0x1E40", "label": "?? replay level"},
+
+		{"start": "0x1E41", "end": "0x1F03", "label": "Custom Message"},
+		{"start": "0x1F81", "end": "0x1F8A", "label": "Castle Champion"},
+		{"start": "0x1F8B", "end": "0x1F94", "label": "Joust Champion"},
+		{"start": "0x1F95", "end": "0x1F9E", "label": "Catapult Champion"},
+		{"start": "0x1F9F", "end": "0x1FA8", "label": "Peasant Champion"},
+		{"start": "0x1FA9", "end": "0x1FB2", "label": "Damsel Champion"},
+		{"start": "0x1FB3", "end": "0x1FBC", "label": "Troll Champion"},
+		{"start": "0x1FBD", "end": "0x1FC6", "label": "Madness Champion"},
+		{"start": "0x1FC7", "end": "0x1FE8", "label": "King of the Realm"}
 	]
 }
