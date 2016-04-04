@@ -247,19 +247,19 @@
 			"07": {"label": "30-39.99M Score",
 				"start": "0x1943", "encoding": "int", "length": 3
 			},
-			"08": {"label": "40-49.99 Score",
+			"08": {"label": "40-49.99M Score",
 				"start": "0x1949", "encoding": "int", "length": 3
 			},
-			"09": {"label": "50-59.99 Score",
+			"09": {"label": "50-59.99M Score",
 				"start": "0x194F", "encoding": "int", "length": 3
 			},
-			"10": {"label": "60-69.99 Score",
+			"10": {"label": "60-69.99M Score",
 				"start": "0x1955", "encoding": "int", "length": 3
 			},
-			"11": {"label": "70-79.99 Score",
+			"11": {"label": "70-79.99M Score",
 				"start": "0x195B", "encoding": "int", "length": 3
 			},
-			"12": {"label": "80-89.99 Score",
+			"12": {"label": "80-89.99M Score",
 				"start": "0x1961", "encoding": "int", "length": 3
 			},
 			"13": {"label": "Over 90M Score",
