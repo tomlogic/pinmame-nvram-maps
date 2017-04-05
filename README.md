@@ -109,7 +109,7 @@ how to interpret them.  They're comprised of the following key/value pairs:
   - `"bcd"`: A binary-coded decimal value, where each byte represents two
     decimal digits of a number.  The byte sequence `0x12 0x34` would translate
     to the decimal value `1234`.
-  - `"char"`: A sequence of 7-bit ASCII characters.
+  - `"ch"`: A sequence of 7-bit ASCII characters.
   - `"wpc_rtc"`: A special type for a real-time clock value
     from a WPC game, stored as a sequence of 7 bytes.  Starts with a
     two-byte year (2015 is `0x07 0xDF`), month (1-12), day of month (1-31),
@@ -123,6 +123,9 @@ how to interpret them.  They're comprised of the following key/value pairs:
 - **min** and **max**: Used for adjustments to specify its valid range of
   values.
 - **default**: Used for adjustments to specify the factory default value.
+  Used for the **initials** entry of a high score to indicate the value
+  for an empty entry (e.g., `"   "` on WPC, `"\u0000\u0000u0000"` on
+  Gottlieb System 80).
 - **values**: A list of strings used for the `enum` encoding.
 - **special_values**: A set of key/value pairs for numeric field where some
   values have special meaning (for example, `{"0": "OFF"}`).
@@ -133,6 +136,8 @@ how to interpret them.  They're comprised of the following key/value pairs:
 - **scale**: A numeric multiplier for a decoded `int` or `bcd`.
 - **offset**: A numeric value to add to a decided `int` or `bcd` value
   before displaying it.  Applied after `scale`.
+- **packed**: A boolean for `ch` and `bcd` types indicating use of 4 bits/byte
+  (`false`) or 8 bits/byte (`true`).  Defaults to `true`.
 - **_note**: A note for someone maintaining the file; not displayed when
   processing an NVRAM file.
 
