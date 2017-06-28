@@ -3,18 +3,20 @@
 	"_copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
 	"_license": "GNU Lesser General Public License v3.0",
 	"_endian": "big",
-	"_roms": ["tom_13"],
+	"_roms": ["ww_l5"],
 	"_fileformat": 0.1,
 	"_version": 0.1,
 	
+	"replay_score": {"start": "0x41d", "encoding": "bcd", "length": 5},
+
 	"last_game": [
-		{"start": "0x16A0", "encoding": "bcd", "length": 5},
-		{"start": "0x16A6", "encoding": "bcd", "length": 5},
-		{"start": "0x16AC", "encoding": "bcd", "length": 5},
-		{"start": "0x16B2", "encoding": "bcd", "length": 5}
+		{"start": "0x1730", "encoding": "bcd", "length": 5},
+		{"start": "0x1736", "encoding": "bcd", "length": 5},
+		{"start": "0x173C", "encoding": "bcd", "length": 5},
+		{"start": "0x1742", "encoding": "bcd", "length": 5}
 	],
 	"high_scores": [
-		{	"label": "Grand Champion", "short_label": "GC",
+		{	"label": "RIVER MASTER", "short_label": "GC",
 			"initials": {"start": "0x1C83", "encoding": "ch", "length": 3},
 			"score": {"start": "0x1C86", "encoding": "bcd", "length": 5}
 		},
@@ -36,21 +38,9 @@
 		}
 	],
 	"mode_champions": [
-		{	"label": "BUY-IN SCORE #1", "short_label": "BIS-1",
-			"initials": {"start": "0x1EC1", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1EC4", "encoding": "bcd", "length": 5}
-		},
-		{	"label": "BUY-IN SCORE #2", "short_label": "BIS-2",
-			"initials": {"start": "0x1EC9", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1ECC", "encoding": "bcd", "length": 5}
-		},
-		{	"label": "BUY-IN SCORE #3", "short_label": "BIS-3",
-			"initials": {"start": "0x1ED1", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1ED4", "encoding": "bcd", "length": 5}
-		},
-		{	"label": "BUY-IN SCORE #4", "short_label": "BIS-4",
-			"initials": {"start": "0x1ED9", "encoding": "ch", "length": 3},
-			"score": {"start": "0x1EDC", "encoding": "bcd", "length": 5}
+		{	"label": "Insanity Record", "short_label": "InsanityRecord",
+			"initials": {"start": "0x1EC7", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1ECA", "encoding": "int", "length": 1, "suffix": " Water Falls"}
 		}
 	]
 }
