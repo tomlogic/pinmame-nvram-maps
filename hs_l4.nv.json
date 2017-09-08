@@ -5,7 +5,7 @@
 	"_endian": "big",
 	"_roms": ["hs_l4"],
 	"_fileformat": 0.1,
-	"_version": 0.1,
+	"_version": 0.2,
 	
 	"_game_state": "8 bytes/player starting at 0x220",
 	"last_game": [
@@ -47,7 +47,7 @@
 			},
 			"03a": {"label": "Replay Levels", "_note": "if Adj01 > 4",
 				"start": "0x782", "encoding": "bcd",
-				"min": 0, "max": 3, "default": 0, "offset": 1
+				"min": 0, "max": 3, "offset": 1
 			},
 			
 			"02b": {"label": "Replay Level 1", "_note": "if Adj01 == 4",
@@ -57,31 +57,31 @@
 			},
 			"03b": {"label": "Replay Level 2", "_note": "if Adj01 == 4",
 				"start": "0x782", "encoding": "bcd",
-				"min": 0, "max": 99, "default": 0, "scale": 100000,
+				"min": 0, "max": 99, "scale": 100000,
 				"special_values": {"0": "Off"}
 			},
 			"04b": {"label": "Replay Level 3", "_note": "if Adj01 == 4",
 				"start": "0x783", "encoding": "bcd",
-				"min": 0, "max": 99, "default": 0, "scale": 100000,
+				"min": 0, "max": 99, "scale": 100000,
 				"special_values": {"0": "Off"}
 			},
 			"05b": {"label": "Replay Level 4", "_note": "if Adj01 == 4",
 				"start": "0x784", "encoding": "bcd",
-				"min": 0, "max": 99, "default": 0, "scale": 100000,
+				"min": 0, "max": 99, "scale": 100000,
 				"special_values": {"0": "Off"}
 			},
 
 			"06": {"label": "Replay Award",
 				"start": "0x785", "encoding": "enum",
-				"values": ["Credit", "Ball", "Audit", "Coil"], "default": 0
+				"values": ["Credit", "Ball", "Audit", "Coil"]
 			},
 			"07": {"label": "Special Award",
 				"start": "0x786", "encoding": "enum",
-				"values": ["Credit", "Ball", "Score"], "default": 0
+				"values": ["Credit", "Ball", "Score"]
 			},
 			"08": {"label": "Match Feature",
 				"start": "0x787", "encoding": "enum",
-				"values": ["On", "Off"], "default": 0
+				"values": ["On", "Off"]
 			},
 			"09": {"label": "Balls Per Game",
 				"start": "0x788", "encoding": "bcd",
@@ -143,7 +143,7 @@
 			},
 			"23": {"label": "Free Play",
 				"start": "0x796", "encoding": "enum",
-				"values": ["No", "Yes"], "default": 0
+				"values": ["No", "Yes"]
 			},
 			"24": {"label": "Pricing",
 				"start": "0x797", "encoding": "bcd",
@@ -169,40 +169,40 @@
 				"start": "0x79D", "encoding": "bcd", "min": 0, "max": 99
 			},
 			"31": {"label": "Freeway Start",
-				"start": "0x79E", "encoding": "enum", "default": 0,
+				"start": "0x79E", "encoding": "enum",
 				"values": ["3-ball 50K, 5-ball 25K", "50K", "25K"]
 			},
 			"32": {"label": "Freeway Memory",
-				"start": "0x79F", "encoding": "enum", "default": 0, 
+				"start": "0x79F", "encoding": "enum", 
 				"values": ["Regular", "Easy", "Hard"]
 			},
 			"33": {"label": "Eject Hole Spots",
-				"start": "0x7A0", "encoding": "enum", "default": 0, 
+				"start": "0x7A0", "encoding": "enum", 
 				"values": ["3-Ball Yes, 5-ball No", "Yes", "No"]
 			},
 			"34": {"label": "Ramp Spots",
-				"start": "0x7A1", "encoding": "enum", "default": 0, 
+				"start": "0x7A1", "encoding": "enum", 
 				"values": ["Yes", "No"]
 			},
 			"35": {"label": "Light Special",
-				"start": "0x7A2", "encoding": "enum", "default": 0, 
+				"start": "0x7A2", "encoding": "enum", 
 				"values": ["3-Ball Reg, 5-ball Hard", "Easy",
 					"Regular", "Hard", "Harder", "No"]
 			},
 			"36": {"label": "Special Memory",
-				"start": "0x7A3", "encoding": "enum", "default": 0, 
+				"start": "0x7A3", "encoding": "enum", 
 				"values": ["No", "Yes"]
 			},
 			"37": {"label": "Police Light",
-				"start": "0x7A4", "encoding": "enum", "default": 0, 
+				"start": "0x7A4", "encoding": "enum", 
 				"values": ["On", "Off"]
 			},
 			"38": {"label": "Kickback Memory",
-				"start": "0x7A5", "encoding": "enum", "default": 0, 
+				"start": "0x7A5", "encoding": "enum", 
 				"values": ["Easy", "Harder", "Regular", "Hard", "Easier"]
 			},
 			"39": {"label": "Light Freeway",
-				"start": "0x7A6", "encoding": "enum", "default": 0, 
+				"start": "0x7A6", "encoding": "enum", 
 				"values": ["Regular", "Hard"]
 			},
 			"40": {"label": "Ramp Bonus Memory",
@@ -210,39 +210,39 @@
 				"values": ["Yes", "No"]
 			},
 			"41": {"label": "Extra Ball Memory",
-				"start": "0x7A8", "encoding": "enum", "default": 0, 
+				"start": "0x7A8", "encoding": "enum", 
 				"values": ["Yes", "No"]
 			},
 			"42": {"label": "Stoplight Targets",
-				"start": "0x7A9", "encoding": "enum", "default": 0, 
+				"start": "0x7A9", "encoding": "enum", 
 				"values": ["Regular", "Easy"]
 			},
 			"43": {"label": "Freeway Timer",
-				"start": "0x7AA", "encoding": "enum", "default": 0, 
+				"start": "0x7AA", "encoding": "enum", 
 				"values": ["Regular", "Easy", "Hard"]
 			},
 			"44": {"label": "Siren Style",
-				"start": "0x7AB", "encoding": "enum", "default": 0, 
+				"start": "0x7AB", "encoding": "enum", 
 				"values": ["USA", "Euro"]
 			},
 			"45": {"label": "Attract Police Light",
-				"start": "0x7AC", "encoding": "enum", "default": 0, 
+				"start": "0x7AC", "encoding": "enum", 
 				"values": ["Yes", "No"]
 			},
 			"46": {"label": "Attract Starter",
-				"start": "0x7AD", "encoding": "enum", "default": 0, 
+				"start": "0x7AD", "encoding": "enum", 
 				"values": ["Yes", "No"]
 			},
 			"47": {"label": "Attract Sound",
-				"start": "0x7AE", "encoding": "enum", "default": 0, 
+				"start": "0x7AE", "encoding": "enum", 
 				"values": ["Yes", "No"]
 			},
 			"48": {"label": "Game Over Music",
-				"start": "0x7AF", "encoding": "enum", "default": 0, 
+				"start": "0x7AF", "encoding": "enum", 
 				"values": ["Yes", "No"]
 			},
 			"49": {"label": "Custom Message",
-				"start": "0x7B0", "encoding": "enum", "default": 0, 
+				"start": "0x7B0", "encoding": "enum", 
 				"values": ["On", "Off"]
 			},
 			"49a": {"label": "Custom Msg Line 1", "encoding": "ch",
@@ -257,15 +257,15 @@
 				"start": "0x7D0", "length": 14, "default": "AT HIGH SPEE\u00C4 "
 			},	
 			"50": {"label": "Switch Alarm Knocker",
-				"start": "0x7B1", "encoding": "enum", "default": 0, 
+				"start": "0x7B1", "encoding": "enum", 
 				"values": ["Yes", "No"]
 			},
 			"51": {"label": "Unused Adjustment",
-				"start": "0x7B2", "encoding": "enum", "default": 0, 
+				"start": "0x7B2", "encoding": "enum", 
 				"values": ["", ""], "_note": "select 0/1, both show blank"
 			},
 			"52": {"label": "Unused Adjustment",
-				"start": "0x7B3", "encoding": "bcd", "default": 0, 
+				"start": "0x7B3", "encoding": "bcd", 
 				"min": 0, "max": 99
 			}
 		}	
