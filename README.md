@@ -68,9 +68,12 @@ quickly mapping each audit.
 ## File Format
 
 The JSON file is essentially a big dictionary or associative array, with
-the following key/value pairs.  It may help to review one of the
+the following key/value pairs.  It may help to review one or more of the
 included files as an example of the file format while reading this
 section of the documentation.
+
+In cases where this specification isn't clear, please use existing maps
+or the `nvram_parser.py` sample as a guide.
 
 Numbers can appear as decimal values (`1234`) or hexadecimal values
 inside of strings (`"0x4D2"`).  Most map files will only use hex for
@@ -118,15 +121,15 @@ how to interpret them.  They're comprised of the following key/value pairs:
   interpret.  Default behavior is to use that single byte unless the `end`
   or `length` keys are present. 
 - **end**: Offset into the file of the last byte to interpret.  Its value
-  must be larger than `start`. 
-- **length**: Number of bytes to interpret, must be at least 1. 
+  must be greater than or equal to `start`. 
+- **length**: Number of bytes to interpret, must be at least 1 (default value). 
 - **min** and **max**: Used for adjustments to specify its valid range of
   values.
 - **default**: Used for adjustments to specify the factory default value.
   Used for the **initials** entry of a high score to indicate the value
   for an empty entry (e.g., `"   "` on WPC, `"\u0000\u0000u0000"` on
-  Gottlieb System 80).
-- **values**: A list of strings used for the `enum` encoding.
+  Gottlieb System 80).  Defaults to `0` unless specified.
+- **values**: A list of strings used for the `enum` encoding, starting at index 0.
 - **special_values**: A set of key/value pairs for numeric field where some
   values have special meaning (for example, `{"0": "OFF"}`).
 - **units**: Used to indicate that a field contains a time value as either a
@@ -147,7 +150,7 @@ Keys that don't start with an underscore typically have groups of
 **descriptors** as their values.
 
 - **endian**: Set to either `"big"` or `"little"` to indicate the byte
-  order of multi-byte values in the ROM file.
+  order of multi-byte values in the ROM file.  Defaults to `"big"`.
 - **last_played**: A descriptor (likely with a `wpc_rtc` encoding) with a
   date stamp of when PinMAME last saved the file.
 - **last_game**: An array of up to four descriptors representing scores
@@ -156,12 +159,12 @@ Keys that don't start with an underscore typically have groups of
 - **high_scores**: The traditional high score table that would usually
   start with the Grand Champion and then proceed through First Place to
   Fourth Place.  An array of objects with the following key/value pairs:
-- **label**: A label describing the score (e.g., `"Grand Champion"`).
-- **short_label**: An abbreviated label (e.g., `"GC"`).
-- **initials**: Descriptor of where the high score's initials are stored
-  in the file.
-- **score**: Descriptor of where the high score's score is stored in the
-  file.
+  - **label**: A label describing the score (e.g., `"Grand Champion"`).
+  - **short_label**: An abbreviated label (e.g., `"GC"`).
+  - **initials**: Descriptor of where the high score's initials are stored
+    in the file.
+  - **score**: Descriptor of where the high score's score is stored in the
+    file.
 - **mode_champions**: Another array of descriptors with recognition of
   other in-game accomplishments.
 - **adjustments**: An object of key/value pairs for groupings of
@@ -186,8 +189,8 @@ treat a single descriptor as a list of equally-sized groupings.
 
 - **checksum8**: An array of memory regions protected by an 8-bit
   checksum.  The last byte of the range is set so that the low byte from
-  the sum of all bytes in the range is 0xFF.
+  the sum of all bytes in the range is `0xFF`.
 - **checksum16**: An array of memory regions protected by a 16-bit
   checksum.  That last two bytes of the range are set so that adding
-  all other bytes in the range results in a value of 0xFFFF.
+  all other bytes in the range results in a value of `0xFFFF`.
 
