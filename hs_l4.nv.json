@@ -269,5 +269,53 @@
 				"min": 0, "max": 99
 			}
 		}	
-	}
+	},
+	
+	"audits": {
+		"Audits": {
+			"01": {"start": "0x6A4", "encoding": "bcd", "length": 3, "label": "Left Coins"},
+			"02": {"start": "0x6A8", "encoding": "bcd", "length": 3, "label": "Center Coins"},
+			"03": {"start": "0x6AC", "encoding": "bcd", "length": 3, "label": "Right Coins"},
+			"04": {"start": "0x6B0", "encoding": "bcd", "length": 3, "label": "Paid Credits"},
+			"05": {"start": "0x6B4", "encoding": "bcd", "length": 3, "label": "Total Plays"},
+			"06": {"start": "0x6B8", "encoding": "bcd", "length": 3, "label": "Total Free"},
+			"08": {"start": "0x6BC", "encoding": "bcd", "length": 3, "label": "Replay Awards"},
+			"10": {"start": "0x6C0", "encoding": "bcd", "length": 3, "label": "Special Awards"},
+			"12": {"start": "0x6C4", "encoding": "bcd", "length": 3, "label": "Match Awards"},
+			"13": {"start": "0x6C8", "encoding": "bcd", "length": 3, "label": "HSTD Credits"},
+			"15": {"start": "0x6CC", "encoding": "bcd", "length": 3, "label": "Extra Balls"},
+			"18": {"start": "0x6D0", "encoding": "bcd", "length": 3, "label": "Minutes of Play"},
+			"19": {"start": "0x6D4", "encoding": "bcd", "length": 3, "label": "Balls Played"},
+			"20": {"start": "0x6D8", "encoding": "bcd", "length": 3, "label": "Replay 1 Awards"},
+			"21": {"start": "0x6DC", "encoding": "bcd", "length": 3, "label": "Replay 2 Awards"},
+			"22": {"start": "0x6E0", "encoding": "bcd", "length": 3, "label": "Replay 3 Awards"},
+			"23": {"start": "0x6E4", "encoding": "bcd", "length": 3, "label": "Replay 4 Awards"},
+			"24": {"start": "0x6E8", "encoding": "bcd", "length": 3, "label": "1 Player Games"},
+			"25": {"start": "0x6EC", "encoding": "bcd", "length": 3, "label": "2 Player Games"},
+			"26": {"start": "0x6F0", "encoding": "bcd", "length": 3, "label": "3 Player Games"},
+			"27": {"start": "0x6F4", "encoding": "bcd", "length": 3, "label": "4 Player Games"},
+			"28": {"start": "0x6F8", "encoding": "bcd", "length": 3, "label": "Burn in Cycles"},
+			"29": {"start": "0x6FC", "encoding": "bcd", "length": 3, "label": "Yellow Lit"},
+			"30": {"start": "0x700", "encoding": "bcd", "length": 3, "label": "Red Lit"},
+			"31": {"start": "0x704", "encoding": "bcd", "length": 3, "label": "Multiballs"},
+			"32": {"start": "0x708", "encoding": "bcd", "length": 3, "label": "Jackpot Won"},
+			"33": {"start": "0x70C", "encoding": "bcd", "length": 3, "label": "Special Lit"},
+			"34": {"start": "0x710", "encoding": "bcd", "length": 3, "label": "Freeway E.B. Lit"},
+			"35": {"start": "0x714", "encoding": "bcd", "length": 3, "label": "Ramp Shot"},
+			"36": {"start": "0x718", "encoding": "bcd", "length": 3, "label": "Jackpot E.B. Lit"},
+			"37": {"start": "0x71C", "encoding": "bcd", "length": 3, "label": "Kickback Fired"},
+			"38": {"start": "0x720", "encoding": "bcd", "length": 3, "label": "Attract Mode Cycles"},
+			"39": {"start": "0x743", "encoding": "bcd", "length": 3, "label": "HSTD Reset Counter"},
+			"40": {"start": "0x757", "encoding": "bcd", "length": 3, "label": "Auto Replay Data 1"},
+			"41": {"start": "0x754", "encoding": "bcd", "length": 3, "label": "Auto Replay Data 2"},
+			"42": {"start": "0x751", "encoding": "bcd", "length": 3, "label": "Auto Replay Data 3"},
+			"43": {"start": "0x74E", "encoding": "bcd", "length": 3, "label": "Auto Replay Data 4"},
+			"44": {"start": "0x74B", "encoding": "bcd", "length": 3, "label": "Auto Replay Data 5"}
+		}
+	},
+	
+	"checksum8": [
+		{"start": "0x6A4", "end": "0x724", "groupings": 4, "label": "Audits"},
+		{"start": "0x748", "end": "0x75A", "label": "Auto Replay Data"}
+	]
 }
