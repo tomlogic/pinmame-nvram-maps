@@ -1,0 +1,46 @@
+{
+	"_notes": "Compiled by Mike Metzger.",
+	"_copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
+	"_license": "GNU Lesser General Public License v3.0",
+	"_endian": "big",
+	"_roms": ["ww_l5"],
+	"_fileformat": 0.1,
+	"_version": 0.1,
+	
+	"replay_score": {"start": "0x41d", "encoding": "bcd", "length": 5},
+
+	"last_game": [
+		{"start": "0x1730", "encoding": "bcd", "length": 5},
+		{"start": "0x1736", "encoding": "bcd", "length": 5},
+		{"start": "0x173C", "encoding": "bcd", "length": 5},
+		{"start": "0x1742", "encoding": "bcd", "length": 5}
+	],
+	"high_scores": [
+		{	"label": "RIVER MASTER", "short_label": "GC",
+			"initials": {"start": "0x1C83", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1C86", "encoding": "bcd", "length": 5}
+		},
+		{	"label": "First Place", "short_label": "1st",
+			"initials": {"start": "0x1C61", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1C64", "encoding": "bcd", "length": 5}
+		},
+		{	"label": "Second Place", "short_label": "2nd",
+			"initials": {"start": "0x1C69", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1C6C", "encoding": "bcd", "length": 5}
+		},
+		{	"label": "Third Place", "short_label": "3rd",
+			"initials": {"start": "0x1C71", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1C74", "encoding": "bcd", "length": 5}
+		},
+		{	"label": "Fourth Place", "short_label": "4th",
+			"initials": {"start": "0x1C79", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1C7C", "encoding": "bcd", "length": 5}
+		}
+	],
+	"mode_champions": [
+		{	"label": "Insanity Record", "short_label": "InsanityRecord",
+			"initials": {"start": "0x1EC7", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1ECA", "encoding": "int", "length": 1, "suffix": " Water Falls"}
+		}
+	]
+}
