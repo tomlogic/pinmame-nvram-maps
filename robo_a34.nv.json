@@ -7,10 +7,10 @@
 	"_fileformat": 0.1,
 	"_version": 0.1,
 	"last_game": [
-		{"start": "423", "encoding": "bcd", "length": 7, "packed": false},
-		{"start": "589", "encoding": "bcd", "length": 7, "packed": false},
-		{"start": "755", "encoding": "bcd", "length": 7, "packed": false},
-		{"start": "921", "encoding": "bcd", "length": 7, "packed": false}
+		{"start": 423, "encoding": "bcd", "length": 7, "packed": false},
+		{"start": 589, "encoding": "bcd", "length": 7, "packed": false},
+		{"start": 755, "encoding": "bcd", "length": 7, "packed": false},
+		{"start": 921, "encoding": "bcd", "length": 7, "packed": false}
 	],
 	"high_scores": [
 		{	"label": "Commander", "short_label": "GC",
@@ -18,17 +18,17 @@
 			"score": {"start": "0x1C60", "encoding": "bcd", "length": 7,
 				"packed": false}
 		},
-		{	"label": "Commander", "short_label": "1st",
+		{	"label": "1st Place", "short_label": "1st",
 			"initials": {"start": "0x1C73", "encoding": "ch", "length": 3},
 			"score": {"start": "0x1C6C", "encoding": "bcd", "length": 7,
 				"packed": false}
 		},
-		{	"label": "Commander", "short_label": "2nd",
+		{	"label": "2nd Place", "short_label": "2nd",
 			"initials": {"start": "0x1C7F", "encoding": "ch", "length": 3},
 			"score": {"start": "0x1C78", "encoding": "bcd", "length": 7,
 				"packed": false}
 		},
-		{	"label": "Commander", "short_label": "3rd",
+		{	"label": "3rd Place", "short_label": "3rd",
 			"initials": {"start": "0x1C8B", "encoding": "ch", "length": 3},
 			"score": {"start": "0x1C84", "encoding": "bcd", "length": 7,
 				"packed": false}
