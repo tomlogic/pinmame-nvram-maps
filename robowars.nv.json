@@ -1,0 +1,53 @@
+{
+	"_notes": ["Compiled by Horsepin."],
+	"_copyright": "Copyright (C) 2017 by Dave Horse <horse@horsesoft.uk>",
+	"_license": "GNU Lesser General Public License v3.0",
+	"_endian": "big",
+	"_roms": ["robowars"],
+	"_fileformat": 0.1,
+	"_version": 0.2,
+
+	"high_scores": [
+		{	"label": "First Place", "short_label": "1st",
+			"initials": {"start": 183, "encoding": "ch", "length": 6,
+				"packed": false, "default": "\u0000\u0000\u0000"},
+			"score": {"start": 189, "encoding": "bcd", "length": 7,
+				"packed": false, "scale": 10}
+		},
+		{	"label": "Second Place", "short_label": "2nd",
+			"initials": {"start": 196, "encoding": "ch", "length": 6,
+				"packed": false, "default": "\u0000\u0000\u0000"},
+			"score": {"start": 202, "encoding": "bcd", "length": 7,
+				"packed": false, "scale": 10}
+		},
+		{	"label": "Third Place", "short_label": "3rd",
+			"initials": {"start": 209, "encoding": "ch", "length": 6,
+				"packed": false, "default": "\u0000\u0000\u0000"},
+			"score": {"start": 215, "encoding": "bcd", "length": 7,
+				"packed": false, "scale": 10}
+		},
+		{	"label": "Fourth Place", "short_label": "4th",
+			"initials": {"start": 222, "encoding": "ch", "length": 6,
+				"packed": false, "default": "\u0000\u0000\u0000"},
+			"score": {"start": 228, "encoding": "bcd", "length": 7,
+				"packed": false, "scale": 10}
+		},
+		{	"label": "Fifth Place", "short_label": "5th",
+			"initials": {"start": 235, "encoding": "ch", "length": 6,
+				"packed": false, "default": "\u0000\u0000\u0000"},
+			"score": {"start": 241, "encoding": "bcd", "length": 7,
+				"packed": false, "scale": 10}
+		}
+	],
+
+	"adjustments": {
+		"Replay Levels": [
+			{ "label": "Replay L1", "start": 51, "length": 2,
+				"encoding": "bcd", "packed": false, "scale": 100000 },
+			{ "label": "Replay L2", "start": 53, "length": 2,
+				"encoding": "bcd", "packed": false, "scale": 100000 },
+			{ "label": "Replay L3", "start": 55, "length": 2,
+				"encoding": "bcd", "packed": false, "scale": 100000 }
+		]
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"_notes": ["Compiled by Horsepin."],
+	"_copyright": "Copyright (C) 2016 by Dave horsepin <horse@horsesoft.uk>",
+	"_license": "GNU Lesser General Public License v3.0",
+	"_endian": "big",
+	"_roms": ["btmn_106"],
+	"_fileformat": 0.1,
+	"_version": 0.1,
+	"last_game": [
+		{"start": 1479, "encoding": "bcd", "length": 5, "packed": true},
+		{"start": 1484, "encoding": "bcd", "length": 5, "packed": true},
+		{"start": 1489, "encoding": "bcd", "length": 5, "packed": true},
+		{"start": 1494, "encoding": "bcd", "length": 5, "packed": true}
+	],
+	"high_scores": [
+		{	"label": "Dark Knight", "short_label": "GC",
+			"initials": {"start": 7626, "encoding": "ch", "length": 3},
+			"score": {"start": 7709, "encoding": "bcd", "length": 4,
+				"packed": true}
+		},
+		{	"label": "1st Place", "short_label": "1st",
+			"initials": {"start": 7629, "encoding": "ch", "length": 3},
+			"score": {"start": 7713, "encoding": "bcd", "length": 4,
+				"packed": true}
+		},
+		{	"label": "2nd Place", "short_label": "2nd",
+			"initials": {"start": 7632, "encoding": "ch", "length": 3},
+			"score": {"start": 7717, "encoding": "bcd", "length": 4,
+				"packed": true}
+		},
+		{	"label": "3rd Place", "short_label": "3rd",
+			"initials": {"start": 7635, "encoding": "ch", "length": 3},
+			"score": {"start": 7721, "encoding": "bcd", "length": 4,
+				"packed": true}
+		},	
+		{	"label": "4th Place", "short_label": "4th",
+			"initials": {"start": 7638, "encoding": "ch", "length": 3},
+			"score": {"start": 7725, "encoding": "bcd", "length": 4,
+				"packed": true}
+		},
+		{	"label": "5th Place", "short_label": "5th",
+			"initials": {"start": 7641, "encoding": "ch", "length": 3},
+			"score": {"start": 7729, "encoding": "bcd", "length": 4,
+				"packed": true}
+		}			
+	]	
+}
