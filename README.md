@@ -117,13 +117,16 @@ how to interpret them.  They're comprised of the following key/value pairs:
     from a WPC game, stored as a sequence of 7 bytes.  Starts with a
     two-byte year (2015 is `0x07 0xDF`), month (1-12), day of month (1-31),
     day of the week (0-6, 0=Sunday), hour (0-23) and minute (0-59).
-- **start** _(required)_: Offset into the `.nv` file of the first byte to
+- **start**: Offset into the `.nv` file of the first byte to
   interpret.  Default behavior is to use that single byte unless the `end`
-  or `length` keys are present. 
+  or `length` keys are present.  Either `start` or `offsets` are required.
 - **end**: Offset into the file of the last byte to interpret.  Its value
   must be greater than or equal to `start`. 
-- **length**: Number of bytes to interpret, must be at least 1 (default value). 
-- **min** and **max**: Used for adjustments to specify its valid range of
+- **length**: Number of bytes to interpret, must be at least 1 (default value).
+- **offsets**: Alternative to using start/end or start/length when bytes aren't
+  contiguous.  List of offsets to use.  Either `start` or `offsets` are
+  required.
+- **min** and **max**: Used for adjustments to specify the valid range of
   values.
 - **default**: Used for adjustments to specify the factory default value.
   Used for the **initials** entry of a high score to indicate the value
@@ -139,8 +142,13 @@ how to interpret them.  They're comprised of the following key/value pairs:
 - **scale**: A numeric multiplier for a decoded `int` or `bcd`.
 - **offset**: A numeric value to add to a decided `int` or `bcd` value
   before displaying it.  Applied after `scale`.
+- **mask**: A mask to apply to each byte before processing.  For example, a
+  mask of `"0x5F"` converts lowercase initials to uppercase and a mask of
+  `"0x0F"` clears the upper four bits.
 - **packed**: A boolean for `ch` and `bcd` types indicating use of 4 bits/byte
-  (`false`) or 8 bits/byte (`true`).  Defaults to `true`.
+  (`false`) or 8 bits/byte (`true`).  Defaults to `true`.  The `bcd` sequence
+  `0x01 0x02 0x03` translates to `10203` when `packed` is `true`, and `123`
+  when `packed` is `false`.
 - **_note**: A note for someone maintaining the file; not displayed when
   processing an NVRAM file.
 
