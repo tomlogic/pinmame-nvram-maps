@@ -2,7 +2,7 @@
 	"_notes": ["Compiled by Horsepin."],
 	"_copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
 	"_license": "GNU Lesser General Public License v3.0",
-	"_endian": "little",
+	"_endian": "big",
 	"_roms": ["nf_23x"],
 	"_fileformat": 0.1,
 	"_version": 0.1,

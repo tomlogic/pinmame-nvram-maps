@@ -2,7 +2,7 @@
 	"_notes": ["Compiled by Horsepin."],
 	"_copyright": "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
 	"_license": "GNU Lesser General Public License v3.0",
-	"_endian": "little",
+	"_endian": "big",
 	"_roms": ["drac_l1"],
 	"_fileformat": 0.1,
 	"_version": 0.1,
