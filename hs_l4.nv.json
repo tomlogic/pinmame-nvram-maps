@@ -7,7 +7,25 @@
 	"_fileformat": 0.1,
 	"_version": 0.2,
 	
-	"_game_state": "8 bytes/player starting at 0x220",
+	"game_state": {
+		"hideout_jackpot": { "label": "Hideout Jackpot",
+			"start": "0x770", "encoding": "bcd", "length": 4 },
+		"player_count": { "label": "Player Count", "short_label": "Players",
+			"start": "0xAC", "encoding": "int", "offset": 1,
+			"special_values": {"256": "n/a"}},
+		"current_player": { "label": "Current Player", "short_label": "P#",
+			"start": "0xAD", "encoding": "int", "offset": 1},
+		"current_ball": { "label": "Ball",
+			"start": "0x38", "encoding": "bcd", "mask": "0x0F",
+			"special_values": {"0": "n/a", "15": "n/a"}},
+		"match": { "label": "Match",
+			"start": "0x38", "encoding": "bcd", "mask": "0xF0",
+			"special_values": {"150": "n/a"}},
+		"extra_balls": { "label": "Extra Balls",
+			"start": "0xB0", "encoding": "int"},
+		"tilt_warnings": { "label": "Tilt Warnings",
+			"start": "0xB3", "encoding": "int"}
+	},
 	"last_game": [
 		{"start": "0x200", "encoding": "bcd", "length": 4},
 		{"start": "0x204", "encoding": "bcd", "length": 4},
@@ -32,7 +50,6 @@
 			"score": {"start": "0x733", "encoding": "bcd", "length": 4}
 		}
 	],
-	"_hideout_jackpot": {"start": "0x770", "encoding": "bcd", "length": 4},
 
 	"adjustments": {
 		"Adjustments": {
