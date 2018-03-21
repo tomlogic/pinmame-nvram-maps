@@ -109,23 +109,29 @@ how to interpret them.  They're comprised of the following key/value pairs:
   - `"int"`: A (possibly) multi-byte integer, where each byte is multiplied
     by a power of 256.  The byte sequence `0x12 0x34` would translate to the
     decimal value `4660`.
+  - `"bits"`: Same decoding as `"int"`, but used to sum select integers from
+    the list in `values`.
   - `"bcd"`: A binary-coded decimal value, where each byte represents two
     decimal digits of a number.  The byte sequence `0x12 0x34` would translate
     to the decimal value `1234`.
   - `"ch"`: A sequence of 7-bit ASCII characters.
+  - `"raw"`: A series of raw bytes, useful for extracting data yet to be
+    decoded or that requires custom processing.
   - `"wpc_rtc"`: A special type for a real-time clock value
     from a WPC game, stored as a sequence of 7 bytes.  Starts with a
     two-byte year (2015 is `0x07 0xDF`), month (1-12), day of month (1-31),
     day of the week (0-6, 0=Sunday), hour (0-23) and minute (0-59).
-- **start**: Offset into the `.nv` file of the first byte to
-  interpret.  Default behavior is to use that single byte unless the `end`
-  or `length` keys are present.  Either `start` or `offsets` are required.
-- **end**: Offset into the file of the last byte to interpret.  Its value
-  must be greater than or equal to `start`. 
-- **length**: Number of bytes to interpret, must be at least 1 (default value).
-- **offsets**: Alternative to using start/end or start/length when bytes aren't
-  contiguous.  List of offsets to use.  Either `start` or `offsets` are
-  required.
+- You must specify the location of data in the file using one or more of the
+  following directives:
+  - **start**: Offset into the `.nv` file of the first byte to
+    interpret.  Default behavior is to use that single byte unless the `end`
+    or `length` keys are present.  Either `start` or `offsets` are required.
+  - **end**: Offset into the file of the last byte to interpret.  Its value
+    must be greater than or equal to `start`. 
+  - **length**: Number of bytes to interpret, must be at least 1 (default).
+  - **offsets**: Alternative to using start/end or start/length when bytes
+    aren't contiguous.  List of offsets to use.  Either `start` or `offsets`
+    are required.
 - **min** and **max**: Used for adjustments to specify the valid range of
   values.
 - **default**: Used for adjustments to specify the factory default value.
@@ -133,15 +139,16 @@ how to interpret them.  They're comprised of the following key/value pairs:
   for an empty entry (e.g., `"   "` on WPC, `"\u0000\u0000u0000"` on
   Gottlieb System 80).  Defaults to `0` unless specified.
 - **values**: A list of strings used for the `enum` encoding, starting at index 0.
+  Also used for the `bits` encoding, as values for bit 0, 1, 2, etc.
 - **special_values**: A set of key/value pairs for numeric field where some
   values have special meaning (for example, `{"0": "OFF"}`).
 - **units**: Used to indicate that a field contains a time value as either a
   number of `"seconds"` or `"minutes"`, and should be displayed as `HH:MM:SS`.
 - **suffix**: A string to append to the value (e.g., `"M"` if the value
   represents millions).
-- **scale**: A numeric multiplier for a decoded `int` or `bcd`.
-- **offset**: A numeric value to add to a decided `int` or `bcd` value
-  before displaying it.  Applied after `scale`.
+- **scale**: A numeric multiplier for a decoded `int`, `bcd`, or `bits`.
+- **offset**: A numeric value to add to a decided `int`, `bcd`, or `bits`
+  value before displaying it.  Applied after `scale`.
 - **mask**: A mask to apply to each byte before processing.  For example, a
   mask of `"0x5F"` converts lowercase initials to uppercase and a mask of
   `"0x0F"` clears the upper four bits.
@@ -183,6 +190,10 @@ Keys that don't start with an underscore typically have groups of
   corresponding descriptor.
 - **audits**: Same as `adjustments`, but for the game's audits (also
   referred to as "Bookkeeping").
+- **game_state**: A collection of memory areas used during a game to store
+  the state of the game (e.g., player #, ball #, progressive jackpot value,
+  etc.)  Not useful for PinMAME's `.nv` files, but could be referenced with
+  custom code inside of PinMAME.  See the High Speed map for an example.
 
 ### Checksums
 
