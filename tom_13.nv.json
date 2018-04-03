@@ -12,6 +12,17 @@
 		"v0.1 by Mike Metzger; last_game, high_scores, mode_champions"
 	],
 	
+	"game_state": {
+		"theatre": { "label": "Theatre Value",
+			"start": "0x565", "encoding": "bcd", "length": 5 },
+		"player_count": { "label": "Player Count", "short_label": "Players",
+			"start": "0x629", "encoding": "int"},
+		"current_player": { "label": "Current Player", "short_label": "P#",
+			"start": "0x3AF", "encoding": "int"},
+		"current_ball": { "label": "Ball",
+			"start": "0x3B0", "encoding": "bcd"}
+	},
+
 	"last_game": [
 		{"start": "0x16A0", "encoding": "bcd", "length": 5},
 		{"start": "0x16A6", "encoding": "bcd", "length": 5},
