@@ -3,6 +3,7 @@
 	"_copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
 	"_license": "GNU Lesser General Public License v3.0",
 	"_endian": "big",
+	"_ramsize": 2048,
 	"_roms": ["tsptr_l3"],
 	"_fileformat": 0.1,
 	"_version": 0.1,

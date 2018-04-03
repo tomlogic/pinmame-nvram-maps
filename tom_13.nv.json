@@ -3,6 +3,7 @@
 	"_copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
 	"_license": "GNU Lesser General Public License v3.0",
 	"_endian": "big",
+	"_ramsize": 8192,
 	"_roms": ["tom_13", "tom_14h"],
 	"_fileformat": 0.1,
 	"_version": 0.2,
