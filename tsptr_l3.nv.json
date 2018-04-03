@@ -37,7 +37,10 @@
 				10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000] },
 		"jackpot": { "label": "Jackpot Bonus",
 			"start": "0x5D0", "length": 3, "encoding": "bcd",
-			"scale": 100 }
+			"scale": 100 },
+		"switch_matrix": { "label": "Switch Matrix", "start": "0x3e", "length": 8, "encoding": "raw"},
+		"lamp_matrix": { "label": "Lamp Matrix", "start": "0x10", "length": 8, "encoding": "raw"}
+
 	},
 	"last_game": [
 		{"start": "0x200", "encoding": "bcd", "length": 4},
