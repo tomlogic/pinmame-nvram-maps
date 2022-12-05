@@ -1,0 +1,112 @@
+{
+	"_notes": "Compiled by Horsepin.",
+	"_copyright": "Copyright (C) 2016 by Horsepin>",
+	"_license": "GNU Lesser General Public License v3.0",
+	"_endian": "big",
+	"_roms": [ "tomy_400" ],
+	"_fileformat": 0.1,
+	"_version": 0.1,
+
+	"last_game": [
+		{
+			"start": "0x05B2",
+			"encoding": "bcd",
+			"length": 5
+		},
+		{
+			"start": "0x05BE",
+			"encoding": "bcd",
+			"length": 5
+		},
+		{
+			"start": "0x05C3",
+			"encoding": "bcd",
+			"length": 5
+		},
+		{
+			"start": "0x05C8",
+			"encoding": "bcd",
+			"length": 5
+		}
+	],
+	"high_scores": [
+		{
+			"label": "Grand Champion",
+			"short_label": "GC",
+			"initials": {
+				"start": "0x16BA",
+				"encoding": "ch",
+				"length": 3
+			},
+			"score": {
+				"encoding": "bcd",
+				"offsets": [ "0x1694", "0x167C", "0x167D", "0x167E", "0x167F" ]
+			}
+		},
+		{
+			"label": "First Place",
+			"short_label": "1st",
+			"initials": {
+				"start": "0x16BD",
+				"encoding": "ch",
+				"length": 3
+			},
+			"score": {
+				"encoding": "bcd",
+				"offsets": [ "0x1695", "0x1680", "0x1681", "0x1682", "0x1683" ]
+			}
+		},
+		{
+			"label": "Second Place",
+			"short_label": "2nd",
+			"initials": {
+				"start": "0x16C0",
+				"encoding": "ch",
+				"length": 3
+			},
+			"score": {
+				"encoding": "bcd",
+				"offsets": [ "0x1696", "0x1684", "0x1685", "0x1686", "0x1687" ]
+			}
+		},
+		{
+			"label": "Third Place",
+			"short_label": "3rd",
+			"initials": {
+				"start": "0x16C3",
+				"encoding": "ch",
+				"length": 3
+			},
+			"score": {
+				"encoding": "bcd",
+				"offsets": [ "0x1697", "0x1688", "0x1689", "0x168A", "0x168B" ]
+			}
+		},
+		{
+			"label": "Fourth Place",
+			"short_label": "4th",
+			"initials": {
+				"start": "0x16C6",
+				"encoding": "ch",
+				"length": 3
+			},
+			"score": {
+				"encoding": "bcd",
+				"offsets": [ "0x1698", "0x168C", "0x168D", "0x168E", "0x168F" ]
+			}
+		},
+		{
+			"label": "Fifth Place",
+			"short_label": "5th",
+			"initials": {
+				"start": "0x16C9",
+				"encoding": "ch",
+				"length": 3
+			},
+			"score": {
+				"encoding": "bcd",
+				"offsets": [ "0x1699", "0x1690", "0x1691", "0x1692", "0x1693" ]
+			}
+		}
+	]
+}
