@@ -31,8 +31,8 @@
 	],
 	"high_scores": [
 		{
-			"label": "Grand Champion",
-			"short_label": "GC",
+			"label": "1st",
+			"short_label": "#1",
 			"initials": {
 				"start": "0x16BA",
 				"encoding": "ch",
@@ -44,8 +44,8 @@
 			}
 		},
 		{
-			"label": "First Place",
-			"short_label": "1st",
+			"label": "2nd",
+			"short_label": "#2",
 			"initials": {
 				"start": "0x16BD",
 				"encoding": "ch",
@@ -57,8 +57,8 @@
 			}
 		},
 		{
-			"label": "Second Place",
-			"short_label": "2nd",
+			"label": "3rd",
+			"short_label": "#3",
 			"initials": {
 				"start": "0x16C0",
 				"encoding": "ch",
@@ -70,8 +70,8 @@
 			}
 		},
 		{
-			"label": "Third Place",
-			"short_label": "3rd",
+			"label": "4th",
+			"short_label": "#4",
 			"initials": {
 				"start": "0x16C3",
 				"encoding": "ch",
@@ -83,8 +83,8 @@
 			}
 		},
 		{
-			"label": "Fourth Place",
-			"short_label": "4th",
+			"label": "5th",
+			"short_label": "#5",
 			"initials": {
 				"start": "0x16C6",
 				"encoding": "ch",
@@ -96,8 +96,8 @@
 			}
 		},
 		{
-			"label": "Fifth Place",
-			"short_label": "5th",
+			"label": "6th",
+			"short_label": "#6",
 			"initials": {
 				"start": "0x16C9",
 				"encoding": "ch",
