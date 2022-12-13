@@ -3,7 +3,7 @@
 	"_copyright": "Copyright (C) 2017 by Dave Horse <horse@horsesoft.uk>",
 	"_license": "GNU Lesser General Public License v3.0",
 	"_endian": "big",
-	"_roms": ["sorc_l1","sorc_l2"],
+	"_roms": ["sorcr_l1","sorcr_l2"],
 	"_fileformat": 0.1,
 	"_version": 0.2,	
 	"high_scores": [
@@ -12,20 +12,20 @@
 			"score": {"start": 1844, "encoding": "bcd", "packed" : true, "length": 4, "scale" : 1}
 		},
 		{
-			"label": "2nd Place", "short_label": "2nd",
+			"label": "2nd Place", "short_label": "#2",
 			"initials": {"start": "0x737", "encoding": "ch", "length": 3},
 			"score": { "start": 1848, "encoding": "bcd", "packed": true, "length": 4,"scale": 1
 			}
 		},
 		{
-			"label": "3rd Place", "short_label": "3rd", 
+			"label": "3rd Place", "short_label": "#3", 
 			"initials": {"start": "0x737","encoding": "ch","length": 3
 			},
 			"score": {"start": 1852,"encoding": "bcd","packed": true,"length": 4,"scale": 1
 			}
 		},
 		{
-			"label": "4th Place","short_label": "4th",
+			"label": "4th Place","short_label": "#4",
 			"initials": {"start": "0x737","encoding": "ch","length": 3},
 			"score": {"start": 1856,"encoding": "bcd","packed": true,"length": 4,"scale": 1
 			}
