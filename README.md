@@ -41,7 +41,7 @@ Maps project."
 My preference is to keep this project dedicated to just the JSON files
 so other projects can incorporate it as a git submodule.
 
-A [related project](https://github.com/tomlogic/py-pinmame-nvmap)
+A [related project](https://github.com/tomlogic/py-pinmame-nvmaps)
 currently includes a Python program (`nvram_parser.py`) that works as a
 standalone application to dump a parsed `.nv` file, or as a class
 (ParseNVRAM) you can use from other programs.
