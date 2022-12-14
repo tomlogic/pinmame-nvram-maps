@@ -1,0 +1,27 @@
+{
+  "_notes": [
+    "Compiled by Dave - HorsePin, Can't extract initials?"
+  ],
+  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 2094,
+  "_roms": [
+    "whirl_l3"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_game": [
+    {"encoding":"bcd","length":4,"packed":true,"start":512},
+    {"encoding":"bcd","length":4,"packed":true,"start":516},
+    {"encoding":"bcd","length":4,"packed":true,"start":520},
+    {"encoding":"bcd","length":4,"packed":true,"start":524}
+  ],
+  "high_scores": [
+    {"label":"Champion","short_label":"Champ","initials":{"start":0,"encoding":"ch","length":0},"score":{"encoding":"bcd","length":4,"packed":true,"start":1435}},
+    {"label":"1st","short_label":"#1","initials":{"start":0,"encoding":"ch","length":0},"score":{"encoding":"bcd","length":4,"packed":true,"start":1845}},
+    {"label":"2nd","short_label":"#2","initials":{"start":0,"encoding":"ch","length":0},"score":{"encoding":"bcd","length":4,"packed":true,"start":1849}},
+    {"label":"3RD","short_label":"#3","initials":{"start":0,"encoding":"ch","length":0},"score":{"encoding":"bcd","length":4,"packed":true,"start":1852}},
+    {"label":"4th","short_label":"#4","initials":{"start":0,"encoding":"ch","length":0},"score":{"encoding":"bcd","length":4,"packed":true,"start":1857}}
+  ]
+}
