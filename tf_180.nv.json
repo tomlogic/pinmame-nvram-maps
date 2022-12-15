@@ -30,7 +30,7 @@
     {"label":"#4","short_label":"#4","initials":{"start":12008,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":12032}}
   ],
   "mode_champions": [
-    {"label":"Combo","short_label": "Combo","initials": {"start":12040,"encoding":"ch","length":3},"score":{"start":12064,"encoding":"int","length":4}},
-    {"label":"Best Combo Champion","short_label": "Best Combo","initials": {"start":12072,"encoding":"ch","length":3},"score":{"start":12098,"encoding":"int","length":2, "suffix" : "-WAY"}}
+    {"label":"Combo","short_label": "Combo","initials": {"start":12040,"encoding":"ch","length":3},"score":{"start":12064,"encoding":"int", "packed":false,"length":4}},
+    {"label":"Best Combo Champion","short_label": "Best Combo","initials": {"start":12072,"encoding":"ch","length":3},"score":{"start":12096,"encoding":"int","length":4, "packed":false, "suffix" : "-WAY"}}
   ]
 }
