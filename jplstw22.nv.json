@@ -1,0 +1,28 @@
+{
+  "_notes": [
+    "Compiled by HorsePin"
+  ],
+  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 8238,
+  "_roms": [
+    "jplstw22"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_game": [
+    {"encoding":"bcd","length":3,"packed":true,"start":5352},
+    {"encoding":"bcd","length":3,"packed":true,"start":5357},
+    {"encoding":"bcd","length":3,"packed":true,"start":5362},
+    {"encoding":"bcd","length":3,"packed":true,"start":5367}
+  ],
+  "high_scores": [
+    {"label":"#1","short_label":"#1","initials":{"start":5326,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":4,"packed":true,"start":7712}},
+    {"label":"#2","short_label":"#2","initials":{"start":5329,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":4,"packed":true,"start":7717}},
+    {"label":"#3","short_label":"#3","initials":{"start":5332,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":4,"packed":true,"start":7722}},
+    {"label":"#4","short_label":"#4","initials":{"start":5335,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":4,"packed":true,"start":7727}},
+    {"label":"#5","short_label":"#5","initials":{"start":5338,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":4,"packed":true,"start":7732}},
+    {"label":"#6","short_label":"#6","initials":{"start":5341,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":4,"packed":true,"start":7737}}
+  ]
+}
