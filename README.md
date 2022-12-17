@@ -96,6 +96,8 @@ not the contents of the corresponding NVRAM file.
   portions of the file that may not be entirely correct.
 - **_endian**: Default endian setting for all entries in the file.  Defaults
   to `true`.
+- **_char_map**: Characters to use for the `ch` encoding instead of a straight 
+  ASCII table.  See Whirlwind (`whirl_l3.nv.json`) as an example.
 
 ### Descriptors
 
@@ -116,7 +118,9 @@ how to interpret them.  They're comprised of the following key/value pairs:
   - `"bcd"`: A binary-coded decimal value, where each byte represents two
     decimal digits of a number.  The byte sequence `0x12 0x34` would translate
     to the decimal value `1234`.
-  - `"ch"`: A sequence of 7-bit ASCII characters.
+  - `"ch"`: A sequence of 7-bit ASCII characters.  If the JSON file has a 
+    `_char_map` key, use bytes from the NV file as indexes into that string 
+    instead of interpreting them as 7-bit ASCII.
   - `"raw"`: A series of raw bytes, useful for extracting data yet to be
     decoded or that requires custom processing.
   - `"wpc_rtc"`: A special type for a real-time clock value
