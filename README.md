@@ -31,9 +31,9 @@ restriction.
 
 My intent is for the map files (`.nv.json`) to remain open and for
 everyone to benefit from updates, yet allow for their use in
-closed-source projects with attribution.  Please include a Github link
+closed-source projects with attribution.  Please include a GitHub link
 to the original project (or your fork of it), along with the
-description, "This program makes us of content from the PinMAME NVRAM
+description, "This program makes use of content from the PinMAME NVRAM
 Maps project."
 
 ## Sample Code
@@ -48,7 +48,7 @@ standalone application to dump a parsed `.nv` file, or as a class
 
 ## Mapping New Games
 
-Start PinMAME and write down all of the high scores, and then exit. 
+Start PinMAME and write down all the high scores, and then exit. 
 Open the game's `.nv` file in a hex editor and search for the initials. 
 It should be possible to find each set of initials, with the
 corresponding score nearby.
@@ -94,6 +94,8 @@ not the contents of the corresponding NVRAM file.
   point are also covered by that license.
 - **_notes**: Notes about the file, possibly indicating who created it or
   portions of the file that may not be entirely correct.
+- **_endian**: Default endian setting for all entries in the file.  Defaults
+  to `true`.
 
 ### Descriptors
 
@@ -106,7 +108,7 @@ how to interpret them.  They're comprised of the following key/value pairs:
 - **encoding** _(required)_:  One of the following:
   - `"enum"`: An enumerated type where the byte at `start` is used as an
     index into a list of strings provided in `values`.
-  - `"int"`: A (possibly) multi-byte integer, where each byte is multiplied
+  - `"int"`: A (possibly) multibyte integer, where each byte is multiplied
     by a power of 256.  The byte sequence `0x12 0x34` would translate to the
     decimal value `4660`.
   - `"bits"`: Same decoding as `"int"`, but used to sum select integers from
@@ -136,7 +138,7 @@ how to interpret them.  They're comprised of the following key/value pairs:
   values.
 - **default**: Used for adjustments to specify the factory default value.
   Used for the **initials** entry of a high score to indicate the value
-  for an empty entry (e.g., `"   "` on WPC, `"\u0000\u0000u0000"` on
+  for an empty entry (e.g., `"   "` on WPC, `"\u0000\u0000\u0000"` on
   Gottlieb System 80).  Defaults to `0` unless specified.
 - **values**: A list of strings used for the `enum` encoding, starting at index 0.
   Also used for the `bits` encoding, as values for bit 0, 1, 2, etc.
@@ -165,7 +167,7 @@ Keys that don't start with an underscore typically have groups of
 **descriptors** as their values.
 
 - **endian**: Set to either `"big"` or `"little"` to indicate the byte
-  order of multi-byte values in the ROM file.  Defaults to `"big"`.
+  order of multibyte values in the ROM file.  Defaults to `"big"`.
 - **last_played**: A descriptor (likely with a `wpc_rtc` encoding) with a
   date stamp of when PinMAME last saved the file.
 - **last_game**: An array of up to four descriptors representing scores
@@ -193,7 +195,7 @@ Keys that don't start with an underscore typically have groups of
 - **game_state**: A collection of memory areas used during a game to store
   the state of the game (e.g., player #, ball #, progressive jackpot value,
   etc.)  Not useful for PinMAME's `.nv` files, but could be referenced with
-  custom code inside of PinMAME.  See the High Speed map for an example.
+  custom code inside PinMAME.  See the High Speed map for an example.
 
 ### Checksums
 
