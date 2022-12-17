@@ -21,13 +21,13 @@
 			"label": "3rd Place", "short_label": "#3", 
 			"initials": {"start": "0x737","encoding": "ch","length": 3
 			},
-			"score": {"start": 1852,"encoding": "bcd","packed": true,"length": 4,"scale": 1
+			"score": {"start": 1852,"encoding": "bcd","length": 4,"scale": 1
 			}
 		},
 		{
 			"label": "4th Place","short_label": "#4",
 			"initials": {"start": "0x737","encoding": "ch","length": 3},
-			"score": {"start": 1856,"encoding": "bcd","packed": true,"length": 4,"scale": 1
+			"score": {"start": 1856,"encoding": "bcd","length": 4,"scale": 1
 			}
 		}		
 	]

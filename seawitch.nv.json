@@ -12,6 +12,6 @@
   "_fileformat": 0.1,
   "_version": 0.1,
   "high_scores": [
-    {"label":"1st","short_label":"#1","initials":{"start":0,"encoding":"ch","length":0},"score":{"encoding":"bcd","length":3,"packed":true,"start":203}}
+    {"label":"1st","short_label":"#1","initials":{"start":0,"encoding":"ch","length":0},"score":{"encoding":"bcd","length":3,"start":203}}
   ]
 }
