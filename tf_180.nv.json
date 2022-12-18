@@ -12,25 +12,25 @@
   "_fileformat": 0.1,
   "_version": 0.1,
   "last_game":[
-    {"encoding":"int","length":4,"packed":false,"start":68068},
-    {"encoding":"int","length":4,"packed":false,"start":68072},
-    {"encoding":"int","length":4,"packed":false,"start":68076},
-    {"encoding":"int","length":4,"packed":false,"start":68080}
+    {"encoding":"int","length":4,"start":68068},
+    {"encoding":"int","length":4,"start":68072},
+    {"encoding":"int","length":4,"start":68076},
+    {"encoding":"int","length":4,"start":68080}
   ],
   "high_scores": [
-    {"label":"Autobot Grand Champion","short_label":"AGC","initials":{"start":11720,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":11744}},
-    {"label":"Autobot #1","short_label":"A#1","initials":{"start":11752,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":11776}},
-    {"label":"Autobot #2","short_label":"A#2","initials":{"start":11784,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":11808}},
-    {"label":"Autobot #3","short_label":"A#3","initials":{"start":11816,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":11840}},
-    {"label":"Autobot #4","short_label":"A#4","initials":{"start":11848,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":11872}},
-    {"label":"Decepticon Grand Champion","short_label":"DGC","initials":{"start":11880,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":11904}},
-    {"label":"Decepticon #1","short_label":"D#1","initials":{"start":11912,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":11936}},
-    {"label":"Decepticon #2","short_label":"D#2","initials":{"start":11944,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":11968}},
-    {"label":"Decepticon #3","short_label":"D#3","initials":{"start":11976,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":12000}},
-    {"label":"Decepticon #4","short_label":"D#4","initials":{"start":12008,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"packed":false,"start":12032}}
+    {"label":"Autobot Grand Champion","short_label":"AGC","initials":{"start":11720,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"start":11744}},
+    {"label":"Autobot #1","short_label":"A#1","initials":{"start":11752,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"start":11776}},
+    {"label":"Autobot #2","short_label":"A#2","initials":{"start":11784,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"start":11808}},
+    {"label":"Autobot #3","short_label":"A#3","initials":{"start":11816,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"start":11840}},
+    {"label":"Autobot #4","short_label":"A#4","initials":{"start":11848,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"start":11872}},
+    {"label":"Decepticon Grand Champion","short_label":"DGC","initials":{"start":11880,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"start":11904}},
+    {"label":"Decepticon #1","short_label":"D#1","initials":{"start":11912,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"start":11936}},
+    {"label":"Decepticon #2","short_label":"D#2","initials":{"start":11944,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"start":11968}},
+    {"label":"Decepticon #3","short_label":"D#3","initials":{"start":11976,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"start":12000}},
+    {"label":"Decepticon #4","short_label":"D#4","initials":{"start":12008,"encoding":"ch","length":3},"score":{"encoding":"int","length":4,"start":12032}}
   ],
   "mode_champions": [
-    {"label":"Combo","short_label": "Combo","initials": {"start":12040,"encoding":"ch","length":3},"score":{"start":12064,"encoding":"int", "packed":false,"length":4}},
-    {"label":"Best Combo Champion","short_label": "Best Combo","initials": {"start":12072,"encoding":"ch","length":3},"score":{"start":12096,"encoding":"int","length":4, "packed":false, "suffix" : "-WAY"}}
+    {"label":"Combo","short_label": "Combo","initials": {"start":12040,"encoding":"ch","length":3},"score":{"start":12064,"encoding":"int", "length":4}},
+    {"label":"Best Combo Champion","short_label": "Best Combo","initials": {"start":12072,"encoding":"ch","length":3},"score":{"start":12096,"encoding":"int","length":4,  "suffix" : "-WAY"}}
   ]
 }
