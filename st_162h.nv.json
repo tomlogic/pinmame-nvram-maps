@@ -1,0 +1,27 @@
+{
+  "_notes": [
+    "Compiled by NV Mapping Helper (Replace with your name)"
+  ],
+  "_copyright": "Copyright (C) 2022 by YourName your email>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_ramsize": 131118,
+  "_roms": [
+    "st_162h"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_game": [
+    {"encoding":"int","length":4,"start":68108},
+    {"encoding":"int","length":4,"start":68112},
+    {"encoding":"int","length":4,"start":68116},
+    {"encoding":"int","length":4,"start":68120}
+  ],
+  "high_scores": [
+    {"label":"Grand Champion","short_label":"GC","initials":{"encoding":"ch","length":3,"start":11984},"score":{"encoding":"int","length":4,"start":8600}},
+    {"label":"#1","short_label":"#1","initials":{"encoding":"ch","length":3,"start":12016},"score":{"encoding":"int","length":4,"start":8608}},
+    {"label":"#2","short_label":"#2","initials":{"encoding":"ch","length":3,"start":12048},"score":{"encoding":"int","length":4,"start":8616}},
+    {"label":"#3","short_label":"#3","initials":{"encoding":"ch","length":3,"start":12080},"score":{"encoding":"int","length":4,"start":8624}},
+    {"label":"#4","short_label":"#4","initials":{"encoding":"ch","length":2,"start":12112},"score":{"encoding":"int","length":4,"start":8632}}
+  ]
+}
