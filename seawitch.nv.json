@@ -1,0 +1,17 @@
+{
+  "_notes": [
+    "Compiled by HorsePin, Just saves highest score"
+  ],
+  "_copyright": "Copyright (C) 2022 by HorsePin",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 302,
+  "_roms": [
+    "seawitch"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "high_scores": [
+    {"label":"1st","short_label":"#1","initials":{"start":0,"encoding":"ch","length":0},"score":{"encoding":"bcd","length":3,"start":203}}
+  ]
+}
