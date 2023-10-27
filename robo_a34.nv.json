@@ -1,41 +1,45 @@
 {
-  "_notes": [ "Compiled by Horsepin." ],
+  "_notes": [
+    "0.1: Compiled by Horsepin.",
+    "0.2: Switch from `packed` to `nibble`;",
+    "     added `mask` to initials to get uppercase (Tom Collins)"
+  ],
   "_copyright": "Copyright (C) 2016 by Horsepin",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_roms": [ "robo_a34" ],
-  "_fileformat": 0.1,
-  "_version": 0.1,
+  "_fileformat": 0.2,
+  "_version": 0.2,
 
   "last_game": [ 
-  	{ "start": 423, "encoding": "bcd", "length": 7, "packed": false },
-    { "start": 589, "encoding": "bcd", "length": 7, "packed": false },
-    { "start": 755,"encoding": "bcd", "length": 7, "packed": false },
-    { "start": 921,"encoding": "bcd", "length": 7, "packed": false }
+  	{ "start": 423, "encoding": "bcd", "length": 7, "nibble": "low" },
+    { "start": 589, "encoding": "bcd", "length": 7, "nibble": "low" },
+    { "start": 755,"encoding": "bcd", "length": 7, "nibble": "low" },
+    { "start": 921,"encoding": "bcd", "length": 7, "nibble": "low" }
 	],
 
   "high_scores": [
     { "label": "Commander", "short_label": "GC", "initials": 
     	{ "start": "0x1C67", "encoding": "ch", "length": 3, "mask": "0xDF" },
     	"score":  
-    	{ "start": "0x1C60", "encoding": "bcd", "length": 7, "packed": false }
+    	{ "start": "0x1C60", "encoding": "bcd", "length": 7, "nibble": "low" }
     },
     { "label": "1st Place", "short_label": "1st", "initials": {
         "start": "0x1C73", "encoding": "ch", "length": 3, "mask": "0xDF" },
       "score": 
-      { "start": "0x1C6C", "encoding": "bcd", "length": 7, "packed": false }
+      { "start": "0x1C6C", "encoding": "bcd", "length": 7, "nibble": "low" }
     },
     { "label": "2nd Place", "short_label": "2nd", "initials": {
     	"start": "0x1C7F", "encoding": "ch", "length": 3, "mask": "0xDF"
     },
       "score": 
-      { "start": "0x1C78", "encoding": "bcd", "length": 7, "packed": false }
+      { "start": "0x1C78", "encoding": "bcd", "length": 7, "nibble": "low" }
     },
     { "label": "3rd Place", "short_label": "3rd", "initials": {
         "start": "0x1C8B", "encoding": "ch", "length": 3, "mask": "0xDF"
 	},
       "score": 
-	{ "start": "0x1C84", "encoding": "bcd", "length": 7, "packed": false }
+	{ "start": "0x1C84", "encoding": "bcd", "length": 7, "nibble": "low" }
     }
 	],
   "mode_champions": [
