@@ -161,7 +161,9 @@ how to interpret them.  They're comprised of the following key/value pairs:
 - **packed**: A boolean for `ch` and `bcd` types indicating use of 4 bits/byte
   (`false`) or 8 bits/byte (`true`).  Defaults to `true`.  The `bcd` sequence
   `0x01 0x02 0x03` translates to `10203` when `packed` is `true`, and `123`
-  when `packed` is `false`.
+  when `packed` is `false`.  Robowars has an example of a non-`packed` `ch` 
+  field, where `0x04 0x01 0x04 0x02 0x04 0x03` translates to `0x41 0x42 
+  0x43` which is the string `"ABC"`.
 - **_note**: A note for someone maintaining the file; not displayed when
   processing an NVRAM file.
 
