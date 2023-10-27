@@ -16,23 +16,23 @@
 
   "high_scores": [
     { "label": "Commander", "short_label": "GC", "initials": 
-    	{ "start": "0x1C67", "encoding": "ch", "length": 3 }, 
+    	{ "start": "0x1C67", "encoding": "ch", "length": 3, "mask": "0xDF" },
     	"score":  
     	{ "start": "0x1C60", "encoding": "bcd", "length": 7, "packed": false }
     },
     { "label": "1st Place", "short_label": "1st", "initials": {
-        "start": "0x1C73", "encoding": "ch", "length": 3 },
+        "start": "0x1C73", "encoding": "ch", "length": 3, "mask": "0xDF" },
       "score": 
       { "start": "0x1C6C", "encoding": "bcd", "length": 7, "packed": false }
     },
     { "label": "2nd Place", "short_label": "2nd", "initials": {
-    	"start": "0x1C7F", "encoding": "ch", "length": 3 
+    	"start": "0x1C7F", "encoding": "ch", "length": 3, "mask": "0xDF"
     },
       "score": 
       { "start": "0x1C78", "encoding": "bcd", "length": 7, "packed": false }
     },
     { "label": "3rd Place", "short_label": "3rd", "initials": {
-        "start": "0x1C8B", "encoding": "ch", "length": 3
+        "start": "0x1C8B", "encoding": "ch", "length": 3, "mask": "0xDF"
 	},
       "score": 
 	{ "start": "0x1C84", "encoding": "bcd", "length": 7, "packed": false }
@@ -41,7 +41,7 @@
   "mode_champions": [
     {
       "label": "Jump Master", "short_label": "Jump Master",
-      "initials": { "start": "0x1C9F", "encoding": "ch", "length": 3 },
+      "initials": { "start": "0x1C9F", "encoding": "ch", "length": 3, "mask": "0xDF" },
       "score": { "start": "0x1C98", "encoding": "int", "length": 1, "suffix": " Jumps"
       }
     }
