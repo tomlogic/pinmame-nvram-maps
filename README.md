@@ -85,7 +85,8 @@ Note that keys starting with underscore describe the file itself, and
 not the contents of the corresponding NVRAM file.
 
 - **_roms** _(required)_: A list of PinMAME ROMs that use this map.
-- **_fileformat** _(required)_: Currently `0.1`.
+- **_fileformat** _(required)_: A `float` indicating the file format's
+  version.  See Version History at the end of this file for changes.
 - **_version** _(required)_: A `float` indicating the JSON file's version.
 - **_copyright**: Original author of the file, possibly a list of people
   who have contributed to the file.
@@ -158,10 +159,18 @@ how to interpret them.  They're comprised of the following key/value pairs:
 - **mask**: A mask to apply to each byte before processing.  For example, a
   mask of `"0x5F"` converts lowercase initials to uppercase and a mask of
   `"0x0F"` clears the upper four bits.
-- **packed**: A boolean for `ch` and `bcd` types indicating use of 4 bits/byte
-  (`false`) or 8 bits/byte (`true`).  Defaults to `true`.  The `bcd` sequence
-  `0x01 0x02 0x03` translates to `10203` when `packed` is `true`, and `123`
-  when `packed` is `false`.
+- **nibble**: Replacement for `packed` attribute for `ch` and `bcd` types.
+  Defaults to `both` (previously `packed=true`) indicating use of the full
+  8 bits/byte.  Set to `low` (previously `packed=false`) to use the lower
+  4 bits of the byte or `high` to use the upper 4 bits of the byte. 
+  The `bcd` sequence `0x12 0x34 0x56` translates to `123456` when `nibble` is
+  `both`, `246` when `nibble` is `low` and `135` when `nibble` is `high`.
+  Robowars has an example of a `nibble=low` `ch` field, where the sequence
+  `0x04 0x01 0x04 0x02 0x04 0x03` translates to `0x41 0x42 0x43` which is the
+  string `"ABC"`.
+  Stern Dracula and Wild Fyre (identical ROM) have examples of `nibble=high`.
+- **packed**: Deprecated in favor of `nibble`.  Remove `packed=true` and
+  replace `packed=false` with `nibble=low`.  
 - **_note**: A note for someone maintaining the file; not displayed when
   processing an NVRAM file.
 
@@ -219,3 +228,6 @@ treat a single descriptor as a list of equally-sized groupings.
   checksum.  That last two bytes of the range are set so that adding
   all other bytes in the range results in a value of `0xFFFF`.
 
+## Version History
+- v0.1: Initial Version
+- v0.2: Deprecate `packed` attribute in favor of `nibble`.
