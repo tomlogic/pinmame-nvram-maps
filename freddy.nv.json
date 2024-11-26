@@ -22,6 +22,6 @@
     {"label":"Dream Warriors","short_label":"#2","initials":{"start":3857,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":5,"start":3882}},
     {"label":"Dream Warriors","short_label":"#3","initials":{"start":3862,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":5,"start":3887}},
     {"label":"Dream Warriors","short_label":"#4","initials":{"start":3867,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":5,"start":3968}},
-    {"label":"Dream Warriors","short_label":"#5","initials":{"start":3872,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":5,"start":3898}}
+    {"label":"Dream Warriors","short_label":"#5","initials":{"start":3872,"encoding":"ch","length":3},"score":{"encoding":"bcd","length":5,"start":3897}}
   ]
 }
