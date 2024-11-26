@@ -3,7 +3,7 @@
 	"_copyright": "Copyright (C) 2016 by Horsepin>",
 	"_license": "GNU Lesser General Public License v3.0",
 	"_endian": "big",
-	"_roms": [ "tomy_400" ],
+	"_roms": [ "tomy_400", "tomy_500" ],
 	"_fileformat": 0.1,
 	"_version": 0.1,
 
