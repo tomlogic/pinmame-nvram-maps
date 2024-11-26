@@ -96,7 +96,7 @@ not the contents of the corresponding NVRAM file.
 - **_notes**: Notes about the file, possibly indicating who created it or
   portions of the file that may not be entirely correct.
 - **_endian**: Default endian setting for all entries in the file.  Defaults
-  to `true`.
+  to `big`.
 - **_char_map**: Characters to use for the `ch` encoding instead of a straight 
   ASCII table.  See Whirlwind (`whirl_l3.nv.json`) as an example.
 
