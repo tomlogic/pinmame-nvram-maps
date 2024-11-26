@@ -5,8 +5,8 @@
 	"_roms": ["jm_12r"],
 	"_fileformat": 0.1,
 	"_version": 0.1,
-	
-	"endian": "big",
+	"_endian": "big",
+
 	"last_played": {"start": "0x1800", "encoding": "wpc_rtc", "length": 7},
 	"last_game": [
 		{	"label": "Player 1",
