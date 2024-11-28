@@ -1,0 +1,122 @@
+{
+  "_notes": "Compiled by Francis De Brabandere.",
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_roms": [
+    "ww_lh6"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_game": [
+    {
+      "start": 5792,
+      "encoding": "bcd",
+      "length": 5
+    },
+    {
+      "start": 5798,
+      "encoding": "bcd",
+      "length": 5
+    },
+    {
+      "start": 5804,
+      "encoding": "bcd",
+      "length": 5
+    },
+    {
+      "start": 5810,
+      "encoding": "bcd",
+      "length": 5
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "RIVER MASTER",
+      "short_label": "GC",
+      "initials": {
+        "start": 7359,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7362,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7325,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7328,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7333,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7336,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7341,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7344,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7349,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7352,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Insanity Record",
+      "short_label": "InsanityRecord",
+      "initials": {
+        "start": 7807,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7810,
+        "encoding": "int",
+        "length": 1,
+        "suffix": " Water Falls"
+      }
+    }
+  ]
+}
