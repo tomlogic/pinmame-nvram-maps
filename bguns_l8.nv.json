@@ -1,0 +1,105 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Big Guns (Williams 1987)",
+    "https://www.ipdb.org/machine.cgi?id=250",
+    "Williams System 11B",
+    "This seems to have the same layout as Space Station (Williams 1987)"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_roms": [
+    "bguns_l8"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": "0x39",
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": "0x200",
+      "encoding": "bcd",
+      "length": 4
+    },
+    {
+      "start": "0x204",
+      "encoding": "bcd",
+      "length": 4
+    },
+    {
+      "start": "0x208",
+      "encoding": "bcd",
+      "length": 4
+    },
+    {
+      "start": "0x20c",
+      "encoding": "bcd",
+      "length": 4
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": "0x73b",
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": "0x72b",
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": "0x73e",
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": "0x72f",
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": "0x741",
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": "0x733",
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": "0x744",
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": "0x737",
+        "encoding": "bcd",
+        "length": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Bad Cats (Williams 1989)",
+    "https://www.ipdb.org/machine.cgi?id=127",
+    "Williams System 11B"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_roms": [
+    "bcats_l5"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": "0x39",
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": "0x200",
+      "encoding": "bcd",
+      "length": 4
+    },
+    {
+      "start": "0x204",
+      "encoding": "bcd",
+      "length": 4
+    },
+    {
+      "start": "0x208",
+      "encoding": "bcd",
+      "length": 4
+    },
+    {
+      "start": "0x20c",
+      "encoding": "bcd",
+      "length": 4
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "Baddest Cat 1",
+      "short_label": "1st",
+      "initials": {
+        "start": "0x71f",
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": "0x70f",
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Baddest Cat 2",
+      "short_label": "2nd",
+      "initials": {
+        "start": "0x722",
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": "0x713",
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Baddest Cat 3",
+      "short_label": "3rd",
+      "initials": {
+        "start": "0x725",
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": "0x717",
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Baddest Cat 4",
+      "short_label": "4th",
+      "initials": {
+        "start": "0x728",
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": "0x71b",
+        "encoding": "bcd",
+        "length": 4
+      }
+    }
+  ]
+}

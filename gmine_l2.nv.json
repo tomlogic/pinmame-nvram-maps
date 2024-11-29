@@ -1,0 +1,67 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Gold Mine (Williams 1987)",
+    "https://www.ipdb.org/machine.cgi?id=4935",
+    "Williams System 11B"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_roms": [
+    "gmine_l2"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": "0x44",
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": "0x38",
+      "encoding": "bcd",
+      "length": 2
+    },
+    {
+      "start": "0x3a",
+      "encoding": "bcd",
+      "length": 2
+    },
+    {
+      "start": "0x3c",
+      "encoding": "bcd",
+      "length": 2
+    },
+    {
+      "start": "0x3e",
+      "encoding": "bcd",
+      "length": 2
+    },
+    {
+      "start": "0x40",
+      "encoding": "bcd",
+      "length": 2
+    },
+    {
+      "start": "0x42",
+      "encoding": "bcd",
+      "length": 2
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": "0x6d6",
+        "encoding": "bcd",
+        "length": 2
+      }
+    }
+  ]
+}
