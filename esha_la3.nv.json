@@ -1,0 +1,106 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Earth Shaker (Williams 1989)",
+    "https://www.ipdb.org/machine.cgi?id=753",
+    "Williams System 11B"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_roms": [
+    "esha_la3",
+    "esha_l4c",
+    "esha_ma3"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": "0x39",
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": "0x200",
+      "encoding": "bcd",
+      "length": 4
+    },
+    {
+      "start": "0x204",
+      "encoding": "bcd",
+      "length": 4
+    },
+    {
+      "start": "0x208",
+      "encoding": "bcd",
+      "length": 4
+    },
+    {
+      "start": "0x20c",
+      "encoding": "bcd",
+      "length": 4
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 1803,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1787,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 1806,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1791,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 1809,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1795,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 1812,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1799,
+        "encoding": "bcd",
+        "length": 4
+      }
+    }
+  ]
+}
