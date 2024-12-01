@@ -1,0 +1,61 @@
+{
+    "GameInfo": {
+        "GameName": "Banzai Run",
+        "System": "11B",
+        "FileVer": 1         
+    },
+
+    "Memory" : {
+        "Start": 0,
+        "Length": 2048,
+        "NvStart": 0,
+        "NvLength": 2048
+    },
+
+    "BallInPlay": {
+        "Type": 1,
+        "Address": 56, 
+        "Ball1": "0xF1",
+        "Ball2": "0xF2",
+        "Ball3": "0xF3",
+        "Ball4": "0xF4",
+        "Ball5": "0xF5"
+    },
+
+    "DisplayMessage": {
+        "Type": 1,
+        "Address": "0x7B4",
+        "Length": 7,
+        "Number": 6,
+        "EnableByteAddress": "0x7B0"
+    },
+
+    "Adjustments" :{
+        "Type": 1,
+        "ChecksumStartAdr": "0x780",
+        "ChecksumEndAdr": "0x7DD",
+        "ChecksumResultAdr": "0x7E5"
+    },
+
+    "HighScores": {
+        "Type": 1,
+        "ScoreAdr": "0x703",
+        "InitialAdr": "0x713",
+        "BytesInScore": 4
+    },
+
+    "HSRewards": {
+        "Type": 0,
+        "HS1": 1937,
+        "HS2": 1938,
+        "HS3": 1939,
+        "HS4": 1940,
+        "DisableByte": 0
+    },
+
+    "Switches": {
+        "Type": 0,
+        "Address": 56,
+        "Length": 23
+    }
+}
