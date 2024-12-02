@@ -95,8 +95,11 @@ not the contents of the corresponding NVRAM file.
   point are also covered by that license.
 - **_notes**: Notes about the file, possibly indicating who created it or
   portions of the file that may not be entirely correct.
-- **_endian**: Default endian setting for all entries in the file.  Defaults
-  to `big`.
+- **_endian**: Set to either `"big"` or `"little"` to indicate the default
+  byte order of multi-byte values.  Defaults to `"big"`.
+  Refers to which end of the number is stored first.  For example, a
+  `bcd`-encoded score of 123,450 is the byte sequence 0x12, 0x34, 0x50 if
+  big-endian, and 0x50 0x34 0x12 if little-endian.
 - **_char_map**: Characters to use for the `ch` encoding instead of a straight 
   ASCII table.  See Whirlwind (`whirl_l3.nv.json`) as an example.
 
@@ -118,7 +121,8 @@ how to interpret them.  They're comprised of the following key/value pairs:
     the list in `values`.
   - `"bcd"`: A binary-coded decimal value, where each byte represents two
     decimal digits of a number.  The byte sequence `0x12 0x34` would translate
-    to the decimal value `1234`.
+    to the decimal value `1234`.  When converting BCD values, treat the
+    nibbles 0xA to 0xF as 0 numerically, or a space for display purposes.
   - `"ch"`: A sequence of 7-bit ASCII characters.  If the JSON file has a 
     `_char_map` key, use bytes from the NV file as indexes into that string 
     instead of interpreting them as 7-bit ASCII.
@@ -180,7 +184,8 @@ Keys that don't start with an underscore typically have groups of
 **descriptors** as their values.
 
 - **endian**: Set to either `"big"` or `"little"` to indicate the byte
-  order of multibyte values in the ROM file.  Defaults to `"big"`.
+  order of multi-byte values in the ROM file.  Defaults to the `_endian`
+  setting for the file (which defaults to `"big"`).
 - **last_played**: A descriptor (likely with a `wpc_rtc` encoding) with a
   date stamp of when PinMAME last saved the file.
 - **last_game**: An array of up to four descriptors representing scores
@@ -228,6 +233,6 @@ treat a single descriptor as a list of equally-sized groupings.
   checksum.  That last two bytes of the range are set so that adding
   all other bytes in the range results in a value of `0xFFFF`.
 
-## Version History
+### Version History
 - v0.1: Initial Version
 - v0.2: Deprecate `packed` attribute in favor of `nibble`.
