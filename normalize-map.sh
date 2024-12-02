@@ -9,5 +9,5 @@ fi
 
 for map in "$@"
 do
-    jq --indent 2 . "$map" > "$map.tmp" && mv "$map.tmp" "$map"
+    jq --indent 2 --ascii-output . "$map" > "$map.tmp" && mv "$map.tmp" "$map"
 done
