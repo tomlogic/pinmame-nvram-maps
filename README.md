@@ -10,7 +10,7 @@ Going further and documenting adjustments and audits allows for the
 development of alternate interfaces (like a web browser) to view audits
 and change game settings without using the service menu.
 
-This project started in October 2015, and should be considered "alpha"
+This project started in October 2015, and should be considered "beta"
 quality.  As people map more games, the file format may change to
 support additional requirements.
 
@@ -19,6 +19,24 @@ format for this project.  If necessary, other projects should be able to
 convert the map files to alternate formats.  The JSON website describes
 the file format and includes links to parsing libraries in many
 programming languages.
+
+For this repository, we're formatting JSON files with each entry on its
+own line, and 2 spaces for indentation.  You can get this formatting using
+either `jq` or `python`:
+
+- jq: `jq --indent 2 --ascii-output . mapname.nv.json`.  You can use
+  `normalize-map.sh` to automatically reformat one (or all) of the JSON
+  files.
+- python: `json.dumps()` with the setting `indent=2`
+
+```
+    with open('mapname.nv.json', 'r') as f:
+        print(json.dumps(json.loads(f.read()), indent=2))
+```
+
+We're using the `--ascii-output` option to `jq` so it's consistent with the
+Python output of bytes values 0x80 to 0xFF.  For example, `hs_l4.nv.json`
+encodes a 0xC4 byte in the default attract text as `\u00C4`.
 
 [Project home](https://github.com/tomlogic/pinmame-nvram-maps)
 
