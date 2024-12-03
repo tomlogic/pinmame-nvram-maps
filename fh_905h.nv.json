@@ -1,0 +1,111 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Funhouse (Williams 1990)",
+    "https://www.ipdb.org/machine.cgi?id=966",
+    "Williams WPC (Alpha Numeric)"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_roms": [
+    "fh_905h",
+    "fh_906h"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_game": [
+    {
+      "start": 5791,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 5797,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 5803,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 5809,
+      "encoding": "bcd",
+      "length": 6
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "start": 7309,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7312,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7275,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7278,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7283,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7286,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7291,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7294,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7299,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7302,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ]
+}
