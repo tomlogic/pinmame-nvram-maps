@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [[ $# -eq 0 ]] ; then
+if [ $# -eq 0 ] ; then
     echo "Usage: $0 mapname.nv.json"
     echo '\nReformats JSON to preferred format using `jq`.  Can specify multiple'
     echo 'files or use `*.json` to reformat all files in directory.'
