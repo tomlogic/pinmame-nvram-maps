@@ -142,9 +142,10 @@ how to interpret them.  They're comprised of the following key/value pairs:
     decimal digits of a number.  The byte sequence `0x12 0x34` would translate
     to the decimal value `1234`.  When converting BCD values, treat the
     nibbles 0xA to 0xF as 0 numerically, or a space for display purposes.
-  - `"ch"`: A sequence of 7-bit ASCII characters.  If the JSON file has a 
-    `_char_map` key, use bytes from the NV file as indexes into that string 
-    instead of interpreting them as 7-bit ASCII.
+  - `"ch"`: A sequence of 7-bit ASCII characters that may be shortened by a
+    null byte (x00) terminator.  
+    If the JSON file has a `_char_map` key, all bytes (including 0x00) are
+	indexes into that string.  
   - `"raw"`: A series of raw bytes, useful for extracting data yet to be
     decoded or that requires custom processing.
   - `"wpc_rtc"`: A special type for a real-time clock value
