@@ -148,5 +148,47 @@
         "suffix": " Medals"
       }
     }
+  ],
+  "checksum16": [
+    {
+      "start": 11984,
+      "length": 30,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 12016,
+      "length": 30,
+      "label": "High Score #1"
+    },
+    {
+      "start": 12048,
+      "length": 30,
+      "label": "High Score #2"
+    },
+    {
+      "start": 12080,
+      "length": 30,
+      "label": "High Score #3"
+    },
+    {
+      "start": 12112,
+      "length": 30,
+      "label": "High Score #4"
+    },
+    {
+      "start": 12144,
+      "length": 30,
+      "label": "Combo Champion"
+    },
+    {
+      "start": 12176,
+      "length": 30,
+      "label": "Warp Champion"
+    },
+    {
+      "start": 12208,
+      "length": 30,
+      "label": "Medals Champion"
+    }
   ]
 }
