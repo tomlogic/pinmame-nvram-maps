@@ -1,0 +1,62 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Shooting the Rapids (Zaccaria 1979)",
+    "https://www.ipdb.org/machine.cgi?id=3606",
+    "Zaccaria Generation 1"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_roms": [
+    "strapids"
+  ],
+  "_fileformat": 0.2,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 44,
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 0,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    },
+    {
+      "start": 8,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    },
+    {
+      "start": 16,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    },
+    {
+      "start": 24,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 32,
+        "encoding": "bcd",
+        "length": 6,
+        "nibble": "low"
+      }
+    }
+  ]
+}
