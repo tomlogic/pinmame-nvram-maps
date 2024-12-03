@@ -1,0 +1,152 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins, based on st_162h by HorsePin"
+  ],
+  "_copyright": "Copyright (C)2024 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_ramsize": 131118,
+  "_roms": [
+    "st_162"
+  ],
+  "_fileformat": 0.2,
+  "_version": 0.1,
+  "last_game": [
+    {
+      "encoding": "int",
+      "length": 4,
+      "start": 68068
+    },
+    {
+      "encoding": "int",
+      "length": 4,
+      "start": 68072
+    },
+    {
+      "encoding": "int",
+      "length": 4,
+      "start": 68076
+    },
+    {
+      "encoding": "int",
+      "length": 4,
+      "start": 68080
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "encoding": "ch",
+        "length": 10,
+        "start": 11968
+      },
+      "score": {
+        "encoding": "int",
+        "length": 4,
+        "start": 11992
+      }
+    },
+    {
+      "label": "High Score #1",
+      "short_label": "#1",
+      "initials": {
+        "encoding": "ch",
+        "length": 10,
+        "start": 12000
+      },
+      "score": {
+        "encoding": "int",
+        "length": 4,
+        "start": 12024
+      }
+    },
+    {
+      "label": "High Score #2",
+      "short_label": "#2",
+      "initials": {
+        "encoding": "ch",
+        "length": 10,
+        "start": 12032
+      },
+      "score": {
+        "encoding": "int",
+        "length": 4,
+        "start": 12056
+      }
+    },
+    {
+      "label": "High Score #3",
+      "short_label": "#3",
+      "initials": {
+        "encoding": "ch",
+        "length": 10,
+        "start": 12064
+      },
+      "score": {
+        "encoding": "int",
+        "length": 4,
+        "start": 12088
+      }
+    },
+    {
+      "label": "High Score #4",
+      "short_label": "#4",
+      "initials": {
+        "encoding": "ch",
+        "length": 10,
+        "start": 12096
+      },
+      "score": {
+        "encoding": "int",
+        "length": 4,
+        "start": 12120
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Combo Champion",
+      "initials": {
+        "encoding": "ch",
+        "length": 10,
+        "start": 12128
+      },
+      "score": {
+        "encoding": "int",
+        "length": 4,
+        "start": 12152,
+        "suffix": " Combos"
+      }
+    },
+    {
+      "label": "Warp Champion",
+      "initials": {
+        "encoding": "ch",
+        "length": 10,
+        "start": 12160
+      },
+      "score": {
+        "encoding": "int",
+        "length": 4,
+        "start": 12184,
+        "suffix": " Warps"
+      }
+    },
+    {
+      "label": "Medals Champion",
+      "initials": {
+        "encoding": "ch",
+        "length": 10,
+        "start": 12192
+      },
+      "score": {
+        "encoding": "int",
+        "length": 4,
+        "start": 12216,
+        "suffix": " Medals"
+      }
+    }
+  ]
+}
