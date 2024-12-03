@@ -1,0 +1,68 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Star God (Zaccaria 1980)",
+    "https://www.ipdb.org/machine.cgi?id=3458",
+    "https://opdb.org/machines/1555",
+    "Zaccaria Generation 1",
+    "The rom defaults to the following settings:",
+    " - Easier game with the 'GOD' advancement starting with 'GO' when first top drop target bank is dropped",
+    " - Random high score which gives a replay when achieved",
+    " - High score does not save",
+    "Same layout as strapids"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_roms": [
+    "stargoda"
+  ],
+  "_fileformat": 0.2,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 44,
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 0,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    },
+    {
+      "start": 8,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    },
+    {
+      "start": 16,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    },
+    {
+      "start": 24,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 32,
+        "encoding": "bcd",
+        "length": 6,
+        "nibble": "low"
+      }
+    }
+  ]
+}
