@@ -1,0 +1,63 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Soccer Kings (Zaccaria 1982)",
+    "https://www.ipdb.org/machine.cgi?id=2235",
+    "https://opdb.org/machines/660",
+    "Zaccaria Generation 2"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_roms": [
+    "socrking"
+  ],
+  "_fileformat": 0.2,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 1419,
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 1216,
+      "encoding": "bcd",
+      "length": 8,
+      "nibble": "low"
+    },
+    {
+      "start": 1224,
+      "encoding": "bcd",
+      "length": 8,
+      "nibble": "low"
+    },
+    {
+      "start": 1232,
+      "encoding": "bcd",
+      "length": 8,
+      "nibble": "low"
+    },
+    {
+      "start": 1240,
+      "encoding": "bcd",
+      "length": 8,
+      "nibble": "low"
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 1860,
+        "encoding": "bcd",
+        "length": 8,
+        "nibble": "low"
+      }
+    }
+  ]
+}
