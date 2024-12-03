@@ -1,0 +1,63 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Time Machine (Zaccaria 1983)",
+    "https://www.ipdb.org/machine.cgi?id=3494",
+    "https://opdb.org/machines/937",
+    "Zaccaria Generation 2"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_roms": [
+    "tmachzac"
+  ],
+  "_fileformat": 0.2,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 1253,
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 1216,
+      "encoding": "bcd",
+      "length": 7,
+      "nibble": "low"
+    },
+    {
+      "start": 1224,
+      "encoding": "bcd",
+      "length": 7,
+      "nibble": "low"
+    },
+    {
+      "start": 1232,
+      "encoding": "bcd",
+      "length": 7,
+      "nibble": "low"
+    },
+    {
+      "start": 1240,
+      "encoding": "bcd",
+      "length": 7,
+      "nibble": "low"
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 1860,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low"
+      }
+    }
+  ]
+}
