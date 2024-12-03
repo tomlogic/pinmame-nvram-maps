@@ -1,0 +1,64 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "House of Diamonds (Zaccaria 1978)",
+    "https://www.ipdb.org/machine.cgi?id=3165",
+    "https://opdb.org/machines/559",
+    "Zaccaria Generation 1",
+    "Same layout as strapids"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_roms": [
+    "hod"
+  ],
+  "_fileformat": 0.2,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 44,
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 0,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    },
+    {
+      "start": 8,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    },
+    {
+      "start": 16,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    },
+    {
+      "start": 24,
+      "encoding": "bcd",
+      "length": 6,
+      "nibble": "low"
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 32,
+        "encoding": "bcd",
+        "length": 6,
+        "nibble": "low"
+      }
+    }
+  ]
+}
