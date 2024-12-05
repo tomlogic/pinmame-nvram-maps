@@ -66,12 +66,19 @@ def map_convert(pairs):
 
     return result
 
-
+exitcode = 0
 for filename in sys.argv[1:]:
-    file_format = 0.1
-    data = json.load(open(filename, 'r'), object_pairs_hook=map_convert)
+    file_format = 0.1       # default to 0.1 if _fileformat is missing from JSON
+    try:
+        data = json.load(open(filename, 'r'), object_pairs_hook=map_convert)
+        data['_fileformat'] = file_format
+        with open(filename, 'w') as outfile:
+            outfile.write(json.dumps(data, indent=2))
+            # add trailing newline to match `jq` output
+            outfile.write('\n')
+    except json.decoder.JSONDecodeError as e:
+        print("JSON decode error(s) for %s:\n%s\n" % (filename, str(e)))
+        # at least one JSON file was improperly formatted
+        exitcode = 1
 
-    data['_fileformat'] = file_format
-    with open(filename, 'w') as outfile:
-        outfile.write(json.dumps(data, indent=2))
-        outfile.write('\n')
+raise SystemExit(exitcode)
