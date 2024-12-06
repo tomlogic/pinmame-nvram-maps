@@ -1,0 +1,24 @@
+name: Validate
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for unformatted files
+        run: |
+          ./tools/reformat-map.sh *.json
+          if [[ -n $(git status --porcelain) ]]; then
+              git status
+              echo "Some files have not been formatted. Please check the README on how to reformat your files."
+              exit 1
+          fi
