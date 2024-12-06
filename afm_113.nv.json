@@ -34,6 +34,22 @@
 		{	"label": "Fourth Place", "short_label": "4th",
 			"initials": {"start": "0x1D26", "encoding": "ch", "length": 3},
 			"score": {"start": "0x1D29", "encoding": "bcd", "length": 6}
+		},
+		{	"label": "Buy-In Score #1", "short_label": "BI#1",
+			"initials": {"start": "0x1F70", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1F73", "encoding": "bcd", "length": 6}
+		},
+		{	"label": "Buy-In Score #2", "short_label": "BI#2",
+			"initials": {"start": "0x1F79", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1F7C", "encoding": "bcd", "length": 6}
+		},
+		{	"label": "Buy-In Score #3", "short_label": "BI#3",
+			"initials": {"start": "0x1F82", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1F85", "encoding": "bcd", "length": 6}
+		},
+		{	"label": "Buy-In Score #4", "short_label": "BI#4",
+			"initials": {"start": "0x1F8B", "encoding": "ch", "length": 3},
+			"score": {"start": "0x1F8E", "encoding": "bcd", "length": 6}
 		}
 	],
 	"mode_champions": [
@@ -427,6 +443,8 @@
 		{"start": "0x1D3C", "end": "0x1D41", "label": "HSTD Reset"},
 		{"start": "0x1D5A", "end": "0x1E2F", "label": "?? replay level"},
 		{"start": "0x1E30", "end": "0x1EF2", "label": "Custom Message"},
-		{"start": "0x1F70", "end": "0x1FAB", "label": "Mode Champions"}
+		{"start": "0x1F70", "end": "0x1F95", "label": "Buy-In Scores"},
+		{"start": "0x1F96", "end": "0x1FA0", "label": "Martian Champ"},
+		{"start": "0x1FA1", "end": "0x1FAB", "label": "Ruler of the Universe"}
 	]
 }
