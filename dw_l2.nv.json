@@ -16,213 +16,233 @@
     "escape_a": {
       "_note": "0x280 and 0x288 both bitmaps for ESCAPE, 0x290 related to animating those lamps",
       "label": "Escape A",
-      "start": "0x280",
+      "start": 640,
       "mask": "0x3F",
       "encoding": "raw"
     },
     "escape_b": {
       "label": "Escape B",
-      "start": "0x288",
+      "start": 648,
       "mask": "0x3F",
       "encoding": "raw"
     },
     "repair_a": {
       "_note": "0x285 and 0x28d both bitmaps for REPAIR, 0x295 related to animating those lamps",
       "label": "Repair A",
-      "start": "0x285",
+      "start": 645,
       "mask": "0x3F",
       "encoding": "raw"
     },
     "repair_b": {
       "label": "Repair B",
-      "start": "0x28D",
+      "start": 653,
       "mask": "0x3F",
       "encoding": "raw"
     },
     "player_count": {
       "label": "Player Count",
       "short_label": "Players",
-      "start": "0x16F5",
+      "start": 5877,
       "encoding": "int"
     },
     "current_player": {
       "label": "Current Player",
       "short_label": "P#",
-      "start": "0x3AF",
+      "start": 943,
       "encoding": "int"
     },
     "current_ball": {
       "label": "Ball",
-      "start": "0x3B0",
+      "start": 944,
       "encoding": "int"
     },
     "extra_balls": {
       "label": "Extra Balls",
-      "start": "0x3B1",
+      "start": 945,
       "encoding": "int"
     },
     "unk0": {
       "label": "Pre-P1 bytes?",
-      "start": "0x0A01",
+      "start": 2561,
       "encoding": "raw",
       "length": 9
     },
     "bonusX": {
       "label": "P1 Bonus Multiplier",
-      "start": "0x0A0A",
+      "start": 2570,
       "encoding": "int"
     },
     "bonus": {
       "label": "P1 Bonus",
-      "start": "0x0A0B",
+      "start": 2571,
       "encoding": "bcd",
       "length": 5
     },
     "repair": {
       "label": "P1 Repair Millions",
-      "start": "0x0A10",
+      "start": 2576,
       "encoding": "bcd",
       "length": 5
     },
     "transmat": {
       "label": "P1 Transmat Value",
-      "start": "0x0A15",
+      "start": 2581,
       "encoding": "bcd",
       "length": 5
     },
     "unk2": {
       "label": "P1 Unknown #2",
-      "start": "0x0A1A",
+      "start": 2586,
       "encoding": "raw",
       "length": 5
     },
     "escape_cmpl": {
       "label": "P1 Escape Level",
-      "start": "0x0A1F",
+      "start": 2591,
       "encoding": "int"
     },
     "unk2a": {
       "label": "P1 Unknown #2a",
-      "start": "0x0A20",
+      "start": 2592,
       "encoding": "raw",
       "length": 2
     },
     "who": {
       "label": "P1 W-H-O",
-      "start": "0x0A22",
+      "start": 2594,
       "encoding": "int"
     },
     "unk2b": {
       "label": "P1 Unknown #2b",
-      "start": "0x0A23",
+      "start": 2595,
       "encoding": "raw",
       "length": 1
     },
     "video_compl": {
       "label": "P1 Video Round Completed",
-      "start": "0x0A24",
+      "start": 2596,
       "encoding": "bcd",
       "_note": "untested whether bcd or int!"
     },
     "video_unk": {
       "label": "P1 Video Related",
-      "start": "0x0A25",
+      "start": 2597,
       "encoding": "raw"
     },
     "video_bonus": {
       "label": "P1 Video Mode Bonus",
-      "start": "0x0A26",
+      "start": 2598,
       "encoding": "bcd",
       "length": 5
     },
     "unk4": {
       "label": "P1 Unknown #4",
-      "start": "0x0A2B",
+      "start": 2603,
       "encoding": "raw",
       "length": 5
     },
     "unk5": {
       "label": "P1 Unknown #5",
-      "start": "0x0A30",
+      "start": 2608,
       "encoding": "raw",
       "length": 3
     },
     "mb_round": {
       "label": "P1 Multiball Round",
-      "start": "0x0A33",
+      "start": 2611,
       "encoding": "int",
       "_note": "unverified if int or bcd"
     },
     "unk5b": {
       "label": "P1 Unknown #5b",
-      "start": "0x0A34",
+      "start": 2612,
       "encoding": "raw",
       "length": 7
     },
     "pf_x_countdown": {
       "label": "P1 Playfield X countdown",
-      "start": "0x0A3B",
+      "start": 2619,
       "encoding": "int"
     },
     "docs": {
       "label": "P1 Doctors",
       "_note": "stored as groupings of 3 bits in 3 little-endian bytes, shifts left as doctors added",
-      "start": "0x0A3C",
+      "start": 2620,
       "encoding": "bits",
       "endian": "little",
       "length": 3,
-      "values": [1, 2, 4, 10, 20, 40, 100, 200, 400, 1000, 2000, 4000, 10000, 20000, 40000,
-        100000, 200000, 400000, 1000000, 2000000, 4000000]
+      "values": [
+        1,
+        2,
+        4,
+        10,
+        20,
+        40,
+        100,
+        200,
+        400,
+        1000,
+        2000,
+        4000,
+        10000,
+        20000,
+        40000,
+        100000,
+        200000,
+        400000,
+        1000000,
+        2000000,
+        4000000
+      ]
     },
     "unk6": {
       "label": "P1 Unknown #6",
-      "start": "0x0A3F",
+      "start": 2623,
       "encoding": "raw",
       "length": 12
     },
-
     "playfieldX": {
       "_note": "current player, unsure where stored between balls",
       "label": "Playfield X",
-      "start": "0xB30",
+      "start": 2864,
       "encoding": "bcd",
       "suffix": "X",
       "scale": 0.1
     },
     "time_factor_A": {
       "label": "Time Factor A",
-      "start": "0xCBC",
+      "start": 3260,
       "encoding": "int"
     },
     "time_factor_B": {
       "label": "Time Factor B",
-      "start": "0xCF3",
+      "start": 3315,
       "encoding": "int"
     }
   },
   "last_played": {
-    "start": "0x1800",
+    "start": 6144,
     "encoding": "wpc_rtc",
     "length": 7
   },
   "last_game": [
     {
-      "start": "0x1680",
+      "start": 5760,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x1686",
+      "start": 5766,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x168C",
+      "start": 5772,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x1692",
+      "start": 5778,
       "encoding": "bcd",
       "length": 5
     }
@@ -232,12 +252,12 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": "0x1D39",
+        "start": 7481,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1D3C",
+        "start": 7484,
         "encoding": "bcd",
         "length": 5
       }
@@ -246,12 +266,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": "0x1D17",
+        "start": 7447,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1D1A",
+        "start": 7450,
         "encoding": "bcd",
         "length": 5
       }
@@ -260,12 +280,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": "0x1D1F",
+        "start": 7455,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1D22",
+        "start": 7458,
         "encoding": "bcd",
         "length": 5
       }
@@ -274,12 +294,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": "0x1D27",
+        "start": 7463,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1D2A",
+        "start": 7466,
         "encoding": "bcd",
         "length": 5
       }
@@ -288,12 +308,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": "0x1D2F",
+        "start": 7471,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1D32",
+        "start": 7474,
         "encoding": "bcd",
         "length": 5
       }
@@ -304,12 +324,12 @@
       "label": "Loop Champion",
       "short_label": "Loop Champ",
       "initials": {
-        "start": "0x1F87",
+        "start": 8071,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1F8A",
+        "start": 8074,
         "encoding": "bcd",
         "length": 5
       }
@@ -318,154 +338,290 @@
       "label": "Highest Davros Wave",
       "short_label": "Davros Champ",
       "initials": {
-        "start": "0x1F7D",
+        "start": 8061,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1F80",
+        "start": 8064,
         "encoding": "bcd",
         "length": 5
       }
     }
   ],
-	"audits": {
-		"B.2 Earnings Audits": {
-			"02": {"label": "Recent Left Slot",
-				"start": "0x183B", "encoding": "int", "length": 3
-			},
-			"03": {"label": "Recent Cent. Slot",
-				"start": "0x1841", "encoding": "int", "length": 3
-			},
-			"04": {"label": "Recent Rght. Slot",
-				"start": "0x1847", "encoding": "int", "length": 3
-			},
-			"05": {"label": "Recent 4th Slot",
-				"start": "0x184D", "encoding": "int", "length": 3
-			},
-			"06": {"label": "Recent Paid Cred",
-				"start": "0x1853", "encoding": "int", "length": 3
-			},
-			"07": {"label": "Recent Serv. Cred",
-				"start": "0x1859", "encoding": "int", "length": 3
-			},
-			"09": {"label": "Total Left Slot",
-				"start": "0x1817", "encoding": "int", "length": 3
-			},
-			"10": {"label": "Total Cent. Slot",
-				"start": "0x181D", "encoding": "int", "length": 3
-			},
-			"11": {"label": "Total Rght. Slot",
-				"start": "0x1823", "encoding": "int", "length": 3
-			},
-			"12": {"label": "Total 4th Slot",
-				"start": "0x1829", "encoding": "int", "length": 3
-			},
-			"13": {"label": "Total Paid Cred",
-				"start": "0x182F", "encoding": "int", "length": 3
-			},
-			"14": {"label": "Total Serv. Cred",
-				"start": "0x1835", "encoding": "int", "length": 3
-			}
-		},
-		"B.3 Standard Audits": {
-			"01": {"label": "Games Started",
-				"start": "0x1883", "encoding": "int", "length": 3
-			},
-			"02": {"label": "Total Plays",
-				"start": "0x1889", "encoding": "int", "length": 3
-			},
-			"03": {"label": "Total Free Plays",
-				"start": "0x188F", "encoding": "int", "length": 3
-			},
-			"05": {"label": "Replay Awards",
-				"start": "0x1895", "encoding": "int", "length": 3
-			},
-			"07": {"label": "Special Awards",
-				"start": "0x189B", "encoding": "int", "length": 3
-			},
-			"09": {"label": "Match Awards",
-				"start": "0x18A1", "encoding": "int", "length": 3
-			},
-			"11": {"label": "H.S.T.D. Credits",
-				"start": "0x18A7", "encoding": "int", "length": 3
-			},
-			"15": {"label": "?Tickets Awarded",
-				"start": "0x18AD", "encoding": "int", "length": 3
-			},
-			"17": {"label": "Left Drains",
-				"start": "0x1913", "encoding": "int", "length": 3
-			},
-			"18": {"label": "Right Drains",
-				"start": "0x1919", "encoding": "int", "length": 3
-			},
-			"13": {"label": "Extra Balls",
-				"start": "0x18B3", "encoding": "int", "length": 3
-			},
-			"21": {"label": "Play Time",
-				"start": "0x18B9", "encoding": "int", "length": 3,
-				"units": "seconds", "scale": 10
-			},
-			"22": {"label": "Machine On", "units": "minutes",
-				"start": "0x18BF", "encoding": "int", "length": 3
-			},
-			"23": {"label": "Balls Played",
-				"start": "0x18C5", "encoding": "int", "length": 3
-			},
-			"24": {"label": "Tilts",
-				"start": "0x18CB", "encoding": "int", "length": 3
-			},
-			"25": {"label": "Replay 1 Awards",
-				"start": "0x18D1", "encoding": "int", "length": 3
-			},
-			"26": {"label": "Replay 2 Awards",
-				"start": "0x18D7", "encoding": "int", "length": 3
-			},
-			"27": {"label": "Replay 3 Awards",
-				"start": "0x18DD", "encoding": "int", "length": 3
-			},
-			"28": {"label": "Replay 4 Awards",
-				"start": "0x18E3", "encoding": "int", "length": 3
-			},
-			"29": {"label": "1 Player Games",
-				"start": "0x18E9", "encoding": "int", "length": 3
-			},
-			"30": {"label": "2 Player Games",
-				"start": "0x18EF", "encoding": "int", "length": 3
-			},
-			"31": {"label": "3 Player Games",
-				"start": "0x18F5", "encoding": "int", "length": 3
-			},
-			"32": {"label": "4 Player Games",
-				"start": "0x18FB", "encoding": "int", "length": 3
-			},
-			"33": {"label": "H.S.T.D. Reset Count",
-				"start": "0x1C94", "encoding": "int", "length": 2
-			},
-			"34": {"label": "Burn-in Time",
-				"start": "0x190D", "encoding": "int", "length": 3,
-				"units": "seconds", "scale": 10
-			},
-			"35": {"label": "1st Replay Level", "suffix": "M",
-				"start": "0x1CBA", "encoding": "bcd", "length": 2
-			},
-			"36": {"label": "Left Flipper",
-				"start": "0x19FD", "encoding": "int", "length": 3
-			},
-			"37": {"label": "Right Flipper",
-				"start": "0x1A03", "encoding": "int", "length": 3
-			}
-		},
-		"B.4 Feature Audits": {
-			"01": {"label": "Buy-In Ex. Balls",
-				"start": "0x1A15", "encoding": "int", "length": 3
-			}
-		}
-	},
-	"checksum8": [
-		{"start": "0x1811", "end": "0x1B82", "groupings": 6, "label": "Audits"}
-	],
-	"checksum16": [
-		{"start": "0x1B83", "end": "0x1CB0", "label": "Adjustments"}
-	]
+  "audits": {
+    "B.2 Earnings Audits": {
+      "02": {
+        "label": "Recent Left Slot",
+        "start": 6203,
+        "encoding": "int",
+        "length": 3
+      },
+      "03": {
+        "label": "Recent Cent. Slot",
+        "start": 6209,
+        "encoding": "int",
+        "length": 3
+      },
+      "04": {
+        "label": "Recent Rght. Slot",
+        "start": 6215,
+        "encoding": "int",
+        "length": 3
+      },
+      "05": {
+        "label": "Recent 4th Slot",
+        "start": 6221,
+        "encoding": "int",
+        "length": 3
+      },
+      "06": {
+        "label": "Recent Paid Cred",
+        "start": 6227,
+        "encoding": "int",
+        "length": 3
+      },
+      "07": {
+        "label": "Recent Serv. Cred",
+        "start": 6233,
+        "encoding": "int",
+        "length": 3
+      },
+      "09": {
+        "label": "Total Left Slot",
+        "start": 6167,
+        "encoding": "int",
+        "length": 3
+      },
+      "10": {
+        "label": "Total Cent. Slot",
+        "start": 6173,
+        "encoding": "int",
+        "length": 3
+      },
+      "11": {
+        "label": "Total Rght. Slot",
+        "start": 6179,
+        "encoding": "int",
+        "length": 3
+      },
+      "12": {
+        "label": "Total 4th Slot",
+        "start": 6185,
+        "encoding": "int",
+        "length": 3
+      },
+      "13": {
+        "label": "Total Paid Cred",
+        "start": 6191,
+        "encoding": "int",
+        "length": 3
+      },
+      "14": {
+        "label": "Total Serv. Cred",
+        "start": 6197,
+        "encoding": "int",
+        "length": 3
+      }
+    },
+    "B.3 Standard Audits": {
+      "01": {
+        "label": "Games Started",
+        "start": 6275,
+        "encoding": "int",
+        "length": 3
+      },
+      "02": {
+        "label": "Total Plays",
+        "start": 6281,
+        "encoding": "int",
+        "length": 3
+      },
+      "03": {
+        "label": "Total Free Plays",
+        "start": 6287,
+        "encoding": "int",
+        "length": 3
+      },
+      "05": {
+        "label": "Replay Awards",
+        "start": 6293,
+        "encoding": "int",
+        "length": 3
+      },
+      "07": {
+        "label": "Special Awards",
+        "start": 6299,
+        "encoding": "int",
+        "length": 3
+      },
+      "09": {
+        "label": "Match Awards",
+        "start": 6305,
+        "encoding": "int",
+        "length": 3
+      },
+      "11": {
+        "label": "H.S.T.D. Credits",
+        "start": 6311,
+        "encoding": "int",
+        "length": 3
+      },
+      "15": {
+        "label": "?Tickets Awarded",
+        "start": 6317,
+        "encoding": "int",
+        "length": 3
+      },
+      "17": {
+        "label": "Left Drains",
+        "start": 6419,
+        "encoding": "int",
+        "length": 3
+      },
+      "18": {
+        "label": "Right Drains",
+        "start": 6425,
+        "encoding": "int",
+        "length": 3
+      },
+      "13": {
+        "label": "Extra Balls",
+        "start": 6323,
+        "encoding": "int",
+        "length": 3
+      },
+      "21": {
+        "label": "Play Time",
+        "start": 6329,
+        "encoding": "int",
+        "length": 3,
+        "units": "seconds",
+        "scale": 10
+      },
+      "22": {
+        "label": "Machine On",
+        "units": "minutes",
+        "start": 6335,
+        "encoding": "int",
+        "length": 3
+      },
+      "23": {
+        "label": "Balls Played",
+        "start": 6341,
+        "encoding": "int",
+        "length": 3
+      },
+      "24": {
+        "label": "Tilts",
+        "start": 6347,
+        "encoding": "int",
+        "length": 3
+      },
+      "25": {
+        "label": "Replay 1 Awards",
+        "start": 6353,
+        "encoding": "int",
+        "length": 3
+      },
+      "26": {
+        "label": "Replay 2 Awards",
+        "start": 6359,
+        "encoding": "int",
+        "length": 3
+      },
+      "27": {
+        "label": "Replay 3 Awards",
+        "start": 6365,
+        "encoding": "int",
+        "length": 3
+      },
+      "28": {
+        "label": "Replay 4 Awards",
+        "start": 6371,
+        "encoding": "int",
+        "length": 3
+      },
+      "29": {
+        "label": "1 Player Games",
+        "start": 6377,
+        "encoding": "int",
+        "length": 3
+      },
+      "30": {
+        "label": "2 Player Games",
+        "start": 6383,
+        "encoding": "int",
+        "length": 3
+      },
+      "31": {
+        "label": "3 Player Games",
+        "start": 6389,
+        "encoding": "int",
+        "length": 3
+      },
+      "32": {
+        "label": "4 Player Games",
+        "start": 6395,
+        "encoding": "int",
+        "length": 3
+      },
+      "33": {
+        "label": "H.S.T.D. Reset Count",
+        "start": 7316,
+        "encoding": "int",
+        "length": 2
+      },
+      "34": {
+        "label": "Burn-in Time",
+        "start": 6413,
+        "encoding": "int",
+        "length": 3,
+        "units": "seconds",
+        "scale": 10
+      },
+      "35": {
+        "label": "1st Replay Level",
+        "suffix": "M",
+        "start": 7354,
+        "encoding": "bcd",
+        "length": 2
+      },
+      "36": {
+        "label": "Left Flipper",
+        "start": 6653,
+        "encoding": "int",
+        "length": 3
+      },
+      "37": {
+        "label": "Right Flipper",
+        "start": 6659,
+        "encoding": "int",
+        "length": 3
+      }
+    },
+    "B.4 Feature Audits": {
+      "01": {
+        "label": "Buy-In Ex. Balls",
+        "start": 6677,
+        "encoding": "int",
+        "length": 3
+      }
+    }
+  },
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 7042,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 7043,
+      "end": 7344,
+      "label": "Adjustments"
+    }
+  ]
 }
