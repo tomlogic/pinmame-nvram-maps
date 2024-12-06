@@ -1,0 +1,70 @@
+{
+    "GameInfo": {
+        "GameName": "Black Knight 2000",
+        "System": "11B",
+        "FileVer": 1      
+    },
+
+    "Definition": {
+        "version": 1
+    },
+
+    "Memory" : {
+        "Start": 0,
+        "Length": 2048,
+        "NvStart": 0,
+        "NvLength": 2048
+    },
+
+    "BallInPlay": {
+        "Type": 1,
+        "Address": "0x38",
+        "Ball1": "0xF1",
+        "Ball2": "0xF2",
+        "Ball3": "0xF3",
+        "Ball4": "0xF4",
+        "Ball5": "0xF5"
+    },
+
+    "DisplayMessage": {
+        "Type": 2,
+        "Address": "0x7B4",
+        "Length": 16,
+        "Number": 3,
+        "EnableByteAddress": "0x7B0"
+    },
+
+    "Adjustments" :{
+        "Type": 1,
+        "ChecksumStartAdr": "0x780",
+        "ChecksumEndAdr": "0x7E3",
+        "ChecksumResultAdr": "0x7EC"
+    },
+
+    "HighScores": {
+        "Type": 1,
+        "ScoreAdr": "0x6FB",
+        "InitialAdr": "0x70B",
+        "BytesInScore": 4
+    },
+
+    "HSRewards": {
+        "Type": 0,
+        "HS1": 1937,
+        "HS2": 1938,
+        "HS3": 1939,
+        "HS4": 1940,
+        "DisableByte": 0
+    },
+
+    "Switches": {
+        "Type": 0,
+        "Address": 56,
+        "Length": 23
+    },
+    
+    "CoinDrop": {
+        "Type": 0
+    }
+}
+
