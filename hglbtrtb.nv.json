@@ -1,0 +1,66 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Harlem Globetrotters On Tour (Bally 1979)",
+    "https://www.ipdb.org/machine.cgi?id=1125",
+    "https://opdb.org/machines/1742",
+    "Bally MPU AS-2518-35",
+    "7-digit score display (but internally 6-digit)",
+    "hglbtrtb is on free play by default"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_nibble": "high",
+  "_roms": [
+    "hglbtrtb"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 57,
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 61,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 67,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 73,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 79,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 171,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      }
+    }
+  ]
+}
