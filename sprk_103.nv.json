@@ -16,12 +16,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": "0x14e2",
+        "start": 5346,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1490",
+        "start": 5264,
         "encoding": "bcd",
         "length": 5
       }
@@ -30,12 +30,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": "0x14ec",
+        "start": 5356,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1495",
+        "start": 5269,
         "encoding": "bcd",
         "length": 5
       }
@@ -44,12 +44,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": "0x14f6",
+        "start": 5366,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x149a",
+        "start": 5274,
         "encoding": "bcd",
         "length": 5
       }
@@ -58,12 +58,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": "0x1500",
+        "start": 5376,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x149f",
+        "start": 5279,
         "encoding": "bcd",
         "length": 5
       }
@@ -72,12 +72,12 @@
       "label": "Fifth Place",
       "short_label": "5th",
       "initials": {
-        "start": "0x150a",
+        "start": 5386,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x14a4",
+        "start": 5284,
         "encoding": "bcd",
         "length": 5
       }
@@ -86,12 +86,12 @@
       "label": "Sixth Place",
       "short_label": "6th",
       "initials": {
-        "start": "0x1514",
+        "start": 5396,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x14a9",
+        "start": 5289,
         "encoding": "bcd",
         "length": 5
       }
@@ -100,12 +100,12 @@
       "label": "Seventh Place",
       "short_label": "7th",
       "initials": {
-        "start": "0x151e",
+        "start": 5406,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x14ae",
+        "start": 5294,
         "encoding": "bcd",
         "length": 5
       }
@@ -114,12 +114,12 @@
       "label": "Eighth Place",
       "short_label": "8th",
       "initials": {
-        "start": "0x1528",
+        "start": 5416,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x14b3",
+        "start": 5299,
         "encoding": "bcd",
         "length": 5
       }
@@ -128,12 +128,12 @@
       "label": "Ninth Place",
       "short_label": "9th",
       "initials": {
-        "start": "0x1532",
+        "start": 5426,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x14b8",
+        "start": 5304,
         "encoding": "bcd",
         "length": 5
       }
@@ -142,12 +142,12 @@
       "label": "Tenth Place",
       "short_label": "10th",
       "initials": {
-        "start": "0x153c",
+        "start": 5436,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x14bd",
+        "start": 5309,
         "encoding": "bcd",
         "length": 5
       }

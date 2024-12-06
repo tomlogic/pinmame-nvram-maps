@@ -10,22 +10,22 @@
   "_version": 0.1,
   "last_game": [
     {
-      "start": "0x0200",
+      "start": 512,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x0204",
+      "start": 516,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x0208",
+      "start": 520,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x020C",
+      "start": 524,
       "encoding": "bcd",
       "length": 4
     }
@@ -40,7 +40,7 @@
         "length": 3
       },
       "score": {
-        "start": "0x0727",
+        "start": 1831,
         "encoding": "bcd",
         "length": 4
       }
@@ -54,7 +54,7 @@
         "length": 3
       },
       "score": {
-        "start": "0x072B",
+        "start": 1835,
         "encoding": "bcd",
         "length": 4
       }
@@ -68,7 +68,7 @@
         "length": 3
       },
       "score": {
-        "start": "0x072F",
+        "start": 1839,
         "encoding": "bcd",
         "length": 4
       }
@@ -82,7 +82,7 @@
         "length": 3
       },
       "score": {
-        "start": "0x0733",
+        "start": 1843,
         "encoding": "bcd",
         "length": 4
       }

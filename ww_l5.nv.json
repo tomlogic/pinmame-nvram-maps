@@ -9,28 +9,28 @@
   "_fileformat": 0.1,
   "_version": 0.1,
   "replay_score": {
-    "start": "0x41d",
+    "start": 1053,
     "encoding": "bcd",
     "length": 5
   },
   "last_game": [
     {
-      "start": "0x1730",
+      "start": 5936,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x1736",
+      "start": 5942,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x173C",
+      "start": 5948,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x1742",
+      "start": 5954,
       "encoding": "bcd",
       "length": 5
     }
@@ -40,12 +40,12 @@
       "label": "RIVER MASTER",
       "short_label": "GC",
       "initials": {
-        "start": "0x1C83",
+        "start": 7299,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1C86",
+        "start": 7302,
         "encoding": "bcd",
         "length": 5
       }
@@ -54,12 +54,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": "0x1C61",
+        "start": 7265,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1C64",
+        "start": 7268,
         "encoding": "bcd",
         "length": 5
       }
@@ -68,12 +68,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": "0x1C69",
+        "start": 7273,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1C6C",
+        "start": 7276,
         "encoding": "bcd",
         "length": 5
       }
@@ -82,12 +82,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": "0x1C71",
+        "start": 7281,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1C74",
+        "start": 7284,
         "encoding": "bcd",
         "length": 5
       }
@@ -96,12 +96,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": "0x1C79",
+        "start": 7289,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1C7C",
+        "start": 7292,
         "encoding": "bcd",
         "length": 5
       }
@@ -112,12 +112,12 @@
       "label": "Insanity Record",
       "short_label": "InsanityRecord",
       "initials": {
-        "start": "0x1EC7",
+        "start": 7879,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1ECA",
+        "start": 7882,
         "encoding": "int",
         "length": 1,
         "suffix": " Water Falls"

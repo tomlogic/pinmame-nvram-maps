@@ -9,28 +9,28 @@
   "_fileformat": 0.1,
   "_version": 0.1,
   "last_played": {
-    "start": "0x1800",
+    "start": 6144,
     "encoding": "wpc_rtc",
     "length": 7
   },
   "last_game": [
     {
-      "start": "0x1607",
+      "start": 5639,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x160C",
+      "start": 5644,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x1611",
+      "start": 5649,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x1616",
+      "start": 5654,
       "encoding": "bcd",
       "length": 5
     }
@@ -40,12 +40,12 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": "0x195E",
+        "start": 6494,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1959",
+        "start": 6489,
         "encoding": "bcd",
         "length": 5
       }
@@ -54,12 +54,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": "0x1966",
+        "start": 6502,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1961",
+        "start": 6497,
         "encoding": "bcd",
         "length": 5
       }
@@ -68,12 +68,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": "0x196E",
+        "start": 6510,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1969",
+        "start": 6505,
         "encoding": "bcd",
         "length": 5
       }
@@ -82,12 +82,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": "0x1976",
+        "start": 6518,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1971",
+        "start": 6513,
         "encoding": "bcd",
         "length": 5
       }
@@ -96,12 +96,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": "0x197E",
+        "start": 6526,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1979",
+        "start": 6521,
         "encoding": "bcd",
         "length": 5
       }
@@ -110,12 +110,12 @@
       "label": "Fifth Place",
       "short_label": "5th",
       "initials": {
-        "start": "0x1986",
+        "start": 6534,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1981",
+        "start": 6529,
         "encoding": "bcd",
         "length": 5
       }

@@ -43,13 +43,13 @@
       "label": "Commander",
       "short_label": "GC",
       "initials": {
-        "start": "0x1C67",
+        "start": 7271,
         "encoding": "ch",
         "length": 3,
         "mask": "0xDF"
       },
       "score": {
-        "start": "0x1C60",
+        "start": 7264,
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
@@ -59,13 +59,13 @@
       "label": "1st Place",
       "short_label": "1st",
       "initials": {
-        "start": "0x1C73",
+        "start": 7283,
         "encoding": "ch",
         "length": 3,
         "mask": "0xDF"
       },
       "score": {
-        "start": "0x1C6C",
+        "start": 7276,
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
@@ -75,13 +75,13 @@
       "label": "2nd Place",
       "short_label": "2nd",
       "initials": {
-        "start": "0x1C7F",
+        "start": 7295,
         "encoding": "ch",
         "length": 3,
         "mask": "0xDF"
       },
       "score": {
-        "start": "0x1C78",
+        "start": 7288,
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
@@ -91,13 +91,13 @@
       "label": "3rd Place",
       "short_label": "3rd",
       "initials": {
-        "start": "0x1C8B",
+        "start": 7307,
         "encoding": "ch",
         "length": 3,
         "mask": "0xDF"
       },
       "score": {
-        "start": "0x1C84",
+        "start": 7300,
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
@@ -109,13 +109,13 @@
       "label": "Jump Master",
       "short_label": "Jump Master",
       "initials": {
-        "start": "0x1C9F",
+        "start": 7327,
         "encoding": "ch",
         "length": 3,
         "mask": "0xDF"
       },
       "score": {
-        "start": "0x1C98",
+        "start": 7320,
         "encoding": "int",
         "length": 1,
         "suffix": " Jumps"
@@ -126,7 +126,7 @@
     "Feature Adjustments": {
       "01": {
         "label": "Replay Manual",
-        "start": "0x1F03",
+        "start": 7939,
         "encoding": "int",
         "min": 0,
         "max": 50,
@@ -137,7 +137,7 @@
       },
       "02": {
         "label": "Start Replay",
-        "start": "0x1F05",
+        "start": 7941,
         "encoding": "int",
         "min": 0,
         "max": 9900000,
@@ -146,7 +146,7 @@
       },
       "03": {
         "label": "Levels Replay",
-        "start": "0x1F07",
+        "start": 7943,
         "encoding": "int",
         "min": 1,
         "max": 4,
@@ -154,7 +154,7 @@
       },
       "06": {
         "label": "Easy Rules",
-        "start": "0x1F0D",
+        "start": 7949,
         "encoding": "enum",
         "default": 0,
         "values": [
@@ -164,7 +164,7 @@
       },
       "07": {
         "label": "Factory Rules",
-        "start": "0x1F0F",
+        "start": 7951,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -173,7 +173,7 @@
       },
       "08": {
         "label": "Hard Rules",
-        "start": "0x1F11",
+        "start": 7953,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -182,7 +182,7 @@
       },
       "09": {
         "label": "Novelty Rules",
-        "start": "0x1F13",
+        "start": 7955,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -191,7 +191,7 @@
       },
       "10": {
         "label": "5 Ball Rules",
-        "start": "0x1F15",
+        "start": 7957,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -200,7 +200,7 @@
       },
       "11": {
         "label": "Add A Ball Rules",
-        "start": "0x1F17",
+        "start": 7959,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -209,7 +209,7 @@
       },
       "12": {
         "label": "Coins",
-        "start": "0x1F19",
+        "start": 7961,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -218,7 +218,7 @@
       },
       "13": {
         "label": "Avg Ball Time",
-        "start": "0x1F1B",
+        "start": 7963,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -227,7 +227,7 @@
       },
       "14": {
         "label": "Coins Reset",
-        "start": "0x1F1D",
+        "start": 7965,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -236,7 +236,7 @@
       },
       "15": {
         "label": "Audit Reset",
-        "start": "0x1F1F",
+        "start": 7967,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -245,7 +245,7 @@
       },
       "16": {
         "label": "Hi Score Reset",
-        "start": "0x1F21",
+        "start": 7969,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -254,7 +254,7 @@
       },
       "17": {
         "label": "Expand Adjustment",
-        "start": "0x1F23",
+        "start": 7971,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -263,7 +263,7 @@
       },
       "18": {
         "label": "Award Replay",
-        "start": "0x1F25",
+        "start": 7973,
         "encoding": "enum",
         "values": [
           "Credits",
@@ -274,7 +274,7 @@
       },
       "19": {
         "label": "Award Replay",
-        "start": "0x1F27",
+        "start": 7975,
         "encoding": "enum",
         "values": [
           "Credits",
@@ -285,7 +285,7 @@
       },
       "20": {
         "label": "Match Feature",
-        "start": "0x1F29",
+        "start": 7977,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -294,7 +294,7 @@
       },
       "21": {
         "label": "Balls Game",
-        "start": "0x1F2B",
+        "start": 7979,
         "encoding": "int",
         "min": 2,
         "max": 9,
@@ -302,7 +302,7 @@
       },
       "22": {
         "label": "Warning Tilt",
-        "start": "0x1F2D",
+        "start": 7981,
         "encoding": "int",
         "min": 0,
         "max": 5,
@@ -310,7 +310,7 @@
       },
       "23": {
         "label": "Extra Balls",
-        "start": "0x1F2F",
+        "start": 7983,
         "encoding": "int",
         "min": 0,
         "max": 5,
@@ -318,7 +318,7 @@
       },
       "24": {
         "label": "Credits Limit",
-        "start": "0x1F31",
+        "start": 7985,
         "encoding": "int",
         "min": 2,
         "max": 99,
@@ -326,7 +326,7 @@
       },
       "25": {
         "label": "High Score Feature",
-        "start": "0x1F33",
+        "start": 7987,
         "encoding": "enum",
         "default": 1,
         "values": [
@@ -336,7 +336,7 @@
       },
       "26": {
         "label": "Credits HiScore 1",
-        "start": "0x1F35",
+        "start": 7989,
         "encoding": "int",
         "min": 0,
         "max": 9,
@@ -344,7 +344,7 @@
       },
       "27": {
         "label": "Credits HiScore 2",
-        "start": "0x1F37",
+        "start": 7991,
         "encoding": "int",
         "min": 0,
         "max": 9,
@@ -352,7 +352,7 @@
       },
       "28": {
         "label": "Credits HiScore 3",
-        "start": "0x1F39",
+        "start": 7993,
         "encoding": "int",
         "min": 0,
         "max": 9,
@@ -360,7 +360,7 @@
       },
       "29": {
         "label": "Credits HiScore 4",
-        "start": "0x1F3B",
+        "start": 7995,
         "encoding": "int",
         "min": 0,
         "max": 9,
@@ -368,7 +368,7 @@
       },
       "30": {
         "label": "Backup HiScore 1",
-        "start": "0x1F3D",
+        "start": 7997,
         "encoding": "int",
         "min": 0,
         "max": 9900000,
@@ -377,7 +377,7 @@
       },
       "31": {
         "label": "Backup HiScore 2",
-        "start": "0x1F3F",
+        "start": 7999,
         "encoding": "int",
         "min": 0,
         "max": 9900000,
@@ -386,7 +386,7 @@
       },
       "32": {
         "label": "Backup HiScore 3",
-        "start": "0x1F41",
+        "start": 8001,
         "encoding": "int",
         "min": 0,
         "max": 9900000,
@@ -395,7 +395,7 @@
       },
       "33": {
         "label": "Backup HiScore 4",
-        "start": "0x1F43",
+        "start": 8003,
         "encoding": "int",
         "min": 0,
         "max": 9900000,
@@ -404,7 +404,7 @@
       },
       "34": {
         "label": "Reset Every",
-        "start": "0x1F45",
+        "start": 8005,
         "encoding": "int",
         "min": 100,
         "max": 900,
@@ -413,7 +413,7 @@
       },
       "35": {
         "label": "Free Play",
-        "start": "0x1F47",
+        "start": 8007,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -422,7 +422,7 @@
       },
       "41": {
         "label": "Message Custom",
-        "start": "0x1F53",
+        "start": 8019,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -432,7 +432,7 @@
       },
       "42": {
         "label": "Attract Music",
-        "start": "0x1F55",
+        "start": 8021,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -442,7 +442,7 @@
       },
       "43": {
         "label": "Buy In Feature",
-        "start": "0x1F57",
+        "start": 8023,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -451,7 +451,7 @@
       },
       "44": {
         "label": "Flash Lamp",
-        "start": "0x1F59",
+        "start": 8025,
         "encoding": "enum",
         "values": [
           "OFF",
@@ -460,7 +460,7 @@
       },
       "45": {
         "label": "Stand Up Seq",
-        "start": "0x1F5B",
+        "start": 8027,
         "encoding": "enum",
         "values": [
           "EASY",
@@ -469,7 +469,7 @@
       },
       "46": {
         "label": "Spinner Lamp",
-        "start": "0x1F5D",
+        "start": 8029,
         "encoding": "enum",
         "values": [
           "EASY",
@@ -478,7 +478,7 @@
       },
       "47": {
         "label": "Spot StandUp",
-        "start": "0x1F5F",
+        "start": 8031,
         "encoding": "enum",
         "values": [
           "EASY",
@@ -487,7 +487,7 @@
       },
       "48": {
         "label": "Target Practice",
-        "start": "0x1F61",
+        "start": 8033,
         "encoding": "enum",
         "values": [
           "EASY",
@@ -496,7 +496,7 @@
       },
       "49": {
         "label": "1 Meg Target",
-        "start": "0x1F63",
+        "start": 8035,
         "encoding": "int",
         "min": 1,
         "max": 8,
@@ -504,7 +504,7 @@
       },
       "50": {
         "label": "Laser Kick On",
-        "start": "0x1F65",
+        "start": 8037,
         "encoding": "enum",
         "values": [
           "EASY",
@@ -513,7 +513,7 @@
       },
       "51": {
         "label": "Special Target",
-        "start": "0x1F67",
+        "start": 8039,
         "encoding": "int",
         "min": 1,
         "max": 8,
@@ -521,7 +521,7 @@
       },
       "52": {
         "label": "2X Scores Time",
-        "start": "0x1F69",
+        "start": 8041,
         "encoding": "int",
         "min": 5,
         "max": 25,
@@ -529,7 +529,7 @@
       },
       "53": {
         "label": "All Lit Jumps",
-        "start": "0x1F6B",
+        "start": 8043,
         "encoding": "int",
         "min": 5,
         "max": 25,
@@ -537,7 +537,7 @@
       },
       "54": {
         "label": "Scanning Extra Ball",
-        "start": "0x1F6D",
+        "start": 8045,
         "encoding": "int",
         "min": 5,
         "max": 50,
@@ -545,7 +545,7 @@
       },
       "55": {
         "label": "Factory Restore",
-        "start": "0x1F6F",
+        "start": 8047,
         "encoding": "enum",
         "values": [
           "OFF",

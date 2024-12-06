@@ -29,7 +29,7 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": "0x39",
+      "start": 57,
       "encoding": "bcd",
       "length": 2,
       "nibble": "low"
@@ -40,13 +40,13 @@
       "label": "High Score #1",
       "short_label": "1st",
       "initials": {
-        "start": "0xB7",
+        "start": 183,
         "encoding": "ch",
         "length": 6,
         "nibble": "low"
       },
       "score": {
-        "start": "0xBD",
+        "start": 189,
         "encoding": "bcd",
         "length": 7,
         "nibble": "low",
@@ -57,13 +57,13 @@
       "label": "High Score #2",
       "short_label": "2nd",
       "initials": {
-        "start": "0xC4",
+        "start": 196,
         "encoding": "ch",
         "length": 6,
         "nibble": "low"
       },
       "score": {
-        "start": "0xCA",
+        "start": 202,
         "encoding": "bcd",
         "length": 7,
         "nibble": "low",
@@ -74,13 +74,13 @@
       "label": "High Score #3",
       "short_label": "3rd",
       "initials": {
-        "start": "0xD1",
+        "start": 209,
         "encoding": "ch",
         "length": 6,
         "nibble": "low"
       },
       "score": {
-        "start": "0xD7",
+        "start": 215,
         "encoding": "bcd",
         "length": 7,
         "nibble": "low",
@@ -91,13 +91,13 @@
       "label": "High Score #4",
       "short_label": "4th",
       "initials": {
-        "start": "0xDE",
+        "start": 222,
         "encoding": "ch",
         "length": 6,
         "nibble": "low"
       },
       "score": {
-        "start": "0xE4",
+        "start": 228,
         "encoding": "bcd",
         "length": 7,
         "nibble": "low",
@@ -108,13 +108,13 @@
       "label": "High Score #5",
       "short_label": "5th",
       "initials": {
-        "start": "0xEB",
+        "start": 235,
         "encoding": "ch",
         "length": 6,
         "nibble": "low"
       },
       "score": {
-        "start": "0xF1",
+        "start": 241,
         "encoding": "bcd",
         "length": 7,
         "nibble": "low",
@@ -126,70 +126,70 @@
     "Bookkeeping": {
       "01": {
         "label": "Left Chute Coins",
-        "start": "0x00",
+        "start": 0,
         "encoding": "bcd",
         "length": 4,
         "nibble": "low"
       },
       "02": {
         "label": "Right Chute Coins",
-        "start": "0x04",
+        "start": 4,
         "encoding": "bcd",
         "length": 4,
         "nibble": "low"
       },
       "03": {
         "label": "Center Chute Coins",
-        "start": "0x08",
+        "start": 8,
         "encoding": "bcd",
         "length": 4,
         "nibble": "low"
       },
       "04": {
         "label": "Total Plays",
-        "start": "0x0C",
+        "start": 12,
         "encoding": "bcd",
         "length": 4,
         "nibble": "low"
       },
       "05": {
         "label": "Total Replays",
-        "start": "0x10",
+        "start": 16,
         "encoding": "bcd",
         "length": 4,
         "nibble": "low"
       },
       "07": {
         "label": "Extra Balls",
-        "start": "0x14",
+        "start": 20,
         "encoding": "bcd",
         "length": 3,
         "nibble": "low"
       },
       "08": {
         "label": "Tilts",
-        "start": "0x17",
+        "start": 23,
         "encoding": "bcd",
         "length": 3,
         "nibble": "low"
       },
       "09": {
         "label": "Specials",
-        "start": "0x1A",
+        "start": 26,
         "encoding": "bcd",
         "length": 3,
         "nibble": "low"
       },
       "10": {
         "label": "Times HGTD Awarded",
-        "start": "0x1D",
+        "start": 29,
         "encoding": "bcd",
         "length": 3,
         "nibble": "low"
       },
       "14": {
         "label": "Highest Game To Date",
-        "start": "0x2C",
+        "start": 44,
         "encoding": "bcd",
         "length": 7,
         "nibble": "low",
@@ -197,7 +197,7 @@
       },
       "14a": {
         "label": "HGTD Initials",
-        "start": "0x26",
+        "start": 38,
         "encoding": "ch",
         "length": 6,
         "nibble": "low"
@@ -205,7 +205,7 @@
       "15": {
         "label": "Game Time",
         "suffix": " seconds",
-        "start": "0x20",
+        "start": 32,
         "encoding": "bcd",
         "length": 6,
         "nibble": "low",
@@ -218,14 +218,14 @@
       "06": {
         "label": "Replay Percentage",
         "suffix": "%",
-        "start": "0x3B",
+        "start": 59,
         "encoding": "bcd",
         "length": 2,
         "nibble": "low"
       },
       "11": {
         "label": "First High Score",
-        "start": "0x33",
+        "start": 51,
         "encoding": "bcd",
         "length": 2,
         "nibble": "low",
@@ -233,7 +233,7 @@
       },
       "12": {
         "label": "Second High Score",
-        "start": "0x35",
+        "start": 53,
         "encoding": "bcd",
         "length": 2,
         "nibble": "low",
@@ -241,7 +241,7 @@
       },
       "13": {
         "label": "Third High Score",
-        "start": "0x37",
+        "start": 55,
         "encoding": "bcd",
         "length": 2,
         "nibble": "low",

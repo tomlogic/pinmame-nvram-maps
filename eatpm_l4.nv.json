@@ -10,22 +10,22 @@
   "_version": 0.1,
   "last_game": [
     {
-      "start": "0x200",
+      "start": 512,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x204",
+      "start": 516,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x208",
+      "start": 520,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x20c",
+      "start": 524,
       "encoding": "bcd",
       "length": 4
     }
@@ -35,12 +35,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": "0x70b",
+        "start": 1803,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x6fb",
+        "start": 1787,
         "encoding": "bcd",
         "length": 4
       }
@@ -49,12 +49,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": "0x70e",
+        "start": 1806,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x6ff",
+        "start": 1791,
         "encoding": "bcd",
         "length": 4
       }
@@ -63,12 +63,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": "0x711",
+        "start": 1809,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x703",
+        "start": 1795,
         "encoding": "bcd",
         "length": 4
       }
@@ -77,12 +77,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": "0x714",
+        "start": 1812,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x707",
+        "start": 1799,
         "encoding": "bcd",
         "length": 4
       }

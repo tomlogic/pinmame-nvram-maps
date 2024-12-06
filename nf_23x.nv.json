@@ -12,22 +12,22 @@
   "_version": 0.1,
   "last_game": [
     {
-      "start": "0x16A1",
+      "start": 5793,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x16A8",
+      "start": 5800,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x16AF",
+      "start": 5807,
       "encoding": "bcd",
       "length": 5
     },
     {
-      "start": "0x16B6",
+      "start": 5814,
       "encoding": "bcd",
       "length": 5
     }
@@ -37,12 +37,12 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": "0x1D13",
+        "start": 7443,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1D17",
+        "start": 7447,
         "encoding": "bcd",
         "length": 5
       }
@@ -51,12 +51,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": "0x1CED",
+        "start": 7405,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1CF1",
+        "start": 7409,
         "encoding": "bcd",
         "length": 5
       }
@@ -65,12 +65,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": "0x1CF6",
+        "start": 7414,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1CFA",
+        "start": 7418,
         "encoding": "bcd",
         "length": 5
       }
@@ -79,12 +79,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": "0x1CFF",
+        "start": 7423,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1D03",
+        "start": 7427,
         "encoding": "bcd",
         "length": 5
       }
@@ -93,12 +93,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": "0x1D08",
+        "start": 7432,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1D0C",
+        "start": 7436,
         "encoding": "bcd",
         "length": 5
       }
@@ -109,12 +109,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": "0x1F52",
+        "start": 8018,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1F55",
+        "start": 8021,
         "encoding": "bcd",
         "length": 5
       }
@@ -123,12 +123,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": "0x1F5B",
+        "start": 8027,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1F5E",
+        "start": 8030,
         "encoding": "bcd",
         "length": 5
       }
@@ -137,12 +137,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": "0x1F64",
+        "start": 8036,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1F67",
+        "start": 8039,
         "encoding": "bcd",
         "length": 5
       }
@@ -151,12 +151,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": "0x1F6D",
+        "start": 8045,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x1F70",
+        "start": 8048,
         "encoding": "bcd",
         "length": 5
       }

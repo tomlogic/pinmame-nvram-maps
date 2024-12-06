@@ -18,29 +18,29 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": "0x39",
+      "start": 57,
       "length": 1,
       "encoding": "bcd"
     }
   },
   "last_game": [
     {
-      "start": "0x200",
+      "start": 512,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x204",
+      "start": 516,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x208",
+      "start": 520,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x20c",
+      "start": 524,
       "encoding": "bcd",
       "length": 4
     }

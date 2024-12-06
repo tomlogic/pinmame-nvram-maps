@@ -28,21 +28,21 @@
   "game_state": {
     "match": {
       "label": "Match",
-      "start": "0x36",
+      "start": 54,
       "length": 2,
       "encoding": "bcd",
       "nibble": "high"
     },
     "current_ball": {
       "label": "Ball",
-      "start": "0x36",
+      "start": 54,
       "length": 2,
       "encoding": "bcd",
       "nibble": "high"
     },
     "credits": {
       "label": "Credits",
-      "start": "0xD5",
+      "start": 213,
       "length": 2,
       "encoding": "bcd",
       "nibble": "high"
@@ -50,28 +50,28 @@
     "scores": [
       {
         "label": "P1",
-        "start": "0x1E",
+        "start": 30,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       {
         "label": "P2",
-        "start": "0x24",
+        "start": 36,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       {
         "label": "P3",
-        "start": "0x2A",
+        "start": 42,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       {
         "label": "P4",
-        "start": "0x30",
+        "start": 48,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
@@ -80,25 +80,25 @@
   },
   "last_game": [
     {
-      "start": "0x3C",
+      "start": 60,
       "length": 6,
       "encoding": "bcd",
       "nibble": "high"
     },
     {
-      "start": "0x42",
+      "start": 66,
       "length": 6,
       "encoding": "bcd",
       "nibble": "high"
     },
     {
-      "start": "0x48",
+      "start": 72,
       "length": 6,
       "encoding": "bcd",
       "nibble": "high"
     },
     {
-      "start": "0x4E",
+      "start": 78,
       "length": 6,
       "encoding": "bcd",
       "nibble": "high"
@@ -109,7 +109,7 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": "0xCF",
+        "start": 207,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
@@ -120,28 +120,28 @@
     "Adjustments": {
       "01": {
         "label": "Replay 1",
-        "start": "0xBD",
+        "start": 189,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       "02": {
         "label": "Replay 2",
-        "start": "0xC3",
+        "start": 195,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       "03": {
         "label": "Replay 3",
-        "start": "0xC9",
+        "start": 201,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       "04": {
         "label": "High Score",
-        "start": "0xCF",
+        "start": 207,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
@@ -152,49 +152,49 @@
     "Audits": {
       "05": {
         "label": "Credits",
-        "start": "0xD5",
+        "start": 213,
         "length": 2,
         "encoding": "bcd",
         "nibble": "high"
       },
       "06": {
         "label": "Total Plays",
-        "start": "0xDB",
+        "start": 219,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       "07": {
         "label": "Total Replays",
-        "start": "0xE1",
+        "start": 225,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       "08": {
         "label": "HSTD Beaten",
-        "start": "0xE7",
+        "start": 231,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       "09": {
         "label": "Coin Chute 2",
-        "start": "0xED",
+        "start": 237,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       "10": {
         "label": "Coin Chute 1",
-        "start": "0xF3",
+        "start": 243,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"
       },
       "11": {
         "label": "Coin Chute 3",
-        "start": "0xF9",
+        "start": 249,
         "length": 6,
         "encoding": "bcd",
         "nibble": "high"

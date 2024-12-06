@@ -16,29 +16,29 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": "0x39",
+      "start": 57,
       "length": 1,
       "encoding": "bcd"
     }
   },
   "last_game": [
     {
-      "start": "0x200",
+      "start": 512,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x204",
+      "start": 516,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x208",
+      "start": 520,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x20c",
+      "start": 524,
       "encoding": "bcd",
       "length": 4
     }
@@ -48,12 +48,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": "0x73b",
+        "start": 1851,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x72b",
+        "start": 1835,
         "encoding": "bcd",
         "length": 4
       }
@@ -62,12 +62,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": "0x73e",
+        "start": 1854,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x72f",
+        "start": 1839,
         "encoding": "bcd",
         "length": 4
       }
@@ -76,12 +76,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": "0x741",
+        "start": 1857,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x733",
+        "start": 1843,
         "encoding": "bcd",
         "length": 4
       }
@@ -90,12 +90,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": "0x744",
+        "start": 1860,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x737",
+        "start": 1847,
         "encoding": "bcd",
         "length": 4
       }

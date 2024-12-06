@@ -14,20 +14,20 @@
     "current_player": {
       "label": "Current Player",
       "short_label": "Players",
-      "start": "0xA9",
+      "start": 169,
       "encoding": "int",
       "offset": 1
     },
     "player_count": {
       "label": "Player Count",
       "short_label": "P#",
-      "start": "0xA8",
+      "start": 168,
       "encoding": "int",
       "offset": 1
     },
     "current_ball": {
       "label": "Ball",
-      "start": "0x38",
+      "start": 56,
       "encoding": "bcd",
       "mask": "0x0F",
       "special_values": {
@@ -37,7 +37,7 @@
     },
     "match": {
       "label": "Match",
-      "start": "0x38",
+      "start": 56,
       "encoding": "bcd",
       "mask": "0xF0",
       "special_values": {
@@ -46,14 +46,14 @@
     },
     "playfield_mult": {
       "label": "Playfield Multiplier",
-      "start": "0xBB",
+      "start": 187,
       "encoding": "int",
       "suffix": "X"
     },
     "bonus": {
       "label": "Bonus",
       "_note": "called Orion Bonus in game",
-      "start": "0xE7",
+      "start": 231,
       "length": 2,
       "encoding": "bcd",
       "scale": 100
@@ -61,7 +61,7 @@
     "bonusX": {
       "label": "Bonus Multiplier",
       "_note": "extracting value from lamp matrix col 2",
-      "start": "0x11",
+      "start": 17,
       "encoding": "bits",
       "suffix": "X",
       "offset": 256,
@@ -81,7 +81,7 @@
     "xcel_value": {
       "label": "X-Cellerator Value",
       "_note": "extracting value from lamp matrix col 6-7",
-      "start": "0x15",
+      "start": 21,
       "length": 2,
       "encoding": "bits",
       "values": [
@@ -105,7 +105,7 @@
     },
     "jackpot": {
       "label": "Jackpot Bonus",
-      "start": "0x5D0",
+      "start": 1488,
       "length": 3,
       "encoding": "bcd",
       "scale": 100
@@ -113,22 +113,22 @@
   },
   "last_game": [
     {
-      "start": "0x200",
+      "start": 512,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x204",
+      "start": 516,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x208",
+      "start": 520,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x20C",
+      "start": 524,
       "encoding": "bcd",
       "length": 4
     }
@@ -138,13 +138,13 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": "0x71F",
+        "start": 1823,
         "encoding": "ch",
         "length": 3,
         "_note": "slash (/) used for space ( ) in all initials"
       },
       "score": {
-        "start": "0x70F",
+        "start": 1807,
         "encoding": "bcd",
         "length": 4
       }
@@ -153,12 +153,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": "0x722",
+        "start": 1826,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x713",
+        "start": 1811,
         "encoding": "bcd",
         "length": 4
       }
@@ -167,12 +167,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": "0x725",
+        "start": 1829,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x717",
+        "start": 1815,
         "encoding": "bcd",
         "length": 4
       }
@@ -181,12 +181,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": "0x728",
+        "start": 1832,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x71B",
+        "start": 1819,
         "encoding": "bcd",
         "length": 4
       }
@@ -196,7 +196,7 @@
     "Adjustments": {
       "01": {
         "label": "Auto Replay %",
-        "start": "0x780",
+        "start": 1920,
         "encoding": "bcd",
         "min": 4,
         "max": 50,
@@ -208,7 +208,7 @@
       "02a": {
         "label": "Replay Start",
         "_note": "if Adj01 > 4",
-        "start": "0x781",
+        "start": 1921,
         "encoding": "bcd",
         "min": 8,
         "max": 20,
@@ -218,7 +218,7 @@
       "03a": {
         "label": "Replay Levels",
         "_note": "if Adj01 > 4",
-        "start": "0x782",
+        "start": 1922,
         "encoding": "bcd",
         "min": 0,
         "max": 3,
@@ -227,7 +227,7 @@
       "02b": {
         "label": "Replay Level 1",
         "_note": "if Adj01 == 4",
-        "start": "0x781",
+        "start": 1921,
         "encoding": "bcd",
         "min": 0,
         "max": 99,
@@ -240,7 +240,7 @@
       "03b": {
         "label": "Replay Level 2",
         "_note": "if Adj01 == 4",
-        "start": "0x782",
+        "start": 1922,
         "encoding": "bcd",
         "min": 0,
         "max": 99,
@@ -252,7 +252,7 @@
       "04b": {
         "label": "Replay Level 3",
         "_note": "if Adj01 == 4",
-        "start": "0x783",
+        "start": 1923,
         "encoding": "bcd",
         "min": 0,
         "max": 99,
@@ -264,7 +264,7 @@
       "05b": {
         "label": "Replay Level 4",
         "_note": "if Adj01 == 4",
-        "start": "0x784",
+        "start": 1924,
         "encoding": "bcd",
         "min": 0,
         "max": 99,
@@ -275,7 +275,7 @@
       },
       "06": {
         "label": "Replay Award",
-        "start": "0x785",
+        "start": 1925,
         "encoding": "enum",
         "values": [
           "Credit",
@@ -286,7 +286,7 @@
       },
       "07": {
         "label": "Special Award",
-        "start": "0x786",
+        "start": 1926,
         "encoding": "enum",
         "values": [
           "Credit",
@@ -296,7 +296,7 @@
       },
       "08": {
         "label": "Match Feature",
-        "start": "0x787",
+        "start": 1927,
         "encoding": "bcd",
         "min": 0,
         "max": 50,
@@ -308,7 +308,7 @@
       },
       "09": {
         "label": "Balls Per Game",
-        "start": "0x788",
+        "start": 1928,
         "encoding": "bcd",
         "min": 1,
         "max": 9,
@@ -316,7 +316,7 @@
       },
       "10": {
         "label": "Tilt Warnings",
-        "start": "0x789",
+        "start": 1929,
         "encoding": "bcd",
         "min": 1,
         "max": 5,
@@ -324,7 +324,7 @@
       },
       "11": {
         "label": "Max Extra Balls",
-        "start": "0x78A",
+        "start": 1930,
         "encoding": "bcd",
         "min": 0,
         "max": 9,
@@ -335,7 +335,7 @@
       },
       "12": {
         "label": "Max Credits",
-        "start": "0x78B",
+        "start": 1931,
         "encoding": "bcd",
         "min": 5,
         "max": 99,
@@ -343,7 +343,7 @@
       },
       "13": {
         "label": "Highest Scores",
-        "start": "0x78C",
+        "start": 1932,
         "encoding": "enum",
         "values": [
           "Off",
@@ -353,7 +353,7 @@
       },
       "14": {
         "label": "Backup High Score 1",
-        "start": "0x78D",
+        "start": 1933,
         "encoding": "bcd",
         "min": 0,
         "max": 99,
@@ -362,7 +362,7 @@
       },
       "15": {
         "label": "Backup High Score 2",
-        "start": "0x78E",
+        "start": 1934,
         "encoding": "bcd",
         "min": 0,
         "max": 99,
@@ -371,7 +371,7 @@
       },
       "16": {
         "label": "Backup High Score 3",
-        "start": "0x78F",
+        "start": 1935,
         "encoding": "bcd",
         "min": 0,
         "max": 99,
@@ -380,7 +380,7 @@
       },
       "17": {
         "label": "Backup High Score 4",
-        "start": "0x790",
+        "start": 1936,
         "encoding": "bcd",
         "min": 0,
         "max": 99,
@@ -389,7 +389,7 @@
       },
       "18": {
         "label": "High Score 1 Credits",
-        "start": "0x791",
+        "start": 1937,
         "encoding": "bcd",
         "min": 0,
         "max": 10,
@@ -397,7 +397,7 @@
       },
       "19": {
         "label": "High Score 2 Credits",
-        "start": "0x792",
+        "start": 1938,
         "encoding": "bcd",
         "min": 0,
         "max": 3,
@@ -405,7 +405,7 @@
       },
       "20": {
         "label": "High Score 3 Credits",
-        "start": "0x793",
+        "start": 1939,
         "encoding": "bcd",
         "min": 0,
         "max": 3,
@@ -413,7 +413,7 @@
       },
       "21": {
         "label": "High Score 4 Credits",
-        "start": "0x794",
+        "start": 1940,
         "encoding": "bcd",
         "min": 0,
         "max": 3,
@@ -421,7 +421,7 @@
       },
       "22": {
         "label": "HSTD Reset Every",
-        "start": "0x795",
+        "start": 1941,
         "encoding": "bcd",
         "min": 0,
         "max": 99,
@@ -434,7 +434,7 @@
       },
       "23": {
         "label": "Free Play",
-        "start": "0x796",
+        "start": 1942,
         "encoding": "enum",
         "values": [
           "No",
@@ -443,7 +443,7 @@
       },
       "24": {
         "label": "Pricing",
-        "start": "0x797",
+        "start": 1943,
         "encoding": "bcd",
         "min": 0,
         "max": 16,
@@ -454,42 +454,42 @@
       },
       "25": {
         "label": "Left Units",
-        "start": "0x798",
+        "start": 1944,
         "encoding": "bcd",
         "min": 0,
         "max": 99
       },
       "26": {
         "label": "Center Units",
-        "start": "0x799",
+        "start": 1945,
         "encoding": "bcd",
         "min": 0,
         "max": 99
       },
       "27": {
         "label": "Right Units",
-        "start": "0x79A",
+        "start": 1946,
         "encoding": "bcd",
         "min": 0,
         "max": 99
       },
       "28": {
         "label": "Units/Credit",
-        "start": "0x79B",
+        "start": 1947,
         "encoding": "bcd",
         "min": 0,
         "max": 99
       },
       "29": {
         "label": "Units/Bonus",
-        "start": "0x79C",
+        "start": 1948,
         "encoding": "bcd",
         "min": 0,
         "max": 99
       },
       "30": {
         "label": "Minimum Units",
-        "start": "0x79D",
+        "start": 1949,
         "encoding": "bcd",
         "min": 0,
         "max": 99
@@ -498,13 +498,13 @@
         "label": "Spinner On Value",
         "min": 1,
         "max": 9,
-        "start": "0x79E",
+        "start": 1950,
         "encoding": "bcd",
         "suffix": "K"
       },
       "32": {
         "label": "Left Kickback",
-        "start": "0x79F",
+        "start": 1951,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -513,7 +513,7 @@
       },
       "33": {
         "label": "Xporter Memory",
-        "start": "0x7A0",
+        "start": 1952,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -522,7 +522,7 @@
       },
       "34": {
         "label": "Special Memory",
-        "start": "0x7A1",
+        "start": 1953,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -531,7 +531,7 @@
       },
       "35": {
         "label": "Rescue Memory",
-        "start": "0x7A2",
+        "start": 1954,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -540,7 +540,7 @@
       },
       "36": {
         "label": "Xporter Bonus Time",
-        "start": "0x7A3",
+        "start": 1955,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -549,7 +549,7 @@
       },
       "37": {
         "label": "Top Lane Memory",
-        "start": "0x7A4",
+        "start": 1956,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -558,7 +558,7 @@
       },
       "38": {
         "label": "Extra Ball Memory",
-        "start": "0x7A5",
+        "start": 1957,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -569,13 +569,13 @@
         "label": "Jackpot Adv. Value",
         "min": 1,
         "max": 99,
-        "start": "0x7A6",
+        "start": 1958,
         "encoding": "bcd",
         "suffix": "K"
       },
       "40": {
         "label": "Easy Lock (via Ret Lns)",
-        "start": "0x7A7",
+        "start": 1959,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -584,7 +584,7 @@
       },
       "41": {
         "label": "Top Lane Change",
-        "start": "0x7A8",
+        "start": 1960,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -593,7 +593,7 @@
       },
       "42": {
         "label": "Consol Extra Ball",
-        "start": "0x7A9",
+        "start": 1961,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -602,7 +602,7 @@
       },
       "43": {
         "label": "Extra Ball Percent",
-        "start": "0x7AA",
+        "start": 1962,
         "encoding": "bcd",
         "suffix": "%",
         "min": 0,
@@ -613,7 +613,7 @@
       },
       "44": {
         "label": "Extra Ball On",
-        "start": "0x7AB",
+        "start": 1963,
         "encoding": "enum",
         "default": 1,
         "values": [
@@ -625,7 +625,7 @@
       },
       "45": {
         "label": "Xcel Memory",
-        "start": "0x7AC",
+        "start": 1964,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -634,18 +634,18 @@
       },
       "46": {
         "label": "Not Used",
-        "start": "0x7AD",
+        "start": 1965,
         "encoding": "int"
       },
       "47": {
         "label": "Consolation Time",
-        "start": "0x7AE",
+        "start": 1966,
         "encoding": "bcd",
         "suffix": " seconds"
       },
       "48": {
         "label": "Attract Sounds",
-        "start": "0x7AF",
+        "start": 1967,
         "encoding": "enum",
         "values": [
           "None",
@@ -655,7 +655,7 @@
       },
       "49": {
         "label": "Custom Message",
-        "start": "0x7B0",
+        "start": 1968,
         "encoding": "enum",
         "values": [
           "On",
@@ -666,28 +666,28 @@
         "label": "Custom Msg Line 1",
         "encoding": "ch",
         "_note": "set high bit for period after letter",
-        "start": "0x7B4",
+        "start": 1972,
         "length": 16,
         "default": " G E T    M  E  "
       },
       "49b": {
         "label": "Custom Msg Line 2",
         "encoding": "ch",
-        "start": "0x7C4",
+        "start": 1988,
         "length": 16,
         "default": "  OUTTA   HERE  "
       },
       "49c": {
         "label": "Custom Msg Line 3",
         "encoding": "ch",
-        "start": "0x7D4",
+        "start": 2004,
         "length": 16,
         "default": "BEAM ME UP BALLY"
       },
       "50": {
         "label": "Display AU 01 - 04",
         "_note": "TODO: check enum values",
-        "start": "0x7B1",
+        "start": 1969,
         "encoding": "enum",
         "values": [
           "Yes",
@@ -697,12 +697,12 @@
       },
       "51": {
         "label": "Unused Adjustment",
-        "start": "0x7B2",
+        "start": 1970,
         "encoding": "int"
       },
       "52": {
         "label": "Unused Adjustment",
-        "start": "0x7B3",
+        "start": 1971,
         "encoding": "int"
       }
     }
@@ -710,289 +710,289 @@
   "audits": {
     "Audits": {
       "01": {
-        "start": "0x65F",
+        "start": 1631,
         "encoding": "bcd",
         "length": 3,
         "label": "Left Coins"
       },
       "02": {
-        "start": "0x663",
+        "start": 1635,
         "encoding": "bcd",
         "length": 3,
         "label": "Center Coins"
       },
       "03": {
-        "start": "0x667",
+        "start": 1639,
         "encoding": "bcd",
         "length": 3,
         "label": "Right Coins"
       },
       "04": {
-        "start": "0x66B",
+        "start": 1643,
         "encoding": "bcd",
         "length": 3,
         "label": "Paid Credits"
       },
       "05": {
-        "start": "0x66F",
+        "start": 1647,
         "encoding": "bcd",
         "length": 3,
         "label": "Total Plays"
       },
       "06": {
-        "start": "0x673",
+        "start": 1651,
         "encoding": "bcd",
         "length": 3,
         "label": "Total Free"
       },
       "08": {
-        "start": "0x677",
+        "start": 1655,
         "encoding": "bcd",
         "length": 3,
         "label": "Replay Awards"
       },
       "10": {
-        "start": "0x67B",
+        "start": 1659,
         "encoding": "bcd",
         "length": 3,
         "label": "Special Awards"
       },
       "12": {
-        "start": "0x67F",
+        "start": 1663,
         "encoding": "bcd",
         "length": 3,
         "label": "Match Awards"
       },
       "13": {
-        "start": "0x683",
+        "start": 1667,
         "encoding": "bcd",
         "length": 3,
         "label": "HSTD Credits"
       },
       "15": {
-        "start": "0x687",
+        "start": 1671,
         "encoding": "bcd",
         "length": 3,
         "label": "Extra Balls"
       },
       "18": {
-        "start": "0x68B",
+        "start": 1675,
         "encoding": "bcd",
         "length": 3,
         "label": "Minutes of Play"
       },
       "19": {
-        "start": "0x68F",
+        "start": 1679,
         "encoding": "bcd",
         "length": 3,
         "label": "Balls Played"
       },
       "20": {
-        "start": "0x693",
+        "start": 1683,
         "encoding": "bcd",
         "length": 3,
         "label": "Replay 1 Awards"
       },
       "21": {
-        "start": "0x697",
+        "start": 1687,
         "encoding": "bcd",
         "length": 3,
         "label": "Replay 2 Awards"
       },
       "22": {
-        "start": "0x69B",
+        "start": 1691,
         "encoding": "bcd",
         "length": 3,
         "label": "Replay 3 Awards"
       },
       "23": {
-        "start": "0x69F",
+        "start": 1695,
         "encoding": "bcd",
         "length": 3,
         "label": "Replay 4 Awards"
       },
       "24": {
-        "start": "0x6A3",
+        "start": 1699,
         "encoding": "bcd",
         "length": 3,
         "label": "1 Player Games"
       },
       "25": {
-        "start": "0x6A7",
+        "start": 1703,
         "encoding": "bcd",
         "length": 3,
         "label": "2 Player Games"
       },
       "26": {
-        "start": "0x6AB",
+        "start": 1707,
         "encoding": "bcd",
         "length": 3,
         "label": "3 Player Games"
       },
       "27": {
-        "start": "0x6AF",
+        "start": 1711,
         "encoding": "bcd",
         "length": 3,
         "label": "4 Player Games"
       },
       "28": {
-        "start": "0x6B3",
+        "start": 1715,
         "encoding": "bcd",
         "length": 3,
         "label": "Burn in Cycles"
       },
       "29": {
-        "start": "0x6B7",
+        "start": 1719,
         "encoding": "bcd",
         "length": 3,
         "label": "Made Multiball"
       },
       "30": {
-        "start": "0x6BB",
+        "start": 1723,
         "encoding": "bcd",
         "length": 3,
         "label": "Made Jackpot"
       },
       "31": {
-        "start": "0x6BF",
+        "start": 1727,
         "encoding": "bcd",
         "length": 3,
         "label": "Made Kickback"
       },
       "32": {
-        "start": "0x6C3",
+        "start": 1731,
         "encoding": "bcd",
         "length": 3,
         "label": "Made Bonus 5X"
       },
       "33": {
-        "start": "0x6C7",
+        "start": 1735,
         "encoding": "bcd",
         "length": 3,
         "label": "Xporter 1 Mil. Lit"
       },
       "34": {
-        "start": "0x6CB",
+        "start": 1739,
         "encoding": "bcd",
         "length": 3,
         "label": "Made Xporter 1 Mil."
       },
       "35": {
-        "start": "0x6CF",
+        "start": 1743,
         "encoding": "bcd",
         "length": 3,
         "label": "Excellerator"
       },
       "36": {
-        "start": "0x6D3",
+        "start": 1747,
         "encoding": "bcd",
         "length": 3,
         "label": "Excellerator 250K Made"
       },
       "37": {
-        "start": "0x6D7",
+        "start": 1751,
         "encoding": "bcd",
         "length": 3,
         "label": "Extra Ball Lit"
       },
       "38": {
-        "start": "0x6DB",
+        "start": 1755,
         "encoding": "bcd",
         "length": 3,
         "label": "Rescue Bonus Made"
       },
       "39": {
-        "start": "0x72B",
+        "start": 1835,
         "encoding": "bcd",
         "length": 3,
         "label": "HSTD Reset Counter"
       },
       "40": {
-        "start": "0x6DF",
+        "start": 1759,
         "encoding": "bcd",
         "length": 3,
         "label": "0.0-0.4 Mil. Score"
       },
       "41": {
-        "start": "0x6E3",
+        "start": 1763,
         "encoding": "bcd",
         "length": 3,
         "label": "0.5-0.9 Mil. Score"
       },
       "42": {
-        "start": "0x6E7",
+        "start": 1767,
         "encoding": "bcd",
         "length": 3,
         "label": "1.0-1.4 Mil. Score"
       },
       "43": {
-        "start": "0x6EB",
+        "start": 1771,
         "encoding": "bcd",
         "length": 3,
         "label": "1.5-1.9 Mil. Score"
       },
       "44": {
-        "start": "0x6EF",
+        "start": 1775,
         "encoding": "bcd",
         "length": 3,
         "label": "2.0-2.9 Mil. Score"
       },
       "45": {
-        "start": "0x6F3",
+        "start": 1779,
         "encoding": "bcd",
         "length": 3,
         "label": "3.0-3.9 Mil. Score"
       },
       "46": {
-        "start": "0x6F7",
+        "start": 1783,
         "encoding": "bcd",
         "length": 3,
         "label": "4.0-4.9 Mil. Score"
       },
       "47": {
-        "start": "0x6FB",
+        "start": 1787,
         "encoding": "bcd",
         "length": 3,
         "label": "5.0-5.9 Mil. Score"
       },
       "48": {
-        "start": "0x6FF",
+        "start": 1791,
         "encoding": "bcd",
         "length": 3,
         "label": "6.0-7.9 Mil. Score"
       },
       "49": {
-        "start": "0x703",
+        "start": 1795,
         "encoding": "bcd",
         "length": 3,
         "label": "8.0-9.9 Mil. Score"
       },
       "50": {
-        "start": "0x707",
+        "start": 1799,
         "encoding": "bcd",
         "length": 3,
         "label": "10-99 Mil. Score"
       },
       "51": {
-        "start": "0x74B",
+        "start": 1867,
         "encoding": "bcd",
         "length": 3,
         "label": "Av. Min. Game Time"
       },
       "52": {
-        "start": "0x5D5",
+        "start": 1493,
         "encoding": "bcd",
         "length": 3,
         "label": "Left Drains"
       },
       "53": {
-        "start": "0x5D9",
+        "start": 1497,
         "encoding": "bcd",
         "length": 3,
         "label": "Right Drains"
       },
       "54": {
-        "start": "0x5DD",
+        "start": 1501,
         "encoding": "bcd",
         "length": 3,
         "label": "3 Plays/1$"
@@ -1001,8 +1001,8 @@
   },
   "checksum8": [
     {
-      "start": "0x6A4",
-      "end": "0x70A",
+      "start": 1700,
+      "end": 1802,
       "groupings": 4,
       "label": "Audits"
     }
