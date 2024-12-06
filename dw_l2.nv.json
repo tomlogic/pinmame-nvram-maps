@@ -466,6 +466,6 @@
 		{"start": "0x1811", "end": "0x1B82", "groupings": 6, "label": "Audits"}
 	],
 	"checksum16": [
-		{"start": "0x1B83", "end": "0x1CB1", "label": "Adjustments"}
+		{"start": "0x1B83", "end": "0x1CB0", "label": "Adjustments"}
 	]
 }
