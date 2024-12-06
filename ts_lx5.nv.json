@@ -12,63 +12,183 @@
   "_fileformat": 0.1,
   "_version": 0.1,
   "last_game": [
-    { "encoding": "bcd", "length": 5, "start": 5792},
-    { "encoding": "bcd", "length": 5, "start": 5798},
-    { "encoding": "bcd", "length": 5, "start": 5804},
-    { "encoding": "bcd", "length": 5, "start": 5810}
+    {
+      "encoding": "bcd",
+      "length": 5,
+      "start": 5792
+    },
+    {
+      "encoding": "bcd",
+      "length": 5,
+      "start": 5798
+    },
+    {
+      "encoding": "bcd",
+      "length": 5,
+      "start": 5804
+    },
+    {
+      "encoding": "bcd",
+      "length": 5,
+      "start": 5810
+    }
   ],
   "high_scores": [
     {
-      "label": "Grand Champion", "short_label": "GC", "initials": {"encoding":"ch","length":3,"start":8103},
-      "score": {"encoding":"bcd","length":5,"start":7491}
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 8103
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 5,
+        "start": 7491
+      }
     },
     {
-      "label": "Best Agent #1", "short_label": "#1", "initials": {"encoding":"ch","length":3,"start":8137},
-      "score": {"encoding":"bcd","length":5,"start":7457}
+      "label": "Best Agent #1",
+      "short_label": "#1",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 8137
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 5,
+        "start": 7457
+      }
     },
     {
-      "label": "Best Agent #2", "short_label": "#2", "initials": {"encoding":"ch","length":3,"start":8111},
-      "score": {"encoding":"bcd","length":5,"start":7465}
+      "label": "Best Agent #2",
+      "short_label": "#2",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 8111
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 5,
+        "start": 7465
+      }
     },
     {
-      "label": "Best Agent #3", "short_label": "#3", "initials": {"encoding":"ch","length":3,"start":7470},
-      "score": {"encoding":"bcd","length":5,"start":7473}
+      "label": "Best Agent #3",
+      "short_label": "#3",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 7470
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 5,
+        "start": 7473
+      }
     },
     {
-      "label": "Best Agent #4", "short_label": "#4", "initials": {"encoding":"ch","length":3,"start":7478},
-      "score": {"encoding":"bcd","length":5,"start":7481}
+      "label": "Best Agent #4",
+      "short_label": "#4",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 7478
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 5,
+        "start": 7481
+      }
     },
     {
-      "label": "Buyin Champion", "short_label": "BIC",
-      "initials": {"encoding":"ch","length":3,"start":8137},
-      "score": {"encoding":"bcd","length":5,"start":8140}
+      "label": "Buyin Champion",
+      "short_label": "BIC",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 8137
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 5,
+        "start": 8140
+      }
     },
     {
-      "label": "BuyIn Score #1", "short_label": "BI#1", 
-      "initials": {"encoding":"ch","length":3,"start":8103},
-      "score": {"encoding":"bcd","length":5,"start":8106}
+      "label": "BuyIn Score #1",
+      "short_label": "BI#1",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 8103
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 5,
+        "start": 8106
+      }
     },
     {
-      "label": "BuyIn Score #2", "short_label": "BI#2",
-      "initials": {"encoding":"ch","length":3,"start":8111},
-      "score": {"encoding":"bcd","length":5,"start":8114}
+      "label": "BuyIn Score #2",
+      "short_label": "BI#2",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 8111
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 5,
+        "start": 8114
+      }
     },
     {
-      "label": "BuyIn Score #3", "short_label": "BI#3",
-      "initials": {"encoding":"ch","length":3,"start":8119},
-      "score": {"encoding":"bcd","length":5,"start":8122}
+      "label": "BuyIn Score #3",
+      "short_label": "BI#3",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 8119
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 5,
+        "start": 8122
+      }
     },
     {
-      "label": "BuyIn Score #4", "short_label": "BI#4",
-      "initials": {"encoding":"ch","length":3,"start":8127},
-      "score": {"encoding":"bcd","length":5,"start":8130}
+      "label": "BuyIn Score #4",
+      "short_label": "BI#4",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 8127
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 5,
+        "start": 8130
+      }
     }
   ],
   "mode_champions": [
     {
-      "label": "Shadow Loop Champ", "short_label": "SLC",
-      "initials": {"encoding":"ch","length":3,"start":8119},
-      "score": {"encoding":"bcd","length":2,"start":8100}
+      "label": "Shadow Loop Champ",
+      "short_label": "SLC",
+      "initials": {
+        "encoding": "ch",
+        "length": 3,
+        "start": 8119
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 2,
+        "start": 8100
+      }
     }
   ]
 }

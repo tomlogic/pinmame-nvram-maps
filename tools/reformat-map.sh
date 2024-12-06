@@ -21,7 +21,7 @@ do
 		EXITCODE=$STATUS
 	else
 		# use printf instead of echo to avoid possible backslash escaping
-		printf "%s" "$RESULT" > "$map"
+		printf "%s\n" "$RESULT" > "$map"
 	fi
 done
 

@@ -1,53 +1,165 @@
 {
-	"_notes": ["Compiled by Horsepin."],
-	"_copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
-	"_license": "GNU Lesser General Public License v3.0",
-	"_endian": "big",
-	"_roms": ["nf_23x"],
-	"_fileformat": 0.1,
-	"_version": 0.1,
-    "last_game": [
-                {"start": "0x16A1", "encoding": "bcd", "length": 5},
-                {"start": "0x16A8", "encoding": "bcd", "length": 5},
-                {"start": "0x16AF", "encoding": "bcd", "length": 5},
-                {"start": "0x16B6", "encoding": "bcd", "length": 5}
-                 ],
-	"high_scores": [
-				{	"label": "Grand Champion", "short_label": "GC",
-					"initials": {"start": "0x1D13", "encoding": "ch", "length": 3},
-					"score": {"start": "0x1D17", "encoding": "bcd", "length": 5}
-				},
-				{	"label": "First Place", "short_label": "1st",
-					"initials": {"start": "0x1CED", "encoding": "ch", "length": 3},
-					"score": {"start": "0x1CF1", "encoding": "bcd", "length": 5}
-				},
-				{	"label": "Second Place", "short_label": "2nd",
-					"initials": {"start": "0x1CF6", "encoding": "ch", "length": 3},
-					"score": {"start": "0x1CFA", "encoding": "bcd", "length": 5}
-				},
-				{	"label": "Third Place", "short_label": "3rd",
-					"initials": {"start": "0x1CFF", "encoding": "ch", "length": 3},
-					"score": {"start": "0x1D03", "encoding": "bcd", "length": 5}
-				},
-				{	"label": "Fourth Place", "short_label": "4th",
-					"initials": {"start": "0x1D08", "encoding": "ch", "length": 3},
-					"score": {"start": "0x1D0C", "encoding": "bcd", "length": 5}
-				}],
-	"buyin_high_scores": [		
-				{	"label": "First Place", "short_label": "1st",
-					"initials": {"start": "0x1F52", "encoding": "ch", "length": 3},
-					"score": {"start": "0x1F55", "encoding": "bcd", "length": 5}
-				},
-				{	"label": "Second Place", "short_label": "2nd",
-					"initials": {"start": "0x1F5B", "encoding": "ch", "length": 3},
-					"score": {"start": "0x1F5E", "encoding": "bcd", "length": 5}
-				},
-				{	"label": "Third Place", "short_label": "3rd",
-					"initials": {"start": "0x1F64", "encoding": "ch", "length": 3},
-					"score": {"start": "0x1F67", "encoding": "bcd", "length": 5}
-				},
-				{	"label": "Fourth Place", "short_label": "4th",
-					"initials": {"start": "0x1F6D", "encoding": "ch", "length": 3},
-					"score": {"start": "0x1F70", "encoding": "bcd", "length": 5}
-				}]
+  "_notes": [
+    "Compiled by Horsepin."
+  ],
+  "_copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_roms": [
+    "nf_23x"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_game": [
+    {
+      "start": 5793,
+      "encoding": "bcd",
+      "length": 5
+    },
+    {
+      "start": 5800,
+      "encoding": "bcd",
+      "length": 5
+    },
+    {
+      "start": 5807,
+      "encoding": "bcd",
+      "length": 5
+    },
+    {
+      "start": 5814,
+      "encoding": "bcd",
+      "length": 5
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "start": 7443,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7447,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7405,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7409,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7414,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7418,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7423,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7427,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7432,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7436,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "buyin_high_scores": [
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 8018,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8021,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 8027,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8030,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 8036,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8039,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 8045,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8048,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ]
 }

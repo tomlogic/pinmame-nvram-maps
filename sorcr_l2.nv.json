@@ -7,14 +7,39 @@
   "_endian": "big",
   "_ramsize": 2094,
   "_roms": [
-    "sorcr_l2","sorcr_l1"
+    "sorcr_l2",
+    "sorcr_l1"
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
   "high_scores": [
-    {"score":{"encoding":"bcd","length":4,"start":1844}},
-    {"score":{"encoding":"bcd","length":4,"start":1848}},
-    {"score":{"encoding":"bcd","length":4,"start":1852}},
-    {"score":{"encoding":"bcd","length":4,"start":1856}}
+    {
+      "score": {
+        "encoding": "bcd",
+        "length": 4,
+        "start": 1844
+      }
+    },
+    {
+      "score": {
+        "encoding": "bcd",
+        "length": 4,
+        "start": 1848
+      }
+    },
+    {
+      "score": {
+        "encoding": "bcd",
+        "length": 4,
+        "start": 1852
+      }
+    },
+    {
+      "score": {
+        "encoding": "bcd",
+        "length": 4,
+        "start": 1856
+      }
+    }
   ]
 }
