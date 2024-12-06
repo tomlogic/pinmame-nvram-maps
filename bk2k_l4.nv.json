@@ -16,29 +16,29 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": "0x39",
+      "start": 57,
       "length": 1,
       "encoding": "bcd"
     }
   },
   "last_game": [
     {
-      "start": "0x200",
+      "start": 512,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x204",
+      "start": 516,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x208",
+      "start": 520,
       "encoding": "bcd",
       "length": 4
     },
     {
-      "start": "0x20c",
+      "start": 524,
       "encoding": "bcd",
       "length": 4
     }
@@ -48,12 +48,12 @@
       "label": "Greatest Hero 1",
       "short_label": "1st",
       "initials": {
-        "start": "0x70b",
+        "start": 1803,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x6fb",
+        "start": 1787,
         "encoding": "bcd",
         "length": 4
       }
@@ -62,12 +62,12 @@
       "label": "Greatest Hero 2",
       "short_label": "2nd",
       "initials": {
-        "start": "0x70e",
+        "start": 1806,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x6ff",
+        "start": 1791,
         "encoding": "bcd",
         "length": 4
       }
@@ -76,12 +76,12 @@
       "label": "Greatest Hero 3",
       "short_label": "3rd",
       "initials": {
-        "start": "0x711",
+        "start": 1809,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x703",
+        "start": 1795,
         "encoding": "bcd",
         "length": 4
       }
@@ -90,12 +90,12 @@
       "label": "Greatest Hero 4",
       "short_label": "4th",
       "initials": {
-        "start": "0x714",
+        "start": 1812,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": "0x707",
+        "start": 1799,
         "encoding": "bcd",
         "length": 4
       }

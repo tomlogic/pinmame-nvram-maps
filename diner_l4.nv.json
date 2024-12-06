@@ -38,26 +38,62 @@
     {
       "label": "Highest Score #1",
       "short_label": "#1",
-      "initials": {"mask":127,"encoding":"ch","length":3,"start":1822},
-      "score": {"encoding":"bcd","length":4,"start":1806}
+      "initials": {
+        "mask": 127,
+        "encoding": "ch",
+        "length": 3,
+        "start": 1822
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 4,
+        "start": 1806
+      }
     },
     {
       "label": "Highest Score #2",
       "short_label": "#2",
-      "initials": {"mask":127,"encoding":"ch","length":3,"start":1825},
-      "score": {"encoding":"bcd","length":4,"start":1810}
+      "initials": {
+        "mask": 127,
+        "encoding": "ch",
+        "length": 3,
+        "start": 1825
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 4,
+        "start": 1810
+      }
     },
     {
       "label": "Highest Score #3",
       "short_label": "#3",
-      "initials": {"mask":127,"encoding":"ch","length":3,"start":1828},
-      "score": {"encoding":"bcd","length":4,"start":1814}
+      "initials": {
+        "mask": 127,
+        "encoding": "ch",
+        "length": 3,
+        "start": 1828
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 4,
+        "start": 1814
+      }
     },
     {
       "label": "Highest Score #4",
       "short_label": "#4",
-      "initials": {"mask":127,"encoding":"ch","length":3,"start":1831},
-      "score": {"encoding":"bcd","length":4,"start":1818}
+      "initials": {
+        "mask": 127,
+        "encoding": "ch",
+        "length": 3,
+        "start": 1831
+      },
+      "score": {
+        "encoding": "bcd",
+        "length": 4,
+        "start": 1818
+      }
     }
   ]
 }

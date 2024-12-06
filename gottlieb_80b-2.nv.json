@@ -1,108 +1,252 @@
 {
-	"_notes": [
-		"Compiled by Tom Collins.",
-		"Game uses a 4-bit nvram (256x4), so only uses the low nibble of each byte.",
-		"Game stores 61 bytes of data in triplicate at offsets 0x00, 0x3D and 0x7A.",
-		"If a value in one location doesn't match the other two, it's replaced by the other value.",
-		"If a value differs in all three locations, it's replaced with a default value.",
-		"Note that offsets 0xF8 through 0xFC are checksums of each of the high scores.",
-		"Appears to work for all System 80B S2/S3 games.",
-		"Untested: diamond, excaliba, hotshots, nmoves"
-	],
-	"_copyright": "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
-	"_license": "GNU Lesser General Public License v3.0",
-	"_endian": "big",
-	"_roms": [
-		"diamond", "excaliba", "robowars", "txsector", "victory",
-		"badgirls", "bighouse", "bonebstr", "hotshots", "nmoves"
-	],
-	"_fileformat": 0.2,
-	"_version": 0.1,
-	
-	"game_state": {
-		"credits": {"label": "Credits",
-			"start": "0x39", "encoding": "bcd", "length": 2, "nibble": "low"
-		}
-	},
-	
-	"high_scores": [
-		{	"label": "High Score #1", "short_label": "1st",
-			"initials": {"start": "0xB7", "encoding": "ch", "length": 6, "nibble": "low"},
-			"score": {"start": "0xBD", "encoding": "bcd", "length": 7, "nibble": "low", "scale": 10}
-		},
-		{	"label": "High Score #2", "short_label": "2nd",
-			"initials": {"start": "0xC4", "encoding": "ch", "length": 6, "nibble": "low"},
-			"score": {"start": "0xCA", "encoding": "bcd", "length": 7, "nibble": "low", "scale": 10}
-		},
-		{	"label": "High Score #3", "short_label": "3rd",
-			"initials": {"start": "0xD1", "encoding": "ch", "length": 6, "nibble": "low"},
-			"score": {"start": "0xD7", "encoding": "bcd", "length": 7, "nibble": "low", "scale": 10}
-		},
-		{	"label": "High Score #4", "short_label": "4th",
-			"initials": {"start": "0xDE", "encoding": "ch", "length": 6, "nibble": "low"},
-			"score": {"start": "0xE4", "encoding": "bcd", "length": 7, "nibble": "low", "scale": 10}
-		},
-		{	"label": "High Score #5", "short_label": "5th",
-			"initials": {"start": "0xEB", "encoding": "ch", "length": 6, "nibble": "low"},
-			"score": {"start": "0xF1", "encoding": "bcd", "length": 7, "nibble": "low", "scale": 10}
-		}
-	],
-	
-	"audits": {
-		"Bookkeeping": {
-			"01": {"label": "Left Chute Coins",
-				"start": "0x00", "encoding": "bcd", "length": 4, "nibble": "low"
-			},
-			"02": {"label": "Right Chute Coins",
-				"start": "0x04", "encoding": "bcd", "length": 4, "nibble": "low"
-			},
-			"03": {"label": "Center Chute Coins",
-				"start": "0x08", "encoding": "bcd", "length": 4, "nibble": "low"
-			},
-			"04": {"label": "Total Plays",
-				"start": "0x0C", "encoding": "bcd", "length": 4, "nibble": "low"
-			},
-			"05": {"label": "Total Replays",
-				"start": "0x10", "encoding": "bcd", "length": 4, "nibble": "low"
-			},
-			"07": {"label": "Extra Balls",
-				"start": "0x14", "encoding": "bcd", "length": 3, "nibble": "low"
-			},
-			"08": {"label": "Tilts",
-				"start": "0x17", "encoding": "bcd", "length": 3, "nibble": "low"
-			},
-			"09": {"label": "Specials",
-				"start": "0x1A", "encoding": "bcd", "length": 3, "nibble": "low"
-			},
-			"10": {"label": "Times HGTD Awarded",
-				"start": "0x1D", "encoding": "bcd", "length": 3, "nibble": "low"
-			},
-			"14": {"label": "Highest Game To Date",
-				"start": "0x2C", "encoding": "bcd", "length": 7, "nibble": "low", "scale": 10
-			},
-			"14a": {"label": "HGTD Initials",
-				"start": "0x26", "encoding": "ch", "length": 6, "nibble": "low"
-			},
-			"15": {"label": "Game Time", "suffix": " seconds",
-				"start": "0x20", "encoding": "bcd", "length": 6, "nibble": "low", "scale": 10
-			}
-		}
-	},
-	
-	"adjustments": {
-		"Standard Adjustments": {
-			"06": {"label": "Replay Percentage", "suffix": "%",
-				"start": "0x3B", "encoding": "bcd", "length": 2, "nibble": "low"
-			},
-			"11": {"label": "First High Score",
-				"start": "0x33", "encoding": "bcd", "length": 2, "nibble": "low", "scale": 100000
-			},
-			"12": {"label": "Second High Score",
-				"start": "0x35", "encoding": "bcd", "length": 2, "nibble": "low", "scale": 100000
-			},
-			"13": {"label": "Third High Score",
-				"start": "0x37", "encoding": "bcd", "length": 2, "nibble": "low", "scale": 100000
-			}
-		}
-	}
+  "_notes": [
+    "Compiled by Tom Collins.",
+    "Game uses a 4-bit nvram (256x4), so only uses the low nibble of each byte.",
+    "Game stores 61 bytes of data in triplicate at offsets 0x00, 0x3D and 0x7A.",
+    "If a value in one location doesn't match the other two, it's replaced by the other value.",
+    "If a value differs in all three locations, it's replaced with a default value.",
+    "Note that offsets 0xF8 through 0xFC are checksums of each of the high scores.",
+    "Appears to work for all System 80B S2/S3 games.",
+    "Untested: diamond, excaliba, hotshots, nmoves"
+  ],
+  "_copyright": "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_roms": [
+    "diamond",
+    "excaliba",
+    "robowars",
+    "txsector",
+    "victory",
+    "badgirls",
+    "bighouse",
+    "bonebstr",
+    "hotshots",
+    "nmoves"
+  ],
+  "_fileformat": 0.2,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 57,
+      "encoding": "bcd",
+      "length": 2,
+      "nibble": "low"
+    }
+  },
+  "high_scores": [
+    {
+      "label": "High Score #1",
+      "short_label": "1st",
+      "initials": {
+        "start": 183,
+        "encoding": "ch",
+        "length": 6,
+        "nibble": "low"
+      },
+      "score": {
+        "start": 189,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low",
+        "scale": 10
+      }
+    },
+    {
+      "label": "High Score #2",
+      "short_label": "2nd",
+      "initials": {
+        "start": 196,
+        "encoding": "ch",
+        "length": 6,
+        "nibble": "low"
+      },
+      "score": {
+        "start": 202,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low",
+        "scale": 10
+      }
+    },
+    {
+      "label": "High Score #3",
+      "short_label": "3rd",
+      "initials": {
+        "start": 209,
+        "encoding": "ch",
+        "length": 6,
+        "nibble": "low"
+      },
+      "score": {
+        "start": 215,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low",
+        "scale": 10
+      }
+    },
+    {
+      "label": "High Score #4",
+      "short_label": "4th",
+      "initials": {
+        "start": 222,
+        "encoding": "ch",
+        "length": 6,
+        "nibble": "low"
+      },
+      "score": {
+        "start": 228,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low",
+        "scale": 10
+      }
+    },
+    {
+      "label": "High Score #5",
+      "short_label": "5th",
+      "initials": {
+        "start": 235,
+        "encoding": "ch",
+        "length": 6,
+        "nibble": "low"
+      },
+      "score": {
+        "start": 241,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low",
+        "scale": 10
+      }
+    }
+  ],
+  "audits": {
+    "Bookkeeping": {
+      "01": {
+        "label": "Left Chute Coins",
+        "start": 0,
+        "encoding": "bcd",
+        "length": 4,
+        "nibble": "low"
+      },
+      "02": {
+        "label": "Right Chute Coins",
+        "start": 4,
+        "encoding": "bcd",
+        "length": 4,
+        "nibble": "low"
+      },
+      "03": {
+        "label": "Center Chute Coins",
+        "start": 8,
+        "encoding": "bcd",
+        "length": 4,
+        "nibble": "low"
+      },
+      "04": {
+        "label": "Total Plays",
+        "start": 12,
+        "encoding": "bcd",
+        "length": 4,
+        "nibble": "low"
+      },
+      "05": {
+        "label": "Total Replays",
+        "start": 16,
+        "encoding": "bcd",
+        "length": 4,
+        "nibble": "low"
+      },
+      "07": {
+        "label": "Extra Balls",
+        "start": 20,
+        "encoding": "bcd",
+        "length": 3,
+        "nibble": "low"
+      },
+      "08": {
+        "label": "Tilts",
+        "start": 23,
+        "encoding": "bcd",
+        "length": 3,
+        "nibble": "low"
+      },
+      "09": {
+        "label": "Specials",
+        "start": 26,
+        "encoding": "bcd",
+        "length": 3,
+        "nibble": "low"
+      },
+      "10": {
+        "label": "Times HGTD Awarded",
+        "start": 29,
+        "encoding": "bcd",
+        "length": 3,
+        "nibble": "low"
+      },
+      "14": {
+        "label": "Highest Game To Date",
+        "start": 44,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low",
+        "scale": 10
+      },
+      "14a": {
+        "label": "HGTD Initials",
+        "start": 38,
+        "encoding": "ch",
+        "length": 6,
+        "nibble": "low"
+      },
+      "15": {
+        "label": "Game Time",
+        "suffix": " seconds",
+        "start": 32,
+        "encoding": "bcd",
+        "length": 6,
+        "nibble": "low",
+        "scale": 10
+      }
+    }
+  },
+  "adjustments": {
+    "Standard Adjustments": {
+      "06": {
+        "label": "Replay Percentage",
+        "suffix": "%",
+        "start": 59,
+        "encoding": "bcd",
+        "length": 2,
+        "nibble": "low"
+      },
+      "11": {
+        "label": "First High Score",
+        "start": 51,
+        "encoding": "bcd",
+        "length": 2,
+        "nibble": "low",
+        "scale": 100000
+      },
+      "12": {
+        "label": "Second High Score",
+        "start": 53,
+        "encoding": "bcd",
+        "length": 2,
+        "nibble": "low",
+        "scale": 100000
+      },
+      "13": {
+        "label": "Third High Score",
+        "start": 55,
+        "encoding": "bcd",
+        "length": 2,
+        "nibble": "low",
+        "scale": 100000
+      }
+    }
+  }
 }

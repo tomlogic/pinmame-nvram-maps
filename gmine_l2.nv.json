@@ -16,39 +16,39 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": "0x44",
+      "start": 68,
       "length": 1,
       "encoding": "bcd"
     }
   },
   "last_game": [
     {
-      "start": "0x38",
+      "start": 56,
       "encoding": "bcd",
       "length": 2
     },
     {
-      "start": "0x3a",
+      "start": 58,
       "encoding": "bcd",
       "length": 2
     },
     {
-      "start": "0x3c",
+      "start": 60,
       "encoding": "bcd",
       "length": 2
     },
     {
-      "start": "0x3e",
+      "start": 62,
       "encoding": "bcd",
       "length": 2
     },
     {
-      "start": "0x40",
+      "start": 64,
       "encoding": "bcd",
       "length": 2
     },
     {
-      "start": "0x42",
+      "start": 66,
       "encoding": "bcd",
       "length": 2
     }
@@ -58,7 +58,7 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": "0x6d6",
+        "start": 1750,
         "encoding": "bcd",
         "length": 2
       }
