@@ -1,11 +1,13 @@
 {
-	"_notes": "Compiled by Steven Harding.",
-	"_copyright": "None",
-	"_license": "GNU Lesser General Public License v3.0",
-	"_endian": "big",
-	"_roms": ["sprk_103"],
-	"_fileformat": 0.1,
-	"_version": 0.1,
+  "_notes": "Compiled by Steven Harding.",
+  "_copyright": "None",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_roms": [
+    "sprk_103"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
   "limits": {
     "high_score_min": "400000000"
   },
@@ -150,6 +152,5 @@
         "length": 5
       }
     }
-
   ]
-  }
+}
