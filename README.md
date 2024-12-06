@@ -10,7 +10,7 @@ Going further and documenting adjustments and audits allows for the
 development of alternate interfaces (like a web browser) to view audits
 and change game settings without using the service menu.
 
-This project started in October 2015, and should be considered "alpha"
+This project started in October 2015, and should be considered "beta"
 quality.  As people map more games, the file format may change to
 support additional requirements.
 
@@ -19,6 +19,25 @@ format for this project.  If necessary, other projects should be able to
 convert the map files to alternate formats.  The JSON website describes
 the file format and includes links to parsing libraries in many
 programming languages.
+
+For this repository, we're formatting JSON files with each entry on its
+own line, and 2 spaces for indentation.  You can get this formatting using
+either `jq` or `python`:
+
+- jq: `jq --indent 2 --ascii-output . mapname.nv.json`
+- python: `json.dumps()` with the setting `indent=2`
+
+```
+    print(json.dumps(json.load(open('mapname.nv.json', 'r')), indent=2))
+```
+
+We're using the `--ascii-output` option to `jq` so it's consistent with the
+Python output of bytes values 0x80 to 0xFF.  For example, `hs_l4.nv.json`
+encodes a 0xC4 byte in the default attract text as `\u00C4`.
+
+The script `tools/reformat-map.sh` can reformat one (or all) of the JSON
+files using `jq`.  The script `tools/normalize-map.py` uses Python to do
+the same formatting as `jq`, but also normalizes files to the latest format.
 
 [Project home](https://github.com/tomlogic/pinmame-nvram-maps)
 
@@ -76,8 +95,8 @@ In cases where this specification isn't clear, please use existing maps
 or the `nvram_parser.py` sample as a guide.
 
 Numbers can appear as decimal values (`1234`) or hexadecimal values
-inside of strings (`"0x4D2"`).  Most map files will only use hex for
-file offsets.
+inside of strings (`"0x4D2"`).  `_fileformat` v0.3 deprecated usage of
+hexadecimal strings outside of the `mask` attribute.
 
 ### Meta Data
 
@@ -230,9 +249,10 @@ treat a single descriptor as a list of equally-sized groupings.
   checksum.  The last byte of the range is set so that the low byte from
   the sum of all bytes in the range is `0xFF`.
 - **checksum16**: An array of memory regions protected by a 16-bit
-  checksum.  That last two bytes of the range are set so that adding
-  all other bytes in the range results in a value of `0xFFFF`.
+  checksum.  The last two bytes of the range are the 16-bit result of
+  subtracting all prior bytes in the range from `0xFFFF`.
 
 ### Version History
 - v0.1: Initial Version
 - v0.2: Deprecate `packed` attribute in favor of `nibble`.
+- v0.3: Deprecate usage of hex strings for `start`, `end` and `offsets`.
