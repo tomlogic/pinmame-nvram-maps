@@ -169,7 +169,6 @@
   "adjustments": {
     "High score functions": {
       "01": {
-        "_note": "Increments by 10000",
         "label": "Extra ball / Free game score level 1",
         "start": 146,
         "encoding": "bcd",
@@ -181,10 +180,10 @@
         "scale": 10,
         "special_values": {
           "0": "OFF"
-        }
+        },
+        "multiple_of": 10000
       },
       "02": {
-        "_note": "Increments by 10000",
         "label": "Extra ball / Free game score level 2",
         "start": 152,
         "encoding": "bcd",
@@ -196,7 +195,8 @@
         "scale": 10,
         "special_values": {
           "0": "OFF"
-        }
+        },
+        "multiple_of": 10000
       },
       "03": {
         "_note": "Increments by 10000",
@@ -211,7 +211,8 @@
         "scale": 10,
         "special_values": {
           "0": "OFF"
-        }
+        },
+        "multiple_of": 10000
       },
       "04": {
         "label": "High score to date",
