@@ -178,7 +178,10 @@
         "min": 0,
         "max": 999000,
         "default": 0,
-        "scale": 10
+        "scale": 10,
+        "special_values": {
+          "0": "OFF"
+        }
       },
       "02": {
         "_note": "Increments by 10000",
@@ -190,7 +193,10 @@
         "min": 0,
         "max": 999000,
         "default": 0,
-        "scale": 10
+        "scale": 10,
+        "special_values": {
+          "0": "OFF"
+        }
       },
       "03": {
         "_note": "Increments by 10000",
@@ -202,7 +208,10 @@
         "min": 0,
         "max": 999000,
         "default": 0,
-        "scale": 10
+        "scale": 10,
+        "special_values": {
+          "0": "OFF"
+        }
       },
       "04": {
         "label": "High score to date",
