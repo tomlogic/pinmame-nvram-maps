@@ -238,9 +238,9 @@ Keys that don't start with an underscore typically have groups of
 
 The objects used for the last two entries in the file are
 slightly different from the other descriptors.  They have the required
-`start` field, require either an `end` (preferred) or `length`, and
+`start` field, require either an inclusive `end` (preferred) or `length`, and
 `label` is optional.  They introduce an optional `groupings` key used to
-treat a single descriptor as a list of equally-sized groupings.
+treat a single descriptor as a list of groupings-sized ranges. 
 
 (On WPC games, the audits are a series of 6-byte entries, each with an
 8-bit checksum as the last byte.)
