@@ -143,9 +143,9 @@ how to interpret them.  They're comprised of the following key/value pairs:
     to the decimal value `1234`.  When converting BCD values, treat the
     nibbles 0xA to 0xF as 0 numerically, or a space for display purposes.
   - `"ch"`: A sequence of 7-bit ASCII characters that may be shortened by a
-    null byte (x00) terminator.  
+    null byte (0x00) terminator based on the `"null"` attribute for the entry.
     If the JSON file has a `_char_map` key, all bytes (including 0x00) are
-	indexes into that string.  
+	indexes into that string.
   - `"raw"`: A series of raw bytes, useful for extracting data yet to be
     decoded or that requires custom processing.
   - `"wpc_rtc"`: A special type for a real-time clock value
@@ -163,6 +163,12 @@ how to interpret them.  They're comprised of the following key/value pairs:
   - **offsets**: Alternative to using start/end or start/length when bytes
     aren't contiguous.  List of offsets to use.  Either `start` or `offsets`
     are required.
+- **null**: Used for `"ch"` encodings to specify null (0x00) byte handling.
+    For `truncate` and `terminate`, ignore all bytes after the null.
+  - `"ignore"`: Ignore (skip over) null bytes.
+  - `"truncate"`: A null can shorten the string, but won't be present for
+    strings that fill the allotted space.
+  - `"terminate"`: Null bytes are always present and terminate the string.
 - **min** and **max**: Used for adjustments to specify the valid range of
   values.
 - **default**: Used for adjustments to specify the factory default value.
@@ -257,3 +263,4 @@ treat a single descriptor as a list of equally-sized groupings.
 - v0.1: Initial Version
 - v0.2: Deprecate `packed` attribute in favor of `nibble`.
 - v0.3: Deprecate usage of hex strings for `start`, `end` and `offsets`.
+        Add the `null` attribute for entries with `ch` encoding.
