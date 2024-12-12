@@ -406,9 +406,9 @@
         "label": "Reset Every",
         "start": 8005,
         "encoding": "int",
-        "min": 100,
-        "max": 900,
-        "default": 700,
+        "min": 1,
+        "max": 9,
+        "default": 7,
         "scale": 100
       },
       "35": {
