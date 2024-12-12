@@ -7,7 +7,7 @@
   "_endian": "little",
   "_ramsize": 131118,
   "_roms": [
-    "st_162"
+    "st_161h"
   ],
   "_fileformat": 0.2,
   "_version": 0.1,
@@ -15,28 +15,58 @@
     {
       "encoding": "int",
       "length": 4,
-      "start": 68068
+      "start": 68108
     },
     {
       "encoding": "int",
       "length": 4,
-      "start": 68072
+      "start": 68112
     },
     {
       "encoding": "int",
       "length": 4,
-      "start": 68076
+      "start": 68116
     },
     {
       "encoding": "int",
       "length": 4,
-      "start": 68080
+      "start": 68120
     }
   ],
   "high_scores": [
     {
       "label": "Grand Champion",
       "short_label": "GC",
+      "initials": {
+        "encoding": "ch",
+        "null": "terminate",
+        "length": 11,
+        "start": 11904
+      },
+      "score": {
+        "encoding": "int",
+        "length": 4,
+        "start": 11928
+      }
+    },
+    {
+      "label": "High Score #1",
+      "short_label": "#1",
+      "initials": {
+        "encoding": "ch",
+        "null": "terminate",
+        "length": 11,
+        "start": 11936
+      },
+      "score": {
+        "encoding": "int",
+        "length": 4,
+        "start": 11960
+      }
+    },
+    {
+      "label": "High Score #2",
+      "short_label": "#2",
       "initials": {
         "encoding": "ch",
         "null": "terminate",
@@ -50,8 +80,8 @@
       }
     },
     {
-      "label": "High Score #1",
-      "short_label": "#1",
+      "label": "High Score #3",
+      "short_label": "#3",
       "initials": {
         "encoding": "ch",
         "null": "terminate",
@@ -65,8 +95,8 @@
       }
     },
     {
-      "label": "High Score #2",
-      "short_label": "#2",
+      "label": "High Score #4",
+      "short_label": "#4",
       "initials": {
         "encoding": "ch",
         "null": "terminate",
@@ -78,10 +108,11 @@
         "length": 4,
         "start": 12056
       }
-    },
+    }
+  ],
+  "mode_champions": [
     {
-      "label": "High Score #3",
-      "short_label": "#3",
+      "label": "Combo Champion",
       "initials": {
         "encoding": "ch",
         "null": "terminate",
@@ -91,12 +122,12 @@
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12088
+        "start": 12088,
+        "suffix": " Combos"
       }
     },
     {
-      "label": "High Score #4",
-      "short_label": "#4",
+      "label": "Warp Champion",
       "initials": {
         "encoding": "ch",
         "null": "terminate",
@@ -106,13 +137,12 @@
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12120
+        "start": 12120,
+        "suffix": " Warps"
       }
-    }
-  ],
-  "mode_champions": [
+    },
     {
-      "label": "Combo Champion",
+      "label": "Medals Champion",
       "initials": {
         "encoding": "ch",
         "null": "terminate",
@@ -123,78 +153,48 @@
         "encoding": "int",
         "length": 4,
         "start": 12152,
-        "suffix": " Combos"
-      }
-    },
-    {
-      "label": "Warp Champion",
-      "initials": {
-        "encoding": "ch",
-        "null": "terminate",
-        "length": 11,
-        "start": 12160
-      },
-      "score": {
-        "encoding": "int",
-        "length": 4,
-        "start": 12184,
-        "suffix": " Warps"
-      }
-    },
-    {
-      "label": "Medals Champion",
-      "initials": {
-        "encoding": "ch",
-        "null": "terminate",
-        "length": 11,
-        "start": 12192
-      },
-      "score": {
-        "encoding": "int",
-        "length": 4,
-        "start": 12216,
         "suffix": " Medals"
       }
     }
   ],
   "checksum16": [
     {
-      "start": 11968,
+      "start": 11904,
       "length": 30,
       "label": "Grand Champion"
     },
     {
-      "start": 12000,
+      "start": 11936,
       "length": 30,
       "label": "High Score #1"
     },
     {
-      "start": 12032,
+      "start": 11968,
       "length": 30,
       "label": "High Score #2"
     },
     {
-      "start": 12064,
+      "start": 12000,
       "length": 30,
       "label": "High Score #3"
     },
     {
-      "start": 12096,
+      "start": 12032,
       "length": 30,
       "label": "High Score #4"
     },
     {
-      "start": 12128,
+      "start": 12064,
       "length": 30,
       "label": "Combo Champion"
     },
     {
-      "start": 12160,
+      "start": 12096,
       "length": 30,
       "label": "Warp Champion"
     },
     {
-      "start": 12192,
+      "start": 12128,
       "length": 30,
       "label": "Medals Champion"
     }

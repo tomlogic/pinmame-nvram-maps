@@ -39,7 +39,8 @@
       "short_label": "GC",
       "initials": {
         "encoding": "ch",
-        "length": 10,
+        "null": "terminate",
+        "length": 11,
         "start": 11984
       },
       "score": {
@@ -53,7 +54,8 @@
       "short_label": "#1",
       "initials": {
         "encoding": "ch",
-        "length": 10,
+        "null": "terminate",
+        "length": 11,
         "start": 12016
       },
       "score": {
@@ -67,7 +69,8 @@
       "short_label": "#2",
       "initials": {
         "encoding": "ch",
-        "length": 10,
+        "null": "terminate",
+        "length": 11,
         "start": 12048
       },
       "score": {
@@ -81,7 +84,8 @@
       "short_label": "#3",
       "initials": {
         "encoding": "ch",
-        "length": 10,
+        "null": "terminate",
+        "length": 11,
         "start": 12080
       },
       "score": {
@@ -95,7 +99,8 @@
       "short_label": "#4",
       "initials": {
         "encoding": "ch",
-        "length": 10,
+        "null": "terminate",
+        "length": 11,
         "start": 12112
       },
       "score": {
@@ -110,7 +115,8 @@
       "label": "Combo Champion",
       "initials": {
         "encoding": "ch",
-        "length": 10,
+        "null": "terminate",
+        "length": 11,
         "start": 12144
       },
       "score": {
@@ -124,7 +130,8 @@
       "label": "Warp Champion",
       "initials": {
         "encoding": "ch",
-        "length": 10,
+        "null": "terminate",
+        "length": 11,
         "start": 12176
       },
       "score": {
@@ -138,7 +145,8 @@
       "label": "Medals Champion",
       "initials": {
         "encoding": "ch",
-        "length": 10,
+        "null": "terminate",
+        "length": 11,
         "start": 12208
       },
       "score": {
