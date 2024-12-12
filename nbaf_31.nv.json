@@ -569,7 +569,7 @@
         "start": 6953,
         "encoding": "bcd",
         "length": 2,
-        "min": 1,
+        "min": 0,
         "max": 400,
         "special_values": {
           "0": "OFF"
@@ -580,7 +580,7 @@
         "start": 6955,
         "encoding": "bcd",
         "length": 2,
-        "min": 1,
+        "min": 0,
         "max": 400,
         "special_values": {
           "0": "OFF"
@@ -591,7 +591,7 @@
         "start": 6957,
         "encoding": "bcd",
         "length": 2,
-        "min": 1,
+        "min": 0,
         "max": 400,
         "special_values": {
           "0": "OFF"
@@ -602,7 +602,7 @@
         "start": 6959,
         "encoding": "bcd",
         "length": 2,
-        "min": 1,
+        "min": 0,
         "max": 400,
         "special_values": {
           "0": "OFF"
