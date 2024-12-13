@@ -7,7 +7,7 @@
   "_endian": "little",
   "_ramsize": 131118,
   "_roms": [
-    "st_162h"
+    "st_161h"
   ],
   "_fileformat": 0.3,
   "_version": 0.1,
@@ -41,12 +41,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 11984
+        "start": 11904
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12008
+        "start": 11928
       }
     },
     {
@@ -56,12 +56,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12016
+        "start": 11936
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12040
+        "start": 11960
       }
     },
     {
@@ -71,12 +71,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12048
+        "start": 11968
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12072
+        "start": 11992
       }
     },
     {
@@ -86,12 +86,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12080
+        "start": 12000
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12104
+        "start": 12024
       }
     },
     {
@@ -101,12 +101,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12112
+        "start": 12032
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12136
+        "start": 12056
       }
     }
   ],
@@ -117,12 +117,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12144
+        "start": 12064
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12168,
+        "start": 12088,
         "suffix": " Combos"
       }
     },
@@ -132,12 +132,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12176
+        "start": 12096
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12200,
+        "start": 12120,
         "suffix": " Warps"
       }
     },
@@ -147,54 +147,54 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12208
+        "start": 12128
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12232,
+        "start": 12152,
         "suffix": " Medals"
       }
     }
   ],
   "checksum16": [
     {
-      "start": 11984,
+      "start": 11904,
       "length": 30,
       "label": "Grand Champion"
     },
     {
-      "start": 12016,
+      "start": 11936,
       "length": 30,
       "label": "High Score #1"
     },
     {
-      "start": 12048,
+      "start": 11968,
       "length": 30,
       "label": "High Score #2"
     },
     {
-      "start": 12080,
+      "start": 12000,
       "length": 30,
       "label": "High Score #3"
     },
     {
-      "start": 12112,
+      "start": 12032,
       "length": 30,
       "label": "High Score #4"
     },
     {
-      "start": 12144,
+      "start": 12064,
       "length": 30,
       "label": "Combo Champion"
     },
     {
-      "start": 12176,
+      "start": 12096,
       "length": 30,
       "label": "Warp Champion"
     },
     {
-      "start": 12208,
+      "start": 12128,
       "length": 30,
       "label": "Medals Champion"
     }

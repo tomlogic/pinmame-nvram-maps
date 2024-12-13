@@ -13,6 +13,7 @@ File format updates
 -------------------
 * v0.3:
     - convert start/end values stored as hex strings to decimal values
+    - introduce new `null` attribute for `ch` encoding
 
 * v0.2:
     - remove "packed"=true and replace "packed"=false with "nibble"="low"
@@ -37,10 +38,13 @@ def map_convert(pairs):
     result = {}
     for k, v in pairs:
         if k == '_fileformat':
-            file_format = v
+            minimum_file_format(v)
         elif k == 'nibble':
             # "nibble" is only valid in v0.2 and later
             minimum_file_format(0.2)
+        elif k == 'null':
+            # "null" is only valid in v0.3 and later
+            minimum_file_format(0.3)
 
         if k == 'packed':
             # as of v0.2, "packed" attribute deprecated in favor of "nibble"
