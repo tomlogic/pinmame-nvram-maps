@@ -356,7 +356,8 @@
         "values": [
           "English",
           "French",
-          "German"
+          "German",
+          "Spanish"
         ],
         "default": 0
       },
