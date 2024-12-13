@@ -1,6 +1,7 @@
 {
   "_notes": [
-    "Compiled by Horsepin"
+    "2022-12-22 v0.1 Compiled by Horsepin",
+    "2024-12-13 v0.2 High score locations updated by Tom Collins"
   ],
   "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
   "_license": "GNU Lesser General Public License v3.0",
@@ -10,7 +11,7 @@
     "ts_lx5"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_game": [
     {
       "encoding": "bcd",
@@ -40,7 +41,7 @@
       "initials": {
         "encoding": "ch",
         "length": 3,
-        "start": 8103
+        "start": 7488
       },
       "score": {
         "encoding": "bcd",
@@ -54,7 +55,7 @@
       "initials": {
         "encoding": "ch",
         "length": 3,
-        "start": 8137
+        "start": 7454
       },
       "score": {
         "encoding": "bcd",
@@ -68,7 +69,7 @@
       "initials": {
         "encoding": "ch",
         "length": 3,
-        "start": 8111
+        "start": 7462
       },
       "score": {
         "encoding": "bcd",
@@ -182,13 +183,47 @@
       "initials": {
         "encoding": "ch",
         "length": 3,
-        "start": 8119
+        "start": 8096
       },
       "score": {
-        "encoding": "bcd",
-        "length": 2,
-        "start": 8100
+        "encoding": "int",
+        "length": 1,
+        "start": 8099,
+        "suffix": " Loops"
       }
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 7454,
+      "end": 7487,
+      "label": "High Scores"
+    },
+    {
+      "start": 7488,
+      "end": 7497,
+      "label": "GC"
+    },
+    {
+      "_note": "Initials 8062 to 8091 (unused all 0xFF), 0x00, count (0x00-0x0A), 16-bit checksum",
+      "start": 8062,
+      "end": 8095,
+      "label": "Final Battle Immortals"
+    },
+    {
+      "start": 8096,
+      "end": 8102,
+      "label": "Loop Champion"
+    },
+    {
+      "start": 8103,
+      "end": 8136,
+      "label": "Buy-In Scores"
+    },
+    {
+      "start": 8137,
+      "end": 8146,
+      "label": "Buy-In GC"
     }
   ]
 }
