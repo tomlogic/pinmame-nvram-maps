@@ -1,19 +1,20 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Harlem Globetrotters On Tour (Bally 1979)",
-    "https://www.ipdb.org/machine.cgi?id=1125",
-    "https://opdb.org/machines/1742",
+    "Dolly Parton (Bally 1979)",
+    "https://www.ipdb.org/machine.cgi?id=698",
+    "https://opdb.org/machines/130",
     "Bally MPU AS-2518-35",
-    "7-digit score display (but internally 6-digit)",
-    "By default the credits are not shown, set dip switch 27 to show them."
+    "7-digit score display",
+    "By default the credits are not shown, set dip switch 27 to show them.",
+    "Same layout as hglibtrtb"
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "little",
   "_nibble": "high",
   "_roms": [
-    "hglbtrtb"
+    "dollyptb"
   ],
   "_fileformat": 0.4,
   "_version": 0.1,
