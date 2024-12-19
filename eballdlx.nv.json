@@ -1,27 +1,33 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Centaur (Bally 1981)",
-    "https://www.ipdb.org/machine.cgi?id=476",
-    "https://opdb.org/machines/409",
+    "Eight Ball Deluxe (Bally 1981)",
+    "https://www.ipdb.org/machine.cgi?id=762",
+    "https://opdb.org/machines/306",
     "Bally MPU AS-2518-35",
     "7-digit score display",
-    "centaura is the free play version.",
-    "By default the credits are not shown, set dip switch 27 to show them."
+    "By default the credits are not shown, set dip switch 27 to show them.",
+    "The vpx table is overriding all rom switches, so the credits are always shown.",
+    "Same layout as centaur."
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "little",
   "_nibble": "high",
   "_roms": [
-    "centaur",
-    "centaura"
+    "eballdlx"
   ],
   "_fileformat": 0.4,
   "_version": 0.1,
   "game_state": {
-    "credits": {
-      "label": "Credits",
+    "ball_in_play_display": {
+      "label": "Ball in play display",
+      "start": 58,
+      "length": 2,
+      "encoding": "bcd"
+    },
+    "credits_display": {
+      "label": "Credits display",
       "start": 61,
       "length": 2,
       "encoding": "bcd"
@@ -245,7 +251,6 @@
       },
       "19": {
         "label": "High Score to date or over 10.000.000 score feature",
-        "_note": "Looking at this field as an int the default is 15",
         "start": 253,
         "length": 1,
         "encoding": "bcd",
@@ -273,6 +278,21 @@
         "encoding": "int",
         "min": 0,
         "max": 15
+      },
+      "22": {
+        "label": "Backbox Deluxe Feature",
+        "_note": "default value of 15, even if that is not in the range",
+        "start": 141,
+        "length": 1,
+        "encoding": "int",
+        "min": 0,
+        "max": 3,
+        "special_values": {
+          "0": "No Award",
+          "1": "One Credit",
+          "2": "Two Credits",
+          "3": "Three Credits"
+        }
       }
     }
   }
