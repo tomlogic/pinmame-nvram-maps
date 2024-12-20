@@ -14,10 +14,11 @@
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "little",
+  "_nibble": "low",
   "_roms": [
     "stargoda"
   ],
-  "_fileformat": 0.2,
+  "_fileformat": 0.4,
   "_version": 0.1,
   "game_state": {
     "credits": {
@@ -31,26 +32,22 @@
     {
       "start": 0,
       "encoding": "bcd",
-      "length": 6,
-      "nibble": "low"
+      "length": 6
     },
     {
       "start": 8,
       "encoding": "bcd",
-      "length": 6,
-      "nibble": "low"
+      "length": 6
     },
     {
       "start": 16,
       "encoding": "bcd",
-      "length": 6,
-      "nibble": "low"
+      "length": 6
     },
     {
       "start": 24,
       "encoding": "bcd",
-      "length": 6,
-      "nibble": "low"
+      "length": 6
     }
   ],
   "high_scores": [
@@ -60,8 +57,7 @@
       "score": {
         "start": 32,
         "encoding": "bcd",
-        "length": 6,
-        "nibble": "low"
+        "length": 6
       }
     }
   ]
