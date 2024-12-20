@@ -119,6 +119,18 @@ not the contents of the corresponding NVRAM file.
   Refers to which end of the number is stored first.  For example, a
   `bcd`-encoded score of 123,450 is the byte sequence 0x12, 0x34, 0x50 if
   big-endian, and 0x50 0x34 0x12 if little-endian.
+- **_nibble**: Set to `"both"` (default), `"high"`, or `"low"` to identify
+  which 4-bit nibbles to use from each byte.  Some games (e.g., Williams
+  System 7, Gottlieb System 80B, Stern M-100) used 4-bit NVRAM, so only
+  half of each byte is valid.
+  `"both"` indicates use of the full 8 bits/byte.  Set to `"low"` to use
+  the lower 4 bits of the byte or `high` to use the upper 4 bits of the byte. 
+  The `bcd` sequence `0x12 0x34 0x56` translates to `123456` when `nibble` is
+  `both`, `246` when `nibble` is `low` and `135` when `nibble` is `high`.
+  Robowars has an example of a `nibble=low` `ch` field, where the sequence
+  `0x04 0x01 0x04 0x02 0x04 0x03` translates to `0x41 0x42 0x43` which is the
+  string `"ABC"`.
+  Stern Dracula and Wild Fyre (identical ROM) have examples of `nibble=high`.
 - **_char_map**: Characters to use for the `ch` encoding instead of a straight 
   ASCII table.  See Whirlwind (`whirl_l3.nv.json`) as an example.
 
@@ -169,16 +181,8 @@ how to interpret them.  They're comprised of the following key/value pairs:
   - **endian**: Set to either `"big"` or `"little"` to indicate the byte
     order of multi-byte values.  Defaults to the `_endian` setting for the
     file (which defaults to `"big"`).
-  - **nibble**: Replacement for `packed` attribute for `ch` and `bcd` types.
-    Defaults to `both` (previously `packed=true`) indicating use of the full
-    8 bits/byte.  Set to `low` (previously `packed=false`) to use the lower
-    4 bits of the byte or `high` to use the upper 4 bits of the byte. 
-    The `bcd` sequence `0x12 0x34 0x56` translates to `123456` when `nibble` is
-    `both`, `246` when `nibble` is `low` and `135` when `nibble` is `high`.
-    Robowars has an example of a `nibble=low` `ch` field, where the sequence
-    `0x04 0x01 0x04 0x02 0x04 0x03` translates to `0x41 0x42 0x43` which is the
-    string `"ABC"`.
-    Stern Dracula and Wild Fyre (identical ROM) have examples of `nibble=high`.
+  - **nibble**: Defaults to file's `_nibble` setting (which defaults to
+    `"both"`).  See `_nibble` for details.
   - **null**: Used for `"ch"` encodings to specify null (0x00) byte handling.
       For `truncate` and `terminate`, ignore all bytes after the null.
     - `"ignore"`: Ignore (skip over) null bytes.  Default setting.
@@ -186,8 +190,9 @@ how to interpret them.  They're comprised of the following key/value pairs:
       strings that fill the allotted space.
     - `"terminate"`: Null bytes are always present and terminate the string.
   - **packed**: Deprecated in favor of `nibble`.  Remove `packed=true` and
-    replace `packed=false` with `nibble=low`.
-    
+    replace `packed=false` with `nibble=low` (or set `_nibble` for the entire
+    file).
+
 - These properties are only related to displaying the value, independently of
   how it's actually stored in memory or a `.nv` file.
   - **label**: A label describing this collection of bytes in the `.nv` file. 
@@ -277,3 +282,4 @@ treat a single descriptor as a list of groupings-sized ranges.
 - v0.2: Deprecate `packed` attribute in favor of `nibble`.
 - v0.3: Deprecate usage of hex strings for `start`, `end` and `offsets`.
         Add the `null` attribute for entries with `ch` encoding.
+- v0.4: Add global `_nibble` to apply to all entries.
