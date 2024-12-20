@@ -12,6 +12,7 @@
   "_copyright": "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_nibble": "low",
   "_roms": [
     "diamond",
     "excaliba",
@@ -24,15 +25,14 @@
     "hotshots",
     "nmoves"
   ],
-  "_fileformat": 0.2,
+  "_fileformat": 0.4,
   "_version": 0.1,
   "game_state": {
     "credits": {
       "label": "Credits",
       "start": 57,
       "encoding": "bcd",
-      "length": 2,
-      "nibble": "low"
+      "length": 2
     }
   },
   "high_scores": [
@@ -42,14 +42,12 @@
       "initials": {
         "start": 183,
         "encoding": "ch",
-        "length": 6,
-        "nibble": "low"
+        "length": 6
       },
       "score": {
         "start": 189,
         "encoding": "bcd",
         "length": 7,
-        "nibble": "low",
         "scale": 10
       }
     },
@@ -59,14 +57,12 @@
       "initials": {
         "start": 196,
         "encoding": "ch",
-        "length": 6,
-        "nibble": "low"
+        "length": 6
       },
       "score": {
         "start": 202,
         "encoding": "bcd",
         "length": 7,
-        "nibble": "low",
         "scale": 10
       }
     },
@@ -76,14 +72,12 @@
       "initials": {
         "start": 209,
         "encoding": "ch",
-        "length": 6,
-        "nibble": "low"
+        "length": 6
       },
       "score": {
         "start": 215,
         "encoding": "bcd",
         "length": 7,
-        "nibble": "low",
         "scale": 10
       }
     },
@@ -93,14 +87,12 @@
       "initials": {
         "start": 222,
         "encoding": "ch",
-        "length": 6,
-        "nibble": "low"
+        "length": 6
       },
       "score": {
         "start": 228,
         "encoding": "bcd",
         "length": 7,
-        "nibble": "low",
         "scale": 10
       }
     },
@@ -110,14 +102,12 @@
       "initials": {
         "start": 235,
         "encoding": "ch",
-        "length": 6,
-        "nibble": "low"
+        "length": 6
       },
       "score": {
         "start": 241,
         "encoding": "bcd",
         "length": 7,
-        "nibble": "low",
         "scale": 10
       }
     }
@@ -128,79 +118,68 @@
         "label": "Left Chute Coins",
         "start": 0,
         "encoding": "bcd",
-        "length": 4,
-        "nibble": "low"
+        "length": 4
       },
       "02": {
         "label": "Right Chute Coins",
         "start": 4,
         "encoding": "bcd",
-        "length": 4,
-        "nibble": "low"
+        "length": 4
       },
       "03": {
         "label": "Center Chute Coins",
         "start": 8,
         "encoding": "bcd",
-        "length": 4,
-        "nibble": "low"
+        "length": 4
       },
       "04": {
         "label": "Total Plays",
         "start": 12,
         "encoding": "bcd",
-        "length": 4,
-        "nibble": "low"
+        "length": 4
       },
       "05": {
         "label": "Total Replays",
         "start": 16,
         "encoding": "bcd",
-        "length": 4,
-        "nibble": "low"
+        "length": 4
       },
       "07": {
         "label": "Extra Balls",
         "start": 20,
         "encoding": "bcd",
-        "length": 3,
-        "nibble": "low"
+        "length": 3
       },
       "08": {
         "label": "Tilts",
         "start": 23,
         "encoding": "bcd",
-        "length": 3,
-        "nibble": "low"
+        "length": 3
       },
       "09": {
         "label": "Specials",
         "start": 26,
         "encoding": "bcd",
-        "length": 3,
-        "nibble": "low"
+        "length": 3
       },
       "10": {
         "label": "Times HGTD Awarded",
         "start": 29,
         "encoding": "bcd",
-        "length": 3,
-        "nibble": "low"
+        "length": 3
       },
       "14": {
         "label": "Highest Game To Date",
         "start": 44,
         "encoding": "bcd",
         "length": 7,
-        "nibble": "low",
         "scale": 10
       },
       "14a": {
         "label": "HGTD Initials",
         "start": 38,
         "encoding": "ch",
-        "length": 6,
-        "nibble": "low"
+        "length": 6
       },
       "15": {
         "label": "Game Time",
@@ -208,7 +187,6 @@
         "start": 32,
         "encoding": "bcd",
         "length": 6,
-        "nibble": "low",
         "scale": 10
       }
     }
@@ -220,15 +198,13 @@
         "suffix": "%",
         "start": 59,
         "encoding": "bcd",
-        "length": 2,
-        "nibble": "low"
+        "length": 2
       },
       "11": {
         "label": "First High Score",
         "start": 51,
         "encoding": "bcd",
         "length": 2,
-        "nibble": "low",
         "scale": 100000
       },
       "12": {
@@ -236,7 +212,6 @@
         "start": 53,
         "encoding": "bcd",
         "length": 2,
-        "nibble": "low",
         "scale": 100000
       },
       "13": {
@@ -244,7 +219,6 @@
         "start": 55,
         "encoding": "bcd",
         "length": 2,
-        "nibble": "low",
         "scale": 100000
       }
     }

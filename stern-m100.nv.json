@@ -6,9 +6,10 @@
   ],
   "_copyright": "Copyright (C) 2023 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
-  "_fileformat": 0.2,
+  "_fileformat": 0.4,
   "_version": 0.2,
   "_endian": "little",
+  "_nibble": "high",
   "_ramsize": 256,
   "_roms": [
     "dracula",
@@ -30,51 +31,44 @@
       "label": "Match",
       "start": 54,
       "length": 2,
-      "encoding": "bcd",
-      "nibble": "high"
+      "encoding": "bcd"
     },
     "current_ball": {
       "label": "Ball",
       "start": 54,
       "length": 2,
-      "encoding": "bcd",
-      "nibble": "high"
+      "encoding": "bcd"
     },
     "credits": {
       "label": "Credits",
       "start": 213,
       "length": 2,
-      "encoding": "bcd",
-      "nibble": "high"
+      "encoding": "bcd"
     },
     "scores": [
       {
         "label": "P1",
         "start": 30,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       {
         "label": "P2",
         "start": 36,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       {
         "label": "P3",
         "start": 42,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       {
         "label": "P4",
         "start": 48,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       }
     ]
   },
@@ -82,26 +76,22 @@
     {
       "start": 60,
       "length": 6,
-      "encoding": "bcd",
-      "nibble": "high"
+      "encoding": "bcd"
     },
     {
       "start": 66,
       "length": 6,
-      "encoding": "bcd",
-      "nibble": "high"
+      "encoding": "bcd"
     },
     {
       "start": 72,
       "length": 6,
-      "encoding": "bcd",
-      "nibble": "high"
+      "encoding": "bcd"
     },
     {
       "start": 78,
       "length": 6,
-      "encoding": "bcd",
-      "nibble": "high"
+      "encoding": "bcd"
     }
   ],
   "high_scores": [
@@ -111,8 +101,7 @@
       "score": {
         "start": 207,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       }
     }
   ],
@@ -122,29 +111,25 @@
         "label": "Replay 1",
         "start": 189,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       "02": {
         "label": "Replay 2",
         "start": 195,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       "03": {
         "label": "Replay 3",
         "start": 201,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       "04": {
         "label": "High Score",
         "start": 207,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       }
     }
   },
@@ -154,50 +139,43 @@
         "label": "Credits",
         "start": 213,
         "length": 2,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       "06": {
         "label": "Total Plays",
         "start": 219,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       "07": {
         "label": "Total Replays",
         "start": 225,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       "08": {
         "label": "HSTD Beaten",
         "start": 231,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       "09": {
         "label": "Coin Chute 2",
         "start": 237,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       "10": {
         "label": "Coin Chute 1",
         "start": 243,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       },
       "11": {
         "label": "Coin Chute 3",
         "start": 249,
         "length": 6,
-        "encoding": "bcd",
-        "nibble": "high"
+        "encoding": "bcd"
       }
     }
   }
