@@ -42,6 +42,7 @@
       "initials": {
         "start": 183,
         "encoding": "ch",
+        "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
@@ -57,6 +58,7 @@
       "initials": {
         "start": 196,
         "encoding": "ch",
+        "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
@@ -72,6 +74,7 @@
       "initials": {
         "start": 209,
         "encoding": "ch",
+        "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
@@ -87,6 +90,7 @@
       "initials": {
         "start": 222,
         "encoding": "ch",
+        "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
@@ -102,6 +106,7 @@
       "initials": {
         "start": 235,
         "encoding": "ch",
+        "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
@@ -179,6 +184,7 @@
         "label": "HGTD Initials",
         "start": 38,
         "encoding": "ch",
+        "null": "truncate",
         "length": 6
       },
       "15": {
