@@ -15,11 +15,6 @@
     {
       "label": "1st",
       "short_label": "#1",
-      "initials": {
-        "start": 0,
-        "encoding": "ch",
-        "length": 0
-      },
       "score": {
         "encoding": "bcd",
         "length": 3,
