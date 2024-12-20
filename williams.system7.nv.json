@@ -10,6 +10,7 @@
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_nibble": "low",
   "_roms": [
     "barra_l1",
     "bk_l4",
@@ -30,15 +31,14 @@
     "vrkon_l1",
     "wrlok_l3"
   ],
-  "_fileformat": 0.2,
+  "_fileformat": 0.4,
   "_version": 0.1,
   "game_state": {
     "credits": {
       "label": "Credits",
       "start": 110,
       "length": 2,
-      "encoding": "bcd",
-      "nibble": "low"
+      "encoding": "bcd"
     }
   },
   "high_scores": [
@@ -48,8 +48,7 @@
       "score": {
         "start": 102,
         "encoding": "bcd",
-        "length": 8,
-        "nibble": "low"
+        "length": 8
       }
     },
     {
@@ -58,8 +57,7 @@
       "score": {
         "start": 46,
         "encoding": "bcd",
-        "length": 8,
-        "nibble": "low"
+        "length": 8
       }
     },
     {
@@ -68,8 +66,7 @@
       "score": {
         "start": 54,
         "encoding": "bcd",
-        "length": 8,
-        "nibble": "low"
+        "length": 8
       }
     },
     {
@@ -78,8 +75,7 @@
       "score": {
         "start": 62,
         "encoding": "bcd",
-        "length": 8,
-        "nibble": "low"
+        "length": 8
       }
     }
   ]

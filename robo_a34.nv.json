@@ -7,6 +7,7 @@
   "_copyright": "Copyright (C) 2016 by Horsepin",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_nibble_note": "don't set global nibble setting, only some entries use it",
   "_roms": [
     "robo_a34"
   ],

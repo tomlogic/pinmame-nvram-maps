@@ -25,6 +25,7 @@ import sys
 # global to hold required file format for last converted file
 file_format = 0.0
 
+
 def minimum_file_format(v):
     global file_format
 
@@ -39,6 +40,9 @@ def map_convert(pairs):
     for k, v in pairs:
         if k == '_fileformat':
             minimum_file_format(v)
+        elif k == '_nibble':
+            # global "_nibble" introduced in v0.4
+            minimum_file_format(0.4)
         elif k == 'nibble':
             # "nibble" is only valid in v0.2 and later
             minimum_file_format(0.2)
@@ -69,6 +73,7 @@ def map_convert(pairs):
             result[k] = v
 
     return result
+
 
 exitcode = 0
 for filename in sys.argv[1:]:

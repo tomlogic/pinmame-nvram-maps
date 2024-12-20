@@ -9,10 +9,11 @@
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "little",
+  "_nibble": "low",
   "_roms": [
     "mcastle"
   ],
-  "_fileformat": 0.2,
+  "_fileformat": 0.4,
   "_version": 0.1,
   "game_state": {
     "credits": {
@@ -26,26 +27,22 @@
     {
       "start": 1216,
       "encoding": "bcd",
-      "length": 8,
-      "nibble": "low"
+      "length": 8
     },
     {
       "start": 1224,
       "encoding": "bcd",
-      "length": 8,
-      "nibble": "low"
+      "length": 8
     },
     {
       "start": 1232,
       "encoding": "bcd",
-      "length": 8,
-      "nibble": "low"
+      "length": 8
     },
     {
       "start": 1240,
       "encoding": "bcd",
-      "length": 8,
-      "nibble": "low"
+      "length": 8
     }
   ],
   "high_scores": [
@@ -55,8 +52,7 @@
       "score": {
         "start": 1862,
         "encoding": "bcd",
-        "length": 8,
-        "nibble": "low"
+        "length": 8
       }
     }
   ]
