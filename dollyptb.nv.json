@@ -1,52 +1,55 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Centaur (Bally 1981)",
-    "https://www.ipdb.org/machine.cgi?id=476",
-    "https://opdb.org/machines/409",
+    "Dolly Parton (Bally 1979)",
+    "https://www.ipdb.org/machine.cgi?id=698",
+    "https://opdb.org/machines/130",
     "Bally MPU AS-2518-35",
     "7-digit score display",
-    "centaura is the free play version.",
-    "By default the credits are not shown, set dip switch 27 to show them."
+    "By default the credits are not shown, set dip switch 27 to show them.",
+    "Same layout as hglibtrtb"
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "little",
   "_nibble": "high",
   "_roms": [
-    "centaur",
-    "centaura"
+    "dollyptb"
   ],
   "_fileformat": 0.4,
   "_version": 0.1,
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 61,
-      "length": 2,
+      "start": 57,
+      "length": 1,
       "encoding": "bcd"
     }
   },
   "last_game": [
     {
-      "start": 72,
+      "start": 61,
       "encoding": "bcd",
-      "length": 7
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 67,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 73,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
     },
     {
       "start": 79,
       "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 86,
-      "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 93,
-      "encoding": "bcd",
-      "length": 7
+      "length": 6,
+      "scale": 10
     }
   ],
   "high_scores": [
@@ -54,9 +57,10 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": 166,
+        "start": 171,
         "encoding": "bcd",
-        "length": 7
+        "length": 6,
+        "scale": 10
       }
     }
   ],
@@ -64,88 +68,80 @@
     "Bookkeeping functions": {
       "05": {
         "label": "Current Credits",
-        "start": 173,
-        "length": 7,
+        "start": 177,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 40
       },
       "06": {
         "label": "Total Plays (Played and Free Games)",
-        "start": 180,
-        "length": 7,
+        "start": 183,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
       },
       "07": {
         "label": "Total Replays (Free Games)",
-        "start": 187,
-        "length": 7,
+        "start": 189,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
       },
       "08": {
-        "label": "Game Percentage",
-        "start": 194,
-        "length": 7,
+        "label": "Total times 'High Score To Date' is beat",
+        "start": 195,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
       },
       "09": {
-        "label": "Total times 'High Score To Date' is beat",
+        "label": "Coins Dropped thru Coin Chute #1",
         "start": 201,
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
       },
       "10": {
-        "label": "Coins Dropped thru Coin Chute #1",
-        "start": 208,
-        "length": 7,
+        "label": "Coins Dropped thru Coin Chute #2",
+        "start": 207,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
       },
       "11": {
-        "label": "Coins Dropped thru Coin Chute #2",
-        "start": 215,
-        "length": 7,
+        "label": "Coins Dropped thru Coin Chute #3",
+        "start": 213,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
       },
       "12": {
-        "label": "Coins Dropped thru Coin Chute #3",
-        "start": 222,
-        "length": 7,
+        "label": "Number of Specials awarded from Panel Specials Only",
+        "start": 219,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
       },
       "13": {
-        "label": "Number of Specials awarded from Panel Specials Only",
-        "start": 229,
-        "length": 7,
+        "label": "Number of minutes of Game Play",
+        "start": 225,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
       },
       "14": {
-        "label": "Number of minutes of Game Play",
-        "start": 236,
-        "length": 7,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 99999
-      },
-      "15": {
         "label": "Number of Service Credits",
-        "start": 243,
-        "length": 7,
+        "start": 231,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -156,7 +152,7 @@
     "High score functions": {
       "01": {
         "label": "Extra ball / Free game score level 1",
-        "start": 146,
+        "start": 153,
         "encoding": "bcd",
         "length": 6,
         "min": 0,
@@ -170,7 +166,7 @@
       },
       "02": {
         "label": "Extra ball / Free game score level 2",
-        "start": 152,
+        "start": 159,
         "encoding": "bcd",
         "length": 6,
         "min": 0,
@@ -185,7 +181,7 @@
       "03": {
         "_note": "Increments by 10000",
         "label": "Extra ball / Free game score level 3",
-        "start": 158,
+        "start": 165,
         "encoding": "bcd",
         "length": 6,
         "min": 0,
@@ -199,80 +195,12 @@
       },
       "04": {
         "label": "High score to date",
-        "start": 166,
+        "start": 171,
         "encoding": "bcd",
-        "length": 7,
+        "length": 6,
         "min": 0,
-        "max": 9990000
-      }
-    },
-    "Game adjustments": {
-      "16": {
-        "label": "High Score award #1",
-        "start": 250,
-        "length": 1,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 3,
-        "special_values": {
-          "0": "No Award",
-          "1": "Novelty",
-          "2": "Extra Ball",
-          "3": "Replay"
-        }
-      },
-      "17": {
-        "label": "High Score award #2",
-        "start": 251,
-        "length": 1,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 3,
-        "special_values": {
-          "0": "No Award",
-          "1": "No Award",
-          "2": "Extra Ball",
-          "3": "Replay"
-        }
-      },
-      "18": {
-        "label": "???",
-        "start": 252,
-        "length": 1,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 3
-      },
-      "19": {
-        "label": "High Score to date or over 10.000.000 score feature",
-        "_note": "Looking at this field as an int the default is 15",
-        "start": 253,
-        "length": 1,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 3,
-        "special_values": {
-          "0": "No Award",
-          "1": "One Credit",
-          "2": "Two Credits",
-          "3": "Three Credits"
-        }
-      },
-      "20": {
-        "label": "???",
-        "start": 254,
-        "length": 1,
-        "encoding": "int",
-        "min": 0,
-        "max": 15
-      },
-      "21": {
-        "label": "???",
-        "start": 255,
-        "length": 1,
-        "encoding": "int",
-        "min": 0,
-        "max": 15
+        "max": 999000,
+        "scale": 10
       }
     }
   }
