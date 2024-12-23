@@ -21,7 +21,8 @@
       "label": "Credits",
       "start": 44,
       "length": 1,
-      "encoding": "bcd"
+      "encoding": "bcd",
+      "nibble": "both"
     }
   },
   "last_game": [
