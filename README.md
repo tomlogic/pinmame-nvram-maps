@@ -65,6 +65,9 @@ currently includes a Python program (`nvram_parser.py`) that works as a
 standalone application to dump a parsed `.nv` file, or as a class
 (ParseNVRAM) you can use from other programs.
 
+There is also a [Rust library](https://github.com/francisdb/pinmame-nvram) 
+for reading and writing nvram files that uses the maps from this project.
+
 ## Mapping New Games
 
 Start PinMAME and write down all the high scores, and then exit. 
