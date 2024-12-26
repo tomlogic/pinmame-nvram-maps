@@ -2,12 +2,12 @@
   "_notes": [
     "0.1: Compiled by Horsepin.",
     "0.2: Switch from `packed` to `nibble`;",
-    "     added `mask` to initials to get uppercase (Tom Collins)"
+    "     added `mask` to initials to get uppercase (Tom Collins)",
+    "(only some entries have low nibble, so don't set _nibble for entire file)"
   ],
   "_copyright": "Copyright (C) 2016 by Horsepin",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
-  "_nibble_note": "don't set global nibble setting, only some entries use it",
   "_roms": [
     "robo_a34"
   ],

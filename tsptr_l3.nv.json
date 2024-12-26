@@ -60,12 +60,14 @@
     },
     "bonusX": {
       "label": "Bonus Multiplier",
-      "_note": "extracting value from lamp matrix col 2",
+      "_note": [
+        "extracting value from lamp matrix col 2",
+        "use offset to set bit 8 for base 1X"
+      ],
       "start": 17,
       "encoding": "bits",
       "suffix": "X",
       "offset": 256,
-      "_note2": "use extra bit in values for base 1X",
       "values": [
         1,
         1,
