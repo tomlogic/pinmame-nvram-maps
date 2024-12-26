@@ -7,6 +7,7 @@
     "If a value differs in all three locations, it's replaced with a default value.",
     "Note that offsets 0xF8 through 0xFC are checksums of each of the high scores.",
     "Appears to work for all System 80B S2/S3 games.",
+    "Note that victory moved to its own map to include dip switch definitions.",
     "Untested: diamond, excaliba, hotshots, nmoves"
   ],
   "_copyright": "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
@@ -19,7 +20,6 @@
     "excalibr",
     "robowars",
     "txsector",
-    "victory",
     "badgirls",
     "bighouse",
     "bonebstr",
