@@ -14,11 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check for unformatted files
+      - name: Check for file formatting issues or outdated index.json
         run: |
-          ./tools/reformat-map.sh *.json
+          tools/reformat-map.sh *.json
           if [[ -n $(git status --porcelain) ]]; then
               git status
-              echo "Some files have not been formatted. Please check the README on how to reformat your files."
+              echo "Some maps are formatted incorrectly. Please check the README on how to reformat your files."
+              exit 1
+          fi
+
+          tools/update-index.py
+          if [[ -n $(git status --porcelain) ]]; then
+              echo "The index.json file is outdated."
               exit 1
           fi
