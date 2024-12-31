@@ -87,7 +87,22 @@ portions of the NVRAM file to aid in matching audits to file locations.
 Setting each 6-byte grouping to its starting address should allow for
 quickly mapping each audit.
 
-## File Format
+## Map Index
+
+The file `index.json` is a simple dictionary that maps PinMAME ROM names
+to their corresponding map file (which may be valid for multiple ROMs).
+Implementations can use it for lookups  instead of parsing the entire list
+of maps.
+
+- The dictionary will have a single entry for a given ROM (i.e., the
+  repository won't have multiple maps for a ROM).
+- The map filename can be in a relative subdirectory, using `/` as the
+  directory separator (e.g., `"maps/williams/wpc/dm_lx4.nv.json"`).
+- Maps are currently in the root directory of the repository, but will
+  soon move into a `maps/` subdirectory.
+- Use `tools/update-index.py` to automatically update the index.
+
+## JSON File Format
 
 The JSON file is essentially a big dictionary or associative array, with
 the following key/value pairs.  It may help to review one or more of the
@@ -227,6 +242,40 @@ how to interpret them.  They're comprised of the following key/value pairs:
   - **min** and **max**: The valid range of values.
   - **multiple_of**: Enforce a subset of values between `min` and `max`.
     Defaults to `1` (all values allowed) unless specified.
+
+#### Encoding/Property Cheat Sheet
+
+| property       | bcd/int | bits | ch  | enum | raw | wpc_rtc | dipsw |
+|----------------|:-------:|:----:|:---:|:----:|:---:|:-------:|:-----:|
+| start          |    X    |  X   |  X  |  X   |  X  |    X    |       |
+| end            |    X    |  X   |  X  |      |  X  |    X    |       |
+| length         |    X    |  X   |  X  |      |  X  |    X    |       |
+| offsets        |    X    |  X   |  X  |      |  X  |    X    |   X   |
+| endian         |    X    |  X   |     |      |     |         |       |
+| nibble         |    X    |  X   |  X  |  X   |  X  |    X    |       |
+| mask           |    X    |  X   |  X  |  X   |  X  |    X    |       |
+| null           |         |      |  X  |      |     |         |       |
+| special_values |    X    |      |     |      |     |         |       |
+| values         |         |  X   |     |  X   |     |         |   X   |
+| offset         |    X    |  X   |     |      |     |         |       |
+| scale          |    X    |  X   |     |      |     |         |       |
+| suffix         |    X    |  X   |     |      |     |         |       |
+| units          |    X    |  X   |     |      |     |         |       |
+
+##### Encoding Notes
+- The `enum` encoding is intended for single-byte values.
+- The `bcd`, `bits`, and `int` encodings convert bytes into a numeric
+  value that is modified by properties such as `offset`, `scale`, `suffix`,
+  and `units`.
+- `dipsw`, `raw`, and `wpc_rtc` are special encodings.
+
+##### Property Notes
+- The `null` property only applies to `ch` encoding.
+- The `values` property is a list of values, starting with an index of 0.
+- The `special_values` property is a dictionary of integers (as strings)
+  and a string to override display of a specific integer.  A common example
+  would be replacing a 0 with the word OFF (represented as
+  `"special_values": { "0": "OFF" }}`).
 
 ### File Map
 
