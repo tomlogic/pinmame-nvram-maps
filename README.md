@@ -98,8 +98,6 @@ of maps.
   repository won't have multiple maps for a ROM).
 - The map filename can be in a relative subdirectory, using `/` as the
   directory separator (e.g., `"maps/williams/wpc/dm_lx4.nv.json"`).
-- Maps are currently in the root directory of the repository, but will
-  soon move into a `maps/` subdirectory.
 - Use `tools/update-index.py` to automatically update the index.
 
 ## JSON File Format
