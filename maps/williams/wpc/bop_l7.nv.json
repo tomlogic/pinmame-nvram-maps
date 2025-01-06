@@ -1,0 +1,425 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50002, SYS 2.46 REV 0.7"
+  ],
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 8192,
+  "_roms": [
+    "bop_l7",
+    "bop_l8"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
+  "game_state": {
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7437,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    }
+  },
+  "high_scores": [
+    {
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "start": 7389,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7392,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7355,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7358,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7363,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7366,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7371,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7374,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7379,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7382,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Billionaire #1",
+      "initials": {
+        "start": 7969,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7972,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #2",
+      "initials": {
+        "start": 7977,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7980,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #3",
+      "initials": {
+        "start": 7985,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7988,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #4",
+      "initials": {
+        "start": 7993,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7996,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #5",
+      "initials": {
+        "start": 8001,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8004,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #6",
+      "initials": {
+        "start": 8009,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8012,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #7",
+      "initials": {
+        "start": 8017,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8020,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #8",
+      "initials": {
+        "start": 8025,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8028,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #9",
+      "initials": {
+        "start": 8033,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8036,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #10",
+      "initials": {
+        "start": 8041,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8044,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #11",
+      "initials": {
+        "start": 8049,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8052,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #12",
+      "initials": {
+        "start": 8057,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8060,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #13",
+      "initials": {
+        "start": 8065,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8068,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #14",
+      "initials": {
+        "start": 8073,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8076,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #15",
+      "initials": {
+        "start": 8081,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8084,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #16",
+      "initials": {
+        "start": 8089,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8092,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #17",
+      "initials": {
+        "start": 8097,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8100,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #18",
+      "initials": {
+        "start": 8105,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8108,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #19",
+      "initials": {
+        "start": 8113,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8116,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Billionaire #20",
+      "initials": {
+        "start": 8121,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8124,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 6886,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 7031,
+      "end": 7252,
+      "label": "Adjustments"
+    },
+    {
+      "start": 7255,
+      "end": 7354,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7355,
+      "end": 7388,
+      "label": "High Scores"
+    },
+    {
+      "start": 7389,
+      "end": 7398,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7399,
+      "end": 7404
+    },
+    {
+      "start": 7405,
+      "end": 7413
+    },
+    {
+      "start": 7414,
+      "end": 7416
+    },
+    {
+      "start": 7417,
+      "end": 7427
+    },
+    {
+      "start": 7428,
+      "end": 7641
+    },
+    {
+      "start": 7969,
+      "end": 8130,
+      "label": "Mode Champions"
+    }
+  ]
+}

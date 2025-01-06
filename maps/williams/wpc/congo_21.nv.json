@@ -1,0 +1,209 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50050, SYS 3.63 REV 2.1"
+  ],
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 12288,
+  "_roms": [
+    "congo_21"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
+  "game_state": {
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7483,
+      "encoding": "bcd",
+      "length": 3,
+      "scale": 1000000
+    }
+  },
+  "high_scores": [
+    {
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "start": 7433,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7436,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7395,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7398,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7404,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7407,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7413,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7416,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7422,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7425,
+        "encoding": "bcd",
+        "length": 6
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Buy-In #1",
+      "initials": {
+        "start": 8008,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8011,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Buy-In #2",
+      "initials": {
+        "start": 8017,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8020,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Diamond Champ",
+      "initials": {
+        "start": 8028,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8031,
+        "encoding": "bcd",
+        "suffix": " Diamonds",
+        "length": 3
+      }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 7012,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 7061,
+      "end": 7292,
+      "label": "Adjustments"
+    },
+    {
+      "start": 7295,
+      "end": 7394,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7395,
+      "end": 7432,
+      "label": "High Scores"
+    },
+    {
+      "start": 7433,
+      "end": 7443,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7444,
+      "end": 7449
+    },
+    {
+      "start": 7450,
+      "end": 7459
+    },
+    {
+      "start": 7460,
+      "end": 7462
+    },
+    {
+      "start": 7463,
+      "end": 7473
+    },
+    {
+      "start": 7474,
+      "end": 7687
+    },
+    {
+      "start": 8008,
+      "end": 8027,
+      "label": "Buy-In Scores"
+    },
+    {
+      "start": 8028,
+      "end": 8038,
+      "label": "Diamond Champ"
+    }
+  ]
+}

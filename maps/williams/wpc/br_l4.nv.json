@@ -1,0 +1,177 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 20013, SYS 2.46 REV 0.4"
+  ],
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 8192,
+  "_roms": [
+    "br_l4"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
+  "game_state": {
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7360,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    }
+  },
+  "high_scores": [
+    {
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "start": 7311,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7314,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7277,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7280,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7285,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7288,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7293,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7296,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7301,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7304,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Most Ships Sunk",
+      "initials": {
+        "start": 7891,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7894,
+        "encoding": "int",
+        "suffix": " ships"
+      }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 6922,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 6941,
+      "end": 7174,
+      "label": "Adjustments"
+    },
+    {
+      "start": 7177,
+      "end": 7276,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7277,
+      "end": 7310,
+      "label": "High Scores"
+    },
+    {
+      "start": 7311,
+      "end": 7320,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7321,
+      "end": 7326
+    },
+    {
+      "start": 7327,
+      "end": 7335
+    },
+    {
+      "start": 7336,
+      "end": 7338
+    },
+    {
+      "start": 7339,
+      "end": 7349
+    },
+    {
+      "start": 7350,
+      "end": 7563
+    },
+    {
+      "start": 7891,
+      "end": 7896,
+      "label": "Most Ships Sunk"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50065, SYS 3.76 REV 1.0"
+  ],
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 12288,
+  "_roms": [
+    "mb_10"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
+  "game_state": {
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7389,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    }
+  },
+  "high_scores": [
+    {
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "start": 7339,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7342,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7305,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7308,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7313,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7316,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7321,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7324,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7329,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7332,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Monster Bash Champion",
+      "initials": {
+        "start": 7913,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7916,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Monsters of Rock Champion",
+      "initials": {
+        "start": 7923,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7926,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 6916,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 6941,
+      "end": 7202,
+      "label": "Adjustments"
+    },
+    {
+      "start": 7205,
+      "end": 7304,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7305,
+      "end": 7338,
+      "label": "High Scores"
+    },
+    {
+      "start": 7339,
+      "end": 7348,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7349,
+      "end": 7354
+    },
+    {
+      "start": 7355,
+      "end": 7364
+    },
+    {
+      "start": 7365,
+      "end": 7367
+    },
+    {
+      "start": 7368,
+      "end": 7378
+    },
+    {
+      "start": 7379,
+      "end": 7592
+    },
+    {
+      "start": 7913,
+      "end": 7922,
+      "label": "Monster Bash Champion"
+    },
+    {
+      "start": 7923,
+      "end": 7932,
+      "label": "Monsters of Rock Champion"
+    }
+  ]
+}

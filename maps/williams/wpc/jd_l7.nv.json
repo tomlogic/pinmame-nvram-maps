@@ -1,0 +1,234 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 20020, SYS 3.08 REV 0.7"
+  ],
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 12288,
+  "_roms": [
+    "jd_l7"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
+  "game_state": {
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7348,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    }
+  },
+  "high_scores": [
+    {
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "start": 7299,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7302,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7265,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7268,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7273,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7276,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7281,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7284,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7289,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7292,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Super Game GC",
+      "initials": {
+        "start": 7913,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7916,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Super Game #1",
+      "initials": {
+        "start": 7879,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7882,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Super Game #2",
+      "initials": {
+        "start": 7887,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7890,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Super Game #3",
+      "initials": {
+        "start": 7895,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7898,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Super Game #4",
+      "initials": {
+        "start": 7903,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7906,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 6742,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 6941,
+      "end": 7162,
+      "label": "Adjustments"
+    },
+    {
+      "start": 7165,
+      "end": 7264,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7265,
+      "end": 7298,
+      "label": "High Scores"
+    },
+    {
+      "start": 7299,
+      "end": 7308,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7309,
+      "end": 7314
+    },
+    {
+      "start": 7315,
+      "end": 7323
+    },
+    {
+      "start": 7324,
+      "end": 7326
+    },
+    {
+      "start": 7327,
+      "end": 7337
+    },
+    {
+      "start": 7338,
+      "end": 7551
+    },
+    {
+      "start": 7879,
+      "end": 7912,
+      "label": "Super Game High Scores"
+    },
+    {
+      "start": 7913,
+      "end": 7922,
+      "label": "Super Game Grand Champion"
+    }
+  ]
+}

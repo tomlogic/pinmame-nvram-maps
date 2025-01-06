@@ -1,0 +1,255 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50026, SYS 3.50 REV 1.1"
+  ],
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 12288,
+  "_roms": [
+    "i500_11r"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
+  "game_state": {
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7545,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    }
+  },
+  "high_scores": [
+    {
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "start": 7495,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7498,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7461,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7464,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7469,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7472,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7477,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7480,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7485,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7488,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Buy-In Champion",
+      "initials": {
+        "start": 8103,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8106,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Buy-In #1",
+      "initials": {
+        "start": 8069,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8072,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Buy-In #2",
+      "initials": {
+        "start": 8077,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8080,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Buy-In #3",
+      "initials": {
+        "start": 8085,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8088,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Buy-In #4",
+      "initials": {
+        "start": 8093,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8096,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Pit Stop Record",
+      "initials": {
+        "start": 8113,
+        "encoding": "ch",
+        "length": 3,
+        "suffix": " seconds"
+      },
+      "score": {
+        "_note": "Fractional 1/10s (0-9) in integer byte at 8117",
+        "start": 8116,
+        "encoding": "int",
+        "length": 1,
+        "suffix": " seconds"
+      }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 7036,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 7121,
+      "end": 7372,
+      "label": "Adjustments"
+    },
+    {
+      "start": 7375,
+      "end": 7460,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7461,
+      "end": 7494,
+      "label": "High Scores"
+    },
+    {
+      "start": 7495,
+      "end": 7504,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7505,
+      "end": 7510
+    },
+    {
+      "start": 7511,
+      "end": 7520
+    },
+    {
+      "start": 7521,
+      "end": 7523
+    },
+    {
+      "start": 7524,
+      "end": 7534
+    },
+    {
+      "start": 7535,
+      "end": 7748
+    },
+    {
+      "start": 8069,
+      "end": 8102,
+      "label": "Buy-In Scores"
+    },
+    {
+      "start": 8103,
+      "end": 8112,
+      "label": "Buy-In Champ"
+    },
+    {
+      "start": 8113,
+      "end": 8120,
+      "label": "Pit Stop Record"
+    }
+  ]
+}
