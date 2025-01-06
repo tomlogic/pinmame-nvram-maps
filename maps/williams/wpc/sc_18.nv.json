@@ -1,0 +1,266 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 90003, SYS 3.72 REV 1.8",
+    "Unknown whether this map works for sc_18n11 and sc_18ns2."
+  ],
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 12288,
+  "_roms": [
+    "sc_18",
+    "sc_18s11",
+    "sc_18s2"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
+  "game_state": {
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "credits": {
+      "_note": [
+        "1-byte credits followed by 6 bytes encoding partial/bonus credits.",
+        "Location of Magic Credits unknown."
+      ],
+      "label": "Credits",
+      "start": 7515,
+      "encoding": "int"
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7525,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7549,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 10000
+    }
+  },
+  "high_scores": [
+    {
+      "label": "Grand Champion",
+      "short_label": "GC",
+      "initials": {
+        "start": 7499,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7502,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7465,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7468,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7473,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7476,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7481,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7484,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7489,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7492,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Assault Champion",
+      "initials": {
+        "start": 8073,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8076,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Assault Master #1",
+      "initials": {
+        "start": 8083,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8086,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Assault Master #2",
+      "initials": {
+        "start": 8091,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8094,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Assault Master #3",
+      "initials": {
+        "start": 8099,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8102,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Assault Master #4",
+      "initials": {
+        "start": 8107,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8110,
+        "encoding": "bcd",
+        "length": 5
+      }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 7084,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 7121,
+      "end": 7362,
+      "label": "Adjustments"
+    },
+    {
+      "start": 7365,
+      "end": 7464,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7465,
+      "end": 7498,
+      "label": "High Scores"
+    },
+    {
+      "start": 7499,
+      "end": 7508,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7509,
+      "end": 7514,
+      "label": "HSTD Reset"
+    },
+    {
+      "start": 7515,
+      "end": 7524,
+      "label": "Credits"
+    },
+    {
+      "start": 7525,
+      "end": 7527,
+      "label": "Volume"
+    },
+    {
+      "start": 7528,
+      "end": 7538
+    },
+    {
+      "start": 7539,
+      "end": 7752
+    },
+    {
+      "start": 7753,
+      "end": 7947,
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7948,
+      "end": 8072,
+      "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 8073,
+      "end": 8082,
+      "label": "Assault Champion"
+    },
+    {
+      "start": 8083,
+      "end": 8116,
+      "label": "Assault High Scores"
+    }
+  ]
+}
