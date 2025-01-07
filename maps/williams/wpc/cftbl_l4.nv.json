@@ -30,6 +30,19 @@
       "encoding": "bcd",
       "length": 2,
       "scale": 1000000
+    },
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7387,
+      "encoding": "int"
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7396,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
     }
   },
   "high_scores": [
@@ -135,15 +148,18 @@
     },
     {
       "start": 7381,
-      "end": 7386
+      "end": 7386,
+      "label": "HSTD Reset"
     },
     {
       "start": 7387,
-      "end": 7395
+      "end": 7395,
+      "label": "Credits"
     },
     {
       "start": 7396,
-      "end": 7398
+      "end": 7398,
+      "label": "Volume"
     },
     {
       "start": 7399,
@@ -152,6 +168,16 @@
     {
       "start": 7410,
       "end": 7623
+    },
+    {
+      "start": 7624,
+      "end": 7818,
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7819,
+      "end": 7950,
+      "label": "Custom Message (2x32)"
     }
   ]
 }

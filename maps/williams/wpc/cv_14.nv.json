@@ -30,6 +30,19 @@
       "encoding": "bcd",
       "length": 2,
       "scale": 1000000
+    },
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7605,
+      "encoding": "int"
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7615,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
     }
   },
   "high_scores": [
@@ -152,6 +165,11 @@
       "label": "Party Champ"
     },
     {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
       "start": 7151,
       "end": 7452,
       "label": "Adjustments"
@@ -173,15 +191,18 @@
     },
     {
       "start": 7599,
-      "end": 7604
+      "end": 7604,
+      "label": "HSTD Reset"
     },
     {
       "start": 7605,
-      "end": 7614
+      "end": 7614,
+      "label": "Credits"
     },
     {
       "start": 7615,
-      "end": 7617
+      "end": 7617,
+      "label": "Volume"
     },
     {
       "start": 7618,
@@ -190,6 +211,16 @@
     {
       "start": 7629,
       "end": 7842
+    },
+    {
+      "start": 7843,
+      "end": 8037,
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 8038,
+      "end": 8162,
+      "label": "Custom Message (2x32)"
     }
   ]
 }

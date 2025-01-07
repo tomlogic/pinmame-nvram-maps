@@ -1,7 +1,8 @@
 {
-  "_game": "Doctor Who (Bally, 1992, WPC)",
   "_notes": [
-    "Compiled by Tom Collins for initial development/testing purposes."
+    "Compiled by Tom Collins for initial development/testing purposes.",
+    "WPC 20006, SYS 2.43 REV 0.2",
+    "Doctor Who (Bally, 1992, WPC)"
   ],
   "_copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
@@ -12,6 +13,33 @@
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
+  "last_game": [
+    {
+      "start": 5760,
+      "encoding": "bcd",
+      "length": 5
+    },
+    {
+      "start": 5766,
+      "encoding": "bcd",
+      "length": 5
+    },
+    {
+      "start": 5772,
+      "encoding": "bcd",
+      "length": 5
+    },
+    {
+      "start": 5778,
+      "encoding": "bcd",
+      "length": 5
+    }
+  ],
   "game_state": {
     "escape_a": {
       "_note": "0x280 and 0x288 both bitmaps for ESCAPE, 0x290 related to animating those lamps",
@@ -218,35 +246,28 @@
       "label": "Time Factor B",
       "start": 3315,
       "encoding": "int"
+    },
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7497,
+      "encoding": "int"
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7506,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7530,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
     }
   },
-  "last_played": {
-    "start": 6144,
-    "encoding": "wpc_rtc",
-    "length": 7
-  },
-  "last_game": [
-    {
-      "start": 5760,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5766,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5772,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5778,
-      "encoding": "bcd",
-      "length": 5
-    }
-  ],
   "high_scores": [
     {
       "label": "Grand Champion",
@@ -622,6 +643,54 @@
       "start": 7043,
       "end": 7344,
       "label": "Adjustments"
+    },
+    {
+      "start": 7347,
+      "end": 7446,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7447,
+      "end": 7480,
+      "label": "High Scores"
+    },
+    {
+      "start": 7481,
+      "end": 7490,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7491,
+      "end": 7496,
+      "label": "HSTD Reset"
+    },
+    {
+      "start": 7497,
+      "end": 7505,
+      "label": "Credits"
+    },
+    {
+      "start": 7506,
+      "end": 7508,
+      "label": "Volume"
+    },
+    {
+      "start": 7509,
+      "end": 7519
+    },
+    {
+      "start": 7520,
+      "end": 7733
+    },
+    {
+      "start": 7734,
+      "end": 7928,
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7929,
+      "end": 8060,
+      "label": "Custom Message (2x32)"
     }
   ]
 }

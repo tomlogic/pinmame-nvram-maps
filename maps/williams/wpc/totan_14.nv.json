@@ -1,11 +1,12 @@
 {
   "_notes": [
-    "Compiled by HorsePin https://github.com/horseyhorsey"
+    "Compiled by HorsePin https://github.com/horseyhorsey",
+    "WPC 50047, SYS 3.62 REV 1.4"
   ],
   "_copyright": "Copyright (C) 2022 HorsePin",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
-  "_ramsize": 12334,
+  "_ramsize": 12288,
   "_roms": [
     "totan_14"
   ],
@@ -33,6 +34,28 @@
       "start": 5814
     }
   ],
+  "game_state": {
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7574,
+      "encoding": "int"
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7584,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7608,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 10000
+    }
+  },
   "high_scores": [
     {
       "label": "Grand Champion",
@@ -103,6 +126,74 @@
         "length": 5,
         "start": 7550
       }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 7072,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 7157,
+      "end": 7416,
+      "label": "Adjustments"
+    },
+    {
+      "start": 7419,
+      "end": 7518,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7519,
+      "end": 7556,
+      "label": "High Scores"
+    },
+    {
+      "start": 7557,
+      "end": 7567,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7568,
+      "end": 7573,
+      "label": "HSTD Reset"
+    },
+    {
+      "start": 7574,
+      "end": 7583,
+      "label": "Credits"
+    },
+    {
+      "start": 7584,
+      "end": 7586,
+      "label": "Volume"
+    },
+    {
+      "start": 7587,
+      "end": 7597
+    },
+    {
+      "start": 7598,
+      "end": 7811
+    },
+    {
+      "start": 7812,
+      "end": 8006,
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 8007,
+      "end": 8131,
+      "label": "Custom Message (2x32)"
     }
   ]
 }

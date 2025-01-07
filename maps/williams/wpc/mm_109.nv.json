@@ -1,8 +1,12 @@
 {
-  "_notes": "Compiled by Tom Collins for initial development/testing purposes.",
+  "_notes": [
+    "Compiled by Tom Collins for initial development/testing purposes.",
+    "WPC 50059, SYS 3.77 REV 1.0"
+  ],
   "_copyright": "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_ramsize": 12288,
   "_roms": [
     "mm_109",
     "mm_109b",
@@ -37,6 +41,28 @@
       "length": 5
     }
   ],
+  "game_state": {
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7515,
+      "encoding": "int"
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7525,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7549,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    }
+  },
   "high_scores": [
     {
       "label": "Grand Champion",
@@ -795,6 +821,11 @@
   ],
   "checksum16": [
     {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
       "start": 7055,
       "end": 7348,
       "label": "Adjustments"
@@ -820,6 +851,20 @@
       "label": "HSTD Reset"
     },
     {
+      "start": 7515,
+      "end": 7524,
+      "label": "Credits"
+    },
+    {
+      "start": 7525,
+      "end": 7527,
+      "label": "Volume"
+    },
+    {
+      "start": 7528,
+      "end": 7538
+    },
+    {
       "start": 7539,
       "end": 7752,
       "label": "?? replay level"
@@ -827,7 +872,12 @@
     {
       "start": 7753,
       "end": 7947,
-      "label": "Custom Message"
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7948,
+      "end": 8072,
+      "label": "Custom Message (2x32)"
     },
     {
       "start": 8073,

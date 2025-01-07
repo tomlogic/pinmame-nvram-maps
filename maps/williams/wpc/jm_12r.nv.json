@@ -1,13 +1,17 @@
 {
-  "_notes": "Compiled by Tom Collins for initial development/testing purposes.",
+  "_notes": [
+    "Compiled by Tom Collins for initial development/testing purposes.",
+    "WPC 50042, SYS 3.50 REV 1.2"
+  ],
   "_copyright": "Copyright (C) 2015 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 12288,
   "_roms": [
     "jm_12r"
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
-  "_endian": "big",
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -39,6 +43,28 @@
       "length": 6
     }
   ],
+  "game_state": {
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7320,
+      "encoding": "int"
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7330,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7354,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    }
+  },
   "high_scores": [
     {
       "label": "Grand Champion",
@@ -1613,6 +1639,11 @@
   ],
   "checksum16": [
     {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
       "start": 6941,
       "end": 7162,
       "label": "Adjustments"
@@ -1640,12 +1671,16 @@
     {
       "start": 7320,
       "end": 7329,
-      "label": "Credits?"
+      "label": "Credits"
     },
     {
       "start": 7330,
       "end": 7332,
       "label": "Volume"
+    },
+    {
+      "start": 7333,
+      "end": 7343
     },
     {
       "start": 7334,
@@ -1658,7 +1693,12 @@
     {
       "start": 7558,
       "end": 7752,
-      "label": "Custom Message"
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7753,
+      "end": 7877,
+      "label": "Custom Message (2x32)"
     },
     {
       "start": 7878,

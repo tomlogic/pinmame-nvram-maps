@@ -141,6 +141,16 @@
   ],
   "checksum16": [
     {
+      "start": 5956,
+      "end": 5960,
+      "label": "The Roof Champion"
+    },
+    {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
       "start": 7061,
       "end": 7282,
       "label": "Adjustments"
@@ -192,11 +202,6 @@
       "start": 7873,
       "end": 7997,
       "label": "Custom Message (2x32)"
-    },
-    {
-      "start": 5956,
-      "end": 5960,
-      "label": "The Roof Champion"
     }
   ]
 }

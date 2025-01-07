@@ -4,9 +4,9 @@
     "WPC 50028, SYS 3.21 REV 0.4"
   ],
   "_copyright": "Copyright (C) 2015, 2025 by Tom Collins <tom@tomlogic.com>",
-  "_ramsize": 12288,
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_ramsize": 12288,
   "_roms": [
     "dm_lx4"
   ],

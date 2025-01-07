@@ -26,10 +26,23 @@
     },
     "replay": {
       "label": "Replay",
-      "start": 7533,
+      "start": 7534,
       "encoding": "bcd",
-      "length": 3,
+      "length": 2,
       "scale": 1000000
+    },
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7500,
+      "encoding": "int"
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7510,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
     }
   },
   "high_scores": [
@@ -171,6 +184,11 @@
       "label": "Unknown Champ (XAQ)"
     },
     {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
       "start": 7121,
       "end": 7342,
       "label": "Adjustments"
@@ -192,15 +210,18 @@
     },
     {
       "start": 7494,
-      "end": 7499
+      "end": 7499,
+      "label": "HSTD Reset"
     },
     {
       "start": 7500,
-      "end": 7509
+      "end": 7509,
+      "label": "Credits"
     },
     {
       "start": 7510,
-      "end": 7512
+      "end": 7512,
+      "label": "Volume"
     },
     {
       "start": 7513,
@@ -209,6 +230,16 @@
     {
       "start": 7524,
       "end": 7737
+    },
+    {
+      "start": 7738,
+      "end": 7932,
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7933,
+      "end": 8057,
+      "label": "Custom Message (2x32)"
     }
   ]
 }

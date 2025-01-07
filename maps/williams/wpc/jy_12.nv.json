@@ -26,10 +26,23 @@
     },
     "replay": {
       "label": "Replay",
-      "start": 7472,
+      "start": 7473,
       "encoding": "bcd",
-      "length": 3,
+      "length": 2,
       "scale": 1000000
+    },
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7440,
+      "encoding": "int"
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7450,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
     }
   },
   "high_scores": [
@@ -114,6 +127,11 @@
   ],
   "checksum16": [
     {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
       "start": 7061,
       "end": 7282,
       "label": "Adjustments"
@@ -135,15 +153,18 @@
     },
     {
       "start": 7434,
-      "end": 7439
+      "end": 7439,
+      "label": "HSTD Reset"
     },
     {
       "start": 7440,
-      "end": 7449
+      "end": 7449,
+      "label": "Credits"
     },
     {
       "start": 7450,
-      "end": 7452
+      "end": 7452,
+      "label": "Volume"
     },
     {
       "start": 7453,
@@ -152,6 +173,16 @@
     {
       "start": 7464,
       "end": 7677
+    },
+    {
+      "start": 7678,
+      "end": 7872,
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7873,
+      "end": 7997,
+      "label": "Custom Message (2x32)"
     }
   ]
 }

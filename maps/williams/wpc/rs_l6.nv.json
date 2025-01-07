@@ -181,6 +181,11 @@
   ],
   "checksum16": [
     {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
       "start": 6941,
       "end": 7162,
       "label": "Adjustments"
