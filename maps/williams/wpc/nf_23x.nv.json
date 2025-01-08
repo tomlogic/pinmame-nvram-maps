@@ -1,7 +1,8 @@
 {
   "_notes": [
     "Compiled by Horsepin.",
-    "WPC 50025, SYS 3.48 REV 2.3"
+    "WPC 50025, SYS 3.48 REV 2.3",
+    "v0.2: changed score lengths from 5 to 6"
   ],
   "_copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
   "_license": "GNU Lesser General Public License v3.0",
@@ -11,27 +12,27 @@
     "nf_23x"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_game": [
     {
-      "start": 5793,
+      "start": 5792,
       "encoding": "bcd",
-      "length": 5
+      "length": 6
     },
     {
-      "start": 5800,
+      "start": 5799,
       "encoding": "bcd",
-      "length": 5
+      "length": 6
     },
     {
-      "start": 5807,
+      "start": 5806,
       "encoding": "bcd",
-      "length": 5
+      "length": 6
     },
     {
-      "start": 5814,
+      "start": 5817,
       "encoding": "bcd",
-      "length": 5
+      "length": 6
     }
   ],
   "game_state": {
@@ -66,9 +67,9 @@
         "length": 3
       },
       "score": {
-        "start": 7447,
+        "start": 7446,
         "encoding": "bcd",
-        "length": 5
+        "length": 6
       }
     },
     {
@@ -80,9 +81,9 @@
         "length": 3
       },
       "score": {
-        "start": 7409,
+        "start": 7408,
         "encoding": "bcd",
-        "length": 5
+        "length": 6
       }
     },
     {
@@ -94,9 +95,9 @@
         "length": 3
       },
       "score": {
-        "start": 7418,
+        "start": 7417,
         "encoding": "bcd",
-        "length": 5
+        "length": 6
       }
     },
     {
@@ -108,9 +109,9 @@
         "length": 3
       },
       "score": {
-        "start": 7427,
+        "start": 7426,
         "encoding": "bcd",
-        "length": 5
+        "length": 6
       }
     },
     {
@@ -122,9 +123,9 @@
         "length": 3
       },
       "score": {
-        "start": 7436,
+        "start": 7435,
         "encoding": "bcd",
-        "length": 5
+        "length": 6
       }
     }
   ],
@@ -138,9 +139,9 @@
         "length": 3
       },
       "score": {
-        "start": 8021,
+        "start": 8020,
         "encoding": "bcd",
-        "length": 5
+        "length": 6
       }
     },
     {
@@ -152,9 +153,9 @@
         "length": 3
       },
       "score": {
-        "start": 8030,
+        "start": 8029,
         "encoding": "bcd",
-        "length": 5
+        "length": 6
       }
     },
     {
@@ -166,9 +167,9 @@
         "length": 3
       },
       "score": {
-        "start": 8039,
+        "start": 8038,
         "encoding": "bcd",
-        "length": 5
+        "length": 6
       }
     },
     {
@@ -180,9 +181,9 @@
         "length": 3
       },
       "score": {
-        "start": 8048,
+        "start": 8047,
         "encoding": "bcd",
-        "length": 5
+        "length": 6
       }
     }
   ],

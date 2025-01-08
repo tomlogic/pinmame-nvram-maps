@@ -1,7 +1,8 @@
 {
   "_notes": [
     "Compiled by HorsePin https://github.com/horseyhorsey",
-    "WPC 50047, SYS 3.62 REV 1.4"
+    "WPC 50047, SYS 3.62 REV 1.4",
+    "v0.2: changed score lengths from 5 to 6"
   ],
   "_copyright": "Copyright (C) 2022 HorsePin",
   "_license": "GNU Lesser General Public License v3.0",
@@ -11,27 +12,27 @@
     "totan_14"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_game": [
     {
       "encoding": "bcd",
-      "length": 5,
-      "start": 5793
+      "length": 6,
+      "start": 5792
     },
     {
       "encoding": "bcd",
-      "length": 5,
-      "start": 5800
+      "length": 6,
+      "start": 5799
     },
     {
       "encoding": "bcd",
-      "length": 5,
-      "start": 5807
+      "length": 6,
+      "start": 5806
     },
     {
       "encoding": "bcd",
-      "length": 5,
-      "start": 5814
+      "length": 6,
+      "start": 5813
     }
   ],
   "game_state": {
@@ -67,8 +68,8 @@
       },
       "score": {
         "encoding": "bcd",
-        "length": 5,
-        "start": 7561
+        "length": 6,
+        "start": 7560
       }
     },
     {
@@ -81,8 +82,8 @@
       },
       "score": {
         "encoding": "bcd",
-        "length": 5,
-        "start": 7523
+        "length": 6,
+        "start": 7522
       }
     },
     {
@@ -95,8 +96,8 @@
       },
       "score": {
         "encoding": "bcd",
-        "length": 5,
-        "start": 7532
+        "length": 6,
+        "start": 7531
       }
     },
     {
@@ -109,8 +110,8 @@
       },
       "score": {
         "encoding": "bcd",
-        "length": 5,
-        "start": 7541
+        "length": 6,
+        "start": 7540
       }
     },
     {
@@ -123,8 +124,8 @@
       },
       "score": {
         "encoding": "bcd",
-        "length": 5,
-        "start": 7550
+        "length": 6,
+        "start": 7549
       }
     }
   ],
