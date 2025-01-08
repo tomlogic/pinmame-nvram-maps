@@ -18,6 +18,37 @@
     "length": 7
   },
   "game_state": {
+    "player_count": {
+      "label": "Players",
+      "start": 6036,
+      "encoding": "int"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 5936,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 2",
+        "start": 5942,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 3",
+        "start": 5948,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 4",
+        "start": 5954,
+        "encoding": "bcd",
+        "length": 5
+      }
+    ],
     "game_id": {
       "label": "WPC Game ID",
       "start": 6156,

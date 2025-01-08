@@ -13,29 +13,38 @@
   ],
   "_fileformat": 0.1,
   "_version": 0.2,
-  "last_game": [
-    {
-      "encoding": "bcd",
-      "length": 6,
-      "start": 5792
-    },
-    {
-      "encoding": "bcd",
-      "length": 6,
-      "start": 5799
-    },
-    {
-      "encoding": "bcd",
-      "length": 6,
-      "start": 5806
-    },
-    {
-      "encoding": "bcd",
-      "length": 6,
-      "start": 5813
-    }
-  ],
   "game_state": {
+    "player_count": {
+      "label": "Players",
+      "start": 5897,
+      "encoding": "int"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 5792,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 2",
+        "start": 5799,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 3",
+        "start": 5806,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 4",
+        "start": 5813,
+        "encoding": "bcd",
+        "length": 6
+      }
+    ],
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",

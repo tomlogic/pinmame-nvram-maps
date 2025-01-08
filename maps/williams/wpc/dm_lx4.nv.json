@@ -17,29 +17,38 @@
     "encoding": "wpc_rtc",
     "length": 7
   },
-  "last_game": [
-    {
-      "start": 5936,
-      "encoding": "bcd",
-      "length": 6
-    },
-    {
-      "start": 5943,
-      "encoding": "bcd",
-      "length": 6
-    },
-    {
-      "start": 5950,
-      "encoding": "bcd",
-      "length": 6
-    },
-    {
-      "start": 5957,
-      "encoding": "bcd",
-      "length": 6
-    }
-  ],
   "game_state": {
+    "player_count": {
+      "label": "Players",
+      "start": 6057,
+      "encoding": "int"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 5936,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 2",
+        "start": 5943,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 3",
+        "start": 5950,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 4",
+        "start": 5957,
+        "encoding": "bcd",
+        "length": 6
+      }
+    ],
     "game_id": {
       "label": "WPC Game ID",
       "start": 6156,

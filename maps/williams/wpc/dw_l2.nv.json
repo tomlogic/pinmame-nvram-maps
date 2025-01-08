@@ -18,29 +18,38 @@
     "encoding": "wpc_rtc",
     "length": 7
   },
-  "last_game": [
-    {
-      "start": 5760,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5766,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5772,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5778,
-      "encoding": "bcd",
-      "length": 5
-    }
-  ],
   "game_state": {
+    "player_count": {
+      "label": "Players",
+      "start": 5877,
+      "encoding": "int"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 5760,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 2",
+        "start": 5766,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 3",
+        "start": 5772,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 4",
+        "start": 5778,
+        "encoding": "bcd",
+        "length": 5
+      }
+    ],
     "escape_a": {
       "_note": "0x280 and 0x288 both bitmaps for ESCAPE, 0x290 related to animating those lamps",
       "label": "Escape A",
@@ -66,12 +75,6 @@
       "start": 653,
       "mask": "0x3F",
       "encoding": "raw"
-    },
-    "player_count": {
-      "label": "Player Count",
-      "short_label": "Players",
-      "start": 5877,
-      "encoding": "int"
     },
     "current_player": {
       "label": "Current Player",
