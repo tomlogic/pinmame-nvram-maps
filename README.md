@@ -147,6 +147,9 @@ not the contents of the corresponding NVRAM file.
   `0x04 0x01 0x04 0x02 0x04 0x03` translates to `0x41 0x42 0x43` which is the
   string `"ABC"`.
   Stern Dracula and Wild Fyre (identical ROM) have examples of `nibble=high`.
+- **_ramsize**: Size of the RAM represented by the `.nv` file.  Note that this
+  is typically smaller than the `.nv` file size, due to PinMAME appending
+  additional data to the file.
 - **_char_map**: Characters to use for the `ch` encoding instead of a straight 
   ASCII table.  See Whirlwind (`whirl_l3.nv.json`) as an example.
 
