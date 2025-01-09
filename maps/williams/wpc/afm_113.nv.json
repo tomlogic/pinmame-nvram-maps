@@ -1,8 +1,12 @@
 {
-  "_notes": "Compiled by Tom Collins for initial development/testing purposes.",
+  "_notes": [
+    "Compiled by Tom Collins for initial development/testing purposes.",
+    "WPC 50041, SYS 3.77 REV 1.1"
+  ],
   "_copyright": "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_ramsize": 12288,
   "_roms": [
     "afm_113",
     "afm_113b"
@@ -14,28 +18,59 @@
     "encoding": "wpc_rtc",
     "length": 7
   },
-  "last_game": [
-    {
-      "start": 5792,
-      "encoding": "bcd",
-      "length": 6
+  "game_state": {
+    "player_count": {
+      "label": "Players",
+      "start": 5905,
+      "encoding": "int"
     },
-    {
-      "start": 5799,
-      "encoding": "bcd",
-      "length": 6
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 5792,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 2",
+        "start": 5799,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 3",
+        "start": 5806,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 4",
+        "start": 5813,
+        "encoding": "bcd",
+        "length": 6
+      }
+    ],
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7490,
+      "encoding": "int"
     },
-    {
-      "start": 5806,
-      "encoding": "bcd",
-      "length": 6
+    "volume": {
+      "label": "Volume",
+      "start": 7500,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
     },
-    {
-      "start": 5813,
+    "replay": {
+      "label": "Replay",
+      "start": 7524,
       "encoding": "bcd",
-      "length": 6
+      "length": 2,
+      "scale": 100000000
     }
-  ],
+  },
   "high_scores": [
     {
       "label": "Grand Champion",
@@ -1042,6 +1077,11 @@
   ],
   "checksum16": [
     {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
       "start": 7061,
       "end": 7332,
       "label": "Adjustments"
@@ -1067,6 +1107,20 @@
       "label": "HSTD Reset"
     },
     {
+      "start": 7490,
+      "end": 7499,
+      "label": "Credits"
+    },
+    {
+      "start": 7500,
+      "end": 7502,
+      "label": "Volume"
+    },
+    {
+      "start": 7503,
+      "end": 7513
+    },
+    {
       "start": 7514,
       "end": 7727,
       "label": "?? replay level"
@@ -1074,7 +1128,12 @@
     {
       "start": 7728,
       "end": 7922,
-      "label": "Custom Message"
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7923,
+      "end": 8047,
+      "label": "Custom Message (2x32)"
     },
     {
       "start": 8048,

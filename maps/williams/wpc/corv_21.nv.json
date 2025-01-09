@@ -1,22 +1,26 @@
 {
   "_notes": [
-    "Compiled by Horsepin.",
-    "WPC 50025, SYS 3.48 REV 2.3",
-    "v0.2: changed score lengths from 5 to 6"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50036, SYS 3.54 REV 2.1"
   ],
-  "_copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "nf_23x"
+    "corv_21"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 5897,
+      "start": 5913,
       "encoding": "int"
     },
     "scores": [
@@ -45,25 +49,31 @@
         "length": 6
       }
     ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7544,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
-      "start": 7460,
+      "start": 7510,
       "encoding": "int"
     },
     "volume": {
       "label": "Volume",
-      "start": 7470,
+      "start": 7520,
       "encoding": "int",
       "min": 0,
       "max": 31
-    },
-    "replay": {
-      "label": "Replay",
-      "start": 7494,
-      "encoding": "bcd",
-      "length": 2,
-      "scale": 1000000
     }
   },
   "high_scores": [
@@ -71,12 +81,12 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": 7443,
+        "start": 7493,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7446,
+        "start": 7496,
         "encoding": "bcd",
         "length": 6
       }
@@ -85,12 +95,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": 7405,
+        "start": 7455,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7408,
+        "start": 7458,
         "encoding": "bcd",
         "length": 6
       }
@@ -99,12 +109,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": 7414,
+        "start": 7464,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7417,
+        "start": 7467,
         "encoding": "bcd",
         "length": 6
       }
@@ -113,12 +123,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": 7423,
+        "start": 7473,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7426,
+        "start": 7476,
         "encoding": "bcd",
         "length": 6
       }
@@ -127,79 +137,59 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": 7432,
+        "start": 7482,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7435,
+        "start": 7485,
         "encoding": "bcd",
         "length": 6
       }
     }
   ],
-  "buyin_high_scores": [
+  "mode_champions": [
     {
-      "label": "First Place",
-      "short_label": "1st",
+      "label": "Future Car Champ",
       "initials": {
-        "start": 8018,
+        "start": 8068,
         "encoding": "ch",
         "length": 3
-      },
-      "score": {
-        "start": 8020,
-        "encoding": "bcd",
-        "length": 6
       }
     },
     {
-      "label": "Second Place",
-      "short_label": "2nd",
+      "label": "World Speed Record",
       "initials": {
-        "start": 8027,
+        "start": 8079,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8029,
-        "encoding": "bcd",
-        "length": 6
+        "start": 8107,
+        "encoding": "int",
+        "length": 1,
+        "suffix": " Loops"
       }
     },
     {
-      "label": "Third Place",
-      "short_label": "3rd",
+      "label": "Cornering Record",
       "initials": {
-        "start": 8036,
+        "start": 8090,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8038,
-        "encoding": "bcd",
-        "length": 6
-      }
-    },
-    {
-      "label": "Fourth Place",
-      "short_label": "4th",
-      "initials": {
-        "start": 8045,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 8047,
-        "encoding": "bcd",
-        "length": 6
+        "start": 8108,
+        "encoding": "int",
+        "length": 1,
+        "suffix": " Loops"
       }
     }
   ],
   "checksum8": [
     {
       "start": 6161,
-      "end": 7024,
+      "end": 7084,
       "groupings": 6,
       "label": "Audits"
     }
@@ -211,57 +201,77 @@
       "label": "Custom Message (2x32)"
     },
     {
-      "start": 7061,
-      "end": 7302,
+      "start": 7121,
+      "end": 7352,
       "label": "Adjustments"
     },
     {
-      "start": 7305,
-      "end": 7404,
+      "start": 7355,
+      "end": 7454,
       "label": "Timestamps"
     },
     {
-      "start": 7405,
-      "end": 7442,
+      "start": 7455,
+      "end": 7492,
       "label": "High Scores"
     },
     {
-      "start": 7443,
-      "end": 7453,
+      "start": 7493,
+      "end": 7503,
       "label": "Grand Champion"
     },
     {
-      "start": 7454,
-      "end": 7459,
+      "start": 7504,
+      "end": 7509,
       "label": "HSTD Reset"
     },
     {
-      "start": 7460,
-      "end": 7469,
+      "start": 7510,
+      "end": 7519,
       "label": "Credits"
     },
     {
-      "start": 7470,
-      "end": 7472,
+      "start": 7520,
+      "end": 7522,
       "label": "Volume"
     },
     {
-      "start": 7473,
-      "end": 7483
+      "start": 7523,
+      "end": 7533
     },
     {
-      "start": 7484,
-      "end": 7697
+      "start": 7534,
+      "end": 7747
     },
     {
-      "start": 7698,
-      "end": 7892,
+      "start": 7748,
+      "end": 7942,
       "label": "Custom Message (3x32)"
     },
     {
-      "start": 7893,
-      "end": 8017,
+      "start": 7943,
+      "end": 8067,
       "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 8068,
+      "end": 8078,
+      "label": "Future Car Champ"
+    },
+    {
+      "start": 8079,
+      "end": 8089,
+      "label": "World Speed Record (initials)"
+    },
+    {
+      "start": 8090,
+      "end": 8100,
+      "label": "Cornering Record (initials)"
+    },
+    {
+      "start": 8107,
+      "end": 8112,
+      "label": "World Speed/Cornering Loops"
     }
   ]
 }

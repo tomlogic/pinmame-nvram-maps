@@ -1,22 +1,27 @@
 {
   "_notes": [
-    "Compiled by Horsepin.",
-    "WPC 50025, SYS 3.48 REV 2.3",
-    "v0.2: changed score lengths from 5 to 6"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50065, SYS 3.77 REV 1.0"
   ],
-  "_copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "nf_23x"
+    "mb_106",
+    "mb_106b"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 5897,
+      "start": 5909,
       "encoding": "int"
     },
     "scores": [
@@ -24,46 +29,52 @@
         "label": "Player 1",
         "start": 5792,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       },
       {
         "label": "Player 2",
-        "start": 5799,
+        "start": 5798,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       },
       {
         "label": "Player 3",
-        "start": 5806,
+        "start": 5804,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       },
       {
         "label": "Player 4",
-        "start": 5813,
+        "start": 5810,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7399,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
-      "start": 7460,
+      "start": 7365,
       "encoding": "int"
     },
     "volume": {
       "label": "Volume",
-      "start": 7470,
+      "start": 7375,
       "encoding": "int",
       "min": 0,
       "max": 31
-    },
-    "replay": {
-      "label": "Replay",
-      "start": 7494,
-      "encoding": "bcd",
-      "length": 2,
-      "scale": 1000000
     }
   },
   "high_scores": [
@@ -71,135 +82,118 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": 7443,
+        "start": 7349,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7446,
+        "start": 7352,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     },
     {
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": 7405,
+        "start": 7315,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7408,
+        "start": 7318,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     },
     {
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": 7414,
+        "start": 7323,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7417,
+        "start": 7326,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     },
     {
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": 7423,
+        "start": 7331,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7426,
+        "start": 7334,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     },
     {
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": 7432,
+        "start": 7339,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7435,
+        "start": 7342,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     }
   ],
-  "buyin_high_scores": [
+  "mode_champions": [
     {
-      "label": "First Place",
-      "short_label": "1st",
+      "label": "Monster Bash Champion",
       "initials": {
-        "start": 8018,
+        "start": 7923,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8020,
+        "start": 7926,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     },
     {
-      "label": "Second Place",
-      "short_label": "2nd",
+      "label": "Monsters of Rock Champion",
       "initials": {
-        "start": 8027,
+        "start": 7933,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8029,
+        "start": 7936,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     },
     {
-      "label": "Third Place",
-      "short_label": "3rd",
+      "label": "Mosh Multiball Champion",
       "initials": {
-        "start": 8036,
+        "start": 7943,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8038,
+        "start": 7946,
         "encoding": "bcd",
-        "length": 6
-      }
-    },
-    {
-      "label": "Fourth Place",
-      "short_label": "4th",
-      "initials": {
-        "start": 8045,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 8047,
-        "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     }
   ],
   "checksum8": [
     {
       "start": 6161,
-      "end": 7024,
+      "end": 6922,
       "groupings": 6,
       "label": "Audits"
     }
@@ -211,57 +205,72 @@
       "label": "Custom Message (2x32)"
     },
     {
-      "start": 7061,
-      "end": 7302,
+      "start": 6941,
+      "end": 7212,
       "label": "Adjustments"
     },
     {
-      "start": 7305,
-      "end": 7404,
+      "start": 7215,
+      "end": 7314,
       "label": "Timestamps"
     },
     {
-      "start": 7405,
-      "end": 7442,
+      "start": 7315,
+      "end": 7348,
       "label": "High Scores"
     },
     {
-      "start": 7443,
-      "end": 7453,
+      "start": 7349,
+      "end": 7358,
       "label": "Grand Champion"
     },
     {
-      "start": 7454,
-      "end": 7459,
+      "start": 7359,
+      "end": 7364,
       "label": "HSTD Reset"
     },
     {
-      "start": 7460,
-      "end": 7469,
+      "start": 7365,
+      "end": 7374,
       "label": "Credits"
     },
     {
-      "start": 7470,
-      "end": 7472,
+      "start": 7375,
+      "end": 7377,
       "label": "Volume"
     },
     {
-      "start": 7473,
-      "end": 7483
+      "start": 7378,
+      "end": 7388
     },
     {
-      "start": 7484,
-      "end": 7697
+      "start": 7389,
+      "end": 7602
     },
     {
-      "start": 7698,
-      "end": 7892,
+      "start": 7603,
+      "end": 7797,
       "label": "Custom Message (3x32)"
     },
     {
-      "start": 7893,
-      "end": 8017,
+      "start": 7798,
+      "end": 7922,
       "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 7923,
+      "end": 7932,
+      "label": "Monster Bash Champion"
+    },
+    {
+      "start": 7933,
+      "end": 7942,
+      "label": "Monsters of Rock Champion"
+    },
+    {
+      "start": 7943,
+      "end": 7952,
+      "label": "Mosh Multiball Champion"
     }
   ]
 }

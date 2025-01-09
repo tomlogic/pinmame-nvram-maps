@@ -1,22 +1,29 @@
 {
   "_notes": [
-    "Compiled by HorsePin",
-    "WPC 50030, SYS 3.35 REV 0.2",
-    "v0.2: changed score lengths from 5 to 6"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50044, SYS 3.49 REV 1.2"
   ],
-  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "dh_lx2"
+    "wd_12",
+    "wd_12p",
+    "wd_12g",
+    "wd_12gp"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 5913,
+      "start": 5905,
       "encoding": "int"
     },
     "scores": [
@@ -45,22 +52,28 @@
         "length": 6
       }
     ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
-      "start": 7450,
+      "start": 7440,
       "encoding": "int"
     },
     "volume": {
       "label": "Volume",
-      "start": 7460,
+      "start": 7450,
       "encoding": "int",
       "min": 0,
       "max": 31
     },
     "replay": {
       "label": "Replay",
-      "start": 7484,
+      "start": 7474,
       "encoding": "bcd",
       "length": 2,
       "scale": 1000000
@@ -71,82 +84,98 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": 7433,
+        "start": 7423,
         "encoding": "ch",
         "length": 3
       },
       "score": {
+        "start": 7426,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7436
+        "length": 6
       }
     },
     {
-      "label": "#1",
-      "short_label": "#1",
+      "label": "First Place",
+      "short_label": "1st",
       "initials": {
-        "start": 7395,
+        "start": 7385,
         "encoding": "ch",
         "length": 3
       },
       "score": {
+        "start": 7388,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7398
+        "length": 6
       }
     },
     {
-      "label": "#2",
-      "short_label": "#2",
+      "label": "Second Place",
+      "short_label": "2nd",
       "initials": {
-        "start": 7404,
+        "start": 7394,
         "encoding": "ch",
         "length": 3
       },
       "score": {
+        "start": 7397,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7407
+        "length": 6
       }
     },
     {
-      "label": "#3",
-      "short_label": "#3",
+      "label": "Third Place",
+      "short_label": "3rd",
       "initials": {
-        "start": 7413,
+        "start": 7403,
         "encoding": "ch",
         "length": 3
       },
       "score": {
+        "start": 7406,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7416
+        "length": 6
       }
     },
     {
-      "label": "#4",
-      "short_label": "#4",
+      "label": "Fourth Place",
+      "short_label": "4th",
       "initials": {
-        "start": 7422,
+        "start": 7412,
         "encoding": "ch",
         "length": 3
       },
       "score": {
+        "start": 7415,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7425
+        "length": 6
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "The Roof Champion",
+      "_note": "Two more mode champs (at 5931 and 5945) not displayed in attract.",
+      "initials": {
+        "start": 5956,
+        "encoding": "ch",
+        "length": 3
       }
     }
   ],
   "checksum8": [
     {
       "start": 6161,
-      "end": 6910,
+      "end": 7018,
       "groupings": 6,
       "label": "Audits"
     }
   ],
   "checksum16": [
+    {
+      "start": 5956,
+      "end": 5960,
+      "label": "The Roof Champion"
+    },
     {
       "start": 6012,
       "end": 6143,
@@ -154,55 +183,55 @@
     },
     {
       "start": 7061,
-      "end": 7292,
+      "end": 7282,
       "label": "Adjustments"
     },
     {
-      "start": 7295,
-      "end": 7394,
+      "start": 7285,
+      "end": 7384,
       "label": "Timestamps"
     },
     {
-      "start": 7395,
-      "end": 7432,
+      "start": 7385,
+      "end": 7422,
       "label": "High Scores"
     },
     {
-      "start": 7433,
-      "end": 7443,
+      "start": 7423,
+      "end": 7433,
       "label": "Grand Champion"
     },
     {
-      "start": 7444,
-      "end": 7449,
+      "start": 7434,
+      "end": 7439,
       "label": "HSTD Reset"
     },
     {
-      "start": 7450,
-      "end": 7459,
+      "start": 7440,
+      "end": 7449,
       "label": "Credits"
     },
     {
-      "start": 7460,
-      "end": 7462,
+      "start": 7450,
+      "end": 7452,
       "label": "Volume"
     },
     {
-      "start": 7463,
-      "end": 7473
+      "start": 7453,
+      "end": 7463
     },
     {
-      "start": 7474,
-      "end": 7687
+      "start": 7464,
+      "end": 7677
     },
     {
-      "start": 7688,
-      "end": 7882,
+      "start": 7678,
+      "end": 7872,
       "label": "Custom Message (3x32)"
     },
     {
-      "start": 7883,
-      "end": 8007,
+      "start": 7873,
+      "end": 7997,
       "label": "Custom Message (2x32)"
     }
   ]

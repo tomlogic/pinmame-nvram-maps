@@ -1,22 +1,26 @@
 {
   "_notes": [
-    "Compiled by HorsePin",
-    "WPC 50030, SYS 3.35 REV 0.2",
-    "v0.2: changed score lengths from 5 to 6"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50066, SYS 3.76 REV 1.3"
   ],
-  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "dh_lx2"
+    "cc_13"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 5913,
+      "start": 5909,
       "encoding": "int"
     },
     "scores": [
@@ -24,46 +28,52 @@
         "label": "Player 1",
         "start": 5792,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       },
       {
         "label": "Player 2",
-        "start": 5799,
+        "start": 5798,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       },
       {
         "label": "Player 3",
-        "start": 5806,
+        "start": 5804,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       },
       {
         "label": "Player 4",
-        "start": 5813,
+        "start": 5810,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7469,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
-      "start": 7450,
+      "start": 7435,
       "encoding": "int"
     },
     "volume": {
       "label": "Volume",
-      "start": 7460,
+      "start": 7445,
       "encoding": "int",
       "min": 0,
       "max": 31
-    },
-    "replay": {
-      "label": "Replay",
-      "start": 7484,
-      "encoding": "bcd",
-      "length": 2,
-      "scale": 1000000
     }
   },
   "high_scores": [
@@ -71,77 +81,77 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": 7433,
+        "start": 7419,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "encoding": "bcd",
-        "length": 6,
-        "start": 7436
-      }
-    },
-    {
-      "label": "#1",
-      "short_label": "#1",
-      "initials": {
-        "start": 7395,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "encoding": "bcd",
-        "length": 6,
-        "start": 7398
-      }
-    },
-    {
-      "label": "#2",
-      "short_label": "#2",
-      "initials": {
-        "start": 7404,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "encoding": "bcd",
-        "length": 6,
-        "start": 7407
-      }
-    },
-    {
-      "label": "#3",
-      "short_label": "#3",
-      "initials": {
-        "start": 7413,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "encoding": "bcd",
-        "length": 6,
-        "start": 7416
-      }
-    },
-    {
-      "label": "#4",
-      "short_label": "#4",
-      "initials": {
         "start": 7422,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 7385,
         "encoding": "ch",
         "length": 3
       },
       "score": {
+        "start": 7388,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7425
+        "length": 5
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 7393,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7396,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 7401,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7404,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 7409,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7412,
+        "encoding": "bcd",
+        "length": 5
       }
     }
   ],
   "checksum8": [
     {
       "start": 6161,
-      "end": 6910,
+      "end": 7036,
       "groupings": 6,
       "label": "Audits"
     }
@@ -154,55 +164,55 @@
     },
     {
       "start": 7061,
-      "end": 7292,
+      "end": 7282,
       "label": "Adjustments"
     },
     {
-      "start": 7295,
-      "end": 7394,
+      "start": 7285,
+      "end": 7384,
       "label": "Timestamps"
     },
     {
-      "start": 7395,
-      "end": 7432,
+      "start": 7385,
+      "end": 7418,
       "label": "High Scores"
     },
     {
-      "start": 7433,
-      "end": 7443,
+      "start": 7419,
+      "end": 7428,
       "label": "Grand Champion"
     },
     {
-      "start": 7444,
-      "end": 7449,
+      "start": 7429,
+      "end": 7434,
       "label": "HSTD Reset"
     },
     {
-      "start": 7450,
-      "end": 7459,
+      "start": 7435,
+      "end": 7444,
       "label": "Credits"
     },
     {
-      "start": 7460,
-      "end": 7462,
+      "start": 7445,
+      "end": 7447,
       "label": "Volume"
     },
     {
-      "start": 7463,
-      "end": 7473
+      "start": 7448,
+      "end": 7458
     },
     {
-      "start": 7474,
-      "end": 7687
+      "start": 7459,
+      "end": 7672
     },
     {
-      "start": 7688,
-      "end": 7882,
+      "start": 7673,
+      "end": 7867,
       "label": "Custom Message (3x32)"
     },
     {
-      "start": 7883,
-      "end": 8007,
+      "start": 7868,
+      "end": 7992,
       "label": "Custom Message (2x32)"
     }
   ]

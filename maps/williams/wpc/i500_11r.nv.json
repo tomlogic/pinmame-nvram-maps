@@ -1,22 +1,26 @@
 {
   "_notes": [
-    "2022-12-22 v0.1 Compiled by Horsepin",
-    "2024-12-13 v0.2 High score locations updated by Tom Collins",
-    "WPC 50032, SYS 3.41 REV 0.5"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50026, SYS 3.50 REV 1.1"
   ],
-  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "ts_lx5"
+    "i500_11r"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 5909,
+      "start": 5901,
       "encoding": "int"
     },
     "scores": [
@@ -45,25 +49,31 @@
         "length": 5
       }
     ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7545,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
-      "start": 7504,
+      "start": 7511,
       "encoding": "int"
     },
     "volume": {
       "label": "Volume",
-      "start": 7514,
+      "start": 7521,
       "encoding": "int",
       "min": 0,
       "max": 31
-    },
-    "replay": {
-      "label": "Replay",
-      "start": 7538,
-      "encoding": "bcd",
-      "length": 2,
-      "scale": 1000000
     }
   },
   "high_scores": [
@@ -71,164 +81,160 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
+        "start": 7495,
         "encoding": "ch",
-        "length": 3,
-        "start": 7488
+        "length": 3
       },
       "score": {
+        "start": 7498,
         "encoding": "bcd",
-        "length": 5,
-        "start": 7491
+        "length": 5
       }
     },
     {
-      "label": "Best Agent #1",
-      "short_label": "#1",
+      "label": "First Place",
+      "short_label": "1st",
       "initials": {
+        "start": 7461,
         "encoding": "ch",
-        "length": 3,
-        "start": 7454
+        "length": 3
       },
       "score": {
+        "start": 7464,
         "encoding": "bcd",
-        "length": 5,
-        "start": 7457
+        "length": 5
       }
     },
     {
-      "label": "Best Agent #2",
-      "short_label": "#2",
+      "label": "Second Place",
+      "short_label": "2nd",
       "initials": {
+        "start": 7469,
         "encoding": "ch",
-        "length": 3,
-        "start": 7462
+        "length": 3
       },
       "score": {
+        "start": 7472,
         "encoding": "bcd",
-        "length": 5,
-        "start": 7465
+        "length": 5
       }
     },
     {
-      "label": "Best Agent #3",
-      "short_label": "#3",
+      "label": "Third Place",
+      "short_label": "3rd",
       "initials": {
+        "start": 7477,
         "encoding": "ch",
-        "length": 3,
-        "start": 7470
+        "length": 3
       },
       "score": {
+        "start": 7480,
         "encoding": "bcd",
-        "length": 5,
-        "start": 7473
+        "length": 5
       }
     },
     {
-      "label": "Best Agent #4",
-      "short_label": "#4",
+      "label": "Fourth Place",
+      "short_label": "4th",
       "initials": {
+        "start": 7485,
         "encoding": "ch",
-        "length": 3,
-        "start": 7478
+        "length": 3
       },
       "score": {
+        "start": 7488,
         "encoding": "bcd",
-        "length": 5,
-        "start": 7481
+        "length": 5
       }
     },
     {
-      "label": "Buyin Champion",
-      "short_label": "BIC",
+      "label": "Buy-In Champion",
       "initials": {
+        "start": 8103,
         "encoding": "ch",
-        "length": 3,
-        "start": 8137
+        "length": 3
       },
       "score": {
+        "start": 8106,
         "encoding": "bcd",
-        "length": 5,
-        "start": 8140
+        "length": 5
       }
     },
     {
-      "label": "BuyIn Score #1",
-      "short_label": "BI#1",
+      "label": "Buy-In #1",
       "initials": {
+        "start": 8069,
         "encoding": "ch",
-        "length": 3,
-        "start": 8103
+        "length": 3
       },
       "score": {
+        "start": 8072,
         "encoding": "bcd",
-        "length": 5,
-        "start": 8106
+        "length": 5
       }
     },
     {
-      "label": "BuyIn Score #2",
-      "short_label": "BI#2",
+      "label": "Buy-In #2",
       "initials": {
+        "start": 8077,
         "encoding": "ch",
-        "length": 3,
-        "start": 8111
+        "length": 3
       },
       "score": {
+        "start": 8080,
         "encoding": "bcd",
-        "length": 5,
-        "start": 8114
+        "length": 5
       }
     },
     {
-      "label": "BuyIn Score #3",
-      "short_label": "BI#3",
+      "label": "Buy-In #3",
       "initials": {
+        "start": 8085,
         "encoding": "ch",
-        "length": 3,
-        "start": 8119
+        "length": 3
       },
       "score": {
+        "start": 8088,
         "encoding": "bcd",
-        "length": 5,
-        "start": 8122
+        "length": 5
       }
     },
     {
-      "label": "BuyIn Score #4",
-      "short_label": "BI#4",
+      "label": "Buy-In #4",
       "initials": {
+        "start": 8093,
         "encoding": "ch",
-        "length": 3,
-        "start": 8127
+        "length": 3
       },
       "score": {
+        "start": 8096,
         "encoding": "bcd",
-        "length": 5,
-        "start": 8130
+        "length": 5
       }
     }
   ],
   "mode_champions": [
     {
-      "label": "Shadow Loop Champ",
-      "short_label": "SLC",
+      "label": "Pit Stop Record",
       "initials": {
+        "start": 8113,
         "encoding": "ch",
         "length": 3,
-        "start": 8096
+        "suffix": " seconds"
       },
       "score": {
+        "_note": "Fractional 1/10s (0-9) in integer byte at 8117",
+        "start": 8116,
         "encoding": "int",
         "length": 1,
-        "start": 8099,
-        "suffix": " Loops"
+        "suffix": " seconds"
       }
     }
   ],
   "checksum8": [
     {
       "start": 6161,
-      "end": 7108,
+      "end": 7036,
       "groupings": 6,
       "label": "Audits"
     }
@@ -246,72 +252,66 @@
     },
     {
       "start": 7375,
-      "end": 7453,
+      "end": 7460,
       "label": "Timestamps"
     },
     {
-      "start": 7454,
-      "end": 7487,
+      "start": 7461,
+      "end": 7494,
       "label": "High Scores"
     },
     {
-      "start": 7488,
-      "end": 7497,
+      "start": 7495,
+      "end": 7504,
       "label": "Grand Champion"
     },
     {
-      "start": 7498,
-      "end": 7503,
+      "start": 7505,
+      "end": 7510,
       "label": "HSTD Reset"
     },
     {
-      "start": 7504,
-      "end": 7513,
+      "start": 7511,
+      "end": 7520,
       "label": "Credits"
     },
     {
-      "start": 7514,
-      "end": 7516,
+      "start": 7521,
+      "end": 7523,
       "label": "Volume"
     },
     {
-      "start": 7517,
-      "end": 7527
+      "start": 7524,
+      "end": 7534
     },
     {
-      "start": 7528,
-      "end": 7741
+      "start": 7535,
+      "end": 7748
     },
     {
-      "start": 7742,
-      "end": 7936,
+      "start": 7749,
+      "end": 7943,
       "label": "Custom Message (3x32)"
     },
     {
-      "start": 7937,
-      "end": 8061,
+      "start": 7944,
+      "end": 8068,
       "label": "Custom Message (2x32)"
     },
     {
-      "_note": "Initials 8062 to 8091 (unused all 0xFF), 0x00, count (0x00-0x0A), 16-bit checksum",
-      "start": 8062,
-      "end": 8095,
-      "label": "Final Battle Immortals"
-    },
-    {
-      "start": 8096,
+      "start": 8069,
       "end": 8102,
-      "label": "Loop Champion"
-    },
-    {
-      "start": 8103,
-      "end": 8136,
       "label": "Buy-In Scores"
     },
     {
-      "start": 8137,
-      "end": 8146,
-      "label": "Buy-In Grand Champion"
+      "start": 8103,
+      "end": 8112,
+      "label": "Buy-In Champ"
+    },
+    {
+      "start": 8113,
+      "end": 8120,
+      "label": "Pit Stop Record"
     }
   ]
 }

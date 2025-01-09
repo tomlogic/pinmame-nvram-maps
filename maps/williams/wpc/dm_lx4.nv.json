@@ -1,40 +1,81 @@
 {
-  "_notes": "Compiled by Tom Collins for initial development/testing purposes.",
-  "_copyright": "Copyright (C) 2015 by Tom Collins <tom@tomlogic.com>",
+  "_notes": [
+    "Compiled by Tom Collins for initial development/testing purposes.",
+    "WPC 50028, SYS 3.21 REV 0.4"
+  ],
+  "_copyright": "Copyright (C) 2015, 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_ramsize": 12288,
   "_roms": [
     "dm_lx4"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
     "length": 7
   },
-  "last_game": [
-    {
-      "start": 5936,
-      "encoding": "bcd",
-      "length": 6
+  "game_state": {
+    "player_count": {
+      "label": "Players",
+      "start": 6057,
+      "encoding": "int"
     },
-    {
-      "start": 5943,
-      "encoding": "bcd",
-      "length": 6
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 5936,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 2",
+        "start": 5943,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 3",
+        "start": 5950,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 4",
+        "start": 5957,
+        "encoding": "bcd",
+        "length": 6
+      }
+    ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
     },
-    {
-      "start": 5950,
-      "encoding": "bcd",
-      "length": 6
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7320,
+      "encoding": "int"
     },
-    {
-      "start": 5957,
+    "volume": {
+      "label": "Volume",
+      "start": 7329,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7353,
       "encoding": "bcd",
-      "length": 6
+      "length": 2,
+      "scale": 1000000
     }
-  ],
+  },
   "high_scores": [
     {
       "label": "Grand Champion",
@@ -1452,70 +1493,106 @@
         "start": 7235,
         "encoding": "wpc_rtc",
         "length": 7
-      }
-    },
-    "B.X Unidentified": {
-      "01": {
-        "label": "? (@0x1901)",
-        "start": 6401,
-        "encoding": "int",
-        "length": 3
       },
-      "02": {
-        "label": "? (@0x1907)",
-        "start": 6407,
-        "encoding": "int",
-        "length": 3
-      },
-      "04": {
-        "label": "? (@0x19BB)",
-        "start": 6587,
-        "encoding": "int",
-        "length": 3
-      },
-      "05": {
-        "label": "?boot count",
-        "start": 6593,
-        "encoding": "int",
-        "length": 3
-      },
-      "06": {
-        "label": "? (@0x19C7)",
-        "start": 6599,
-        "encoding": "int",
-        "length": 3
-      },
-      "07": {
-        "label": "? (@0x19CD)",
-        "start": 6605,
-        "encoding": "int",
-        "length": 3
-      },
-      "10": {
-        "label": "? (@0x1C4A)",
+      "91": {
+        "label": "Unused Timestamp #1",
         "start": 7242,
         "encoding": "wpc_rtc",
         "length": 7
       },
-      "11": {
-        "label": "? (@0x1C51)",
+      "92": {
+        "label": "Unused Timestamp #2",
         "start": 7249,
         "encoding": "wpc_rtc",
         "length": 7
       },
-      "12": {
-        "label": "? (@0x1C58)",
+      "93": {
+        "label": "Unused Timestamp #3",
         "start": 7256,
         "encoding": "wpc_rtc",
         "length": 7
-      },
-      "13": {
-        "label": "Volume",
-        "start": 7329,
+      }
+    },
+    "B.X Debug": {
+      "01": {
+        "label": "Exec Lockups",
+        "start": 6587,
         "encoding": "int",
-        "length": 1,
-        "min": 0,
-        "max": 31
+        "length": 3
+      },
+      "02": {
+        "label": "Power Ups",
+        "start": 6593,
+        "encoding": "int",
+        "length": 3
+      },
+      "03": {
+        "label": "Slam Tilts",
+        "start": 6599,
+        "encoding": "int",
+        "length": 3
+      },
+      "04": {
+        "label": "Plumb-Bob Hits",
+        "start": 6605,
+        "encoding": "int",
+        "length": 3
+      },
+      "05": {
+        "label": "Ball Roll Tilts",
+        "start": 6611,
+        "encoding": "int",
+        "length": 3
+      },
+      "06": {
+        "label": "Fatal Errors",
+        "start": 6641,
+        "encoding": "int",
+        "length": 3
+      },
+      "07": {
+        "label": "Non-Fatal Errors",
+        "start": 6647,
+        "encoding": "int",
+        "length": 3
+      },
+      "08": {
+        "label": "Lockup 1 Addr",
+        "start": 6617,
+        "encoding": "int",
+        "length": 3
+      },
+      "09": {
+        "label": "Lockup 1 PID/LEF",
+        "start": 6623,
+        "encoding": "int",
+        "length": 3
+      },
+      "10": {
+        "label": "Lockup 2 Addr",
+        "start": 6629,
+        "encoding": "int",
+        "length": 3
+      },
+      "11": {
+        "label": "Lockup 2 PID/LEF",
+        "start": 6635,
+        "encoding": "int",
+        "length": 3
+      }
+    },
+    "B.X Unused Audits": {
+      "91": {
+        "label": "? (@6401)",
+        "start": 6401,
+        "encoding": "int",
+        "length": 3
+      },
+      "92": {
+        "label": "? (@6407)",
+        "start": 6407,
+        "encoding": "int",
+        "length": 3
       }
     }
   },
@@ -1556,7 +1633,7 @@
     {
       "start": 7320,
       "end": 7328,
-      "label": "Credits?"
+      "label": "Credits"
     },
     {
       "start": 7329,
@@ -1574,12 +1651,12 @@
     {
       "start": 7557,
       "end": 7751,
-      "label": "Custom Message"
+      "label": "Custom Message (3x32)"
     },
     {
       "start": 7752,
       "end": 7883,
-      "label": "Custom Message 2?"
+      "label": "Custom Message (2x32)"
     },
     {
       "start": 7884,

@@ -1,22 +1,26 @@
 {
   "_notes": [
-    "Compiled by HorsePin",
-    "WPC 50030, SYS 3.35 REV 0.2",
-    "v0.2: changed score lengths from 5 to 6"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50050, SYS 3.63 REV 2.1"
   ],
-  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "dh_lx2"
+    "congo_21"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 5913,
+      "start": 5905,
       "encoding": "int"
     },
     "scores": [
@@ -45,6 +49,19 @@
         "length": 6
       }
     ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7484,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
@@ -57,13 +74,6 @@
       "encoding": "int",
       "min": 0,
       "max": 31
-    },
-    "replay": {
-      "label": "Replay",
-      "start": 7484,
-      "encoding": "bcd",
-      "length": 2,
-      "scale": 1000000
     }
   },
   "high_scores": [
@@ -76,72 +86,114 @@
         "length": 3
       },
       "score": {
+        "start": 7436,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7436
+        "length": 6
       }
     },
     {
-      "label": "#1",
-      "short_label": "#1",
+      "label": "First Place",
+      "short_label": "1st",
       "initials": {
         "start": 7395,
         "encoding": "ch",
         "length": 3
       },
       "score": {
+        "start": 7398,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7398
+        "length": 6
       }
     },
     {
-      "label": "#2",
-      "short_label": "#2",
+      "label": "Second Place",
+      "short_label": "2nd",
       "initials": {
         "start": 7404,
         "encoding": "ch",
         "length": 3
       },
       "score": {
+        "start": 7407,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7407
+        "length": 6
       }
     },
     {
-      "label": "#3",
-      "short_label": "#3",
+      "label": "Third Place",
+      "short_label": "3rd",
       "initials": {
         "start": 7413,
         "encoding": "ch",
         "length": 3
       },
       "score": {
+        "start": 7416,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7416
+        "length": 6
       }
     },
     {
-      "label": "#4",
-      "short_label": "#4",
+      "label": "Fourth Place",
+      "short_label": "4th",
       "initials": {
         "start": 7422,
         "encoding": "ch",
         "length": 3
       },
       "score": {
+        "start": 7425,
         "encoding": "bcd",
-        "length": 6,
-        "start": 7425
+        "length": 6
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Buy-In #1",
+      "initials": {
+        "start": 8008,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8011,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Buy-In #2",
+      "initials": {
+        "start": 8017,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8020,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Diamond Champ",
+      "initials": {
+        "start": 8028,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8031,
+        "encoding": "bcd",
+        "suffix": " Diamonds",
+        "length": 3
       }
     }
   ],
   "checksum8": [
     {
       "start": 6161,
-      "end": 6910,
+      "end": 7012,
       "groupings": 6,
       "label": "Audits"
     }
@@ -204,6 +256,16 @@
       "start": 7883,
       "end": 8007,
       "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 8008,
+      "end": 8027,
+      "label": "Buy-In Scores"
+    },
+    {
+      "start": 8028,
+      "end": 8038,
+      "label": "Diamond Champ"
     }
   ]
 }

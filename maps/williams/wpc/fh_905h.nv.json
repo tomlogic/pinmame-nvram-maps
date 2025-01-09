@@ -3,39 +3,72 @@
     "Compiled by Francis De Brabandere.",
     "Funhouse (Williams 1990)",
     "https://www.ipdb.org/machine.cgi?id=966",
-    "Williams WPC (Alpha Numeric)"
+    "Williams WPC (Alpha Numeric)",
+    "WPC 50003, SYS 3.58 REV 9.0"
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_ramsize": 8192,
   "_roms": [
     "fh_905h",
     "fh_906h"
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
-  "last_game": [
-    {
-      "start": 5791,
-      "encoding": "bcd",
-      "length": 6
+  "game_state": {
+    "player_count": {
+      "label": "Players",
+      "start": 5892,
+      "encoding": "int"
     },
-    {
-      "start": 5797,
-      "encoding": "bcd",
-      "length": 6
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 5792,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 2",
+        "start": 5798,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 3",
+        "start": 5804,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 4",
+        "start": 5810,
+        "encoding": "bcd",
+        "length": 5
+      }
+    ],
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7325,
+      "encoding": "int"
     },
-    {
-      "start": 5803,
-      "encoding": "bcd",
-      "length": 6
+    "volume": {
+      "label": "Volume",
+      "start": 7334,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
     },
-    {
-      "start": 5809,
+    "replay": {
+      "label": "Replay",
+      "start": 7358,
       "encoding": "bcd",
-      "length": 6
+      "length": 2,
+      "scale": 10000
     }
-  ],
+  },
   "high_scores": [
     {
       "label": "Grand Champion",
@@ -106,6 +139,74 @@
         "encoding": "bcd",
         "length": 5
       }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 6886,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 6941,
+      "end": 7172,
+      "label": "Adjustments"
+    },
+    {
+      "start": 7175,
+      "end": 7274,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7275,
+      "end": 7308,
+      "label": "High Scores"
+    },
+    {
+      "start": 7309,
+      "end": 7318,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7319,
+      "end": 7324,
+      "label": "HSTD Reset"
+    },
+    {
+      "start": 7325,
+      "end": 7333,
+      "label": "Credits"
+    },
+    {
+      "start": 7334,
+      "end": 7336,
+      "label": "Volume"
+    },
+    {
+      "start": 7337,
+      "end": 7347
+    },
+    {
+      "start": 7348,
+      "end": 7561
+    },
+    {
+      "start": 7562,
+      "end": 7756,
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7757,
+      "end": 7759,
+      "label": "Custom Message (2x32)"
     }
   ]
 }

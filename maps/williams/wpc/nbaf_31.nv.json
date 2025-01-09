@@ -1,8 +1,12 @@
 {
-  "_notes": "Compiled by Tom Collins.  High scores include a ring count in 10,000 digit.",
+  "_notes": [
+    "Compiled by Tom Collins.  High scores include a ring count in 10,000 digit.",
+    "WPC 50053, SYS 3.70 REV 3.1"
+  ],
   "_copyright": "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_ramsize": 12288,
   "_roms": [
     "nbaf_31"
   ],
@@ -13,28 +17,58 @@
     "encoding": "wpc_rtc",
     "length": 7
   },
-  "last_game": [
-    {
-      "start": 5791,
-      "encoding": "bcd",
-      "length": 6
+  "game_state": {
+    "player_count": {
+      "label": "Players",
+      "start": 5893,
+      "encoding": "int"
     },
-    {
-      "start": 5797,
-      "encoding": "bcd",
-      "length": 6
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 5792,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 2",
+        "start": 5798,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 3",
+        "start": 5804,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 4",
+        "start": 5810,
+        "encoding": "bcd",
+        "length": 5
+      }
+    ],
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7319,
+      "encoding": "int"
     },
-    {
-      "start": 5803,
-      "encoding": "bcd",
-      "length": 6
+    "volume": {
+      "label": "Volume",
+      "start": 7329,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
     },
-    {
-      "start": 5809,
+    "replay": {
+      "label": "Replay",
+      "start": 7353,
       "encoding": "bcd",
-      "length": 6
+      "length": 2
     }
-  ],
+  },
   "high_scores": [
     {
       "label": "Grand Champion",
@@ -832,5 +866,73 @@
         "default": 1
       }
     }
-  }
+  },
+  "checksum8": [
+    {
+      "start": 6161,
+      "end": 6934,
+      "groupings": 6,
+      "label": "Audits"
+    }
+  ],
+  "checksum16": [
+    {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 6935,
+      "end": 7166,
+      "label": "Adjustments"
+    },
+    {
+      "start": 7169,
+      "end": 7268,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7269,
+      "end": 7302,
+      "label": "High Scores"
+    },
+    {
+      "start": 7303,
+      "end": 7312,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7313,
+      "end": 7318,
+      "label": "HSTD Reset"
+    },
+    {
+      "start": 7319,
+      "end": 7328,
+      "label": "Credits"
+    },
+    {
+      "start": 7329,
+      "end": 7331,
+      "label": "Volume"
+    },
+    {
+      "start": 7332,
+      "end": 7342
+    },
+    {
+      "start": 7343,
+      "end": 7556
+    },
+    {
+      "start": 7557,
+      "end": 7751,
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7752,
+      "end": 7876,
+      "label": "Custom Message (2x32)"
+    }
+  ]
 }

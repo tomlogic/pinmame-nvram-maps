@@ -1,21 +1,26 @@
 {
   "_notes": [
-    "Compiled by Mike Metzger.",
-    "WPC 50018, SYS 2.62 REV 0.5"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50012, SYS 2.21 REV 0.2"
   ],
-  "_copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 8192,
   "_roms": [
-    "ww_l5"
+    "hurr_l2"
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 6053,
+      "start": 6028,
       "encoding": "int"
     },
     "scores": [
@@ -44,38 +49,50 @@
         "length": 5
       }
     ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "jackpot": {
+      "label": "Jackpot Value",
+      "start": 6037,
+      "encoding": "bcd",
+      "length": 4
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7327,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
-      "start": 7315,
+      "start": 7295,
       "encoding": "int"
     },
     "volume": {
       "label": "Volume",
-      "start": 7324,
+      "start": 7304,
       "encoding": "int",
       "min": 0,
       "max": 31
-    },
-    "replay": {
-      "label": "Replay",
-      "start": 7348,
-      "encoding": "bcd",
-      "length": 2,
-      "scale": 1000000
     }
   },
   "high_scores": [
     {
-      "label": "RIVER MASTER",
+      "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": 7299,
+        "start": 7279,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7302,
+        "start": 7282,
         "encoding": "bcd",
         "length": 5
       }
@@ -84,12 +101,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": 7265,
+        "start": 7245,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7268,
+        "start": 7248,
         "encoding": "bcd",
         "length": 5
       }
@@ -98,12 +115,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": 7273,
+        "start": 7253,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7276,
+        "start": 7256,
         "encoding": "bcd",
         "length": 5
       }
@@ -112,12 +129,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": 7281,
+        "start": 7261,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7284,
+        "start": 7264,
         "encoding": "bcd",
         "length": 5
       }
@@ -126,12 +143,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": 7289,
+        "start": 7269,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7292,
+        "start": 7272,
         "encoding": "bcd",
         "length": 5
       }
@@ -139,25 +156,19 @@
   ],
   "mode_champions": [
     {
-      "label": "Insanity Record",
-      "short_label": "InsanityRecord",
+      "label": "Clown Time Record",
+      "_note": "Can't locate score (default 5M is not at 6037); unknown checksum routine.",
       "initials": {
-        "start": 7879,
+        "start": 6058,
         "encoding": "ch",
         "length": 3
-      },
-      "score": {
-        "start": 7882,
-        "encoding": "int",
-        "length": 1,
-        "suffix": " Water Falls"
       }
     }
   ],
   "checksum8": [
     {
       "start": 6161,
-      "end": 6928,
+      "end": 6760,
       "groupings": 6,
       "label": "Audits"
     }
@@ -165,55 +176,55 @@
   "checksum16": [
     {
       "start": 6941,
-      "end": 7162,
+      "end": 7142,
       "label": "Adjustments"
     },
     {
-      "start": 7165,
-      "end": 7264,
+      "start": 7145,
+      "end": 7244,
       "label": "Timestamps"
     },
     {
-      "start": 7265,
-      "end": 7298,
+      "start": 7245,
+      "end": 7278,
       "label": "High Scores"
     },
     {
-      "start": 7299,
-      "end": 7308,
+      "start": 7279,
+      "end": 7288,
       "label": "Grand Champion"
     },
     {
-      "start": 7309,
-      "end": 7314,
+      "start": 7289,
+      "end": 7294,
       "label": "HSTD Reset"
     },
     {
-      "start": 7315,
-      "end": 7323,
+      "start": 7295,
+      "end": 7303,
       "label": "Credits"
     },
     {
-      "start": 7324,
-      "end": 7326,
+      "start": 7304,
+      "end": 7306,
       "label": "Volume"
     },
     {
-      "start": 7327,
-      "end": 7337
+      "start": 7307,
+      "end": 7317
     },
     {
-      "start": 7338,
-      "end": 7551
+      "start": 7318,
+      "end": 7531
     },
     {
-      "start": 7552,
-      "end": 7746,
+      "start": 7532,
+      "end": 7726,
       "label": "Custom Message (3x32)"
     },
     {
-      "start": 7747,
-      "end": 7878,
+      "start": 7727,
+      "end": 7858,
       "label": "Custom Message (2x32)"
     }
   ]

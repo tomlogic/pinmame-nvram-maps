@@ -1,22 +1,27 @@
 {
   "_notes": [
-    "Compiled by Horsepin.",
-    "WPC 50025, SYS 3.48 REV 2.3",
-    "v0.2: changed score lengths from 5 to 6"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50020, SYS 3.73 REV 9.4"
   ],
-  "_copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
-  "_ramsize": 12288,
+  "_ramsize": 8192,
   "_roms": [
-    "nf_23x"
+    "tz_94h",
+    "tz_94ch"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 5897,
+      "start": 5913,
       "encoding": "int"
     },
     "scores": [
@@ -45,22 +50,28 @@
         "length": 6
       }
     ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
-      "start": 7460,
+      "start": 7578,
       "encoding": "int"
     },
     "volume": {
       "label": "Volume",
-      "start": 7470,
+      "start": 7587,
       "encoding": "int",
       "min": 0,
       "max": 31
     },
     "replay": {
       "label": "Replay",
-      "start": 7494,
+      "start": 7611,
       "encoding": "bcd",
       "length": 2,
       "scale": 1000000
@@ -71,12 +82,12 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": 7443,
+        "start": 7561,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7446,
+        "start": 7564,
         "encoding": "bcd",
         "length": 6
       }
@@ -85,12 +96,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": 7405,
+        "start": 7523,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7408,
+        "start": 7526,
         "encoding": "bcd",
         "length": 6
       }
@@ -99,12 +110,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": 7414,
+        "start": 7532,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7417,
+        "start": 7535,
         "encoding": "bcd",
         "length": 6
       }
@@ -113,12 +124,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": 7423,
+        "start": 7541,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7426,
+        "start": 7544,
         "encoding": "bcd",
         "length": 6
       }
@@ -127,70 +138,79 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": 7432,
+        "start": 7550,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7435,
+        "start": 7553,
         "encoding": "bcd",
         "length": 6
       }
     }
   ],
-  "buyin_high_scores": [
+  "mode_champions": [
     {
-      "label": "First Place",
-      "short_label": "1st",
+      "label": "Lost in the Zone Champion",
       "initials": {
-        "start": 8018,
+        "start": 8010,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8020,
+        "start": 8013,
         "encoding": "bcd",
         "length": 6
       }
     },
     {
-      "label": "Second Place",
-      "short_label": "2nd",
+      "label": "Buy-In High Score #1",
       "initials": {
-        "start": 8027,
+        "start": 8025,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8029,
+        "start": 8028,
         "encoding": "bcd",
         "length": 6
       }
     },
     {
-      "label": "Third Place",
-      "short_label": "3rd",
+      "label": "Buy-In High Score #2",
       "initials": {
-        "start": 8036,
+        "start": 8034,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8038,
+        "start": 8037,
         "encoding": "bcd",
         "length": 6
       }
     },
     {
-      "label": "Fourth Place",
-      "short_label": "4th",
+      "label": "Buy-In High Score #3",
       "initials": {
-        "start": 8045,
+        "start": 8043,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8047,
+        "start": 8046,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Buy-In High Score #4",
+      "initials": {
+        "start": 8052,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8055,
         "encoding": "bcd",
         "length": 6
       }
@@ -199,7 +219,7 @@
   "checksum8": [
     {
       "start": 6161,
-      "end": 7024,
+      "end": 7048,
       "groupings": 6,
       "label": "Audits"
     }
@@ -211,57 +231,62 @@
       "label": "Custom Message (2x32)"
     },
     {
-      "start": 7061,
-      "end": 7302,
+      "start": 7133,
+      "end": 7420,
       "label": "Adjustments"
     },
     {
-      "start": 7305,
-      "end": 7404,
+      "start": 7423,
+      "end": 7522,
       "label": "Timestamps"
     },
     {
-      "start": 7405,
-      "end": 7442,
+      "start": 7523,
+      "end": 7560,
       "label": "High Scores"
     },
     {
-      "start": 7443,
-      "end": 7453,
+      "start": 7561,
+      "end": 7571,
       "label": "Grand Champion"
     },
     {
-      "start": 7454,
-      "end": 7459,
+      "start": 7572,
+      "end": 7577,
       "label": "HSTD Reset"
     },
     {
-      "start": 7460,
-      "end": 7469,
+      "start": 7578,
+      "end": 7586,
       "label": "Credits"
     },
     {
-      "start": 7470,
-      "end": 7472,
+      "start": 7587,
+      "end": 7589,
       "label": "Volume"
     },
     {
-      "start": 7473,
-      "end": 7483
+      "start": 7590,
+      "end": 7600
     },
     {
-      "start": 7484,
-      "end": 7697
+      "start": 7601,
+      "end": 7814
     },
     {
-      "start": 7698,
-      "end": 7892,
+      "start": 7815,
+      "end": 8009,
       "label": "Custom Message (3x32)"
     },
     {
-      "start": 7893,
-      "end": 8017,
-      "label": "Custom Message (2x32)"
+      "start": 8010,
+      "end": 8020,
+      "label": "Lost in the Zone Champion"
+    },
+    {
+      "start": 8025,
+      "end": 8062,
+      "label": "Buy-In High Scores"
     }
   ]
 }

@@ -1,66 +1,76 @@
 {
   "_notes": [
-    "Compiled by Horsepin.",
-    "WPC 50025, SYS 3.48 REV 2.3",
-    "v0.2: changed score lengths from 5 to 6"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50023, SYS 3.08 REV 0.7"
   ],
-  "_copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "nf_23x"
+    "sttng_l7"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 5897,
+      "start": 6057,
       "encoding": "int"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": 5792,
+        "start": 5936,
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 2",
-        "start": 5799,
+        "start": 5943,
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 3",
-        "start": 5806,
+        "start": 5950,
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 4",
-        "start": 5813,
+        "start": 5957,
         "encoding": "bcd",
         "length": 6
       }
     ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
-      "start": 7460,
+      "start": 7320,
       "encoding": "int"
     },
     "volume": {
       "label": "Volume",
-      "start": 7470,
+      "start": 7329,
       "encoding": "int",
       "min": 0,
       "max": 31
     },
     "replay": {
       "label": "Replay",
-      "start": 7494,
+      "start": 7353,
       "encoding": "bcd",
       "length": 2,
       "scale": 1000000
@@ -71,12 +81,12 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": 7443,
+        "start": 7303,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7446,
+        "start": 7306,
         "encoding": "bcd",
         "length": 6
       }
@@ -85,12 +95,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": 7405,
+        "start": 7265,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7408,
+        "start": 7268,
         "encoding": "bcd",
         "length": 6
       }
@@ -99,12 +109,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": 7414,
+        "start": 7274,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7417,
+        "start": 7277,
         "encoding": "bcd",
         "length": 6
       }
@@ -113,12 +123,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": 7423,
+        "start": 7283,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7426,
+        "start": 7286,
         "encoding": "bcd",
         "length": 6
       }
@@ -127,70 +137,118 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": 7432,
+        "start": 7292,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7435,
+        "start": 7295,
         "encoding": "bcd",
         "length": 6
       }
     }
   ],
-  "buyin_high_scores": [
+  "mode_champions": [
     {
-      "label": "First Place",
-      "short_label": "1st",
+      "label": "Officer's Club #1",
       "initials": {
-        "start": 8018,
+        "start": 7884,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8020,
+        "start": 7887,
         "encoding": "bcd",
         "length": 6
       }
     },
     {
-      "label": "Second Place",
-      "short_label": "2nd",
+      "label": "Officer's Club #2",
       "initials": {
-        "start": 8027,
+        "start": 7893,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8029,
+        "start": 7896,
         "encoding": "bcd",
         "length": 6
       }
     },
     {
-      "label": "Third Place",
-      "short_label": "3rd",
+      "label": "Officer's Club #3",
       "initials": {
-        "start": 8036,
+        "start": 7902,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8038,
+        "start": 7905,
         "encoding": "bcd",
         "length": 6
       }
     },
     {
-      "label": "Fourth Place",
-      "short_label": "4th",
+      "label": "Officer's Club #4",
       "initials": {
-        "start": 8045,
+        "start": 7911,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8047,
+        "start": 7914,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Q Continuum #1",
+      "initials": {
+        "start": 7922,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7925,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Q Continuum #2",
+      "initials": {
+        "start": 7931,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7934,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Q Continuum #3",
+      "initials": {
+        "start": 7940,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7943,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Q Continuum #4",
+      "initials": {
+        "start": 7949,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7952,
         "encoding": "bcd",
         "length": 6
       }
@@ -199,69 +257,74 @@
   "checksum8": [
     {
       "start": 6161,
-      "end": 7024,
+      "end": 6940,
       "groupings": 6,
       "label": "Audits"
     }
   ],
   "checksum16": [
     {
-      "start": 6012,
-      "end": 6143,
-      "label": "Custom Message (2x32)"
-    },
-    {
-      "start": 7061,
-      "end": 7302,
+      "start": 6941,
+      "end": 7162,
       "label": "Adjustments"
     },
     {
-      "start": 7305,
-      "end": 7404,
+      "start": 7165,
+      "end": 7264,
       "label": "Timestamps"
     },
     {
-      "start": 7405,
-      "end": 7442,
+      "start": 7265,
+      "end": 7302,
       "label": "High Scores"
     },
     {
-      "start": 7443,
-      "end": 7453,
+      "start": 7303,
+      "end": 7313,
       "label": "Grand Champion"
     },
     {
-      "start": 7454,
-      "end": 7459,
+      "start": 7314,
+      "end": 7319,
       "label": "HSTD Reset"
     },
     {
-      "start": 7460,
-      "end": 7469,
+      "start": 7320,
+      "end": 7328,
       "label": "Credits"
     },
     {
-      "start": 7470,
-      "end": 7472,
+      "start": 7329,
+      "end": 7331,
       "label": "Volume"
     },
     {
-      "start": 7473,
-      "end": 7483
+      "start": 7332,
+      "end": 7342
     },
     {
-      "start": 7484,
-      "end": 7697
+      "start": 7343,
+      "end": 7556
     },
     {
-      "start": 7698,
-      "end": 7892,
+      "start": 7557,
+      "end": 7751,
       "label": "Custom Message (3x32)"
     },
     {
-      "start": 7893,
-      "end": 8017,
+      "start": 7752,
+      "end": 7883,
       "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 7884,
+      "end": 7921,
+      "label": "Officer's Club"
+    },
+    {
+      "start": 7922,
+      "end": 7959,
+      "label": "Q Continuum"
     }
   ]
 }

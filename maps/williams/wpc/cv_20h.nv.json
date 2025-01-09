@@ -1,22 +1,26 @@
 {
   "_notes": [
-    "Compiled by Horsepin.",
-    "WPC 50025, SYS 3.48 REV 2.3",
-    "v0.2: changed score lengths from 5 to 6"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50062, SYS 3.76 REV 2.0"
   ],
-  "_copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "nf_23x"
+    "cv_20h"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 5897,
+      "start": 5901,
       "encoding": "int"
     },
     "scores": [
@@ -24,46 +28,46 @@
         "label": "Player 1",
         "start": 5792,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       },
       {
         "label": "Player 2",
-        "start": 5799,
+        "start": 5798,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       },
       {
         "label": "Player 3",
-        "start": 5806,
+        "start": 5804,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       },
       {
         "label": "Player 4",
-        "start": 5813,
+        "start": 5810,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     ],
-    "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
-      "label": "Credits",
-      "start": 7460,
-      "encoding": "int"
-    },
-    "volume": {
-      "label": "Volume",
-      "start": 7470,
-      "encoding": "int",
-      "min": 0,
-      "max": 31
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
     },
     "replay": {
       "label": "Replay",
-      "start": 7494,
+      "start": 7655,
       "encoding": "bcd",
       "length": 2,
       "scale": 1000000
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7631,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
     }
   },
   "high_scores": [
@@ -71,197 +75,167 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": 7443,
+        "start": 7605,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7446,
+        "start": 7608,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     },
     {
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": 7405,
+        "start": 7571,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7408,
+        "start": 7574,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     },
     {
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": 7414,
+        "start": 7579,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7417,
+        "start": 7582,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     },
     {
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": 7423,
+        "start": 7587,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7426,
+        "start": 7590,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     },
     {
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": 7432,
+        "start": 7595,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7435,
+        "start": 7598,
         "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     }
   ],
-  "buyin_high_scores": [
+  "mode_champions": [
     {
-      "label": "First Place",
-      "short_label": "1st",
+      "label": "Cannon Ball Champ",
       "initials": {
-        "start": 8018,
+        "start": 5966,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8020,
-        "encoding": "bcd",
-        "length": 6
+        "start": 5969,
+        "encoding": "int",
+        "length": 2
       }
     },
     {
-      "label": "Second Place",
-      "short_label": "2nd",
+      "label": "Party Champ",
       "initials": {
-        "start": 8027,
+        "start": 5973,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8029,
+        "start": 5976,
         "encoding": "bcd",
-        "length": 6
-      }
-    },
-    {
-      "label": "Third Place",
-      "short_label": "3rd",
-      "initials": {
-        "start": 8036,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 8038,
-        "encoding": "bcd",
-        "length": 6
-      }
-    },
-    {
-      "label": "Fourth Place",
-      "short_label": "4th",
-      "initials": {
-        "start": 8045,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 8047,
-        "encoding": "bcd",
-        "length": 6
+        "length": 5
       }
     }
   ],
   "checksum8": [
     {
       "start": 6161,
-      "end": 7024,
+      "end": 7162,
       "groupings": 6,
       "label": "Audits"
     }
   ],
   "checksum16": [
     {
+      "start": 5966,
+      "end": 5972,
+      "label": "Cannon Ball Champ"
+    },
+    {
+      "start": 5973,
+      "end": 5982,
+      "label": "Party Champ"
+    },
+    {
       "start": 6012,
       "end": 6143,
       "label": "Custom Message (2x32)"
     },
     {
-      "start": 7061,
-      "end": 7302,
+      "start": 7163,
+      "end": 7468,
       "label": "Adjustments"
     },
     {
-      "start": 7305,
-      "end": 7404,
+      "start": 7471,
+      "end": 7570,
       "label": "Timestamps"
     },
     {
-      "start": 7405,
-      "end": 7442,
+      "start": 7571,
+      "end": 7604,
       "label": "High Scores"
     },
     {
-      "start": 7443,
-      "end": 7453,
+      "start": 7605,
+      "end": 7614,
       "label": "Grand Champion"
     },
     {
-      "start": 7454,
-      "end": 7459,
+      "start": 7615,
+      "end": 7620,
       "label": "HSTD Reset"
     },
     {
-      "start": 7460,
-      "end": 7469,
-      "label": "Credits"
-    },
-    {
-      "start": 7470,
-      "end": 7472,
+      "start": 7631,
+      "end": 7633,
       "label": "Volume"
     },
     {
-      "start": 7473,
-      "end": 7483
+      "start": 7634,
+      "end": 7644
     },
     {
-      "start": 7484,
-      "end": 7697
+      "start": 7645,
+      "end": 7858
     },
     {
-      "start": 7698,
-      "end": 7892,
+      "start": 7859,
+      "end": 8053,
       "label": "Custom Message (3x32)"
-    },
-    {
-      "start": 7893,
-      "end": 8017,
-      "label": "Custom Message (2x32)"
     }
   ]
 }

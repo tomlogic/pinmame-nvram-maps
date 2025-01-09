@@ -1,18 +1,22 @@
 {
   "_notes": [
-    "Compiled by Horsepin.",
-    "WPC 50025, SYS 3.48 REV 2.3",
-    "v0.2: changed score lengths from 5 to 6"
+    "Compiled by Tom Collins using template-wpc.json.",
+    "WPC 50051, SYS 3.46 REV 1.0"
   ],
-  "_copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "nf_23x"
+    "jb_10r"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.1,
+  "last_played": {
+    "start": 6144,
+    "encoding": "wpc_rtc",
+    "length": 7
+  },
   "game_state": {
     "player_count": {
       "label": "Players",
@@ -45,25 +49,31 @@
         "length": 6
       }
     ],
+    "game_id": {
+      "label": "WPC Game ID",
+      "start": 6156,
+      "encoding": "ch",
+      "length": 5
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7608,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
+    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
-      "start": 7460,
+      "start": 7574,
       "encoding": "int"
     },
     "volume": {
       "label": "Volume",
-      "start": 7470,
+      "start": 7584,
       "encoding": "int",
       "min": 0,
       "max": 31
-    },
-    "replay": {
-      "label": "Replay",
-      "start": 7494,
-      "encoding": "bcd",
-      "length": 2,
-      "scale": 1000000
     }
   },
   "high_scores": [
@@ -71,12 +81,12 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": 7443,
+        "start": 7557,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7446,
+        "start": 7560,
         "encoding": "bcd",
         "length": 6
       }
@@ -85,12 +95,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": 7405,
+        "start": 7519,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7408,
+        "start": 7522,
         "encoding": "bcd",
         "length": 6
       }
@@ -99,12 +109,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": 7414,
+        "start": 7528,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7417,
+        "start": 7531,
         "encoding": "bcd",
         "length": 6
       }
@@ -113,12 +123,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": 7423,
+        "start": 7537,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7426,
+        "start": 7540,
         "encoding": "bcd",
         "length": 6
       }
@@ -127,70 +137,79 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": 7432,
+        "start": 7546,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7435,
+        "start": 7549,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Buy-In #1",
+      "initials": {
+        "start": 8143,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8146,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Buy-In #2",
+      "initials": {
+        "start": 8152,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8155,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Buy-In #3",
+      "initials": {
+        "start": 8161,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8164,
+        "encoding": "bcd",
+        "length": 6
+      }
+    },
+    {
+      "label": "Buy-In #4",
+      "initials": {
+        "start": 8170,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 8173,
         "encoding": "bcd",
         "length": 6
       }
     }
   ],
-  "buyin_high_scores": [
+  "mode_champions": [
     {
-      "label": "First Place",
-      "short_label": "1st",
+      "label": "Casino Run Champ",
       "initials": {
-        "start": 8018,
+        "start": 8132,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8020,
-        "encoding": "bcd",
-        "length": 6
-      }
-    },
-    {
-      "label": "Second Place",
-      "short_label": "2nd",
-      "initials": {
-        "start": 8027,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 8029,
-        "encoding": "bcd",
-        "length": 6
-      }
-    },
-    {
-      "label": "Third Place",
-      "short_label": "3rd",
-      "initials": {
-        "start": 8036,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 8038,
-        "encoding": "bcd",
-        "length": 6
-      }
-    },
-    {
-      "label": "Fourth Place",
-      "short_label": "4th",
-      "initials": {
-        "start": 8045,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 8047,
+        "start": 8135,
         "encoding": "bcd",
         "length": 6
       }
@@ -199,7 +218,7 @@
   "checksum8": [
     {
       "start": 6161,
-      "end": 7024,
+      "end": 7156,
       "groupings": 6,
       "label": "Audits"
     }
@@ -211,57 +230,67 @@
       "label": "Custom Message (2x32)"
     },
     {
-      "start": 7061,
-      "end": 7302,
+      "start": 7157,
+      "end": 7416,
       "label": "Adjustments"
     },
     {
-      "start": 7305,
-      "end": 7404,
+      "start": 7419,
+      "end": 7518,
       "label": "Timestamps"
     },
     {
-      "start": 7405,
-      "end": 7442,
+      "start": 7519,
+      "end": 7556,
       "label": "High Scores"
     },
     {
-      "start": 7443,
-      "end": 7453,
+      "start": 7557,
+      "end": 7567,
       "label": "Grand Champion"
     },
     {
-      "start": 7454,
-      "end": 7459,
+      "start": 7568,
+      "end": 7573,
       "label": "HSTD Reset"
     },
     {
-      "start": 7460,
-      "end": 7469,
+      "start": 7574,
+      "end": 7583,
       "label": "Credits"
     },
     {
-      "start": 7470,
-      "end": 7472,
+      "start": 7584,
+      "end": 7586,
       "label": "Volume"
     },
     {
-      "start": 7473,
-      "end": 7483
+      "start": 7587,
+      "end": 7597
     },
     {
-      "start": 7484,
-      "end": 7697
+      "start": 7598,
+      "end": 7811
     },
     {
-      "start": 7698,
-      "end": 7892,
+      "start": 7812,
+      "end": 8006,
       "label": "Custom Message (3x32)"
     },
     {
-      "start": 7893,
-      "end": 8017,
+      "start": 8007,
+      "end": 8131,
       "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 8132,
+      "end": 8142,
+      "label": "Casino Run Champ"
+    },
+    {
+      "start": 8143,
+      "end": 8180,
+      "label": "Buy-In Scores"
     }
   ]
 }

@@ -1,9 +1,14 @@
 {
-  "_notes": "Compiled by Mike Metzger.",
+  "_notes": [
+    "Compiled by Mike Metzger.",
+    "WPC 50039, SYS 3.48 REV 1.3",
+    "v0.2 (2018-03) by Tom Collins; added adjustments, audits, checksums",
+    "v0.1 by Mike Metzger; last_game, high_scores, mode_champions"
+  ],
   "_copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
-  "_ramsize": 8192,
+  "_ramsize": 12288,
   "_roms": [
     "tom_13",
     "tom_14h",
@@ -11,22 +16,43 @@
   ],
   "_fileformat": 0.1,
   "_version": 0.2,
-  "_history": [
-    "v0.2 (2018-03) by Tom Collins; added adjustments, audits, checksums",
-    "v0.1 by Mike Metzger; last_game, high_scores, mode_champions"
-  ],
   "game_state": {
+    "player_count": {
+      "label": "Players",
+      "start": 5909,
+      "encoding": "int"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 5792,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 2",
+        "start": 5798,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 3",
+        "start": 5804,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 4",
+        "start": 5810,
+        "encoding": "bcd",
+        "length": 5
+      }
+    ],
     "theatre": {
       "label": "Theatre Value",
       "start": 1381,
       "encoding": "bcd",
       "length": 5
-    },
-    "player_count": {
-      "label": "Player Count",
-      "short_label": "Players",
-      "start": 1577,
-      "encoding": "int"
     },
     "current_player": {
       "label": "Current Player",
@@ -38,30 +64,28 @@
       "label": "Ball",
       "start": 944,
       "encoding": "bcd"
+    },
+    "credits": {
+      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "label": "Credits",
+      "start": 7315,
+      "encoding": "int"
+    },
+    "volume": {
+      "label": "Volume",
+      "start": 7325,
+      "encoding": "int",
+      "min": 0,
+      "max": 31
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7349,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
     }
   },
-  "last_game": [
-    {
-      "start": 5792,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5798,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5804,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5810,
-      "encoding": "bcd",
-      "length": 5
-    }
-  ],
   "high_scores": [
     {
       "label": "Grand Champion",
@@ -1286,9 +1310,19 @@
   ],
   "checksum16": [
     {
+      "start": 6012,
+      "end": 6143,
+      "label": "Custom Message (2x32)"
+    },
+    {
       "start": 6941,
       "end": 7162,
       "label": "Adjustments"
+    },
+    {
+      "start": 7165,
+      "end": 7264,
+      "label": "Timestamps"
     },
     {
       "start": 7265,
@@ -1307,11 +1341,13 @@
     },
     {
       "start": 7315,
-      "end": 7324
+      "end": 7324,
+      "label": "Credits"
     },
     {
       "start": 7325,
-      "end": 7327
+      "end": 7327,
+      "label": "Volume"
     },
     {
       "start": 7328,
@@ -1325,7 +1361,12 @@
     {
       "start": 7553,
       "end": 7747,
-      "label": "Custom Message"
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7748,
+      "end": 7872,
+      "label": "Custom Message (2x32)"
     },
     {
       "start": 7873,
