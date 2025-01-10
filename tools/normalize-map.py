@@ -38,6 +38,10 @@ def map_convert(pairs):
 
     result = {}
     for k, v in pairs:
+        if k == '_note':
+            k = '_notes'
+
+        # set minimum file format based on appearance of certain keys
         if k == '_fileformat':
             minimum_file_format(v)
         elif k == '_nibble':
