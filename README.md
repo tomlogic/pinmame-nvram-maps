@@ -158,7 +158,7 @@ not the contents of the corresponding NVRAM file.
 The map file contains objects describing sections of the `.nv` file and
 how to interpret them.  They're comprised of the following key/value pairs:
 
-- **_note**: A note for someone maintaining the file; not displayed when
+- **_notes**: Notes for someone maintaining the file; not displayed when
   processing an NVRAM file.
 
 - **encoding** _(required)_ must be one of the following:

@@ -189,7 +189,7 @@
         "multiple_of": 10000
       },
       "03": {
-        "_note": "Increments by 10000",
+        "_notes": "Increments by 10000",
         "label": "Extra ball / Free game score level 3",
         "start": 158,
         "encoding": "bcd",
@@ -281,7 +281,7 @@
       },
       "22": {
         "label": "Backbox Deluxe Feature",
-        "_note": "default value of 15, even if that is not in the range",
+        "_notes": "default value of 15, even if that is not in the range",
         "start": 141,
         "length": 1,
         "encoding": "int",

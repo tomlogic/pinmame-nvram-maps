@@ -183,7 +183,7 @@
         "multiple_of": 10000
       },
       "03": {
-        "_note": "Increments by 10000",
+        "_notes": "Increments by 10000",
         "label": "Extra ball / Free game score level 3",
         "start": 158,
         "encoding": "bcd",
@@ -245,7 +245,7 @@
       },
       "19": {
         "label": "High Score to date or over 10.000.000 score feature",
-        "_note": "Looking at this field as an int the default is 15",
+        "_notes": "Looking at this field as an int the default is 15",
         "start": 253,
         "length": 1,
         "encoding": "bcd",

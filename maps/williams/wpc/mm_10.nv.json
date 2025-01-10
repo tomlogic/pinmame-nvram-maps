@@ -52,7 +52,7 @@
       }
     ],
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7507,
       "encoding": "int"
@@ -257,7 +257,7 @@
         "encoding": "ch",
         "length": 3
       },
-      "_note": "counter for King X must be > counter for King (X+1)",
+      "_notes": "counter for King X must be > counter for King (X+1)",
       "counter": {
         "start": 8138,
         "encoding": "bcd",
@@ -423,7 +423,7 @@
       }
     },
     "B.3 Standard Audits": {
-      "_note": "33 and 35 vary by game, others seem consistent",
+      "_notes": "33 and 35 vary by game, others seem consistent",
       "01": {
         "label": "Games Started",
         "start": 6275,

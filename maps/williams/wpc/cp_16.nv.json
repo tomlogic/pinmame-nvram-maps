@@ -63,7 +63,7 @@
       "scale": 1000000
     },
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7500,
       "encoding": "int"
@@ -151,7 +151,7 @@
   "mode_champions": [
     {
       "label": "Pub Champ",
-      "_note": "Date follows @5965 as two 8-bit ints (month, day) and a 16-bit year",
+      "_notes": "Date follows @5965 as two 8-bit ints (month, day) and a 16-bit year",
       "initials": {
         "start": 5961,
         "encoding": "ch",

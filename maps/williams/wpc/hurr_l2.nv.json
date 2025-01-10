@@ -69,7 +69,7 @@
       "scale": 1000000
     },
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7295,
       "encoding": "int"
@@ -157,7 +157,7 @@
   "mode_champions": [
     {
       "label": "Clown Time Record",
-      "_note": "Can't locate score (default 5M is not at 6037); unknown checksum routine.",
+      "_notes": "Can't locate score (default 5M is not at 6037); unknown checksum routine.",
       "initials": {
         "start": 6058,
         "encoding": "ch",

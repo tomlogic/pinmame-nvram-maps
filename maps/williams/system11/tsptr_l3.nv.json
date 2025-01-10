@@ -52,7 +52,7 @@
     },
     "bonus": {
       "label": "Bonus",
-      "_note": "called Orion Bonus in game",
+      "_notes": "called Orion Bonus in game",
       "start": 231,
       "length": 2,
       "encoding": "bcd",
@@ -60,7 +60,7 @@
     },
     "bonusX": {
       "label": "Bonus Multiplier",
-      "_note": [
+      "_notes": [
         "extracting value from lamp matrix col 2",
         "use offset to set bit 8 for base 1X"
       ],
@@ -82,7 +82,7 @@
     },
     "xcel_value": {
       "label": "X-Cellerator Value",
-      "_note": "extracting value from lamp matrix col 6-7",
+      "_notes": "extracting value from lamp matrix col 6-7",
       "start": 21,
       "length": 2,
       "encoding": "bits",
@@ -143,7 +143,7 @@
         "start": 1823,
         "encoding": "ch",
         "length": 3,
-        "_note": "slash (/) used for space ( ) in all initials"
+        "_notes": "slash (/) used for space ( ) in all initials"
       },
       "score": {
         "start": 1807,
@@ -209,7 +209,7 @@
       },
       "02a": {
         "label": "Replay Start",
-        "_note": "if Adj01 > 4",
+        "_notes": "if Adj01 > 4",
         "start": 1921,
         "encoding": "bcd",
         "min": 8,
@@ -219,7 +219,7 @@
       },
       "03a": {
         "label": "Replay Levels",
-        "_note": "if Adj01 > 4",
+        "_notes": "if Adj01 > 4",
         "start": 1922,
         "encoding": "bcd",
         "min": 0,
@@ -228,7 +228,7 @@
       },
       "02b": {
         "label": "Replay Level 1",
-        "_note": "if Adj01 == 4",
+        "_notes": "if Adj01 == 4",
         "start": 1921,
         "encoding": "bcd",
         "min": 0,
@@ -241,7 +241,7 @@
       },
       "03b": {
         "label": "Replay Level 2",
-        "_note": "if Adj01 == 4",
+        "_notes": "if Adj01 == 4",
         "start": 1922,
         "encoding": "bcd",
         "min": 0,
@@ -253,7 +253,7 @@
       },
       "04b": {
         "label": "Replay Level 3",
-        "_note": "if Adj01 == 4",
+        "_notes": "if Adj01 == 4",
         "start": 1923,
         "encoding": "bcd",
         "min": 0,
@@ -265,7 +265,7 @@
       },
       "05b": {
         "label": "Replay Level 4",
-        "_note": "if Adj01 == 4",
+        "_notes": "if Adj01 == 4",
         "start": 1924,
         "encoding": "bcd",
         "min": 0,
@@ -667,7 +667,7 @@
       "49a": {
         "label": "Custom Msg Line 1",
         "encoding": "ch",
-        "_note": "set high bit for period after letter",
+        "_notes": "set high bit for period after letter",
         "start": 1972,
         "length": 16,
         "default": " G E T    M  E  "
@@ -688,7 +688,7 @@
       },
       "50": {
         "label": "Display AU 01 - 04",
-        "_note": "TODO: check enum values",
+        "_notes": "TODO: check enum values",
         "start": 1969,
         "encoding": "enum",
         "values": [

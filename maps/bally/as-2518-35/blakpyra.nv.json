@@ -181,7 +181,7 @@
         "multiple_of": 10000
       },
       "03": {
-        "_note": "Increments by 10000",
+        "_notes": "Increments by 10000",
         "label": "Extra ball / Free game score level 3",
         "start": 158,
         "encoding": "bcd",

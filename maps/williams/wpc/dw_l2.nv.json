@@ -51,7 +51,7 @@
       }
     ],
     "escape_a": {
-      "_note": "0x280 and 0x288 both bitmaps for ESCAPE, 0x290 related to animating those lamps",
+      "_notes": "0x280 and 0x288 both bitmaps for ESCAPE, 0x290 related to animating those lamps",
       "label": "Escape A",
       "start": 640,
       "mask": "0x3F",
@@ -64,7 +64,7 @@
       "encoding": "raw"
     },
     "repair_a": {
-      "_note": "0x285 and 0x28d both bitmaps for REPAIR, 0x295 related to animating those lamps",
+      "_notes": "0x285 and 0x28d both bitmaps for REPAIR, 0x295 related to animating those lamps",
       "label": "Repair A",
       "start": 645,
       "mask": "0x3F",
@@ -153,7 +153,7 @@
       "label": "P1 Video Round Completed",
       "start": 2596,
       "encoding": "bcd",
-      "_note": "untested whether bcd or int!"
+      "_notes": "untested whether bcd or int!"
     },
     "video_unk": {
       "label": "P1 Video Related",
@@ -182,7 +182,7 @@
       "label": "P1 Multiball Round",
       "start": 2611,
       "encoding": "int",
-      "_note": "unverified if int or bcd"
+      "_notes": "unverified if int or bcd"
     },
     "unk5b": {
       "label": "P1 Unknown #5b",
@@ -197,7 +197,7 @@
     },
     "docs": {
       "label": "P1 Doctors",
-      "_note": "stored as groupings of 3 bits in 3 little-endian bytes, shifts left as doctors added",
+      "_notes": "stored as groupings of 3 bits in 3 little-endian bytes, shifts left as doctors added",
       "start": 2620,
       "encoding": "bits",
       "endian": "little",
@@ -233,7 +233,7 @@
       "length": 12
     },
     "playfieldX": {
-      "_note": "current player, unsure where stored between balls",
+      "_notes": "current player, unsure where stored between balls",
       "label": "Playfield X",
       "start": 2864,
       "encoding": "bcd",
@@ -251,7 +251,7 @@
       "encoding": "int"
     },
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7497,
       "encoding": "int"

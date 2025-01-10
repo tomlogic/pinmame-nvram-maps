@@ -63,7 +63,7 @@
       "scale": 1000000
     },
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7605,
       "encoding": "int"

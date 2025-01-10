@@ -63,7 +63,7 @@
       "scale": 1000000
     },
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7315,
       "encoding": "int"
@@ -151,7 +151,7 @@
   "mode_champions": [
     {
       "label": "Loop Champion",
-      "_note": "Unknown checksum technique",
+      "_notes": "Unknown checksum technique",
       "initials": {
         "start": 6083,
         "encoding": "ch",

@@ -59,7 +59,7 @@
     },
     "bonus": {
       "label": "Bonus",
-      "_note": "extracting value from lamp matrix col 6-8",
+      "_notes": "extracting value from lamp matrix col 6-8",
       "start": 21,
       "length": 3,
       "encoding": "bits",
@@ -92,7 +92,7 @@
     },
     "bonusX": {
       "label": "Bonus Multiplier",
-      "_note": [
+      "_notes": [
         "extracting value from lamp matrix col 8",
         "use offset to set bit 8 for base 1X"
       ],
@@ -114,7 +114,7 @@
     },
     "bonus_hold": {
       "label": "Bonus Hold",
-      "_note": "extracting value from lamp matrix col 8",
+      "_notes": "extracting value from lamp matrix col 8",
       "start": 23,
       "mask": "0x20",
       "encoding": "int",
@@ -224,7 +224,7 @@
       },
       "02a": {
         "label": "Replay Start",
-        "_note": "if Adj01 > 4",
+        "_notes": "if Adj01 > 4",
         "start": 1921,
         "encoding": "bcd",
         "min": 8,
@@ -234,7 +234,7 @@
       },
       "03a": {
         "label": "Replay Levels",
-        "_note": "if Adj01 > 4",
+        "_notes": "if Adj01 > 4",
         "start": 1922,
         "encoding": "bcd",
         "min": 0,
@@ -243,7 +243,7 @@
       },
       "02b": {
         "label": "Replay Level 1",
-        "_note": "if Adj01 == 4",
+        "_notes": "if Adj01 == 4",
         "start": 1921,
         "encoding": "bcd",
         "min": 0,
@@ -256,7 +256,7 @@
       },
       "03b": {
         "label": "Replay Level 2",
-        "_note": "if Adj01 == 4",
+        "_notes": "if Adj01 == 4",
         "start": 1922,
         "encoding": "bcd",
         "min": 0,
@@ -268,7 +268,7 @@
       },
       "04b": {
         "label": "Replay Level 3",
-        "_note": "if Adj01 == 4",
+        "_notes": "if Adj01 == 4",
         "start": 1923,
         "encoding": "bcd",
         "min": 0,
@@ -280,7 +280,7 @@
       },
       "05b": {
         "label": "Replay Level 4",
-        "_note": "if Adj01 == 4",
+        "_notes": "if Adj01 == 4",
         "start": 1924,
         "encoding": "bcd",
         "min": 0,
@@ -694,7 +694,7 @@
       "49a": {
         "label": "Custom Msg Line 1",
         "encoding": "ch",
-        "_note": "default uses 'o' (0x6F) for hyphen",
+        "_notes": "default uses 'o' (0x6F) for hyphen",
         "start": 1972,
         "length": 14,
         "default": "RUN THE LIGHTo"
@@ -709,7 +709,7 @@
       "49c": {
         "label": "Custom Msg Line 3",
         "encoding": "ch",
-        "_note": "default byte 0xC4 is D (0x44) with period (0x80)",
+        "_notes": "default byte 0xC4 is D (0x44) with period (0x80)",
         "start": 2000,
         "length": 14,
         "default": "AT HIGH SPEE\u00c4 "
@@ -731,7 +731,7 @@
           "",
           ""
         ],
-        "_note": "select 0/1, both show blank"
+        "_notes": "select 0/1, both show blank"
       },
       "52": {
         "label": "Unused Adjustment",

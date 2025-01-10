@@ -46,7 +46,7 @@
       }
     ],
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7504,
       "encoding": "int"
@@ -293,7 +293,7 @@
       "label": "Custom Message (2x32)"
     },
     {
-      "_note": "Initials 8062 to 8091 (unused all 0xFF), 0x00, count (0x00-0x0A), 16-bit checksum",
+      "_notes": "Initials 8062 to 8091 (unused all 0xFF), 0x00, count (0x00-0x0A), 16-bit checksum",
       "start": 8062,
       "end": 8095,
       "label": "Final Battle Immortals"

@@ -63,7 +63,7 @@
       "scale": 1000000
     },
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7315,
       "encoding": "int"
@@ -151,7 +151,7 @@
   "mode_champions": [
     {
       "label": "Biggest Liar",
-      "_note": "missing 'X Fish' using 1-byte int at 6058",
+      "_notes": "missing 'X Fish' using 1-byte int at 6058",
       "initials": {
         "start": 6061,
         "encoding": "ch",

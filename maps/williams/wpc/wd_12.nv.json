@@ -59,7 +59,7 @@
       "length": 5
     },
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7440,
       "encoding": "int"
@@ -154,7 +154,7 @@
   "mode_champions": [
     {
       "label": "The Roof Champion",
-      "_note": "Two more mode champs (at 5931 and 5945) not displayed in attract.",
+      "_notes": "Two more mode champs (at 5931 and 5945) not displayed in attract.",
       "initials": {
         "start": 5956,
         "encoding": "ch",

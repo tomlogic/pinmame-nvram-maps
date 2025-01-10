@@ -66,7 +66,7 @@
       "encoding": "bcd"
     },
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7315,
       "encoding": "int"
@@ -624,7 +624,7 @@
         "length": 2,
         "suffix": "M",
         "default": 1000,
-        "_note": "hidden setting?"
+        "_notes": "hidden setting?"
       },
       "06": {
         "label": "Default Buy-In HS2",
@@ -633,7 +633,7 @@
         "length": 2,
         "suffix": "M",
         "default": 980,
-        "_note": "hidden setting?"
+        "_notes": "hidden setting?"
       },
       "07": {
         "label": "Default Buy-In HS3",
@@ -642,7 +642,7 @@
         "length": 2,
         "suffix": "M",
         "default": 960,
-        "_note": "hidden setting?"
+        "_notes": "hidden setting?"
       },
       "08": {
         "label": "Default Buy-In HS4",
@@ -651,7 +651,7 @@
         "length": 2,
         "suffix": "M",
         "default": 940,
-        "_note": "hidden setting?"
+        "_notes": "hidden setting?"
       },
       "09": {
         "label": "% Spell Magic",

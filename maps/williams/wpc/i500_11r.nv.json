@@ -63,7 +63,7 @@
       "scale": 1000000
     },
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
       "start": 7511,
       "encoding": "int"
@@ -223,7 +223,7 @@
         "suffix": " seconds"
       },
       "score": {
-        "_note": "Fractional 1/10s (0-9) in integer byte at 8117",
+        "_notes": "Fractional 1/10s (0-9) in integer byte at 8117",
         "start": 8116,
         "encoding": "int",
         "length": 1,

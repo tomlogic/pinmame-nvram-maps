@@ -59,7 +59,7 @@
       "length": 5
     },
     "credits": {
-      "_note": [
+      "_notes": [
         "1-byte credits followed by 6 bytes encoding partial/bonus credits.",
         "Location of Magic Credits unknown."
       ],
