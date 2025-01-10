@@ -112,7 +112,7 @@
       "initials": {
         "start": 6534,
         "encoding": "ch",
-        "default": "\u00FF\u00FF\u00FF",
+        "default": "\u00ff\u00ff\u00ff",
         "length": 3
       },
       "score": {
