@@ -1,16 +1,14 @@
 {
   "_notes": [
     "Compiled by Tom Collins using template-wpc.json.",
-    "WPC 20020, SYS 2.67 REV 0.1 (jd_l1)",
-    "WPC 20020, SYS 3.08 REV 0.7 (jd_l7)"
+    "WPC 20017, SYS 2.43 REV 0.7"
   ],
   "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
-  "_ramsize": 12288,
+  "_ramsize": 8192,
   "_roms": [
-    "jd_l1",
-    "jd_l7"
+    "taf_l7"
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
@@ -57,13 +55,6 @@
       "encoding": "ch",
       "length": 5
     },
-    "replay": {
-      "label": "Replay",
-      "start": 7348,
-      "encoding": "bcd",
-      "length": 2,
-      "scale": 1000000
-    },
     "credits": {
       "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
       "label": "Credits",
@@ -76,6 +67,13 @@
       "encoding": "int",
       "min": 0,
       "max": 31
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7348,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 1000000
     }
   },
   "high_scores": [
@@ -150,77 +148,10 @@
       }
     }
   ],
-  "mode_champions": [
-    {
-      "label": "Super Game GC",
-      "initials": {
-        "start": 7913,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 7916,
-        "encoding": "bcd",
-        "length": 5
-      }
-    },
-    {
-      "label": "Super Game #1",
-      "initials": {
-        "start": 7879,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 7882,
-        "encoding": "bcd",
-        "length": 5
-      }
-    },
-    {
-      "label": "Super Game #2",
-      "initials": {
-        "start": 7887,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 7890,
-        "encoding": "bcd",
-        "length": 5
-      }
-    },
-    {
-      "label": "Super Game #3",
-      "initials": {
-        "start": 7895,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 7898,
-        "encoding": "bcd",
-        "length": 5
-      }
-    },
-    {
-      "label": "Super Game #4",
-      "initials": {
-        "start": 7903,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 7906,
-        "encoding": "bcd",
-        "length": 5
-      }
-    }
-  ],
   "checksum8": [
     {
       "start": 6161,
-      "end": 6742,
+      "end": 6910,
       "groupings": 6,
       "label": "Audits"
     }
@@ -278,16 +209,6 @@
       "start": 7747,
       "end": 7878,
       "label": "Custom Message (2x32)"
-    },
-    {
-      "start": 7879,
-      "end": 7912,
-      "label": "Super Game High Scores"
-    },
-    {
-      "start": 7913,
-      "end": 7922,
-      "label": "Super Game Grand Champion"
     }
   ]
 }

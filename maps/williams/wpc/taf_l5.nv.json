@@ -2,6 +2,7 @@
   "_notes": [
     "Compiled by Tom Collins using template-wpc.json.",
     "WPC 20017, SYS 2.48 REV 0.5 (taf_l5)",
+    "WPC 20017, SYS 2.55 REV 0.6 (taf_l6)",
     "WPC 20017, SYS 3.21 REV 0.6 (taf_h4)"
   ],
   "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
@@ -10,6 +11,7 @@
   "_ramsize": 8192,
   "_roms": [
     "taf_l5",
+    "taf_l6",
     "taf_h4"
   ],
   "_fileformat": 0.1,

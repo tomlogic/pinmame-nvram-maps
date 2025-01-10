@@ -1,16 +1,15 @@
 {
   "_notes": [
     "Compiled by Tom Collins using template-wpc.json.",
-    "WPC 20020, SYS 2.67 REV 0.1 (jd_l1)",
-    "WPC 20020, SYS 3.08 REV 0.7 (jd_l7)"
+    "WPC 90003, SYS 3.58 REV 0.9",
+    "Unlike sc_18, this ROM does not have Assault Champion/High Scores."
   ],
   "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "jd_l1",
-    "jd_l7"
+    "sc_091"
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
@@ -22,31 +21,31 @@
   "game_state": {
     "player_count": {
       "label": "Players",
-      "start": 6053,
+      "start": 5909,
       "encoding": "int"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": 5936,
+        "start": 5792,
         "encoding": "bcd",
         "length": 5
       },
       {
         "label": "Player 2",
-        "start": 5942,
+        "start": 5798,
         "encoding": "bcd",
         "length": 5
       },
       {
         "label": "Player 3",
-        "start": 5948,
+        "start": 5804,
         "encoding": "bcd",
         "length": 5
       },
       {
         "label": "Player 4",
-        "start": 5954,
+        "start": 5810,
         "encoding": "bcd",
         "length": 5
       }
@@ -57,25 +56,28 @@
       "encoding": "ch",
       "length": 5
     },
-    "replay": {
-      "label": "Replay",
-      "start": 7348,
-      "encoding": "bcd",
-      "length": 2,
-      "scale": 1000000
-    },
     "credits": {
-      "_note": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
+      "_note": [
+        "1-byte credits followed by 6 bytes encoding partial/bonus credits.",
+        "Location of Magic Credits unknown."
+      ],
       "label": "Credits",
-      "start": 7315,
+      "start": 7495,
       "encoding": "int"
     },
     "volume": {
       "label": "Volume",
-      "start": 7324,
+      "start": 7505,
       "encoding": "int",
       "min": 0,
       "max": 31
+    },
+    "replay": {
+      "label": "Replay",
+      "start": 7529,
+      "encoding": "bcd",
+      "length": 2,
+      "scale": 10000
     }
   },
   "high_scores": [
@@ -83,12 +85,12 @@
       "label": "Grand Champion",
       "short_label": "GC",
       "initials": {
-        "start": 7299,
+        "start": 7479,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7302,
+        "start": 7482,
         "encoding": "bcd",
         "length": 5
       }
@@ -97,12 +99,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": 7265,
+        "start": 7445,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7268,
+        "start": 7448,
         "encoding": "bcd",
         "length": 5
       }
@@ -111,12 +113,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": 7273,
+        "start": 7453,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7276,
+        "start": 7456,
         "encoding": "bcd",
         "length": 5
       }
@@ -125,12 +127,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": 7281,
+        "start": 7461,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7284,
+        "start": 7464,
         "encoding": "bcd",
         "length": 5
       }
@@ -139,79 +141,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": 7289,
+        "start": 7469,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 7292,
-        "encoding": "bcd",
-        "length": 5
-      }
-    }
-  ],
-  "mode_champions": [
-    {
-      "label": "Super Game GC",
-      "initials": {
-        "start": 7913,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 7916,
-        "encoding": "bcd",
-        "length": 5
-      }
-    },
-    {
-      "label": "Super Game #1",
-      "initials": {
-        "start": 7879,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 7882,
-        "encoding": "bcd",
-        "length": 5
-      }
-    },
-    {
-      "label": "Super Game #2",
-      "initials": {
-        "start": 7887,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 7890,
-        "encoding": "bcd",
-        "length": 5
-      }
-    },
-    {
-      "label": "Super Game #3",
-      "initials": {
-        "start": 7895,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 7898,
-        "encoding": "bcd",
-        "length": 5
-      }
-    },
-    {
-      "label": "Super Game #4",
-      "initials": {
-        "start": 7903,
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": 7906,
+        "start": 7472,
         "encoding": "bcd",
         "length": 5
       }
@@ -220,74 +155,69 @@
   "checksum8": [
     {
       "start": 6161,
-      "end": 6742,
+      "end": 7078,
       "groupings": 6,
       "label": "Audits"
     }
   ],
   "checksum16": [
     {
-      "start": 6941,
-      "end": 7162,
-      "label": "Adjustments"
-    },
-    {
-      "start": 7165,
-      "end": 7264,
-      "label": "Timestamps"
-    },
-    {
-      "start": 7265,
-      "end": 7298,
-      "label": "High Scores"
-    },
-    {
-      "start": 7299,
-      "end": 7308,
-      "label": "Grand Champion"
-    },
-    {
-      "start": 7309,
-      "end": 7314,
-      "label": "HSTD Reset"
-    },
-    {
-      "start": 7315,
-      "end": 7323,
-      "label": "Credits"
-    },
-    {
-      "start": 7324,
-      "end": 7326,
-      "label": "Volume"
-    },
-    {
-      "start": 7327,
-      "end": 7337
-    },
-    {
-      "start": 7338,
-      "end": 7551
-    },
-    {
-      "start": 7552,
-      "end": 7746,
-      "label": "Custom Message (3x32)"
-    },
-    {
-      "start": 7747,
-      "end": 7878,
+      "start": 6012,
+      "end": 6143,
       "label": "Custom Message (2x32)"
     },
     {
-      "start": 7879,
-      "end": 7912,
-      "label": "Super Game High Scores"
+      "start": 7121,
+      "end": 7342,
+      "label": "Adjustments"
     },
     {
-      "start": 7913,
-      "end": 7922,
-      "label": "Super Game Grand Champion"
+      "start": 7345,
+      "end": 7444,
+      "label": "Timestamps"
+    },
+    {
+      "start": 7445,
+      "end": 7478,
+      "label": "High Scores"
+    },
+    {
+      "start": 7479,
+      "end": 7488,
+      "label": "Grand Champion"
+    },
+    {
+      "start": 7489,
+      "end": 7494,
+      "label": "HSTD Reset"
+    },
+    {
+      "start": 7495,
+      "end": 7504,
+      "label": "Credits"
+    },
+    {
+      "start": 7505,
+      "end": 7507,
+      "label": "Volume"
+    },
+    {
+      "start": 7508,
+      "end": 7518
+    },
+    {
+      "start": 7519,
+      "end": 7732
+    },
+    {
+      "start": 7733,
+      "end": 7927,
+      "label": "Custom Message (3x32)"
+    },
+    {
+      "start": 7928,
+      "end": 8052,
+      "label": "Custom Message (2x32)"
     }
   ]
 }
