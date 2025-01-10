@@ -16,7 +16,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check for file formatting issues or outdated index.json
         run: |
-          tools/reformat-map.sh *.json
+          shopt -s globstar
+          tools/reformat-map.sh **/*.nv.json
           if [[ -n $(git status --porcelain) ]]; then
               git status
               echo "Some maps are formatted incorrectly. Please check the README on how to reformat your files."
