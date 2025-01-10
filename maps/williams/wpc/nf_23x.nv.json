@@ -138,59 +138,59 @@
       }
     }
   ],
-  "buyin_high_scores": [
+  "mode_champions": [
     {
-      "label": "First Place",
-      "short_label": "1st",
+      "label": "Buy-In High Score #1",
+      "short_label": "Buy-In #1",
       "initials": {
         "start": 8018,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8020,
+        "start": 8021,
         "encoding": "bcd",
         "length": 6
       }
     },
     {
-      "label": "Second Place",
-      "short_label": "2nd",
+      "label": "Buy-In High Score #2",
+      "short_label": "Buy-In #2",
       "initials": {
         "start": 8027,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8029,
+        "start": 8030,
         "encoding": "bcd",
         "length": 6
       }
     },
     {
-      "label": "Third Place",
-      "short_label": "3rd",
+      "label": "Buy-In High Score #3",
+      "short_label": "Buy-In #3",
       "initials": {
         "start": 8036,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8038,
+        "start": 8039,
         "encoding": "bcd",
         "length": 6
       }
     },
     {
-      "label": "Fourth Place",
-      "short_label": "4th",
+      "label": "Buy-In High Score #4",
+      "short_label": "Buy-In #4",
       "initials": {
         "start": 8045,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 8047,
+        "start": 8048,
         "encoding": "bcd",
         "length": 6
       }
@@ -262,6 +262,11 @@
       "start": 7893,
       "end": 8017,
       "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 8018,
+      "end": 8055,
+      "label": "Buy-In High Scores"
     }
   ]
 }
