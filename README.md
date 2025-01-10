@@ -129,7 +129,8 @@ not the contents of the corresponding NVRAM file.
   Modified map files, or maps created using an existing map as a starting
   point are also covered by that license.
 - **_notes**: Notes about the file, possibly indicating who created it or
-  portions of the file that may not be entirely correct.
+  portions of the file that may not be entirely correct.  Can be a string
+  or an array of strings.
 - **_endian**: Set to either `"big"` or `"little"` to indicate the default
   byte order of multi-byte values.  Defaults to `"big"`.
   Refers to which end of the number is stored first.  For example, a
@@ -159,7 +160,7 @@ The map file contains objects describing sections of the `.nv` file and
 how to interpret them.  They're comprised of the following key/value pairs:
 
 - **_notes**: Notes for someone maintaining the file; not displayed when
-  processing an NVRAM file.
+  processing an NVRAM file.  Can be a string or an array of strings.
 
 - **encoding** _(required)_ must be one of the following:
   - `"enum"`: An enumerated type where the byte at `start` is used as an
