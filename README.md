@@ -329,10 +329,10 @@ Keys that don't start with an underscore typically have groups of
 ### DIP Switches
 
 PinMAME stores DIP Switch values in the last six bytes of the `.nv` file.
-The first byte represents SW1 to SW8, with SW1 in bit 0.  The second byte
-is SW9 to SW16, etc.  The fifth and sixth bytes are typically used for
-switches on sound boards.  These map files represent them as SW33 to SW40
-and SW41 to SW48.
+The first byte represents SW1 to SW8, with SW1 in the least significant bit.
+The second byte is SW9 to SW16, etc.  The fifth and sixth bytes are typically
+used for switches on sound boards.  These map files reference them as SW33 to
+SW40 and SW41 to SW48.
 
 The `dip_switches` section of the file describes the settings for individual
 switches or groups of switches, stored as a dictionary with a key that is
