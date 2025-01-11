@@ -53,6 +53,9 @@ def map_convert(pairs):
         elif k == 'null':
             # "null" is only valid in v0.3 and later
             minimum_file_format(0.3)
+        elif k == '_values' or (k == 'encoding' and v == 'dipsw'):
+            # "_values" appeared in v0.5 along with "dipsw" encoding
+            minimum_file_format(0.5)
 
         if k == 'packed':
             # as of v0.2, "packed" attribute deprecated in favor of "nibble"
