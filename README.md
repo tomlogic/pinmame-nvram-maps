@@ -153,6 +153,10 @@ not the contents of the corresponding NVRAM file.
   additional data to the file.
 - **_char_map**: Characters to use for the `ch` encoding instead of a straight 
   ASCII table.  See Whirlwind (`whirl_l3.nv.json`) as an example.
+- **_values**: A dictionary for value lists used by multiple entries.  Added
+  to `_fileformat` v0.5 to support long lists of pricing options that apply
+  to multiple sets of DIP switches.  The `value` property for an entry can
+  reference a key to this dictionary instead of having a full list.
 
 ### Descriptors
 
@@ -180,6 +184,10 @@ how to interpret them.  They're comprised of the following key/value pairs:
 	indexes into that string.
   - `"raw"`: A series of raw bytes, useful for extracting data yet to be
     decoded or that requires custom processing.
+  - `"dipsw"`: A special encoding where `offsets` is a list of DIP switch
+    numbers (indexed starting with 1) that combine to form an index into
+    the `values` list for the entry.  See the "DIP Switches" section for
+    details.
   - `"wpc_rtc"`: A special type for a real-time clock value
     from a WPC game, stored as a sequence of 7 bytes.  Starts with a
     two-byte year (2015 is `0x07 0xDF`), month (1-12), day of month (1-31),
@@ -195,7 +203,8 @@ how to interpret them.  They're comprised of the following key/value pairs:
   - **length**: Number of bytes to interpret, must be at least 1 (default).
   - **offsets**: Alternative to using start/end or start/length when bytes
     aren't contiguous.  List of offsets to use.  Either `start` or `offsets`
-    are required.
+    are required.  For `dipsw` encoding, this is actually a list of switch
+    numbers.
 
 - These properties provide additional encoding details.
   - **endian**: Set to either `"big"` or `"little"` to indicate the byte
@@ -218,8 +227,10 @@ how to interpret them.  They're comprised of the following key/value pairs:
   - **label**: A label describing this collection of bytes in the `.nv` file. 
   - **short_label**: An optional, abbreviated label for use when space is
     limited (like in a game launcher on a DMD). 
-  - **values**: A list of strings used for the `enum` encoding, starting at index 0.
-    Also used for the `bits` encoding, as values for bit 0, 1, 2, etc.
+  - **values**: A list of strings or integers, used for the `enum` encoding
+    (starting at index 0) and the `bits` encoding, as values for bit 0, 1, 2,
+    etc.  Starting in `_fileformat` v0.5, this property can be a string that
+    references a list stored in the `_values` metadata property for the file.
   - **special_values**: A set of key/value pairs for a numeric field where some
     values have special meaning (for example, `{"0": "OFF"}`).
   - **units**: Used to indicate that a field contains a time value as either a
@@ -312,6 +323,75 @@ Keys that don't start with an underscore typically have groups of
   the state of the game (e.g., player #, ball #, progressive jackpot value,
   etc.)  Not useful for PinMAME's `.nv` files, but could be referenced with
   custom code inside PinMAME.  See the High Speed map for an example.
+- **dip_switches**: A special section detailing DIP switch options for the
+  game.  See the "DIP Switches" section below for details.
+
+### DIP Switches
+
+PinMAME stores DIP Switch values in the last six bytes of the `.nv` file.
+The first byte represents SW1 to SW8, with SW1 in bit 0.  The second byte
+is SW9 to SW16, etc.  The fifth and sixth bytes are typically used for
+switches on sound boards.  These map files represent them as SW33 to SW40
+and SW41 to SW48.
+
+The `dip_switches` section of the file describes the settings for individual
+switches or groups of switches, stored as a dictionary with a key that is
+typically the switch number (e.g., "3") or a switch range (e.g., "1-5").
+
+Each DIP switch descriptor has the following properties:
+- A `label` describing the option controlled by the switch(es).
+- An `encoding` of `dipsw`.
+- An `offsets` property to hold a list of switch numbers.
+- A `values` property.  The `values` can be a list, or a string that
+  references a shared list in the `_values` metadata.
+
+The index into the value list is the result of combining switch values
+where OFF=0 and ON=1.  The first entry in `offsets` is the most-significant
+bit when combining multiple switch values.
+
+Example with entries for a single switch and group of two switches.
+
+| SW1 | Special           |
+|-----|:------------------|
+| OFF | Awards Replay     |
+| ON  | Awards Extra Ball |
+
+| SW2 | SW3 | Maximum Credits |
+|-----|-----|:----------------|
+| OFF | OFF | 5               |
+| OFF | ON  | 10              |
+| ON  | OFF | 15              |
+| ON  | ON  | 20              |
+
+```json
+{
+  "1": {
+    "label": "Special",
+    "offsets": [
+      1
+    ],
+    "values": [
+      "Awards Replay",
+      "Awards Extra Ball"
+    ]
+  },
+  "2-3": {
+    "label": "Maximum Credits",
+    "offsets": [
+      2,
+      3
+    ],
+    "values": [
+      5,
+      10,
+      15,
+      20
+    ]
+  }
+}
+```
+
+See `gottlieb/victory.nv.json` as a full example of DIP switch documentation.
 
 ### Checksums
 
@@ -337,3 +417,4 @@ treat a single descriptor as a list of groupings-sized ranges.
 - v0.3: Deprecate usage of hex strings for `start`, `end` and `offsets`.
         Add the `null` attribute for entries with `ch` encoding.
 - v0.4: Add global `_nibble` to apply to all entries.
+- v0.5: Add `dipsw` encoding and `_values` metadata.
