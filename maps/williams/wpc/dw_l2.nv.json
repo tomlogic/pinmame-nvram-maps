@@ -12,7 +12,7 @@
     "dw_l2"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -78,7 +78,6 @@
     },
     "current_player": {
       "label": "Current Player",
-      "short_label": "P#",
       "start": 943,
       "encoding": "int"
     },
@@ -269,6 +268,11 @@
       "encoding": "bcd",
       "length": 2,
       "scale": 1000000
+    },
+    "eb_on_this_ball": {
+      "label": "EBs this Ball",
+      "start": 946,
+      "encoding": "int"
     }
   },
   "high_scores": [

@@ -11,7 +11,7 @@
     "dm_lx4"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.3,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -74,6 +74,26 @@
       "encoding": "bcd",
       "length": 2,
       "scale": 1000000
+    },
+    "current_player": {
+      "label": "Current Player",
+      "start": 1048,
+      "encoding": "int"
+    },
+    "current_ball": {
+      "label": "Ball",
+      "start": 1049,
+      "encoding": "int"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 1050,
+      "encoding": "int"
+    },
+    "eb_on_this_ball": {
+      "label": "EBs This Ball",
+      "start": 1051,
+      "encoding": "int"
     }
   },
   "high_scores": [
