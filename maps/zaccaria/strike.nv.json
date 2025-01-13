@@ -1,0 +1,41 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Strike (Zaccaria 1978)",
+    "https://www.ipdb.org/machine.cgi?id=3363",
+    "https://opdb.org/machines/919",
+    "Zaccaria Prototype Solid State Generation",
+    "Credits can go higher than 15 but are in that case displayed as 15",
+    "High scores seem to not be saved?"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_roms": [
+    "strike"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 51,
+      "length": 1,
+      "encoding": "bcd"
+    },
+    "score": {
+      "label": "Score",
+      "start": 128,
+      "length": 3,
+      "encoding": "bcd",
+      "scale": 10
+    },
+    "ball_to_play": {
+      "label": "Ball to Play",
+      "start": 156,
+      "length": 1,
+      "encoding": "bcd"
+    }
+  },
+  "high_scores": []
+}
