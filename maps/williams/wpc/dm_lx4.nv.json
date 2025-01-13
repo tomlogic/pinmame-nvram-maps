@@ -91,9 +91,18 @@
       "encoding": "int"
     },
     "eb_on_this_ball": {
-      "label": "EBs This Ball",
+      "label": "EBs this Ball",
       "start": 1051,
       "encoding": "int"
+    },
+    "playing": {
+      "label": "Playing",
+      "start": 134,
+      "encoding": "enum",
+      "values": [
+        "ATTRACT",
+        "IN GAME"
+      ]
     }
   },
   "high_scores": [

@@ -74,6 +74,35 @@
       "encoding": "int",
       "min": 0,
       "max": 31
+    },
+    "playing": {
+      "label": "Playing",
+      "start": 122,
+      "encoding": "enum",
+      "values": [
+        "ATTRACT",
+        "IN GAME"
+      ]
+    },
+    "current_player": {
+      "label": "Current Player",
+      "start": 853,
+      "encoding": "int"
+    },
+    "current_ball": {
+      "label": "Ball",
+      "start": 854,
+      "encoding": "int"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 855,
+      "encoding": "int"
+    },
+    "eb_on_this_ball": {
+      "label": "EBs this Ball",
+      "start": 856,
+      "encoding": "int"
     }
   },
   "high_scores": [

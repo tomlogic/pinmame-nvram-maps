@@ -93,6 +93,15 @@
       "label": "EBs this Ball",
       "start": 946,
       "encoding": "int"
+    },
+    "playing": {
+      "label": "Playing",
+      "start": 134,
+      "encoding": "enum",
+      "values": [
+        "ATTRACT",
+        "IN GAME"
+      ]
     }
   },
   "high_scores": [
