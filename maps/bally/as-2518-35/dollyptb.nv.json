@@ -22,7 +22,7 @@
     "credits": {
       "label": "Credits",
       "start": 57,
-      "length": 1,
+      "length": 2,
       "encoding": "bcd"
     }
   },

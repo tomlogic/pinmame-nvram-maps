@@ -1,0 +1,60 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Medusa (Bally 1981)",
+    "https://www.ipdb.org/machine.cgi?id=1565",
+    "https://opdb.org/machines/1247",
+    "Bally MPU AS-2518-35",
+    "6-digit score display"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_nibble": "high",
+  "_roms": [
+    "medusa"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 61,
+      "length": 2,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 72,
+      "encoding": "bcd",
+      "length": 7
+    },
+    {
+      "start": 79,
+      "encoding": "bcd",
+      "length": 7
+    },
+    {
+      "start": 86,
+      "encoding": "bcd",
+      "length": 7
+    },
+    {
+      "start": 93,
+      "encoding": "bcd",
+      "length": 7
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 166,
+        "encoding": "bcd",
+        "length": 7
+      }
+    }
+  ]
+}

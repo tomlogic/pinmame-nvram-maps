@@ -1,0 +1,61 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Lost World (Bally 1978)",
+    "https://www.ipdb.org/machine.cgi?id=1476",
+    "https://opdb.org/machines/947",
+    "Bally MPU AS-2518-35",
+    "6-digit score display",
+    "By default the credits are not shown, set dip switch 27 to show them."
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_nibble": "high",
+  "_roms": [
+    "lostwrld"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 57,
+      "length": 2,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 60,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 66,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 72,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 78,
+      "encoding": "bcd",
+      "length": 6
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 207,
+        "encoding": "bcd",
+        "length": 6
+      }
+    }
+  ]
+}

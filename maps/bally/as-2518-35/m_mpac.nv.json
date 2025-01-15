@@ -1,0 +1,61 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Mr. & Mrs. Pac-Man Pinball (Bally 1982)",
+    "https://www.ipdb.org/machine.cgi?id=1639",
+    "https://opdb.org/machines/1157",
+    "Bally MPU AS-2518-35",
+    "7-digit score display",
+    "By default the credits are not shown, set dip switch 27 to show them."
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_nibble": "high",
+  "_roms": [
+    "m_mpac"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 61,
+      "length": 2,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 72,
+      "encoding": "bcd",
+      "length": 7
+    },
+    {
+      "start": 79,
+      "encoding": "bcd",
+      "length": 7
+    },
+    {
+      "start": 86,
+      "encoding": "bcd",
+      "length": 7
+    },
+    {
+      "start": 93,
+      "encoding": "bcd",
+      "length": 7
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 166,
+        "encoding": "bcd",
+        "length": 7
+      }
+    }
+  ]
+}

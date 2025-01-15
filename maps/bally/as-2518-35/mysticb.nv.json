@@ -1,0 +1,66 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Mystic (Bally 1980)",
+    "https://www.ipdb.org/machine.cgi?id=1650",
+    "https://opdb.org/machines/998",
+    "Bally MPU AS-2518-35",
+    "7-digit score display",
+    "By default the credits are not shown, set dip switch 27 to show them."
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_nibble": "high",
+  "_roms": [
+    "mysticb"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 57,
+      "length": 2,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 61,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 67,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 73,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 79,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 171,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      }
+    }
+  ]
+}
