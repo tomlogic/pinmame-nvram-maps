@@ -12,7 +12,7 @@
     "nf_23x"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.3,
   "game_state": {
     "player_count": {
       "label": "Players",
@@ -65,15 +65,6 @@
       "length": 2,
       "scale": 1000000
     },
-    "playing": {
-      "label": "Playing",
-      "start": 122,
-      "encoding": "enum",
-      "values": [
-        "ATTRACT",
-        "IN GAME"
-      ]
-    },
     "current_player": {
       "label": "Current Player",
       "start": 946,
@@ -93,6 +84,15 @@
       "label": "EBs this Ball",
       "start": 949,
       "encoding": "int"
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 129,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
     }
   },
   "high_scores": [

@@ -11,7 +11,7 @@
     "jm_12r"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -69,15 +69,6 @@
       "length": 2,
       "scale": 1000000
     },
-    "playing": {
-      "label": "Playing",
-      "start": 128,
-      "encoding": "enum",
-      "values": [
-        "ATTRACT",
-        "IN GAME"
-      ]
-    },
     "current_player": {
       "label": "Current Player",
       "start": 946,
@@ -97,6 +88,15 @@
       "label": "EBs this Ball",
       "start": 949,
       "encoding": "int"
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 135,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
     }
   },
   "high_scores": [

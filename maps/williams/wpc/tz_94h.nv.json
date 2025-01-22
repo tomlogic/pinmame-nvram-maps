@@ -12,7 +12,7 @@
     "tz_94ch"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -75,6 +75,35 @@
       "encoding": "bcd",
       "length": 2,
       "scale": 1000000
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 141,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
+    },
+    "current_player": {
+      "label": "Current Player",
+      "start": 946,
+      "encoding": "int"
+    },
+    "current_ball": {
+      "label": "Ball",
+      "start": 947,
+      "encoding": "int"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 948,
+      "encoding": "int"
+    },
+    "eb_on_this_ball": {
+      "label": "EBs this Ball",
+      "start": 949,
+      "encoding": "int"
     }
   },
   "high_scores": [

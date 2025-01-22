@@ -15,7 +15,7 @@
     "tom_14hb"
   ],
   "_fileformat": 0.1,
-  "_version": 0.3,
+  "_version": 0.4,
   "game_state": {
     "player_count": {
       "label": "Players",
@@ -94,13 +94,13 @@
       "start": 946,
       "encoding": "int"
     },
-    "playing": {
-      "label": "Playing",
-      "start": 134,
+    "attract": {
+      "label": "Attract",
+      "start": 141,
       "encoding": "enum",
       "values": [
-        "ATTRACT",
-        "IN GAME"
+        "IN GAME",
+        "ATTRACT"
       ]
     }
   },

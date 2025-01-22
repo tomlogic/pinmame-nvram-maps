@@ -11,7 +11,7 @@
     "ft_l5"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -75,34 +75,34 @@
       "min": 0,
       "max": 31
     },
-    "playing": {
-      "label": "Playing",
-      "start": 122,
-      "encoding": "enum",
-      "values": [
-        "ATTRACT",
-        "IN GAME"
-      ]
-    },
     "current_player": {
       "label": "Current Player",
-      "start": 853,
+      "start": 943,
       "encoding": "int"
     },
     "current_ball": {
       "label": "Ball",
-      "start": 854,
+      "start": 944,
       "encoding": "int"
     },
     "extra_balls": {
       "label": "Extra Balls",
-      "start": 855,
+      "start": 945,
       "encoding": "int"
     },
     "eb_on_this_ball": {
       "label": "EBs this Ball",
-      "start": 856,
+      "start": 946,
       "encoding": "int"
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 129,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
     }
   },
   "high_scores": [

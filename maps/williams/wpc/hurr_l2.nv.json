@@ -11,7 +11,7 @@
     "hurr_l2"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -81,15 +81,6 @@
       "min": 0,
       "max": 31
     },
-    "playing": {
-      "label": "Playing",
-      "start": 134,
-      "encoding": "enum",
-      "values": [
-        "ATTRACT",
-        "IN GAME"
-      ]
-    },
     "current_player": {
       "label": "Current Player",
       "start": 940,
@@ -109,6 +100,15 @@
       "label": "EBs this Ball",
       "start": 943,
       "encoding": "int"
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 137,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
     }
   },
   "high_scores": [

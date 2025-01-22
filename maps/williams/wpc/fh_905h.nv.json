@@ -15,7 +15,7 @@
     "fh_906h"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "game_state": {
     "player_count": {
       "label": "Players",
@@ -67,6 +67,35 @@
       "encoding": "bcd",
       "length": 2,
       "scale": 10000
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 135,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
+    },
+    "current_player": {
+      "label": "Current Player",
+      "start": 1038,
+      "encoding": "int"
+    },
+    "current_ball": {
+      "label": "Ball",
+      "start": 1039,
+      "encoding": "int"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 1040,
+      "encoding": "int"
+    },
+    "eb_on_this_ball": {
+      "label": "EBs this Ball",
+      "start": 1041,
+      "encoding": "int"
     }
   },
   "high_scores": [

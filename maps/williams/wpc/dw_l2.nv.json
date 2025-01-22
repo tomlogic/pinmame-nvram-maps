@@ -12,7 +12,7 @@
     "dw_l2"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.3,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -273,6 +273,15 @@
       "label": "EBs this Ball",
       "start": 946,
       "encoding": "int"
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 143,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
     }
   },
   "high_scores": [

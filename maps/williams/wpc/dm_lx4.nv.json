@@ -11,7 +11,7 @@
     "dm_lx4"
   ],
   "_fileformat": 0.1,
-  "_version": 0.3,
+  "_version": 0.4,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -95,13 +95,13 @@
       "start": 1051,
       "encoding": "int"
     },
-    "playing": {
-      "label": "Playing",
-      "start": 134,
+    "attract": {
+      "label": "Attract",
+      "start": 141,
       "encoding": "enum",
       "values": [
-        "ATTRACT",
-        "IN GAME"
+        "IN GAME",
+        "ATTRACT"
       ]
     }
   },
