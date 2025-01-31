@@ -15,7 +15,7 @@
     "tom_14hb"
   ],
   "_fileformat": 0.1,
-  "_version": 0.2,
+  "_version": 0.4,
   "game_state": {
     "player_count": {
       "label": "Players",
@@ -56,14 +56,13 @@
     },
     "current_player": {
       "label": "Current Player",
-      "short_label": "P#",
       "start": 943,
       "encoding": "int"
     },
     "current_ball": {
       "label": "Ball",
       "start": 944,
-      "encoding": "bcd"
+      "encoding": "int"
     },
     "credits": {
       "_notes": "1-byte credits followed by 6 bytes encoding partial/bonus credits",
@@ -84,6 +83,25 @@
       "encoding": "bcd",
       "length": 2,
       "scale": 1000000
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 945,
+      "encoding": "int"
+    },
+    "eb_on_this_ball": {
+      "label": "EBs this Ball",
+      "start": 946,
+      "encoding": "int"
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 141,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
     }
   },
   "high_scores": [

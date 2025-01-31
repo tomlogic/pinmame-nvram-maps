@@ -12,7 +12,7 @@
     "afm_113b"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -69,6 +69,35 @@
       "encoding": "bcd",
       "length": 2,
       "scale": 100000000
+    },
+    "current_player": {
+      "label": "Current Player",
+      "start": 949,
+      "encoding": "int"
+    },
+    "current_ball": {
+      "label": "Ball",
+      "start": 950,
+      "encoding": "int"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 951,
+      "encoding": "int"
+    },
+    "eb_on_this_ball": {
+      "label": "EBs this Ball",
+      "start": 952,
+      "encoding": "int"
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 135,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
     }
   },
   "high_scores": [

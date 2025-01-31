@@ -14,7 +14,7 @@
     "sc_18s2"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -80,6 +80,35 @@
       "encoding": "bcd",
       "length": 2,
       "scale": 10000
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 141,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
+    },
+    "current_player": {
+      "label": "Current Player",
+      "start": 1003,
+      "encoding": "int"
+    },
+    "current_ball": {
+      "label": "Ball",
+      "start": 1004,
+      "encoding": "int"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 1005,
+      "encoding": "int"
+    },
+    "eb_on_this_ball": {
+      "label": "EBs this Ball",
+      "start": 1006,
+      "encoding": "int"
     }
   },
   "high_scores": [

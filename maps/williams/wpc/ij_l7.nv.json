@@ -11,7 +11,7 @@
     "ij_l7"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
@@ -74,6 +74,35 @@
       "encoding": "int",
       "min": 0,
       "max": 31
+    },
+    "attract": {
+      "label": "Attract",
+      "start": 141,
+      "encoding": "enum",
+      "values": [
+        "IN GAME",
+        "ATTRACT"
+      ]
+    },
+    "current_player": {
+      "label": "Current Player",
+      "start": 943,
+      "encoding": "int"
+    },
+    "current_ball": {
+      "label": "Ball",
+      "start": 944,
+      "encoding": "int"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 945,
+      "encoding": "int"
+    },
+    "eb_on_this_ball": {
+      "label": "EBs this Ball",
+      "start": 946,
+      "encoding": "int"
     }
   },
   "high_scores": [
