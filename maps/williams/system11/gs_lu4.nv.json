@@ -1,0 +1,109 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins using template-s11.json."
+  ],
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 2048,
+  "_roms": [
+    "gs_lu4"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "_char_map": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 512,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 2",
+        "start": 516,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 3",
+        "start": 520,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 4",
+        "start": 524,
+        "encoding": "bcd",
+        "length": 4
+      }
+    ]
+  },
+  "high_scores": [
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "initials": {
+        "start": 1822,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1806,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "initials": {
+        "start": 1825,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1810,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "initials": {
+        "start": 1828,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1814,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "initials": {
+        "start": 1831,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1818,
+        "encoding": "bcd",
+        "length": 4
+      }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 1626,
+      "end": 1801,
+      "groupings": 4,
+      "label": "Audits"
+    }
+  ]
+}

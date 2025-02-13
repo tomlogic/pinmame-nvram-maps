@@ -1,0 +1,157 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins using template-s11.json."
+  ],
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 2048,
+  "_roms": [
+    "pool_l7"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "_char_map": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 512,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 2",
+        "start": 516,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 3",
+        "start": 520,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 4",
+        "start": 524,
+        "encoding": "bcd",
+        "length": 4
+      }
+    ]
+  },
+  "high_scores": [
+    {
+      "label": "8-Ball Shark #1",
+      "initials": {
+        "start": 1475,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1443,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "8-Ball Shark #2",
+      "initials": {
+        "start": 1478,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1447,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "8-Ball Shark #3",
+      "initials": {
+        "start": 1481,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1451,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "8-Ball Shark #4",
+      "initials": {
+        "start": 1484,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1455,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "9-Ball Shark #1",
+      "initials": {
+        "start": 1487,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1459,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "9-Ball Shark #2",
+      "initials": {
+        "start": 1490,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1463,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "9-Ball Shark #3",
+      "initials": {
+        "start": 1493,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1467,
+        "encoding": "bcd",
+        "length": 4
+      }
+    },
+    {
+      "label": "9-Ball Shark #4",
+      "initials": {
+        "start": 1496,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 1471,
+        "encoding": "bcd",
+        "length": 4
+      }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 1626,
+      "end": 1801,
+      "groupings": 4,
+      "label": "Audits"
+    }
+  ]
+}

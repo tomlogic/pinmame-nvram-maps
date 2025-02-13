@@ -5,13 +5,13 @@
   "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
-  "_ramsize": 2094,
+  "_ramsize": 2048,
   "_roms": [
     "diner_l4"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
-  "_char_map": "???????????ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "_version": 0.2,
+  "_char_map": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   "last_game": [
     {
       "encoding": "bcd",
