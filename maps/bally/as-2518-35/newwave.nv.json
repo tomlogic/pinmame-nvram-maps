@@ -2,12 +2,11 @@
   "_notes": [
     "Compiled by Francis De Brabandere.",
     "New Wave (Bell Games 1985)",
-    "https://www.ipdb.org/machine.cgi?id=312",
-    "https://opdb.org/machines/228",
+    "https://www.ipdb.org/machine.cgi?id=3482",
+    "https://opdb.org/machines/612",
     "Bally MPU AS-2518-35",
-    "This is a mod for Black Pyramid (Bally 1984)",
-    "7-digit score display",
-    "free play by default"
+    "This is a conversion kit for Black Pyramid (Bally 1984)",
+    "7-digit score display"
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
