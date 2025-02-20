@@ -10,6 +10,13 @@
   "_fileformat": 0.1,
   "_version": 0.2,
   "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 1830,
+      "_notes": "checksum8 of this byte at 1901",
+      "length": 1,
+      "encoding": "bcd"
+    },
     "hideout_jackpot": {
       "label": "Hideout Jackpot",
       "start": 1904,
@@ -127,30 +134,34 @@
       "label": "Tilt Warnings",
       "start": 179,
       "encoding": "int"
-    }
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 512,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 2",
+        "start": 516,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 3",
+        "start": 520,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 4",
+        "start": 524,
+        "encoding": "bcd",
+        "length": 4
+      }
+    ]
   },
-  "last_game": [
-    {
-      "start": 512,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 516,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 520,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 524,
-      "encoding": "bcd",
-      "length": 4
-    }
-  ],
   "high_scores": [
     {
       "label": "First Place",
@@ -976,7 +987,7 @@
   },
   "checksum8": [
     {
-      "start": 1700,
+      "start": 1696,
       "end": 1827,
       "groupings": 4,
       "label": "Audits"

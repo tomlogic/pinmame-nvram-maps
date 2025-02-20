@@ -13,6 +13,12 @@
   "_version": 0.1,
   "_char_map": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 1805,
+      "length": 1,
+      "encoding": "bcd"
+    },
     "scores": [
       {
         "label": "Player 1",

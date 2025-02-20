@@ -12,6 +12,12 @@
   "_fileformat": 0.1,
   "_version": 0.1,
   "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 1830,
+      "length": 1,
+      "encoding": "bcd"
+    },
     "scores": [
       {
         "label": "Player 1",

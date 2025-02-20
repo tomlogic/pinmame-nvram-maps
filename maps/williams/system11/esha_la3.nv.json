@@ -8,6 +8,7 @@
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_ramsize": 2048,
   "_roms": [
     "esha_la3",
     "esha_l4c",
@@ -18,33 +19,37 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 57,
+      "start": 1786,
       "length": 1,
       "encoding": "bcd"
-    }
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 512,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 2",
+        "start": 516,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 3",
+        "start": 520,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 4",
+        "start": 524,
+        "encoding": "bcd",
+        "length": 4
+      }
+    ]
   },
-  "last_game": [
-    {
-      "start": 512,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 516,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 520,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 524,
-      "encoding": "bcd",
-      "length": 4
-    }
-  ],
   "high_scores": [
     {
       "label": "First Place",
@@ -101,6 +106,14 @@
         "encoding": "bcd",
         "length": 4
       }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 1600,
+      "end": 1783,
+      "groupings": 4,
+      "label": "Audits"
     }
   ]
 }
