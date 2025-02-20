@@ -1,23 +1,21 @@
 {
   "_notes": [
-    "Compiled by Francis De Brabandere.",
-    "Space Station (Williams 1987)",
-    "https://www.ipdb.org/machine.cgi?id=2261",
-    "Williams System 11B"
+    "Compiled by Tom Collins using template-s11.json."
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 2048,
   "_roms": [
-    "spstn_l5"
+    "rvrbt_l3"
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
+  "_char_map": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 1834,
+      "start": 1805,
       "length": 1,
       "encoding": "bcd"
     },
@@ -53,12 +51,12 @@
       "label": "First Place",
       "short_label": "1st",
       "initials": {
-        "start": 1851,
+        "start": 1822,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 1835,
+        "start": 1806,
         "encoding": "bcd",
         "length": 4
       }
@@ -67,12 +65,12 @@
       "label": "Second Place",
       "short_label": "2nd",
       "initials": {
-        "start": 1854,
+        "start": 1825,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 1839,
+        "start": 1810,
         "encoding": "bcd",
         "length": 4
       }
@@ -81,12 +79,12 @@
       "label": "Third Place",
       "short_label": "3rd",
       "initials": {
-        "start": 1857,
+        "start": 1828,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 1843,
+        "start": 1814,
         "encoding": "bcd",
         "length": 4
       }
@@ -95,12 +93,12 @@
       "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
-        "start": 1860,
+        "start": 1831,
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 1847,
+        "start": 1818,
         "encoding": "bcd",
         "length": 4
       }
@@ -108,8 +106,8 @@
   ],
   "checksum8": [
     {
-      "start": 1680,
-      "end": 1831,
+      "start": 1626,
+      "end": 1801,
       "groupings": 4,
       "label": "Audits"
     }

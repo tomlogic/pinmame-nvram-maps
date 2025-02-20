@@ -3,33 +3,46 @@
   "_copyright": "Copyright (C) 2017 by Dave Horse <horse@horsesoft.uk>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_ramsize": 2048,
   "_roms": [
     "f14_l1"
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
-  "last_game": [
-    {
-      "start": 512,
-      "encoding": "bcd",
-      "length": 4
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 1830,
+      "length": 1,
+      "encoding": "bcd"
     },
-    {
-      "start": 516,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 520,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 524,
-      "encoding": "bcd",
-      "length": 4
-    }
-  ],
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 512,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 2",
+        "start": 516,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 3",
+        "start": 520,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 4",
+        "start": 524,
+        "encoding": "bcd",
+        "length": 4
+      }
+    ]
+  },
   "high_scores": [
     {
       "label": "First Place",
@@ -86,6 +99,14 @@
         "encoding": "bcd",
         "length": 4
       }
+    }
+  ],
+  "checksum8": [
+    {
+      "start": 1696,
+      "end": 1827,
+      "groupings": 4,
+      "label": "Audits"
     }
   ]
 }

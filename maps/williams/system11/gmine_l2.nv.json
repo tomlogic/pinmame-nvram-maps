@@ -3,11 +3,13 @@
     "Compiled by Francis De Brabandere.",
     "Gold Mine (Williams 1987)",
     "https://www.ipdb.org/machine.cgi?id=4935",
-    "Williams System 11B"
+    "Williams System 11B",
+    "Unlike other System 11 games, Gold Mine does not have checksummed Audits."
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
+  "_ramsize": 2048,
   "_roms": [
     "gmine_l2"
   ],
@@ -16,43 +18,49 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 68,
+      "start": 1752,
       "length": 1,
       "encoding": "bcd"
-    }
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 56,
+        "encoding": "bcd",
+        "length": 2
+      },
+      {
+        "label": "Player 2",
+        "start": 58,
+        "encoding": "bcd",
+        "length": 2
+      },
+      {
+        "label": "Player 3",
+        "start": 60,
+        "encoding": "bcd",
+        "length": 2
+      },
+      {
+        "label": "Player 4",
+        "start": 62,
+        "encoding": "bcd",
+        "length": 2
+      },
+      {
+        "label": "Player 5",
+        "start": 64,
+        "encoding": "bcd",
+        "length": 2
+      },
+      {
+        "label": "Player 6",
+        "start": 66,
+        "encoding": "bcd",
+        "length": 2
+      }
+    ]
   },
-  "last_game": [
-    {
-      "start": 56,
-      "encoding": "bcd",
-      "length": 2
-    },
-    {
-      "start": 58,
-      "encoding": "bcd",
-      "length": 2
-    },
-    {
-      "start": 60,
-      "encoding": "bcd",
-      "length": 2
-    },
-    {
-      "start": 62,
-      "encoding": "bcd",
-      "length": 2
-    },
-    {
-      "start": 64,
-      "encoding": "bcd",
-      "length": 2
-    },
-    {
-      "start": 66,
-      "encoding": "bcd",
-      "length": 2
-    }
-  ],
   "high_scores": [
     {
       "label": "High Score",

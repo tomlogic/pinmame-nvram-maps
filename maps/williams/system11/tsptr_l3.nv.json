@@ -1,5 +1,8 @@
 {
-  "_game": "Transporter the Rescue (Bally, 1989, System 11B)",
+  "_notes": [
+    "Transporter the Rescue (Bally, 1989, System 11B)",
+    "TODO: find au-51, verify last_game offsets, list values for adj-11, verify adj-50"
+  ],
   "_copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
@@ -9,8 +12,13 @@
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
-  "_todo": "find au-51, verify last_game offsets, list values for adj-11, verify adj-50",
   "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 1806,
+      "length": 1,
+      "encoding": "bcd"
+    },
     "current_player": {
       "label": "Current Player",
       "short_label": "Players",
@@ -111,30 +119,34 @@
       "length": 3,
       "encoding": "bcd",
       "scale": 100
-    }
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 512,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 2",
+        "start": 516,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 3",
+        "start": 520,
+        "encoding": "bcd",
+        "length": 4
+      },
+      {
+        "label": "Player 4",
+        "start": 524,
+        "encoding": "bcd",
+        "length": 4
+      }
+    ]
   },
-  "last_game": [
-    {
-      "start": 512,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 516,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 520,
-      "encoding": "bcd",
-      "length": 4
-    },
-    {
-      "start": 524,
-      "encoding": "bcd",
-      "length": 4
-    }
-  ],
   "high_scores": [
     {
       "label": "First Place",
@@ -1003,8 +1015,8 @@
   },
   "checksum8": [
     {
-      "start": 1700,
-      "end": 1803,
+      "start": 1627,
+      "end": 1802,
       "groupings": 4,
       "label": "Audits"
     }
