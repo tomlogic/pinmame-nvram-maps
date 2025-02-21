@@ -5,6 +5,7 @@
   "_endian": "big",
   "_ramsize": 2048,
   "_roms": [
+    "hs_l3",
     "hs_l4"
   ],
   "_fileformat": 0.1,

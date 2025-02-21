@@ -5,6 +5,7 @@
   "_endian": "big",
   "_ramsize": 2048,
   "_roms": [
+    "eatpm_l2",
     "eatpm_l4"
   ],
   "_fileformat": 0.1,
@@ -41,7 +42,17 @@
         "encoding": "bcd",
         "length": 4
       }
-    ]
+    ],
+    "current_ball": {
+      "label": "Ball",
+      "start": 56,
+      "encoding": "bcd",
+      "mask": "0x0F",
+      "special_values": {
+        "0": "n/a",
+        "15": "n/a"
+      }
+    }
   },
   "high_scores": [
     {

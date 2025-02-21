@@ -1,16 +1,13 @@
 {
   "_notes": [
-    "Compiled by Francis De Brabandere.",
-    "Bad Cats (Williams 1989)",
-    "https://www.ipdb.org/machine.cgi?id=127",
-    "Williams System 11B"
+    "Compiled by Tom Collins using template-s11.json."
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_ramsize": 2048,
   "_roms": [
-    "bcats_l5"
+    "bguns_la"
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
@@ -60,7 +57,7 @@
   },
   "high_scores": [
     {
-      "label": "Baddest Cat 1",
+      "label": "First Place",
       "short_label": "1st",
       "initials": {
         "start": 1823,
@@ -74,7 +71,7 @@
       }
     },
     {
-      "label": "Baddest Cat 2",
+      "label": "Second Place",
       "short_label": "2nd",
       "initials": {
         "start": 1826,
@@ -88,7 +85,7 @@
       }
     },
     {
-      "label": "Baddest Cat 3",
+      "label": "Third Place",
       "short_label": "3rd",
       "initials": {
         "start": 1829,
@@ -102,7 +99,7 @@
       }
     },
     {
-      "label": "Baddest Cat 4",
+      "label": "Fourth Place",
       "short_label": "4th",
       "initials": {
         "start": 1832,
@@ -118,8 +115,8 @@
   ],
   "checksum8": [
     {
-      "start": 1627,
-      "end": 1802,
+      "start": 1648,
+      "end": 1803,
       "groupings": 4,
       "label": "Audits"
     }
