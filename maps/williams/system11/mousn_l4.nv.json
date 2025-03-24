@@ -123,5 +123,273 @@
       "groupings": 4,
       "label": "Audits"
     }
-  ]
+  ],
+  "audits": {
+    "Audits": {
+      "01": {
+        "start": 1631,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "LEFT COINS"
+      },
+      "02": {
+        "start": 1635,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "CENTER COINS"
+      },
+      "03": {
+        "start": 1639,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "RIGHT COINS"
+      },
+      "04": {
+        "start": 1643,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "PAID CREDITS"
+      },
+      "05": {
+        "start": 1647,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "TOTAL PLAYS"
+      },
+      "06": {
+        "start": 1651,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "TOTAL FREE"
+      },
+      "08": {
+        "start": 1655,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "REPLAY AWARDS"
+      },
+      "10": {
+        "start": 1659,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "SPECIAL AWARDS"
+      },
+      "12": {
+        "start": 1663,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MATCH AWARDS"
+      },
+      "13": {
+        "start": 1667,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "H.S.T.D. CREDITS"
+      },
+      "15": {
+        "start": 1671,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "EXTRA BALLS"
+      },
+      "17": {
+        "start": 1675,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "AVG. BALL TIME"
+      },
+      "18": {
+        "start": 1679,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MINUTES OF PLAY"
+      },
+      "19": {
+        "start": 1683,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "BALLS PLAYED"
+      },
+      "20": {
+        "start": 1687,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "REPLAY1 AWARDS"
+      },
+      "21": {
+        "start": 1691,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "REPLAY2 AWARDS"
+      },
+      "22": {
+        "start": 1695,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "REPLAY3 AWARDS"
+      },
+      "23": {
+        "start": 1699,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "REPLAY4 AWARDS"
+      },
+      "24": {
+        "start": 1703,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "1 PLAYER GAMES"
+      },
+      "25": {
+        "start": 1707,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "2 PLAYER GAMES"
+      },
+      "26": {
+        "start": 1711,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "3 PLAYER GAMES"
+      },
+      "27": {
+        "start": 1715,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "4 PLAYER GAMES"
+      },
+      "28": {
+        "start": 1719,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "BURN-IN CYCLES"
+      },
+      "29": {
+        "start": 1723,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MULTIBALLS"
+      },
+      "30": {
+        "start": 1727,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "JACKPOT AWARDS"
+      },
+      "31": {
+        "start": 1731,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MILLION AWARDS"
+      },
+      "32": {
+        "start": 1735,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "CHEEZ. BON. AWARDS"
+      },
+      "33": {
+        "start": 1739,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "DOUBLE PLAYFIELD"
+      },
+      "34": {
+        "start": 1743,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "2X MULT. AWARDS"
+      },
+      "35": {
+        "start": 1747,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "3X MULT. AWARDS"
+      },
+      "36": {
+        "start": 1751,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "OUTLANE AWARDS"
+      },
+      "37": {
+        "start": 1755,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "CONSOL. EX. BALLS"
+      },
+      "38": {
+        "start": 1759,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "CHEEZY EX. BALLS"
+      },
+      "39": {
+        "start": 1835,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "H.S. RESET COUNTER"
+      },
+      "40": {
+        "start": 1763,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "0.0-0.4 MIL. SCORE"
+      },
+      "41": {
+        "start": 1767,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "0.5-0.9 MIL. SCORE"
+      },
+      "42": {
+        "start": 1771,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "1.0-1.4 MIL. SCORE"
+      },
+      "43": {
+        "start": 1775,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "1.5-1.9 MIL. SCORE"
+      },
+      "44": {
+        "start": 1779,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "2.0-2.9 MIL. SCORE"
+      },
+      "45": {
+        "start": 1783,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "3.0-3.9 MIL. SCORE"
+      },
+      "46": {
+        "start": 1787,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "4.0-4.9 MIL. SCORE"
+      },
+      "47": {
+        "start": 1791,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "5.0-5.9 MIL. SCORE"
+      },
+      "48": {
+        "start": 1795,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "6.0-7.9 MIL. SCORE"
+      },
+      "49": {
+        "start": 1799,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "8.0-9.9 MIL. SCORE"
+      }
+    }
+  }
 }
