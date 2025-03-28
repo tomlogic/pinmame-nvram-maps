@@ -120,5 +120,291 @@
       "groupings": 4,
       "label": "Audits"
     }
-  ]
+  ],
+  "audits": {
+    "Audits": {
+      "01": {
+        "start": 1586,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "LEFT COINS"
+      },
+      "02": {
+        "start": 1590,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "CENTER COINS"
+      },
+      "03": {
+        "start": 1594,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "RIGHT COINS"
+      },
+      "04": {
+        "start": 1598,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "PAID CREDITS"
+      },
+      "05": {
+        "start": 1602,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "TOTAL PLAYS"
+      },
+      "06": {
+        "start": 1606,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "TOTAL FREE"
+      },
+      "08": {
+        "start": 1610,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "REPLAY AWARDS"
+      },
+      "10": {
+        "start": 1614,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "SPECIAL AWARDS"
+      },
+      "12": {
+        "start": 1618,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MATCH AWARDS"
+      },
+      "13": {
+        "start": 1622,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "H.S.T.D. CREDITS"
+      },
+      "15": {
+        "start": 1626,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "EXTRA BALLS"
+      },
+      "18": {
+        "start": 1630,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MINUTES OF PLAY"
+      },
+      "19": {
+        "start": 1634,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "BALLS PLAYED"
+      },
+      "20": {
+        "start": 1638,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "REPLAY 1 AWARDS"
+      },
+      "21": {
+        "start": 1642,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "REPLAY 2 AWARDS"
+      },
+      "22": {
+        "start": 1646,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "REPLAY 3 AWARDS"
+      },
+      "23": {
+        "start": 1650,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "REPLAY 4 AWARDS"
+      },
+      "24": {
+        "start": 1654,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "1 PLAYER GAMES"
+      },
+      "25": {
+        "start": 1658,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "2 PLAYER GAMES"
+      },
+      "26": {
+        "start": 1662,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "3 PLAYER GAMES"
+      },
+      "27": {
+        "start": 1666,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "4 PLAYER GAMES"
+      },
+      "28": {
+        "start": 1670,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "BURN-IN CYCLES"
+      },
+      "29": {
+        "start": 1674,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "LEFT DRAINS"
+      },
+      "30": {
+        "start": 1678,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "LEFT KICKBACKS"
+      },
+      "31": {
+        "start": 1682,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "RIGHT DRAINS"
+      },
+      "32": {
+        "start": 1686,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "TOTAL RAMP SHOTS"
+      },
+      "33": {
+        "start": 1690,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "DEEP FREEZE PLAY"
+      },
+      "34": {
+        "start": 1694,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "SKATE COMPLETE"
+      },
+      "35": {
+        "start": 1698,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "TOP DROPS COMP."
+      },
+      "36": {
+        "start": 1702,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "ALL TEAMS COMP."
+      },
+      "37": {
+        "start": 1706,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MULTIBALLS"
+      },
+      "38": {
+        "start": 1710,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "JACKPOTS"
+      },
+      "39": {
+        "start": 1801,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "H.S. RESET COUNTER"
+      },
+      "40": {
+        "start": 1714,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "O.0-O.4 MIL. SCORE"
+      },
+      "41": {
+        "start": 1718,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "O.5-O.9 MIL. SCORE"
+      },
+      "42": {
+        "start": 1722,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "1.0-1.9 MIL. SCORE"
+      },
+      "43": {
+        "start": 1726,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "2.0-2.9 MIL. SCORE"
+      },
+      "44": {
+        "start": 1730,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "3.0-3.9 MIL. SCORE"
+      },
+      "45": {
+        "start": 1734,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "4.0-5.9 MIL. SCORE"
+      },
+      "46": {
+        "start": 1738,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "6.0-7.9 MIL. SCORE"
+      },
+      "47": {
+        "start": 1742,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "8.0-99.9 MIL. SCORE"
+      },
+      "48": {
+        "start": 1746,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "FIRST REPLAY IS"
+      },
+      "49": {
+        "start": 1750,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "AVG. GAME 200 MIN."
+      },
+      "50": {
+        "start": 1754,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "SUDDEN DEATH"
+      },
+      "51": {
+        "start": 1758,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "SUDDN. DEATH RMPS."
+      },
+      "52": {
+        "start": 1762,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "SUDDN. DEATH COMP."
+      },
+      "53": {
+        "start": 1766,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "ROLLER MOTION"
+      }
+    }
+  }
 }
