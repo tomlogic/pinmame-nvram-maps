@@ -4,7 +4,8 @@
     "Swords of Fury (Williams 1988)",
     "https://www.ipdb.org/machine.cgi?id=2486",
     "Williams System 11B",
-    "Same layout as Mousin' Around!"
+    "Same layout as Mousin' Around!",
+    "2025-03 v0.2: Tom Collins added audits"
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
@@ -14,7 +15,7 @@
     "swrds_l2"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "game_state": {
     "credits": {
       "label": "Credits",

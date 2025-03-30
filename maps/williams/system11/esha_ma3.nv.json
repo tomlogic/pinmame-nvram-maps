@@ -1,9 +1,10 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Metallica (re-themed Williams Earth Shaker)",
+    "Metallica (re-themed Williams Earthshaker)",
     "https://www.ipdb.org/machine.cgi?id=5478",
-    "Williams System 11B"
+    "Williams System 11B",
+    "2025-03 v0.2: Tom Collins added audits"
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
@@ -13,7 +14,7 @@
     "esha_ma3"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "game_state": {
     "credits": {
       "label": "Credits",

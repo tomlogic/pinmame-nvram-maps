@@ -1,6 +1,10 @@
 {
   "_notes": [
-    "Compiled by Tom Collins using template-s11.json."
+    "Compiled by Tom Collins using template-s11.json.",
+    "Big Guns (Williams 1987)",
+    "https://www.ipdb.org/machine.cgi?id=250",
+    "Williams System 11B",
+    "2025-03 v0.2: Tom Collins added audits"
   ],
   "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
@@ -10,7 +14,7 @@
     "bguns_la"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "game_state": {
     "credits": {
       "label": "Credits",

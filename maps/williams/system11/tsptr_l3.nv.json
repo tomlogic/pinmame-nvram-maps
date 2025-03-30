@@ -1,7 +1,9 @@
 {
   "_notes": [
-    "Transporter the Rescue (Bally, 1989, System 11B)",
-    "TODO: find au-51, verify last_game offsets, list values for adj-11, verify adj-50"
+    "Transporter the Rescue (Bally 1989)",
+    "https://www.ipdb.org/machine.cgi?id=2630",
+    "Williams System 11B",
+    "TODO: verify last_game offsets, list values for adj-11, verify adj-50"
   ],
   "_copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",

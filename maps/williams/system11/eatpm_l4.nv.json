@@ -1,5 +1,11 @@
 {
-  "_notes": "Compiled by Mike Metzger.",
+  "_notes": [
+    "Compiled by Mike Metzger.",
+    "Elvira and the Party Monsters (Bally 1989)",
+    "https://www.ipdb.org/machine.cgi?id=782",
+    "Williams System 11B",
+    "2025-03 v0.2: Tom Collins added audits"
+  ],
   "_copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
@@ -9,7 +15,7 @@
     "eatpm_l4"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "game_state": {
     "credits": {
       "label": "Credits",

@@ -4,7 +4,8 @@
     "Big Guns (Williams 1987)",
     "https://www.ipdb.org/machine.cgi?id=250",
     "Williams System 11B",
-    "This seems to have the same layout as Space Station (Williams 1987)"
+    "This seems to have the same layout as Space Station (Williams 1987)",
+    "2025-03 v0.2: Tom Collins added audits"
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
@@ -14,7 +15,7 @@
     "bguns_l8"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "game_state": {
     "credits": {
       "label": "Credits",

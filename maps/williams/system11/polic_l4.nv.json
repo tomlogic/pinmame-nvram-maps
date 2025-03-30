@@ -4,7 +4,8 @@
     "Police Force (Williams 1989)",
     "https://www.ipdb.org/machine.cgi?id=1841",
     "Williams System 11B",
-    "Same layout as Mousin' Around!"
+    "Same layout as Mousin' Around!",
+    "2025-03 v0.2: Tom Collins added audits"
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
@@ -14,7 +15,7 @@
     "polic_l4"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "game_state": {
     "credits": {
       "label": "Credits",

@@ -1,9 +1,10 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Mousin' Around! (Williams 1989)",
+    "Mousin' Around! (Bally 1989)",
     "https://www.ipdb.org/machine.cgi?id=1635",
-    "Williams System 11B"
+    "Williams System 11B",
+    "2025-03 v0.2: Tom Collins added audits"
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
@@ -13,7 +14,7 @@
     "mousn_l4"
   ],
   "_fileformat": 0.1,
-  "_version": 0.1,
+  "_version": 0.2,
   "game_state": {
     "credits": {
       "label": "Credits",
