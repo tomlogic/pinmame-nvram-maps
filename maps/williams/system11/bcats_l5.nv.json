@@ -122,6 +122,12 @@
       "end": 1802,
       "groupings": 4,
       "label": "Audits"
+    },
+    {
+      "start": 1488,
+      "end": 1516,
+      "groupings": 4,
+      "label": "Audits Continued"
     }
   ],
   "audits": {
@@ -389,6 +395,48 @@
         "encoding": "bcd",
         "length": 3,
         "label": "10-99.9 MIL. SCORE"
+      },
+      "52": {
+        "start": 1488,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "TOTAL FISH COL."
+      },
+      "53": {
+        "start": 1492,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "FISH COL. 10X"
+      },
+      "54": {
+        "start": 1496,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "FISH 5 MILLION"
+      },
+      "55": {
+        "start": 1500,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "BONUS MULTIPLIER"
+      },
+      "56": {
+        "start": 1504,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "LEFT DRAINS"
+      },
+      "57": {
+        "start": 1508,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "RIGHT DRAINS"
+      },
+      "58": {
+        "start": 1512,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "CONSOL. XTRA BALL"
       }
     }
   }

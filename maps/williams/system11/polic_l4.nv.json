@@ -123,6 +123,12 @@
       "end": 1802,
       "groupings": 4,
       "label": "Audits"
+    },
+    {
+      "start": 1515,
+      "end": 1522,
+      "groupings": 4,
+      "label": "Audits Continued"
     }
   ],
   "audits": {
@@ -390,6 +396,18 @@
         "encoding": "bcd",
         "length": 3,
         "label": "10-99.9 MIL. SCORE"
+      },
+      "52": {
+        "start": 1515,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "LEFT DRAINS"
+      },
+      "53": {
+        "start": 1519,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "RIGHT DRAINS"
       }
     }
   }

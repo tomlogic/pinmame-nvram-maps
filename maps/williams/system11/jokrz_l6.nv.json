@@ -122,6 +122,12 @@
       "end": 1791,
       "groupings": 4,
       "label": "Audits"
+    },
+    {
+      "start": 1461,
+      "end": 1476,
+      "groupings": 4,
+      "label": "Audits Continued"
     }
   ],
   "audits": {
@@ -365,6 +371,30 @@
         "encoding": "bcd",
         "length": 3,
         "label": "3.0-99.9 MIL. SCORE"
+      },
+      "52": {
+        "start": 1461,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "LEFT DRAINS"
+      },
+      "53": {
+        "start": 1465,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "RIGHT DRAINS"
+      },
+      "54": {
+        "start": 1469,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MILLION LIT"
+      },
+      "55": {
+        "start": 1473,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "CONSOL. EX. BALLS"
       }
     }
   }

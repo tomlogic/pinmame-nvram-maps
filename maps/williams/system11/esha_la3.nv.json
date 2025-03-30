@@ -12,8 +12,7 @@
   "_roms": [
     "esha_la1",
     "esha_la3",
-    "esha_l4c",
-    "esha_ma3"
+    "esha_l4c"
   ],
   "_fileformat": 0.1,
   "_version": 0.1,
@@ -277,7 +276,7 @@
         "start": 1700,
         "encoding": "bcd",
         "length": 3,
-        "label": "FACE THE THING"
+        "label": "HEAD FOR SHELTER"
       },
       "32": {
         "start": 1704,
@@ -301,13 +300,13 @@
         "start": 1716,
         "encoding": "bcd",
         "length": 3,
-        "label": "FIRE FIGHTS"
+        "label": "TRIPS TO FAULT"
       },
       "36": {
         "start": 1720,
         "encoding": "bcd",
         "length": 3,
-        "label": "LIGHTNING RIDES"
+        "label": "MILES TRAVELED"
       },
       "37": {
         "start": 1724,
@@ -328,82 +327,76 @@
         "label": "H.S. RESET COUNTER"
       },
       "40": {
-        "start": 1732,
-        "encoding": "bcd",
-        "length": 3,
-        "label": "O.0-O.4 MIL. SCORE"
-      },
-      "41": {
         "start": 1736,
         "encoding": "bcd",
         "length": 3,
-        "label": "O.5-O.9 MIL. SCORE"
+        "label": "0.0-0.4 MIL. SCORE"
+      },
+      "41": {
+        "start": 1740,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "0.5-0.9 MIL. SCORE"
       },
       "42": {
-        "start": 1740,
+        "start": 1744,
         "encoding": "bcd",
         "length": 3,
         "label": "1.0-1.9 MIL. SCORE"
       },
       "43": {
-        "start": 1744,
+        "start": 1748,
         "encoding": "bcd",
         "length": 3,
         "label": "2.0-2.9 MIL. SCORE"
       },
       "44": {
-        "start": 1748,
+        "start": 1752,
         "encoding": "bcd",
         "length": 3,
         "label": "3.0-3.9 MIL. SCORE"
       },
       "45": {
-        "start": 1752,
+        "start": 1756,
         "encoding": "bcd",
         "length": 3,
         "label": "4.0-5.9 MIL. SCORE"
       },
       "46": {
-        "start": 1756,
+        "start": 1760,
         "encoding": "bcd",
         "length": 3,
         "label": "6.0-7.9 MIL. SCORE"
       },
       "47": {
-        "start": 1760,
+        "start": 1764,
         "encoding": "bcd",
         "length": 3,
         "label": "8.0-99.9 MIL. SCORE"
       },
-      "48": {
-        "start": 1764,
-        "encoding": "bcd",
-        "length": 3,
-        "label": "FIRST REPLAY IS"
-      },
-      "49": {
-        "start": 1768,
-        "encoding": "bcd",
-        "length": 3,
-        "label": "AVG. GAME 200 MIN."
-      },
       "50": {
-        "start": 1772,
+        "start": 1768,
         "encoding": "bcd",
         "length": 3,
         "label": "BONUS 2X REACHED"
       },
       "51": {
-        "start": 1776,
+        "start": 1772,
         "encoding": "bcd",
         "length": 3,
         "label": "BONUS 3X REACHED"
       },
       "52": {
-        "start": 1780,
+        "start": 1776,
         "encoding": "bcd",
         "length": 3,
         "label": "BONUS 4X REACHED"
+      },
+      "53": {
+        "start": 1780,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "BONUS 5X REACHED"
       }
     }
   }

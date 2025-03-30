@@ -134,6 +134,12 @@
       "end": 1801,
       "groupings": 4,
       "label": "Audits"
+    },
+    {
+      "start": 1512,
+      "end": 1523,
+      "groupings": 4,
+      "label": "Audits Continued"
     }
   ],
   "audits": {
@@ -310,7 +316,7 @@
         "start": 1742,
         "encoding": "bcd",
         "length": 3,
-        "label": "MIXER?S ON LINE"
+        "label": "MIXER'S ON LINE"
       },
       "36": {
         "start": 1746,
@@ -401,6 +407,24 @@
         "encoding": "bcd",
         "length": 3,
         "label": "10-99.9 MIL. SCORE"
+      },
+      "52": {
+        "start": 1512,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "LEFT DRAINS"
+      },
+      "53": {
+        "start": 1516,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "RIGHT DRAINS"
+      },
+      "54": {
+        "start": 1520,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MINUTES ON"
       }
     }
   }

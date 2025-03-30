@@ -322,88 +322,82 @@
         "label": "H.S. RESET COUNTER"
       },
       "40": {
-        "start": 1714,
-        "encoding": "bcd",
-        "length": 3,
-        "label": "O.0-O.4 MIL. SCORE"
-      },
-      "41": {
         "start": 1718,
         "encoding": "bcd",
         "length": 3,
-        "label": "O.5-O.9 MIL. SCORE"
+        "label": "0.0-0.4 MIL. SCORE"
+      },
+      "41": {
+        "start": 1722,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "0.5-0.9 MIL. SCORE"
       },
       "42": {
-        "start": 1722,
+        "start": 1726,
         "encoding": "bcd",
         "length": 3,
         "label": "1.0-1.9 MIL. SCORE"
       },
       "43": {
-        "start": 1726,
+        "start": 1730,
         "encoding": "bcd",
         "length": 3,
         "label": "2.0-2.9 MIL. SCORE"
       },
       "44": {
-        "start": 1730,
+        "start": 1734,
         "encoding": "bcd",
         "length": 3,
         "label": "3.0-3.9 MIL. SCORE"
       },
       "45": {
-        "start": 1734,
+        "start": 1738,
         "encoding": "bcd",
         "length": 3,
         "label": "4.0-5.9 MIL. SCORE"
       },
       "46": {
-        "start": 1738,
+        "start": 1742,
         "encoding": "bcd",
         "length": 3,
         "label": "6.0-7.9 MIL. SCORE"
       },
       "47": {
-        "start": 1742,
+        "start": 1746,
         "encoding": "bcd",
         "length": 3,
         "label": "8.0-99.9 MIL. SCORE"
       },
-      "48": {
-        "start": 1746,
-        "encoding": "bcd",
-        "length": 3,
-        "label": "FIRST REPLAY IS"
-      },
-      "49": {
-        "start": 1750,
-        "encoding": "bcd",
-        "length": 3,
-        "label": "AVG. GAME 200 MIN."
-      },
       "50": {
-        "start": 1754,
+        "start": 1750,
         "encoding": "bcd",
         "length": 3,
         "label": "SUDDEN DEATH"
       },
       "51": {
-        "start": 1758,
+        "start": 1754,
         "encoding": "bcd",
         "length": 3,
         "label": "SUDDN. DEATH RMPS."
       },
       "52": {
-        "start": 1762,
+        "start": 1758,
         "encoding": "bcd",
         "length": 3,
         "label": "SUDDN. DEATH COMP."
       },
       "53": {
-        "start": 1766,
+        "start": 1762,
         "encoding": "bcd",
         "length": 3,
         "label": "ROLLER MOTION"
+      },
+      "54": {
+        "start": 1766,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MINUTES ON"
       }
     }
   }

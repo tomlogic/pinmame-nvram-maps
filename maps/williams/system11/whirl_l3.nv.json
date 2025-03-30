@@ -135,6 +135,12 @@
       "end": 1840,
       "groupings": 4,
       "label": "Audits"
+    },
+    {
+      "start": 1454,
+      "end": 1465,
+      "groupings": 4,
+      "label": "Audits Continued"
     }
   ],
   "audits": {
@@ -275,7 +281,7 @@
         "start": 1757,
         "encoding": "bcd",
         "length": 3,
-        "label": "MILLION PLUS?S"
+        "label": "MILLION PLUS'S"
       },
       "30": {
         "start": 1761,
@@ -402,6 +408,24 @@
         "encoding": "bcd",
         "length": 3,
         "label": "10-99.9 MIL. SCORE"
+      },
+      "52": {
+        "start": 1454,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "LEFT DRAINS"
+      },
+      "53": {
+        "start": 1458,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "RIGHT DRAINS"
+      },
+      "54": {
+        "start": 1462,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "MINUTES ON"
       }
     }
   }

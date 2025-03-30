@@ -325,46 +325,40 @@
         "label": "H.S.RESET COUNTER"
       },
       "40": {
-        "start": 1764,
-        "encoding": "bcd",
-        "length": 3,
-        "label": "O.0-O.4 M. SCORE"
-      },
-      "41": {
         "start": 1768,
         "encoding": "bcd",
         "length": 3,
-        "label": "O.5-O.9 M. SCORE"
+        "label": "0.0-0.4 M. SCORE"
+      },
+      "41": {
+        "start": 1772,
+        "encoding": "bcd",
+        "length": 3,
+        "label": "0.5-0.9 M. SCORE"
       },
       "42": {
-        "start": 1772,
+        "start": 1776,
         "encoding": "bcd",
         "length": 3,
         "label": "1.0-1.4 M. SCORE"
       },
       "43": {
-        "start": 1776,
+        "start": 1780,
         "encoding": "bcd",
         "length": 3,
         "label": "1.5-1.9 M. SCORE"
       },
       "44": {
-        "start": 1780,
+        "start": 1784,
         "encoding": "bcd",
         "length": 3,
         "label": "2.0-2.4 M. SCORE"
       },
       "45": {
-        "start": 1784,
-        "encoding": "bcd",
-        "length": 3,
-        "label": "2.5-9.9 M. SCORE"
-      },
-      "46": {
         "start": 1788,
         "encoding": "bcd",
         "length": 3,
-        "label": "PLAY AT TI"
+        "label": "2.5-9.9 M. SCORE"
       }
     }
   }

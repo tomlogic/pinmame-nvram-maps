@@ -987,12 +987,6 @@
         "length": 3,
         "label": "10-99 Mil. Score"
       },
-      "51": {
-        "start": 1867,
-        "encoding": "bcd",
-        "length": 3,
-        "label": "Av. Min. Game Time"
-      },
       "52": {
         "start": 1493,
         "encoding": "bcd",
@@ -1019,6 +1013,12 @@
       "end": 1802,
       "groupings": 4,
       "label": "Audits"
+    },
+    {
+      "start": 1493,
+      "end": 1504,
+      "groupings": 4,
+      "label": "Audits Continued"
     }
   ]
 }

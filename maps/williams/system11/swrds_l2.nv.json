@@ -329,13 +329,13 @@
         "start": 1780,
         "encoding": "bcd",
         "length": 3,
-        "label": "O.0-O.4 M. SCORE"
+        "label": "0.0-0.4 M. SCORE"
       },
       "41": {
         "start": 1784,
         "encoding": "bcd",
         "length": 3,
-        "label": "O.5-O.9 M. SCORE"
+        "label": "0.5-0.9 M. SCORE"
       },
       "42": {
         "start": 1788,
