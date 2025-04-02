@@ -1,5 +1,10 @@
 {
-  "_notes": "Compiled by Tom Collins for initial development/testing purposes.",
+  "_notes": [
+    "Compiled by Tom Collins for initial development/testing purposes.",
+    "High Speed (Williams 1986)",
+    "https://www.ipdb.org/machine.cgi?id=1176",
+    "Williams System 11"
+  ],
   "_copyright": "Copyright (C) 2017 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
