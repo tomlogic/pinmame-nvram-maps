@@ -3,9 +3,12 @@
     "Compiled by Francis De Brabandere.",
     "Valid for all Williams System 7 games.",
     "Only Laser Cue (Williams 1984) seems have more than 1 high score enabled or pre-setup.",
+	"-- Laser Cue using space for game audits to store HS 2-4",
     "Rat Race (Williams 1983) not tested.",
     "Thunderball (Williams 1982) not tested.",
-    "Varkon (Williams 1982) not tested."
+    "Varkon (Williams 1982) not tested.",
+	"2025-04 v0.2: Tom Collins updated with information from Jess Askey",
+	"http://gamearchive.askey.org/Pinball/Manufacturers/Williams/PinBuilder/text/williams_lvl7_programming.html"
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
@@ -32,7 +35,7 @@
     "wrlok_l3"
   ],
   "_fileformat": 0.4,
-  "_version": 0.1,
+  "_version": 0.2,
   "game_state": {
     "credits": {
       "label": "Credits",
@@ -50,33 +53,76 @@
         "encoding": "bcd",
         "length": 8
       }
-    },
-    {
-      "label": "Second Place",
-      "short_label": "2nd",
-      "score": {
-        "start": 46,
-        "encoding": "bcd",
-        "length": 8
-      }
-    },
-    {
-      "label": "Third Place",
-      "short_label": "3rd",
-      "score": {
-        "start": 54,
-        "encoding": "bcd",
-        "length": 8
-      }
-    },
-    {
-      "label": "Fourth Place",
-      "short_label": "4th",
-      "score": {
-        "start": 62,
-        "encoding": "bcd",
-        "length": 8
-      }
     }
-  ]
+  ],
+  "audits": {
+	  "Audits": {
+		"01": {"label": "aud_leftcoins", "start": "0x02", "length": 4, "encoding": "bcd"},
+		"02": {"label": "aud_centercoins", "start": "0x06", "length": 4, "encoding": "bcd"},
+		"03": {"label": "aud_rightcoins", "start": "0x0a", "length": 4, "encoding": "bcd"},
+		"04": {"label": "aud_paidcredits", "start": "0x0e", "length": 4, "encoding": "bcd"},
+		"05": {"label": "aud_specialcredits", "start": "0x12", "length": 4, "encoding": "bcd"},
+		"06": {"label": "aud_replaycredits", "start": "0x16", "length": 4, "encoding": "bcd"},
+		"07": {"label": "aud_matchcredits", "start": "0x1a", "length": 4, "encoding": "bcd"},
+		"08": {"label": "aud_totalcredits", "start": "0x1e", "length": 4, "encoding": "bcd"},
+		"09": {"label": "aud_extraballs", "start": "0x22", "length": 4, "encoding": "bcd"},
+		"10": {"label": "aud_avgballtime", "start": "0x26", "length": 4, "encoding": "bcd"},
+		"11": {"label": "aud_totalballs", "start": "0x2a", "length": 4, "encoding": "bcd"},
+		"12": {"label": "aud_game1", "start": "0x2e", "length": 4, "encoding": "bcd"},
+		"13": {"label": "aud_game2", "start": "0x32", "length": 4, "encoding": "bcd"},
+		"14": {"label": "aud_game3", "start": "0x36", "length": 4, "encoding": "bcd"},
+		"15": {"label": "aud_game4", "start": "0x3a", "length": 4, "encoding": "bcd"},
+		"16": {"label": "aud_game5", "start": "0x3e", "length": 4, "encoding": "bcd"},
+		"17": {"label": "aud_game6", "start": "0x42", "length": 4, "encoding": "bcd"},
+		"18": {"label": "aud_game7", "start": "0x46", "length": 4, "encoding": "bcd"},
+		"19": {"label": "aud_autocycles", "start": "0x4a", "length": 4, "encoding": "bcd"},
+		"20": {"label": "aud_hstdcredits", "start": "0x4e", "length": 2, "encoding": "bcd"},
+		"21": {"label": "aud_replay1times", "start": "0x50", "length": 4, "encoding": "bcd"},
+		"22": {"label": "aud_replay2times", "start": "0x54", "length": 4, "encoding": "bcd"},
+		"23": {"label": "aud_replay3times", "start": "0x58", "length": 4, "encoding": "bcd"},
+		"24": {"label": "aud_replay4times", "start": "0x5c", "length": 4, "encoding": "bcd"},
+		"26": {"label": "aud_currentcredits", "start": "0x6e", "length": 2, "encoding": "bcd"},
+		"27": {"label": "aud_command", "start": "0x70", "length": 2, "encoding": "bcd"}
+	  }
+  },
+  "adjustments": {
+	  "Adjustments": {
+		"01": {"label": "adj_cmoscsum", "start": "0x7d", "length": 4, "encoding": "int"},
+		"02": {"label": "adj_backuphstd", "start": "0x81", "length": 2, "encoding": "bcd"},
+		"03": {"label": "adj_replay1", "start": "0x83", "length": 2, "encoding": "bcd"},
+		"04": {"label": "adj_replay2", "start": "0x85", "length": 2, "encoding": "bcd"},
+		"05": {"label": "adj_replay3", "start": "0x87", "length": 2, "encoding": "bcd"},
+		"06": {"label": "adj_replay4", "start": "0x89", "length": 2, "encoding": "bcd"},
+		"07": {"label": "adj_matchenable", "start": "0x8b", "length": 2, "encoding": "bcd"},
+		"08": {"label": "adj_specialaward", "start": "0x8d", "length": 2, "encoding": "bcd"},
+		"09": {"label": "adj_replayaward", "start": "0x8f", "length": 2, "encoding": "bcd"},
+		"10": {"label": "adj_maxplumbbobtilts", "start": "0x91", "length": 2, "encoding": "bcd"},
+		"11": {"label": "adj_numberofballs", "start": "0x93", "length": 2, "encoding": "bcd"},
+		"12": {"label": "adj_gameadjust1", "start": "0x95", "length": 2, "encoding": "bcd"},
+		"13": {"label": "adj_gameadjust2", "start": "0x97", "length": 2, "encoding": "bcd"},
+		"14": {"label": "adj_gameadjust3", "start": "0x99", "length": 2, "encoding": "bcd"},
+		"15": {"label": "adj_gameadjust4", "start": "0x9b", "length": 2, "encoding": "bcd"},
+		"16": {"label": "adj_gameadjust5", "start": "0x9d", "length": 2, "encoding": "bcd"},
+		"17": {"label": "adj_gameadjust6", "start": "0x9f", "length": 2, "encoding": "bcd"},
+		"18": {"label": "adj_gameadjust7", "start": "0xa1", "length": 2, "encoding": "bcd"},
+		"19": {"label": "adj_gameadjust8", "start": "0xa3", "length": 2, "encoding": "bcd"},
+		"20": {"label": "adj_gameadjust9", "start": "0xa5", "length": 2, "encoding": "bcd"},
+		"21": {"label": "adj_hstdcredits", "start": "0xa7", "length": 2, "encoding": "bcd"},
+		"22": {"label": "adj_max_extraballs", "start": "0xa9", "length": 2, "encoding": "bcd"},
+		"23": {"label": "adj_max_credits", "start": "0xab", "length": 2, "encoding": "bcd"},
+		"24": {"label": "adj_pricecontrol", "start": "0xad", "length": 2, "encoding": "bcd"}
+	  },
+	  "CMOS": {
+		"01": {"label": "cmos_csum", "start": "0x00", "length": 2, "encoding": "bcd"},
+		"02": {"label": "cmos_bonusunits", "start": "0x62", "length": 2, "encoding": "bcd"},
+		"03": {"label": "cmos_coinunits", "start": "0x64", "length": 2, "encoding": "bcd"},
+		"04": {"label": "cmos_leftcoinmult", "start": "0xaf", "length": 2, "encoding": "bcd"},
+		"05": {"label": "cmos_centercoinmult", "start": "0xb1", "length": 2, "encoding": "bcd"},
+		"06": {"label": "cmos_rightcoinmult", "start": "0xb3", "length": 2, "encoding": "bcd"},
+		"07": {"label": "cmos_coinsforcredit", "start": "0xb5", "length": 2, "encoding": "bcd"},
+		"08": {"label": "cmos_bonuscoins", "start": "0xb7", "length": 2, "encoding": "bcd"},
+		"09": {"label": "cmos_minimumcoins", "start": "0xb9", "length": 2, "encoding": "bcd"},
+		"10": {"label": "cmos_byteloc", "start": "0xbb", "length": 2, "encoding": "bcd"}
+	  }
+  }
 }
