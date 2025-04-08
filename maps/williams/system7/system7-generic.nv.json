@@ -1,9 +1,8 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Valid for all Williams System 7 games.",
-    "Only Laser Cue (Williams 1984) seems have more than 1 high score enabled or pre-setup.",
-    "-- Laser Cue using space for game audits to store HS 2-4",
+    "Generic map valid for all Williams System 7 games.",
+    "Game-specific audits/adjustments vary from game to game.",
     "Rat Race (Williams 1983) not tested.",
     "Thunderball (Williams 1982) not tested.",
     "Varkon (Williams 1982) not tested.",
@@ -23,7 +22,6 @@
     "hypbl_l6",
     "jst_l2",
     "jngld_l2",
-    "lsrcu_l2",
     "pharo_l2",
     "ratrc_l1",
     "solar_l2",

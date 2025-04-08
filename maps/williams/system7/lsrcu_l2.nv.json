@@ -1,38 +1,16 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Valid for all Williams System 7 games.",
-    "Only Laser Cue (Williams 1984) seems have more than 1 high score enabled or pre-setup.",
-    "-- Laser Cue using space for game audits to store HS 2-4",
-    "Rat Race (Williams 1983) not tested.",
-    "Thunderball (Williams 1982) not tested.",
-    "Varkon (Williams 1982) not tested.",
-    "2025-04 v0.2: Tom Collins updated with information from Jess Askey",
-    "http://gamearchive.askey.org/Pinball/Manufacturers/Williams/PinBuilder/text/williams_lvl7_programming.html"
+    "Laser Cue (Williams 1984)",
+    "Using space for game audits 1-6 to store high scores 2-4.",
+    "Derived from system7-generic.nv.json."
   ],
   "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_nibble": "low",
   "_roms": [
-    "barra_l1",
-    "bk_l4",
-    "csmic_l1",
-    "dfndr_l4",
-    "fpwr2_l2",
-    "hypbl_l6",
-    "jst_l2",
-    "jngld_l2",
-    "lsrcu_l2",
-    "pharo_l2",
-    "ratrc_l1",
-    "solar_l2",
-    "strlt_l1",
-    "thund_p2",
-    "thund_p3",
-    "tmfnt_l5",
-    "vrkon_l1",
-    "wrlok_l3"
+    "lsrcu_l2"
   ],
   "_fileformat": 0.4,
   "_version": 0.2,
@@ -50,6 +28,33 @@
       "short_label": "1st",
       "score": {
         "start": 102,
+        "encoding": "bcd",
+        "length": 8
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "score": {
+        "start": 46,
+        "encoding": "bcd",
+        "length": 8
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "score": {
+        "start": 54,
+        "encoding": "bcd",
+        "length": 8
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "score": {
+        "start": 62,
         "encoding": "bcd",
         "length": 8
       }
@@ -162,50 +167,14 @@
       }
     },
     "Game Audits": {
-      "42": {
-        "label": "Game Audit 1",
-        "start": 46,
-        "length": 4,
-        "encoding": "bcd"
-      },
-      "43": {
-        "label": "Game Audit 2",
-        "start": 50,
-        "length": 4,
-        "encoding": "bcd"
-      },
-      "44": {
-        "label": "Game Audit 3",
-        "start": 54,
-        "length": 4,
-        "encoding": "bcd"
-      },
-      "45": {
-        "label": "Game Audit 4",
-        "start": 58,
-        "length": 4,
-        "encoding": "bcd"
-      },
-      "46": {
-        "label": "Game Audit 5",
-        "start": 62,
-        "length": 4,
-        "encoding": "bcd"
-      },
-      "47": {
-        "label": "Game Audit 6",
-        "start": 66,
-        "length": 4,
-        "encoding": "bcd"
-      },
       "48": {
-        "label": "Game Audit 7",
+        "label": "Unused",
         "start": 70,
         "length": 4,
         "encoding": "bcd"
       },
       "49": {
-        "label": "Burn-In Cycles",
+        "label": "Burn-In Cycles?",
         "start": 74,
         "length": 4,
         "encoding": "bcd"
@@ -380,58 +349,109 @@
     },
     "Game Adjustments": {
       "31": {
-        "label": "Game Adjust 1",
+        "label": "Reset Multiplier on Next Ball",
         "start": 149,
         "length": 2,
-        "encoding": "bcd"
+        "encoding": "enum",
+        "values": [
+          "N/A",
+          "X2",
+          "X3",
+          "X4",
+          "X5",
+          "X7",
+          "X10",
+          "X15",
+          "X20"
+        ],
+        "min": 1,
+        "max": 8
       },
-      "32": {
-        "label": "Game Adjust 2",
+      "32a": {
+        "label": "Double Ball",
         "start": 151,
-        "length": 2,
-        "encoding": "bcd"
+        "length": 1,
+        "encoding": "enum",
+        "values": [
+          "disabled",
+          "enabled"
+        ]
+      },
+      "32b": {
+        "label": "Special",
+        "start": 152,
+        "length": 1,
+        "encoding": "enum",
+        "values": [
+          "disabled",
+          "award on X10 only",
+          "award on X15 only",
+          "award on X20 only"
+        ]
       },
       "33": {
-        "label": "Game Adjust 3",
+        "label": "Extra Ball Time",
         "start": 153,
         "length": 2,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "offset": 15,
+        "min": 0,
+        "max": 25,
+        "units": "seconds"
       },
       "34": {
-        "label": "Game Adjust 4",
+        "label": "Reset Back Drop-Targets",
         "start": 155,
         "length": 2,
-        "encoding": "bcd"
+        "encoding": "enum",
+        "values": [
+          "up to #1, #9 ball-target",
+          "up to #2, #10 ball-target",
+          "up to #3, #11 ball-target"
+        ]
       },
       "35": {
-        "label": "Game Adjust 5",
+        "label": "Special/Extra Ball lamp memory",
         "start": 157,
         "length": 2,
-        "encoding": "bcd"
+        "encoding": "enum",
+        "values": [
+          "none",
+          "extra ball",
+          "special",
+          "both"
+        ]
       },
       "36": {
-        "label": "Game Adjust 6",
+        "label": "Background Sound",
         "start": 159,
         "length": 2,
-        "encoding": "bcd"
+        "encoding": "enum",
+        "values": [
+          "no",
+          "yes"
+        ]
       },
       "37": {
-        "label": "Game Adjust 7",
+        "label": "2nd Backup HSTD",
         "start": 161,
         "length": 2,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "scale": 100000
       },
       "38": {
-        "label": "Game Adjust 8",
+        "label": "3rd Backup HSTD",
         "start": 163,
         "length": 2,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "scale": 100000
       },
       "39": {
-        "label": "Game Adjust 9",
+        "label": "4th Backup HSTD",
         "start": 165,
         "length": 2,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "scale": 100000
       }
     }
   }
