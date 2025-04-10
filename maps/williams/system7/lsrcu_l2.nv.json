@@ -138,30 +138,30 @@
       "13": {
         "label": "HSTD Credits",
         "start": 78,
-        "length": 2,
+        "length": 4,
         "encoding": "bcd"
       },
       "14": {
         "label": "Replay 1 Awarded",
-        "start": 80,
+        "start": 82,
         "length": 4,
         "encoding": "bcd"
       },
       "15": {
         "label": "Replay 2 Awarded",
-        "start": 84,
+        "start": 86,
         "length": 4,
         "encoding": "bcd"
       },
       "16": {
         "label": "Replay 3 Awarded",
-        "start": 88,
+        "start": 90,
         "length": 4,
         "encoding": "bcd"
       },
       "17": {
         "label": "Replay 4 Awarded",
-        "start": 92,
+        "start": 94,
         "length": 4,
         "encoding": "bcd"
       }
