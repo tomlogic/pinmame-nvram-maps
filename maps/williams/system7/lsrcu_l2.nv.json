@@ -1,0 +1,458 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Laser Cue (Williams 1984)",
+    "Using space for game audits 1-6 to store high scores 2-4.",
+    "Derived from system7-generic.nv.json."
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_nibble": "low",
+  "_roms": [
+    "lsrcu_l2"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.2,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 110,
+      "length": 2,
+      "encoding": "bcd"
+    }
+  },
+  "high_scores": [
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "score": {
+        "start": 102,
+        "encoding": "bcd",
+        "length": 8
+      }
+    },
+    {
+      "label": "Second Place",
+      "short_label": "2nd",
+      "score": {
+        "start": 46,
+        "encoding": "bcd",
+        "length": 8
+      }
+    },
+    {
+      "label": "Third Place",
+      "short_label": "3rd",
+      "score": {
+        "start": 54,
+        "encoding": "bcd",
+        "length": 8
+      }
+    },
+    {
+      "label": "Fourth Place",
+      "short_label": "4th",
+      "score": {
+        "start": 62,
+        "encoding": "bcd",
+        "length": 8
+      }
+    }
+  ],
+  "audits": {
+    "Standard Audits": {
+      "01": {
+        "label": "Coins, left chute",
+        "start": 2,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "02": {
+        "label": "Coins, center chute",
+        "start": 6,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "03": {
+        "label": "Coins, right chute",
+        "start": 10,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "04": {
+        "label": "Total Paid Credits",
+        "start": 14,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "05": {
+        "label": "Special Credits",
+        "start": 18,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "06": {
+        "label": "Replay Score Credits",
+        "start": 22,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "07": {
+        "label": "Match Credits",
+        "start": 26,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "08": {
+        "label": "Total Credits",
+        "start": 30,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "09": {
+        "label": "Total Extra Balls",
+        "start": 34,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "10": {
+        "label": "Ball Time",
+        "start": 38,
+        "length": 4,
+        "encoding": "bcd",
+        "units": "minutes"
+      },
+      "11": {
+        "label": "Total Balls Played",
+        "start": 42,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "12": {
+        "label": "Current HSTD",
+        "start": 102,
+        "encoding": "bcd",
+        "length": 8
+      },
+      "13": {
+        "label": "HSTD Credits",
+        "start": 78,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "14": {
+        "label": "Replay 1 Awarded",
+        "start": 80,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "15": {
+        "label": "Replay 2 Awarded",
+        "start": 84,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "16": {
+        "label": "Replay 3 Awarded",
+        "start": 88,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "17": {
+        "label": "Replay 4 Awarded",
+        "start": 92,
+        "length": 4,
+        "encoding": "bcd"
+      }
+    },
+    "Game Audits": {
+      "48": {
+        "label": "Unused",
+        "start": 70,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "49": {
+        "label": "Burn-In Cycles?",
+        "start": 74,
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "99": {
+        "label": "CMOS Checksum",
+        "start": 125,
+        "length": 4,
+        "encoding": "int",
+        "_notes": "should be 0xB2A5"
+      }
+    }
+  },
+  "adjustments": {
+    "Standard Adjustments": {
+      "13": {
+        "label": "Backup HSTD",
+        "start": 129,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 100000
+      },
+      "14": {
+        "label": "Replay 1 Score",
+        "start": 131,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 100000
+      },
+      "15": {
+        "label": "Replay 2 Score",
+        "start": 133,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 100000
+      },
+      "16": {
+        "label": "Replay 3 Score",
+        "start": 135,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 100000
+      },
+      "17": {
+        "label": "Replay 4 Score",
+        "start": 137,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 100000
+      },
+      "18": {
+        "label": "Maximum Credits",
+        "start": 171,
+        "length": 2,
+        "encoding": "bcd",
+        "special_values": {
+          "0": "Free Play"
+        }
+      },
+      "19": {
+        "label": "Pricing Control",
+        "start": 173,
+        "length": 2,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 8,
+        "special_values": {
+          "0": "Manual",
+          "1": "1/$0.25, 4/$1",
+          "2": "1/1DM, 3/2DM, 10/5DM",
+          "3": "1/$0.50, 3/$1, 6/$2",
+          "4": "1/2F, 3/5F only, 8/10F only",
+          "5": "1/$0.50, 2/$0.75, 3/$1",
+          "6": "1/25 Cent, 4/Guilder",
+          "7": "1/5F, 2/10F or 1/10F, 2/20F",
+          "8": "1/10F"
+        }
+      },
+      "20": {
+        "label": "Left Coin Slot Multiplier",
+        "start": 175,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "21": {
+        "label": "Center Coin Slot Multiplier",
+        "start": 177,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "22": {
+        "label": "Right Coin Slot Multiplier",
+        "start": 179,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "23": {
+        "label": "Coin Units Required for Credit",
+        "start": 181,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "24": {
+        "label": "Coin Units Bonus Point",
+        "start": 183,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "25": {
+        "label": "Minimum Coin Units",
+        "start": 185,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "26": {
+        "label": "Match",
+        "start": 139,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "On",
+          "Off"
+        ]
+      },
+      "27": {
+        "label": "Special Awards",
+        "start": 141,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "Credit",
+          "Extra/Bonus Ball",
+          "Points"
+        ]
+      },
+      "28": {
+        "label": "Replay Award",
+        "start": 143,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "Credit",
+          "Extra/Bonus Ball"
+        ]
+      },
+      "29": {
+        "label": "Tilt Warnings",
+        "start": 145,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "30": {
+        "label": "Number of Balls",
+        "start": 147,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "40": {
+        "label": "HSTD Credits",
+        "start": 167,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "41": {
+        "label": "Maximum Extra Balls",
+        "start": 169,
+        "length": 2,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 4
+      }
+    },
+    "Game Adjustments": {
+      "31": {
+        "label": "Reset Multiplier on Next Ball",
+        "start": 149,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "N/A",
+          "X2",
+          "X3",
+          "X4",
+          "X5",
+          "X7",
+          "X10",
+          "X15",
+          "X20"
+        ],
+        "min": 1,
+        "max": 8
+      },
+      "32a": {
+        "label": "Double Ball",
+        "start": 151,
+        "length": 1,
+        "encoding": "enum",
+        "values": [
+          "disabled",
+          "enabled"
+        ]
+      },
+      "32b": {
+        "label": "Special",
+        "start": 152,
+        "length": 1,
+        "encoding": "enum",
+        "values": [
+          "disabled",
+          "award on X10 only",
+          "award on X15 only",
+          "award on X20 only"
+        ]
+      },
+      "33": {
+        "label": "Extra Ball Time",
+        "start": 153,
+        "length": 2,
+        "encoding": "bcd",
+        "offset": 15,
+        "min": 0,
+        "max": 25,
+        "units": "seconds"
+      },
+      "34": {
+        "label": "Reset Back Drop-Targets",
+        "start": 155,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "up to #1, #9 ball-target",
+          "up to #2, #10 ball-target",
+          "up to #3, #11 ball-target"
+        ]
+      },
+      "35": {
+        "label": "Special/Extra Ball lamp memory",
+        "start": 157,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "none",
+          "extra ball",
+          "special",
+          "both"
+        ]
+      },
+      "36": {
+        "label": "Background Sound",
+        "start": 159,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "no",
+          "yes"
+        ]
+      },
+      "37": {
+        "label": "2nd Backup HSTD",
+        "start": 161,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 100000
+      },
+      "38": {
+        "label": "3rd Backup HSTD",
+        "start": 163,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 100000
+      },
+      "39": {
+        "label": "4th Backup HSTD",
+        "start": 165,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 100000
+      }
+    }
+  }
+}
