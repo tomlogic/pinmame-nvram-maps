@@ -621,7 +621,7 @@
         "label": "1st Replay Level",
         "suffix": "M",
         "start": 7354,
-        "encoding": "bcd",
+        "encoding": "int",
         "length": 2
       },
       "36": {
