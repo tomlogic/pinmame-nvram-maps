@@ -342,9 +342,7 @@
         "label": "Maximum Extra Balls",
         "start": 169,
         "length": 2,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 4
+        "encoding": "bcd"
       }
     },
     "Game Adjustments": {
