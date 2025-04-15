@@ -113,7 +113,9 @@
         "start": 128,
         "length": 2,
         "encoding": "int",
-        "_notes": "should be 0x5A"
+        "special_values": {
+          "90": "valid"
+        }
       }
     }
   },
