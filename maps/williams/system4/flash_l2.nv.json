@@ -1,0 +1,322 @@
+{
+  "_notes": [
+    "Compiled by Tom Collins, based on flash_l2 (Flash System 6) map.",
+    "Flash (Williams, 1978)",
+    "https://www.ipdb.org/machine.cgi?id=871",
+    "This map is for the original System 4 version of Flash."
+  ],
+  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_nibble": "low",
+  "_roms": [
+    "flash_l2"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.2,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 154,
+      "length": 2,
+      "encoding": "bcd"
+    }
+  },
+  "high_scores": [
+    {
+      "label": "First Place",
+      "short_label": "1st",
+      "score": {
+        "start": 72,
+        "encoding": "bcd",
+        "length": 6
+      }
+    }
+  ],
+  "audits": {
+    "Standard Audits": {
+      "01": {
+        "label": "Coins, left chute",
+        "start": 6,
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "02": {
+        "label": "Coins, center chute",
+        "start": 12,
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "03": {
+        "label": "Coins, right chute",
+        "start": 18,
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "04": {
+        "label": "Total Paid Credits",
+        "start": 24,
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "05": {
+        "label": "Special Credits",
+        "start": 30,
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "06": {
+        "label": "Replay Score Credits",
+        "start": 36,
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "07": {
+        "label": "Match Credits",
+        "start": 42,
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "08": {
+        "label": "Total Credits",
+        "start": 48,
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "09": {
+        "label": "Total Extra Balls",
+        "start": 54,
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "10": {
+        "label": "Total Ball Time",
+        "start": 60,
+        "length": 6,
+        "encoding": "bcd",
+        "units": "minutes"
+      },
+      "11": {
+        "label": "Total Balls Played",
+        "start": 66,
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "12": {
+        "label": "Current HSTD",
+        "start": 72,
+        "encoding": "bcd",
+        "length": 6
+      },
+      "99": {
+        "label": "Check Byte",
+        "start": 128,
+        "length": 2,
+        "encoding": "int",
+        "_notes": "should be 0x5A"
+      }
+    }
+  },
+  "adjustments": {
+    "Standard Adjustments": {
+      "13": {
+        "label": "Backup HSTD",
+        "start": 130,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 10000
+      },
+      "14": {
+        "label": "Replay 1 Score",
+        "start": 132,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 10000
+      },
+      "15": {
+        "label": "Replay 2 Score",
+        "start": 134,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 10000
+      },
+      "16": {
+        "label": "Replay 3 Score",
+        "start": 136,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 10000
+      },
+      "17": {
+        "label": "Replay 4 Score",
+        "start": 138,
+        "length": 2,
+        "encoding": "bcd",
+        "scale": 10000
+      },
+      "18": {
+        "label": "Maximum Credits",
+        "start": 140,
+        "length": 2,
+        "encoding": "bcd",
+        "special_values": {
+          "0": "Free Play"
+        }
+      },
+      "19": {
+        "label": "Pricing Control",
+        "start": 142,
+        "length": 2,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 7,
+        "special_values": {
+          "0": "Manual",
+          "1": "1/$0.25, 3/$0.50",
+          "2": "1/$0.25",
+          "3": "1/1DM, 3/2DM, 14/5DM",
+          "4": "1/1F, 6/5F",
+          "5": "1/1F, 7/5F",
+          "6": "1/25 Cent, 4/Guilder",
+          "7": "1/50Y, 2/100Y"
+        }
+      },
+      "20": {
+        "label": "Left Coin Slot Multiplier",
+        "start": 144,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "21": {
+        "label": "Center Coin Slot Multiplier",
+        "start": 146,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "22": {
+        "label": "Right Coin Slot Multiplier",
+        "start": 148,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "23": {
+        "label": "Coin Units Required for Credit",
+        "start": 150,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "24": {
+        "label": "Coin Units Bonus Point",
+        "start": 152,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "26": {
+        "label": "HSTD Credits",
+        "start": 156,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "28": {
+        "label": "Match",
+        "start": 160,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "On",
+          "Off"
+        ]
+      },
+      "29": {
+        "label": "Special Awards",
+        "start": 162,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "Credit",
+          "Extra/Bonus Ball",
+          "50,000 Points"
+        ]
+      },
+      "30": {
+        "label": "Replay Award",
+        "start": 164,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "Credit",
+          "Extra/Bonus Ball"
+        ]
+      },
+      "31": {
+        "label": "Number of Balls",
+        "start": 166,
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "32": {
+        "label": "Tilt Warnings",
+        "start": 168,
+        "length": 2,
+        "encoding": "bcd",
+        "min": 1,
+        "max": 9
+      }
+    },
+    "Game Adjustments": {
+      "27A": {
+        "label": "Eject Hole Lamps",
+        "start": 158,
+        "length": 1,
+        "encoding": "enum",
+        "values": [
+          "lamps restored",
+          "lamps not restored"
+        ]
+      },
+      "27B": {
+        "label": "Play",
+        "start": 159,
+        "length": 1,
+        "encoding": "enum",
+        "values": [
+          "n/a",
+          "5,000 lamp lit initially",
+          "5,000 lamp not lit initially",
+          "n/a",
+          "5,000 lamp not lit initially, no extra ball"
+        ]
+      },
+      "33": {
+        "label": "Background Sound",
+        "start": 170,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "off",
+          "on"
+        ]
+      },
+      "34": {
+        "label": "SUPER FLASH Scoring",
+        "start": 172,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "awards 50,000 points",
+          "awards extra ball"
+        ]
+      },
+      "35": {
+        "label": "SUPER FLASH Restore",
+        "start": 174,
+        "length": 2,
+        "encoding": "enum",
+        "values": [
+          "restores",
+          "does not restore"
+        ]
+      }
+    }
+  }
+}
