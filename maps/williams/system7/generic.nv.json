@@ -213,7 +213,9 @@
         "start": 125,
         "length": 4,
         "encoding": "int",
-        "_notes": "should be 0xB2A5"
+        "special_values": {
+          "45733": "valid"
+        }
       }
     }
   },
