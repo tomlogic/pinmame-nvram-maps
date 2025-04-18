@@ -1,0 +1,150 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Viking (Bally 1980)",
+    "https://www.ipdb.org/machine.cgi?id=2737",
+    "https://opdb.org/machines/1068",
+    "Bally MPU AS-2518-35",
+    "7-digit score display",
+    "By default the credits are not shown, set dip switch 27 to show them."
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_nibble": "high",
+  "_roms": [
+    "vikingb"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.1,
+  "audits": {
+    "Bookkeeping functions": {
+      "05": {
+        "label": "Current Credits",
+        "start": 177,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 40
+      },
+      "06": {
+        "label": "Total Plays (Played and Free Games)",
+        "start": 183,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "07": {
+        "label": "Total Replays (Free Games)",
+        "start": 189,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "08": {
+        "label": "Total times 'High Score to Date' is beat",
+        "start": 195,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "09": {
+        "label": "Coins Dropped thru Coin Chute #1",
+        "start": 201,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "10": {
+        "label": "Coins Dropped thru Coin Chute #2",
+        "start": 207,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "11": {
+        "label": "Coins Dropped thru Coin Chute #3",
+        "start": 213,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "12": {
+        "label": "Number of Specials awarded from Panel Specials Only",
+        "start": 219,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "13": {
+        "label": "Number of minutes of Game Play",
+        "start": 225,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "14": {
+        "label": "Number of Service Credits",
+        "start": 231,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      }
+    }
+  },
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 57,
+      "length": 2,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 61,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 67,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 73,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    },
+    {
+      "start": 79,
+      "encoding": "bcd",
+      "length": 6,
+      "scale": 10
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 171,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      }
+    }
+  ]
+}
