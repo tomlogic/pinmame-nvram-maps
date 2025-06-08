@@ -54,8 +54,7 @@
       "encoding": "bcd",
       "mask": "0x0F",
       "special_values": {
-        "0": "n/a",
-        "15": "n/a"
+        "0": "n/a"
       }
     }
   },

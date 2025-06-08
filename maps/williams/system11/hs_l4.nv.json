@@ -52,17 +52,19 @@
       "encoding": "bcd",
       "mask": "0x0F",
       "special_values": {
-        "0": "n/a",
-        "15": "n/a"
+        "0": "n/a"
       }
     },
     "match": {
       "label": "Match",
       "start": 56,
       "encoding": "bcd",
-      "mask": "0xF0",
       "special_values": {
-        "150": "n/a"
+        "1": "n/a",
+        "2": "n/a",
+        "3": "n/a",
+        "4": "n/a",
+        "5": "n/a"
       }
     },
     "extra_balls": {
