@@ -7,7 +7,7 @@
   "_copyright": "Copyright (C) 2023 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_fileformat": 0.4,
-  "_version": 0.2,
+  "_version": 0.3,
   "_endian": "little",
   "_nibble": "high",
   "_ramsize": 256,
@@ -31,13 +31,25 @@
       "label": "Match",
       "start": 54,
       "length": 2,
-      "encoding": "bcd"
+      "encoding": "bcd",
+      "_notes": "during a game, shows current ball (1-5)",
+      "special_values": {
+        "1": "n/a",
+        "2": "n/a",
+        "3": "n/a",
+        "4": "n/a",
+        "5": "n/a"
+      }
     },
     "current_ball": {
       "label": "Ball",
       "start": 54,
-      "length": 2,
-      "encoding": "bcd"
+      "length": 1,
+      "encoding": "bcd",
+      "_notes": "set to 0 outside of game when showing match",
+      "special_values": {
+        "0": "n/a"
+      }
     },
     "credits": {
       "label": "Credits",
