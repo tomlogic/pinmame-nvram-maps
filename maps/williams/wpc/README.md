@@ -187,5 +187,81 @@ different Mode Champion scores.
 
 
 ## Volatile Storage
-The game uses memory below the player scores as working memory.  Details
-planned for a future update.
+The game uses memory below the player scores as working memory.  On startup,
+the game performs a memory test of all memory locations from 0x0000 to the
+address before player 1's score (so 0x172F on dm_lx4).  It starts by writing
+0x55, then 0xAA, then 0x00, and finally a sequence of 16-bit values written
+every 0x2F bytes (writing X + 0x2F to address X).  On dm_lx4, it starts by
+writing 0x086F to 0x0840 and ends by writing 0x15A7 to 0x1578.
+
+### Game State
+
+#### "Fast Flips"
+PinMAME identifies a "fast flips" byte (address 0x87 on dm_lx4) that
+indicates whether the flippers are enabled (0x80) or not (0x00).
+
+#### Attract/In Game
+On dm_lx4, the byte at 0x8D has a value of 0 to indicate "in game" and 1
+to indicate "attract mode".  Note that the game briefly switches to 0 and
+back to 1 when entering and exiting the service menu.
+
+#### Display Memory
+On DMD-era WPC games, the service menu uses 0x160 for display memory.  Each
+character uses 3 bytes.  The first is the character to display (0x00 for
+none), if the second is 0x02, it displays a decimal point after the character,
+and if the third is non-zero, it temporarily hides the text (used to flash
+text -- 0x06 is a fast flash and 0x0A is a slow flash).
+
+Line 1 starts at 0x160, line 2 at 0x190, line 3 at 0x1C0.  In testing, 0x1F0
+looks like an alternate line 3.  It's probable that there are memory locations
+that store the addresses of each line to display, and this is just scratch
+memory.
+
+#### Player/Ball
+There's a series of 4 bytes with information on the game state.  On dm_lx4,
+they are:
+- 0x418: current_player (1 to 4)
+- 0x419: current_ball (1 to n)
+- 0x41A: extra_balls_left (0 to n)
+- 0x41B: extra_balls_this_ball (0 to n).  This tracks the number of extra
+  balls earned for a given ball.  Most games have an adjustment to set the
+  maximum number of extra balls a player can earn on a single ball.
+
+Bytes following this sequence also seem to be flags, but their meaning isn't
+certain.
+
+#### Current Time
+On dm_lx4, two bytes representing the hour and minute as integers (as
+opposed to BCD) at 0x43C and 0x43D.  Then a 7-byte WPC timestamp.
+
+### Ball State
+There's a region that stores state information for the current ball in play.
+These are values that likely reset at the start of every ball, or at least
+get seeded from the "player state" information later in memory.
+
+Some examples from dm_lx4:
+- 0x5E5-0x5E9: 5-byte BCD super jet value
+- 0x5EA: remaining super jets
+- 0x685-0x686: 2-byte BCD base value of ACMAG in 10-thousands (`06 00` = 6M)
+- 0x687-0x68B: current 5-byte add-on to ACMAG (`00 07 37 50 00` = 6M + 7.375M)
+- 0x68D-0x691: 5-byte BCD last collected ACMAG value
+- 0x6A5-0x6A9: 5-byte BCD explode hurry-up value
+
+### Player State
+The game uses separate blocks of memory to store information specific to each
+player.  On dm_lx4, that state information takes 69 bytes at starts at 0x72C
+for player 1 (then 0x771, 0x7B6, 0x7FB for the other players).  Seeing 0x72C
+stored at 0x4CE during a game.
+
+Some decoded values for player 1 on dm_lx4:
+- 0x74E-0x74F: 16-bit integer representing ball time in seconds
+- 0x752: balls locked
+- 0x755: lit/unawarded extra balls (stacked)
+- 0x759: combos
+- 0x75B: bonus multiplier
+- 0x75D: side ramp hits
+- 0x75F: claw: super jets started
+- 0x760: claw: simon mode started
+- 0x761: retina scans
+- 0x765-0x769: retina value in 5 BCD bytes (resets to 5M on collect)
+- 0x76A: last freeze standup award (in millions)
