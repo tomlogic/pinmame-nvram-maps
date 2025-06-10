@@ -1,0 +1,207 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Spy Hunter (Bally 1984)",
+    "https://www.ipdb.org/machine.cgi?id=2328",
+    "https://opdb.org/machines/229",
+    "Bally MPU AS-2518-35",
+    "7-digit score display"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_nibble": "high",
+  "_roms": [
+    "spyhuntr"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 61,
+      "length": 2,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 72,
+      "encoding": "bcd",
+      "length": 7
+    },
+    {
+      "start": 79,
+      "encoding": "bcd",
+      "length": 7
+    },
+    {
+      "start": 86,
+      "encoding": "bcd",
+      "length": 7
+    },
+    {
+      "start": 93,
+      "encoding": "bcd",
+      "length": 7
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 166,
+        "encoding": "bcd",
+        "length": 7
+      }
+    }
+  ],
+  "audits": {
+    "Bookkeeping functions": {
+      "05": {
+        "label": "Current Credits",
+        "start": 173,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 40
+      },
+      "06": {
+        "label": "Total Plays (Played and Free Games)",
+        "start": 180,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "07": {
+        "label": "Total Replays (Free Games)",
+        "start": 187,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "08": {
+        "label": "Game Percentage",
+        "start": 194,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "09": {
+        "label": "Total times 'High Score To Date' is beat",
+        "start": 201,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "10": {
+        "label": "Coins Dropped thru Coin Chute #1",
+        "start": 208,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "11": {
+        "label": "Coins Dropped thru Coin Chute #2",
+        "start": 215,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "12": {
+        "label": "Coins Dropped thru Coin Chute #3",
+        "start": 222,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "13": {
+        "label": "Number of Specials awarded from Panel Specials Only",
+        "start": 229,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "14": {
+        "label": "Number of minutes of Game Play (Total)",
+        "start": 236,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "15": {
+        "label": "Number of Service Credits",
+        "start": 243,
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      }
+    }
+  },
+  "adjustments": {
+    "High score functions": {
+      "01": {
+        "label": "Extra ball / Free game score level 1",
+        "start": 146,
+        "encoding": "bcd",
+        "length": 6,
+        "min": 0,
+        "max": 999000,
+        "default": 0,
+        "scale": 10,
+        "special_values": {
+          "0": "OFF"
+        },
+        "multiple_of": 10000
+      },
+      "02": {
+        "label": "Extra ball / Free game score level 2",
+        "start": 152,
+        "encoding": "bcd",
+        "length": 6,
+        "min": 0,
+        "max": 999000,
+        "default": 0,
+        "scale": 10,
+        "special_values": {
+          "0": "OFF"
+        },
+        "multiple_of": 10000
+      },
+      "03": {
+        "_notes": "Increments by 10000",
+        "label": "Extra ball / Free game score level 3",
+        "start": 158,
+        "encoding": "bcd",
+        "length": 6,
+        "min": 0,
+        "max": 999000,
+        "default": 0,
+        "scale": 10,
+        "special_values": {
+          "0": "OFF"
+        },
+        "multiple_of": 10000
+      },
+      "04": {
+        "label": "High score to date",
+        "start": 166,
+        "encoding": "bcd",
+        "length": 7,
+        "min": 0,
+        "max": 9990000
+      }
+    }
+  }
+}

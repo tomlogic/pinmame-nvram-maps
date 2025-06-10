@@ -1,0 +1,130 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "The Six Million Dollar Man (Bally 1978)",
+    "https://www.ipdb.org/machine.cgi?id=2165",
+    "https://opdb.org/machines/4721",
+    "Bally MPU AS-2518-35",
+    "Six players"
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_nibble": "high",
+  "_roms": [
+    "smmanc"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.1,
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 57,
+      "length": 2,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 73,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 79,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 85,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 91,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 67,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 61,
+      "encoding": "bcd",
+      "length": 6
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 207,
+        "encoding": "bcd",
+        "length": 6
+      }
+    }
+  ],
+  "audits": {
+    "Bookkeeping functions": {
+      "05": {
+        "label": "Current Credits",
+        "start": 213,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 40
+      },
+      "06": {
+        "label": "Total Plays (Payed and Free Games)",
+        "start": 219,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
+      "07": {
+        "label": "Total Replays (Free Games)",
+        "start": 225,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
+      "08": {
+        "label": "Total times 'High Game to Date' is beat",
+        "start": 231,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
+      "09": {
+        "label": "Coins Dropped thru Coin Chute #1",
+        "start": 237,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
+      "10": {
+        "label": "Coins Dropped thru Coin Chute #2",
+        "start": 243,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
+      "11": {
+        "label": "Coins Dropped thru Coin Chute #3",
+        "start": 249,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      }
+    }
+  }
+}
