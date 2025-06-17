@@ -1,0 +1,122 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Voltan Escapes Cosmic Doom (Bally 1979)",
+    "https://www.ipdb.org/machine.cgi?id=2744",
+    "https://opdb.org/machines/134",
+    "Bally MPU AS-2518-35",
+    "7-digit score display",
+    "By default the credits are not shown, set dip switch 27 to show them."
+  ],
+  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "little",
+  "_nibble": "high",
+  "_roms": [
+    "voltanb"
+  ],
+  "_fileformat": 0.4,
+  "_version": 0.1,
+  "audits": {
+    "Bookkeeping functions": {
+      "05": {
+        "label": "Current Credits",
+        "start": 213,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 40
+      },
+      "06": {
+        "label": "Total Plays (Paid & Free Games)",
+        "start": 219,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "07": {
+        "label": "Total Replays (Free Games)",
+        "start": 225,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "08": {
+        "label": "Total times 'High Game to Date' is beat",
+        "start": 231,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "09": {
+        "label": "Coins Dropped thru Coin Chute #1",
+        "start": 237,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "10": {
+        "label": "Coins Dropped thru Coin Chute #2",
+        "start": 243,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "11": {
+        "label": "Coins Dropped thru Coin Chute #3",
+        "start": 249,
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      }
+    }
+  },
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 57,
+      "length": 2,
+      "encoding": "bcd"
+    }
+  },
+  "last_game": [
+    {
+      "start": 59,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 65,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 71,
+      "encoding": "bcd",
+      "length": 6
+    },
+    {
+      "start": 77,
+      "encoding": "bcd",
+      "length": 6
+    }
+  ],
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": 207,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      }
+    }
+  ]
+}
