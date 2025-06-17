@@ -28,7 +28,7 @@
         "max": 40
       },
       "06": {
-        "label": "Total Plays (Played and Free Games)",
+        "label": "Total Plays (Paid and Free Games)",
         "start": 180,
         "length": 7,
         "encoding": "bcd",

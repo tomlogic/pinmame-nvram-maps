@@ -77,7 +77,7 @@
         "max": 40
       },
       "06": {
-        "label": "Total Plays (Played and Free Games)",
+        "label": "Total Plays (Paid and Free Games)",
         "start": 180,
         "length": 7,
         "encoding": "bcd",
@@ -162,13 +162,12 @@
     "High score functions": {
       "01": {
         "label": "Extra ball / Free game score level 1",
-        "start": 146,
+        "start": 145,
         "encoding": "bcd",
-        "length": 6,
+        "length": 7,
         "min": 0,
-        "max": 999000,
+        "max": 9990000,
         "default": 0,
-        "scale": 10,
         "special_values": {
           "0": "OFF"
         },
@@ -178,26 +177,23 @@
         "label": "Extra ball / Free game score level 2",
         "start": 152,
         "encoding": "bcd",
-        "length": 6,
+        "length": 7,
         "min": 0,
-        "max": 999000,
+        "max": 9990000,
         "default": 0,
-        "scale": 10,
         "special_values": {
           "0": "OFF"
         },
         "multiple_of": 10000
       },
       "03": {
-        "_notes": "Increments by 10000",
         "label": "Extra ball / Free game score level 3",
-        "start": 158,
+        "start": 159,
         "encoding": "bcd",
-        "length": 6,
+        "length": 7,
         "min": 0,
-        "max": 999000,
+        "max": 9990000,
         "default": 0,
-        "scale": 10,
         "special_values": {
           "0": "OFF"
         },
@@ -212,7 +208,7 @@
         "max": 9990000
       }
     },
-    "Game adjustments": {
+    "Game Adjustments": {
       "16": {
         "label": "High Score award #1",
         "start": 250,

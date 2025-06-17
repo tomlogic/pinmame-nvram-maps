@@ -75,7 +75,7 @@
         "max": 40
       },
       "06": {
-        "label": "Total Plays (Played and Free Games)",
+        "label": "Total Plays (Paid and Free Games)",
         "start": 183,
         "length": 6,
         "encoding": "bcd",
@@ -179,7 +179,6 @@
         "multiple_of": 10000
       },
       "03": {
-        "_notes": "Increments by 10000",
         "label": "Extra ball / Free game score level 3",
         "start": 165,
         "encoding": "bcd",
