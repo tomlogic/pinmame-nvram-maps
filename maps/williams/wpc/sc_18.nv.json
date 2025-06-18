@@ -9,7 +9,6 @@
   "_endian": "big",
   "_ramsize": 12288,
   "_roms": [
-    "sc_18",
     "sc_18s11",
     "sc_18s2"
   ],
