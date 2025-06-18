@@ -1,17 +1,32 @@
 {
   "_notes": [
-    "Compiled by Tom Collins.",
-    "Modified version of gottlieb_80b-2.nv.json with dip switch entries."
+    "Compiled by Tom Collins.  Original map for System 80B games with 8-digit scores.",
+    "Game uses a 4-bit nvram (256x4), so only uses the low nibble of each byte.",
+    "Game stores 61 bytes of data in triplicate at offsets 0, 61 and 122.",
+    "If a value in one location doesn't match the other two, it's replaced by the other value.",
+    "If a value differs in all three locations, it's replaced with a default value.",
+    "Note that offsets 248 through 252 are 4-bit checksums of each of the high scores.",
+    "Note that victory moved to its own map with game-specific DIP switch entries."
   ],
   "_copyright": "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
   "_license": "GNU Lesser General Public License v3.0",
   "_endian": "big",
   "_nibble": "low",
   "_roms": [
-    "victory"
+    "badgirls",
+    "bighouse",
+    "bonebstr",
+    "diamond",
+    "excaliba",
+    "excalibr",
+    "hotshots",
+    "nmoves",
+    "robowars",
+    "sprbreak",
+    "txsector"
   ],
   "_fileformat": 0.5,
-  "_version": 0.1,
+  "_version": 0.4,
   "_values": {
     "off_on": [
       "off",
@@ -434,30 +449,24 @@
       ],
       "values": [
         "no effect",
-        "add 9 credits (enables Free Play on competition ROMs)"
+        "add 9 credits"
       ]
     },
     "31": {
-      "label": "Extra Ball Control",
+      "label": "Game Setting #1",
       "encoding": "dipsw",
       "offsets": [
         31
       ],
-      "values": [
-        "conservative: hole value reset at end of ball; EB lamps alternate",
-        "liberal: hole value held between balls; both EB lamps lit"
-      ]
+      "values": "off_on"
     },
     "32": {
-      "label": "Outlane Special",
+      "label": "Game Setting #2",
       "encoding": "dipsw",
       "offsets": [
         32
       ],
-      "values": [
-        "conservative: outlane lit after second race completed",
-        "liberal: outlane lit after first race (qualifying heat) completed"
-      ]
+      "values": "off_on"
     }
   }
 }
