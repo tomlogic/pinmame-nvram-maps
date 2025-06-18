@@ -13,7 +13,13 @@
   "_endian": "big",
   "_nibble": "low",
   "_roms": [
-    "victory"
+    "victory",
+    "victryfp",
+    "victrgfp",
+    "victrffp",
+    "victr101",
+    "victr11",
+    "victr12"
   ],
   "_fileformat": 0.5,
   "_version": 0.1,

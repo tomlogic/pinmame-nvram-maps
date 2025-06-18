@@ -13,8 +13,22 @@
   "_nibble": "low",
   "_roms": [
     "goldwing",
+    "goldwgfp",
+    "gldwggfp",
+    "gldwgffp",
     "hlywoodh",
-    "mntecrlo"
+    "hlywdhfp",
+    "hlywhgfp",
+    "hlywhffp",
+    "mntecrlo",
+    "mntecrfp",
+    "mntcrgfp",
+    "mntcrgmfp",
+    "mntcrffp",
+    "mntcrfmfp",
+    "mntcrafp",
+    "mntcr2fp",
+    "mntcrmfp"
   ],
   "_fileformat": 0.5,
   "_version": 0.4,
