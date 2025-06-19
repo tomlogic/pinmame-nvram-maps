@@ -12,6 +12,10 @@
   "_endian": "big",
   "_nibble": "low",
   "_roms": [
+    "genesis",
+    "genesffp",
+    "genesgfp",
+    "genesifp",
     "goldwing",
     "goldwgfp",
     "gldwggfp",
