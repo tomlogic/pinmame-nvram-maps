@@ -7,15 +7,17 @@
     "Same layout as Mousin' Around!",
     "2025-03 v0.2: Tom Collins added audits"
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 2048,
-  "_roms": [
-    "swrds_l2"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 2048,
+    "roms": [
+      "swrds_l2"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

@@ -5,16 +5,18 @@
     "https://www.ipdb.org/machine.cgi?id=1176",
     "Williams System 11"
   ],
-  "_copyright": "Copyright (C) 2017 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 2048,
-  "_roms": [
-    "hs_l3",
-    "hs_l4"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2017 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 2048,
+    "roms": [
+      "hs_l3",
+      "hs_l4"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

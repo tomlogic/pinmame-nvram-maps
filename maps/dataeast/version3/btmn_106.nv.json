@@ -2,36 +2,44 @@
   "_notes": [
     "Compiled by Horsepin."
   ],
-  "_copyright": "Copyright (C) 2016 by Dave horsepin <horse@horsesoft.uk>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_roms": [
-    "btmn_106"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.1,
-  "last_game": [
-    {
-      "start": 1479,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 1484,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 1489,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 1494,
-      "encoding": "bcd",
-      "length": 5
-    }
-  ],
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2016 by Dave horsepin <horse@horsesoft.uk>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "roms": [
+      "btmn_106"
+    ]
+  },
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 1479,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 2",
+        "start": 1484,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 3",
+        "start": 1489,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 4",
+        "start": 1494,
+        "encoding": "bcd",
+        "length": 5
+      }
+    ]
+  },
   "high_scores": [
     {
       "label": "Dark Knight",

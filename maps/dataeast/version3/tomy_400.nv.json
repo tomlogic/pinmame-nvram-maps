@@ -1,36 +1,44 @@
 {
   "_notes": "Compiled by Horsepin.",
-  "_copyright": "Copyright (C) 2016 by Horsepin>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_roms": [
-    "tomy_400",
-    "tomy_500"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.1,
-  "last_game": [
-    {
-      "start": 1458,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 1470,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 1475,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 1480,
-      "encoding": "bcd",
-      "length": 5
-    }
-  ],
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2016 by Horsepin>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "roms": [
+      "tomy_400",
+      "tomy_500"
+    ]
+  },
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 1458,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 2",
+        "start": 1470,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 3",
+        "start": 1475,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 4",
+        "start": 1480,
+        "encoding": "bcd",
+        "length": 5
+      }
+    ]
+  },
   "high_scores": [
     {
       "label": "1st",

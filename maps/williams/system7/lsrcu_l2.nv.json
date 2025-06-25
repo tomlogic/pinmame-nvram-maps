@@ -5,15 +5,17 @@
     "Using space for game audits 1-6 to store high scores 2-4.",
     "Derived from system7-generic.nv.json."
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_nibble": "low",
-  "_roms": [
-    "lsrcu_l2"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "nibble": "low",
+    "roms": [
+      "lsrcu_l2"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

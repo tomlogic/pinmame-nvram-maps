@@ -4,15 +4,17 @@
     "WPC 20006, SYS 2.43 REV 0.2",
     "Doctor Who (Bally, 1992, WPC)"
   ],
-  "_copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 8192,
-  "_roms": [
-    "dw_l2"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.3,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.3,
+    "copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 8192,
+    "roms": [
+      "dw_l2"
+    ]
+  },
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",

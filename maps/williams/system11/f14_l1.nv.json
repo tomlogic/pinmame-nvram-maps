@@ -6,15 +6,17 @@
     "Williams System 11A",
     "2025-03 v0.2: Tom Collins added audits"
   ],
-  "_copyright": "Copyright (C) 2017 by Dave Horse <horse@horsesoft.uk>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 2048,
-  "_roms": [
-    "f14_l1"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2017 by Dave Horse <horse@horsesoft.uk>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 2048,
+    "roms": [
+      "f14_l1"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

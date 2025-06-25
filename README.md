@@ -116,27 +116,33 @@ hexadecimal strings outside of the `mask` attribute.
 
 ### Meta Data
 
-Note that keys starting with underscore describe the file itself, and
-not the contents of the corresponding NVRAM file.
+Starting with fileformat v0.6, all metadata fields other than `_fileformat`
+and `_notes` are now part of a `_metadata` attribute.
 
-- **_roms** _(required)_: A list of PinMAME ROMs that use this map.
-- **_fileformat** _(required)_: A `float` indicating the file format's
-  version.  See Version History at the end of this file for changes.
-- **_version** _(required)_: A `float` indicating the JSON file's version.
-- **_copyright**: Original author of the file, possibly a list of people
-  who have contributed to the file.
-- **_license**: All files from this project are covered by the LGPL license.
-  Modified map files, or maps created using an existing map as a starting
-  point are also covered by that license.
+Note that keys starting with underscore and the `_metadata` attribute 
+describe the file itself and provide defaults for later entries.
+
 - **_notes**: Notes about the file, possibly indicating who created it or
   portions of the file that may not be entirely correct.  Can be a string
   or an array of strings.
-- **_endian**: Set to either `"big"` or `"little"` to indicate the default
+- **_fileformat** _(required)_: A `float` indicating the file format's
+
+#### _metadata Properties
+
+- **roms** _(required)_: A list of PinMAME ROMs that use this map.
+  version.  See Version History at the end of this file for changes.
+- **version** _(required)_: A `float` indicating the JSON file's version.
+- **copyright**: Original author of the file, possibly a list of people
+  who have contributed to the file.
+- **license**: All files from this project are covered by the LGPL license.
+  Modified map files, or maps created using an existing map as a starting
+  point are also covered by that license.
+- **endian**: Set to either `"big"` or `"little"` to indicate the default
   byte order of multi-byte values.  Defaults to `"big"`.
   Refers to which end of the number is stored first.  For example, a
   `bcd`-encoded score of 123,450 is the byte sequence 0x12, 0x34, 0x50 if
   big-endian, and 0x50 0x34 0x12 if little-endian.
-- **_nibble**: Set to `"both"` (default), `"high"`, or `"low"` to identify
+- **nibble**: Set to `"both"` (default), `"high"`, or `"low"` to identify
   which 4-bit nibbles to use from each byte.  Some games (e.g., Williams
   System 7, Gottlieb System 80B, Stern M-100) used 4-bit NVRAM, so only
   half of each byte is valid.
@@ -148,12 +154,12 @@ not the contents of the corresponding NVRAM file.
   `0x04 0x01 0x04 0x02 0x04 0x03` translates to `0x41 0x42 0x43` which is the
   string `"ABC"`.
   Stern Dracula and Wild Fyre (identical ROM) have examples of `nibble=high`.
-- **_ramsize**: Size of the RAM represented by the `.nv` file.  Note that this
+- **ramsize**: Size of the RAM represented by the `.nv` file.  Note that this
   is typically smaller than the `.nv` file size, due to PinMAME appending
   additional data to the file.
-- **_char_map**: Characters to use for the `ch` encoding instead of a straight 
+- **char_map**: Characters to use for the `ch` encoding instead of a straight 
   ASCII table.  See Whirlwind (`whirl_l3.nv.json`) as an example.
-- **_values**: A dictionary for value lists used by multiple entries.  Added
+- **values**: A dictionary for value lists used by multiple entries.  Added
   to `_fileformat` v0.5 to support long lists of pricing options that apply
   to multiple sets of DIP switches.  The `value` property for an entry can
   reference a key to this dictionary instead of having a full list.
@@ -164,7 +170,7 @@ The map file contains objects describing sections of the `.nv` file and
 how to interpret them.  They're comprised of the following key/value pairs:
 
 - **_notes**: Notes for someone maintaining the file; not displayed when
-  processing an NVRAM file.  Can be a string or an array of strings.
+  processing an NVRAM file.  Can be a string or a list of strings.
 
 - **encoding** _(required)_ must be one of the following:
   - `"enum"`: An enumerated type where the byte at `start` is used as an
@@ -180,7 +186,7 @@ how to interpret them.  They're comprised of the following key/value pairs:
     nibbles 0xA to 0xF as 0 numerically, or a space for display purposes.
   - `"ch"`: A sequence of 7-bit ASCII characters that may be shortened by a
     null byte (0x00) terminator based on the `"null"` attribute for the entry.
-    If the JSON file has a `_char_map` key, all bytes (including 0x00) are
+    If the JSON file has `char_map` metadata, all bytes (including 0x00) are
 	indexes into that string.
   - `"raw"`: A series of raw bytes, useful for extracting data yet to be
     decoded or that requires custom processing.
@@ -208,10 +214,10 @@ how to interpret them.  They're comprised of the following key/value pairs:
 
 - These properties provide additional encoding details.
   - **endian**: Set to either `"big"` or `"little"` to indicate the byte
-    order of multi-byte values.  Defaults to the `_endian` setting for the
-    file (which defaults to `"big"`).
-  - **nibble**: Defaults to file's `_nibble` setting (which defaults to
-    `"both"`).  See `_nibble` for details.
+    order of multi-byte values.  Defaults to the metadata's `endian` setting 
+    (which defaults to `"big"`).
+  - **nibble**: Defaults to metadata's `nibble` setting (which defaults to
+    `"both"`).  See `nibble` for details.
   - **null**: Used for `"ch"` encodings to specify null (0x00) byte handling.
       For `truncate` and `terminate`, ignore all bytes after the null.
     - `"ignore"`: Ignore (skip over) null bytes.  Default setting.
@@ -219,8 +225,8 @@ how to interpret them.  They're comprised of the following key/value pairs:
       strings that fill the allotted space.
     - `"terminate"`: Null bytes are always present and terminate the string.
   - **packed**: Deprecated in favor of `nibble`.  Remove `packed=true` and
-    replace `packed=false` with `nibble=low` (or set `_nibble` for the entire
-    file).
+    replace `packed=false` with `nibble=low` (or set `nibble` in the file's
+    metadata).
 
 - These properties are only related to displaying the value, independently of
   how it's actually stored in memory or a `.nv` file.
@@ -230,7 +236,7 @@ how to interpret them.  They're comprised of the following key/value pairs:
   - **values**: A list of strings or integers, used for the `enum` encoding
     (starting at index 0) and the `bits` encoding, as values for bit 0, 1, 2,
     etc.  Starting in `_fileformat` v0.5, this property can be a string that
-    references a list stored in the `_values` metadata property for the file.
+    references a list stored in the `values` metadata property for the file.
   - **special_values**: A set of key/value pairs for a numeric field where some
     values have special meaning (for example, `{"0": "OFF"}`).
   - **units**: Used to indicate that a field contains a time value as either a
@@ -297,9 +303,6 @@ Keys that don't start with an underscore typically have groups of
 
 - **last_played**: A descriptor (likely with a `wpc_rtc` encoding) with a
   date stamp of when PinMAME last saved the file.
-- **last_game**: An array of up to four descriptors representing scores
-  of the last game played on the machine.  A score of 0 indicates that the
-  game had less than four players.
 - **high_scores**: The traditional high score table that would usually
   start with the Grand Champion and then proceed through First Place to
   Fourth Place.  An array of objects with the following key/value pairs:
@@ -321,10 +324,13 @@ Keys that don't start with an underscore typically have groups of
   referred to as "Bookkeeping").
 - **game_state**: A collection of memory areas used during a game to store
   the state of the game (e.g., player #, ball #, progressive jackpot value,
-  etc.)  Not useful for PinMAME's `.nv` files, but could be referenced with
-  custom code inside PinMAME.  See the High Speed map for an example.
+  etc.).  See the Game State section for a list of this section's properties.
 - **dip_switches**: A special section detailing DIP switch options for the
   game.  See the "DIP Switches" section below for details.
+
+### Game State
+
+(TODO: document the fields of the `game_state` property.)
 
 ### DIP Switches
 
@@ -343,7 +349,7 @@ Each DIP switch descriptor has the following properties:
 - An `encoding` of `dipsw`.
 - An `offsets` property to hold a list of switch numbers.
 - A `values` property.  The `values` can be a list, or a string that
-  references a shared list in the `_values` metadata.
+  references a shared list in the `values` metadata.
 
 The index into the value list is the result of combining switch values
 where OFF=0 and ON=1.  The first entry in `offsets` is the most-significant
@@ -418,3 +424,7 @@ treat a single descriptor as a list of groupings-sized ranges.
         Add the `null` attribute for entries with `ch` encoding.
 - v0.4: Add global `_nibble` to apply to all entries.
 - v0.5: Add `dipsw` encoding and `_values` metadata.
+- v0.6: Move all top-level metadata attributes other than `_notes` and
+        `_fileformat` into a new `_metadata` attribute with the leading
+        underscore removed.
+        Deprecate `last_game` attribute in favor of `game_state.scores`.

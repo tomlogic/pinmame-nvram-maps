@@ -7,16 +7,18 @@
     "2022-12     : added _char_map for mapping intials (Tom Collins)",
     "2025-03 v0.2: Tom Collins added audits"
   ],
-  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 2048,
-  "_roms": [
-    "whirl_l3"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.2,
-  "_char_map": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 2048,
+    "roms": [
+      "whirl_l3"
+    ],
+    "char_map": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

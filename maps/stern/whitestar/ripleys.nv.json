@@ -2,37 +2,45 @@
   "_notes": [
     "Compiled by Dave Horse HorsePin"
   ],
-  "_copyright": "Copyright (C) 2022 by HorsePin",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 8328,
-  "_roms": [
-    "ripleys"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.1,
-  "last_game": [
-    {
-      "encoding": "bcd",
-      "length": 4,
-      "start": 5719
-    },
-    {
-      "encoding": "bcd",
-      "length": 4,
-      "start": 5724
-    },
-    {
-      "encoding": "bcd",
-      "length": 4,
-      "start": 5729
-    },
-    {
-      "encoding": "bcd",
-      "length": 4,
-      "start": 5734
-    }
-  ],
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2022 by HorsePin",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 8328,
+    "roms": [
+      "ripleys"
+    ]
+  },
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "encoding": "bcd",
+        "length": 4,
+        "start": 5719
+      },
+      {
+        "label": "Player 2",
+        "encoding": "bcd",
+        "length": 4,
+        "start": 5724
+      },
+      {
+        "label": "Player 3",
+        "encoding": "bcd",
+        "length": 4,
+        "start": 5729
+      },
+      {
+        "label": "Player 4",
+        "encoding": "bcd",
+        "length": 4,
+        "start": 5734
+      }
+    ]
+  },
   "high_scores": [
     {
       "label": "Grand Champion",

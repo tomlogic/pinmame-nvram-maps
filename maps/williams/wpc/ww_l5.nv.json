@@ -3,15 +3,17 @@
     "Compiled by Mike Metzger.",
     "WPC 50018, SYS 2.62 REV 0.5"
   ],
-  "_copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 8192,
-  "_roms": [
-    "ww_l5"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 8192,
+    "roms": [
+      "ww_l5"
+    ]
+  },
   "game_state": {
     "player_count": {
       "label": "Players",

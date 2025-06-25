@@ -4,15 +4,17 @@
     "2024-12-13 v0.2 High score locations updated by Tom Collins",
     "WPC 50032, SYS 3.41 REV 0.5"
   ],
-  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 12288,
-  "_roms": [
-    "ts_lx5"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.3,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.3,
+    "copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 12288,
+    "roms": [
+      "ts_lx5"
+    ]
+  },
   "game_state": {
     "player_count": {
       "label": "Players",

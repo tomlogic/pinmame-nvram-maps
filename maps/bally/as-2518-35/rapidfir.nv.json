@@ -6,34 +6,38 @@
     "Bally MPU AS-2518-35",
     "7-digit score display"
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "little",
-  "_nibble": "high",
-  "_roms": [
-    "rapidfir"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "nibble": "high",
+    "roms": [
+      "rapidfir"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",
       "start": 44,
       "length": 2,
       "encoding": "bcd"
-    }
-  },
-  "last_game": [
-    {
-      "start": 51,
-      "encoding": "bcd",
-      "length": 7
     },
-    {
-      "start": 58,
-      "encoding": "bcd",
-      "length": 7
-    }
-  ],
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 51,
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 2",
+        "start": 58,
+        "encoding": "bcd",
+        "length": 7
+      }
+    ]
+  },
   "high_scores": []
 }

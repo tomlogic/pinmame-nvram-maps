@@ -3,18 +3,20 @@
     "Compiled by Tom Collins using template-wpc.json.",
     "WPC 50044, SYS 3.49 REV 1.2"
   ],
-  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 12288,
-  "_roms": [
-    "wd_12",
-    "wd_12p",
-    "wd_12g",
-    "wd_12gp"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 12288,
+    "roms": [
+      "wd_12",
+      "wd_12p",
+      "wd_12g",
+      "wd_12gp"
+    ]
+  },
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",

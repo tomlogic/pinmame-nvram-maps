@@ -1,13 +1,15 @@
 {
   "_notes": "Compiled by Steven Harding",
-  "_copyright": "None",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_roms": [
-    "gldneye"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "None",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "roms": [
+      "gldneye"
+    ]
+  },
   "limits": {
     "high_score_min": "24000000"
   },

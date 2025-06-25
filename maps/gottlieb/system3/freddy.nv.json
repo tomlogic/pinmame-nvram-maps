@@ -2,37 +2,45 @@
   "_notes": [
     "Compiled by HorsePin"
   ],
-  "_copyright": "Copyright (C) 2022 by YourName your email>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 8238,
-  "_roms": [
-    "freddy"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.1,
-  "last_game": [
-    {
-      "encoding": "bcd",
-      "length": 5,
-      "start": 1428
-    },
-    {
-      "encoding": "bcd",
-      "length": 5,
-      "start": 1433
-    },
-    {
-      "encoding": "bcd",
-      "length": 5,
-      "start": 1438
-    },
-    {
-      "encoding": "bcd",
-      "length": 5,
-      "start": 1443
-    }
-  ],
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2022 by YourName your email>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 8238,
+    "roms": [
+      "freddy"
+    ]
+  },
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "encoding": "bcd",
+        "length": 5,
+        "start": 1428
+      },
+      {
+        "label": "Player 2",
+        "encoding": "bcd",
+        "length": 5,
+        "start": 1433
+      },
+      {
+        "label": "Player 3",
+        "encoding": "bcd",
+        "length": 5,
+        "start": 1438
+      },
+      {
+        "label": "Player 4",
+        "encoding": "bcd",
+        "length": 5,
+        "start": 1443
+      }
+    ]
+  },
   "high_scores": [
     {
       "label": "Dream Master",

@@ -4,15 +4,17 @@
     "WPC 90003, SYS 3.58 REV 0.9",
     "Unlike sc_18, this ROM does not have Assault Champion/High Scores."
   ],
-  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 12288,
-  "_roms": [
-    "sc_091"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 12288,
+    "roms": [
+      "sc_091"
+    ]
+  },
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",

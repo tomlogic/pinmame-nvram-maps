@@ -8,14 +8,16 @@
     "Credits can go higher than 15 but are in that case displayed as 15",
     "High scores seem to not be saved?"
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "little",
-  "_roms": [
-    "strike"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "roms": [
+      "strike"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

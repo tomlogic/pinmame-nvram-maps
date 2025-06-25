@@ -7,49 +7,55 @@
     "Bally MPU AS-2518-35",
     "7-digit score display (but internally 6-digit)"
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "little",
-  "_nibble": "high",
-  "_roms": [
-    "startreb"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "nibble": "high",
+    "roms": [
+      "startreb"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",
       "start": 57,
       "length": 1,
       "encoding": "bcd"
-    }
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 60,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      },
+      {
+        "label": "Player 2",
+        "start": 66,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      },
+      {
+        "label": "Player 3",
+        "start": 72,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      },
+      {
+        "label": "Player 4",
+        "start": 78,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      }
+    ]
   },
-  "last_game": [
-    {
-      "start": 60,
-      "encoding": "bcd",
-      "length": 6,
-      "scale": 10
-    },
-    {
-      "start": 66,
-      "encoding": "bcd",
-      "length": 6,
-      "scale": 10
-    },
-    {
-      "start": 72,
-      "encoding": "bcd",
-      "length": 6,
-      "scale": 10
-    },
-    {
-      "start": 78,
-      "encoding": "bcd",
-      "length": 6,
-      "scale": 10
-    }
-  ],
   "high_scores": [
     {
       "label": "High Score",

@@ -5,40 +5,48 @@
     "     added `mask` to initials to get uppercase (Tom Collins)",
     "(only some entries have low nibble, so don't set _nibble for entire file)"
   ],
-  "_copyright": "Copyright (C) 2016 by Horsepin",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_roms": [
-    "robo_a34"
-  ],
-  "_fileformat": 0.2,
-  "_version": 0.2,
-  "last_game": [
-    {
-      "start": 423,
-      "encoding": "bcd",
-      "length": 7,
-      "nibble": "low"
-    },
-    {
-      "start": 589,
-      "encoding": "bcd",
-      "length": 7,
-      "nibble": "low"
-    },
-    {
-      "start": 755,
-      "encoding": "bcd",
-      "length": 7,
-      "nibble": "low"
-    },
-    {
-      "start": 921,
-      "encoding": "bcd",
-      "length": 7,
-      "nibble": "low"
-    }
-  ],
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2016 by Horsepin",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "roms": [
+      "robo_a34"
+    ]
+  },
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 423,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low"
+      },
+      {
+        "label": "Player 2",
+        "start": 589,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low"
+      },
+      {
+        "label": "Player 3",
+        "start": 755,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low"
+      },
+      {
+        "label": "Player 4",
+        "start": 921,
+        "encoding": "bcd",
+        "length": 7,
+        "nibble": "low"
+      }
+    ]
+  },
   "high_scores": [
     {
       "label": "Commander",

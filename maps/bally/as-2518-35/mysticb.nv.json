@@ -8,49 +8,55 @@
     "7-digit score display",
     "By default the credits are not shown, set dip switch 27 to show them."
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "little",
-  "_nibble": "high",
-  "_roms": [
-    "mysticb"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "nibble": "high",
+    "roms": [
+      "mysticb"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",
       "start": 57,
       "length": 2,
       "encoding": "bcd"
-    }
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 61,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      },
+      {
+        "label": "Player 2",
+        "start": 67,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      },
+      {
+        "label": "Player 3",
+        "start": 73,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      },
+      {
+        "label": "Player 4",
+        "start": 79,
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      }
+    ]
   },
-  "last_game": [
-    {
-      "start": 61,
-      "encoding": "bcd",
-      "length": 6,
-      "scale": 10
-    },
-    {
-      "start": 67,
-      "encoding": "bcd",
-      "length": 6,
-      "scale": 10
-    },
-    {
-      "start": 73,
-      "encoding": "bcd",
-      "length": 6,
-      "scale": 10
-    },
-    {
-      "start": 79,
-      "encoding": "bcd",
-      "length": 6,
-      "scale": 10
-    }
-  ],
   "high_scores": [
     {
       "label": "High Score",

@@ -5,17 +5,19 @@
     "v0.2 (2018-03) by Tom Collins; added adjustments, audits, checksums",
     "v0.1 by Mike Metzger; last_game, high_scores, mode_champions"
   ],
-  "_copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 12288,
-  "_roms": [
-    "tom_13",
-    "tom_14h",
-    "tom_14hb"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.4,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.4,
+    "copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 12288,
+    "roms": [
+      "tom_13",
+      "tom_14h",
+      "tom_14hb"
+    ]
+  },
   "game_state": {
     "player_count": {
       "label": "Players",

@@ -4,15 +4,17 @@
     "Stellar Wars (Williams, 1979)",
     "https://www.ipdb.org/machine.cgi?id=2372"
   ],
-  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_nibble": "low",
-  "_roms": [
-    "stlwr_l2"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "nibble": "low",
+    "roms": [
+      "stlwr_l2"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

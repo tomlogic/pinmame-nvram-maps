@@ -3,17 +3,19 @@
     "Compiled by Horsepin.",
     "WPC 20001, SYS 1.18 REV 0.3"
   ],
-  "_copyright": "Copyright (C) 2016 by Horsepin",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 8192,
-  "_roms": [
-    "hd_l3",
-    "hd_l1",
-    "che_cho"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2016 by Horsepin",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 8192,
+    "roms": [
+      "hd_l3",
+      "hd_l1",
+      "che_cho"
+    ]
+  },
   "game_state": {
     "player_count": {
       "label": "Players",

@@ -2,47 +2,57 @@
   "_notes": [
     "Compiled by HorsePin"
   ],
-  "_copyright": "Copyright (C) 2022 by YourName your email>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 0,
-  "_roms": [
-    "swtril43"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.1,
-  "last_game": [
-    {
-      "encoding": "bcd",
-      "length": 4,
-      "start": 5351
-    },
-    {
-      "encoding": "bcd",
-      "length": 4,
-      "start": 5356
-    },
-    {
-      "encoding": "bcd",
-      "length": 4,
-      "start": 5361
-    },
-    {
-      "encoding": "bcd",
-      "length": 4,
-      "start": 5366
-    },
-    {
-      "encoding": "bcd",
-      "length": 4,
-      "start": 5371
-    },
-    {
-      "encoding": "bcd",
-      "length": 4,
-      "start": 5376
-    }
-  ],
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2022 by YourName your email>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 0,
+    "roms": [
+      "swtril43"
+    ]
+  },
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "encoding": "bcd",
+        "length": 4,
+        "start": 5351
+      },
+      {
+        "label": "Player 2",
+        "encoding": "bcd",
+        "length": 4,
+        "start": 5356
+      },
+      {
+        "label": "Player 3",
+        "encoding": "bcd",
+        "length": 4,
+        "start": 5361
+      },
+      {
+        "label": "Player 4",
+        "encoding": "bcd",
+        "length": 4,
+        "start": 5366
+      },
+      {
+        "label": "Player 5",
+        "encoding": "bcd",
+        "length": 4,
+        "start": 5371
+      },
+      {
+        "label": "Player 6",
+        "encoding": "bcd",
+        "length": 4,
+        "start": 5376
+      }
+    ]
+  },
   "high_scores": [
     {
       "label": "#1 Jedi",

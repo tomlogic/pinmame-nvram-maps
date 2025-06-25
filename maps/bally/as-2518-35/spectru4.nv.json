@@ -8,15 +8,51 @@
     "7-digit score display",
     "By default the credits are not shown, set dip switch 27 to show them."
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "little",
-  "_nibble": "high",
-  "_roms": [
-    "spectru4"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "nibble": "high",
+    "roms": [
+      "spectru4"
+    ]
+  },
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": 61,
+      "length": 2,
+      "encoding": "bcd"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 30,
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 2",
+        "start": 37,
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 3",
+        "start": 44,
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 4",
+        "start": 51,
+        "encoding": "bcd",
+        "length": 7
+      }
+    ]
+  },
   "audits": {
     "Bookkeeping functions": {
       "05": {
@@ -109,36 +145,6 @@
       }
     }
   },
-  "game_state": {
-    "credits": {
-      "label": "Credits",
-      "start": 61,
-      "length": 2,
-      "encoding": "bcd"
-    }
-  },
-  "last_game": [
-    {
-      "start": 30,
-      "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 37,
-      "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 44,
-      "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 51,
-      "encoding": "bcd",
-      "length": 7
-    }
-  ],
   "high_scores": [
     {
       "label": "High Score",

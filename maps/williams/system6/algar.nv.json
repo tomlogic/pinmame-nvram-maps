@@ -4,16 +4,18 @@
     "Algar (Williams, 1980)",
     "https://www.ipdb.org/machine.cgi?id=42"
   ],
-  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_nibble": "low",
-  "_roms": [
-    "algar_l1",
-    "algar_l1ff"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "nibble": "low",
+    "roms": [
+      "algar_l1",
+      "algar_l1ff"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

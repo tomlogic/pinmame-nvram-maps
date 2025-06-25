@@ -4,15 +4,17 @@
     "Phoenix (Williams, 1978)",
     "https://www.ipdb.org/machine.cgi?id=1780"
   ],
-  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_nibble": "low",
-  "_roms": [
-    "phnix_l1"
-  ],
-  "_fileformat": 0.4,
-  "_version": 1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 1,
+    "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "nibble": "low",
+    "roms": [
+      "phnix_l1"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

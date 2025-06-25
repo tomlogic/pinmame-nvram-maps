@@ -5,17 +5,19 @@
     "WPC 20017, SYS 2.55 REV 0.6 (taf_l6)",
     "WPC 20017, SYS 3.21 REV 0.6 (taf_h4)"
   ],
-  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 8192,
-  "_roms": [
-    "taf_l5",
-    "taf_l6",
-    "taf_h4"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 8192,
+    "roms": [
+      "taf_l5",
+      "taf_l6",
+      "taf_h4"
+    ]
+  },
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",

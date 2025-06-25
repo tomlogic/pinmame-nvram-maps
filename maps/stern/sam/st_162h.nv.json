@@ -2,37 +2,45 @@
   "_notes": [
     "Compiled by Tom Collins, based on st_162h by HorsePin"
   ],
-  "_copyright": "Copyright (C)2024 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "little",
-  "_ramsize": 131118,
-  "_roms": [
-    "st_162h"
-  ],
-  "_fileformat": 0.3,
-  "_version": 0.1,
-  "last_game": [
-    {
-      "encoding": "int",
-      "length": 4,
-      "start": 68108
-    },
-    {
-      "encoding": "int",
-      "length": 4,
-      "start": 68112
-    },
-    {
-      "encoding": "int",
-      "length": 4,
-      "start": 68116
-    },
-    {
-      "encoding": "int",
-      "length": 4,
-      "start": 68120
-    }
-  ],
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C)2024 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "ramsize": 131118,
+    "roms": [
+      "st_162h"
+    ]
+  },
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "encoding": "int",
+        "length": 4,
+        "start": 68108
+      },
+      {
+        "label": "Player 2",
+        "encoding": "int",
+        "length": 4,
+        "start": 68112
+      },
+      {
+        "label": "Player 3",
+        "encoding": "int",
+        "length": 4,
+        "start": 68116
+      },
+      {
+        "label": "Player 4",
+        "encoding": "int",
+        "length": 4,
+        "start": 68120
+      }
+    ]
+  },
   "high_scores": [
     {
       "label": "Grand Champion",

@@ -3,16 +3,18 @@
     "Compiled by Tom Collins for initial development/testing purposes.",
     "WPC 50041, SYS 3.77 REV 1.1"
   ],
-  "_copyright": "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 12288,
-  "_roms": [
-    "afm_113",
-    "afm_113b"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 12288,
+    "roms": [
+      "afm_113",
+      "afm_113b"
+    ]
+  },
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",

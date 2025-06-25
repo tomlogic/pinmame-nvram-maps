@@ -2,37 +2,45 @@
   "_notes": [
     "Compiled by HorsePin"
   ],
-  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "little",
-  "_ramsize": 131118,
-  "_roms": [
-    "tf_180"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.1,
-  "last_game": [
-    {
-      "encoding": "int",
-      "length": 4,
-      "start": 68068
-    },
-    {
-      "encoding": "int",
-      "length": 4,
-      "start": 68072
-    },
-    {
-      "encoding": "int",
-      "length": 4,
-      "start": 68076
-    },
-    {
-      "encoding": "int",
-      "length": 4,
-      "start": 68080
-    }
-  ],
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "ramsize": 131118,
+    "roms": [
+      "tf_180"
+    ]
+  },
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "encoding": "int",
+        "length": 4,
+        "start": 68068
+      },
+      {
+        "label": "Player 2",
+        "encoding": "int",
+        "length": 4,
+        "start": 68072
+      },
+      {
+        "label": "Player 3",
+        "encoding": "int",
+        "length": 4,
+        "start": 68076
+      },
+      {
+        "label": "Player 4",
+        "encoding": "int",
+        "length": 4,
+        "start": 68080
+      }
+    ]
+  },
   "high_scores": [
     {
       "label": "Autobot Grand Champion",

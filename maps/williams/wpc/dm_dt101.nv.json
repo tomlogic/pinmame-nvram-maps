@@ -1,40 +1,48 @@
 {
   "_notes": "Compiled by Tom Collins for initial development/testing purposes.",
-  "_copyright": "Copyright (C) 2020 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_roms": [
-    "dm_dt101"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2020 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "roms": [
+      "dm_dt101"
+    ]
+  },
+  "game_state": {
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 5639,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 2",
+        "start": 5644,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 3",
+        "start": 5649,
+        "encoding": "bcd",
+        "length": 5
+      },
+      {
+        "label": "Player 4",
+        "start": 5654,
+        "encoding": "bcd",
+        "length": 5
+      }
+    ]
+  },
   "last_played": {
     "start": 6144,
     "encoding": "wpc_rtc",
     "length": 7
   },
-  "last_game": [
-    {
-      "start": 5639,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5644,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5649,
-      "encoding": "bcd",
-      "length": 5
-    },
-    {
-      "start": 5654,
-      "encoding": "bcd",
-      "length": 5
-    }
-  ],
   "high_scores": [
     {
       "label": "Grand Champion",

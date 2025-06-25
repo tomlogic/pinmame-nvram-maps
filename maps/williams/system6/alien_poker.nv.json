@@ -4,21 +4,23 @@
     "Alien Poker (Williams, 1980)",
     "https://www.ipdb.org/machine.cgi?id=48"
   ],
-  "_copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_nibble": "low",
-  "_roms": [
-    "alpok_b6",
-    "alpok_f6",
-    "alpok_f6ff",
-    "alpok_l2",
-    "alpok_l2ff",
-    "alpok_l6",
-    "alpok_l6ff"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.2,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.2,
+    "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "nibble": "low",
+    "roms": [
+      "alpok_b6",
+      "alpok_f6",
+      "alpok_f6ff",
+      "alpok_l2",
+      "alpok_l2ff",
+      "alpok_l6",
+      "alpok_l6ff"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

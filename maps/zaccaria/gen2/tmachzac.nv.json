@@ -6,15 +6,17 @@
     "https://opdb.org/machines/937",
     "Zaccaria Generation 2"
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "little",
-  "_nibble": "low",
-  "_roms": [
-    "tmachzac"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "nibble": "low",
+    "roms": [
+      "tmachzac"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",
@@ -22,30 +24,34 @@
       "length": 1,
       "encoding": "bcd",
       "nibble": "both"
-    }
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 1216,
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 2",
+        "start": 1224,
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 3",
+        "start": 1232,
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 4",
+        "start": 1240,
+        "encoding": "bcd",
+        "length": 7
+      }
+    ]
   },
-  "last_game": [
-    {
-      "start": 1216,
-      "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 1224,
-      "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 1232,
-      "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 1240,
-      "encoding": "bcd",
-      "length": 7
-    }
-  ],
   "high_scores": [
     {
       "label": "High Score",

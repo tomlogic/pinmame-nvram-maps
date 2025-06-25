@@ -4,28 +4,30 @@
     "NVRAM file mapped to memory address 0x200 in PinMAME",
     "Valid for all Stern M-100 MPU games.  ROMs with 'fp' suffix are Free Play."
   ],
-  "_copyright": "Copyright (C) 2023 by Tom Collins <tom@tomlogic.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_fileformat": 0.4,
-  "_version": 0.3,
-  "_endian": "little",
-  "_nibble": "high",
-  "_ramsize": 256,
-  "_roms": [
-    "dracula",
-    "draculfp",
-    "hothand",
-    "lectrono",
-    "memlane",
-    "nugent",
-    "pinball",
-    "pinbalfp",
-    "princess",
-    "stars",
-    "stingray",
-    "wildfyre",
-    "wildfyfp"
-  ],
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.3,
+    "copyright": "Copyright (C) 2023 by Tom Collins <tom@tomlogic.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "nibble": "high",
+    "ramsize": 256,
+    "roms": [
+      "dracula",
+      "draculfp",
+      "hothand",
+      "lectrono",
+      "memlane",
+      "nugent",
+      "pinball",
+      "pinbalfp",
+      "princess",
+      "stars",
+      "stingray",
+      "wildfyre",
+      "wildfyfp"
+    ]
+  },
   "game_state": {
     "match": {
       "label": "Match",
@@ -59,53 +61,31 @@
     },
     "scores": [
       {
-        "label": "P1",
-        "start": 30,
+        "label": "Player 1",
+        "start": 60,
         "length": 6,
         "encoding": "bcd"
       },
       {
-        "label": "P2",
-        "start": 36,
+        "label": "Player 2",
+        "start": 66,
         "length": 6,
         "encoding": "bcd"
       },
       {
-        "label": "P3",
-        "start": 42,
+        "label": "Player 3",
+        "start": 72,
         "length": 6,
         "encoding": "bcd"
       },
       {
-        "label": "P4",
-        "start": 48,
+        "label": "Player 4",
+        "start": 78,
         "length": 6,
         "encoding": "bcd"
       }
     ]
   },
-  "last_game": [
-    {
-      "start": 60,
-      "length": 6,
-      "encoding": "bcd"
-    },
-    {
-      "start": 66,
-      "length": 6,
-      "encoding": "bcd"
-    },
-    {
-      "start": 72,
-      "length": 6,
-      "encoding": "bcd"
-    },
-    {
-      "start": 78,
-      "length": 6,
-      "encoding": "bcd"
-    }
-  ],
   "high_scores": [
     {
       "label": "High Score",

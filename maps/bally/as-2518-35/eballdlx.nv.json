@@ -10,15 +10,17 @@
     "The vpx table is overriding all rom switches, so the credits are always shown.",
     "Same layout as centaur."
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "little",
-  "_nibble": "high",
-  "_roms": [
-    "eballdlx"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "nibble": "high",
+    "roms": [
+      "eballdlx"
+    ]
+  },
   "game_state": {
     "ball_in_play_display": {
       "label": "Ball in play display",
@@ -31,30 +33,34 @@
       "start": 61,
       "length": 2,
       "encoding": "bcd"
-    }
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 72,
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 2",
+        "start": 79,
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 3",
+        "start": 86,
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 4",
+        "start": 93,
+        "encoding": "bcd",
+        "length": 7
+      }
+    ]
   },
-  "last_game": [
-    {
-      "start": 72,
-      "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 79,
-      "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 86,
-      "encoding": "bcd",
-      "length": 7
-    },
-    {
-      "start": 93,
-      "encoding": "bcd",
-      "length": 7
-    }
-  ],
   "high_scores": [
     {
       "label": "High Score",

@@ -6,16 +6,18 @@
     "Williams System 11C",
     "2025-03 v0.3: Tom Collins added audits"
   ],
-  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "big",
-  "_ramsize": 2048,
-  "_roms": [
-    "diner_l4"
-  ],
-  "_fileformat": 0.1,
-  "_version": 0.3,
-  "_char_map": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.3,
+    "copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "big",
+    "ramsize": 2048,
+    "roms": [
+      "diner_l4"
+    ],
+    "char_map": " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  },
   "game_state": {
     "credits": {
       "label": "Credits",

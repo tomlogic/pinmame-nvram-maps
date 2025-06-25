@@ -11,15 +11,17 @@
     " - High score does not save",
     "Same layout as strapids"
   ],
-  "_copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
-  "_license": "GNU Lesser General Public License v3.0",
-  "_endian": "little",
-  "_nibble": "low",
-  "_roms": [
-    "stargoda"
-  ],
-  "_fileformat": 0.4,
-  "_version": 0.1,
+  "_fileformat": 0.6,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "license": "GNU Lesser General Public License v3.0",
+    "endian": "little",
+    "nibble": "low",
+    "roms": [
+      "stargoda"
+    ]
+  },
   "game_state": {
     "credits": {
       "label": "Credits",
@@ -27,30 +29,34 @@
       "length": 1,
       "encoding": "bcd",
       "nibble": "both"
-    }
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": 0,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 2",
+        "start": 8,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 3",
+        "start": 16,
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 4",
+        "start": 24,
+        "encoding": "bcd",
+        "length": 6
+      }
+    ]
   },
-  "last_game": [
-    {
-      "start": 0,
-      "encoding": "bcd",
-      "length": 6
-    },
-    {
-      "start": 8,
-      "encoding": "bcd",
-      "length": 6
-    },
-    {
-      "start": 16,
-      "encoding": "bcd",
-      "length": 6
-    },
-    {
-      "start": 24,
-      "encoding": "bcd",
-      "length": 6
-    }
-  ],
   "high_scores": [
     {
       "label": "High Score",
