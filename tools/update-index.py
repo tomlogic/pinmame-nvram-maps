@@ -18,12 +18,17 @@ maps = os.path.join(rootdir, 'maps', '**', '*.nv.json')
 for map_file in glob.glob(maps, recursive=True):
     with open(map_file, 'r') as f:
         map_json = json.load(f)
-        for rom in map_json.get('_roms'):
-            if not romnames.get(rom):
-                print("Error: %s (from %s) does not appear in romnames.json" % (rom, map_file))
-            if index.get(rom):
-                print("Warning: %s appears in %s and %s" % (rom, index[rom], map_file))
-            index[rom] = os.path.relpath(map_file, rootdir)
+        metadata = map_json.get('_metadata', {})
+        roms = metadata.get('roms')
+        if not roms:
+            print("Error: %s is missing a _metadata.roms entry" % map_file)
+        else:
+            for rom in roms:
+                if not romnames.get(rom):
+                    print("Error: %s (from %s) does not appear in romnames.json" % (rom, map_file))
+                if index.get(rom):
+                    print("Warning: %s appears in %s and %s" % (rom, index[rom], map_file))
+                index[rom] = os.path.relpath(map_file, rootdir)
 
 with open(os.path.join(rootdir, 'index.json'), 'w') as f:
     f.write(json.dumps(index, indent=2, sort_keys=True))
