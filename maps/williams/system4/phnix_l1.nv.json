@@ -9,8 +9,7 @@
     "version": 1,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "nibble": "low",
+    "platform": "williams-system4",
     "roms": [
       "phnix_l1"
     ]
@@ -18,7 +17,7 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 40,
+      "start": "0x0128",
       "length": 2,
       "encoding": "bcd"
     }
@@ -28,7 +27,7 @@
       "label": "First Place",
       "short_label": "1st",
       "score": {
-        "start": 42,
+        "start": "0x012A",
         "encoding": "bcd",
         "length": 6
       }
@@ -38,43 +37,43 @@
     "Standard Audits": {
       "18": {
         "label": "Current HSTD",
-        "start": 42,
+        "start": "0x012A",
         "encoding": "bcd",
         "length": 6
       },
       "19": {
         "label": "Coins, left chute",
-        "start": 48,
+        "start": "0x0130",
         "length": 6,
         "encoding": "bcd"
       },
       "20": {
         "label": "Coins, center chute",
-        "start": 54,
+        "start": "0x0136",
         "length": 6,
         "encoding": "bcd"
       },
       "21": {
         "label": "Coins, right chute",
-        "start": 60,
+        "start": "0x013C",
         "length": 6,
         "encoding": "bcd"
       },
       "22": {
         "label": "Total Paid Credits",
-        "start": 66,
+        "start": "0x0142",
         "length": 6,
         "encoding": "bcd"
       },
       "23": {
         "label": "Special Credits",
-        "start": 72,
+        "start": "0x0148",
         "length": 6,
         "encoding": "bcd"
       },
       "99": {
         "label": "Check Byte",
-        "start": 0,
+        "start": "0x0100",
         "length": 2,
         "encoding": "int",
         "special_values": {
@@ -91,35 +90,35 @@
           "manual calls for 0xFF to disable a replay level; unknown if 0 also works",
           "current map file format can't specify invalid BCD value to indicate this"
         ],
-        "start": 2,
+        "start": "0x0102",
         "length": 2,
         "encoding": "bcd",
         "scale": 10000
       },
       "02": {
         "label": "Replay 2 Score",
-        "start": 4,
+        "start": "0x0104",
         "length": 2,
         "encoding": "bcd",
         "scale": 10000
       },
       "03": {
         "label": "Replay 3 Score",
-        "start": 6,
+        "start": "0x0106",
         "length": 2,
         "encoding": "bcd",
         "scale": 10000
       },
       "04": {
         "label": "Replay 4 Score",
-        "start": 8,
+        "start": "0x0108",
         "length": 2,
         "encoding": "bcd",
         "scale": 10000
       },
       "05": {
         "label": "Maximum Credits",
-        "start": 10,
+        "start": "0x010A",
         "length": 2,
         "encoding": "bcd",
         "special_values": {
@@ -132,7 +131,7 @@
           "based on manual referencing 'Chart 1', this is int and not bcd",
           "dips from chart 1: 1000, 1001, 1100, 1101"
         ],
-        "start": 12,
+        "start": "0x010C",
         "length": 2,
         "encoding": "int",
         "special_values": {
@@ -144,7 +143,7 @@
       },
       "07": {
         "label": "Play",
-        "start": 14,
+        "start": "0x010E",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -159,50 +158,50 @@
       },
       "08": {
         "label": "HSTD Credits",
-        "start": 16,
+        "start": "0x0110",
         "length": 2,
         "encoding": "bcd"
       },
       "09": {
         "label": "Left Coin Slot Multiplier",
         "_notes": "pricing (09-14) reference 'Chart 1' so they are integers and not bcd",
-        "start": 24,
+        "start": "0x0118",
         "length": 2,
         "encoding": "int"
       },
       "10": {
         "label": "Center Coin Slot Multiplier",
-        "start": 26,
+        "start": "0x011A",
         "length": 2,
         "encoding": "int"
       },
       "11": {
         "label": "Right Coin Slot Multiplier",
-        "start": 28,
+        "start": "0x011C",
         "length": 2,
         "encoding": "int"
       },
       "12": {
         "label": "Coin Units Required for Credit",
-        "start": 30,
+        "start": "0x011E",
         "length": 2,
         "encoding": "int"
       },
       "13": {
         "label": "Coin Units Bonus Point",
-        "start": 32,
+        "start": "0x0120",
         "length": 2,
         "encoding": "int"
       },
       "14": {
         "label": "Coin Units Per Credit",
-        "start": 34,
+        "start": "0x0122",
         "length": 2,
         "encoding": "int"
       },
       "15A": {
         "label": "Special Awards",
-        "start": 36,
+        "start": "0x0124",
         "length": 1,
         "encoding": "enum",
         "values": [
@@ -215,14 +214,14 @@
       },
       "15B": {
         "label": "Number of Balls",
-        "start": 37,
+        "start": "0x0125",
         "length": 1,
         "encoding": "bcd"
       },
       "16": {
         "label": "Tilt Warnings",
         "_notes": "setting to 0 disables tilt",
-        "start": 38,
+        "start": "0x0126",
         "length": 2,
         "encoding": "bcd",
         "min": 1,

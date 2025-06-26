@@ -14,8 +14,7 @@
     "version": 0.2,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "nibble": "low",
+    "platform": "williams-system7",
     "roms": [
       "barra_l1",
       "bk_l4",
@@ -39,7 +38,7 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 110,
+      "start": "0x016E",
       "length": 2,
       "encoding": "bcd"
     }
@@ -49,7 +48,7 @@
       "label": "First Place",
       "short_label": "1st",
       "score": {
-        "start": 102,
+        "start": "0x0166",
         "encoding": "bcd",
         "length": 8
       }
@@ -59,104 +58,104 @@
     "Standard Audits": {
       "01": {
         "label": "Coins, left chute",
-        "start": 2,
+        "start": "0x0102",
         "length": 4,
         "encoding": "bcd"
       },
       "02": {
         "label": "Coins, center chute",
-        "start": 6,
+        "start": "0x0106",
         "length": 4,
         "encoding": "bcd"
       },
       "03": {
         "label": "Coins, right chute",
-        "start": 10,
+        "start": "0x010A",
         "length": 4,
         "encoding": "bcd"
       },
       "04": {
         "label": "Total Paid Credits",
-        "start": 14,
+        "start": "0x010E",
         "length": 4,
         "encoding": "bcd"
       },
       "05": {
         "label": "Special Credits",
-        "start": 18,
+        "start": "0x0112",
         "length": 4,
         "encoding": "bcd"
       },
       "06": {
         "label": "Replay Score Credits",
-        "start": 22,
+        "start": "0x0116",
         "length": 4,
         "encoding": "bcd"
       },
       "07": {
         "label": "Match Credits",
-        "start": 26,
+        "start": "0x011A",
         "length": 4,
         "encoding": "bcd"
       },
       "08": {
         "label": "Total Credits",
-        "start": 30,
+        "start": "0x011E",
         "length": 4,
         "encoding": "bcd"
       },
       "09": {
         "label": "Total Extra Balls",
-        "start": 34,
+        "start": "0x0122",
         "length": 4,
         "encoding": "bcd"
       },
       "10": {
         "label": "Ball Time",
-        "start": 38,
+        "start": "0x0126",
         "length": 4,
         "encoding": "bcd",
         "units": "minutes"
       },
       "11": {
         "label": "Total Balls Played",
-        "start": 42,
+        "start": "0x012A",
         "length": 4,
         "encoding": "bcd"
       },
       "12": {
         "label": "Current HSTD",
-        "start": 102,
+        "start": "0x0166",
         "encoding": "bcd",
         "length": 8
       },
       "13": {
         "label": "HSTD Credits",
-        "start": 78,
+        "start": "0x014E",
         "length": 4,
         "encoding": "bcd"
       },
       "14": {
         "label": "Replay 1 Awarded",
-        "start": 82,
+        "start": "0x0152",
         "length": 4,
         "encoding": "bcd"
       },
       "15": {
         "label": "Replay 2 Awarded",
-        "start": 86,
+        "start": "0x0156",
         "length": 4,
         "encoding": "bcd"
       },
       "16": {
         "label": "Replay 3 Awarded",
-        "start": 90,
+        "start": "0x015A",
         "length": 4,
         "encoding": "bcd"
       },
       "17": {
         "label": "Replay 4 Awarded",
-        "start": 94,
+        "start": "0x015E",
         "length": 4,
         "encoding": "bcd"
       }
@@ -164,55 +163,55 @@
     "Game Audits": {
       "42": {
         "label": "Game Audit 1",
-        "start": 46,
+        "start": "0x012E",
         "length": 4,
         "encoding": "bcd"
       },
       "43": {
         "label": "Game Audit 2",
-        "start": 50,
+        "start": "0x0132",
         "length": 4,
         "encoding": "bcd"
       },
       "44": {
         "label": "Game Audit 3",
-        "start": 54,
+        "start": "0x0136",
         "length": 4,
         "encoding": "bcd"
       },
       "45": {
         "label": "Game Audit 4",
-        "start": 58,
+        "start": "0x013A",
         "length": 4,
         "encoding": "bcd"
       },
       "46": {
         "label": "Game Audit 5",
-        "start": 62,
+        "start": "0x013E",
         "length": 4,
         "encoding": "bcd"
       },
       "47": {
         "label": "Game Audit 6",
-        "start": 66,
+        "start": "0x0142",
         "length": 4,
         "encoding": "bcd"
       },
       "48": {
         "label": "Game Audit 7",
-        "start": 70,
+        "start": "0x0146",
         "length": 4,
         "encoding": "bcd"
       },
       "49": {
         "label": "Burn-In Cycles",
-        "start": 74,
+        "start": "0x014A",
         "length": 4,
         "encoding": "bcd"
       },
       "99": {
         "label": "CMOS Checksum",
-        "start": 125,
+        "start": "0x017D",
         "length": 4,
         "encoding": "int",
         "special_values": {
@@ -225,42 +224,42 @@
     "Standard Adjustments": {
       "13": {
         "label": "Backup HSTD",
-        "start": 129,
+        "start": "0x0181",
         "length": 2,
         "encoding": "bcd",
         "scale": 100000
       },
       "14": {
         "label": "Replay 1 Score",
-        "start": 131,
+        "start": "0x0183",
         "length": 2,
         "encoding": "bcd",
         "scale": 100000
       },
       "15": {
         "label": "Replay 2 Score",
-        "start": 133,
+        "start": "0x0185",
         "length": 2,
         "encoding": "bcd",
         "scale": 100000
       },
       "16": {
         "label": "Replay 3 Score",
-        "start": 135,
+        "start": "0x0187",
         "length": 2,
         "encoding": "bcd",
         "scale": 100000
       },
       "17": {
         "label": "Replay 4 Score",
-        "start": 137,
+        "start": "0x0189",
         "length": 2,
         "encoding": "bcd",
         "scale": 100000
       },
       "18": {
         "label": "Maximum Credits",
-        "start": 171,
+        "start": "0x01AB",
         "length": 2,
         "encoding": "bcd",
         "special_values": {
@@ -269,7 +268,7 @@
       },
       "19": {
         "label": "Pricing Control",
-        "start": 173,
+        "start": "0x01AD",
         "length": 2,
         "encoding": "bcd",
         "min": 0,
@@ -288,43 +287,43 @@
       },
       "20": {
         "label": "Left Coin Slot Multiplier",
-        "start": 175,
+        "start": "0x01AF",
         "length": 2,
         "encoding": "bcd"
       },
       "21": {
         "label": "Center Coin Slot Multiplier",
-        "start": 177,
+        "start": "0x01B1",
         "length": 2,
         "encoding": "bcd"
       },
       "22": {
         "label": "Right Coin Slot Multiplier",
-        "start": 179,
+        "start": "0x01B3",
         "length": 2,
         "encoding": "bcd"
       },
       "23": {
         "label": "Coin Units Required for Credit",
-        "start": 181,
+        "start": "0x01B5",
         "length": 2,
         "encoding": "bcd"
       },
       "24": {
         "label": "Coin Units Bonus Point",
-        "start": 183,
+        "start": "0x01B7",
         "length": 2,
         "encoding": "bcd"
       },
       "25": {
         "label": "Minimum Coin Units",
-        "start": 185,
+        "start": "0x01B9",
         "length": 2,
         "encoding": "bcd"
       },
       "26": {
         "label": "Match",
-        "start": 139,
+        "start": "0x018B",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -334,7 +333,7 @@
       },
       "27": {
         "label": "Special Awards",
-        "start": 141,
+        "start": "0x018D",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -345,7 +344,7 @@
       },
       "28": {
         "label": "Replay Award",
-        "start": 143,
+        "start": "0x018F",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -355,25 +354,25 @@
       },
       "29": {
         "label": "Tilt Warnings",
-        "start": 145,
+        "start": "0x0191",
         "length": 2,
         "encoding": "bcd"
       },
       "30": {
         "label": "Number of Balls",
-        "start": 147,
+        "start": "0x0193",
         "length": 2,
         "encoding": "bcd"
       },
       "40": {
         "label": "HSTD Credits",
-        "start": 167,
+        "start": "0x01A7",
         "length": 2,
         "encoding": "bcd"
       },
       "41": {
         "label": "Maximum Extra Balls",
-        "start": 169,
+        "start": "0x01A9",
         "length": 2,
         "encoding": "bcd"
       }
@@ -381,55 +380,55 @@
     "Game Adjustments": {
       "31": {
         "label": "Game Adjust 1",
-        "start": 149,
+        "start": "0x0195",
         "length": 2,
         "encoding": "bcd"
       },
       "32": {
         "label": "Game Adjust 2",
-        "start": 151,
+        "start": "0x0197",
         "length": 2,
         "encoding": "bcd"
       },
       "33": {
         "label": "Game Adjust 3",
-        "start": 153,
+        "start": "0x0199",
         "length": 2,
         "encoding": "bcd"
       },
       "34": {
         "label": "Game Adjust 4",
-        "start": 155,
+        "start": "0x019B",
         "length": 2,
         "encoding": "bcd"
       },
       "35": {
         "label": "Game Adjust 5",
-        "start": 157,
+        "start": "0x019D",
         "length": 2,
         "encoding": "bcd"
       },
       "36": {
         "label": "Game Adjust 6",
-        "start": 159,
+        "start": "0x019F",
         "length": 2,
         "encoding": "bcd"
       },
       "37": {
         "label": "Game Adjust 7",
-        "start": 161,
+        "start": "0x01A1",
         "length": 2,
         "encoding": "bcd"
       },
       "38": {
         "label": "Game Adjust 8",
-        "start": 163,
+        "start": "0x01A3",
         "length": 2,
         "encoding": "bcd"
       },
       "39": {
         "label": "Game Adjust 9",
-        "start": 165,
+        "start": "0x01A5",
         "length": 2,
         "encoding": "bcd"
       }
