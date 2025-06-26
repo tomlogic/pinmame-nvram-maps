@@ -44,7 +44,6 @@ def shift_map_base(record: Union[list, dict], offset: int) -> None:
             if key in ['start', 'end', 'offsets']:
                 record[key] = '0x%04X' % (to_int(value) + offset)
             else:
-                print("Shifting %s" % key)
                 shift_map_base(value, offset)
     else:
         print("ignoring", record)
@@ -52,7 +51,7 @@ def shift_map_base(record: Union[list, dict], offset: int) -> None:
 PLATFORM_DIR = os.path.join(os.path.dirname(__file__), '../platforms')
 
 parser = argparse.ArgumentParser(description='Maps Platform Setter')
-parser.add_argument('--platform',
+parser.add_argument('--platform', required=True,
                     help='platform (without .json extension) to apply')
 parser.add_argument('maps', nargs='+')
 args = parser.parse_args()
@@ -79,6 +78,10 @@ for file in args.maps:
     with open(file) as map_file:
         map_json = json.load(map_file, object_pairs_hook=OrderedDict)
     metadata = map_json.get('_metadata')
+    existing_platform = metadata.get('platform')
+    if existing_platform:
+        print('...map already using platform %s' % existing_platform)
+        continue
     map_endian = metadata.get('endian', '(undefined)')
     platform_endian = platform_json.get('endian', '(undefined)')
     if map_endian != platform_endian:
@@ -92,7 +95,9 @@ for file in args.maps:
               % (map_nibble, platform_nibble))
         errors += 1
 
-    map_ramsize = metadata.get('ramsize', 0)
+    # Some maps have the .nv file size for ramsize, but that includes
+    # additional bytes appended by PinMAME.  Round down to a multiple of 128.
+    map_ramsize = metadata.get('ramsize', 0) & 0xFFFFFF80
     platform_ramsize = to_int(area.get('size'))
     if map_ramsize and map_ramsize != platform_ramsize:
         print("Error: `ramsize` from map (%u) doesn't match platform's nvram.size (%u)"
