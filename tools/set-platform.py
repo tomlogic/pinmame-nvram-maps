@@ -99,9 +99,9 @@ for file in args.maps:
     map_ramsize = metadata.get('ramsize', 0) & 0xFFFFFF80
     platform_ramsize = to_int(area.get('size'))
     if map_ramsize and map_ramsize != platform_ramsize:
-        print("Error: `ramsize` from map (%u) doesn't match platform's nvram.size (%u)"
+        print("Skipping: `ramsize` from map (%u) doesn't match platform's nvram.size (%u)"
               % (map_ramsize, platform_ramsize))
-        errors += 1
+        continue
 
     if errors:
         print("Aborting update of %s due to errors." % file)

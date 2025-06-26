@@ -9,8 +9,7 @@
     "version": 0.3,
     "copyright": "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 12288,
+    "platform": "williams-wpc-12K",
     "roms": [
       "nf_23x"
     ]

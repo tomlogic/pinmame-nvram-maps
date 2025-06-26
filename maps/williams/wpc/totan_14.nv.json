@@ -9,8 +9,7 @@
     "version": 0.3,
     "copyright": "Copyright (C) 2022 HorsePin",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 12288,
+    "platform": "williams-wpc-12K",
     "roms": [
       "totan_14"
     ]

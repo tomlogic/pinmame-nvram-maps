@@ -9,8 +9,7 @@
     "version": 0.3,
     "copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 8192,
+    "platform": "williams-wpc-8K",
     "roms": [
       "dw_l2"
     ]

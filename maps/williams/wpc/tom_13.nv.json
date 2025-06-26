@@ -10,8 +10,7 @@
     "version": 0.4,
     "copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 12288,
+    "platform": "williams-wpc-12K",
     "roms": [
       "tom_13",
       "tom_14h",
