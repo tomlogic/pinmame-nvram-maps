@@ -12,8 +12,7 @@
     "version": 0.2,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 2048,
+    "platform": "williams-system11",
     "roms": [
       "bguns_l8"
     ]

@@ -10,8 +10,7 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 2048,
+    "platform": "williams-system11",
     "roms": [
       "tsptr_l3"
     ]
