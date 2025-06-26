@@ -16,8 +16,7 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
-    "nibble": "low",
+    "platform": "zaccaria-gen1",
     "roms": [
       "stargoda"
     ]
@@ -25,33 +24,32 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 44,
-      "length": 1,
-      "encoding": "bcd",
-      "nibble": "both"
+      "start": "0x182C",
+      "length": 2,
+      "encoding": "bcd"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": 0,
+        "start": "0x1800",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 2",
-        "start": 8,
+        "start": "0x1808",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 3",
-        "start": 16,
+        "start": "0x1810",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 4",
-        "start": 24,
+        "start": "0x1818",
         "encoding": "bcd",
         "length": 6
       }
@@ -62,7 +60,7 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": 32,
+        "start": "0x1820",
         "encoding": "bcd",
         "length": 6
       }

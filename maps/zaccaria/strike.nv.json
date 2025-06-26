@@ -13,31 +13,41 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
+    "platform": "zaccaria-proto",
     "roms": [
       "strike"
     ]
   },
   "game_state": {
     "credits": {
+      "_notes": "Decoding based on PinMAME investigation.  DIPs might control scale?",
       "label": "Credits",
-      "start": 51,
+      "start": "0x0D83",
       "length": 1,
-      "encoding": "bcd"
+      "scale": 0.5,
+      "encoding": "int"
     },
     "score": {
       "label": "Score",
-      "start": 128,
+      "start": "0x0D80",
       "length": 3,
       "encoding": "bcd",
       "scale": 10
     },
     "ball_to_play": {
       "label": "Ball to Play",
-      "start": 156,
+      "start": "0x0D9C",
       "length": 1,
       "encoding": "bcd"
     }
   },
-  "high_scores": []
+  "high_scores": [
+    {
+      "label": "High Score",
+      "start": "0x0D42",
+      "length": 3,
+      "encoding": "bcd",
+      "scale": 10
+    }
+  ]
 }
