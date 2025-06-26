@@ -13,8 +13,7 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
-    "nibble": "high",
+    "platform": "bally-stern-6800",
     "roms": [
       "vector"
     ]
@@ -22,32 +21,32 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 61,
+      "start": "0x023D",
       "length": 2,
       "encoding": "bcd"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": 72,
+        "start": "0x0248",
         "encoding": "bcd",
         "length": 7
       },
       {
         "label": "Player 2",
-        "start": 79,
+        "start": "0x024F",
         "encoding": "bcd",
         "length": 7
       },
       {
         "label": "Player 3",
-        "start": 86,
+        "start": "0x0256",
         "encoding": "bcd",
         "length": 7
       },
       {
         "label": "Player 4",
-        "start": 93,
+        "start": "0x025D",
         "encoding": "bcd",
         "length": 7
       }
@@ -57,7 +56,7 @@
     "Bookkeeping functions": {
       "05": {
         "label": "Current Credits",
-        "start": 173,
+        "start": "0x02AD",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -65,7 +64,7 @@
       },
       "06": {
         "label": "Total Plays (Paid and Free Games)",
-        "start": 180,
+        "start": "0x02B4",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -73,7 +72,7 @@
       },
       "07": {
         "label": "Total Replays (Free Games)",
-        "start": 187,
+        "start": "0x02BB",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -81,7 +80,7 @@
       },
       "08": {
         "label": "Game Percentage",
-        "start": 194,
+        "start": "0x02C2",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -89,7 +88,7 @@
       },
       "09": {
         "label": "Total times 'High Score to Date' is beat",
-        "start": 201,
+        "start": "0x02C9",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -97,7 +96,7 @@
       },
       "10": {
         "label": "Coins Dropped thru Coin Chute #1",
-        "start": 208,
+        "start": "0x02D0",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -105,7 +104,7 @@
       },
       "11": {
         "label": "Coins Dropped thru Coin Chute #2",
-        "start": 215,
+        "start": "0x02D7",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -113,7 +112,7 @@
       },
       "12": {
         "label": "Coins Dropped thru Coin Chute #3",
-        "start": 222,
+        "start": "0x02DE",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -121,7 +120,7 @@
       },
       "13": {
         "label": "Number of Specials awarded from Panel Specials Only",
-        "start": 229,
+        "start": "0x02E5",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -129,7 +128,7 @@
       },
       "14": {
         "label": "Number of minutes of Game Play",
-        "start": 236,
+        "start": "0x02EC",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -137,7 +136,7 @@
       },
       "15": {
         "label": "Number of Service Credits",
-        "start": 243,
+        "start": "0x02F3",
         "length": 7,
         "encoding": "bcd",
         "min": 0,
@@ -150,7 +149,7 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": 166,
+        "start": "0x02A6",
         "encoding": "bcd",
         "length": 7
       }

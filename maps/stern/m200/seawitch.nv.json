@@ -7,8 +7,7 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2022 by HorsePin",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 302,
+    "platform": "stern-m200",
     "roms": [
       "seawitch"
     ]
@@ -20,7 +19,7 @@
       "score": {
         "encoding": "bcd",
         "length": 3,
-        "start": 203
+        "start": "0x02CB"
       }
     }
   ]

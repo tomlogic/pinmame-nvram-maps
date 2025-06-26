@@ -45,8 +45,7 @@ def shift_map_base(record: Union[list, dict], offset: int) -> None:
                 record[key] = '0x%04X' % (to_int(value) + offset)
             else:
                 shift_map_base(value, offset)
-    else:
-        print("ignoring", record)
+
 
 PLATFORM_DIR = os.path.join(os.path.dirname(__file__), '../platforms')
 
@@ -106,6 +105,7 @@ for file in args.maps:
 
     if errors:
         print("Aborting update of %s due to errors." % file)
+        exit(-1)
 
     for attribute in ['endian', 'nibble', 'ramsize']:
         metadata.pop(attribute, None)

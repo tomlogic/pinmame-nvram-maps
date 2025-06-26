@@ -12,8 +12,7 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
-    "nibble": "high",
+    "platform": "bally-stern-6800",
     "roms": [
       "medusa"
     ]
@@ -21,32 +20,32 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 61,
+      "start": "0x023D",
       "length": 2,
       "encoding": "bcd"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": 72,
+        "start": "0x0248",
         "encoding": "bcd",
         "length": 7
       },
       {
         "label": "Player 2",
-        "start": 79,
+        "start": "0x024F",
         "encoding": "bcd",
         "length": 7
       },
       {
         "label": "Player 3",
-        "start": 86,
+        "start": "0x0256",
         "encoding": "bcd",
         "length": 7
       },
       {
         "label": "Player 4",
-        "start": 93,
+        "start": "0x025D",
         "encoding": "bcd",
         "length": 7
       }
@@ -57,7 +56,7 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": 166,
+        "start": "0x02A6",
         "encoding": "bcd",
         "length": 7
       }

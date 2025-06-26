@@ -12,8 +12,7 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
-    "nibble": "high",
+    "platform": "bally-stern-6800",
     "roms": [
       "smmanc"
     ]
@@ -21,44 +20,44 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 57,
+      "start": "0x0239",
       "length": 2,
       "encoding": "bcd"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": 73,
+        "start": "0x0249",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 2",
-        "start": 79,
+        "start": "0x024F",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 3",
-        "start": 85,
+        "start": "0x0255",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 4",
-        "start": 91,
+        "start": "0x025B",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 5",
-        "start": 67,
+        "start": "0x0243",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 6",
-        "start": 61,
+        "start": "0x023D",
         "encoding": "bcd",
         "length": 6
       }
@@ -69,7 +68,7 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": 207,
+        "start": "0x02CF",
         "encoding": "bcd",
         "length": 6
       }
@@ -79,7 +78,7 @@
     "Bookkeeping functions": {
       "05": {
         "label": "Current Credits",
-        "start": 213,
+        "start": "0x02D5",
         "length": 6,
         "encoding": "bcd",
         "min": 0,
@@ -87,7 +86,7 @@
       },
       "06": {
         "label": "Total Plays (Paid and Free Games)",
-        "start": 219,
+        "start": "0x02DB",
         "length": 6,
         "encoding": "bcd",
         "min": 0,
@@ -95,7 +94,7 @@
       },
       "07": {
         "label": "Total Replays (Free Games)",
-        "start": 225,
+        "start": "0x02E1",
         "length": 6,
         "encoding": "bcd",
         "min": 0,
@@ -103,7 +102,7 @@
       },
       "08": {
         "label": "Total times 'High Game to Date' is beat",
-        "start": 231,
+        "start": "0x02E7",
         "length": 6,
         "encoding": "bcd",
         "min": 0,
@@ -111,7 +110,7 @@
       },
       "09": {
         "label": "Coins Dropped thru Coin Chute #1",
-        "start": 237,
+        "start": "0x02ED",
         "length": 6,
         "encoding": "bcd",
         "min": 0,
@@ -119,7 +118,7 @@
       },
       "10": {
         "label": "Coins Dropped thru Coin Chute #2",
-        "start": 243,
+        "start": "0x02F3",
         "length": 6,
         "encoding": "bcd",
         "min": 0,
@@ -127,7 +126,7 @@
       },
       "11": {
         "label": "Coins Dropped thru Coin Chute #3",
-        "start": 249,
+        "start": "0x02F9",
         "length": 6,
         "encoding": "bcd",
         "min": 0,

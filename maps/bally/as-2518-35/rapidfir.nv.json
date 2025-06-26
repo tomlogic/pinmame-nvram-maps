@@ -11,8 +11,7 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
-    "nibble": "high",
+    "platform": "bally-stern-6800",
     "roms": [
       "rapidfir"
     ]
@@ -20,20 +19,20 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 44,
+      "start": "0x022C",
       "length": 2,
       "encoding": "bcd"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": 51,
+        "start": "0x0233",
         "encoding": "bcd",
         "length": 7
       },
       {
         "label": "Player 2",
-        "start": 58,
+        "start": "0x023A",
         "encoding": "bcd",
         "length": 7
       }
