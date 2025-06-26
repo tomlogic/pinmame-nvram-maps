@@ -7,8 +7,7 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2022 by YourName your email>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 8238,
+    "platform": "gottlieb-system3",
     "roms": [
       "freddy"
     ]
