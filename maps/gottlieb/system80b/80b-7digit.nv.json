@@ -12,8 +12,7 @@
     "version": 0.4,
     "copyright": "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "nibble": "low",
+    "platform": "gottlieb-system80",
     "roms": [
       "bountyh",
       "bounthfp",
@@ -84,7 +83,7 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 57,
+      "start": "0x1839",
       "encoding": "bcd",
       "length": 2
     }
@@ -94,13 +93,13 @@
       "label": "High Score #1",
       "short_label": "1st",
       "initials": {
-        "start": 186,
+        "start": "0x18BA",
         "encoding": "ch",
         "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
-        "start": 192,
+        "start": "0x18C0",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
@@ -110,13 +109,13 @@
       "label": "High Score #2",
       "short_label": "2nd",
       "initials": {
-        "start": 198,
+        "start": "0x18C6",
         "encoding": "ch",
         "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
-        "start": 204,
+        "start": "0x18CC",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
@@ -126,13 +125,13 @@
       "label": "High Score #3",
       "short_label": "3rd",
       "initials": {
-        "start": 210,
+        "start": "0x18D2",
         "encoding": "ch",
         "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
-        "start": 216,
+        "start": "0x18D8",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
@@ -142,13 +141,13 @@
       "label": "High Score #4",
       "short_label": "4th",
       "initials": {
-        "start": 222,
+        "start": "0x18DE",
         "encoding": "ch",
         "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
-        "start": 228,
+        "start": "0x18E4",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
@@ -158,13 +157,13 @@
       "label": "High Score #5",
       "short_label": "5th",
       "initials": {
-        "start": 234,
+        "start": "0x18EA",
         "encoding": "ch",
         "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
-        "start": 240,
+        "start": "0x18F0",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
@@ -175,68 +174,68 @@
     "Bookkeeping": {
       "01": {
         "label": "Left Chute Coins",
-        "start": 0,
+        "start": "0x1800",
         "encoding": "bcd",
         "length": 4
       },
       "02": {
         "label": "Right Chute Coins",
-        "start": 4,
+        "start": "0x1804",
         "encoding": "bcd",
         "length": 4
       },
       "03": {
         "label": "Center Chute Coins",
-        "start": 8,
+        "start": "0x1808",
         "encoding": "bcd",
         "length": 4
       },
       "04": {
         "label": "Total Plays",
-        "start": 12,
+        "start": "0x180C",
         "encoding": "bcd",
         "length": 4
       },
       "05": {
         "label": "Total Replays",
-        "start": 16,
+        "start": "0x1810",
         "encoding": "bcd",
         "length": 4
       },
       "07": {
         "label": "Extra Balls",
-        "start": 20,
+        "start": "0x1814",
         "encoding": "bcd",
         "length": 4
       },
       "08": {
         "label": "Tilts",
-        "start": 24,
+        "start": "0x1818",
         "encoding": "bcd",
         "length": 4
       },
       "09": {
         "label": "Specials",
-        "start": 28,
+        "start": "0x181C",
         "encoding": "bcd",
         "length": 4
       },
       "10": {
         "label": "Times HGTD Awarded",
-        "start": 32,
+        "start": "0x1820",
         "encoding": "bcd",
         "length": 4
       },
       "14": {
         "label": "Highest Game To Date",
-        "start": 48,
+        "start": "0x1830",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
       },
       "14a": {
         "label": "HGTD Initials",
-        "start": 42,
+        "start": "0x182A",
         "encoding": "ch",
         "null": "truncate",
         "length": 6
@@ -244,7 +243,7 @@
       "15": {
         "label": "Game Time",
         "suffix": " seconds",
-        "start": 36,
+        "start": "0x1824",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
@@ -255,21 +254,21 @@
     "Standard Adjustments": {
       "11": {
         "label": "First High Score",
-        "start": 54,
+        "start": "0x1836",
         "encoding": "bcd",
         "length": 2,
         "scale": 100000
       },
       "12": {
         "label": "Second High Score",
-        "start": 56,
+        "start": "0x1838",
         "encoding": "bcd",
         "length": 2,
         "scale": 100000
       },
       "13": {
         "label": "Third High Score",
-        "start": 58,
+        "start": "0x183A",
         "encoding": "bcd",
         "length": 2,
         "scale": 100000
