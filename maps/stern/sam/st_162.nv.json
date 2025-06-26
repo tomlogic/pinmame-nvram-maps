@@ -7,8 +7,7 @@
     "version": 0.1,
     "copyright": "Copyright (C)2024 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
-    "ramsize": 131118,
+    "platform": "stern-sam",
     "roms": [
       "st_162"
     ]
@@ -19,25 +18,25 @@
         "label": "Player 1",
         "encoding": "int",
         "length": 4,
-        "start": 68068
+        "start": "0x21109E4"
       },
       {
         "label": "Player 2",
         "encoding": "int",
         "length": 4,
-        "start": 68072
+        "start": "0x21109E8"
       },
       {
         "label": "Player 3",
         "encoding": "int",
         "length": 4,
-        "start": 68076
+        "start": "0x21109EC"
       },
       {
         "label": "Player 4",
         "encoding": "int",
         "length": 4,
-        "start": 68080
+        "start": "0x21109F0"
       }
     ]
   },
@@ -49,12 +48,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 11968
+        "start": "0x2102EC0"
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 11992
+        "start": "0x2102ED8"
       }
     },
     {
@@ -64,12 +63,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12000
+        "start": "0x2102EE0"
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12024
+        "start": "0x2102EF8"
       }
     },
     {
@@ -79,12 +78,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12032
+        "start": "0x2102F00"
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12056
+        "start": "0x2102F18"
       }
     },
     {
@@ -94,12 +93,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12064
+        "start": "0x2102F20"
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12088
+        "start": "0x2102F38"
       }
     },
     {
@@ -109,12 +108,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12096
+        "start": "0x2102F40"
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12120
+        "start": "0x2102F58"
       }
     }
   ],
@@ -125,12 +124,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12128
+        "start": "0x2102F60"
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12152,
+        "start": "0x2102F78",
         "suffix": " Combos"
       }
     },
@@ -140,12 +139,12 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12160
+        "start": "0x2102F80"
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12184,
+        "start": "0x2102F98",
         "suffix": " Warps"
       }
     },
@@ -155,54 +154,54 @@
         "encoding": "ch",
         "null": "terminate",
         "length": 11,
-        "start": 12192
+        "start": "0x2102FA0"
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12216,
+        "start": "0x2102FB8",
         "suffix": " Medals"
       }
     }
   ],
   "checksum16": [
     {
-      "start": 11968,
+      "start": "0x2102EC0",
       "length": 30,
       "label": "Grand Champion"
     },
     {
-      "start": 12000,
+      "start": "0x2102EE0",
       "length": 30,
       "label": "High Score #1"
     },
     {
-      "start": 12032,
+      "start": "0x2102F00",
       "length": 30,
       "label": "High Score #2"
     },
     {
-      "start": 12064,
+      "start": "0x2102F20",
       "length": 30,
       "label": "High Score #3"
     },
     {
-      "start": 12096,
+      "start": "0x2102F40",
       "length": 30,
       "label": "High Score #4"
     },
     {
-      "start": 12128,
+      "start": "0x2102F60",
       "length": 30,
       "label": "Combo Champion"
     },
     {
-      "start": 12160,
+      "start": "0x2102F80",
       "length": 30,
       "label": "Warp Champion"
     },
     {
-      "start": 12192,
+      "start": "0x2102FA0",
       "length": 30,
       "label": "Medals Champion"
     }
