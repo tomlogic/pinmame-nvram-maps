@@ -7,8 +7,7 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 8238,
+    "platform": "whitestar",
     "roms": [
       "jplstw22"
     ]

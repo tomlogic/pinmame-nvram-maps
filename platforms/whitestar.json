@@ -1,0 +1,13 @@
+{
+  "_notes": "Sega/Stern Whitestar 6809 @ 2MHz, 8KB of NVRAM at address 0x0000",
+  "cpu": "6809",
+  "endian": "big",
+  "memory_layout": [
+    {
+      "label": "NVRAM",
+      "address": "0x0000",
+      "size": "0x2000",
+      "type": "nvram"
+    }
+  ]
+}

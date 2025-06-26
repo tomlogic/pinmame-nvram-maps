@@ -7,8 +7,7 @@
     "version": 0.1,
     "copyright": "Copyright (C) 2022 by HorsePin",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 8328,
+    "platform": "whitestar",
     "roms": [
       "ripleys"
     ]
