@@ -35,9 +35,9 @@ We're using the `--ascii-output` option to `jq` so it's consistent with the
 Python output of bytes values 0x80 to 0xFF.  For example, `hs_l4.nv.json`
 encodes a 0xC4 byte in the default attract text as `\u00C4`.
 
-The script `tools/reformat-map.sh` can reformat one (or all) of the JSON
+The script `tools/reformat-json.sh` can reformat one (or all) of the JSON
 files using `jq`.  The script `tools/normalize-map.py` uses Python to do
-the same formatting as `jq`, but also normalizes files to the latest format.
+the same formatting as `jq`, but also normalizes maps to the latest format.
 
 [Project home](https://github.com/tomlogic/pinmame-nvram-maps)
 

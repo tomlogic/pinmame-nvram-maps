@@ -17,10 +17,10 @@ jobs:
       - name: Check for file formatting issues or outdated index.json
         run: |
           shopt -s globstar
-          tools/reformat-map.sh **/*.nv.json
+          tools/reformat-json.sh **/*.json
           if [[ -n $(git status --porcelain) ]]; then
               git status
-              echo "Some maps are formatted incorrectly. Please check the README on how to reformat your files."
+              echo "Some JSON files are formatted incorrectly. Please check the README on how to reformat your files."
               exit 1
           fi
 
