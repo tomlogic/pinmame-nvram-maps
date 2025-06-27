@@ -8,7 +8,7 @@
     "Credits can go higher than 15 but are in that case displayed as 15",
     "High scores seem to not be saved?"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",

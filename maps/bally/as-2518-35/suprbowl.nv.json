@@ -8,7 +8,7 @@
     "This game is a conversion of Bally Midway's 1984 'X's & O's'.",
     "7-digit score display"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",

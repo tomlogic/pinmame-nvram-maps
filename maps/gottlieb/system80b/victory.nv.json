@@ -8,7 +8,7 @@
     "Note that offsets 0xF8 through 0xFC are checksums of each of the high scores.",
     "Modified version of gottlieb_80b-2.nv.json with game-specific DIP switch entries."
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",

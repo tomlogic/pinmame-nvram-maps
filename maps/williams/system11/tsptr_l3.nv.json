@@ -5,7 +5,7 @@
     "Williams System 11B",
     "TODO: verify last_game offsets, list values for adj-11, verify adj-50"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.1,
     "copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",

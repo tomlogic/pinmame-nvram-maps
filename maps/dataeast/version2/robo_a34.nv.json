@@ -5,7 +5,7 @@
     "     added `mask` to initials to get uppercase (Tom Collins)",
     "(only some entries have low nibble, so don't set _nibble for entire file)"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
     "copyright": "Copyright (C) 2016 by Horsepin",

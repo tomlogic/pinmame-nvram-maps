@@ -8,7 +8,7 @@
     "Note that offsets 248 through 252 are 4-bit checksums of each of the high scores.",
     "Note that victory moved to its own map with game-specific DIP switch entries."
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.4,
     "copyright": "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",

@@ -10,7 +10,7 @@
     "The vpx table is overriding all rom switches, so the credits are always shown.",
     "Same layout as centaur."
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",

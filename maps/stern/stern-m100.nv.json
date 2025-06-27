@@ -4,7 +4,7 @@
     "NVRAM file mapped to memory address 0x200 in PinMAME",
     "Valid for all Stern M-100 MPU games.  ROMs with 'fp' suffix are Free Play."
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.3,
     "copyright": "Copyright (C) 2023 by Tom Collins <tom@tomlogic.com>",
