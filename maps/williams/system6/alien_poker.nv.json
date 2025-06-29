@@ -4,13 +4,12 @@
     "Alien Poker (Williams, 1980)",
     "https://www.ipdb.org/machine.cgi?id=48"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "nibble": "low",
+    "platform": "williams-system6",
     "roms": [
       "alpok_b6",
       "alpok_f6",
@@ -24,7 +23,7 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 82,
+      "start": "0x0152",
       "length": 2,
       "encoding": "bcd"
     }
@@ -34,7 +33,7 @@
       "label": "First Place",
       "short_label": "1st",
       "score": {
-        "start": 72,
+        "start": "0x0148",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
@@ -45,81 +44,81 @@
     "Standard Audits": {
       "01": {
         "label": "Coins, left chute",
-        "start": 6,
+        "start": "0x0106",
         "length": 6,
         "encoding": "bcd"
       },
       "02": {
         "label": "Coins, center chute",
-        "start": 12,
+        "start": "0x010C",
         "length": 6,
         "encoding": "bcd"
       },
       "03": {
         "label": "Coins, right chute",
-        "start": 18,
+        "start": "0x0112",
         "length": 6,
         "encoding": "bcd"
       },
       "04": {
         "label": "Total Paid Credits",
-        "start": 24,
+        "start": "0x0118",
         "length": 6,
         "encoding": "bcd"
       },
       "05": {
         "label": "Special Credits",
-        "start": 30,
+        "start": "0x011E",
         "length": 6,
         "encoding": "bcd"
       },
       "06": {
         "label": "Replay Score Credits",
-        "start": 36,
+        "start": "0x0124",
         "length": 6,
         "encoding": "bcd"
       },
       "07": {
         "label": "Match Credits",
-        "start": 42,
+        "start": "0x012A",
         "length": 6,
         "encoding": "bcd"
       },
       "08": {
         "label": "Total Credits",
-        "start": 48,
+        "start": "0x0130",
         "length": 6,
         "encoding": "bcd"
       },
       "09": {
         "label": "Total Extra Balls",
-        "start": 54,
+        "start": "0x0136",
         "length": 6,
         "encoding": "bcd"
       },
       "10": {
         "label": "Total Ball Time",
-        "start": 60,
+        "start": "0x013C",
         "length": 6,
         "encoding": "bcd",
         "units": "minutes"
       },
       "11": {
         "label": "Total Balls Played",
-        "start": 66,
+        "start": "0x0142",
         "length": 6,
         "encoding": "bcd"
       },
       "12": {
         "label": "Current HSTD",
-        "start": 72,
+        "start": "0x0148",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
       },
       "99": {
         "label": "Check Byte",
-        "start": 127,
+        "start": "0x017F",
         "length": 2,
         "encoding": "int",
         "special_values": {
@@ -132,42 +131,42 @@
     "Standard Adjustments": {
       "13": {
         "label": "Backup HSTD",
-        "start": 129,
+        "start": "0x0181",
         "length": 2,
         "encoding": "bcd",
         "scale": 100000
       },
       "14": {
         "label": "Replay 1 Score",
-        "start": 131,
+        "start": "0x0183",
         "length": 2,
         "encoding": "bcd",
         "scale": 100000
       },
       "15": {
         "label": "Replay 2 Score",
-        "start": 133,
+        "start": "0x0185",
         "length": 2,
         "encoding": "bcd",
         "scale": 100000
       },
       "16": {
         "label": "Replay 3 Score",
-        "start": 135,
+        "start": "0x0187",
         "length": 2,
         "encoding": "bcd",
         "scale": 100000
       },
       "17": {
         "label": "Replay 4 Score",
-        "start": 137,
+        "start": "0x0189",
         "length": 2,
         "encoding": "bcd",
         "scale": 100000
       },
       "18": {
         "label": "Maximum Credits",
-        "start": 139,
+        "start": "0x018B",
         "length": 2,
         "encoding": "bcd",
         "special_values": {
@@ -176,7 +175,7 @@
       },
       "19": {
         "label": "Pricing Control",
-        "start": 141,
+        "start": "0x018D",
         "length": 2,
         "encoding": "bcd",
         "min": 0,
@@ -194,43 +193,43 @@
       },
       "20": {
         "label": "Left Coin Slot Multiplier",
-        "start": 143,
+        "start": "0x018F",
         "length": 2,
         "encoding": "bcd"
       },
       "21": {
         "label": "Center Coin Slot Multiplier",
-        "start": 145,
+        "start": "0x0191",
         "length": 2,
         "encoding": "bcd"
       },
       "22": {
         "label": "Right Coin Slot Multiplier",
-        "start": 147,
+        "start": "0x0193",
         "length": 2,
         "encoding": "bcd"
       },
       "23": {
         "label": "Coin Units Required for Credit",
-        "start": 149,
+        "start": "0x0195",
         "length": 2,
         "encoding": "bcd"
       },
       "24": {
         "label": "Coin Units Bonus Point",
-        "start": 151,
+        "start": "0x0197",
         "length": 2,
         "encoding": "bcd"
       },
       "25": {
         "label": "HSTD Credits",
-        "start": 153,
+        "start": "0x0199",
         "length": 2,
         "encoding": "bcd"
       },
       "26A": {
         "label": "Extra Balls",
-        "start": 155,
+        "start": "0x019B",
         "length": 1,
         "encoding": "enum",
         "values": [
@@ -240,7 +239,7 @@
       },
       "26B": {
         "label": "Match",
-        "start": 156,
+        "start": "0x019C",
         "length": 1,
         "encoding": "enum",
         "values": [
@@ -250,7 +249,7 @@
       },
       "27": {
         "label": "Special Awards",
-        "start": 157,
+        "start": "0x019D",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -261,7 +260,7 @@
       },
       "28": {
         "label": "Replay Award",
-        "start": 159,
+        "start": "0x019F",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -271,7 +270,7 @@
       },
       "29": {
         "label": "Tilt Warnings",
-        "start": 161,
+        "start": "0x01A1",
         "length": 2,
         "encoding": "bcd",
         "min": 1,
@@ -279,7 +278,7 @@
       },
       "30": {
         "label": "Number of Balls",
-        "start": 163,
+        "start": "0x01A3",
         "length": 2,
         "encoding": "bcd"
       }
@@ -287,7 +286,7 @@
     "Game Adjustments": {
       "31A": {
         "label": "POKER lamp memory",
-        "start": 165,
+        "start": "0x01A5",
         "length": 1,
         "encoding": "enum",
         "values": [
@@ -297,7 +296,7 @@
       },
       "31B": {
         "label": "POKER 'P' lamp",
-        "start": 166,
+        "start": "0x01A6",
         "length": 1,
         "encoding": "enum",
         "values": [
@@ -307,7 +306,7 @@
       },
       "32": {
         "label": "Extra Ball Control",
-        "start": 167,
+        "start": "0x01A7",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -317,7 +316,7 @@
       },
       "33A": {
         "label": "Background Sound",
-        "start": 169,
+        "start": "0x01A9",
         "length": 1,
         "encoding": "enum",
         "values": [
@@ -327,7 +326,7 @@
       },
       "33B": {
         "label": "Ace Eject Hole Memory",
-        "start": 170,
+        "start": "0x01AA",
         "length": 1,
         "encoding": "enum",
         "values": [
@@ -337,7 +336,7 @@
       },
       "34": {
         "label": "Extra Ball Lamp Memory",
-        "start": 171,
+        "start": "0x01AB",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -347,7 +346,7 @@
       },
       "35A": {
         "label": "Attract Mode Sounds",
-        "start": 173,
+        "start": "0x01AD",
         "length": 1,
         "encoding": "enum",
         "values": [
@@ -357,7 +356,7 @@
       },
       "35B": {
         "label": "Royal Flush Value Memory",
-        "start": 174,
+        "start": "0x01AE",
         "length": 1,
         "encoding": "enum",
         "values": [

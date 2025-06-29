@@ -7,13 +7,12 @@
     "Bally MPU AS-2518-35",
     "6-digit score display"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
-    "nibble": "high",
+    "platform": "bally-stern-6800",
     "roms": [
       "paragon"
     ]
@@ -21,32 +20,32 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 57,
+      "start": "0x0239",
       "length": 1,
       "encoding": "bcd"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": 61,
+        "start": "0x023D",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 2",
-        "start": 67,
+        "start": "0x0243",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 3",
-        "start": 73,
+        "start": "0x0249",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 4",
-        "start": 74,
+        "start": "0x024A",
         "encoding": "bcd",
         "length": 6
       }
@@ -57,7 +56,7 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": 207,
+        "start": "0x02CF",
         "encoding": "bcd",
         "length": 6
       }

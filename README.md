@@ -1,10 +1,10 @@
-# PinMAME NVRAM Maps
+# Pinball Memory Maps
 
-The goal of this project is to document the contents of the `.nv` files
-PinMAME uses to store the contents of a game's non-volatile RAM.  At a
-basic level, it's useful to know how a game stores its high scores so
-other programs (like a game launcher) can parse and display that
-information.
+The initial goal of this project was to document the contents of the `.nv`
+files PinMAME (the solid state pinball machine ROM emulator) uses to store
+the contents of a game's non-volatile RAM.  At a  basic level, it's useful
+to know how a game stores its high scores so  other programs (like a game
+launcher) can parse and display that information.
 
 Going further and documenting adjustments and audits allows for the
 development of alternate interfaces (like a web browser) to view audits
@@ -13,6 +13,10 @@ and change game settings without using the service menu.
 This project started in October 2015, and should be considered "beta"
 quality.  As people map more games, the file format may change to
 support additional requirements.
+
+Starting in 2025, it transitioned to include mapping of all RAM for a game,
+including the volatile RAM that isn't stored in `.nv` files, and isn't 
+maintained by battery backup in physical games.
 
 I chose to use [JSON](http://json.org) as a simple yet flexible file
 format for this project.  If necessary, other projects should be able to
@@ -35,9 +39,9 @@ We're using the `--ascii-output` option to `jq` so it's consistent with the
 Python output of bytes values 0x80 to 0xFF.  For example, `hs_l4.nv.json`
 encodes a 0xC4 byte in the default attract text as `\u00C4`.
 
-The script `tools/reformat-map.sh` can reformat one (or all) of the JSON
+The script `tools/reformat-json.sh` can reformat one (or all) of the JSON
 files using `jq`.  The script `tools/normalize-map.py` uses Python to do
-the same formatting as `jq`, but also normalizes files to the latest format.
+the same formatting as `jq`, but also normalizes maps to the latest format.
 
 [Project home](https://github.com/tomlogic/pinmame-nvram-maps)
 
@@ -83,13 +87,11 @@ to that range.  It's a simple matter to change a setting and see the
 modified location in the NVRAM file.
 
 Audits are a bit more difficult, and I intend to build a tool to modify
-portions of the NVRAM file to aid in matching audits to file locations. 
-Setting each 6-byte grouping to its starting address should allow for
-quickly mapping each audit.
+portions of the NVRAM file to aid in matching audits to file locations.
 
 ## Map Index
 
-The file `index.json` is a simple dictionary that maps PinMAME ROM names
+The file `index.json` is a simple dictionary that maps PinMAME romset names
 to their corresponding map file (which may be valid for multiple ROMs).
 Implementations can use it for lookups  instead of parsing the entire list
 of maps.
@@ -100,52 +102,46 @@ of maps.
   directory separator (e.g., `"maps/williams/wpc/dm_lx4.nv.json"`).
 - Use `tools/update-index.py` to automatically update the index.
 
-## JSON File Format
+## Listing of PinMAME ROM sets
 
-The JSON file is essentially a big dictionary or associative array, with
-the following key/value pairs.  It may help to review one or more of the
-included files as an example of the file format while reading this
-section of the documentation.
+The file `romnames.json` is a simple dictionary with PinMAME romset names 
+as the key (e.g., "hs_l4") and a value with a human-readable description
+(e.g., "High Speed (L-4)").
 
-In cases where this specification isn't clear, please use existing maps
-or the `nvram_parser.py` sample as a guide.
+You can update the contents of that file by piping the output of
+`pinmame -listfull` through the `tools/update-romnames.py` script.
 
-Numbers can appear as decimal values (`1234`) or hexadecimal values
-inside of strings (`"0x4D2"`).  `_fileformat` v0.3 deprecated usage of
-hexadecimal strings outside of the `mask` attribute.
+## Platform Files
 
-### Meta Data
+Starting with `_fileformat` v0.7, each map references a "platform" file
+that primarily describes the memory layout for the game.  The top-level
+`platforms/` directory holds these JSON files, and the map file's
+`_metadata` section has a `platform` property with the name of that file
+without the `.json` extension (e.g., "williams-system11").
 
-Starting with fileformat v0.6, all metadata fields other than `_fileformat`
-and `_notes` are now part of a `_metadata` attribute.
+The platform file has the following properties:
 
-Note that keys starting with underscore and the `_metadata` attribute 
-describe the file itself and provide defaults for later entries.
-
-- **_notes**: Notes about the file, possibly indicating who created it or
-  portions of the file that may not be entirely correct.  Can be a string
-  or an array of strings.
-- **_fileformat** _(required)_: A `float` indicating the file format's
-
-#### _metadata Properties
-
-- **roms** _(required)_: A list of PinMAME ROMs that use this map.
-  version.  See Version History at the end of this file for changes.
-- **version** _(required)_: A `float` indicating the JSON file's version.
-- **copyright**: Original author of the file, possibly a list of people
-  who have contributed to the file.
-- **license**: All files from this project are covered by the LGPL license.
-  Modified map files, or maps created using an existing map as a starting
-  point are also covered by that license.
-- **endian**: Set to either `"big"` or `"little"` to indicate the default
-  byte order of multi-byte values.  Defaults to `"big"`.
+- **_notes**: Optional notes about the hardware platform.
+- **cpu**: Optional string describing the hardware's CPU.
+- **endian**: Set to either `"big"` (default) or `"little"` to indicate the 
+  default byte order of multibyte values.
   Refers to which end of the number is stored first.  For example, a
   `bcd`-encoded score of 123,450 is the byte sequence 0x12, 0x34, 0x50 if
   big-endian, and 0x50 0x34 0x12 if little-endian.
-- **nibble**: Set to `"both"` (default), `"high"`, or `"low"` to identify
-  which 4-bit nibbles to use from each byte.  Some games (e.g., Williams
-  System 7, Gottlieb System 80B, Stern M-100) used 4-bit NVRAM, so only
-  half of each byte is valid.
+- **memory_layout**: A list of dictionaries describing RAM regions for the 
+  given hardware.
+
+### Memory Layout Entries
+- **label**: Optional description of the memory for human reference.
+- **_notes**: Optional notes about this section of `memory_layout`.
+- **type**: Either "ram" (for volatile memory) or "nvram" (for non-volatile
+  memory stored in PinMAME's `.nv` file for the romset).
+- **address**: The base CPU address used to access the memory contents.
+- **size**: The number of addresses covered by the device.
+- **nibble**: Set to `"both"` (default for 8-bit memory), `"high"`, or 
+  `"low"` to identify which 4-bit nibble to use from each address.  Some 
+  games (e.g., Williams System 7, Gottlieb System 80B, Stern M-100) used
+  4-bit NVRAM, so only half of each byte is valid.
   `"both"` indicates use of the full 8 bits/byte.  Set to `"low"` to use
   the lower 4 bits of the byte or `high` to use the upper 4 bits of the byte. 
   The `bcd` sequence `0x12 0x34 0x56` translates to `123456` when `nibble` is
@@ -153,10 +149,52 @@ describe the file itself and provide defaults for later entries.
   Robowars has an example of a `nibble=low` `ch` field, where the sequence
   `0x04 0x01 0x04 0x02 0x04 0x03` translates to `0x41 0x42 0x43` which is the
   string `"ABC"`.
-  Stern Dracula and Wild Fyre (identical ROM) have examples of `nibble=high`.
-- **ramsize**: Size of the RAM represented by the `.nv` file.  Note that this
-  is typically smaller than the `.nv` file size, due to PinMAME appending
-  additional data to the file.
+  The `bally-stern-6800` platform uses `nibble=high` and Williams System 4-7
+  use `nibble=low`.
+
+## Maps File Format
+
+The JSON file is essentially a big dictionary or associative array, with
+the following key/value pairs.  It may help to review one or more of the
+included files as an example of the file format while reading this
+section of the documentation.
+
+In cases where this specification isn't clear, please use existing maps
+or the Python library as a guide.
+
+Numbers can appear as decimal values (`1234`) or hexadecimal values
+inside of strings (`"0x4D2"`).  `_fileformat` v0.3 deprecated usage of
+hexadecimal strings except for the `mask` attribute, but it was undeprecated
+for v0.7 when locations represented memory addresses from the CPU's 
+perspective, not just offsets into the `.nv` file.
+
+### Metadata
+
+Starting with fileformat v0.6, all metadata fields other than `_fileformat`
+and `_notes` are now part of a `_metadata` attribute.
+
+Note that keys starting with underscore and the `_metadata` attribute 
+describe the map itself and provide defaults for later entries.
+
+- **_notes**: Notes about the map, possibly indicating who created it or
+  portions of the map that may not be entirely correct.  Can be a string
+  or an array of strings.
+- **_fileformat** _(required)_: A `float` indicating the file's format.
+
+#### _metadata Properties
+
+- **roms** _(required)_: A list of PinMAME ROMs that use this map.
+  version.  See Version History at the end of this README for changes.
+- **version** _(required)_: A `float` indicating the map's version.
+- **copyright**: Original author of the map, possibly a list of people
+  who have contributed to the map.
+- **license**: All files from this project are covered by the LGPL license.
+  Modified map files, or maps created using an existing map as a starting
+  point are also covered by that license.
+- **platform**: Identifies the hardware platform (e.g., Williams WPC) for 
+  the ROMs covered by this map.  This is a string that corresponds to a
+  JSON file in the top-level `platforms/` directory.  See the Platform 
+  section above for details on what's covered in that file.
 - **char_map**: Characters to use for the `ch` encoding instead of a straight 
   ASCII table.  See Whirlwind (`whirl_l3.nv.json`) as an example.
 - **values**: A dictionary for value lists used by multiple entries.  Added
@@ -164,13 +202,14 @@ describe the file itself and provide defaults for later entries.
   to multiple sets of DIP switches.  The `value` property for an entry can
   reference a key to this dictionary instead of having a full list.
 
+
 ### Descriptors
 
-The map file contains objects describing sections of the `.nv` file and
-how to interpret them.  They're comprised of the following key/value pairs:
+The map file contains objects describing regions of memory and how to
+interpret them.  They're comprised of the following key/value pairs:
 
-- **_notes**: Notes for someone maintaining the file; not displayed when
-  processing an NVRAM file.  Can be a string or a list of strings.
+- **_notes**: Notes for someone maintaining the map; not displayed when
+  parsing memory.  Can be a string or a list of strings.
 
 - **encoding** _(required)_ must be one of the following:
   - `"enum"`: An enumerated type where the byte at `start` is used as an
@@ -186,7 +225,7 @@ how to interpret them.  They're comprised of the following key/value pairs:
     nibbles 0xA to 0xF as 0 numerically, or a space for display purposes.
   - `"ch"`: A sequence of 7-bit ASCII characters that may be shortened by a
     null byte (0x00) terminator based on the `"null"` attribute for the entry.
-    If the JSON file has `char_map` metadata, all bytes (including 0x00) are
+    If the map has `char_map` metadata, all bytes (including 0x00) are
 	indexes into that string.
   - `"raw"`: A series of raw bytes, useful for extracting data yet to be
     decoded or that requires custom processing.
@@ -199,44 +238,44 @@ how to interpret them.  They're comprised of the following key/value pairs:
     two-byte year (2015 is `0x07 0xDF`), month (1-12), day of month (1-31),
     day of the week (0-6, 0=Sunday), hour (0-23) and minute (0-59).
 
-- You must specify the location of data in the file using one or more of the
+- You must specify the location of data in memory one or more of the
   following directives:
-  - **start**: Offset into the `.nv` file of the first byte to
-    interpret.  Default behavior is to use that single byte unless the `end`
+  - **start**: Address of the first byte/nibble to interpret.  In the past, 
+    this was the same as the `.nv` file offset.  Starting with `_fileformat` 
+    v0.7, it's the CPU's address and can reference any entry in the platform
+    file's `memory_layout` section.
+    Default behavior is to use that single byte/nibble unless the `end`
     or `length` keys are present.  Either `start` or `offsets` are required.
-  - **end**: Offset into the file of the last byte to interpret.  Its value
+  - **end**: Address of the last byte/nibble to interpret.  Its value
     must be greater than or equal to `start`. 
-  - **length**: Number of bytes to interpret, must be at least 1 (default).
-  - **offsets**: Alternative to using start/end or start/length when bytes
-    aren't contiguous.  List of offsets to use.  Either `start` or `offsets`
+  - **length**: Number of bytes/nibbles to interpret, must be at least 1 
+    (default).
+  - **offsets**: Alternative to using start/end or start/length when addresses
+    aren't contiguous.  List of addresses to use.  Either `start` or `offsets`
     are required.  For `dipsw` encoding, this is actually a list of switch
     numbers.
 
 - These properties provide additional encoding details.
-  - **endian**: Set to either `"big"` or `"little"` to indicate the byte
-    order of multi-byte values.  Defaults to the metadata's `endian` setting 
-    (which defaults to `"big"`).
-  - **nibble**: Defaults to metadata's `nibble` setting (which defaults to
-    `"both"`).  See `nibble` for details.
+  - **endian**: Overrides the platform's `endian` setting.
+  - **nibble**: Overrides the platform's `nibble` setting for the platform's
+    Memory Layout section corresponding to the first address of the 
+    descriptor.
   - **null**: Used for `"ch"` encodings to specify null (0x00) byte handling.
       For `truncate` and `terminate`, ignore all bytes after the null.
     - `"ignore"`: Ignore (skip over) null bytes.  Default setting.
     - `"truncate"`: A null can shorten the string, but won't be present for
       strings that fill the allotted space.
     - `"terminate"`: Null bytes are always present and terminate the string.
-  - **packed**: Deprecated in favor of `nibble`.  Remove `packed=true` and
-    replace `packed=false` with `nibble=low` (or set `nibble` in the file's
-    metadata).
 
 - These properties are only related to displaying the value, independently of
-  how it's actually stored in memory or a `.nv` file.
-  - **label**: A label describing this collection of bytes in the `.nv` file. 
+  how it's actually stored in memory.
+  - **label**: A label describing this descriptor. 
   - **short_label**: An optional, abbreviated label for use when space is
     limited (like in a game launcher on a DMD). 
   - **values**: A list of strings or integers, used for the `enum` encoding
     (starting at index 0) and the `bits` encoding, as values for bit 0, 1, 2,
     etc.  Starting in `_fileformat` v0.5, this property can be a string that
-    references a list stored in the `values` metadata property for the file.
+    references a list stored in the `values` metadata property for the map.
   - **special_values**: A set of key/value pairs for a numeric field where some
     values have special meaning (for example, `{"0": "OFF"}`).
   - **units**: Used to indicate that a field contains a time value as either a
@@ -302,16 +341,16 @@ Keys that don't start with an underscore typically have groups of
 **descriptors** as their values.
 
 - **last_played**: A descriptor (likely with a `wpc_rtc` encoding) with a
-  date stamp of when PinMAME last saved the file.
+  date stamp of when PinMAME last saved the `.nv` file.
 - **high_scores**: The traditional high score table that would usually
   start with the Grand Champion and then proceed through First Place to
   Fourth Place.  An array of objects with the following key/value pairs:
   - **label**: A label describing the score (e.g., `"Grand Champion"`).
   - **short_label**: An abbreviated label (e.g., `"GC"`).
   - **initials**: Descriptor of where the high score's initials are stored
-    in the file.
-  - **score**: Descriptor of where the high score's score is stored in the
-    file.
+    in memory.
+  - **score**: Descriptor of where the high score's score is stored in
+    memory.
 - **mode_champions**: Another array of descriptors with recognition of
   other in-game accomplishments.
 - **adjustments**: An object of key/value pairs for groupings of
@@ -401,10 +440,10 @@ See `gottlieb/victory.nv.json` as a full example of DIP switch documentation.
 
 ### Checksums
 
-The objects used for the last two entries in the file are
+The objects used for the last two entries in the map are
 slightly different from the other descriptors.  They have the required
 `start` field, require either an inclusive `end` (preferred) or `length`, and
-`label` is optional.  They introduce an optional `groupings` key used to
+`label` is optional.  They introduce a new, optional `groupings` key used to
 treat a single descriptor as a list of groupings-sized ranges. 
 
 (On WPC games, the audits are a series of 6-byte entries, each with an
@@ -428,3 +467,4 @@ treat a single descriptor as a list of groupings-sized ranges.
         `_fileformat` into a new `_metadata` attribute with the leading
         underscore removed.
         Deprecate `last_game` attribute in favor of `game_state.scores`.
+- v0.7: Add `platform` metadata property.

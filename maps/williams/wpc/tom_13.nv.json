@@ -5,13 +5,12 @@
     "v0.2 (2018-03) by Tom Collins; added adjustments, audits, checksums",
     "v0.1 by Mike Metzger; last_game, high_scores, mode_champions"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.4,
     "copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 12288,
+    "platform": "williams-wpc-12K",
     "roms": [
       "tom_13",
       "tom_14h",

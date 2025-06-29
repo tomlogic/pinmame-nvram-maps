@@ -2,13 +2,12 @@
   "_notes": [
     "Compiled by HorsePin"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.1,
     "copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
-    "ramsize": 131118,
+    "platform": "stern-sam",
     "roms": [
       "tf_180"
     ]
@@ -19,25 +18,25 @@
         "label": "Player 1",
         "encoding": "int",
         "length": 4,
-        "start": 68068
+        "start": "0x21109E4"
       },
       {
         "label": "Player 2",
         "encoding": "int",
         "length": 4,
-        "start": 68072
+        "start": "0x21109E8"
       },
       {
         "label": "Player 3",
         "encoding": "int",
         "length": 4,
-        "start": 68076
+        "start": "0x21109EC"
       },
       {
         "label": "Player 4",
         "encoding": "int",
         "length": 4,
-        "start": 68080
+        "start": "0x21109F0"
       }
     ]
   },
@@ -46,140 +45,140 @@
       "label": "Autobot Grand Champion",
       "short_label": "AGC",
       "initials": {
-        "start": 11720,
+        "start": "0x2102DC8",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 11744
+        "start": "0x2102DE0"
       }
     },
     {
       "label": "Autobot #1",
       "short_label": "A#1",
       "initials": {
-        "start": 11752,
+        "start": "0x2102DE8",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 11776
+        "start": "0x2102E00"
       }
     },
     {
       "label": "Autobot #2",
       "short_label": "A#2",
       "initials": {
-        "start": 11784,
+        "start": "0x2102E08",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 11808
+        "start": "0x2102E20"
       }
     },
     {
       "label": "Autobot #3",
       "short_label": "A#3",
       "initials": {
-        "start": 11816,
+        "start": "0x2102E28",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 11840
+        "start": "0x2102E40"
       }
     },
     {
       "label": "Autobot #4",
       "short_label": "A#4",
       "initials": {
-        "start": 11848,
+        "start": "0x2102E48",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 11872
+        "start": "0x2102E60"
       }
     },
     {
       "label": "Decepticon Grand Champion",
       "short_label": "DGC",
       "initials": {
-        "start": 11880,
+        "start": "0x2102E68",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 11904
+        "start": "0x2102E80"
       }
     },
     {
       "label": "Decepticon #1",
       "short_label": "D#1",
       "initials": {
-        "start": 11912,
+        "start": "0x2102E88",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 11936
+        "start": "0x2102EA0"
       }
     },
     {
       "label": "Decepticon #2",
       "short_label": "D#2",
       "initials": {
-        "start": 11944,
+        "start": "0x2102EA8",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 11968
+        "start": "0x2102EC0"
       }
     },
     {
       "label": "Decepticon #3",
       "short_label": "D#3",
       "initials": {
-        "start": 11976,
+        "start": "0x2102EC8",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12000
+        "start": "0x2102EE0"
       }
     },
     {
       "label": "Decepticon #4",
       "short_label": "D#4",
       "initials": {
-        "start": 12008,
+        "start": "0x2102EE8",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "int",
         "length": 4,
-        "start": 12032
+        "start": "0x2102F00"
       }
     }
   ],
@@ -188,12 +187,12 @@
       "label": "Combo",
       "short_label": "Combo",
       "initials": {
-        "start": 12040,
+        "start": "0x2102F08",
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 12064,
+        "start": "0x2102F20",
         "encoding": "int",
         "length": 4
       }
@@ -202,12 +201,12 @@
       "label": "Best Combo Champion",
       "short_label": "Best Combo",
       "initials": {
-        "start": 12072,
+        "start": "0x2102F28",
         "encoding": "ch",
         "length": 3
       },
       "score": {
-        "start": 12096,
+        "start": "0x2102F40",
         "encoding": "int",
         "length": 4,
         "suffix": "-WAY"

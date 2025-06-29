@@ -12,6 +12,10 @@ Usage:
 
 File format updates
 -------------------
+* v0.7:
+    - add `platform` metadata
+    - start/end/offsets hex values no longer deprecated (and are now preferred)
+
 * v0.6:
     - move metadata properties into a separate `_metadata` section
 
@@ -55,6 +59,9 @@ def map_convert(pairs):
         # set minimum file format based on appearance of certain keys
         if k == '_fileformat':
             minimum_file_format(v)
+        elif k == 'platform':
+            # metadata "platform" introduced in v0.7
+            minimum_file_format(0.7)
         elif k == '_nibble':
             # global "_nibble" introduced in v0.4
             minimum_file_format(0.4)
@@ -75,18 +82,6 @@ def map_convert(pairs):
                 result['nibble'] = 'low'
                 minimum_file_format(0.2)
             # silently remove default packed=true
-        elif k in ['start', 'end'] and isinstance(v, str) and v.startswith('0x'):
-            # as of v0.3, deprecate start/end stored as hex
-            # But file format is still valid as v0.1 or v0.2.
-            result[k] = int(v, 16)
-        elif k == 'offsets':
-            offsets = []
-            for offset in v:
-                if isinstance(offset, str) and offset.startswith('0x'):
-                    offsets.append(int(offset, 16))
-                else:
-                    offsets.append(offset)
-            result[k] = offsets
         else:
             result[k] = v
 

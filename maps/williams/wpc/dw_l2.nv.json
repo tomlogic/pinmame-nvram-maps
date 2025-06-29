@@ -4,13 +4,12 @@
     "WPC 20006, SYS 2.43 REV 0.2",
     "Doctor Who (Bally, 1992, WPC)"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.3,
     "copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 8192,
+    "platform": "williams-wpc-8K",
     "roms": [
       "dw_l2"
     ]

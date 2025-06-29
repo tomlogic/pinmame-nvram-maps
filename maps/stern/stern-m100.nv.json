@@ -4,14 +4,12 @@
     "NVRAM file mapped to memory address 0x200 in PinMAME",
     "Valid for all Stern M-100 MPU games.  ROMs with 'fp' suffix are Free Play."
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.3,
     "copyright": "Copyright (C) 2023 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
-    "nibble": "high",
-    "ramsize": 256,
+    "platform": "bally-stern-6800",
     "roms": [
       "dracula",
       "draculfp",
@@ -31,7 +29,7 @@
   "game_state": {
     "match": {
       "label": "Match",
-      "start": 54,
+      "start": "0x0236",
       "length": 2,
       "encoding": "bcd",
       "_notes": "during a game, shows current ball (1-5)",
@@ -45,7 +43,7 @@
     },
     "current_ball": {
       "label": "Ball",
-      "start": 54,
+      "start": "0x0236",
       "length": 1,
       "encoding": "bcd",
       "_notes": "set to 0 outside of game when showing match",
@@ -55,32 +53,32 @@
     },
     "credits": {
       "label": "Credits",
-      "start": 213,
+      "start": "0x02D5",
       "length": 2,
       "encoding": "bcd"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": 60,
+        "start": "0x023C",
         "length": 6,
         "encoding": "bcd"
       },
       {
         "label": "Player 2",
-        "start": 66,
+        "start": "0x0242",
         "length": 6,
         "encoding": "bcd"
       },
       {
         "label": "Player 3",
-        "start": 72,
+        "start": "0x0248",
         "length": 6,
         "encoding": "bcd"
       },
       {
         "label": "Player 4",
-        "start": 78,
+        "start": "0x024E",
         "length": 6,
         "encoding": "bcd"
       }
@@ -91,7 +89,7 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": 207,
+        "start": "0x02CF",
         "length": 6,
         "encoding": "bcd"
       }
@@ -101,25 +99,25 @@
     "Adjustments": {
       "01": {
         "label": "Replay 1",
-        "start": 189,
+        "start": "0x02BD",
         "length": 6,
         "encoding": "bcd"
       },
       "02": {
         "label": "Replay 2",
-        "start": 195,
+        "start": "0x02C3",
         "length": 6,
         "encoding": "bcd"
       },
       "03": {
         "label": "Replay 3",
-        "start": 201,
+        "start": "0x02C9",
         "length": 6,
         "encoding": "bcd"
       },
       "04": {
         "label": "High Score",
-        "start": 207,
+        "start": "0x02CF",
         "length": 6,
         "encoding": "bcd"
       }
@@ -129,43 +127,43 @@
     "Audits": {
       "05": {
         "label": "Credits",
-        "start": 213,
+        "start": "0x02D5",
         "length": 2,
         "encoding": "bcd"
       },
       "06": {
         "label": "Total Plays",
-        "start": 219,
+        "start": "0x02DB",
         "length": 6,
         "encoding": "bcd"
       },
       "07": {
         "label": "Total Replays",
-        "start": 225,
+        "start": "0x02E1",
         "length": 6,
         "encoding": "bcd"
       },
       "08": {
         "label": "HSTD Beaten",
-        "start": 231,
+        "start": "0x02E7",
         "length": 6,
         "encoding": "bcd"
       },
       "09": {
         "label": "Coin Chute 2",
-        "start": 237,
+        "start": "0x02ED",
         "length": 6,
         "encoding": "bcd"
       },
       "10": {
         "label": "Coin Chute 1",
-        "start": 243,
+        "start": "0x02F3",
         "length": 6,
         "encoding": "bcd"
       },
       "11": {
         "label": "Coin Chute 3",
-        "start": 249,
+        "start": "0x02F9",
         "length": 6,
         "encoding": "bcd"
       }

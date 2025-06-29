@@ -4,13 +4,12 @@
     "WPC 90003, SYS 3.58 REV 0.9",
     "Unlike sc_18, this ROM does not have Assault Champion/High Scores."
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 12288,
+    "platform": "williams-wpc-12K",
     "roms": [
       "sc_091"
     ]

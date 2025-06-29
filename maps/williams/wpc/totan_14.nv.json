@@ -4,13 +4,12 @@
     "WPC 50047, SYS 3.62 REV 1.4",
     "v0.2: changed score lengths from 5 to 6"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.3,
     "copyright": "Copyright (C) 2022 HorsePin",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 12288,
+    "platform": "williams-wpc-12K",
     "roms": [
       "totan_14"
     ]

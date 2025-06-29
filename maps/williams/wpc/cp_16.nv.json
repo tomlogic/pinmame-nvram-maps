@@ -3,13 +3,12 @@
     "Compiled by Tom Collins using template-wpc.json.",
     "WPC 50063, SYS 3.76 REV 1.6"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 12288,
+    "platform": "williams-wpc-12K",
     "roms": [
       "cp_16"
     ]

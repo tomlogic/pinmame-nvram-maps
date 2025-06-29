@@ -4,13 +4,12 @@
     "Stellar Wars (Williams, 1979)",
     "https://www.ipdb.org/machine.cgi?id=2372"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "nibble": "low",
+    "platform": "williams-system4",
     "roms": [
       "stlwr_l2"
     ]
@@ -18,7 +17,7 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 154,
+      "start": "0x019A",
       "length": 2,
       "encoding": "bcd"
     }
@@ -28,7 +27,7 @@
       "label": "First Place",
       "short_label": "1st",
       "score": {
-        "start": 72,
+        "start": "0x0148",
         "encoding": "bcd",
         "length": 6
       }
@@ -38,80 +37,80 @@
     "Standard Audits": {
       "01": {
         "label": "Coins, left chute",
-        "start": 6,
+        "start": "0x0106",
         "length": 6,
         "encoding": "bcd"
       },
       "02": {
         "label": "Coins, center chute",
-        "start": 12,
+        "start": "0x010C",
         "length": 6,
         "encoding": "bcd"
       },
       "03": {
         "label": "Coins, right chute",
-        "start": 18,
+        "start": "0x0112",
         "length": 6,
         "encoding": "bcd"
       },
       "04": {
         "label": "Total Paid Credits",
-        "start": 24,
+        "start": "0x0118",
         "length": 6,
         "encoding": "bcd"
       },
       "05": {
         "label": "Special Credits",
-        "start": 30,
+        "start": "0x011E",
         "length": 6,
         "encoding": "bcd"
       },
       "06": {
         "label": "Replay Score Credits",
-        "start": 36,
+        "start": "0x0124",
         "length": 6,
         "encoding": "bcd"
       },
       "07": {
         "label": "Match Credits",
-        "start": 42,
+        "start": "0x012A",
         "length": 6,
         "encoding": "bcd"
       },
       "08": {
         "label": "Total Credits",
-        "start": 48,
+        "start": "0x0130",
         "length": 6,
         "encoding": "bcd"
       },
       "09": {
         "label": "Total Extra Balls",
-        "start": 54,
+        "start": "0x0136",
         "length": 6,
         "encoding": "bcd"
       },
       "10": {
         "label": "Total Ball Time",
-        "start": 60,
+        "start": "0x013C",
         "length": 6,
         "encoding": "bcd",
         "units": "minutes"
       },
       "11": {
         "label": "Total Balls Played",
-        "start": 66,
+        "start": "0x0142",
         "length": 6,
         "encoding": "bcd"
       },
       "12": {
         "label": "Current HSTD",
-        "start": 72,
+        "start": "0x0148",
         "encoding": "bcd",
         "length": 6
       },
       "99": {
         "label": "Check Byte",
-        "start": 128,
+        "start": "0x0180",
         "length": 2,
         "encoding": "int",
         "special_values": {
@@ -124,42 +123,42 @@
     "Standard Adjustments": {
       "13": {
         "label": "Backup HSTD",
-        "start": 130,
+        "start": "0x0182",
         "length": 2,
         "encoding": "bcd",
         "scale": 10000
       },
       "14": {
         "label": "Replay 1 Score",
-        "start": 132,
+        "start": "0x0184",
         "length": 2,
         "encoding": "bcd",
         "scale": 10000
       },
       "15": {
         "label": "Replay 2 Score",
-        "start": 134,
+        "start": "0x0186",
         "length": 2,
         "encoding": "bcd",
         "scale": 10000
       },
       "16": {
         "label": "Replay 3 Score",
-        "start": 136,
+        "start": "0x0188",
         "length": 2,
         "encoding": "bcd",
         "scale": 10000
       },
       "17": {
         "label": "Replay 4 Score",
-        "start": 138,
+        "start": "0x018A",
         "length": 2,
         "encoding": "bcd",
         "scale": 10000
       },
       "18": {
         "label": "Maximum Credits",
-        "start": 140,
+        "start": "0x018C",
         "length": 2,
         "encoding": "bcd",
         "special_values": {
@@ -168,7 +167,7 @@
       },
       "19": {
         "label": "Pricing Control",
-        "start": 142,
+        "start": "0x018E",
         "length": 2,
         "encoding": "bcd",
         "min": 0,
@@ -186,43 +185,43 @@
       },
       "20": {
         "label": "Left Coin Slot Multiplier",
-        "start": 144,
+        "start": "0x0190",
         "length": 2,
         "encoding": "bcd"
       },
       "21": {
         "label": "Center Coin Slot Multiplier",
-        "start": 146,
+        "start": "0x0192",
         "length": 2,
         "encoding": "bcd"
       },
       "22": {
         "label": "Right Coin Slot Multiplier",
-        "start": 148,
+        "start": "0x0194",
         "length": 2,
         "encoding": "bcd"
       },
       "23": {
         "label": "Coin Units Required for Credit",
-        "start": 150,
+        "start": "0x0196",
         "length": 2,
         "encoding": "bcd"
       },
       "24": {
         "label": "Coin Units Bonus Point",
-        "start": 152,
+        "start": "0x0198",
         "length": 2,
         "encoding": "bcd"
       },
       "26": {
         "label": "HSTD Credits",
-        "start": 156,
+        "start": "0x019C",
         "length": 2,
         "encoding": "bcd"
       },
       "28": {
         "label": "Match",
-        "start": 160,
+        "start": "0x01A0",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -232,7 +231,7 @@
       },
       "29": {
         "label": "Special Awards",
-        "start": 162,
+        "start": "0x01A2",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -243,7 +242,7 @@
       },
       "30": {
         "label": "Replay Award",
-        "start": 164,
+        "start": "0x01A4",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -253,13 +252,13 @@
       },
       "31": {
         "label": "Number of Balls",
-        "start": 166,
+        "start": "0x01A6",
         "length": 2,
         "encoding": "bcd"
       },
       "32": {
         "label": "Tilt Warnings",
-        "start": 168,
+        "start": "0x01A8",
         "length": 2,
         "encoding": "bcd",
         "min": 1,
@@ -269,7 +268,7 @@
     "Game Adjustments": {
       "27": {
         "label": "Play",
-        "start": 158,
+        "start": "0x019E",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -282,7 +281,7 @@
       },
       "33": {
         "label": "Playfield Restore",
-        "start": 170,
+        "start": "0x01AA",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -294,7 +293,7 @@
       },
       "34": {
         "label": "Extra Ball",
-        "start": 172,
+        "start": "0x01AC",
         "length": 2,
         "encoding": "enum",
         "values": [
@@ -305,7 +304,7 @@
       "35": {
         "label": "Sweep Sound Select",
         "_notes": "when turned on, value of 30 recommended",
-        "start": 174,
+        "start": "0x01AE",
         "length": 2,
         "encoding": "bcd",
         "special_values": {

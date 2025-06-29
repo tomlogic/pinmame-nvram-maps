@@ -7,13 +7,12 @@
     "Same layout as Mousin' Around!",
     "2025-03 v0.2: Tom Collins added audits"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 2048,
+    "platform": "williams-system11",
     "roms": [
       "polic_l4"
     ]

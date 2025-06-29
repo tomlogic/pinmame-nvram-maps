@@ -1,0 +1,20 @@
+{
+  "_notes": "Should work for Bally -17/-35 boardsets and Stern M100/M200",
+  "cpu": "6800",
+  "endian": "little",
+  "memory_layout": [
+    {
+      "label": "RAM",
+      "address": "0x0000",
+      "size": "0x80",
+      "type": "ram"
+    },
+    {
+      "label": "NVRAM",
+      "address": "0x200",
+      "size": "0x100",
+      "type": "nvram",
+      "nibble": "high"
+    }
+  ]
+}

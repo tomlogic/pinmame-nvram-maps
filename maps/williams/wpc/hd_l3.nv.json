@@ -3,13 +3,12 @@
     "Compiled by Horsepin.",
     "WPC 20001, SYS 1.18 REV 0.3"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
     "copyright": "Copyright (C) 2016 by Horsepin",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 8192,
+    "platform": "williams-wpc-8K",
     "roms": [
       "hd_l3",
       "hd_l1",

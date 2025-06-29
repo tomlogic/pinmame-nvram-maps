@@ -4,13 +4,12 @@
     "2024-12-13 v0.2 High score locations updated by Tom Collins",
     "WPC 50032, SYS 3.41 REV 0.5"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.3,
     "copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 12288,
+    "platform": "williams-wpc-12K",
     "roms": [
       "ts_lx5"
     ]

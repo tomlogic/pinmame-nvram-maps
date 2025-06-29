@@ -6,13 +6,12 @@
     "Williams System 11C",
     "2025-03 v0.3: Tom Collins added audits"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.3,
     "copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 2048,
+    "platform": "williams-system11",
     "roms": [
       "diner_l4"
     ],

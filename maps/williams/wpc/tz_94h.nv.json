@@ -3,13 +3,12 @@
     "Compiled by Tom Collins using template-wpc.json.",
     "WPC 50020, SYS 3.73 REV 9.4"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 8192,
+    "platform": "williams-wpc-8K",
     "roms": [
       "tz_94h",
       "tz_94ch"

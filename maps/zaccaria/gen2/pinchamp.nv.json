@@ -6,13 +6,12 @@
     "https://opdb.org/machines/18",
     "Zaccaria Generation 2"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.1,
     "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "little",
-    "nibble": "low",
+    "platform": "zaccaria-gen2",
     "roms": [
       "pinchamp"
     ]
@@ -20,33 +19,32 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": 1419,
-      "length": 1,
-      "encoding": "bcd",
-      "nibble": "both"
+      "start": "0x1D8B",
+      "length": 2,
+      "encoding": "bcd"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": 1216,
+        "start": "0x1CC0",
         "encoding": "bcd",
         "length": 8
       },
       {
         "label": "Player 2",
-        "start": 1224,
+        "start": "0x1CC8",
         "encoding": "bcd",
         "length": 8
       },
       {
         "label": "Player 3",
-        "start": 1232,
+        "start": "0x1CD0",
         "encoding": "bcd",
         "length": 8
       },
       {
         "label": "Player 4",
-        "start": 1240,
+        "start": "0x1CD8",
         "encoding": "bcd",
         "length": 8
       }
@@ -57,7 +55,7 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": 1860,
+        "start": "0x1F44",
         "encoding": "bcd",
         "length": 8
       }

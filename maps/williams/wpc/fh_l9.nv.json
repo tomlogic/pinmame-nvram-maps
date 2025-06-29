@@ -3,13 +3,12 @@
     "Compiled by Tom Collins for initial development/testing purposes.",
     "WPC 50003, SYS 2.46 REV 0.9"
   ],
-  "_fileformat": 0.6,
+  "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
     "copyright": "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "endian": "big",
-    "ramsize": 8192,
+    "platform": "williams-wpc-8K",
     "roms": [
       "fh_l9"
     ]
