@@ -73,6 +73,34 @@
       "start": "0x1839",
       "encoding": "bcd",
       "length": 2
+    },
+    "player_count": {
+      "label": "Player Count",
+      "short_label": "Players",
+      "start": "0xC0",
+      "encoding": "int"
+    },
+    "current_player": {
+      "_notes": "0-3; bit 7 (0x80) sometimes set",
+      "label": "Current Player",
+      "short_label": "P#",
+      "start": "0xC1",
+      "encoding": "int",
+      "mask": "0x0F",
+      "offset": 1
+    },
+    "current_ball": {
+      "_notes": "stored as 0x31 to 0x35 ('1' to '5')",
+      "label": "Ball",
+      "start": "0x0A",
+      "encoding": "bcd",
+      "mask": "0x0F"
+    },
+    "ball_count": {
+      "_notes": "set at startup from DIP switches; always 3 or 5",
+      "label": "Balls Per Game",
+      "start": "0xDF",
+      "encoding": "bcd"
     }
   },
   "high_scores": [
