@@ -74,7 +74,44 @@
       "encoding": "bcd",
       "length": 2
     },
+    "scores": [
+      {
+        "_notes": [
+          "Scores hack: need to ignore top bit (comma) and convert 0x4F ('O') to zero.",
+          "Bytes are: 0x31 to 0x39, 0x20 (' '), and 0x4F ('O'); top bit set for comma.",
+          "By setting nibble=low, we get 0x1 to 0x9, 0x0 and 0xF for those three bytes,",
+          "which treats space and 'O' as zero."
+        ],
+        "label": "Player 1",
+        "start": "0x0000",
+        "length": 8,
+        "nibble": "low",
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 2",
+        "start": "0x000C",
+        "length": 8,
+        "nibble": "low",
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 3",
+        "start": "0x0014",
+        "length": 8,
+        "nibble": "low",
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 4",
+        "start": "0x0020",
+        "length": 8,
+        "nibble": "low",
+        "encoding": "bcd"
+      }
+    ],
     "player_count": {
+      "_notes": "set to 0 when game over",
       "label": "Player Count",
       "short_label": "Players",
       "start": "0xC0",
@@ -101,6 +138,12 @@
       "label": "Balls Per Game",
       "start": "0xDF",
       "encoding": "bcd"
+    },
+    "extra_ball": {
+      "_notes": "either 0 or 1, no stacking",
+      "label": "Extra Balls",
+      "start": "0xCA",
+      "encoding": "int"
     }
   },
   "high_scores": [
