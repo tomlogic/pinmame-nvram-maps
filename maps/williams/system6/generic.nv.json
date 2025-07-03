@@ -3,11 +3,12 @@
     "Compiled by Tom Collins, based on Williams System 7 map.",
     "Generic map valid for all Williams System 6 (but not 6A) games.",
     "Game-specific audits/adjustments vary from game to game.",
-    "https://github.com/idealjoker/7eleven/blob/master/System6.API"
+    "https://github.com/idealjoker/7eleven/blob/master/System6.API",
+    "Game/player state information from Ideal Joker's 7eleven project."
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.2,
+    "version": 0.3,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-system6",
@@ -57,6 +58,93 @@
       "start": "0x0152",
       "length": 2,
       "encoding": "bcd"
+    },
+    "status": {
+      "label": "Game Status",
+      "start": "0x78",
+      "encoding": "bits",
+      "values": [
+        "game over",
+        "tilt",
+        "EB pending",
+        "EB earned",
+        "ball time >1min",
+        "?",
+        "?",
+        "playfield qualified"
+      ]
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": "0x00",
+        "length": 3,
+        "encoding": "bcd",
+        "scale": 10
+      },
+      {
+        "label": "Player 2",
+        "start": "0x04",
+        "length": 3,
+        "encoding": "bcd",
+        "scale": 10
+      },
+      {
+        "label": "Player 3",
+        "start": "0x08",
+        "length": 3,
+        "encoding": "bcd",
+        "scale": 10
+      },
+      {
+        "label": "Player 4",
+        "start": "0x0C",
+        "length": 3,
+        "encoding": "bcd",
+        "scale": 10
+      }
+    ],
+    "current_player": {
+      "label": "Player",
+      "start": "0x55",
+      "encoding": "int",
+      "offset": 1
+    },
+    "player_count": {
+      "label": "Player Count",
+      "start": "0x56",
+      "encoding": "int",
+      "offset": 1
+    },
+    "current_ball": {
+      "label": "Ball",
+      "start": "0x03",
+      "encoding": "bcd"
+    },
+    "ball_count": {
+      "label": "Number of Balls",
+      "start": "0x01A3",
+      "length": 2,
+      "encoding": "bcd"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": "0x5B",
+      "encoding": "int"
+    }
+  },
+  "player_state": {
+    "_notes": "yet to be decoded",
+    "_offsets": [
+      0,
+      18,
+      36,
+      54
+    ],
+    "raw": {
+      "start": "0x94",
+      "length": 18,
+      "encoding": "raw"
     }
   },
   "high_scores": [
