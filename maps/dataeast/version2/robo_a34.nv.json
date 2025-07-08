@@ -8,7 +8,10 @@
   "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
-    "copyright": "Copyright (C) 2016 by Horsepin",
+    "copyright": [
+      "Copyright (C) 2016 by Horsepin",
+      "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
+    ],
     "license": "GNU Lesser General Public License v3.0",
     "platform": "dataeast",
     "roms": [
