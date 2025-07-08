@@ -2,12 +2,13 @@
   "_notes": [
     "Compiled by Mike Metzger.",
     "WPC 50039, SYS 3.48 REV 1.3",
+    "v0.1 by Mike Metzger; last_game, high_scores, mode_champions",
     "v0.2 (2018-03) by Tom Collins; added adjustments, audits, checksums",
-    "v0.1 by Mike Metzger; last_game, high_scores, mode_champions"
+    "2025-07-07 Tom Collins added automated audits (B.2, B.6)"
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.4,
+    "version": 0.5,
     "copyright": "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
@@ -808,6 +809,80 @@
     }
   },
   "audits": {
+    "B.2 EARNINGS AUDS.": {
+      "02": {
+        "label": "RECENT LEFT SLOT",
+        "start": 6203,
+        "encoding": "int",
+        "length": 3
+      },
+      "03": {
+        "label": "RECENT CENT. SLOT",
+        "start": 6209,
+        "encoding": "int",
+        "length": 3
+      },
+      "04": {
+        "label": "RECENT RGHT. SLOT",
+        "start": 6215,
+        "encoding": "int",
+        "length": 3
+      },
+      "05": {
+        "label": "RECENT 4TH SLOT",
+        "start": 6221,
+        "encoding": "int",
+        "length": 3
+      },
+      "06": {
+        "label": "RECENT PAID CRED",
+        "start": 6227,
+        "encoding": "int",
+        "length": 3
+      },
+      "07": {
+        "label": "RECENT SERV. CRED",
+        "start": 6233,
+        "encoding": "int",
+        "length": 3
+      },
+      "09": {
+        "label": "TOTAL LEFT SLOT",
+        "start": 6167,
+        "encoding": "int",
+        "length": 3
+      },
+      "10": {
+        "label": "TOTAL CENTR. SLOT",
+        "start": 6173,
+        "encoding": "int",
+        "length": 3
+      },
+      "11": {
+        "label": "TOTAL RIGHT SLOT",
+        "start": 6179,
+        "encoding": "int",
+        "length": 3
+      },
+      "12": {
+        "label": "TOTAL 4TH SLOT",
+        "start": 6185,
+        "encoding": "int",
+        "length": 3
+      },
+      "13": {
+        "label": "TOTAL PAID CRED.",
+        "start": 6191,
+        "encoding": "int",
+        "length": 3
+      },
+      "14": {
+        "label": "TOTAL SERV. CRED.",
+        "start": 6197,
+        "encoding": "int",
+        "length": 3
+      }
+    },
     "B.3 Standard Audits": {
       "01": {
         "label": "Games Started",
@@ -1316,6 +1391,74 @@
         "start": 6581,
         "encoding": "int",
         "length": 3
+      }
+    },
+    "B.6 TIME-STAMPS": {
+      "02": {
+        "label": "TOTALS CLEARED",
+        "start": 7165,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "03": {
+        "label": "CLOCK LAST SET",
+        "start": 7172,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "04": {
+        "label": "AUDITS CLEARED",
+        "start": 7179,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "05": {
+        "label": "COINS CLEARED",
+        "start": 7186,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "06": {
+        "label": "FACTORY SETTING",
+        "start": 7193,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "07": {
+        "label": "LAST GAME START",
+        "start": 7200,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "08": {
+        "label": "LAST REPLAY",
+        "start": 7207,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "09": {
+        "label": "LAST HSTD RESET",
+        "start": 7214,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "10": {
+        "label": "CHAMPION RESET",
+        "start": 7221,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "11": {
+        "label": "LAST PRINTOUT",
+        "start": 7228,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "12": {
+        "label": "LAST SERV. CRED",
+        "start": 7235,
+        "encoding": "wpc_rtc",
+        "length": 7
       }
     }
   },

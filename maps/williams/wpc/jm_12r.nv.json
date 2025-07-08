@@ -1023,7 +1023,7 @@
         "length": 3
       },
       "15": {
-        "label": "?Tickets Awarded",
+        "label": "Tickets Awarded",
         "start": 6317,
         "encoding": "int",
         "length": 3

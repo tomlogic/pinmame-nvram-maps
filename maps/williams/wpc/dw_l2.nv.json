@@ -2,11 +2,12 @@
   "_notes": [
     "Compiled by Tom Collins for initial development/testing purposes.",
     "WPC 20006, SYS 2.43 REV 0.2",
-    "Doctor Who (Bally, 1992, WPC)"
+    "Doctor Who (Bally, 1992, WPC)",
+    "2025-07-07 Tom Collins added automated audits (B.4, B.5, B.6)"
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.3,
+    "version": 0.4,
     "copyright": "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
@@ -640,10 +641,596 @@
     },
     "B.4 Feature Audits": {
       "01": {
-        "label": "Buy-In Ex. Balls",
+        "label": "All Locks",
+        "start": 6713,
+        "encoding": "int",
+        "length": 3
+      },
+      "02": {
+        "label": "All Multiballs",
+        "start": 6731,
+        "encoding": "int",
+        "length": 3
+      },
+      "03": {
+        "label": "2 Ball Rematch",
+        "start": 6719,
+        "encoding": "int",
+        "length": 3
+      },
+      "04": {
+        "label": "3 Ball Rematch",
+        "start": 6725,
+        "encoding": "int",
+        "length": 3
+      },
+      "05": {
+        "label": "All Jackpots",
+        "start": 6737,
+        "encoding": "int",
+        "length": 3
+      },
+      "06": {
+        "label": "Davros Jackpots",
+        "start": 6743,
+        "encoding": "int",
+        "length": 3
+      },
+      "07": {
+        "label": "Skipped Jackpots",
+        "start": 7013,
+        "encoding": "int",
+        "length": 3
+      },
+      "08": {
+        "label": "2 ball Jackpots",
+        "start": 6749,
+        "encoding": "int",
+        "length": 3
+      },
+      "09": {
+        "label": "1st 2B. Jackpots",
+        "start": 6755,
+        "encoding": "int",
+        "length": 3
+      },
+      "10": {
+        "label": "2nd 2B. Jackpots",
+        "start": 6761,
+        "encoding": "int",
+        "length": 3
+      },
+      "11": {
+        "label": "3rd 2B. Jackpots",
+        "start": 6767,
+        "encoding": "int",
+        "length": 3
+      },
+      "12": {
+        "label": "4th 2B. Jackpots",
+        "start": 6773,
+        "encoding": "int",
+        "length": 3
+      },
+      "13": {
+        "label": "5th 2B. Jackpots",
+        "start": 6779,
+        "encoding": "int",
+        "length": 3
+      },
+      "14": {
+        "label": "3 ball Jackpots",
+        "start": 6785,
+        "encoding": "int",
+        "length": 3
+      },
+      "15": {
+        "label": "1st 3B. Jackpots",
+        "start": 6791,
+        "encoding": "int",
+        "length": 3
+      },
+      "16": {
+        "label": "2nd 3B. Jackpots",
+        "start": 6797,
+        "encoding": "int",
+        "length": 3
+      },
+      "17": {
+        "label": "3rd 3B. Jackpots",
+        "start": 6803,
+        "encoding": "int",
+        "length": 3
+      },
+      "18": {
+        "label": "4th 3B. Jackpots",
+        "start": 6809,
+        "encoding": "int",
+        "length": 3
+      },
+      "19": {
+        "label": "5th 3B. Jackpots",
+        "start": 6815,
+        "encoding": "int",
+        "length": 3
+      },
+      "20": {
+        "label": "Playfld. 1.5x Lit",
+        "start": 6893,
+        "encoding": "int",
+        "length": 3
+      },
+      "21": {
+        "label": "Playfld. 2.0x Lit",
+        "start": 6899,
+        "encoding": "int",
+        "length": 3
+      },
+      "22": {
+        "label": "Playfld. 2.5x Lit",
+        "start": 6905,
+        "encoding": "int",
+        "length": 3
+      },
+      "23": {
+        "label": "Playfld. 3.0x Lit",
+        "start": 6911,
+        "encoding": "int",
+        "length": 3
+      },
+      "24": {
+        "label": "Playfld. 3.5x Lit",
+        "start": 6917,
+        "encoding": "int",
+        "length": 3
+      },
+      "25": {
+        "label": "Playfld. 4.0x Lit",
+        "start": 6923,
+        "encoding": "int",
+        "length": 3
+      },
+      "26": {
+        "label": "Playfld. Millions",
+        "start": 6929,
+        "encoding": "int",
+        "length": 3
+      },
+      "27": {
+        "label": "Transmat Doc. Lit",
+        "start": 6971,
+        "encoding": "int",
+        "length": 3
+      },
+      "28": {
+        "label": "Transmat Doc. Awd.",
+        "start": 6977,
+        "encoding": "int",
+        "length": 3
+      },
+      "29": {
+        "label": "R.E.P.A.I.R. 1 lamp",
+        "start": 6935,
+        "encoding": "int",
+        "length": 3
+      },
+      "30": {
+        "label": "R.E.P.A.I.R. 2 lamps",
+        "start": 6941,
+        "encoding": "int",
+        "length": 3
+      },
+      "31": {
+        "label": "R.E.P.A.I.R. 3 lamps",
+        "start": 6947,
+        "encoding": "int",
+        "length": 3
+      },
+      "32": {
+        "label": "R.E.P.A.I.R. 4 lamps",
+        "start": 6953,
+        "encoding": "int",
+        "length": 3
+      },
+      "33": {
+        "label": "R.E.P.A.I.R. 5 lamps",
+        "start": 6959,
+        "encoding": "int",
+        "length": 3
+      },
+      "34": {
+        "label": "R.E.P.A.I.R. Millions",
+        "start": 6965,
+        "encoding": "int",
+        "length": 3
+      },
+      "35": {
+        "label": "W-H-O W Awards",
+        "start": 6821,
+        "encoding": "int",
+        "length": 3
+      },
+      "36": {
+        "label": "W-H-O H Awards",
+        "start": 6827,
+        "encoding": "int",
+        "length": 3
+      },
+      "37": {
+        "label": "W-H-O Tot. Awards",
+        "start": 6833,
+        "encoding": "int",
+        "length": 3
+      },
+      "38": {
+        "label": "1st WHO Awards",
+        "start": 6839,
+        "encoding": "int",
+        "length": 3
+      },
+      "39": {
+        "label": "2nd WHO Awards",
+        "start": 6845,
+        "encoding": "int",
+        "length": 3
+      },
+      "40": {
+        "label": "3rd WHO Awards",
+        "start": 6851,
+        "encoding": "int",
+        "length": 3
+      },
+      "41": {
+        "label": "4th WHO Awards",
+        "start": 6857,
+        "encoding": "int",
+        "length": 3
+      },
+      "42": {
+        "label": "Extra Ball Lit",
+        "start": 6863,
+        "encoding": "int",
+        "length": 3
+      },
+      "43": {
+        "label": "Sonic Boom 10Mil.",
+        "start": 7037,
+        "encoding": "int",
+        "length": 3
+      },
+      "44": {
+        "label": "Hang on Awards",
+        "start": 6881,
+        "encoding": "int",
+        "length": 3
+      },
+      "45": {
+        "label": "Collision Awards",
+        "start": 6887,
+        "encoding": "int",
+        "length": 3
+      },
+      "46": {
+        "label": "1 E.S.C.A.P.E. Bonus",
         "start": 6677,
         "encoding": "int",
         "length": 3
+      },
+      "47": {
+        "label": "2 E.S.C.A.P.E. Bonus's",
+        "start": 6683,
+        "encoding": "int",
+        "length": 3
+      },
+      "48": {
+        "label": "3 E.S.C.A.P.E. Bonus's",
+        "start": 6689,
+        "encoding": "int",
+        "length": 3
+      },
+      "49": {
+        "label": "4 E.S.C.A.P.E. Bonus's",
+        "start": 6695,
+        "encoding": "int",
+        "length": 3
+      },
+      "50": {
+        "label": "5 E.S.C.A.P.E. Bonus's",
+        "start": 6701,
+        "encoding": "int",
+        "length": 3
+      },
+      "51": {
+        "label": "Special Lit",
+        "start": 6707,
+        "encoding": "int",
+        "length": 3
+      },
+      "52": {
+        "label": "Video Mode",
+        "start": 6869,
+        "encoding": "int",
+        "length": 3
+      },
+      "53": {
+        "label": "V. Mode Captured",
+        "start": 7019,
+        "encoding": "int",
+        "length": 3
+      },
+      "54": {
+        "label": "V. Mode Escaped",
+        "start": 7025,
+        "encoding": "int",
+        "length": 3
+      },
+      "55": {
+        "label": "V.Mode Ex.Balls",
+        "start": 7031,
+        "encoding": "int",
+        "length": 3
+      },
+      "56": {
+        "label": "V.Mode Seconds",
+        "start": 6983,
+        "encoding": "int",
+        "length": 3
+      },
+      "57": {
+        "label": "Bonus X's",
+        "start": 6671,
+        "encoding": "int",
+        "length": 3
+      },
+      "58": {
+        "label": "Second Chance",
+        "start": 6875,
+        "encoding": "int",
+        "length": 3
+      },
+      "59": {
+        "label": "MiniPlyfld.Faults",
+        "start": 6989,
+        "encoding": "int",
+        "length": 3
+      },
+      "60": {
+        "label": "Trap Door Faults",
+        "start": 6995,
+        "encoding": "int",
+        "length": 3
+      },
+      "62": {
+        "label": "Other Sw. Faults",
+        "start": 7007,
+        "encoding": "int",
+        "length": 3
+      }
+    },
+    "B.5 HISTOGRAMS": {
+      "01": {
+        "label": "0-1.9 M. SCORE",
+        "start": 6431,
+        "encoding": "int",
+        "length": 3
+      },
+      "02": {
+        "label": "2-4.9 M. SCORE",
+        "start": 6437,
+        "encoding": "int",
+        "length": 3
+      },
+      "03": {
+        "label": "5-9.9 M. SCORE",
+        "start": 6443,
+        "encoding": "int",
+        "length": 3
+      },
+      "04": {
+        "label": "10-19 M. SCORE",
+        "start": 6449,
+        "encoding": "int",
+        "length": 3
+      },
+      "05": {
+        "label": "20-29 M. SCORE",
+        "start": 6455,
+        "encoding": "int",
+        "length": 3
+      },
+      "06": {
+        "label": "30-39 M. SCORE",
+        "start": 6461,
+        "encoding": "int",
+        "length": 3
+      },
+      "07": {
+        "label": "40-49 M. SCORE",
+        "start": 6467,
+        "encoding": "int",
+        "length": 3
+      },
+      "08": {
+        "label": "50-69 M. SCORE",
+        "start": 6473,
+        "encoding": "int",
+        "length": 3
+      },
+      "09": {
+        "label": "70-99 M. SCORE",
+        "start": 6479,
+        "encoding": "int",
+        "length": 3
+      },
+      "10": {
+        "label": "100-149 M. SCORE",
+        "start": 6485,
+        "encoding": "int",
+        "length": 3
+      },
+      "11": {
+        "label": "150-199 M. SCORE",
+        "start": 6491,
+        "encoding": "int",
+        "length": 3
+      },
+      "12": {
+        "label": "200-299 M. SCORE",
+        "start": 6497,
+        "encoding": "int",
+        "length": 3
+      },
+      "13": {
+        "label": "OVER 300 MILLION",
+        "start": 6503,
+        "encoding": "int",
+        "length": 3
+      },
+      "14": {
+        "label": "GAME TIME 0.0-1.0M",
+        "start": 6509,
+        "encoding": "int",
+        "length": 3
+      },
+      "15": {
+        "label": "GAME TIME 1.0-1.5M",
+        "start": 6515,
+        "encoding": "int",
+        "length": 3
+      },
+      "16": {
+        "label": "GAME TIME 1.5-2.0M",
+        "start": 6521,
+        "encoding": "int",
+        "length": 3
+      },
+      "17": {
+        "label": "GAME TIME 2.0-2.5M",
+        "start": 6527,
+        "encoding": "int",
+        "length": 3
+      },
+      "18": {
+        "label": "GAME TIME 2.5-3.0M",
+        "start": 6533,
+        "encoding": "int",
+        "length": 3
+      },
+      "19": {
+        "label": "GAME TIME 3.0-3.5M",
+        "start": 6539,
+        "encoding": "int",
+        "length": 3
+      },
+      "20": {
+        "label": "GAME TIME 3.5-4.0M",
+        "start": 6545,
+        "encoding": "int",
+        "length": 3
+      },
+      "21": {
+        "label": "GAME TIME 4-5 M.",
+        "start": 6551,
+        "encoding": "int",
+        "length": 3
+      },
+      "22": {
+        "label": "GAME TIME 5-6 M.",
+        "start": 6557,
+        "encoding": "int",
+        "length": 3
+      },
+      "23": {
+        "label": "GAME TIME 6-8 M.",
+        "start": 6563,
+        "encoding": "int",
+        "length": 3
+      },
+      "24": {
+        "label": "GAME TIME 8-10 M",
+        "start": 6569,
+        "encoding": "int",
+        "length": 3
+      },
+      "25": {
+        "label": "GAME TIME 10-15M",
+        "start": 6575,
+        "encoding": "int",
+        "length": 3
+      },
+      "26": {
+        "label": "GAME TIME > 15M",
+        "start": 6581,
+        "encoding": "int",
+        "length": 3
+      }
+    },
+    "B.6 TIME-STAMPS": {
+      "02": {
+        "label": "TOTALS CLEARED",
+        "start": 7347,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "03": {
+        "label": "CLOCK LAST SET",
+        "start": 7354,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "04": {
+        "label": "AUDITS CLEARED",
+        "start": 7361,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "05": {
+        "label": "COINS CLEARED",
+        "start": 7368,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "06": {
+        "label": "FACTORY SETTING",
+        "start": 7375,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "07": {
+        "label": "LAST GAME START",
+        "start": 7382,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "08": {
+        "label": "LAST REPLAY",
+        "start": 7389,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "09": {
+        "label": "LAST HSTD RESET",
+        "start": 7396,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "10": {
+        "label": "CHAMPION RESET",
+        "start": 7403,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "11": {
+        "label": "LAST PRINTOUT",
+        "start": 7410,
+        "encoding": "wpc_rtc",
+        "length": 7
+      },
+      "12": {
+        "label": "LAST SERV. CRED",
+        "start": 7417,
+        "encoding": "wpc_rtc",
+        "length": 7
       }
     }
   },
