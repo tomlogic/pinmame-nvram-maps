@@ -11,7 +11,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
     "roms": [
-      "pz_f4"
+      "pz_f4",
+      "pz_f5"
     ]
   },
   "last_played": {

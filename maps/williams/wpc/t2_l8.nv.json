@@ -10,8 +10,14 @@
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
+    "_notes": "ROMs L-8.1 to L-8.4 have feature adjustments not present in L-8.",
     "roms": [
-      "t2_l8"
+      "t2_d8",
+      "t2_l8",
+      "t2_l81",
+      "t2_l82",
+      "t2_l83",
+      "t2_l84"
     ]
   },
   "last_played": {

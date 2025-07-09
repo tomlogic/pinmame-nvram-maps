@@ -11,7 +11,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
-      "jb_10r"
+      "jb_10r",
+      "jb_101r"
     ]
   },
   "last_played": {

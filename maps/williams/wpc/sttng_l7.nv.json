@@ -11,7 +11,11 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
-      "sttng_l7"
+      "sttng_d7",
+      "sttng_dx",
+      "sttng_l7",
+      "sttng_l7c",
+      "sttng_x7"
     ]
   },
   "last_played": {

@@ -15,6 +15,7 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
+      "ts_dx5",
       "ts_lx5"
     ]
   },

@@ -10,7 +10,9 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
     "roms": [
+      "bop_d7",
       "bop_l7",
+      "bop_d8",
       "bop_l8"
     ]
   },

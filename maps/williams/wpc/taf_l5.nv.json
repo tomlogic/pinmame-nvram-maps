@@ -13,9 +13,13 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
     "roms": [
+      "taf_d5",
+      "taf_d6",
       "taf_l5",
+      "taf_l5c",
       "taf_l6",
-      "taf_h4"
+      "taf_h4",
+      "taf_i4"
     ]
   },
   "last_played": {

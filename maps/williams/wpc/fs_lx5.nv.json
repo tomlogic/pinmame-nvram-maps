@@ -11,7 +11,10 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
-      "fs_lx5"
+      "fs_dx5",
+      "fs_lx5",
+      "fs_sp2",
+      "fs_sp2d"
     ]
   },
   "last_played": {

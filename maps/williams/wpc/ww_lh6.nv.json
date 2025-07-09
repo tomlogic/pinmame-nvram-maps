@@ -14,7 +14,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
     "roms": [
-      "ww_lh6"
+      "ww_lh6",
+      "ww_lh6c"
     ]
   },
   "game_state": {

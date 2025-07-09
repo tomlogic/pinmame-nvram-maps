@@ -13,7 +13,10 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
     "roms": [
-      "fh_l9"
+      "fh_d9",
+      "fh_d9b",
+      "fh_l9",
+      "fh_l9b"
     ]
   },
   "last_played": {

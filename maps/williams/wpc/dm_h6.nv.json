@@ -13,7 +13,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
-      "dm_h6"
+      "dm_h6",
+      "dm_h6c"
     ]
   },
   "last_played": {

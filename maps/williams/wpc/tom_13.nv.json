@@ -17,6 +17,7 @@
     "platform": "williams-wpc-12K",
     "roms": [
       "tom_13",
+      "tom_13c",
       "tom_14h",
       "tom_14hb"
     ]

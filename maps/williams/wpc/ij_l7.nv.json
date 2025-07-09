@@ -11,6 +11,7 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
+      "ij_d7",
       "ij_l7"
     ]
   },

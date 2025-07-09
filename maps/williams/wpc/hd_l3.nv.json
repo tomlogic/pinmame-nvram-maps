@@ -13,8 +13,10 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
     "roms": [
-      "hd_l3",
+      "hd_d1",
+      "hd_d3",
       "hd_l1",
+      "hd_l3",
       "che_cho"
     ]
   },

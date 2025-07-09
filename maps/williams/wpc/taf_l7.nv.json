@@ -11,6 +11,7 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
     "roms": [
+      "taf_d7",
       "taf_l7"
     ]
   },
