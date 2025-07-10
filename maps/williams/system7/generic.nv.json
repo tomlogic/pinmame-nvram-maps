@@ -7,12 +7,16 @@
     "Thunderball (Williams 1982) not tested.",
     "Varkon (Williams 1982) not tested.",
     "2025-04 v0.2: Tom Collins updated with information from Jess Askey",
-    "http://gamearchive.askey.org/Pinball/Manufacturers/Williams/PinBuilder/text/williams_lvl7_programming.html"
+    "http://gamearchive.askey.org/Pinball/Manufacturers/Williams/PinBuilder/text/williams_lvl7_programming.html",
+    "Game/player state information from Ideal Joker's 7eleven project."
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.2,
-    "copyright": "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+    "version": 0.3,
+    "copyright": [
+      "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+      "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
+    ],
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-system7",
     "roms": [
@@ -41,6 +45,94 @@
       "start": "0x016E",
       "length": 2,
       "encoding": "bcd"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": "0x38",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 2",
+        "start": "0x3C",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 3",
+        "start": "0x40",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 4",
+        "start": "0x44",
+        "length": 4,
+        "encoding": "bcd"
+      }
+    ],
+    "tilt": {
+      "_notes": "2 when tilted",
+      "label": "Tilt",
+      "start": "0xC8",
+      "encoding": "int"
+    },
+    "tilt_warnings": {
+      "label": "Tilt Warnings",
+      "start": "0xD3",
+      "encoding": "int"
+    },
+    "game_over": {
+      "label": "Game Over",
+      "start": "0xC9",
+      "encoding": "int"
+    },
+    "playfield_valid": {
+      "_notes": "0 with ball in shooter lane, 4 when valid?",
+      "label": "Playfield Valid",
+      "start": "0xD6",
+      "encoding": "int"
+    },
+    "self_test": {
+      "label": "Self Test",
+      "start": "0xCB",
+      "encoding": "int"
+    },
+    "player_count": {
+      "label": "Players",
+      "start": "0xCC",
+      "encoding": "int",
+      "offset": 1
+    },
+    "current_player": {
+      "label": "Current Player",
+      "start": "0xCD",
+      "encoding": "int",
+      "offset": 1
+    },
+    "current_ball": {
+      "label": "Ball",
+      "start": "0x58",
+      "encoding": "bcd",
+      "mask": "0x0F"
+    },
+    "ball_count": {
+      "label": "Ball Count",
+      "start": "0x0193",
+      "length": 2,
+      "encoding": "bcd"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": "0xD0",
+      "encoding": "int"
+    },
+    "bonus_time": {
+      "_notes": "0xFF if in Bonus Ball Time at end of game; countdown is bcd at 0x0C",
+      "label": "Bonus Time",
+      "start": "0xCA",
+      "encoding": "int"
     }
   },
   "high_scores": [

@@ -6,7 +6,10 @@
   "_fileformat": 0.7,
   "_metadata": {
     "version": 0.2,
-    "copyright": "Copyright (C) 2015 by Tom Collins <tom@tomlogic.com>",
+    "copyright": [
+      "Copyright (C) 2015 by Tom Collins <tom@tomlogic.com>",
+      "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
+    ],
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
@@ -1023,7 +1026,7 @@
         "length": 3
       },
       "15": {
-        "label": "?Tickets Awarded",
+        "label": "Tickets Awarded",
         "start": 6317,
         "encoding": "int",
         "length": 3

@@ -3,12 +3,16 @@
     "Compiled by Tom Collins for initial development/testing purposes.",
     "compared to mm_109: audits are 6 bytes shorter, adjustments 2 bytes shorter,",
     "other sections start 8 bytes earlier",
-    "WPC 50059, SYS 3.70 REV 1.0"
+    "WPC 50059, SYS 3.70 REV 1.0",
+    "2025-07-07 Tom Collins added automated audits (B.4 Feature Audits)"
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.2,
-    "copyright": "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
+    "version": 0.3,
+    "copyright": [
+      "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
+      "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
+    ],
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
@@ -619,6 +623,356 @@
       "37": {
         "label": "Right Flipper",
         "start": 6659,
+        "encoding": "int",
+        "length": 3
+      }
+    },
+    "B.4 FEATURE AUDS.": {
+      "01": {
+        "label": "BALL SAVES",
+        "start": 6677,
+        "encoding": "int",
+        "length": 3
+      },
+      "02": {
+        "label": "TOTAL MULTIBALLS",
+        "start": 6683,
+        "encoding": "int",
+        "length": 3
+      },
+      "03": {
+        "label": "BALLS LOCKED",
+        "start": 6689,
+        "encoding": "int",
+        "length": 3
+      },
+      "04": {
+        "label": "CASTLE M.B. START",
+        "start": 6695,
+        "encoding": "int",
+        "length": 3
+      },
+      "05": {
+        "label": "CASTLE M.B. J.P.",
+        "start": 6701,
+        "encoding": "int",
+        "length": 3
+      },
+      "06": {
+        "label": "CASTLE M.B. S.J.",
+        "start": 6707,
+        "encoding": "int",
+        "length": 3
+      },
+      "07": {
+        "label": "CASTLE M.B. E.B. LIT",
+        "start": 6713,
+        "encoding": "int",
+        "length": 3
+      },
+      "08": {
+        "label": "CASTLE ATK. START",
+        "start": 6719,
+        "encoding": "int",
+        "length": 3
+      },
+      "09": {
+        "label": "CASTLE ATK. COMPL.",
+        "start": 6725,
+        "encoding": "int",
+        "length": 3
+      },
+      "10": {
+        "label": "CASTLE ATK. E.B.L.",
+        "start": 6731,
+        "encoding": "int",
+        "length": 3
+      },
+      "11": {
+        "label": "1st CASTLE START",
+        "start": 6737,
+        "encoding": "int",
+        "length": 3
+      },
+      "12": {
+        "label": "1st CASTLE COMPL.",
+        "start": 6743,
+        "encoding": "int",
+        "length": 3
+      },
+      "13": {
+        "label": "2nd CASTLE START",
+        "start": 6749,
+        "encoding": "int",
+        "length": 3
+      },
+      "14": {
+        "label": "2nd CASTLE COMPL.",
+        "start": 6755,
+        "encoding": "int",
+        "length": 3
+      },
+      "15": {
+        "label": "3rd CASTLE START",
+        "start": 6761,
+        "encoding": "int",
+        "length": 3
+      },
+      "16": {
+        "label": "3rd CASTLE COMPL.",
+        "start": 6767,
+        "encoding": "int",
+        "length": 3
+      },
+      "17": {
+        "label": "4th CASTLE START",
+        "start": 6773,
+        "encoding": "int",
+        "length": 3
+      },
+      "18": {
+        "label": "4th CASTLE COMPL.",
+        "start": 6779,
+        "encoding": "int",
+        "length": 3
+      },
+      "19": {
+        "label": "5th CASTLE START",
+        "start": 6785,
+        "encoding": "int",
+        "length": 3
+      },
+      "20": {
+        "label": "5th CASTLE COMPL.",
+        "start": 6791,
+        "encoding": "int",
+        "length": 3
+      },
+      "21": {
+        "label": "6th CASTLE START",
+        "start": 6797,
+        "encoding": "int",
+        "length": 3
+      },
+      "22": {
+        "label": "6th CASTLE COMPL.",
+        "start": 6803,
+        "encoding": "int",
+        "length": 3
+      },
+      "23": {
+        "label": "TROLLS! LIT",
+        "start": 6809,
+        "encoding": "int",
+        "length": 3
+      },
+      "24": {
+        "label": "TROLLS! START",
+        "start": 6815,
+        "encoding": "int",
+        "length": 3
+      },
+      "25": {
+        "label": "TROLLS! COMPL.",
+        "start": 6821,
+        "encoding": "int",
+        "length": 3
+      },
+      "26": {
+        "label": "TROLL BOMBS COLL.",
+        "start": 6827,
+        "encoding": "int",
+        "length": 3
+      },
+      "27": {
+        "label": "TROLL BOMBS USED",
+        "start": 6833,
+        "encoding": "int",
+        "length": 3
+      },
+      "28": {
+        "label": "JOUST MAD. LIT",
+        "start": 6839,
+        "encoding": "int",
+        "length": 3
+      },
+      "29": {
+        "label": "CATAPULT MAD. LIT",
+        "start": 6845,
+        "encoding": "int",
+        "length": 3
+      },
+      "30": {
+        "label": "PEASANT MAD. LIT",
+        "start": 6851,
+        "encoding": "int",
+        "length": 3
+      },
+      "31": {
+        "label": "DAMSEL MAD. LIT",
+        "start": 6857,
+        "encoding": "int",
+        "length": 3
+      },
+      "32": {
+        "label": "TROLL MAD. LIT",
+        "start": 6863,
+        "encoding": "int",
+        "length": 3
+      },
+      "33": {
+        "label": "M.B. MADNESS START",
+        "start": 6869,
+        "encoding": "int",
+        "length": 3
+      },
+      "34": {
+        "label": "1 MADNESS START",
+        "start": 6875,
+        "encoding": "int",
+        "length": 3
+      },
+      "35": {
+        "label": "2 MADNESS START",
+        "start": 6881,
+        "encoding": "int",
+        "length": 3
+      },
+      "36": {
+        "label": "3 MADNESS START",
+        "start": 6887,
+        "encoding": "int",
+        "length": 3
+      },
+      "37": {
+        "label": "4 MADNESS START",
+        "start": 6893,
+        "encoding": "int",
+        "length": 3
+      },
+      "38": {
+        "label": "5 MADNESS START",
+        "start": 6899,
+        "encoding": "int",
+        "length": 3
+      },
+      "39": {
+        "label": "M.B. MADNESS JP.",
+        "start": 6905,
+        "encoding": "int",
+        "length": 3
+      },
+      "40": {
+        "label": "M.B. MADNESS S.J.",
+        "start": 6911,
+        "encoding": "int",
+        "length": 3
+      },
+      "41": {
+        "label": "M.B. MADNESS D.S.J.",
+        "start": 6917,
+        "encoding": "int",
+        "length": 3
+      },
+      "42": {
+        "label": "HURRY UP START",
+        "start": 6923,
+        "encoding": "int",
+        "length": 3
+      },
+      "43": {
+        "label": "HURRY UP AWARDS",
+        "start": 6929,
+        "encoding": "int",
+        "length": 3
+      },
+      "44": {
+        "label": "HURRY UP E.B. LIT",
+        "start": 6935,
+        "encoding": "int",
+        "length": 3
+      },
+      "45": {
+        "label": "R. MADNESS START",
+        "start": 6941,
+        "encoding": "int",
+        "length": 3
+      },
+      "46": {
+        "label": "R. MADNESS COMPL.",
+        "start": 6947,
+        "encoding": "int",
+        "length": 3
+      },
+      "47": {
+        "label": "R. MADNESS E.B.",
+        "start": 6953,
+        "encoding": "int",
+        "length": 3
+      },
+      "48": {
+        "label": "BARNYRD M.B. START",
+        "start": 6959,
+        "encoding": "int",
+        "length": 3
+      },
+      "49": {
+        "label": "B. KINGDOM START",
+        "start": 6965,
+        "encoding": "int",
+        "length": 3
+      },
+      "50": {
+        "label": "B. KINGDOM COMPL.",
+        "start": 6971,
+        "encoding": "int",
+        "length": 3
+      },
+      "51": {
+        "label": "SUPER SKILL SHOT",
+        "start": 6977,
+        "encoding": "int",
+        "length": 3
+      },
+      "52": {
+        "label": "SUPER JETS START",
+        "start": 6983,
+        "encoding": "int",
+        "length": 3
+      },
+      "53": {
+        "label": "RANDOM AWARD",
+        "start": 6989,
+        "encoding": "int",
+        "length": 3
+      },
+      "54": {
+        "label": "RANDOM E.B. LIT",
+        "start": 6995,
+        "encoding": "int",
+        "length": 3
+      },
+      "55": {
+        "label": "VIDEO MODE START",
+        "start": 7001,
+        "encoding": "int",
+        "length": 3
+      },
+      "56": {
+        "label": "VIDEO E.B.",
+        "start": 7007,
+        "encoding": "int",
+        "length": 3
+      },
+      "57": {
+        "label": "VIDEO COMPL.",
+        "start": 7013,
+        "encoding": "int",
+        "length": 3
+      },
+      "58": {
+        "label": "SMACK TRL. START",
+        "start": 7019,
         "encoding": "int",
         "length": 3
       }

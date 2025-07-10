@@ -1,12 +1,16 @@
 {
   "_notes": [
     "Compiled by Tom Collins for initial development/testing purposes.",
-    "WPC 50041, SYS 3.77 REV 1.1"
+    "WPC 50041, SYS 3.77 REV 1.1",
+    "2025-07-07 Tom Collins added automated audits (feature audits)"
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.2,
-    "copyright": "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
+    "version": 0.3,
+    "copyright": [
+      "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
+      "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
+    ],
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
@@ -502,6 +506,332 @@
       "37": {
         "label": "Right Flipper",
         "start": 6659,
+        "encoding": "int",
+        "length": 3
+      }
+    },
+    "B.4 FEATURE AUDS.": {
+      "01": {
+        "label": "BALL SAVES",
+        "start": 6683,
+        "encoding": "int",
+        "length": 3
+      },
+      "02": {
+        "label": "TOTAL MULTIBALLS",
+        "start": 6689,
+        "encoding": "int",
+        "length": 3
+      },
+      "03": {
+        "label": "ATK. WAVE START",
+        "start": 6695,
+        "encoding": "int",
+        "length": 3
+      },
+      "04": {
+        "label": "ATK. WAVE COMPL.",
+        "start": 6701,
+        "encoding": "int",
+        "length": 3
+      },
+      "05": {
+        "label": "ATK. WAVE E.B. LIT",
+        "start": 6707,
+        "encoding": "int",
+        "length": 3
+      },
+      "06": {
+        "label": "LOCKS LIT",
+        "start": 6713,
+        "encoding": "int",
+        "length": 3
+      },
+      "07": {
+        "label": "BALLS LOCKED",
+        "start": 6719,
+        "encoding": "int",
+        "length": 3
+      },
+      "08": {
+        "label": "MAIN M.B. START",
+        "start": 6725,
+        "encoding": "int",
+        "length": 3
+      },
+      "09": {
+        "label": "MAIN M.B. JACKPOTS",
+        "start": 6731,
+        "encoding": "int",
+        "length": 3
+      },
+      "10": {
+        "label": "MAIN M.B. SUPER JP.",
+        "start": 6737,
+        "encoding": "int",
+        "length": 3
+      },
+      "11": {
+        "label": "1st WAVE START",
+        "start": 6743,
+        "encoding": "int",
+        "length": 3
+      },
+      "12": {
+        "label": "1st WAVE COMPL.",
+        "start": 6749,
+        "encoding": "int",
+        "length": 3
+      },
+      "13": {
+        "label": "2nd WAVE START",
+        "start": 6755,
+        "encoding": "int",
+        "length": 3
+      },
+      "14": {
+        "label": "2nd WAVE COMPL.",
+        "start": 6761,
+        "encoding": "int",
+        "length": 3
+      },
+      "15": {
+        "label": "3rd WAVE START",
+        "start": 6767,
+        "encoding": "int",
+        "length": 3
+      },
+      "16": {
+        "label": "3rd WAVE COMPL.",
+        "start": 6773,
+        "encoding": "int",
+        "length": 3
+      },
+      "17": {
+        "label": "4th WAVE START",
+        "start": 6779,
+        "encoding": "int",
+        "length": 3
+      },
+      "18": {
+        "label": "4th WAVE COMPL.",
+        "start": 6785,
+        "encoding": "int",
+        "length": 3
+      },
+      "19": {
+        "label": "5th WAVE START",
+        "start": 6791,
+        "encoding": "int",
+        "length": 3
+      },
+      "20": {
+        "label": "5th WAVE COMPL.",
+        "start": 6797,
+        "encoding": "int",
+        "length": 3
+      },
+      "21": {
+        "label": "6th WAVE START",
+        "start": 6803,
+        "encoding": "int",
+        "length": 3
+      },
+      "22": {
+        "label": "6th WAVE COMPL.",
+        "start": 6809,
+        "encoding": "int",
+        "length": 3
+      },
+      "23": {
+        "label": "HURRY UP AWARDS",
+        "start": 6815,
+        "encoding": "int",
+        "length": 3
+      },
+      "24": {
+        "label": "ANNIHIL. START",
+        "start": 6821,
+        "encoding": "int",
+        "length": 3
+      },
+      "25": {
+        "label": "ANNIHIL. AWARDS",
+        "start": 6827,
+        "encoding": "int",
+        "length": 3
+      },
+      "26": {
+        "label": "ANNIHIL. JACKPOTS",
+        "start": 6833,
+        "encoding": "int",
+        "length": 3
+      },
+      "27": {
+        "label": "MARTIAN COMPL.",
+        "start": 6839,
+        "encoding": "int",
+        "length": 3
+      },
+      "28": {
+        "label": "MARTN. ATK. START",
+        "start": 6845,
+        "encoding": "int",
+        "length": 3
+      },
+      "29": {
+        "label": "MARTN. ATK. KILLS",
+        "start": 6851,
+        "encoding": "int",
+        "length": 3
+      },
+      "30": {
+        "label": "MARTN. BOMBS COLL.",
+        "start": 6857,
+        "encoding": "int",
+        "length": 3
+      },
+      "31": {
+        "label": "MARTN. BOMBS USED",
+        "start": 6863,
+        "encoding": "int",
+        "length": 3
+      },
+      "32": {
+        "label": "MARTIAN M.B. START",
+        "start": 6869,
+        "encoding": "int",
+        "length": 3
+      },
+      "33": {
+        "label": "MARTIAN M.B. KILLS",
+        "start": 6875,
+        "encoding": "int",
+        "length": 3
+      },
+      "34": {
+        "label": "5-WAY COMBOS",
+        "start": 6881,
+        "encoding": "int",
+        "length": 3
+      },
+      "35": {
+        "label": "SUPER JETS START",
+        "start": 6887,
+        "encoding": "int",
+        "length": 3
+      },
+      "36": {
+        "label": "R. UNIVERSE START",
+        "start": 6893,
+        "encoding": "int",
+        "length": 3
+      },
+      "37": {
+        "label": "R. UNIVERSE WON",
+        "start": 6899,
+        "encoding": "int",
+        "length": 3
+      },
+      "38": {
+        "label": "SKILL SHOT",
+        "start": 6905,
+        "encoding": "int",
+        "length": 3
+      },
+      "39": {
+        "label": "SUPER SKILL SHOT",
+        "start": 6911,
+        "encoding": "int",
+        "length": 3
+      },
+      "40": {
+        "label": "BONUS X",
+        "start": 6917,
+        "encoding": "int",
+        "length": 3
+      },
+      "41": {
+        "label": "BOT. LANE COMPL.",
+        "start": 6923,
+        "encoding": "int",
+        "length": 3
+      },
+      "42": {
+        "label": "BOT. LANE E.B. LIT",
+        "start": 6929,
+        "encoding": "int",
+        "length": 3
+      },
+      "43": {
+        "label": "RANDOM AWARDS",
+        "start": 6935,
+        "encoding": "int",
+        "length": 3
+      },
+      "44": {
+        "label": "RANDOM E.B. LIT",
+        "start": 6941,
+        "encoding": "int",
+        "length": 3
+      },
+      "45": {
+        "label": "STROBE M.B. START",
+        "start": 6947,
+        "encoding": "int",
+        "length": 3
+      },
+      "46": {
+        "label": "STROBE E.B. LIT",
+        "start": 6953,
+        "encoding": "int",
+        "length": 3
+      },
+      "47": {
+        "label": "VIDEO MODE START",
+        "start": 6959,
+        "encoding": "int",
+        "length": 3
+      },
+      "48": {
+        "label": "VIDEO E.B.",
+        "start": 6965,
+        "encoding": "int",
+        "length": 3
+      },
+      "49": {
+        "label": "VIDEO MOTHERSHIP",
+        "start": 6971,
+        "encoding": "int",
+        "length": 3
+      },
+      "50": {
+        "label": "VIDEO COMPL.",
+        "start": 6977,
+        "encoding": "int",
+        "length": 3
+      },
+      "51": {
+        "label": "SNEAK ATK. START",
+        "start": 6983,
+        "encoding": "int",
+        "length": 3
+      },
+      "52": {
+        "label": "SNEAK ATK. COMPL.",
+        "start": 6989,
+        "encoding": "int",
+        "length": 3
+      },
+      "53": {
+        "label": "NOVICE MODES",
+        "start": 6995,
+        "encoding": "int",
+        "length": 3
+      },
+      "54": {
+        "label": "BUY-IN EX. BALLS",
+        "start": 7001,
         "encoding": "int",
         "length": 3
       }
