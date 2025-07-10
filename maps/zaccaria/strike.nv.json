@@ -44,10 +44,12 @@
   "high_scores": [
     {
       "label": "High Score",
-      "start": "0x0D42",
-      "length": 3,
-      "encoding": "bcd",
-      "scale": 10
+      "score": {
+        "start": "0x0D42",
+        "length": 3,
+        "encoding": "bcd",
+        "scale": 10
+      }
     }
   ]
 }
