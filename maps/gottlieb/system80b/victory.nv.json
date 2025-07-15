@@ -6,7 +6,8 @@
     "If a value in one location doesn't match the other two, it's replaced by the other value.",
     "If a value differs in all three locations, it's replaced with a default value.",
     "Note that offsets 0xF8 through 0xFC are checksums of each of the high scores.",
-    "Modified version of gottlieb_80b-2.nv.json with game-specific DIP switch entries."
+    "Modified version of gottlieb_80b-2.nv.json with game-specific DIP switch entries.",
+    "80b-8KB-ROM.nv.json and raven.nv.json are identical other than platform (8K vs. 10K ROM)."
   ],
   "_fileformat": 0.7,
   "_metadata": {
@@ -16,7 +17,7 @@
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "gottlieb-system80",
+    "platform": "gottlieb-system80b-10K",
     "roms": [
       "victory",
       "victryfp",

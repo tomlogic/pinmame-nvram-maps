@@ -1,5 +1,8 @@
 {
-  "_notes": "Placeholder for Gottlieb System 80/80A games (missing ROM areas).",
+  "_notes": [
+    "Multiple System 80B games don't have PROM2.",
+    "Early games (Chicago Cubs, Bounty Hunter, Rock, Rock Encore) and Amazon Hunt II/III"
+  ],
   "cpu": "6502",
   "endian": "big",
   "memory_layout": [
@@ -27,6 +30,12 @@
       "size": "0x100",
       "type": "nvram",
       "nibble": "low"
+    },
+    {
+      "label": "PROM 1",
+      "address": "0x2000",
+      "size": "0x2000",
+      "type": "rom"
     }
   ]
 }

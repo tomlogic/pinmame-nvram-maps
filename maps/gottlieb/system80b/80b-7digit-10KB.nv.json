@@ -1,12 +1,12 @@
 {
   "_notes": [
-    "Compiled by Tom Collins.  Original map for System 80B games with 8-digit scores.",
+    "Compiled by Tom Collins, based on map for System 80B games with 8-digit scores.",
     "Game uses a 4-bit nvram (256x4), so only uses the low nibble of each byte.",
-    "Game stores 61 bytes of data in triplicate at offsets 0, 61 and 122.",
+    "Game stores 62 bytes of data in triplicate at offsets 0, 62 and 124.",
     "If a value in one location doesn't match the other two, it's replaced by the other value.",
     "If a value differs in all three locations, it's replaced with a default value.",
-    "Note that offsets 248 through 252 are 4-bit checksums of each of the high scores.",
-    "Note that victory moved to its own map with game-specific DIP switch entries."
+    "Note that offsets 246 through 250 are 4-bit checksums of each of the high scores.",
+    "80b-7digit-{8KB,10KB}.nv.json are identical other than platform (8K vs. 10K ROM)."
   ],
   "_fileformat": 0.7,
   "_metadata": {
@@ -16,58 +16,16 @@
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "gottlieb-system80",
+    "platform": "gottlieb-system80b-10K",
     "roms": [
-      "amazonh2",
-      "amazonh3",
-      "amaz3afp",
-      "amazn2fp",
-      "amazn3fp",
-      "arena",
-      "arena_fp",
-      "arenaafp",
-      "arenaffp",
-      "arenagfp",
-      "badgirls",
-      "badgrlfp",
-      "badgrgfp",
-      "badgrffp",
-      "bighouse",
-      "bighosfp",
-      "bighsgfp",
-      "bighsffp",
-      "bonebstr",
-      "bonebsfp",
-      "bonebgfp",
-      "bonebffp",
-      "diamond",
-      "diamonfp",
-      "diamngfp",
-      "diamnffp",
-      "excaliba",
-      "excalibr",
-      "excalbfp",
-      "excalgfp",
-      "excalffp",
-      "hotshots",
-      "hotshtfp",
-      "hotshgfp",
-      "hotshffp",
-      "nmoves",
-      "nmovesfp",
-      "robowars",
-      "robowrfp",
-      "robowffp",
-      "sprbreak",
-      "sprbrkfp",
-      "sprbrgfp",
-      "sprbrffp",
-      "sprbrafp",
-      "sprbrsfp",
-      "txsector",
-      "txsectfp",
-      "txsecgfp",
-      "txsecffp"
+      "raven",
+      "ravenfp",
+      "ravengfp",
+      "ravenafp",
+      "tagteam",
+      "tagtemfp",
+      "tagtmgfp",
+      "tagtem2f"
     ],
     "values": {
       "off_on": [
@@ -126,15 +84,15 @@
       "label": "High Score #1",
       "short_label": "1st",
       "initials": {
-        "start": "0x18B7",
+        "start": "0x18BA",
         "encoding": "ch",
         "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
-        "start": "0x18BD",
+        "start": "0x18C0",
         "encoding": "bcd",
-        "length": 7,
+        "length": 6,
         "scale": 10
       }
     },
@@ -142,15 +100,15 @@
       "label": "High Score #2",
       "short_label": "2nd",
       "initials": {
-        "start": "0x18C4",
+        "start": "0x18C6",
         "encoding": "ch",
         "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
-        "start": "0x18CA",
+        "start": "0x18CC",
         "encoding": "bcd",
-        "length": 7,
+        "length": 6,
         "scale": 10
       }
     },
@@ -158,15 +116,15 @@
       "label": "High Score #3",
       "short_label": "3rd",
       "initials": {
-        "start": "0x18D1",
+        "start": "0x18D2",
         "encoding": "ch",
         "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
-        "start": "0x18D7",
+        "start": "0x18D8",
         "encoding": "bcd",
-        "length": 7,
+        "length": 6,
         "scale": 10
       }
     },
@@ -182,7 +140,7 @@
       "score": {
         "start": "0x18E4",
         "encoding": "bcd",
-        "length": 7,
+        "length": 6,
         "scale": 10
       }
     },
@@ -190,15 +148,15 @@
       "label": "High Score #5",
       "short_label": "5th",
       "initials": {
-        "start": "0x18EB",
+        "start": "0x18EA",
         "encoding": "ch",
         "default": "\u0000\u0000\u0000",
         "length": 6
       },
       "score": {
-        "start": "0x18F1",
+        "start": "0x18F0",
         "encoding": "bcd",
-        "length": 7,
+        "length": 6,
         "scale": 10
       }
     }
@@ -239,36 +197,36 @@
         "label": "Extra Balls",
         "start": "0x1814",
         "encoding": "bcd",
-        "length": 3
+        "length": 4
       },
       "08": {
         "label": "Tilts",
-        "start": "0x1817",
+        "start": "0x1818",
         "encoding": "bcd",
-        "length": 3
+        "length": 4
       },
       "09": {
         "label": "Specials",
-        "start": "0x181A",
+        "start": "0x181C",
         "encoding": "bcd",
-        "length": 3
+        "length": 4
       },
       "10": {
         "label": "Times HGTD Awarded",
-        "start": "0x181D",
+        "start": "0x1820",
         "encoding": "bcd",
-        "length": 3
+        "length": 4
       },
       "14": {
         "label": "Highest Game To Date",
-        "start": "0x182C",
+        "start": "0x1830",
         "encoding": "bcd",
-        "length": 7,
+        "length": 6,
         "scale": 10
       },
       "14a": {
         "label": "HGTD Initials",
-        "start": "0x1826",
+        "start": "0x182A",
         "encoding": "ch",
         "null": "truncate",
         "length": 6
@@ -276,7 +234,7 @@
       "15": {
         "label": "Game Time",
         "suffix": " seconds",
-        "start": "0x1820",
+        "start": "0x1824",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
@@ -285,30 +243,23 @@
   },
   "adjustments": {
     "Standard Adjustments": {
-      "06": {
-        "label": "Replay Percentage",
-        "suffix": "%",
-        "start": "0x183B",
-        "encoding": "bcd",
-        "length": 2
-      },
       "11": {
         "label": "First High Score",
-        "start": "0x1833",
+        "start": "0x1836",
         "encoding": "bcd",
         "length": 2,
         "scale": 100000
       },
       "12": {
         "label": "Second High Score",
-        "start": "0x1835",
+        "start": "0x1838",
         "encoding": "bcd",
         "length": 2,
         "scale": 100000
       },
       "13": {
         "label": "Third High Score",
-        "start": "0x1837",
+        "start": "0x183A",
         "encoding": "bcd",
         "length": 2,
         "scale": 100000
