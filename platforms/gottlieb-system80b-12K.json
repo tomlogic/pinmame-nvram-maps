@@ -1,6 +1,6 @@
 {
   "_notes": [
-    "Games using a 2732 PROM2.  Unsure of the memory mapping for the second 2KB.",
+    "Games using a 2732 (4KB) PROM2.  Second 2KB starts at 0x9000.",
     "Excalibur, Bad Girls, Big House, Hot Shots, Bone Busters, Night Moves."
   ],
   "cpu": "6502",
@@ -25,8 +25,7 @@
       "type": "ram"
     },
     {
-      "_notes": "incomplete mapping, unsure of where second 2K appears in address space",
-      "label": "PROM 2",
+      "label": "PROM 2 (first half)",
       "address": "0x1000",
       "size": "0x800",
       "type": "rom"
@@ -42,6 +41,12 @@
       "label": "PROM 1",
       "address": "0x2000",
       "size": "0x2000",
+      "type": "rom"
+    },
+    {
+      "label": "PROM 2 (second half)",
+      "address": "0x9000",
+      "size": "0x800",
       "type": "rom"
     }
   ]
