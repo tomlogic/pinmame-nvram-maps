@@ -72,7 +72,7 @@
         "encoding": "bcd"
       }
     ],
-    "tilt": {
+    "tilted": {
       "_notes": "2 when tilted",
       "label": "Tilt",
       "start": "0xC8",
