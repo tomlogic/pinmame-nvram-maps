@@ -104,6 +104,11 @@
       "label": "EBs this Ball",
       "start": 1041,
       "encoding": "int"
+    },
+    "ball_count": {
+      "label": "Ball Count",
+      "start": 6944,
+      "encoding": "int"
     }
   },
   "high_scores": [
@@ -662,11 +667,6 @@
   "checksum16": [
     {
       "start": 6941,
-      "end": 7162,
-      "label": "Adjustments"
-    },
-    {
-      "start": 6942,
       "end": 7162,
       "label": "Adjustments"
     },

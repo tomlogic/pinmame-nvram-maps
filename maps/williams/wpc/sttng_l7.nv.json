@@ -109,6 +109,11 @@
       "label": "EBs this Ball",
       "start": 1045,
       "encoding": "int"
+    },
+    "ball_count": {
+      "label": "Ball Count",
+      "start": 6944,
+      "encoding": "int"
     }
   },
   "high_scores": [

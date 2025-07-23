@@ -288,6 +288,11 @@
         "IN GAME",
         "ATTRACT"
       ]
+    },
+    "ball_count": {
+      "label": "Ball Count",
+      "start": 7046,
+      "encoding": "int"
     }
   },
   "high_scores": [
