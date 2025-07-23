@@ -369,7 +369,45 @@ Keys that don't start with an underscore typically have groups of
 
 ### Game State
 
-(TODO: document the fields of the `game_state` property.)
+The Game State section (`game_state`) contains information about the current
+game in progress.
+
+#### Key Fields
+This should be considered a priority when mapping a game.
+
+- **scores**: A list of entries representing player scores from the current
+    game or the game that just finished.
+- **current_player**: A number representing the current player (1-6).  Values 
+    of 0 or larger than `player_count` are an indication that there isn't a
+    game in progress (i.e., in attract mode).
+- **player_count**: Number of players in the current game (1-6), or the game 
+    that just finished.
+- **current_ball**: Current ball number (typically 1-5).  Values of 0 or
+    larger than `ball_count` are an indication that there isn't a game in
+    progress.
+- **ball_count**: Number of balls per game.
+- **extra_balls**: Number of unplayed extra balls for the current player.
+
+#### Extra Information
+These fields can provide useful information, but are considered a lower
+priority.
+
+- **credits**: Current number of credits on the game.
+- **volume**: Current volume setting.  Entry should have a min/max value
+    so it's possible to represent the volume as a percentage, and to know
+    the valid range for making changes.
+- **replay**: Current score needed to achieve a replay.
+- **match**: The (typically) 2-digit "match" score from the last game.
+- **attract**: Whether the game is in attract mode or a game is in progress.
+    *TODO*: Need to formalize the data type for this entry.
+- **bonus**: Unmultiplied, end-of-ball bonus for current ball.
+- **bonusX**: Multiplier for `bonus`.  There currently isn't a method of
+    representing complex bonus amounts (e.g., different mode bonuses, and
+    a mix of multiplied and unmultiplied values).
+- **eb_on_this_ball**: Number of extra balls the current player earned on
+    the current ball.
+- **tilt_warnings**: Number of tilt warnings received on the current ball.
+- **tilted**: Current player has tilted their ball.
 
 ### DIP Switches
 
