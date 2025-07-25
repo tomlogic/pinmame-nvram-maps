@@ -1,23 +1,22 @@
 {
   "_notes": [
     "Compiled by HorsePin",
-    "2025-02: Tested on all three System 9 games by Tom Collins"
+    "2025-02: Tested on all three System 9 games by Tom Collins",
+    "2025-07: Split sorcr to separate file (12K ROM vs 16K ROM)"
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.2,
+    "version": 0.3,
     "copyright": [
       "Copyright (C) 2022 https://github.com/horseyhorsey",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "williams-system11",
+    "platform": "williams-system9-16K",
     "roms": [
       "comet_l4",
       "comet_l5",
-      "sshtl_l7",
-      "sorcr_l2",
-      "sorcr_l1"
+      "sshtl_l7"
     ]
   },
   "high_scores": [

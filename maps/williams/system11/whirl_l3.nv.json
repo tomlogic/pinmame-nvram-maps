@@ -15,7 +15,7 @@
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "williams-system11",
+    "platform": "williams-system11-48K",
     "roms": [
       "whirl_l3"
     ],
