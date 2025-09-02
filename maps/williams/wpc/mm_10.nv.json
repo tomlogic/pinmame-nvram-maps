@@ -109,6 +109,11 @@
       "label": "Ball Count",
       "start": 7052,
       "encoding": "int"
+    },
+    "max_credits": {
+      "label": "Maximum Credits",
+      "start": 7176,
+      "encoding": "int"
     }
   },
   "high_scores": [
