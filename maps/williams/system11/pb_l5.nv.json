@@ -7,7 +7,7 @@
     "2025-02 v0.1: Initial version",
     "2025-03 v0.2: Tom Collins added audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
     "version": 0.2,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
@@ -21,8 +21,6 @@
     "credits": {
       "label": "Credits",
       "start": 1830,
-      "_notes": "checksum8 of this byte at 1901",
-      "length": 1,
       "encoding": "bcd"
     },
     "scores": [
@@ -125,6 +123,11 @@
       "end": 1827,
       "groupings": 4,
       "label": "Audits"
+    },
+    {
+      "start": 1830,
+      "checksum": 1901,
+      "label": "Credits"
     }
   ],
   "audits": {

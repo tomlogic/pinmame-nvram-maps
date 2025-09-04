@@ -482,10 +482,19 @@ The objects used for the last two entries in the map are
 slightly different from the other descriptors.  They have the required
 `start` field, require either an inclusive `end` (preferred) or `length`, and
 `label` is optional.  They introduce a new, optional `groupings` key used to
-treat a single descriptor as a list of groupings-sized ranges. 
+treat a single descriptor as a list of groupings-sized ranges.
 
-(On WPC games, the audits are a series of 6-byte entries, each with an
-8-bit checksum as the last byte.)
+(For example, on WPC games, the audits are a series of 6-byte entries, each 
+with an 8-bit checksum as the last byte.)
+
+As of file format v0.7, these objects allow for non-adjacent checksums via
+a `checksum` field to represent the checksum's address.  The original 
+behavior (followed when `checksum` isn't present) is to extract the 
+checksum byte from the end of the `start` to `end` range.  If `checksum` is 
+present, `start` to `end` describe only the bytes checksummed.
+
+(For example, on Williams System 11 games, the single byte credit field 
+has a checksum that appears in a non-adjacent address.)
 
 - **checksum8**: An array of memory regions protected by an 8-bit
   checksum.  The last byte of the range is set so that the low byte from
@@ -506,3 +515,5 @@ treat a single descriptor as a list of groupings-sized ranges.
         underscore removed.
         Deprecate `last_game` attribute in favor of `game_state.scores`.
 - v0.7: Add `platform` metadata property.
+- v0.8: Add `checksum` property to checksum8/checksum16 objects to allow
+        for non-adjacent checksums (needed for Credits on System 11).

@@ -12,6 +12,9 @@ Usage:
 
 File format updates
 -------------------
+* v0.8:
+    - checksum8/checksum16 objects can have a checksum property
+
 * v0.7:
     - add `platform` metadata
     - start/end/offsets hex values no longer deprecated (and are now preferred)
@@ -59,6 +62,9 @@ def map_convert(pairs):
         # set minimum file format based on appearance of certain keys
         if k == '_fileformat':
             minimum_file_format(v)
+        elif k == 'checksum':
+            # checksum attribute for checksum8/checksum16 objects added in v0.8
+            minimum_file_format(0.8)
         elif k == 'platform':
             # metadata "platform" introduced in v0.7
             minimum_file_format(0.7)

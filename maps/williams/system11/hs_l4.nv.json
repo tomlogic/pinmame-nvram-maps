@@ -5,7 +5,7 @@
     "https://www.ipdb.org/machine.cgi?id=1176",
     "Williams System 11"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
     "version": 0.2,
     "copyright": [
@@ -23,8 +23,6 @@
     "credits": {
       "label": "Credits",
       "start": 1830,
-      "_notes": "checksum8 of this byte at 1901",
-      "length": 1,
       "encoding": "bcd"
     },
     "hideout_jackpot": {
@@ -1003,6 +1001,11 @@
       "end": 1827,
       "groupings": 4,
       "label": "Audits"
+    },
+    {
+      "start": 1830,
+      "checksum": 1901,
+      "label": "Credits"
     },
     {
       "start": 1864,
