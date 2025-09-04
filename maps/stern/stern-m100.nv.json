@@ -2,7 +2,9 @@
   "_notes": [
     "2023-10 Initial version by Tom Collins.  Required new `nibble` attribute.",
     "NVRAM file mapped to memory address 0x200 in PinMAME",
-    "Valid for all Stern M-100 MPU games.  ROMs with 'fp' suffix are Free Play."
+    "Valid for all Stern M-100 MPU games.  ROMs with 'fp' suffix are Free Play.",
+    "Untested with blkshpsq (Astro game), draculc/wildfyrc (mod), stars/starsb7 (mod), stingrab (mod).",
+    "Won't work with larger, modified ROMs: magicb, princesb."
   ],
   "_fileformat": 0.7,
   "_metadata": {
@@ -12,21 +14,30 @@
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "bally-stern-6800",
+    "platform": "stern-m100",
     "roms": [
       "dracula",
       "draculfp",
       "hothand",
+      "hothanfp",
+      "lectrofp",
       "lectrono",
+      "magic",
+      "magicfp",
       "memlane",
+      "memlanfp",
       "nugent",
-      "pinball",
+      "nugentfp",
       "pinbalfp",
+      "pinball",
       "princess",
+      "princefp",
       "stars",
+      "starsfp",
       "stingray",
-      "wildfyre",
-      "wildfyfp"
+      "stingrfp",
+      "wildfyfp",
+      "wildfyre"
     ]
   },
   "game_state": {
