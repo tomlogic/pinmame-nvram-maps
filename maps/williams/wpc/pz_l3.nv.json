@@ -343,13 +343,16 @@
         "label": "MINUTES OF PLAY",
         "start": 6329,
         "encoding": "int",
-        "length": 3
+        "length": 3,
+        "units": "seconds",
+        "scale": 10
       },
       "22": {
         "label": "MINUTES ON",
         "start": 6335,
         "encoding": "int",
-        "length": 3
+        "length": 3,
+        "units": "minutes"
       },
       "23": {
         "label": "BALLS PLAYED",
