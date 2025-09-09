@@ -126,6 +126,11 @@
       "end": 1831,
       "groupings": 4,
       "label": "Audits"
+    },
+    {
+      "start": 1834,
+      "checksum": 1905,
+      "label": "Credits"
     }
   ],
   "audits": {
