@@ -58,6 +58,16 @@
       "special_values": {
         "0": "n/a"
       }
+    },
+    "ball_count": {
+      "label": "Ball Count",
+      "start": 1928,
+      "encoding": "bcd"
+    },
+    "max_credits": {
+      "label": "Maximum Credits",
+      "start": 1931,
+      "encoding": "bcd"
     }
   },
   "high_scores": [
