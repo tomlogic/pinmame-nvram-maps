@@ -7,8 +7,8 @@ Script to normalize the nvram map files:
   - Convert name of `_note` attribute to `_notes`.
 
 Usage:
-    normalize-map.py mapname.nv.json
-    normalize-map.py *.nv.json
+    normalize-map.py mapname.map.json
+    normalize-map.py *.map.json
 
 File format updates
 -------------------

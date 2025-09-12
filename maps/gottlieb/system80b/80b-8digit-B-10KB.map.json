@@ -1,17 +1,17 @@
 {
   "_notes": [
-    "Compiled by Tom Collins.",
+    "Compiled by Tom Collins.  Original map for System 80B games with 8-digit scores.",
     "Game uses a 4-bit nvram (256x4), so only uses the low nibble of each byte.",
-    "Game stores 61 bytes of data in triplicate at offsets 0x00, 0x3D and 0x7A.",
+    "Game stores 61 bytes of data in triplicate at offsets 0, 61 and 122.",
     "If a value in one location doesn't match the other two, it's replaced by the other value.",
     "If a value differs in all three locations, it's replaced with a default value.",
-    "Note that offsets 0xF8 through 0xFC are checksums of each of the high scores.",
-    "Modified version of gottlieb_80b-2.nv.json with game-specific DIP switch entries.",
-    "80b-8KB-ROM.nv.json and raven.nv.json are identical other than platform (8K vs. 10K ROM)."
+    "Note that offsets 248 through 252 are 4-bit checksums of each of the high scores.",
+    "Note that victory moved to its own map with game-specific DIP switch entries.",
+    "80b-8digit-B-{8KB,10KB,12KB}.map.json are identical other than platform (8KB/10KB/12KB ROMs)."
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.1,
+    "version": 0.4,
     "copyright": [
       "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -19,14 +19,28 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "gottlieb-system80b-10K",
     "roms": [
-      "victory",
-      "victryfp",
-      "victrgfp",
-      "victrffp",
-      "victr101",
-      "victr11",
-      "victr12",
-      "victr13"
+      "arena",
+      "arena_fp",
+      "arenaafp",
+      "arenaffp",
+      "arenagfp",
+      "diamond",
+      "diamonfp",
+      "diamngfp",
+      "diamnffp",
+      "robowars",
+      "robowrfp",
+      "robowffp",
+      "sprbreak",
+      "sprbrkfp",
+      "sprbrgfp",
+      "sprbrffp",
+      "sprbrafp",
+      "sprbrsfp",
+      "txsector",
+      "txsectfp",
+      "txsecgfp",
+      "txsecffp"
     ],
     "values": {
       "off_on": [
@@ -78,77 +92,6 @@
       "start": "0x1839",
       "encoding": "bcd",
       "length": 2
-    },
-    "scores": [
-      {
-        "_notes": [
-          "Scores hack: need to ignore top bit (comma) and convert 0x4F ('O') to zero.",
-          "Bytes are: 0x31 to 0x39, 0x20 (' '), and 0x4F ('O'); top bit set for comma.",
-          "By setting nibble=low, we get 0x1 to 0x9, 0x0 and 0xF for those three bytes,",
-          "which treats space and 'O' as zero."
-        ],
-        "label": "Player 1",
-        "start": "0x0000",
-        "length": 8,
-        "nibble": "low",
-        "encoding": "bcd"
-      },
-      {
-        "label": "Player 2",
-        "start": "0x000C",
-        "length": 8,
-        "nibble": "low",
-        "encoding": "bcd"
-      },
-      {
-        "label": "Player 3",
-        "start": "0x0014",
-        "length": 8,
-        "nibble": "low",
-        "encoding": "bcd"
-      },
-      {
-        "label": "Player 4",
-        "start": "0x0020",
-        "length": 8,
-        "nibble": "low",
-        "encoding": "bcd"
-      }
-    ],
-    "player_count": {
-      "_notes": "set to 0 when game over",
-      "label": "Player Count",
-      "short_label": "Players",
-      "start": "0xC0",
-      "encoding": "int"
-    },
-    "current_player": {
-      "_notes": "0-3; bit 7 (0x80) sometimes set",
-      "label": "Current Player",
-      "short_label": "P#",
-      "start": "0xC1",
-      "encoding": "int",
-      "mask": "0x0F",
-      "offset": 1
-    },
-    "current_ball": {
-      "_notes": "stored as 0x31 to 0x35 ('1' to '5')",
-      "label": "Ball",
-      "start": "0x0A",
-      "encoding": "bcd",
-      "mask": "0x0F"
-    },
-    "ball_count": {
-      "_notes": "set at startup from DIP switches; always 3 or 5",
-      "label": "Balls Per Game",
-      "start": "0xDF",
-      "encoding": "bcd"
-    },
-    "extra_ball": {
-      "_notes": "either 0 or 1, no stacking",
-      "label": "Extra Balls",
-      "start": "0xCA",
-      "encoding": "int"
     }
   },
   "high_scores": [
@@ -522,30 +465,24 @@
       ],
       "values": [
         "no effect",
-        "add 9 credits (enables Free Play on competition ROMs)"
+        "add 9 credits"
       ]
     },
     "31": {
-      "label": "Extra Ball Control",
+      "label": "Game Setting #1",
       "encoding": "dipsw",
       "offsets": [
         31
       ],
-      "values": [
-        "conservative: hole value reset at end of ball; EB lamps alternate",
-        "liberal: hole value held between balls; both EB lamps lit"
-      ]
+      "values": "off_on"
     },
     "32": {
-      "label": "Outlane Special",
+      "label": "Game Setting #2",
       "encoding": "dipsw",
       "offsets": [
         32
       ],
-      "values": [
-        "conservative: outlane lit after second race completed",
-        "liberal: outlane lit after first race (qualifying heat) completed"
-      ]
+      "values": "off_on"
     }
   }
 }

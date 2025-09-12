@@ -15,7 +15,7 @@ rootdir = os.path.join(os.path.dirname(__file__), '..')
 with open(os.path.join(rootdir, 'romnames.json')) as f:
     romnames = json.load(f)
 
-maps = os.path.join(rootdir, 'maps', '**', '*.nv.json')
+maps = os.path.join(rootdir, 'maps', '**', '*.map.json')
 for map_file in glob.glob(maps, recursive=True):
     with open(map_file, 'r') as f:
         map_json = json.load(f)

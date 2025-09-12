@@ -12,7 +12,8 @@ and change game settings without using the service menu.
 
 This project started in October 2015, and should be considered "beta"
 quality.  As people map more games, the file format may change to
-support additional requirements.
+support additional requirements.  We are working toward a "1.0" file 
+format version that should reduce the number of changes moving foward.
 
 Starting in 2025, it transitioned to include mapping of all RAM for a game,
 including the volatile RAM that isn't stored in `.nv` files, and isn't 
@@ -28,15 +29,15 @@ For this repository, we're formatting JSON files with each entry on its
 own line, and 2 spaces for indentation.  You can get this formatting using
 either `jq` or `python`:
 
-- jq: `jq --indent 2 --ascii-output . mapname.nv.json`
+- jq: `jq --indent 2 --ascii-output . romname.map.json`
 - python: `json.dumps()` with the setting `indent=2`
 
 ```
-    print(json.dumps(json.load(open('mapname.nv.json', 'r')), indent=2))
+    print(json.dumps(json.load(open('romname.map.json', 'r')), indent=2))
 ```
 
 We're using the `--ascii-output` option to `jq` so it's consistent with the
-Python output of bytes values 0x80 to 0xFF.  For example, `hs_l4.nv.json`
+Python output of bytes values 0x80 to 0xFF.  For example, `hs_l4.map.json`
 encodes a 0xC4 byte in the default attract text as `\u00C4`.
 
 The script `tools/reformat-json.sh` can reformat one (or all) of the JSON
@@ -52,11 +53,11 @@ v3.0 (LGPL).  LGPL requires that derived works be licensed under the
 same license, but works that only link to it do not fall under this
 restriction.
 
-My intent is for the map files (`.nv.json`) to remain open and for
+My intent is for the map files (`.map.json`) to remain open and for
 everyone to benefit from updates, yet allow for their use in
 closed-source projects with attribution.  Please include a GitHub link
 to the original project (or your fork of it), along with the
-description, "This program makes use of content from the PinMAME NVRAM
+description, "This program makes use of content from the Pinball Memory
 Maps project."
 
 ## Sample Code
@@ -99,7 +100,7 @@ of maps.
 - The dictionary will have a single entry for a given ROM (i.e., the
   repository won't have multiple maps for a ROM).
 - The map filename can be in a relative subdirectory, using `/` as the
-  directory separator (e.g., `"maps/williams/wpc/dm_lx4.nv.json"`).
+  directory separator (e.g., `"maps/williams/wpc/dm_lx4.map.json"`).
 - Use `tools/update-index.py` to automatically update the index.
 
 ## Listing of PinMAME ROM sets
@@ -196,7 +197,7 @@ describe the map itself and provide defaults for later entries.
   JSON file in the top-level `platforms/` directory.  See the Platform 
   section above for details on what's covered in that file.
 - **char_map**: Characters to use for the `ch` encoding instead of a straight 
-  ASCII table.  See Whirlwind (`whirl_l3.nv.json`) as an example.
+  ASCII table.  See Whirlwind (`whirl_l3.map.json`) as an example.
 - **values**: A dictionary for value lists used by multiple entries.  Added
   to `_fileformat` v0.5 to support long lists of pricing options that apply
   to multiple sets of DIP switches.  The `value` property for an entry can
@@ -474,7 +475,7 @@ Example with entries for a single switch and group of two switches.
 }
 ```
 
-See `gottlieb/victory.nv.json` as a full example of DIP switch documentation.
+See `gottlieb/victory.map.json` as a full example of DIP switch documentation.
 
 ### Checksums
 
