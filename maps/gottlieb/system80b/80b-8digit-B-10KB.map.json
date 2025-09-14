@@ -92,6 +92,91 @@
       "start": "0x1839",
       "encoding": "bcd",
       "length": 2
+    },
+    "scores": [
+      {
+        "_notes": [
+          "Scores hack: need to ignore top bit (comma) and convert 0x4F ('O') to zero.",
+          "Bytes are: 0x31 to 0x39, 0x20 (' '), and 0x4F ('O'); top bit set for comma.",
+          "By setting nibble=low, we get 0x1 to 0x9, 0x0 and 0xF for those three bytes,",
+          "which treats space and 'O' as zero."
+        ],
+        "label": "Player 1",
+        "start": "0x0000",
+        "length": 8,
+        "nibble": "low",
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 2",
+        "start": "0x000C",
+        "length": 8,
+        "nibble": "low",
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 3",
+        "start": "0x0014",
+        "length": 8,
+        "nibble": "low",
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 4",
+        "start": "0x0020",
+        "length": 8,
+        "nibble": "low",
+        "encoding": "bcd"
+      }
+    ],
+    "player_count": {
+      "_notes": "set to 0 when game over",
+      "label": "Player Count",
+      "short_label": "Players",
+      "start": "0xC0",
+      "encoding": "int"
+    },
+    "current_player": {
+      "_notes": "0-3; bit 7 (0x80) sometimes set",
+      "label": "Current Player",
+      "short_label": "P#",
+      "start": "0xC1",
+      "encoding": "int",
+      "mask": "0x0F",
+      "offset": 1
+    },
+    "current_ball": {
+      "_notes": "stored as 0x31 to 0x35 ('1' to '5')",
+      "label": "Ball",
+      "start": "0x0A",
+      "encoding": "bcd",
+      "mask": "0x0F"
+    },
+    "ball_count": {
+      "_notes": "set at startup from DIP switches; always 3 or 5",
+      "label": "Balls Per Game",
+      "start": "0xDF",
+      "encoding": "bcd"
+    },
+    "extra_balls": {
+      "_notes": "either 0 or 1, no stacking",
+      "label": "Extra Balls",
+      "start": "0xCA",
+      "encoding": "int"
+    },
+    "max_credits": {
+      "label": "Maximum Credits",
+      "encoding": "dipsw",
+      "offsets": [
+        15,
+        16
+      ],
+      "values": [
+        8,
+        10,
+        15,
+        20
+      ]
     }
   },
   "high_scores": [

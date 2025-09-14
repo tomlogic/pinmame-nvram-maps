@@ -2,12 +2,11 @@
   "_notes": [
     "Compiled by Tom Collins.",
     "Game uses a 4-bit nvram (256x4), so only uses the low nibble of each byte.",
-    "Game stores 61 bytes of data in triplicate at offsets 0x00, 0x3D and 0x7A.",
+    "Game stores 61 bytes of data in triplicate at offsets 0, 61 and 122.",
     "If a value in one location doesn't match the other two, it's replaced by the other value.",
     "If a value differs in all three locations, it's replaced with a default value.",
-    "Note that offsets 0xF8 through 0xFC are checksums of each of the high scores.",
-    "Modified version of gottlieb_80b-2.map.json with game-specific DIP switch entries.",
-    "80b-8KB-ROM.map.json and raven.map.json are identical other than platform (8K vs. 10K ROM)."
+    "Note that offsets 248 through 252 are 4-bit checksums of each of the high scores.",
+    "Modified version of 80b-8digit-B-12KB.map.json with game-specific DIP switch entries."
   ],
   "_fileformat": 0.7,
   "_metadata": {
@@ -144,11 +143,25 @@
       "start": "0xDF",
       "encoding": "bcd"
     },
-    "extra_ball": {
+    "extra_balls": {
       "_notes": "either 0 or 1, no stacking",
       "label": "Extra Balls",
       "start": "0xCA",
       "encoding": "int"
+    },
+    "max_credits": {
+      "label": "Maximum Credits",
+      "encoding": "dipsw",
+      "offsets": [
+        15,
+        16
+      ],
+      "values": [
+        8,
+        10,
+        15,
+        20
+      ]
     }
   },
   "high_scores": [
