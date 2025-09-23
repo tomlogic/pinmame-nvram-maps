@@ -58,6 +58,32 @@
         "length": 7
       }
     ],
+    "final_scores": [
+      {
+        "label": "Final Score P1",
+        "start": "0x0248",
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Final Score P2",
+        "start": "0x024F",
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Final Score P3",
+        "start": "0x0256",
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Final Score P4",
+        "start": "0x025D",
+        "encoding": "bcd",
+        "length": 7
+      }
+    ],
     "current_ball": {
       "label": "Current Ball",
       "start": "0x0B",
