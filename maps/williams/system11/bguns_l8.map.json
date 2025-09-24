@@ -71,6 +71,23 @@
       "label": "Maximum Credits",
       "start": 1931,
       "encoding": "bcd"
+    },
+    "player_count": {
+      "label": "Player Count",
+      "short_label": "Players",
+      "start": 168,
+      "encoding": "int",
+      "offset": 1,
+      "special_values": {
+        "256": "n/a"
+      }
+    },
+    "current_player": {
+      "label": "Current Player",
+      "short_label": "P#",
+      "start": 169,
+      "encoding": "int",
+      "offset": 1
     }
   },
   "high_scores": [
