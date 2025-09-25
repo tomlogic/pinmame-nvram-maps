@@ -10,7 +10,7 @@
     "version": 0.3,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "williams-system6",
+    "platform": "williams-system6-6K",
     "roms": [
       "algar_l1",
       "algar_l1ff"

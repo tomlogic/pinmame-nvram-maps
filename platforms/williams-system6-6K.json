@@ -1,6 +1,6 @@
 {
-  "_notes": "Williams System 3/4, 6800 CPU at 895kHz, 256 byte RAM, 256 4-bit NVRAM, 3x2KB ROM",
-  "cpu": "6800",
+  "_notes": "Williams System 6, 6808 CPU at 895kHz, 256 byte RAM, 256 4-bit NVRAM, 3x2KB ROM",
+  "cpu": "6808",
   "endian": "big",
   "memory_layout": [
     {

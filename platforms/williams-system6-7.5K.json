@@ -1,6 +1,6 @@
 {
-  "_notes": "Williams System 3/4, 6800 CPU at 895kHz, 256 byte RAM, 256 4-bit NVRAM, 3x2KB ROM",
-  "cpu": "6800",
+  "_notes": "Williams System 6, 6808 CPU at 895kHz, 256 byte RAM, 256 4-bit NVRAM, 3x2KB+3x512B ROM",
+  "cpu": "6808",
   "endian": "big",
   "memory_layout": [
     {
@@ -17,8 +17,26 @@
       "nibble": "low"
     },
     {
-      "label": "ROM (IC14)",
+      "label": "ROM (IC21)",
       "address": "0x6000",
+      "size": "0x200",
+      "type": "rom"
+    },
+    {
+      "label": "ROM (IC22)",
+      "address": "0x6200",
+      "size": "0x200",
+      "type": "rom"
+    },
+    {
+      "label": "ROM (IC26)",
+      "address": "0x6400",
+      "size": "0x200",
+      "type": "rom"
+    },
+    {
+      "label": "ROM (IC14)",
+      "address": "0x6800",
       "size": "0x800",
       "type": "rom"
     },

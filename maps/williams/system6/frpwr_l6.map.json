@@ -1,9 +1,9 @@
 {
   "_notes": [
-    "Compiled by Tom Collins, based on Williams System 6 map.",
-    "Flash (Williams, 1978)",
-    "https://www.ipdb.org/machine.cgi?id=871",
-    "Flash was originally System 4; this map is for the System 6 version.",
+    "Compiled by Tom Collins, based on Williams System 7 map.",
+    "Based on generic map for all Williams System 6 (but not 6A) games.",
+    "Game-specific audits/adjustments vary from game to game.",
+    "https://github.com/idealjoker/7eleven/blob/master/System6.API",
     "Game/player state information from Ideal Joker's 7eleven project."
   ],
   "_fileformat": 0.7,
@@ -11,12 +11,14 @@
     "version": 0.3,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "williams-system6-6K",
+    "platform": "williams-system6-7.5K",
     "roms": [
-      "flash_l1",
-      "flash_l1ff",
-      "flash_t1",
-      "flash_t1ff"
+      "frpwr_l2",
+      "frpwr_l2ff",
+      "frpwr_l6",
+      "frpwr_l6ff",
+      "frpwr_t6",
+      "frpwr_t6ff"
     ]
   },
   "game_state": {
@@ -359,67 +361,34 @@
     },
     "Game Adjustments": {
       "31": {
-        "label": "Background Sound",
+        "label": "Game Adjust 1",
         "start": "0x01A5",
         "length": 2,
-        "encoding": "enum",
-        "values": [
-          "off",
-          "on"
-        ]
+        "encoding": "bcd"
       },
       "32": {
-        "label": "SUPER FLASH Scoring",
+        "label": "Game Adjust 2",
         "start": "0x01A7",
         "length": 2,
-        "encoding": "enum",
-        "values": [
-          "awards 50,000 points",
-          "awards extra ball"
-        ]
+        "encoding": "bcd"
       },
       "33": {
-        "label": "SUPER FLASH Restore",
+        "label": "Game Adjust 3",
         "start": "0x01A9",
         "length": 2,
-        "encoding": "enum",
-        "values": [
-          "restores",
-          "does not restore"
-        ]
+        "encoding": "bcd"
       },
       "34": {
-        "label": "Extra Ball Control",
+        "label": "Game Adjust 4",
         "start": "0x01AB",
         "length": 2,
-        "encoding": "enum",
-        "values": [
-          "extra ball allowed",
-          "no extra ball"
-        ]
+        "encoding": "bcd"
       },
-      "35A": {
-        "label": "Eject Hole Lamps",
+      "35": {
+        "label": "Game Adjust 5",
         "start": "0x01AD",
-        "length": 1,
-        "encoding": "enum",
-        "values": [
-          "restored",
-          "not restored"
-        ]
-      },
-      "35B": {
-        "label": "5,000 Lamp",
-        "start": "0x01AE",
-        "length": 1,
-        "encoding": "enum",
-        "values": [
-          "N/A",
-          "lit initially",
-          "not lit initially"
-        ],
-        "min": 1,
-        "max": 2
+        "length": 2,
+        "encoding": "bcd"
       }
     }
   }

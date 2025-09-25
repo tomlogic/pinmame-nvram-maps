@@ -1,6 +1,9 @@
 {
-  "_notes": "Williams System 3/4, 6800 CPU at 895kHz, 256 byte RAM, 256 4-bit NVRAM, 3x2KB ROM",
-  "cpu": "6800",
+  "_notes": [
+    "Williams System 6, 6808 CPU at 895kHz, 256 byte RAM, 256 4-bit NVRAM, 1x4KB + 2x2KB ROM",
+    "Used by modified ROMs for Firepower (frpwr_{a,b,c,d}6) and Alien Poker (alpok_b6)."
+  ],
+  "cpu": "6808",
   "endian": "big",
   "memory_layout": [
     {
@@ -19,7 +22,7 @@
     {
       "label": "ROM (IC14)",
       "address": "0x6000",
-      "size": "0x800",
+      "size": "0x1000",
       "type": "rom"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "_notes": "Williams System 7, 6808 CPU at 895kHz",
+  "_notes": "Williams System 7, 6808 CPU at 895kHz, 8KB ROM (IC14, IC17, IC20)",
   "cpu": "6808",
   "endian": "big",
   "memory_layout": [
@@ -22,6 +22,24 @@
       "address": "0x1000",
       "size": "0x400",
       "type": "ram"
+    },
+    {
+      "label": "ROM (IC14)",
+      "address": "0xE000",
+      "size": "0x800",
+      "type": "rom"
+    },
+    {
+      "label": "ROM (IC20)",
+      "address": "0xE800",
+      "size": "0x800",
+      "type": "rom"
+    },
+    {
+      "label": "ROM (IC17)",
+      "address": "0xF000",
+      "size": "0x1000",
+      "type": "rom"
     }
   ]
 }

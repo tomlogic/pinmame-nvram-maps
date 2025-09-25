@@ -1,21 +1,31 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Laser Cue (Williams 1984)",
-    "Using space for game audits 1-6 to store high scores 2-4.",
-    "Derived from system7-generic.map.json."
+    "Generic map valid for all Williams System 7 games.",
+    "Game-specific audits/adjustments vary from game to game.",
+    "Rat Race (Williams 1983) not tested.",
+    "Thunderball (Williams 1982) not tested.",
+    "Varkon (Williams 1982) not tested.",
+    "2025-04 v0.2: Tom Collins updated with information from Jess Askey",
+    "http://gamearchive.askey.org/Pinball/Manufacturers/Williams/PinBuilder/text/williams_lvl7_programming.html",
+    "Game/player state information from Ideal Joker's 7eleven project."
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.2,
+    "version": 0.3,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "williams-system7-10K",
+    "platform": "williams-system7-12K",
     "roms": [
-      "lsrcu_l2"
+      "dfndr_l4",
+      "hypbl_l6",
+      "ratrc_l1",
+      "strlt_l1",
+      "thund_p2",
+      "thund_p3"
     ]
   },
   "game_state": {
@@ -120,33 +130,6 @@
       "short_label": "1st",
       "score": {
         "start": "0x0166",
-        "encoding": "bcd",
-        "length": 8
-      }
-    },
-    {
-      "label": "Second Place",
-      "short_label": "2nd",
-      "score": {
-        "start": "0x012E",
-        "encoding": "bcd",
-        "length": 8
-      }
-    },
-    {
-      "label": "Third Place",
-      "short_label": "3rd",
-      "score": {
-        "start": "0x0136",
-        "encoding": "bcd",
-        "length": 8
-      }
-    },
-    {
-      "label": "Fourth Place",
-      "short_label": "4th",
-      "score": {
-        "start": "0x013E",
         "encoding": "bcd",
         "length": 8
       }
@@ -259,14 +242,50 @@
       }
     },
     "Game Audits": {
+      "42": {
+        "label": "Game Audit 1",
+        "start": "0x012E",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "43": {
+        "label": "Game Audit 2",
+        "start": "0x0132",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "44": {
+        "label": "Game Audit 3",
+        "start": "0x0136",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "45": {
+        "label": "Game Audit 4",
+        "start": "0x013A",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "46": {
+        "label": "Game Audit 5",
+        "start": "0x013E",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      "47": {
+        "label": "Game Audit 6",
+        "start": "0x0142",
+        "length": 4,
+        "encoding": "bcd"
+      },
       "48": {
-        "label": "Unused",
+        "label": "Game Audit 7",
         "start": "0x0146",
         "length": 4,
         "encoding": "bcd"
       },
       "49": {
-        "label": "Burn-In Cycles?",
+        "label": "Burn-In Cycles",
         "start": "0x014A",
         "length": 4,
         "encoding": "bcd"
@@ -441,109 +460,58 @@
     },
     "Game Adjustments": {
       "31": {
-        "label": "Reset Multiplier on Next Ball",
+        "label": "Game Adjust 1",
         "start": "0x0195",
         "length": 2,
-        "encoding": "enum",
-        "values": [
-          "N/A",
-          "X2",
-          "X3",
-          "X4",
-          "X5",
-          "X7",
-          "X10",
-          "X15",
-          "X20"
-        ],
-        "min": 1,
-        "max": 8
+        "encoding": "bcd"
       },
-      "32a": {
-        "label": "Double Ball",
+      "32": {
+        "label": "Game Adjust 2",
         "start": "0x0197",
-        "length": 1,
-        "encoding": "enum",
-        "values": [
-          "disabled",
-          "enabled"
-        ]
-      },
-      "32b": {
-        "label": "Special",
-        "start": "0x0198",
-        "length": 1,
-        "encoding": "enum",
-        "values": [
-          "disabled",
-          "award on X10 only",
-          "award on X15 only",
-          "award on X20 only"
-        ]
+        "length": 2,
+        "encoding": "bcd"
       },
       "33": {
-        "label": "Extra Ball Time",
+        "label": "Game Adjust 3",
         "start": "0x0199",
         "length": 2,
-        "encoding": "bcd",
-        "offset": 15,
-        "min": 0,
-        "max": 25,
-        "units": "seconds"
+        "encoding": "bcd"
       },
       "34": {
-        "label": "Reset Back Drop-Targets",
+        "label": "Game Adjust 4",
         "start": "0x019B",
         "length": 2,
-        "encoding": "enum",
-        "values": [
-          "up to #1, #9 ball-target",
-          "up to #2, #10 ball-target",
-          "up to #3, #11 ball-target"
-        ]
+        "encoding": "bcd"
       },
       "35": {
-        "label": "Special/Extra Ball lamp memory",
+        "label": "Game Adjust 5",
         "start": "0x019D",
         "length": 2,
-        "encoding": "enum",
-        "values": [
-          "none",
-          "extra ball",
-          "special",
-          "both"
-        ]
+        "encoding": "bcd"
       },
       "36": {
-        "label": "Background Sound",
+        "label": "Game Adjust 6",
         "start": "0x019F",
         "length": 2,
-        "encoding": "enum",
-        "values": [
-          "no",
-          "yes"
-        ]
+        "encoding": "bcd"
       },
       "37": {
-        "label": "2nd Backup HSTD",
+        "label": "Game Adjust 7",
         "start": "0x01A1",
         "length": 2,
-        "encoding": "bcd",
-        "scale": 100000
+        "encoding": "bcd"
       },
       "38": {
-        "label": "3rd Backup HSTD",
+        "label": "Game Adjust 8",
         "start": "0x01A3",
         "length": 2,
-        "encoding": "bcd",
-        "scale": 100000
+        "encoding": "bcd"
       },
       "39": {
-        "label": "4th Backup HSTD",
+        "label": "Game Adjust 9",
         "start": "0x01A5",
         "length": 2,
-        "encoding": "bcd",
-        "scale": 100000
+        "encoding": "bcd"
       }
     }
   }

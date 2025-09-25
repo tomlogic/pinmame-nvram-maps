@@ -10,9 +10,8 @@
     "version": 0.3,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "williams-system6",
+    "platform": "williams-system6-6K",
     "roms": [
-      "alpok_b6",
       "alpok_f6",
       "alpok_f6ff",
       "alpok_l2",
