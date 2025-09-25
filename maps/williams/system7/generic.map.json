@@ -74,9 +74,9 @@
     ],
     "tilted": {
       "_notes": "2 when tilted",
-      "label": "Tilt",
+      "label": "Tilted",
       "start": "0xC8",
-      "encoding": "int"
+      "encoding": "bool"
     },
     "tilt_warnings": {
       "label": "Tilt Warnings",
@@ -86,7 +86,7 @@
     "game_over": {
       "label": "Game Over",
       "start": "0xC9",
-      "encoding": "int"
+      "encoding": "bool"
     },
     "playfield_valid": {
       "_notes": "0 with ball in shooter lane, 4 when valid?",
