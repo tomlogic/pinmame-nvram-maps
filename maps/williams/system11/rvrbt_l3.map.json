@@ -5,11 +5,12 @@
     "https://www.ipdb.org/machine.cgi?id=1966",
     "Williams System 11C",
     "2025-02 v0.1: Initial version",
-    "2025-03 v0.2: Tom Collins added audits"
+    "2025-03 v0.2: Tom Collins added audits",
+    "2025-09 v0.4: Tom Collins added to game_state"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.2,
+    "version": 0.4,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-system11-48K",
@@ -86,6 +87,26 @@
       "start": 170,
       "encoding": "int",
       "offset": 1
+    },
+    "tilted": {
+      "label": "Tilted",
+      "start": 165,
+      "encoding": "bool"
+    },
+    "game_over": {
+      "label": "Game Over",
+      "start": 166,
+      "encoding": "bool"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 173,
+      "encoding": "int"
+    },
+    "tilt_warnings": {
+      "label": "Tilt Warnings",
+      "start": 176,
+      "encoding": "int"
     }
   },
   "high_scores": [

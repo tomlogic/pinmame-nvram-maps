@@ -5,11 +5,12 @@
     "https://www.ipdb.org/machine.cgi?id=2765",
     "Williams System 11B",
     "2022-12     : added _char_map for mapping intials (Tom Collins)",
-    "2025-03 v0.2: Tom Collins added audits"
+    "2025-03 v0.2: Tom Collins added audits",
+    "2025-09 v0.4: Tom Collins added to game_state"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.2,
+    "version": 0.4,
     "copyright": [
       "Copyright (C) 2022 https://github.com/horseyhorsey",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -89,6 +90,26 @@
       "start": 158,
       "encoding": "int",
       "offset": 1
+    },
+    "tilted": {
+      "label": "Tilted",
+      "start": 153,
+      "encoding": "bool"
+    },
+    "game_over": {
+      "label": "Game Over",
+      "start": 154,
+      "encoding": "bool"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 161,
+      "encoding": "int"
+    },
+    "tilt_warnings": {
+      "label": "Tilt Warnings",
+      "start": 164,
+      "encoding": "int"
     }
   },
   "high_scores": [

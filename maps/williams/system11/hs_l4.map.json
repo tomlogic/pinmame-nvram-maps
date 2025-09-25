@@ -3,11 +3,12 @@
     "Compiled by Tom Collins for initial development/testing purposes.",
     "High Speed (Williams 1986)",
     "https://www.ipdb.org/machine.cgi?id=1176",
-    "Williams System 11"
+    "Williams System 11",
+    "2025-09 v0.4: Tom Collins added to game_state"
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.2,
+    "version": 0.4,
     "copyright": [
       "Copyright (C) 2017 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -180,6 +181,16 @@
       "label": "Maximum Credits",
       "start": 1931,
       "encoding": "bcd"
+    },
+    "tilted": {
+      "label": "Tilted",
+      "start": 168,
+      "encoding": "bool"
+    },
+    "game_over": {
+      "label": "Game Over",
+      "start": 169,
+      "encoding": "bool"
     }
   },
   "high_scores": [

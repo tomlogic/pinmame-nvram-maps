@@ -3,11 +3,12 @@
     "Transporter the Rescue (Bally 1989)",
     "https://www.ipdb.org/machine.cgi?id=2630",
     "Williams System 11B",
-    "TODO: verify last_game offsets, list values for adj-11, verify adj-50"
+    "TODO: verify last_game offsets, list values for adj-11, verify adj-50",
+    "2025-09 v0.4: Tom Collins added to game_state"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.1,
+    "version": 0.4,
     "copyright": [
       "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -163,6 +164,26 @@
       "label": "Maximum Credits",
       "start": 1931,
       "encoding": "bcd"
+    },
+    "tilted": {
+      "label": "Tilted",
+      "start": 164,
+      "encoding": "bool"
+    },
+    "game_over": {
+      "label": "Game Over",
+      "start": 165,
+      "encoding": "bool"
+    },
+    "extra_balls": {
+      "label": "Extra Balls",
+      "start": 172,
+      "encoding": "int"
+    },
+    "tilt_warnings": {
+      "label": "Tilt Warnings",
+      "start": 175,
+      "encoding": "int"
     }
   },
   "high_scores": [
