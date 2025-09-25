@@ -220,6 +220,8 @@ interpret them.  They're comprised of the following key/value pairs:
     decimal value `4660`.
   - `"bits"`: Same decoding as `"int"`, but used to sum select integers from
     the list in `values`.
+  - `"bool"`: Same decoding as `"int"`, but all non-zero values equate to 
+    `true` and zero is `false`.
   - `"bcd"`: A binary-coded decimal value, where each byte represents two
     decimal digits of a number.  The byte sequence `0x12 0x34` would translate
     to the decimal value `1234`.  When converting BCD values, treat the
@@ -304,25 +306,26 @@ interpret them.  They're comprised of the following key/value pairs:
 
 #### Encoding/Property Cheat Sheet
 
-| property       | bcd/int | bits | ch  | enum | raw | wpc_rtc | dipsw |
-|----------------|:-------:|:----:|:---:|:----:|:---:|:-------:|:-----:|
-| start          |    X    |  X   |  X  |  X   |  X  |    X    |       |
-| end            |    X    |  X   |  X  |      |  X  |    X    |       |
-| length         |    X    |  X   |  X  |      |  X  |    X    |       |
-| offsets        |    X    |  X   |  X  |      |  X  |    X    |   X   |
-| endian         |    X    |  X   |     |      |     |         |       |
-| nibble         |    X    |  X   |  X  |  X   |  X  |    X    |       |
-| mask           |    X    |  X   |  X  |  X   |  X  |    X    |       |
-| null           |         |      |  X  |      |     |         |       |
-| special_values |    X    |      |     |      |     |         |       |
-| values         |         |  X   |     |  X   |     |         |   X   |
-| offset         |    X    |  X   |     |      |     |         |       |
-| scale          |    X    |  X   |     |      |     |         |       |
-| suffix         |    X    |  X   |     |      |     |         |       |
-| units          |    X    |  X   |     |      |     |         |       |
+| property       | bcd/int | bool | bits | ch  | enum | raw | wpc_rtc | dipsw |
+|----------------|:-------:|------|:----:|:---:|:----:|:---:|:-------:|:-----:|
+| start          |    X    | X    |  X   |  X  |  X   |  X  |    X    |       |
+| end            |    X    | X    |  X   |  X  |      |  X  |    X    |       |
+| length         |    X    | X    |  X   |  X  |      |  X  |    X    |       |
+| offsets        |    X    | X    |  X   |  X  |      |  X  |    X    |   X   |
+| endian         |    X    | X    |  X   |     |      |     |         |       |
+| nibble         |    X    | X    |  X   |  X  |  X   |  X  |    X    |       |
+| mask           |    X    | X    |  X   |  X  |  X   |  X  |    X    |       |
+| null           |         |      |      |  X  |      |     |         |       |
+| special_values |    X    |      |      |     |      |     |         |       |
+| values         |         |      |  X   |     |  X   |     |         |   X   |
+| offset         |    X    | X    |  X   |     |      |     |         |       |
+| scale          |    X    | X    |  X   |     |      |     |         |       |
+| suffix         |    X    |      |  X   |     |      |     |         |       |
+| units          |    X    |      |  X   |     |      |     |         |       |
 
 ##### Encoding Notes
 - The `enum` encoding is intended for single-byte values.
+- The `bool` encoding always resolves to either `true` or `false`.
 - The `bcd`, `bits`, and `int` encodings convert bytes into a numeric
   value that is modified by properties such as `offset`, `scale`, `suffix`,
   and `units`.
@@ -393,14 +396,18 @@ This should be considered a priority when mapping a game.
 These fields can provide useful information, but are considered a lower
 priority.
 
+- **final_scores**: In the "Game Over" state, Bally AS-2518-35 games store
+    the results of the previous game at a separate memory address than the
+    scores when a game is in progress.  Use this entry in place of `scores`
+    when `game_over` is `true`.
 - **credits**: Current number of credits on the game.
 - **volume**: Current volume setting.  Entry should have a min/max value
     so it's possible to represent the volume as a percentage, and to know
     the valid range for making changes.
 - **replay**: Current score needed to achieve a replay.
 - **match**: The (typically) 2-digit "match" score from the last game.
-- **attract**: Whether the game is in attract mode or a game is in progress.
-    *TODO*: Need to formalize the data type for this entry.
+- **game_over**: Whether the game is in progress (false) or over (true).
+    Should use an encoding of `bool`.
 - **bonus**: Unmultiplied, end-of-ball bonus for current ball.
 - **bonusX**: Multiplier for `bonus`.  There currently isn't a method of
     representing complex bonus amounts (e.g., different mode bonuses, and
@@ -518,3 +525,5 @@ has a checksum that appears in a non-adjacent address.)
 - v0.7: Add `platform` metadata property.
 - v0.8: Add `checksum` property to checksum8/checksum16 objects to allow
         for non-adjacent checksums (needed for Credits on System 11).
+        Add `bool` encoding, rename `attract` to `game_over`, add 
+        `final_scores` to `game_state`.

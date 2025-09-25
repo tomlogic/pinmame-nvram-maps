@@ -14,6 +14,7 @@ File format updates
 -------------------
 * v0.8:
     - checksum8/checksum16 objects can have a checksum property
+    - new 'bool' encoding
 
 * v0.7:
     - add `platform` metadata
@@ -64,6 +65,8 @@ def map_convert(pairs):
             minimum_file_format(v)
         elif k == 'checksum':
             # checksum attribute for checksum8/checksum16 objects added in v0.8
+            minimum_file_format(0.8)
+        elif k == 'encoding' and v == 'bool':
             minimum_file_format(0.8)
         elif k == 'platform':
             # metadata "platform" introduced in v0.7
