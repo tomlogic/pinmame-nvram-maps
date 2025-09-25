@@ -104,14 +104,10 @@
       "start": 943,
       "encoding": "int"
     },
-    "attract": {
-      "label": "Attract",
+    "game_over": {
+      "label": "Game Over",
       "start": 137,
-      "encoding": "enum",
-      "values": [
-        "IN GAME",
-        "ATTRACT"
-      ]
+      "encoding": "bool"
     },
     "ball_count": {
       "label": "Ball Count",

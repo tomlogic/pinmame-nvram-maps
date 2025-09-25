@@ -46,14 +46,10 @@
         "length": 4
       }
     ],
-    "attract": {
-      "label": "Attract",
+    "game_over": {
+      "label": "Game Over",
       "start": "0xCA",
-      "encoding": "enum",
-      "values": [
-        "IN GAME",
-        "ATTRACT"
-      ]
+      "encoding": "bool"
     },
     "player_count": {
       "label": "Players",

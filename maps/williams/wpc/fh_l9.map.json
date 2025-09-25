@@ -77,14 +77,10 @@
       "length": 2,
       "scale": 10000
     },
-    "attract": {
-      "label": "Attract",
+    "game_over": {
+      "label": "Game Over",
       "start": 135,
-      "encoding": "enum",
-      "values": [
-        "IN GAME",
-        "ATTRACT"
-      ]
+      "encoding": "bool"
     },
     "current_player": {
       "label": "Current Player",

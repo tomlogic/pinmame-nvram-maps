@@ -73,14 +73,10 @@
       "encoding": "bcd",
       "length": 2
     },
-    "attract": {
-      "label": "Attract",
+    "game_over": {
+      "label": "Game Over",
       "start": 130,
-      "encoding": "enum",
-      "values": [
-        "IN GAME",
-        "ATTRACT"
-      ]
+      "encoding": "bool"
     },
     "current_player": {
       "label": "Current Player",
