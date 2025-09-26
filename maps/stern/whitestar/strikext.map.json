@@ -40,6 +40,18 @@
         "start": "0x155B",
         "length": 5,
         "encoding": "bcd"
+      },
+      {
+        "label": "Player 5",
+        "start": "0x1560",
+        "length": 5,
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 6",
+        "start": "0x1565",
+        "length": 5,
+        "encoding": "bcd"
       }
     ],
     "credits": {
@@ -51,6 +63,12 @@
       "label": "Max Credits",
       "start": "0x1E13",
       "encoding": "bcd"
+    },
+    "tilted": {
+      "_notes": "maybe 0x15C or 0x180; 0x164 might be tilt warnings",
+      "label": "Tilted",
+      "start": "0x1F1",
+      "encoding": "bool"
     },
     "current_player": {
       "label": "Current Player",
@@ -71,6 +89,12 @@
       "label": "Ball Count",
       "start": "0x1E11",
       "encoding": "bcd"
+    },
+    "game_over": {
+      "_notes": "0x2E through 0x37 all 0xFF in attract, 0x00 in game/service menu",
+      "label": "Game Over",
+      "start": "0x2E",
+      "encoding": "bool"
     }
   },
   "high_scores": [
@@ -202,6 +226,21 @@
         "encoding": "bcd",
         "length": 5,
         "start": 5309
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Goal Champ",
+      "initials": {
+        "start": "0x1599",
+        "length": 3,
+        "encoding": "ch"
+      },
+      "score": {
+        "start": "0x159C",
+        "encoding": "bcd",
+        "suffix": " goals"
       }
     }
   ]
