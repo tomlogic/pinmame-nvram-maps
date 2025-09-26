@@ -10,7 +10,7 @@
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.1,
+    "version": 0.2,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -87,17 +87,17 @@
     "current_ball": {
       "label": "Current Ball",
       "start": "0x0B",
-      "encoding": "int"
+      "encoding": "bcd"
     },
     "player_count": {
       "label": "Players",
       "start": "0x0C",
-      "encoding": "int"
+      "encoding": "bcd"
     },
     "current_player": {
       "label": "Current Player",
       "start": "0x0D",
-      "encoding": "int"
+      "encoding": "bcd"
     },
     "ball_count": {
       "label": "Ball Count",
