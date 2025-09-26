@@ -126,6 +126,22 @@
         25,
         40
       ]
+    },
+    "game_over": {
+      "_notes": "reading 'game over' lamp",
+      "label": "Game Over",
+      "start": "0x20C",
+      "encoding": "bool",
+      "mask": "0x4",
+      "offset": -4
+    },
+    "tilted": {
+      "_notes": "reading 'tilt' lamp",
+      "label": "Tilted",
+      "start": "0x20C",
+      "encoding": "bool",
+      "mask": "0x8",
+      "offset": -8
     }
   },
   "high_scores": [
