@@ -115,8 +115,8 @@
         5,
         4,
         2
-    ]
-  },
+      ]
+    },
     "max_credits": {
       "label": "Max Credits",
       "encoding": "dipsw",
