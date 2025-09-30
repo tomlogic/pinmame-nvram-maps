@@ -12,6 +12,7 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "whitestar",
     "roms": [
+      "nfl",
       "strikext"
     ]
   },
