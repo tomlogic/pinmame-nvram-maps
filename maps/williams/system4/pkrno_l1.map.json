@@ -80,8 +80,8 @@
       "label": "Game Over",
       "start": "0x2A",
       "mask": "0x04",
-      "offset": -4,
-      "encoding": "bool"
+      "encoding": "bool",
+      "invert": true
     }
   },
   "high_scores": [

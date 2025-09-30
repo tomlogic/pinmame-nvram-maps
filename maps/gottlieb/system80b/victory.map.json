@@ -168,7 +168,7 @@
       "label": "Game Over",
       "encoding": "bool",
       "start": "0x57",
-      "offset": -1
+      "invert": true
     },
     "tilted": {
       "_notes": "0xF0 when tilted, 0x00 otherwise",

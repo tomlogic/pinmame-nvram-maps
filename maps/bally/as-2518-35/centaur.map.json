@@ -137,7 +137,7 @@
       "start": "0x20C",
       "encoding": "bool",
       "mask": "0x4",
-      "offset": -4
+      "invert": true
     },
     "tilted": {
       "_notes": "reading 'tilt' lamp",
@@ -145,7 +145,7 @@
       "start": "0x20C",
       "encoding": "bool",
       "mask": "0x8",
-      "offset": -8
+      "invert": true
     }
   },
   "high_scores": [
