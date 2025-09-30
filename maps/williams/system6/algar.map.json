@@ -38,6 +38,18 @@
         "playfield qualified"
       ]
     },
+    "tilted": {
+      "label": "Tilted",
+      "start": "0x78",
+      "mask": "0x02",
+      "encoding": "bool"
+    },
+    "game_over": {
+      "label": "Game Over",
+      "start": "0x78",
+      "mask": "0x01",
+      "encoding": "bool"
+    },
     "scores": [
       {
         "label": "Player 1",
@@ -86,7 +98,7 @@
       "encoding": "bcd"
     },
     "ball_count": {
-      "label": "Number of Balls",
+      "label": "Ball Count",
       "start": "0x01A3",
       "length": 2,
       "encoding": "bcd"
@@ -95,6 +107,12 @@
       "label": "Extra Balls",
       "start": "0x5B",
       "encoding": "int"
+    },
+    "max_credits": {
+      "label": "Maximum Credits",
+      "start": "0x018B",
+      "length": 2,
+      "encoding": "bcd"
     }
   },
   "player_state": {

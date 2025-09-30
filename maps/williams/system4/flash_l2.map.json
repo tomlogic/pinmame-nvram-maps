@@ -66,10 +66,28 @@
       "encoding": "bcd"
     },
     "ball_count": {
-      "label": "Number of Balls",
+      "label": "Ball Count",
       "start": "0x01A6",
       "length": 2,
       "encoding": "bcd"
+    },
+    "max_credits": {
+      "label": "Maximum Credits",
+      "start": "0x018C",
+      "length": 2,
+      "encoding": "bcd"
+    },
+    "tilted": {
+      "label": "Tilted",
+      "start": "0x7A",
+      "mask": "0x02",
+      "encoding": "bool"
+    },
+    "game_over": {
+      "label": "Game Over",
+      "start": "0x7A",
+      "mask": "0x01",
+      "encoding": "bool"
     }
   },
   "high_scores": [

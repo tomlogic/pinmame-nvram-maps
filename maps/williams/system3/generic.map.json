@@ -1,9 +1,6 @@
 {
   "_notes": [
-    "Compiled by Tom Collins, based on phnix_l1 (Phoenix) map.",
-    "Similar to System 3 games (using the same 'WHITE' ROMs).",
-    "Pokerino (Williams, 1978)",
-    "https://www.ipdb.org/machine.cgi?id=1839"
+    "Compiled by Tom Collins, based on pkrno_l1 (Phoenix L-1) map."
   ],
   "_fileformat": 0.7,
   "_metadata": {
@@ -12,7 +9,11 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-system4",
     "roms": [
-      "pkrno_l1"
+      "cntct_l1",
+      "disco_l1",
+      "httip_l1",
+      "lucky_l1",
+      "wldcp_l1"
     ]
   },
   "game_state": {
@@ -77,11 +78,17 @@
       "encoding": "bcd"
     },
     "game_over": {
+      "_notes": "repurpose player count (0=game over)",
       "label": "Game Over",
-      "start": "0x2A",
-      "mask": "0x04",
-      "offset": -4,
-      "encoding": "bool"
+      "start": "0x0F",
+      "encoding": "enum",
+      "values": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     }
   },
   "high_scores": [
@@ -211,9 +218,9 @@
         "values": [
           "n/a",
           "n/a",
-          "normal ('P' and 'O' together)",
-          "conservative ('P' and 'O' separate)",
-          "no extra ball ('P' and 'O' together)"
+          "normal",
+          "conservative",
+          "no extra ball"
         ],
         "min": 2,
         "max": 4
@@ -279,15 +286,6 @@
         "start": "0x0125",
         "length": 1,
         "encoding": "bcd"
-      },
-      "16": {
-        "label": "Tilt Warnings",
-        "_notes": "setting to 0 disables tilt",
-        "start": "0x0126",
-        "length": 2,
-        "encoding": "bcd",
-        "min": 1,
-        "max": 9
       }
     }
   }

@@ -122,6 +122,12 @@
       "label": "Bonus Time",
       "start": "0xCA",
       "encoding": "int"
+    },
+    "max_credits": {
+      "label": "Maximum Credits",
+      "start": "0x01AB",
+      "length": 2,
+      "encoding": "bcd"
     }
   },
   "high_scores": [

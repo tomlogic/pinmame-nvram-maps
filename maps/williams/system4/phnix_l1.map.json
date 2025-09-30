@@ -1,6 +1,7 @@
 {
   "_notes": [
     "Compiled by Tom Collins, based on flash_l2 (Flash System 4) map.",
+    "Similar to System 3 games (using the same 'WHITE' ROMs).",
     "Phoenix (Williams, 1978)",
     "https://www.ipdb.org/machine.cgi?id=1780"
   ],
@@ -17,7 +18,7 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": "0x019A",
+      "start": "0x0128",
       "length": 2,
       "encoding": "bcd"
     },
@@ -49,15 +50,14 @@
     ],
     "current_player": {
       "label": "Player",
-      "start": "0x55",
+      "start": "0x54",
       "encoding": "int",
       "offset": 1
     },
     "player_count": {
       "label": "Player Count",
-      "start": "0x56",
-      "encoding": "int",
-      "offset": 1
+      "start": "0x0F",
+      "encoding": "int"
     },
     "current_ball": {
       "label": "Ball",
@@ -65,10 +65,23 @@
       "encoding": "bcd"
     },
     "ball_count": {
-      "label": "Number of Balls",
-      "start": "0x01A6",
+      "label": "Ball Count",
+      "start": "0x0125",
+      "length": 1,
+      "encoding": "bcd"
+    },
+    "max_credits": {
+      "label": "Maximum Credits",
+      "start": "0x010A",
       "length": 2,
       "encoding": "bcd"
+    },
+    "game_over": {
+      "label": "Game Over",
+      "start": "0x2A",
+      "mask": "0x04",
+      "offset": -4,
+      "encoding": "bool"
     }
   },
   "high_scores": [
