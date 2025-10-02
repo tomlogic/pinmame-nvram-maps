@@ -6,11 +6,11 @@
   "_metadata": {
     "version": 0.1,
     "copyright": [
-      "Copyright (C) 2022 by YourName your email>",
+      "Copyright (C) 2022 by HorsePin",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "dataeast",
+    "platform": "whitestar",
     "roms": [
       "swtril43"
     ]
