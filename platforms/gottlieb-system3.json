@@ -8,6 +8,12 @@
       "address": "0x0000",
       "size": "0x2000",
       "type": "nvram"
+    },
+    {
+      "label": "ROM",
+      "address": "0x4000",
+      "size": "0xC000",
+      "type": "rom"
     }
   ]
 }
