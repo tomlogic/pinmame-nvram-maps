@@ -7,11 +7,15 @@ Script to normalize the nvram map files:
   - Convert name of `_note` attribute to `_notes`.
 
 Usage:
-    normalize-map.py mapname.nv.json
-    normalize-map.py *.nv.json
+    normalize-map.py mapname.map.json
+    normalize-map.py *.map.json
 
 File format updates
 -------------------
+* v0.8:
+    - checksum8/checksum16 objects can have a checksum property
+    - new 'bool' encoding
+
 * v0.7:
     - add `platform` metadata
     - start/end/offsets hex values no longer deprecated (and are now preferred)
@@ -59,6 +63,11 @@ def map_convert(pairs):
         # set minimum file format based on appearance of certain keys
         if k == '_fileformat':
             minimum_file_format(v)
+        elif k == 'checksum':
+            # checksum attribute for checksum8/checksum16 objects added in v0.8
+            minimum_file_format(0.8)
+        elif k == 'encoding' and v == 'bool':
+            minimum_file_format(0.8)
         elif k == 'platform':
             # metadata "platform" introduced in v0.7
             minimum_file_format(0.7)

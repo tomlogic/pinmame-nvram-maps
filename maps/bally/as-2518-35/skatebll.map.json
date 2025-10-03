@@ -1,0 +1,89 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Skateball (Bally 1980)",
+    "https://www.ipdb.org/machine.cgi?id=2170",
+    "https://opdb.org/machines/1817",
+    "Bally MPU AS-2518-35",
+    "7-digit score display",
+    "By default the credits are not shown, set dip switch 27 to show them."
+  ],
+  "_fileformat": 0.7,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": [
+      "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+      "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
+    ],
+    "license": "GNU Lesser General Public License v3.0",
+    "platform": "bally-35-8K",
+    "roms": [
+      "skatebll"
+    ]
+  },
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": "0x023D",
+      "length": 2,
+      "encoding": "bcd"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": "0x0248",
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 2",
+        "start": "0x024F",
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 3",
+        "start": "0x0256",
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Player 4",
+        "start": "0x025D",
+        "encoding": "bcd",
+        "length": 7
+      }
+    ]
+  },
+  "audits": {
+    "Bookkeeping functions": {
+      "05": {
+        "label": "Current Credits",
+        "start": "0x02AD",
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 40
+      },
+      "06": {
+        "label": "Total Plays (Paid and Free Games)",
+        "start": "0x02B4",
+        "length": 7,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      }
+    }
+  },
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": "0x02A6",
+        "encoding": "bcd",
+        "length": 7
+      }
+    }
+  ]
+}

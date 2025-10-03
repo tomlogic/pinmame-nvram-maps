@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Set the `platform` metadata for one or more `.nv.json` files.
+Set the `platform` metadata for one or more `.map.json` files.
 
 - Add `_metadata.platform` attribute.
 - Remove `endian`, `nibble`, and `ramsize` from `_metadata`.

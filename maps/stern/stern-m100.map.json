@@ -1,0 +1,186 @@
+{
+  "_notes": [
+    "2023-10 Initial version by Tom Collins.  Required new `nibble` attribute.",
+    "NVRAM file mapped to memory address 0x200 in PinMAME",
+    "Valid for all Stern M-100 MPU games.  ROMs with 'fp' suffix are Free Play.",
+    "Untested with blkshpsq (Astro game), draculc/wildfyrc (mod), stars/starsb7 (mod), stingrab (mod).",
+    "Won't work with larger, modified ROMs: magicb, princesb."
+  ],
+  "_fileformat": 0.7,
+  "_metadata": {
+    "version": 0.3,
+    "copyright": [
+      "Copyright (C) 2023 by Tom Collins <tom@tomlogic.com>",
+      "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
+    ],
+    "license": "GNU Lesser General Public License v3.0",
+    "platform": "stern-m100",
+    "roms": [
+      "dracula",
+      "draculfp",
+      "hothand",
+      "hothanfp",
+      "lectrofp",
+      "lectrono",
+      "magic",
+      "magicfp",
+      "memlane",
+      "memlanfp",
+      "nugent",
+      "nugentfp",
+      "pinbalfp",
+      "pinball",
+      "princess",
+      "princefp",
+      "stars",
+      "starsfp",
+      "stingray",
+      "stingrfp",
+      "wildfyfp",
+      "wildfyre"
+    ]
+  },
+  "game_state": {
+    "match": {
+      "label": "Match",
+      "start": "0x0236",
+      "length": 2,
+      "encoding": "bcd",
+      "_notes": "during a game, shows current ball (1-5)",
+      "special_values": {
+        "1": "n/a",
+        "2": "n/a",
+        "3": "n/a",
+        "4": "n/a",
+        "5": "n/a"
+      }
+    },
+    "current_ball": {
+      "label": "Ball",
+      "start": "0x0236",
+      "length": 1,
+      "encoding": "bcd",
+      "_notes": "set to 0 outside of game when showing match",
+      "special_values": {
+        "0": "n/a"
+      }
+    },
+    "credits": {
+      "label": "Credits",
+      "start": "0x02D5",
+      "length": 2,
+      "encoding": "bcd"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": "0x023C",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 2",
+        "start": "0x0242",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 3",
+        "start": "0x0248",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 4",
+        "start": "0x024E",
+        "length": 6,
+        "encoding": "bcd"
+      }
+    ]
+  },
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": "0x02CF",
+        "length": 6,
+        "encoding": "bcd"
+      }
+    }
+  ],
+  "adjustments": {
+    "Adjustments": {
+      "01": {
+        "label": "Replay 1",
+        "start": "0x02BD",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "02": {
+        "label": "Replay 2",
+        "start": "0x02C3",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "03": {
+        "label": "Replay 3",
+        "start": "0x02C9",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "04": {
+        "label": "High Score",
+        "start": "0x02CF",
+        "length": 6,
+        "encoding": "bcd"
+      }
+    }
+  },
+  "audits": {
+    "Audits": {
+      "05": {
+        "label": "Credits",
+        "start": "0x02D5",
+        "length": 2,
+        "encoding": "bcd"
+      },
+      "06": {
+        "label": "Total Plays",
+        "start": "0x02DB",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "07": {
+        "label": "Total Replays",
+        "start": "0x02E1",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "08": {
+        "label": "HSTD Beaten",
+        "start": "0x02E7",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "09": {
+        "label": "Coin Chute 2",
+        "start": "0x02ED",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "10": {
+        "label": "Coin Chute 1",
+        "start": "0x02F3",
+        "length": 6,
+        "encoding": "bcd"
+      },
+      "11": {
+        "label": "Coin Chute 3",
+        "start": "0x02F9",
+        "length": 6,
+        "encoding": "bcd"
+      }
+    }
+  }
+}

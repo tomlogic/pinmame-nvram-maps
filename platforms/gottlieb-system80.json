@@ -1,4 +1,5 @@
 {
+  "_notes": "Placeholder for Gottlieb System 80/80A games (missing ROM areas).",
   "cpu": "6502",
   "endian": "big",
   "memory_layout": [

@@ -1,0 +1,158 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Viking (Bally 1980)",
+    "https://www.ipdb.org/machine.cgi?id=2737",
+    "https://opdb.org/machines/1068",
+    "Bally MPU AS-2518-35",
+    "7-digit score display",
+    "By default the credits are not shown, set dip switch 27 to show them."
+  ],
+  "_fileformat": 0.7,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": [
+      "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+      "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
+    ],
+    "license": "GNU Lesser General Public License v3.0",
+    "platform": "bally-35-8K",
+    "roms": [
+      "vikingb"
+    ]
+  },
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": "0x0239",
+      "length": 2,
+      "encoding": "bcd"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": "0x023D",
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      },
+      {
+        "label": "Player 2",
+        "start": "0x0243",
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      },
+      {
+        "label": "Player 3",
+        "start": "0x0249",
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      },
+      {
+        "label": "Player 4",
+        "start": "0x024F",
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      }
+    ]
+  },
+  "audits": {
+    "Bookkeeping functions": {
+      "05": {
+        "label": "Current Credits",
+        "start": "0x02B1",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 40
+      },
+      "06": {
+        "label": "Total Plays (Paid and Free Games)",
+        "start": "0x02B7",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "07": {
+        "label": "Total Replays (Free Games)",
+        "start": "0x02BD",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "08": {
+        "label": "Total times 'High Score to Date' is beat",
+        "start": "0x02C3",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "09": {
+        "label": "Coins Dropped thru Coin Chute #1",
+        "start": "0x02C9",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "10": {
+        "label": "Coins Dropped thru Coin Chute #2",
+        "start": "0x02CF",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "11": {
+        "label": "Coins Dropped thru Coin Chute #3",
+        "start": "0x02D5",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "12": {
+        "label": "Number of Specials awarded from Panel Specials Only",
+        "start": "0x02DB",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "13": {
+        "label": "Number of minutes of Game Play",
+        "start": "0x02E1",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      },
+      "14": {
+        "label": "Number of Service Credits",
+        "start": "0x02E7",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 99999
+      }
+    }
+  },
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": "0x02AB",
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      }
+    }
+  ]
+}

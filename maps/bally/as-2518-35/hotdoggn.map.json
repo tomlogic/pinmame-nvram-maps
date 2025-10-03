@@ -1,0 +1,69 @@
+{
+  "_notes": [
+    "Compiled by Francis De Brabandere.",
+    "Hotdoggin' (Bally 1979)",
+    "https://www.ipdb.org/machine.cgi?id=1243",
+    "https://opdb.org/machines/658",
+    "Bally MPU AS-2518-35",
+    "6-digit score display",
+    "By default the credits are not shown, set dip switch 27 to show them."
+  ],
+  "_fileformat": 0.7,
+  "_metadata": {
+    "version": 0.1,
+    "copyright": [
+      "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
+      "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
+    ],
+    "license": "GNU Lesser General Public License v3.0",
+    "platform": "bally-35-6K",
+    "roms": [
+      "hotdoggn"
+    ]
+  },
+  "game_state": {
+    "credits": {
+      "label": "Credits",
+      "start": "0x0239",
+      "length": 2,
+      "encoding": "bcd"
+    },
+    "scores": [
+      {
+        "label": "Player 1",
+        "start": "0x023D",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 2",
+        "start": "0x0243",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 3",
+        "start": "0x0249",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 4",
+        "start": "0x024F",
+        "encoding": "bcd",
+        "length": 6
+      }
+    ]
+  },
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": "0x02AB",
+        "encoding": "bcd",
+        "length": 6
+      }
+    }
+  ]
+}
