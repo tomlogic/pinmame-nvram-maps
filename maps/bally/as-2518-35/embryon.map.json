@@ -1,12 +1,11 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Mr. & Mrs. Pac-Man Pinball (Bally 1982)",
-    "https://www.ipdb.org/machine.cgi?id=1639",
-    "https://opdb.org/machines/1157",
+    "Embryon (Bally 1981)",
+    "https://www.ipdb.org/machine.cgi?id=783",
+    "https://opdb.org/machines/1695",
     "Bally MPU AS-2518-35",
-    "7-digit score display",
-    "By default the credits are not shown, set dip switch 27 to show them."
+    "7-digit score display"
   ],
   "_fileformat": 0.7,
   "_metadata": {
@@ -18,7 +17,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
-      "m_mpac"
+      "embryond",
+      "embryon"
     ]
   },
   "game_state": {
@@ -87,18 +87,16 @@
     "current_ball": {
       "label": "Current Ball",
       "start": "0x0B",
-      "nibble": "high",
       "encoding": "bcd"
     },
     "player_count": {
       "label": "Players",
-      "start": "0x0B",
-      "nibble": "low",
+      "start": "0x0C",
       "encoding": "bcd"
     },
     "current_player": {
       "label": "Current Player",
-      "start": "0x0C",
+      "start": "0x0D",
       "encoding": "bcd"
     },
     "ball_count": {

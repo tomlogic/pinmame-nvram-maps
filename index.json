@@ -103,8 +103,8 @@
   "eatpm_l4": "maps/williams/system11/eatpm_l4.map.json",
   "eballdlx": "maps/bally/as-2518-35/eballdlx.map.json",
   "elektra": "maps/bally/as-2518-35/elektra.map.json",
-  "embryon": "maps/bally/as-2518-35/embryond.map.json",
-  "embryond": "maps/bally/as-2518-35/embryond.map.json",
+  "embryon": "maps/bally/as-2518-35/embryon.map.json",
+  "embryond": "maps/bally/as-2518-35/embryon.map.json",
   "esha_l4c": "maps/williams/system11/esha_la3.map.json",
   "esha_la1": "maps/williams/system11/esha_la3.map.json",
   "esha_la3": "maps/williams/system11/esha_la3.map.json",
@@ -454,5 +454,6 @@
   "ww_lh6": "maps/williams/wpc/ww_lh6.map.json",
   "ww_lh6c": "maps/williams/wpc/ww_lh6.map.json",
   "xenon": "maps/bally/as-2518-35/xenon.map.json",
-  "xsandosa": "maps/bally/as-2518-35/xsandosa.map.json"
+  "xsandos": "maps/bally/as-2518-35/xsandos.map.json",
+  "xsandosa": "maps/bally/as-2518-35/xsandos.map.json"
 }
