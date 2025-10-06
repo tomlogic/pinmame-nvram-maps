@@ -127,8 +127,8 @@
         15,
         25,
         40
-    ]
-  },
+      ]
+    },
     "game_over": {
       "_notes": "reading 'game over' lamp",
       "label": "Game Over",
