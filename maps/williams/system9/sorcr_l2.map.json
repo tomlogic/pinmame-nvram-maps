@@ -485,6 +485,7 @@
         "label": "Drop Target Blink Interval",
         "_notes": "0=fast, 9=slow",
         "start": "0x792",
+        "encoding": "bcd",
         "min": 0,
         "max": 9,
         "default": 5
