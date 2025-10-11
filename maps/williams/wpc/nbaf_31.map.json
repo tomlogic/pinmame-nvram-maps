@@ -183,6 +183,19 @@
   ],
   "mode_champions": [
     {
+      "label": "* MVP",
+      "initials": {
+        "start": 7877,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7880,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
+    {
       "label": "BLAZERS",
       "initials": {
         "start": 7887,
@@ -1691,6 +1704,16 @@
       "start": 7752,
       "end": 7876,
       "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 7877,
+      "length": 10,
+      "label": "MVP"
+    },
+    {
+      "start": 7887,
+      "end": 8120,
+      "label": "Mode Champions"
     }
   ]
 }
