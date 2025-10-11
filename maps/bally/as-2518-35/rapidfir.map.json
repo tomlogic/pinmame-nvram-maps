@@ -22,19 +22,33 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": "0x022C",
+      "start": "0x02AD",
       "length": 2,
       "encoding": "bcd"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": "0x0233",
+        "start": "0x021E",
         "encoding": "bcd",
         "length": 7
       },
       {
         "label": "Player 2",
+        "start": "0x0225",
+        "encoding": "bcd",
+        "length": 7
+      }
+    ],
+    "final_scores": [
+      {
+        "label": "Final P1",
+        "start": "0x0233",
+        "encoding": "bcd",
+        "length": 7
+      },
+      {
+        "label": "Final P2",
         "start": "0x023A",
         "encoding": "bcd",
         "length": 7

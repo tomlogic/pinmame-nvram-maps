@@ -1,10 +1,10 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Flash Gordon (Bally 1981)",
-    "https://www.ipdb.org/machine.cgi?id=874",
-    "https://opdb.org/machines/16",
-    "Bally MPU AS-2518-35",
+    "Spectrum (Bally 1982)",
+    "https://www.ipdb.org/machine.cgi?id=2274",
+    "https://opdb.org/machines/95",
+    "Bally MPU AS-2518-35 (U6: 720-53_6.732)",
     "7-digit score display",
     "By default the credits are not shown, set dip switch 27 to show them."
   ],
@@ -18,7 +18,7 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
-      "flashgdn"
+      "spectru4"
     ]
   },
   "game_state": {
@@ -84,19 +84,21 @@
         "length": 7
       }
     ],
-    "current_ball": {
-      "label": "Current Ball",
+    "balls_left": {
+      "label": "Balls To Play",
       "start": "0x0B",
+      "nibble": "high",
       "encoding": "bcd"
     },
     "player_count": {
       "label": "Players",
-      "start": "0x0C",
+      "start": "0x0B",
+      "nibble": "low",
       "encoding": "bcd"
     },
     "current_player": {
       "label": "Current Player",
-      "start": "0x0D",
+      "start": "0x0C",
       "encoding": "bcd"
     },
     "ball_count": {
@@ -147,7 +149,6 @@
   "high_scores": [
     {
       "label": "High Score",
-      "_notes": "Shown as adjustment 04.",
       "short_label": "HS",
       "score": {
         "start": "0x02A6",
@@ -245,90 +246,6 @@
         "encoding": "bcd",
         "min": 0,
         "max": 99999
-      }
-    }
-  },
-  "adjustments": {
-    "Adjustments": {
-      "01": {
-        "label": "Replay Level 1",
-        "start": "0x0291",
-        "encoding": "bcd",
-        "length": 7,
-        "min": 0,
-        "max": 9990000,
-        "default": 0,
-        "special_values": {
-          "0": "OFF"
-        },
-        "multiple_of": 10000
-      },
-      "02": {
-        "label": "Replay Level 2",
-        "start": "0x0298",
-        "encoding": "bcd",
-        "length": 7,
-        "min": 0,
-        "max": 9990000,
-        "default": 0,
-        "special_values": {
-          "0": "OFF"
-        },
-        "multiple_of": 10000
-      },
-      "03": {
-        "label": "Replay Level 3",
-        "start": "0x029F",
-        "encoding": "bcd",
-        "length": 7,
-        "min": 0,
-        "max": 9990000,
-        "default": 0,
-        "special_values": {
-          "0": "OFF"
-        },
-        "multiple_of": 10000
-      },
-      "16": {
-        "label": "Special/Extra Ball Awards",
-        "start": "0x02FA",
-        "encoding": "enum",
-        "values": [
-          "none",
-          "Special=50K, Extra Ball=25K",
-          "Special & Extra Ball=Extra Ball",
-          "Special=Replay, Extra Ball=Extra Ball"
-        ]
-      },
-      "17": {
-        "label": "Replay Award",
-        "start": "0x02FB",
-        "encoding": "enum",
-        "values": [
-          "none",
-          "25K",
-          "Extra Ball",
-          "Replay"
-        ]
-      },
-      "18": {
-        "label": "Sound Option",
-        "start": "0x02FC",
-        "encoding": "enum",
-        "values": [
-          "chimes without feature background",
-          "chimes with background",
-          "scoring with noise effect without background",
-          "scoring with noise effect and background"
-        ]
-      },
-      "19": {
-        "label": "HSTD Award",
-        "start": "0x02FD",
-        "encoding": "bcd",
-        "min": 0,
-        "max": 3,
-        "suffix": " credits"
       }
     }
   }

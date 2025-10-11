@@ -4,7 +4,7 @@
     "Speakeasy 4 (Bally 1982)",
     "https://www.ipdb.org/machine.cgi?id=4342",
     "https://opdb.org/machines/572",
-    "Bally MPU AS-2518-35",
+    "Bally MPU AS-2518-35 (U6: 720-53_6.732)",
     "7-digit score display",
     "Doesn't seem to have a 'current ball'.  Unsure where 'balls remaining' stored.",
     "By default the credits are not shown, set dip switch 27 to show them.",

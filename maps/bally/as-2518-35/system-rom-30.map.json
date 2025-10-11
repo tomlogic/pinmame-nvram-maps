@@ -1,11 +1,17 @@
 {
   "_notes": [
-    "Compiled by Francis De Brabandere.",
-    "The Six Million Dollar Man (Bally 1978)",
-    "https://www.ipdb.org/machine.cgi?id=2165",
-    "https://opdb.org/machines/4721",
-    "Bally MPU AS-2518-35 (U6: 720-30_6.716)",
-    "Six players"
+    "Bally MPU AS-2518-35 (with U6 System ROM: 720-30_6.716)",
+    "6-digit score display",
+    "Game                          Mfg    Date   IPDB   OPDB",
+    "----------------------------  -----  ----   ----   ----",
+    "Kiss                          Bally  1979   1386   1225",
+    "Paragon                       Bally  1979   1755    296",
+    "Playboy                       Bally  1978   1823    175",
+    "Sexy Girl                     Arkon  1980   2106   1058",
+    "Supersonic                    Bally  1979   2455   1881",
+    "Star Trek                     Bally  1979   2355    473",
+    "Voltan Escapes Cosmic Doom    Bally  1979   2744    134",
+    "Originally compiled by Francis De Brabandere."
   ],
   "_fileformat": 0.7,
   "_metadata": {
@@ -15,9 +21,15 @@
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "bally-35-8K",
+    "platform": "bally-35-6K",
     "roms": [
-      "smmanc"
+      "kiss",
+      "paragon",
+      "playboy",
+      "sexygirl",
+      "sst",
+      "startrek",
+      "voltan"
     ]
   },
   "game_state": {
@@ -51,54 +63,30 @@
         "start": "0x0230",
         "encoding": "bcd",
         "length": 6
-      },
-      {
-        "label": "Player 5",
-        "start": "0x0218",
-        "encoding": "bcd",
-        "length": 6
-      },
-      {
-        "label": "Player 6",
-        "start": "0x0212",
-        "encoding": "bcd",
-        "length": 6
       }
     ],
     "final_scores": [
       {
-        "label": "Final Score P1",
-        "start": "0x0249",
+        "label": "Final P1",
+        "start": "0x023D",
         "encoding": "bcd",
         "length": 6
       },
       {
-        "label": "Final Score P2",
-        "start": "0x024F",
-        "encoding": "bcd",
-        "length": 6
-      },
-      {
-        "label": "Final Score P3",
-        "start": "0x0255",
-        "encoding": "bcd",
-        "length": 6
-      },
-      {
-        "label": "Final Score P4",
-        "start": "0x025B",
-        "encoding": "bcd",
-        "length": 6
-      },
-      {
-        "label": "Final Score P5",
+        "label": "Final P2",
         "start": "0x0243",
         "encoding": "bcd",
         "length": 6
       },
       {
-        "label": "Final Score P6",
-        "start": "0x023D",
+        "label": "Final P3",
+        "start": "0x0249",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final P4",
+        "start": "0x024F",
         "encoding": "bcd",
         "length": 6
       }

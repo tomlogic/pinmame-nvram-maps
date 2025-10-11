@@ -4,7 +4,7 @@
     "Xenon (Bally 1980)",
     "https://www.ipdb.org/machine.cgi?id=2821",
     "https://opdb.org/machines/1673",
-    "Bally MPU AS-2518-35",
+    "Bally MPU AS-2518-35 (U6: 720-40_6.732)",
     "7-digit score display",
     "By default the credits are not shown, set dip switch 27 to show them."
   ],
@@ -18,7 +18,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
-      "xenon"
+      "xenon",
+      "xenonf"
     ]
   },
   "game_state": {

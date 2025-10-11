@@ -4,7 +4,7 @@
     "Eight Ball Deluxe (Bally 1981)",
     "https://www.ipdb.org/machine.cgi?id=762",
     "https://opdb.org/machines/306",
-    "Bally MPU AS-2518-35",
+    "Bally MPU AS-2518-35 (U6: 720-52_6.732)",
     "7-digit score display",
     "By default the credits are not shown, set dip switch 27 to show them.",
     "The vpx table is overriding all rom switches, so the credits are always shown.",

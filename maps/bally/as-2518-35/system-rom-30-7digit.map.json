@@ -1,15 +1,16 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "The Six Million Dollar Man (Bally 1978)",
-    "https://www.ipdb.org/machine.cgi?id=2165",
-    "https://opdb.org/machines/4721",
-    "Bally MPU AS-2518-35 (U6: 720-30_6.716)",
-    "Six players"
+    "Playboy (Bally 1978)",
+    "https://www.ipdb.org/machine.cgi?id=1823",
+    "https://opdb.org/machines/175",
+    "Bally MPU AS-2518-35",
+    "7-digit score display",
+    "By default the credits are not shown, set dip switch 27 to show them."
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.2,
+    "version": 0.1,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -17,7 +18,10 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
-      "smmanc"
+      "playboyb",
+      "sstb",
+      "startreb",
+      "voltanb"
     ]
   },
   "game_state": {
@@ -32,74 +36,58 @@
         "label": "Player 1",
         "start": "0x021E",
         "encoding": "bcd",
+        "scale": 10,
         "length": 6
       },
       {
         "label": "Player 2",
         "start": "0x0224",
         "encoding": "bcd",
+        "scale": 10,
         "length": 6
       },
       {
         "label": "Player 3",
         "start": "0x022A",
         "encoding": "bcd",
+        "scale": 10,
         "length": 6
       },
       {
         "label": "Player 4",
         "start": "0x0230",
         "encoding": "bcd",
-        "length": 6
-      },
-      {
-        "label": "Player 5",
-        "start": "0x0218",
-        "encoding": "bcd",
-        "length": 6
-      },
-      {
-        "label": "Player 6",
-        "start": "0x0212",
-        "encoding": "bcd",
+        "scale": 10,
         "length": 6
       }
     ],
     "final_scores": [
       {
-        "label": "Final Score P1",
-        "start": "0x0249",
+        "label": "Final P1",
+        "start": "0x023C",
         "encoding": "bcd",
+        "scale": 10,
         "length": 6
       },
       {
-        "label": "Final Score P2",
-        "start": "0x024F",
+        "label": "Final P2",
+        "start": "0x0242",
         "encoding": "bcd",
+        "scale": 10,
         "length": 6
       },
       {
-        "label": "Final Score P3",
-        "start": "0x0255",
+        "label": "Final P3",
+        "start": "0x0248",
         "encoding": "bcd",
+        "scale": 10,
         "length": 6
       },
       {
-        "label": "Final Score P4",
-        "start": "0x025B",
+        "label": "Final P4",
+        "start": "0x024E",
         "encoding": "bcd",
-        "length": 6
-      },
-      {
-        "label": "Final Score P5",
-        "start": "0x0243",
-        "encoding": "bcd",
-        "length": 6
-      },
-      {
-        "label": "Final Score P6",
-        "start": "0x023D",
-        "encoding": "bcd",
+        "scale": 10,
         "length": 6
       }
     ],
@@ -172,7 +160,8 @@
       "score": {
         "start": "0x02CF",
         "encoding": "bcd",
-        "length": 6
+        "length": 6,
+        "scale": 10
       }
     }
   ],

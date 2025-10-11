@@ -15,9 +15,9 @@
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "bally-35-8K",
+    "platform": "bally-35-6K",
     "roms": [
-      "smmanc"
+      "smman"
     ]
   },
   "game_state": {

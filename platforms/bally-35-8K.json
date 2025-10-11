@@ -17,7 +17,7 @@
       "nibble": "high"
     },
     {
-      "label": "ROM U2 (low 2K)",
+      "label": "ROM U1 (or low 2K of U2)",
       "address": "0x1000",
       "size": "0x800",
       "type": "rom"
@@ -29,7 +29,7 @@
       "type": "rom"
     },
     {
-      "label": "ROM U2 (high 2K)",
+      "label": "ROM U2 (or high 2K of U2)",
       "address": "0x5000",
       "size": "0x800",
       "type": "rom"

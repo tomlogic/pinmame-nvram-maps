@@ -162,7 +162,7 @@
       "05": {
         "label": "Current Credits",
         "start": "0x02AD",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 40
@@ -170,7 +170,7 @@
       "06": {
         "label": "Total Plays (Paid and Free Games)",
         "start": "0x02B4",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -178,7 +178,7 @@
       "07": {
         "label": "Total Replays (Free Games)",
         "start": "0x02BB",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -186,7 +186,7 @@
       "08": {
         "label": "Game Percentage",
         "start": "0x02C2",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -194,7 +194,7 @@
       "09": {
         "label": "HSTD Achieved",
         "start": "0x02C9",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -202,7 +202,7 @@
       "10": {
         "label": "Coin Chute #1",
         "start": "0x02D0",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -210,7 +210,7 @@
       "11": {
         "label": "Coin Chute #2",
         "start": "0x02D7",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -218,7 +218,7 @@
       "12": {
         "label": "Coin Chute #3",
         "start": "0x02DE",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -226,7 +226,7 @@
       "13": {
         "label": "Specials Awarded",
         "start": "0x02E5",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -234,7 +234,7 @@
       "14": {
         "label": "Minutes of Game Play",
         "start": "0x02EC",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -242,7 +242,7 @@
       "15": {
         "label": "Service Credits",
         "start": "0x02F3",
-        "length": 7,
+        "length": 6,
         "encoding": "bcd",
         "min": 0,
         "max": 99999

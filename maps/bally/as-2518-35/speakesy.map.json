@@ -4,7 +4,7 @@
     "Speakeasy (Bally 1982)",
     "https://www.ipdb.org/machine.cgi?id=2270",
     "https://opdb.org/machines/572",
-    "Bally MPU AS-2518-35",
+    "Bally MPU AS-2518-35 (U6: 720-53_6.732)",
     "7-digit score display",
     "Doesn't seem to have a 'current ball'.  Unsure where 'balls remaining' stored.",
     "By default the credits are not shown, set dip switch 27 to show them.",
@@ -30,7 +30,7 @@
     ],
     "credits": {
       "label": "Credits",
-      "start": "0x023D",
+      "start": "0x02AD",
       "length": 2,
       "encoding": "bcd"
     },
@@ -118,6 +118,17 @@
       "invert": true
     }
   },
+  "high_scores": [
+    {
+      "label": "High Score",
+      "short_label": "HS",
+      "score": {
+        "start": "0x02A6",
+        "encoding": "bcd",
+        "length": 7
+      }
+    }
+  ],
   "audits": {
     "Bookkeeping functions": {
       "05": {
@@ -209,16 +220,5 @@
         "max": 99999
       }
     }
-  },
-  "high_scores": [
-    {
-      "label": "High Score",
-      "short_label": "HS",
-      "score": {
-        "start": "0x02A6",
-        "encoding": "bcd",
-        "length": 7
-      }
-    }
-  ]
+  }
 }

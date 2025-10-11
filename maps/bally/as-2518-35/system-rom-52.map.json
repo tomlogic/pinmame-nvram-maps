@@ -1,11 +1,13 @@
 {
   "_notes": [
-    "Compiled by Francis De Brabandere.",
-    "Embryon (Bally 1981)",
-    "https://www.ipdb.org/machine.cgi?id=783",
-    "https://opdb.org/machines/1695",
-    "Bally MPU AS-2518-35 (U6: 720-52_6.732)",
-    "6-digit score display (with a ROM used with 7-digit games)",
+    "Bally MPU AS-2518-35 (with U6 System ROM: 720-52_6.732)",
+    "7-digit score display",
+    "Game                          Mfg    Date   IPDB   OPDB",
+    "----------------------------  -----  ----   ----   ----",
+    "Embryon (7-digit conversion)  Bally  1981    783   1695",
+    "Fireball II                   Bally  1981    854   1790",
+    "Flash Gordon                  Bally  1981    874     16",
+    "Originally compiled by Francis De Brabandere.",
     "By default the credits are not shown, set dip switch 27 to show them."
   ],
   "_fileformat": 0.7,
@@ -18,7 +20,12 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
-      "embryon"
+      "embryond",
+      "fball_ii",
+      "flashgdf",
+      "flashgdn",
+      "flashgdv",
+      "flashgvf"
     ]
   },
   "game_state": {
@@ -37,25 +44,25 @@
         "label": "Player 1",
         "start": "0x021E",
         "encoding": "bcd",
-        "length": 6
+        "length": 7
       },
       {
         "label": "Player 2",
         "start": "0x0225",
         "encoding": "bcd",
-        "length": 6
+        "length": 7
       },
       {
         "label": "Player 3",
         "start": "0x022C",
         "encoding": "bcd",
-        "length": 6
+        "length": 7
       },
       {
         "label": "Player 4",
         "start": "0x0233",
         "encoding": "bcd",
-        "length": 6
+        "length": 7
       }
     ],
     "final_scores": [
@@ -63,25 +70,25 @@
         "label": "Final Score P1",
         "start": "0x0248",
         "encoding": "bcd",
-        "length": 6
+        "length": 7
       },
       {
         "label": "Final Score P2",
         "start": "0x024F",
         "encoding": "bcd",
-        "length": 6
+        "length": 7
       },
       {
         "label": "Final Score P3",
         "start": "0x0256",
         "encoding": "bcd",
-        "length": 6
+        "length": 7
       },
       {
         "label": "Final Score P4",
         "start": "0x025D",
         "encoding": "bcd",
-        "length": 6
+        "length": 7
       }
     ],
     "current_ball": {
@@ -152,7 +159,7 @@
       "score": {
         "start": "0x02A6",
         "encoding": "bcd",
-        "length": 6
+        "length": 7
       }
     }
   ],
@@ -161,7 +168,7 @@
       "05": {
         "label": "Current Credits",
         "start": "0x02AD",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 40
@@ -169,7 +176,7 @@
       "06": {
         "label": "Total Plays (Paid and Free Games)",
         "start": "0x02B4",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -177,7 +184,7 @@
       "07": {
         "label": "Total Replays (Free Games)",
         "start": "0x02BB",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -185,7 +192,7 @@
       "08": {
         "label": "Game Percentage",
         "start": "0x02C2",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -193,7 +200,7 @@
       "09": {
         "label": "HSTD Achieved",
         "start": "0x02C9",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -201,7 +208,7 @@
       "10": {
         "label": "Coin Chute #1",
         "start": "0x02D0",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -209,7 +216,7 @@
       "11": {
         "label": "Coin Chute #2",
         "start": "0x02D7",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -217,7 +224,7 @@
       "12": {
         "label": "Coin Chute #3",
         "start": "0x02DE",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -225,7 +232,7 @@
       "13": {
         "label": "Specials Awarded",
         "start": "0x02E5",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -233,7 +240,7 @@
       "14": {
         "label": "Minutes of Game Play",
         "start": "0x02EC",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -241,7 +248,7 @@
       "15": {
         "label": "Service Credits",
         "start": "0x02F3",
-        "length": 6,
+        "length": 7,
         "encoding": "bcd",
         "min": 0,
         "max": 99999
@@ -254,9 +261,9 @@
         "label": "Replay Level 1",
         "start": "0x0291",
         "encoding": "bcd",
-        "length": 6,
+        "length": 7,
         "min": 0,
-        "max": 990000,
+        "max": 9990000,
         "default": 0,
         "special_values": {
           "0": "OFF"
@@ -267,9 +274,9 @@
         "label": "Replay Level 2",
         "start": "0x0298",
         "encoding": "bcd",
-        "length": 6,
+        "length": 7,
         "min": 0,
-        "max": 990000,
+        "max": 9990000,
         "default": 0,
         "special_values": {
           "0": "OFF"
@@ -280,9 +287,9 @@
         "label": "Replay Level 3",
         "start": "0x029F",
         "encoding": "bcd",
-        "length": 6,
+        "length": 7,
         "min": 0,
-        "max": 990000,
+        "max": 9990000,
         "default": 0,
         "special_values": {
           "0": "OFF"
