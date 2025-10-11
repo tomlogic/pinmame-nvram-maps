@@ -20,6 +20,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
+      "eballd14",
+      "eballdld",
       "eballdlx"
     ]
   },

@@ -102,6 +102,8 @@
   "dw_l2": "maps/williams/wpc/dw_l2.map.json",
   "eatpm_l2": "maps/williams/system11/eatpm_l4.map.json",
   "eatpm_l4": "maps/williams/system11/eatpm_l4.map.json",
+  "eballd14": "maps/bally/as-2518-35/eballdlx.map.json",
+  "eballdld": "maps/bally/as-2518-35/eballdlx.map.json",
   "eballdlx": "maps/bally/as-2518-35/eballdlx.map.json",
   "elektra": "maps/bally/as-2518-35/elektra.map.json",
   "embryon": "maps/bally/as-2518-35/embryon.map.json",
