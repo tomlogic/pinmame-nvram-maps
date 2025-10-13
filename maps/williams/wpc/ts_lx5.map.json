@@ -105,6 +105,11 @@
       "label": "Maximum Credits",
       "start": 7248,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7250,
+      "encoding": "bool"
     }
   },
   "high_scores": [
