@@ -114,6 +114,12 @@
       "label": "Free Play",
       "start": 7192,
       "encoding": "bool"
+    },
+    "free_only": {
+      "_notes": "ROM address 0xE887: afm_113 (0x01), afm_113b (0x00).",
+      "label": "Free Only",
+      "start": "0xE887",
+      "encoding": "bool"
     }
   },
   "high_scores": [

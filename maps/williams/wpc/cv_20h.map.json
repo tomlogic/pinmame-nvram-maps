@@ -11,7 +11,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
-      "cv_20h"
+      "cv_20h",
+      "cv_20hc"
     ]
   },
   "last_played": {
@@ -64,6 +65,18 @@
       "length": 2,
       "scale": 1000000
     },
+    "credits": {
+      "_notes": [
+        "1-byte credits followed by bytes encoding partial/bonus credits.",
+        "Home ROM (cv_20h) always has 0xFF for credits, but cv_20hc has credits."
+      ],
+      "label": "Credits",
+      "start": 7621,
+      "encoding": "int",
+      "special_values": {
+        "255": "FREE ONLY"
+      }
+    },
     "volume": {
       "label": "Volume",
       "start": 7631,
@@ -109,6 +122,12 @@
     "free_play": {
       "label": "Free Play",
       "start": 7294,
+      "encoding": "bool"
+    },
+    "free_only": {
+      "_notes": "ROM address 0xF721: cv_20h (0x01), cv_20hc (0x00).",
+      "label": "Free Only",
+      "start": "0xF721",
       "encoding": "bool"
     }
   },
@@ -1140,6 +1159,12 @@
       "start": 7615,
       "end": 7620,
       "label": "HSTD Reset"
+    },
+    {
+      "_notes": "this checksum fails for cv_20h, but is necessary for cv_20hc",
+      "start": 7621,
+      "end": 7630,
+      "label": "Credits"
     },
     {
       "start": 7631,

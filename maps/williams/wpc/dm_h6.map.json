@@ -14,6 +14,7 @@
     "platform": "williams-wpc-12K",
     "roms": [
       "dm_h6",
+      "dm_h6b",
       "dm_h6c"
     ]
   },
@@ -112,6 +113,13 @@
     "free_play": {
       "label": "Free Play",
       "start": 7070,
+      "encoding": "bool"
+    },
+    "free_only": {
+      "_notes": "ROM 0xFFEF values: dm_h6 (0x06), dm_h6b (0x6B), dm_h6c (0x59).",
+      "label": "Free Only",
+      "start": "0xFFEF",
+      "mask": "0x04",
       "encoding": "bool"
     }
   },

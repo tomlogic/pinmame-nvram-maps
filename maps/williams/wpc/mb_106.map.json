@@ -117,6 +117,12 @@
       "label": "Free Play",
       "start": 7072,
       "encoding": "bool"
+    },
+    "free_only": {
+      "_notes": "ROM address 0xE9FC: mb_106 (0x01), mb_106b (0x00).",
+      "label": "Free Only",
+      "start": "0xE9FC",
+      "encoding": "bool"
     }
   },
   "high_scores": [

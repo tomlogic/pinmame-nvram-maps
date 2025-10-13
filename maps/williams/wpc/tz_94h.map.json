@@ -117,6 +117,12 @@
       "label": "Free Play",
       "start": 7262,
       "encoding": "bool"
+    },
+    "free_only": {
+      "_notes": "ROM address 0xE84D: tz_94h (0x01), tz_94ch (0x00).",
+      "label": "Free Only",
+      "start": "0xE84D",
+      "encoding": "bool"
     }
   },
   "high_scores": [

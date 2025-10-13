@@ -64,6 +64,18 @@
       "length": 2,
       "scale": 1000000
     },
+    "credits": {
+      "_notes": [
+        "1-byte credits followed by bytes encoding partial/bonus credits.",
+        "Home ROM (ww_lh6) always has 0xFF for credits, but ww_lh6c has credits."
+      ],
+      "label": "Credits",
+      "start": 7375,
+      "encoding": "int",
+      "special_values": {
+        "255": "FREE ONLY"
+      }
+    },
     "game_over": {
       "label": "Game Over",
       "start": 141,
@@ -102,6 +114,12 @@
     "free_play": {
       "label": "Free Play",
       "start": 7132,
+      "encoding": "bool"
+    },
+    "free_only": {
+      "_notes": "ROM address 0xECC6: ww_lh6 (0x01), ww_lh6c (0x00).",
+      "label": "Free Only",
+      "start": "0xECC6",
       "encoding": "bool"
     }
   },
@@ -968,6 +986,12 @@
       "start": 7369,
       "end": 7374,
       "label": "HSTD Reset"
+    },
+    {
+      "_notes": "this checksum fails for ww_lh6, but is necessary for ww_lh6c",
+      "start": 7375,
+      "end": 7383,
+      "label": "Credits"
     },
     {
       "start": 7384,

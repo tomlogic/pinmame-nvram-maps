@@ -119,6 +119,12 @@
       "label": "Free Play",
       "start": 7070,
       "encoding": "bool"
+    },
+    "free_only": {
+      "_notes": "ROM address 0xE8E2: tom_14 (0x01), tom_13/tom_14b (0x00).",
+      "label": "Free Only",
+      "start": "0xE8E2",
+      "encoding": "bool"
     }
   },
   "high_scores": [
