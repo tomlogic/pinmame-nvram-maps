@@ -191,6 +191,11 @@
       "label": "Game Over",
       "start": 169,
       "encoding": "bool"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 1942,
+      "encoding": "bool"
     }
   },
   "high_scores": [

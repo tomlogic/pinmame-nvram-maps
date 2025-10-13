@@ -109,6 +109,11 @@
       "label": "Tilt Warnings",
       "start": 175,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 1942,
+      "encoding": "bool"
     }
   },
   "high_scores": [
