@@ -405,13 +405,12 @@ priority.
     scores when a game is in progress.  Use this entry in place of `scores`
     when `game_over` is `true`.
 - **credits**: Current number of credits on the game.
+- **max_credits**: Maximum number of credits possible on the game.
 - **volume**: Current volume setting.  Entry should have a min/max value
     so it's possible to represent the volume as a percentage, and to know
     the valid range for making changes.
 - **replay**: Current score needed to achieve a replay.
 - **match**: The (typically) 2-digit "match" score from the last game.
-- **game_over**: Whether the game is in progress (false) or over (true).
-    Should use an encoding of `bool`.
 - **bonus**: Unmultiplied, end-of-ball bonus for current ball.
 - **bonusX**: Multiplier for `bonus`.  There currently isn't a method of
     representing complex bonus amounts (e.g., different mode bonuses, and
@@ -419,6 +418,12 @@ priority.
 - **eb_on_this_ball**: Number of extra balls the current player earned on
     the current ball.
 - **tilt_warnings**: Number of tilt warnings received on the current ball.
+
+The following should use an encoding of `bool`:
+- **free_play**: Whether the game is configured for Free Play.
+- **free_only**: If the ROM only supports "home" use.  If present in a map,
+  a game can be in Free Play mode if either entry is true.
+- **game_over**: Whether the game is in progress (false) or over (true).
 - **tilted**: Current player has tilted their ball.
 
 ### DIP Switches
