@@ -58,16 +58,6 @@
         "5": "n/a"
       }
     },
-    "current_ball": {
-      "label": "Ball",
-      "start": "0x0236",
-      "length": 1,
-      "encoding": "bcd",
-      "_notes": "set to 0 outside of game when showing match",
-      "special_values": {
-        "0": "n/a"
-      }
-    },
     "credits": {
       "label": "Credits",
       "start": "0x02D5",
@@ -77,29 +67,116 @@
     "scores": [
       {
         "label": "Player 1",
-        "start": "0x023C",
-        "length": 6,
-        "encoding": "bcd"
+        "start": "0x021E",
+        "encoding": "bcd",
+        "length": 6
       },
       {
         "label": "Player 2",
-        "start": "0x0242",
-        "length": 6,
-        "encoding": "bcd"
+        "start": "0x0224",
+        "encoding": "bcd",
+        "length": 6
       },
       {
         "label": "Player 3",
-        "start": "0x0248",
-        "length": 6,
-        "encoding": "bcd"
+        "start": "0x022A",
+        "encoding": "bcd",
+        "length": 6
       },
       {
         "label": "Player 4",
-        "start": "0x024E",
-        "length": 6,
-        "encoding": "bcd"
+        "start": "0x0230",
+        "encoding": "bcd",
+        "length": 6
       }
-    ]
+    ],
+    "final_scores": [
+      {
+        "label": "Final P1",
+        "start": "0x023C",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final P2",
+        "start": "0x0242",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final P3",
+        "start": "0x0248",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final P4",
+        "start": "0x024E",
+        "encoding": "bcd",
+        "length": 6
+      }
+    ],
+    "current_ball": {
+      "label": "Current Ball",
+      "start": "0x13",
+      "encoding": "bcd"
+    },
+    "player_count": {
+      "label": "Players",
+      "start": "0x14",
+      "encoding": "bcd"
+    },
+    "current_player": {
+      "label": "Current Player",
+      "start": "0x15",
+      "encoding": "bcd"
+    },
+    "ball_count": {
+      "label": "Ball Count",
+      "encoding": "dipsw",
+      "offsets": [
+        7
+      ],
+      "values": [
+        3,
+        5
+      ]
+    },
+    "max_credits": {
+      "label": "Max Credits",
+      "encoding": "dipsw",
+      "offsets": [
+        19,
+        18,
+        17
+      ],
+      "values": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40
+      ]
+    },
+    "game_over": {
+      "_notes": "reading 'game over' lamp",
+      "label": "Game Over",
+      "start": "0x20C",
+      "encoding": "bool",
+      "mask": "0x4",
+      "invert": true
+    },
+    "tilted": {
+      "_notes": "reading 'tilt' lamp",
+      "label": "Tilted",
+      "start": "0x20C",
+      "encoding": "bool",
+      "mask": "0x8",
+      "invert": true
+    }
   },
   "high_scores": [
     {
