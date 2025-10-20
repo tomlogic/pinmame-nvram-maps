@@ -143,6 +143,14 @@
       "start": "0x018B",
       "length": 2,
       "encoding": "bcd"
+    },
+    "free_play": {
+      "_notes": "Free Play enabled when Max Credits == 0",
+      "label": "Free Play",
+      "start": "0x018B",
+      "length": 2,
+      "encoding": "bool",
+      "invert": true
     }
   },
   "player_state": {
