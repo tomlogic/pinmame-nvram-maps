@@ -305,7 +305,6 @@
       "16": {
         "label": "High Score award #1",
         "start": "0x02FA",
-        "length": 1,
         "encoding": "bcd",
         "min": 0,
         "max": 3,
@@ -319,7 +318,6 @@
       "17": {
         "label": "High Score award #2",
         "start": "0x02FB",
-        "length": 1,
         "encoding": "bcd",
         "min": 0,
         "max": 3,
@@ -333,7 +331,6 @@
       "18": {
         "label": "???",
         "start": "0x02FC",
-        "length": 1,
         "encoding": "bcd",
         "min": 0,
         "max": 3
@@ -349,7 +346,6 @@
       "20": {
         "label": "???",
         "start": "0x02FE",
-        "length": 1,
         "encoding": "int",
         "min": 0,
         "max": 15
@@ -357,7 +353,6 @@
       "21": {
         "label": "???",
         "start": "0x02FF",
-        "length": 1,
         "encoding": "int",
         "min": 0,
         "max": 15
@@ -366,7 +361,6 @@
         "label": "Backbox Deluxe Feature",
         "_notes": "default value of 15, even if that is not in the range",
         "start": "0x028D",
-        "length": 1,
         "encoding": "int",
         "min": 0,
         "max": 3,
