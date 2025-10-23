@@ -20,6 +20,7 @@
     "platform": "gottlieb-system80b-10K",
     "roms": [
       "arena",
+      "arenaa",
       "arena_fp",
       "arenaafp",
       "arenaffp",
@@ -177,6 +178,19 @@
         15,
         20
       ]
+    },
+    "game_over": {
+      "_notes": "0x01 when in game, 0x00 when game over",
+      "label": "Game Over",
+      "encoding": "bool",
+      "start": "0x57",
+      "invert": true
+    },
+    "tilted": {
+      "_notes": "0xF0 when tilted, 0x00 otherwise",
+      "label": "Tilted",
+      "encoding": "bool",
+      "start": "0x58"
     }
   },
   "high_scores": [
