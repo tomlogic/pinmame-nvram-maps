@@ -16,6 +16,9 @@
     "roms": [
       "ww_lh6",
       "ww_lh6c"
+    ],
+    "free_only": [
+      "ww_lh6"
     ]
   },
   "game_state": {
@@ -114,12 +117,6 @@
     "free_play": {
       "label": "Free Play",
       "start": 7132,
-      "encoding": "bool"
-    },
-    "free_only": {
-      "_notes": "ROM address 0xECC6: ww_lh6 (0x01), ww_lh6c (0x00).",
-      "label": "Free Only",
-      "start": "0xECC6",
       "encoding": "bool"
     }
   },

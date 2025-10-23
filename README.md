@@ -184,9 +184,13 @@ describe the map itself and provide defaults for later entries.
 
 #### _metadata Properties
 
+- **version** _(required)_: A `float` indicating the map's version.
 - **roms** _(required)_: A list of PinMAME ROMs that use this map.
   version.  See Version History at the end of this README for changes.
-- **version** _(required)_: A `float` indicating the map's version.
+- **free_only**: A list of PinMAME ROMs that only support "home" use.  If
+  a ROM is in this list, it's always Free Play, and it's safe to ignore 
+  `game_state` fields of `credits`, `max_credits`, and `free_play` as they 
+  don't make sense in this context.
 - **copyright**: Original author of the map, possibly a list of people
   who have contributed to the map.
 - **license**: All files from this project are covered by the LGPL license.
@@ -421,8 +425,6 @@ priority.
 
 The following should use an encoding of `bool`:
 - **free_play**: Whether the game is configured for Free Play.
-- **free_only**: If the ROM only supports "home" use.  If present in a map,
-  a game can be in Free Play mode if either entry is true.
 - **game_over**: Whether the game is in progress (false) or over (true).
 - **tilted**: Current player has tilted their ball.
 

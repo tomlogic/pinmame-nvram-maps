@@ -13,6 +13,9 @@
     "roms": [
       "tz_94h",
       "tz_94ch"
+    ],
+    "free_only": [
+      "tz_94h"
     ]
   },
   "last_played": {
@@ -116,12 +119,6 @@
     "free_play": {
       "label": "Free Play",
       "start": 7262,
-      "encoding": "bool"
-    },
-    "free_only": {
-      "_notes": "ROM address 0xE84D: tz_94h (0x01), tz_94ch (0x00).",
-      "label": "Free Only",
-      "start": "0xE84D",
       "encoding": "bool"
     }
   },

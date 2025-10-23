@@ -20,6 +20,9 @@
       "tom_13c",
       "tom_14h",
       "tom_14hb"
+    ],
+    "free_only": [
+      "tom_14h"
     ]
   },
   "game_state": {
@@ -118,12 +121,6 @@
     "free_play": {
       "label": "Free Play",
       "start": 7070,
-      "encoding": "bool"
-    },
-    "free_only": {
-      "_notes": "ROM address 0xE8E2: tom_14 (0x01), tom_13/tom_14b (0x00).",
-      "label": "Free Only",
-      "start": "0xE8E2",
       "encoding": "bool"
     }
   },

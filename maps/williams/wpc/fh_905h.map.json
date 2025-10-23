@@ -19,6 +19,9 @@
     "roms": [
       "fh_905h",
       "fh_906h"
+    ],
+    "free_only": [
+      "fh_905h"
     ]
   },
   "game_state": {
@@ -111,12 +114,6 @@
     "free_play": {
       "label": "Free Play",
       "start": 7070,
-      "encoding": "bool"
-    },
-    "free_only": {
-      "_notes": "ROM address 0xDFC5: fh_905h (0x01), fh_906h (0x00).",
-      "label": "Free Only",
-      "start": "0xDFC5",
       "encoding": "bool"
     }
   },

@@ -2,7 +2,8 @@
   "_notes": [
     "2023-10 Initial version by Tom Collins.  Required new `nibble` attribute.",
     "NVRAM file mapped to memory address 0x200 in PinMAME",
-    "Valid for all Stern M-100 MPU games.  ROMs with 'fp' suffix are Free Play.",
+    "Valid for all Stern M-100 MPU games.",
+    "ROMs with 'fp' suffix use DIP switch 20 to enable Free Play (instead of credit display on/off).",
     "Untested with blkshpsq (Astro game), draculc/wildfyrc (mod), stars/starsb7 (mod), stingrab (mod).",
     "Won't work with larger, modified ROMs: magicb, princesb."
   ],

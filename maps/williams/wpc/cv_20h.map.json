@@ -13,6 +13,9 @@
     "roms": [
       "cv_20h",
       "cv_20hc"
+    ],
+    "free_only": [
+      "cv_20h"
     ]
   },
   "last_played": {
@@ -122,12 +125,6 @@
     "free_play": {
       "label": "Free Play",
       "start": 7294,
-      "encoding": "bool"
-    },
-    "free_only": {
-      "_notes": "ROM address 0xF721: cv_20h (0x01), cv_20hc (0x00).",
-      "label": "Free Only",
-      "start": "0xF721",
       "encoding": "bool"
     }
   },
