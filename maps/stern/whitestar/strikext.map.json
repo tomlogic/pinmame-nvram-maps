@@ -92,10 +92,11 @@
       "encoding": "bcd"
     },
     "game_over": {
-      "_notes": "0x2E through 0x37 all 0xFF in attract, 0x00 in game/service menu",
+      "_notes": "current_player == 0",
       "label": "Game Over",
-      "start": "0x2E",
-      "encoding": "bool"
+      "start": "0x1F3",
+      "encoding": "bool",
+      "invert": true
     }
   },
   "high_scores": [
