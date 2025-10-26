@@ -7,7 +7,7 @@
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.1,
+    "version": 0.2,
     "copyright": [
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
@@ -78,7 +78,7 @@
     },
     "player_count": {
       "label": "Player Count",
-      "start": "0x16EA",
+      "start": "0x1BE",
       "encoding": "int"
     },
     "ball_count": {
