@@ -2,11 +2,10 @@
   "_notes": [
     "Compiled by Tom Collins, based on map for System 80B games with 8-digit scores.",
     "Game uses a 4-bit nvram (256x4), so only uses the low nibble of each byte.",
-    "Game stores 62 bytes of data in triplicate at offsets 0, 62 and 124.",
+    "Game stores 61 bytes of data in triplicate at offsets 0, 61 and 122.",
     "If a value in one location doesn't match the other two, it's replaced by the other value.",
     "If a value differs in all three locations, it's replaced with a default value.",
-    "Note that offsets 246 through 250 are 4-bit checksums of each of the high scores.",
-    "80b-7digit-{8KB,10KB}.map.json are identical other than platform (8K vs. 10K ROM)."
+    "0x18FC to 0x18FF are likely high score checksums."
   ],
   "_fileformat": 0.7,
   "_metadata": {
@@ -18,11 +17,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "gottlieb-system80b-10K",
     "roms": [
-      "raven",
-      "ravenfp",
-      "ravengfp",
-      "ravenafp",
       "tagteam",
+      "tagteam2",
       "tagtemfp",
       "tagtmgfp",
       "tagtem2f"
@@ -74,7 +70,7 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": "0x183C",
+      "start": "0x1846",
       "encoding": "bcd",
       "length": 2
     },
@@ -140,7 +136,7 @@
     "ball_count": {
       "_notes": "set at startup from DIP switches; always 3 or 5",
       "label": "Balls Per Game",
-      "start": "0xDF",
+      "start": "0xED",
       "encoding": "bcd"
     },
     "extra_balls": {
@@ -198,6 +194,40 @@
       "label": "High Score #2",
       "short_label": "2nd",
       "initials": {
+        "start": "0x18D8",
+        "encoding": "ch",
+        "default": "\u0000\u0000\u0000",
+        "length": 6
+      },
+      "score": {
+        "start": "0x18DE",
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      }
+    },
+    {
+      "label": "High Score #3",
+      "short_label": "3nd",
+      "initials": {
+        "start": "0x18E4",
+        "encoding": "ch",
+        "default": "\u0000\u0000\u0000",
+        "length": 6
+      },
+      "score": {
+        "start": "0x18EA",
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      }
+    }
+  ],
+  "mode_champions": [
+    {
+      "label": "Team Score #1",
+      "short_label": "1st Team",
+      "initials": {
         "start": "0x18C6",
         "encoding": "ch",
         "default": "\u0000\u0000\u0000",
@@ -211,48 +241,16 @@
       }
     },
     {
-      "label": "High Score #3",
-      "short_label": "3rd",
+      "label": "Team Score #2",
+      "short_label": "2nd Team",
       "initials": {
-        "start": "0x18D2",
-        "encoding": "ch",
-        "default": "\u0000\u0000\u0000",
-        "length": 6
-      },
-      "score": {
-        "start": "0x18D8",
-        "encoding": "bcd",
-        "length": 6,
-        "scale": 10
-      }
-    },
-    {
-      "label": "High Score #4",
-      "short_label": "4th",
-      "initials": {
-        "start": "0x18DE",
-        "encoding": "ch",
-        "default": "\u0000\u0000\u0000",
-        "length": 6
-      },
-      "score": {
-        "start": "0x18E4",
-        "encoding": "bcd",
-        "length": 6,
-        "scale": 10
-      }
-    },
-    {
-      "label": "High Score #5",
-      "short_label": "5th",
-      "initials": {
-        "start": "0x18EA",
-        "encoding": "ch",
-        "default": "\u0000\u0000\u0000",
-        "length": 6
-      },
-      "score": {
         "start": "0x18F0",
+        "encoding": "ch",
+        "default": "\u0000\u0000\u0000",
+        "length": 6
+      },
+      "score": {
+        "start": "0x18F6",
         "encoding": "bcd",
         "length": 6,
         "scale": 10
@@ -304,7 +302,7 @@
         "length": 4
       },
       "09": {
-        "label": "Specials",
+        "label": "Slams",
         "start": "0x181C",
         "encoding": "bcd",
         "length": 4
@@ -330,7 +328,21 @@
         "length": 6
       },
       "15": {
-        "label": "Game Time",
+        "label": "Highest Team To Date",
+        "start": "0x183C",
+        "encoding": "bcd",
+        "length": 6,
+        "scale": 10
+      },
+      "15a": {
+        "label": "Team Initials",
+        "start": "0x1836",
+        "encoding": "ch",
+        "null": "truncate",
+        "length": 6
+      },
+      "16": {
+        "label": "Average Game Time",
         "suffix": " seconds",
         "start": "0x1824",
         "encoding": "bcd",
@@ -342,22 +354,15 @@
   "adjustments": {
     "Standard Adjustments": {
       "11": {
-        "label": "First High Score",
-        "start": "0x1836",
+        "label": "Regular High Score",
+        "start": "0x1842",
         "encoding": "bcd",
         "length": 2,
         "scale": 100000
       },
       "12": {
-        "label": "Second High Score",
-        "start": "0x1838",
-        "encoding": "bcd",
-        "length": 2,
-        "scale": 100000
-      },
-      "13": {
-        "label": "Third High Score",
-        "start": "0x183A",
+        "label": "Team High Score",
+        "start": "0x1844",
         "encoding": "bcd",
         "length": 2,
         "scale": 100000

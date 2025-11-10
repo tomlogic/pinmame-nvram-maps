@@ -17,19 +17,14 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "gottlieb-system80b-10K",
     "roms": [
-      "goldwing",
-      "goldwgfp",
-      "gldwggfp",
-      "gldwgffp",
-      "mntecrlo",
-      "mntecrfp",
-      "mntcrgfp",
-      "mntcrgmfp",
-      "mntcrffp",
-      "mntcrfmfp",
-      "mntcrafp",
-      "mntcr2fp",
-      "mntcrmfp"
+      "genesis",
+      "genesffp",
+      "genesgfp",
+      "genesifp",
+      "hlywoodh",
+      "hlywdhfp",
+      "hlywhgfp",
+      "hlywhffp"
     ],
     "values": {
       "off_on": [
@@ -122,14 +117,14 @@
       "_notes": "set to 0 when game over",
       "label": "Player Count",
       "short_label": "Players",
-      "start": "0xC0",
+      "start": "0xC1",
       "encoding": "int"
     },
     "current_player": {
       "_notes": "0-3; bit 7 (0x80) sometimes set",
       "label": "Current Player",
       "short_label": "P#",
-      "start": "0xC1",
+      "start": "0xC2",
       "encoding": "int",
       "mask": "0x0F",
       "offset": 1
@@ -144,7 +139,7 @@
     "ball_count": {
       "_notes": "set at startup from DIP switches; always 3 or 5",
       "label": "Balls Per Game",
-      "start": "0xDF",
+      "start": "0xE0",
       "encoding": "bcd"
     },
     "extra_balls": {

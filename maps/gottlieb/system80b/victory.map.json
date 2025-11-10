@@ -175,6 +175,14 @@
       "label": "Tilted",
       "encoding": "bool",
       "start": "0x58"
+    },
+    "free_play": {
+      "_notes": "On tomlogic's competition ROMs, '-' for credits indicates Free Play",
+      "label": "Free Play",
+      "encoding": "bool",
+      "invert": true,
+      "start": "0x1E",
+      "offset": -45
     }
   },
   "high_scores": [
