@@ -25,12 +25,41 @@
     ]
   },
   "game_state": {
+    "_notes": [
+      "`final_scores` only updated at end of each ball; `scores` represents display memory"
+    ],
     "credits": {
       "label": "Credits",
       "encoding": "bcd",
       "start": "0x2CE"
     },
     "scores": [
+      {
+        "label": "Player 1",
+        "start": "0x000",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 2",
+        "start": "0x004",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 3",
+        "start": "0x008",
+        "length": 4,
+        "encoding": "bcd"
+      },
+      {
+        "label": "Player 4",
+        "start": "0x00C",
+        "length": 4,
+        "encoding": "bcd"
+      }
+    ],
+    "final_scores": [
       {
         "label": "Player 1",
         "start": "0x280",
