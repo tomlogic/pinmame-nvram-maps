@@ -18,7 +18,10 @@
     "roms": [
       "ali",
       "galaxy",
-      "meteor"
+      "meteor",
+      "meteora",
+      "meteorbf",
+      "meteora2"
     ]
   },
   "game_state": {

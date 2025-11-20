@@ -76,6 +76,7 @@
 * [Champion Pub, The (1.6)][30] _cp_16_
 * [Cheech & Chong: Road-Trip'pin (Harley-Davidson unofficial MOD)][31] _che_cho_
 * [Cheetah (Black cabinet)][16] _cheetah_
+* [Cheetah (Blue cabinet)][16] _cheetahb_
 * [Chicago Cubs Triple Play][24] _triplay_
 * [Chicago Cubs Triple Play (Free Play)][24] _triplyfp_
 * [Chicago Cubs Triple Play (German Free Play)][24] _triplgfp_
@@ -292,6 +293,9 @@
 * [Memory Lane][38] _memlane_
 * [Memory Lane (Free Play)][39] _memlanfp_
 * [Meteor][5] _meteor_
+* [Meteor (Bonus Count Fix)][5] _meteorbf_
+* [Meteor (Bonus Count Offical Fix)][5] _meteora_
+* [Meteor (Bonus Count and Sound Fix)][5] _meteora2_
 * [Millionaire (L-3)][108] _milln_l3_
 * [Monster Bash (1.0)][109] _mb_10_
 * [Monster Bash (1.06)][110] _mb_106_
