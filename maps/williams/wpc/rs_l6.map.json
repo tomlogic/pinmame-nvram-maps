@@ -7,7 +7,7 @@
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 0.3,
+    "version": 4,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
@@ -86,22 +86,22 @@
     },
     "current_player": {
       "label": "Current Player",
-      "start": 947,
+      "start": 946,
       "encoding": "int"
     },
     "current_ball": {
       "label": "Ball",
-      "start": 948,
+      "start": 947,
       "encoding": "int"
     },
     "extra_balls": {
       "label": "Extra Balls",
-      "start": 949,
+      "start": 948,
       "encoding": "int"
     },
     "eb_on_this_ball": {
       "label": "EBs this Ball",
-      "start": 950,
+      "start": 949,
       "encoding": "int"
     },
     "ball_count": {
