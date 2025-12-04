@@ -9,14 +9,8 @@
     {
       "label": "RAM",
       "address": "0x0000",
-      "size": "0x2000",
+      "size": "0x800",
       "type": "nvram"
-    },
-    {
-      "label": "ROM 5B",
-      "address": "0x4000",
-      "size": "0x4000",
-      "type": "rom"
     },
     {
       "label": "ROM 5C",
