@@ -65,6 +65,11 @@
       "start": "0x1E13",
       "encoding": "bcd"
     },
+    "free_play": {
+      "label": "Free Play",
+      "start": "0x1E04",
+      "encoding": "bool"
+    },
     "tilted": {
       "_notes": "maybe 0x15C or 0x180; 0x164 might be tilt warnings",
       "label": "Tilted",

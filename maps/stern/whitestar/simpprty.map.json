@@ -56,6 +56,11 @@
       "start": "0x1E0F",
       "encoding": "bcd"
     },
+    "free_play": {
+      "label": "Free Play",
+      "start": "0x1E05",
+      "encoding": "bool"
+    },
     "tilted": {
       "label": "Tilted",
       "start": "0x307",
