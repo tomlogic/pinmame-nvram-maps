@@ -4,9 +4,9 @@
     "Stellar Wars (Williams, 1979)",
     "https://www.ipdb.org/machine.cgi?id=2372"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.2,
+    "version": 2,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-system4",

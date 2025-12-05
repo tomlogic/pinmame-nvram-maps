@@ -5,9 +5,9 @@
     "v0.2: changed score lengths from 5 to 6",
     "2025-07-07 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.4,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2016 by Dave Horsepin <horse@horsesoft.uk>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"

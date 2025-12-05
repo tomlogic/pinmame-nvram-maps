@@ -8,9 +8,9 @@
     "Note that offsets 248 through 252 are 4-bit checksums of each of the high scores.",
     "Modified version of 80b-8digit-B-12KB.map.json with game-specific DIP switch entries."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.1,
+    "version": 1,
     "copyright": [
       "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"

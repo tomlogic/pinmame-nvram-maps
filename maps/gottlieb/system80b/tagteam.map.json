@@ -7,9 +7,9 @@
     "If a value differs in all three locations, it's replaced with a default value.",
     "0x18FC to 0x18FF are likely high score checksums."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.4,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"

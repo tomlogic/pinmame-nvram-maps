@@ -8,9 +8,9 @@
     "Note that offsets 246 through 250 are 4-bit checksums of each of the high scores.",
     "80b-7digit-{8KB,10KB}.map.json are identical other than platform (8K vs. 10K ROM)."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.4,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"

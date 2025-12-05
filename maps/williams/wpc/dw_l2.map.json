@@ -5,9 +5,9 @@
     "Doctor Who (Bally, 1992, WPC)",
     "2025-07-07 Tom Collins added automated audits (B.4, B.5, B.6)"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.4,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2018 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"

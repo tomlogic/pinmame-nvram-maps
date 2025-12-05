@@ -5,9 +5,9 @@
     "Compiled by Tom Collins <tom@scorbit.io>",
     "Using `offsets` since top byte (two digits) of each score is stored separately."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.2,
+    "version": 2,
     "copyright": [
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],

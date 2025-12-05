@@ -3,9 +3,9 @@
     "Compiled by Tom Collins",
     "Checksum for settings at 0x1FBD/0x1FBE?  Increases when settings increase."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.1,
+    "version": 1,
     "copyright": [
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],

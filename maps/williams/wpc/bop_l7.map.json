@@ -4,9 +4,9 @@
     "WPC 50002, SYS 2.46 REV 0.7",
     "2025-09-05 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.30000000000000004,
+    "version": 3,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",

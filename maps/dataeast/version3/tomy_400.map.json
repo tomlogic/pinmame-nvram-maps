@@ -3,9 +3,9 @@
     "Originally compiled by Horsepin.",
     "Updated from gnr_300 by Tom Collins"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2016 by Horsepin>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"

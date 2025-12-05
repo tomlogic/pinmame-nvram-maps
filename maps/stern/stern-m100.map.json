@@ -6,9 +6,9 @@
     "Untested with blkshpsq (Astro game), draculc/wildfyrc (mod), stars/starsb7 (mod), stingrab (mod).",
     "Won't work with larger, modified ROMs: magicb, princesb."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2023 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"

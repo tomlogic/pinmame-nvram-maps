@@ -4,9 +4,9 @@
     "WPC 20001, SYS 1.18 REV 0.3",
     "2025-09-05 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2016 by Horsepin",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"

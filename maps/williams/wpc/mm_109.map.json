@@ -4,9 +4,9 @@
     "WPC 50059, SYS 3.77 REV 1.0",
     "2025-07-07 Tom Collins added automated audits (B.4 Feature Audits)"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
