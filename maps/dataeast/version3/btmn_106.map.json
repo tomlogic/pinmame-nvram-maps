@@ -67,6 +67,11 @@
       "start": "0x1DDE",
       "encoding": "bcd"
     },
+    "free_play": {
+      "label": "Free Play",
+      "start": "0x1E04",
+      "encoding": "bool"
+    },
     "max_credits": {
       "label": "Max Credits",
       "start": "0x1E0F",
