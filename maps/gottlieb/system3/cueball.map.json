@@ -1,6 +1,7 @@
 {
   "_notes": [
-    "Audits/Adjustments stored in triplicate at 0xD00, 0xE00, 0xF00"
+    "Audits/Adjustments stored in triplicate at 0x680, 0x700, 0x780",
+    "Based on freddy.map.json."
   ],
   "_fileformat": 0.7,
   "_metadata": {
@@ -11,8 +12,10 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "gottlieb-system3",
     "roms": [
-      "freddy",
-      "freddy4"
+      "cueball",
+      "cueball1",
+      "cueball2",
+      "cueball3"
     ]
   },
   "game_state": {
@@ -43,14 +46,14 @@
       }
     ],
     "credits": {
-      "_notes": "mirrored to 0x16, 0xAF5, and 0xBF2 as well",
+      "_notes": "mirrored to 0x16, 0x5B1, and 0x642 as well",
       "label": "Credits",
-      "start": "0x8FC",
+      "start": "0x490",
       "encoding": "bcd"
     },
     "max_credits": {
       "label": "Max Credits",
-      "start": "0xD5D",
+      "start": "0x6D0",
       "encoding": "bcd"
     },
     "current_ball": {
@@ -61,7 +64,7 @@
     },
     "ball_count": {
       "label": "Ball Count",
-      "start": "0xD5F",
+      "start": "0x6D2",
       "encoding": "bcd"
     },
     "current_player": {
@@ -89,88 +92,73 @@
   },
   "high_scores": [
     {
-      "label": "Dream Master",
+      "label": "High Score #1",
       "short_label": "#1",
       "initials": {
-        "start": "0xD0C",
+        "start": "0x68C",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "bcd",
         "length": 5,
-        "start": "0xD25"
+        "start": "0x6A5"
       }
     },
     {
-      "label": "Dream Warrior #2",
+      "label": "High Score #2",
       "short_label": "#2",
       "initials": {
-        "start": "0xD11",
+        "start": "0x691",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "bcd",
         "length": 5,
-        "start": "0xD2A"
+        "start": "0x6AA"
       }
     },
     {
-      "label": "Dream Warrior #3",
+      "label": "High Score #3",
       "short_label": "#3",
       "initials": {
-        "start": "0xD16",
+        "start": "0x696",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "bcd",
         "length": 5,
-        "start": "0xD2F"
+        "start": "0x6AF"
       }
     },
     {
-      "label": "Dream Warrior #4",
+      "label": "High Score #4",
       "short_label": "#4",
       "initials": {
-        "start": "0xD1B",
+        "start": "0x69B",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "bcd",
         "length": 5,
-        "start": "0xD34"
+        "start": "0x6B4"
       }
     },
     {
-      "label": "Dream Warrior #5",
+      "label": "High Score #5",
       "short_label": "#5",
       "initials": {
-        "start": "0xD20",
+        "start": "0x6A0",
         "encoding": "ch",
         "length": 3
       },
       "score": {
         "encoding": "bcd",
         "length": 5,
-        "start": "0xD39"
-      }
-    }
-  ],
-  "mode_champions": [
-    {
-      "label": "Most Souls Saved",
-      "initials": {
-        "start": "0x650",
-        "encoding": "ch",
-        "length": 3
-      },
-      "score": {
-        "start": "0xD7E",
-        "encoding": "bcd",
-        "length": 2
+        "start": "0x6B9"
       }
     }
   ]
