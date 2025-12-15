@@ -4,12 +4,12 @@
     "The Six Million Dollar Man (Bally 1978)",
     "https://www.ipdb.org/machine.cgi?id=2165",
     "https://opdb.org/machines/4721",
-    "Bally MPU AS-2518-35",
+    "Bally MPU AS-2518-35 (U6: 720-30_6.716)",
     "Six players"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.1,
+    "version": 2,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -23,48 +23,147 @@
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": "0x0239",
+      "start": "0x02D5",
       "length": 2,
       "encoding": "bcd"
     },
     "scores": [
       {
         "label": "Player 1",
-        "start": "0x0249",
+        "start": "0x021E",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 2",
-        "start": "0x024F",
+        "start": "0x0224",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 3",
-        "start": "0x0255",
+        "start": "0x022A",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 4",
-        "start": "0x025B",
+        "start": "0x0230",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 5",
-        "start": "0x0243",
+        "start": "0x0218",
         "encoding": "bcd",
         "length": 6
       },
       {
         "label": "Player 6",
+        "start": "0x0212",
+        "encoding": "bcd",
+        "length": 6
+      }
+    ],
+    "final_scores": [
+      {
+        "label": "Final Score P1",
+        "start": "0x0249",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final Score P2",
+        "start": "0x024F",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final Score P3",
+        "start": "0x0255",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final Score P4",
+        "start": "0x025B",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final Score P5",
+        "start": "0x0243",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final Score P6",
         "start": "0x023D",
         "encoding": "bcd",
         "length": 6
       }
-    ]
+    ],
+    "current_ball": {
+      "label": "Current Ball",
+      "start": "0x12",
+      "encoding": "bcd"
+    },
+    "player_count": {
+      "label": "Players",
+      "start": "0x13",
+      "encoding": "bcd"
+    },
+    "current_player": {
+      "label": "Current Player",
+      "start": "0x14",
+      "encoding": "bcd"
+    },
+    "ball_count": {
+      "label": "Ball Count",
+      "encoding": "dipsw",
+      "offsets": [
+        16
+      ],
+      "values": [
+        3,
+        5
+      ]
+    },
+    "max_credits": {
+      "label": "Max Credits",
+      "encoding": "dipsw",
+      "offsets": [
+        19,
+        18,
+        17
+      ],
+      "values": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40
+      ]
+    },
+    "game_over": {
+      "_notes": "reading 'game over' lamp",
+      "label": "Game Over",
+      "start": "0x20C",
+      "encoding": "bool",
+      "mask": "0x4",
+      "invert": true
+    },
+    "tilted": {
+      "_notes": "reading 'tilt' lamp",
+      "label": "Tilted",
+      "start": "0x20C",
+      "encoding": "bool",
+      "mask": "0x8",
+      "invert": true
+    }
   },
   "high_scores": [
     {
@@ -104,7 +203,7 @@
         "max": 999999
       },
       "08": {
-        "label": "Total times 'High Game to Date' is beat",
+        "label": "HSTD Achieved",
         "start": "0x02E7",
         "length": 6,
         "encoding": "bcd",
@@ -112,7 +211,7 @@
         "max": 999999
       },
       "09": {
-        "label": "Coins Dropped thru Coin Chute #1",
+        "label": "Coin Chute #1",
         "start": "0x02ED",
         "length": 6,
         "encoding": "bcd",
@@ -120,7 +219,7 @@
         "max": 999999
       },
       "10": {
-        "label": "Coins Dropped thru Coin Chute #2",
+        "label": "Coin Chute #2",
         "start": "0x02F3",
         "length": 6,
         "encoding": "bcd",
@@ -128,7 +227,7 @@
         "max": 999999
       },
       "11": {
-        "label": "Coins Dropped thru Coin Chute #3",
+        "label": "Coin Chute #3",
         "start": "0x02F9",
         "length": 6,
         "encoding": "bcd",

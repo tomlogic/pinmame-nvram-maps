@@ -4,9 +4,9 @@
     "WPC 50062, SYS 3.76 REV 1.4",
     "2025-07-07 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 3,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
@@ -111,6 +111,11 @@
       "label": "Maximum Credits",
       "start": 7280,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7282,
+      "encoding": "bool"
     }
   },
   "high_scores": [

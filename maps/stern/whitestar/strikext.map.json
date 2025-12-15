@@ -3,9 +3,9 @@
     "Compiled by Tom Collins",
     "Checksum for settings at 0x1FBD/0x1FBE?  Increases when settings increase."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.1,
+    "version": 1,
     "copyright": [
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
@@ -65,6 +65,11 @@
       "start": "0x1E13",
       "encoding": "bcd"
     },
+    "free_play": {
+      "label": "Free Play",
+      "start": "0x1E04",
+      "encoding": "bool"
+    },
     "tilted": {
       "_notes": "maybe 0x15C or 0x180; 0x164 might be tilt warnings",
       "label": "Tilted",
@@ -92,10 +97,11 @@
       "encoding": "bcd"
     },
     "game_over": {
-      "_notes": "0x2E through 0x37 all 0xFF in attract, 0x00 in game/service menu",
+      "_notes": "current_player == 0",
       "label": "Game Over",
-      "start": "0x2E",
-      "encoding": "bool"
+      "start": "0x1F3",
+      "encoding": "bool",
+      "invert": true
     }
   },
   "high_scores": [

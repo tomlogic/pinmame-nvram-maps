@@ -4,9 +4,9 @@
     "WPC 50018, SYS 3.76 REV 0.6",
     "2025-07-07 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -16,6 +16,9 @@
     "roms": [
       "ww_lh6",
       "ww_lh6c"
+    ],
+    "free_only": [
+      "ww_lh6"
     ]
   },
   "game_state": {
@@ -64,6 +67,18 @@
       "length": 2,
       "scale": 1000000
     },
+    "credits": {
+      "_notes": [
+        "1-byte credits followed by bytes encoding partial/bonus credits.",
+        "Home ROM (ww_lh6) always has 0xFF for credits, but ww_lh6c has credits."
+      ],
+      "label": "Credits",
+      "start": 7375,
+      "encoding": "int",
+      "special_values": {
+        "255": "FREE ONLY"
+      }
+    },
     "game_over": {
       "label": "Game Over",
       "start": 141,
@@ -98,6 +113,11 @@
       "label": "Maximum Credits",
       "start": 7130,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7132,
+      "encoding": "bool"
     }
   },
   "high_scores": [
@@ -963,6 +983,12 @@
       "start": 7369,
       "end": 7374,
       "label": "HSTD Reset"
+    },
+    {
+      "_notes": "this checksum fails for ww_lh6, but is necessary for ww_lh6c",
+      "start": 7375,
+      "end": 7383,
+      "label": "Credits"
     },
     {
       "start": 7384,

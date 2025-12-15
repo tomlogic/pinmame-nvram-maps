@@ -13,9 +13,15 @@
       "type": "nvram"
     },
     {
-      "label": "ROM",
+      "label": "ROM 5B",
       "address": "0x4000",
-      "size": "0xC000",
+      "size": "0x4000",
+      "type": "rom"
+    },
+    {
+      "label": "ROM 5C",
+      "address": "0x8000",
+      "size": "0x8000",
       "type": "rom"
     }
   ]

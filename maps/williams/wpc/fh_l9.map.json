@@ -4,9 +4,9 @@
     "WPC 50003, SYS 2.46 REV 0.9",
     "2025-09-05 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2016 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -111,6 +111,11 @@
       "label": "Maximum Credits",
       "start": 7068,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7070,
+      "encoding": "bool"
     }
   },
   "high_scores": [

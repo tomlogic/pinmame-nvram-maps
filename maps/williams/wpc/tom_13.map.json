@@ -6,9 +6,9 @@
     "v0.2 (2018-03) by Tom Collins; added adjustments, audits, checksums",
     "2025-07-07 Tom Collins added automated audits (B.2, B.6)"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.5,
+    "version": 5,
     "copyright": [
       "Copyright (C) 2017 by Mike Metzger <mike@flexiblecreations.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -19,7 +19,11 @@
       "tom_13",
       "tom_13c",
       "tom_14h",
-      "tom_14hb"
+      "tom_14hb",
+      "tom_20"
+    ],
+    "free_only": [
+      "tom_14h"
     ]
   },
   "game_state": {
@@ -114,6 +118,11 @@
       "label": "Maximum Credits",
       "start": 7068,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7070,
+      "encoding": "bool"
     }
   },
   "high_scores": [

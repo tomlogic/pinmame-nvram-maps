@@ -6,9 +6,9 @@
     "https://github.com/idealjoker/7eleven/blob/master/System6.API",
     "Game/player state information from Ideal Joker's 7eleven project."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 3,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-system6-6K",
@@ -143,6 +143,14 @@
       "start": "0x018B",
       "length": 2,
       "encoding": "bcd"
+    },
+    "free_play": {
+      "_notes": "Free Play enabled when Max Credits == 0",
+      "label": "Free Play",
+      "start": "0x018B",
+      "length": 2,
+      "encoding": "bool",
+      "invert": true
     }
   },
   "player_state": {

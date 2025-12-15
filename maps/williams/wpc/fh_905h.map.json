@@ -7,9 +7,9 @@
     "WPC 50003, SYS 3.58 REV 9.0",
     "2025-09-05 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -19,6 +19,9 @@
     "roms": [
       "fh_905h",
       "fh_906h"
+    ],
+    "free_only": [
+      "fh_905h"
     ]
   },
   "game_state": {
@@ -107,6 +110,11 @@
       "label": "Maximum Credits",
       "start": 7068,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7070,
+      "encoding": "bool"
     }
   },
   "high_scores": [

@@ -8,7 +8,7 @@
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.4,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2017 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -190,6 +190,11 @@
     "game_over": {
       "label": "Game Over",
       "start": 169,
+      "encoding": "bool"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 1942,
       "encoding": "bool"
     }
   },

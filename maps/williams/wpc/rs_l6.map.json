@@ -5,9 +5,9 @@
     "2025-07-07 Tom Collins added automated audits",
     "unknown location for audit 'B.4 30 BLAST FOR E.B.', single-byte value"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 4,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
@@ -86,22 +86,22 @@
     },
     "current_player": {
       "label": "Current Player",
-      "start": 947,
+      "start": 946,
       "encoding": "int"
     },
     "current_ball": {
       "label": "Ball",
-      "start": 948,
+      "start": 947,
       "encoding": "int"
     },
     "extra_balls": {
       "label": "Extra Balls",
-      "start": 949,
+      "start": 948,
       "encoding": "int"
     },
     "eb_on_this_ball": {
       "label": "EBs this Ball",
-      "start": 950,
+      "start": 949,
       "encoding": "int"
     },
     "ball_count": {
@@ -113,6 +113,11 @@
       "label": "Maximum Credits",
       "start": 7068,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7070,
+      "encoding": "bool"
     }
   },
   "high_scores": [

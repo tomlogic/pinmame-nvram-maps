@@ -4,9 +4,9 @@
     "WPC 50053, SYS 3.70 REV 3.1",
     "2025-07-07 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -75,7 +75,7 @@
     },
     "game_over": {
       "label": "Game Over",
-      "start": 130,
+      "start": 129,
       "encoding": "bool"
     },
     "current_player": {
@@ -107,6 +107,11 @@
       "label": "Maximum Credits",
       "start": 7062,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7064,
+      "encoding": "bool"
     }
   },
   "high_scores": [
@@ -182,6 +187,19 @@
     }
   ],
   "mode_champions": [
+    {
+      "label": "* MVP",
+      "initials": {
+        "start": 7877,
+        "encoding": "ch",
+        "length": 3
+      },
+      "score": {
+        "start": 7880,
+        "encoding": "bcd",
+        "length": 5
+      }
+    },
     {
       "label": "BLAZERS",
       "initials": {
@@ -1691,6 +1709,16 @@
       "start": 7752,
       "end": 7876,
       "label": "Custom Message (2x32)"
+    },
+    {
+      "start": 7877,
+      "length": 10,
+      "label": "MVP"
+    },
+    {
+      "start": 7887,
+      "end": 8120,
+      "label": "Mode Champions"
     }
   ]
 }

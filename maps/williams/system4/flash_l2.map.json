@@ -5,9 +5,9 @@
     "https://www.ipdb.org/machine.cgi?id=871",
     "This map is for the original System 4 version of Flash."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.2,
+    "version": 2,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-system4",

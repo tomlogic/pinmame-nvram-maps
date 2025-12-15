@@ -3,9 +3,9 @@
     "Compiled by Tom Collins for initial development/testing purposes.",
     "WPC 50042, SYS 3.50 REV 1.2"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.2,
+    "version": 2,
     "copyright": [
       "Copyright (C) 2015 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -107,6 +107,11 @@
       "label": "Maximum Credits",
       "start": 7068,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7070,
+      "encoding": "bool"
     }
   },
   "high_scores": [

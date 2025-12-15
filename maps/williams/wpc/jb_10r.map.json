@@ -4,9 +4,9 @@
     "WPC 50051, SYS 3.46 REV 1.0",
     "2025-07-07 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 4,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
@@ -80,7 +80,7 @@
     },
     "game_over": {
       "label": "Game Over",
-      "start": 130,
+      "start": 129,
       "encoding": "bool"
     },
     "current_player": {
@@ -112,6 +112,11 @@
       "label": "Maximum Credits",
       "start": 7284,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7286,
+      "encoding": "bool"
     }
   },
   "high_scores": [

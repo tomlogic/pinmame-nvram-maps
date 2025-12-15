@@ -4,9 +4,9 @@
     "WPC 50003, SYS 1.04 REV 0.3",
     "2025-09-05 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.4,
+    "version": 4,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
@@ -112,6 +112,11 @@
       "label": "Maximum Credits",
       "start": 7058,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7060,
+      "encoding": "bool"
     }
   },
   "high_scores": [

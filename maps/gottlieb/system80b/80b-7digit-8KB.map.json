@@ -8,9 +8,9 @@
     "Note that offsets 246 through 250 are 4-bit checksums of each of the high scores.",
     "80b-7digit-{8KB,10KB}.map.json are identical other than platform (8K vs. 10K ROM)."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.4,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -155,18 +155,23 @@
       "encoding": "int"
     },
     "max_credits": {
+      "_notes": "set at startup from DIP switches",
       "label": "Maximum Credits",
-      "encoding": "dipsw",
-      "offsets": [
-        15,
-        16
-      ],
-      "values": [
-        8,
-        10,
-        15,
-        20
-      ]
+      "start": "0xDE",
+      "encoding": "bcd"
+    },
+    "game_over": {
+      "_notes": "0x01 when in game, 0x00 when game over",
+      "label": "Game Over",
+      "encoding": "bool",
+      "start": "0x57",
+      "invert": true
+    },
+    "tilted": {
+      "_notes": "0xF0 when tilted, 0x00 otherwise",
+      "label": "Tilted",
+      "encoding": "bool",
+      "start": "0x58"
     }
   },
   "high_scores": [

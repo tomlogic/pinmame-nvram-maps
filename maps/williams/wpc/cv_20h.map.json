@@ -4,13 +4,17 @@
     "WPC 50062, SYS 3.76 REV 2.0",
     "2025-07-07 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 3,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
     "roms": [
+      "cv_20h",
+      "cv_20hc"
+    ],
+    "free_only": [
       "cv_20h"
     ]
   },
@@ -64,6 +68,18 @@
       "length": 2,
       "scale": 1000000
     },
+    "credits": {
+      "_notes": [
+        "1-byte credits followed by bytes encoding partial/bonus credits.",
+        "Home ROM (cv_20h) always has 0xFF for credits, but cv_20hc has credits."
+      ],
+      "label": "Credits",
+      "start": 7621,
+      "encoding": "int",
+      "special_values": {
+        "255": "FREE ONLY"
+      }
+    },
     "volume": {
       "label": "Volume",
       "start": 7631,
@@ -105,6 +121,11 @@
       "label": "Maximum Credits",
       "start": 7292,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7294,
+      "encoding": "bool"
     }
   },
   "high_scores": [
@@ -1135,6 +1156,12 @@
       "start": 7615,
       "end": 7620,
       "label": "HSTD Reset"
+    },
+    {
+      "_notes": "this checksum fails for cv_20h, but is necessary for cv_20hc",
+      "start": 7621,
+      "end": 7630,
+      "label": "Credits"
     },
     {
       "start": 7631,

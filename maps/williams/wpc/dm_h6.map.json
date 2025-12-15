@@ -3,9 +3,9 @@
     "Compiled by Tom Collins for initial development/testing purposes.",
     "WPC 50028, SYS 3.48 REV 0.6"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.2,
+    "version": 2,
     "copyright": [
       "Copyright (C) 2015 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -14,7 +14,11 @@
     "platform": "williams-wpc-12K",
     "roms": [
       "dm_h6",
+      "dm_h6b",
       "dm_h6c"
+    ],
+    "free_only": [
+      "dm_h6"
     ]
   },
   "last_played": {
@@ -108,6 +112,11 @@
       "label": "Maximum Credits",
       "start": 7068,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7070,
+      "encoding": "bool"
     }
   },
   "high_scores": [

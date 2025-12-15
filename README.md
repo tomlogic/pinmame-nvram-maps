@@ -184,9 +184,13 @@ describe the map itself and provide defaults for later entries.
 
 #### _metadata Properties
 
+- **version** _(required)_: A `float` indicating the map's version.
 - **roms** _(required)_: A list of PinMAME ROMs that use this map.
   version.  See Version History at the end of this README for changes.
-- **version** _(required)_: A `float` indicating the map's version.
+- **free_only**: A list of PinMAME ROMs that only support "home" use.  If
+  a ROM is in this list, it's always Free Play, and it's safe to ignore 
+  `game_state` fields of `credits`, `max_credits`, and `free_play` as they 
+  don't make sense in this context.
 - **copyright**: Original author of the map, possibly a list of people
   who have contributed to the map.
 - **license**: All files from this project are covered by the LGPL license.
@@ -405,13 +409,12 @@ priority.
     scores when a game is in progress.  Use this entry in place of `scores`
     when `game_over` is `true`.
 - **credits**: Current number of credits on the game.
+- **max_credits**: Maximum number of credits possible on the game.
 - **volume**: Current volume setting.  Entry should have a min/max value
     so it's possible to represent the volume as a percentage, and to know
     the valid range for making changes.
 - **replay**: Current score needed to achieve a replay.
 - **match**: The (typically) 2-digit "match" score from the last game.
-- **game_over**: Whether the game is in progress (false) or over (true).
-    Should use an encoding of `bool`.
 - **bonus**: Unmultiplied, end-of-ball bonus for current ball.
 - **bonusX**: Multiplier for `bonus`.  There currently isn't a method of
     representing complex bonus amounts (e.g., different mode bonuses, and
@@ -419,6 +422,10 @@ priority.
 - **eb_on_this_ball**: Number of extra balls the current player earned on
     the current ball.
 - **tilt_warnings**: Number of tilt warnings received on the current ball.
+
+The following should use an encoding of `bool`:
+- **free_play**: Whether the game is configured for Free Play.
+- **game_over**: Whether the game is in progress (false) or over (true).
 - **tilted**: Current player has tilted their ball.
 
 ### DIP Switches

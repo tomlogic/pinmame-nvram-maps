@@ -4,9 +4,9 @@
     "WPC 20004, SYS 2.10 REV 0.3",
     "2025-07-07 Tom Collins added automated audits"
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.3,
+    "version": 4,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-8K",
@@ -92,22 +92,22 @@
     },
     "current_player": {
       "label": "Current Player",
-      "start": 1036,
+      "start": 1035,
       "encoding": "int"
     },
     "current_ball": {
       "label": "Ball",
-      "start": 1037,
+      "start": 1036,
       "encoding": "int"
     },
     "extra_balls": {
       "label": "Extra Balls",
-      "start": 1038,
+      "start": 1037,
       "encoding": "int"
     },
     "eb_on_this_ball": {
       "label": "EBs this Ball",
-      "start": 1039,
+      "start": 1038,
       "encoding": "int"
     },
     "ball_count": {
@@ -119,6 +119,11 @@
       "label": "Maximum Credits",
       "start": 7064,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 7066,
+      "encoding": "bool"
     }
   },
   "high_scores": [

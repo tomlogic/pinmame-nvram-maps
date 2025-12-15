@@ -9,7 +9,7 @@
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 0.4,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2022 https://github.com/horseyhorsey",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -109,6 +109,11 @@
       "label": "Tilt Warnings",
       "start": 176,
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": 1942,
+      "encoding": "bool"
     }
   },
   "high_scores": [

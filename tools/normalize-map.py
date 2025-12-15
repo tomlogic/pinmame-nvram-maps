@@ -84,6 +84,9 @@ def map_convert(pairs):
             # "_values" appeared in v0.5 along with "dipsw" encoding
             minimum_file_format(0.5)
 
+        if k == 'version' and type(v) is float:
+            v = int(v * 10)
+
         if k == 'packed':
             # as of v0.2, "packed" attribute deprecated in favor of "nibble"
             if not v:
