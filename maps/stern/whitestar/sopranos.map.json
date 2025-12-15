@@ -1,36 +1,37 @@
 {
   "_notes": [
-    "Compiled by Tom Collins, based on Sopranos."
+    "Compiled by Tom Collins, based on lotr."
   ],
-  "_fileformat": 0.7,
+  "_fileformat": 0.8,
   "_metadata": {
-    "version": 2,
+    "version": 1,
     "copyright": [
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
     "platform": "whitestar",
     "roms": [
-      "ripleys",
-      "ripleysf",
-      "ripleysg",
-      "ripleysi",
-      "ripleysl",
-      "rip310",
-      "rip310f",
-      "rip310g",
-      "rip310i",
-      "rip310l",
-      "rip302",
-      "rip302f",
-      "rip302g",
-      "rip302i",
-      "rip302l",
-      "rip301",
-      "rip301f",
-      "rip301g",
-      "rip301i",
-      "rip301l"
+      "sopranos",
+      "sopranog",
+      "sopranof",
+      "sopranol",
+      "sopranoi",
+      "sopr400",
+      "sopr400g",
+      "sopr400f",
+      "sopr400l",
+      "sopr400i",
+      "sopr300",
+      "soprano3",
+      "sopr300g",
+      "sopr300f",
+      "sopr300l",
+      "sopr300i",
+      "sopr204",
+      "sopr107g",
+      "sopr107f",
+      "sopr107l",
+      "sopr107i"
     ]
   },
   "game_state": {
@@ -77,22 +78,23 @@
     },
     "tilted": {
       "label": "Tilted",
-      "start": "0x324",
+      "start": "0x31E",
       "encoding": "bool"
     },
     "current_player": {
+      "_notes": "move to 0x320",
       "label": "Current Player",
-      "start": "0x326",
+      "start": "0x320",
       "encoding": "bcd"
     },
     "current_ball": {
       "label": "Current Ball",
-      "start": "0x327",
+      "start": "0x321",
       "encoding": "bcd"
     },
     "player_count": {
       "label": "Player Count",
-      "start": "0x328",
+      "start": "0x322",
       "encoding": "bcd"
     },
     "ball_count": {
@@ -103,7 +105,7 @@
     "game_over": {
       "_notes": "current_player == 0",
       "label": "Game Over",
-      "start": "0x326",
+      "start": "0x320",
       "encoding": "bool",
       "invert": true
     }

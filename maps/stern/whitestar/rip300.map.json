@@ -11,26 +11,11 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "whitestar",
     "roms": [
-      "ripleys",
-      "ripleysf",
-      "ripleysg",
-      "ripleysi",
-      "ripleysl",
-      "rip310",
-      "rip310f",
-      "rip310g",
-      "rip310i",
-      "rip310l",
-      "rip302",
-      "rip302f",
-      "rip302g",
-      "rip302i",
-      "rip302l",
-      "rip301",
-      "rip301f",
-      "rip301g",
-      "rip301i",
-      "rip301l"
+      "rip300",
+      "rip300f",
+      "rip300g",
+      "rip300i",
+      "rip300l"
     ]
   },
   "game_state": {
@@ -77,22 +62,22 @@
     },
     "tilted": {
       "label": "Tilted",
-      "start": "0x324",
+      "start": "0x322",
       "encoding": "bool"
     },
     "current_player": {
       "label": "Current Player",
-      "start": "0x326",
+      "start": "0x324",
       "encoding": "bcd"
     },
     "current_ball": {
       "label": "Current Ball",
-      "start": "0x327",
+      "start": "0x325",
       "encoding": "bcd"
     },
     "player_count": {
       "label": "Player Count",
-      "start": "0x328",
+      "start": "0x326",
       "encoding": "bcd"
     },
     "ball_count": {
@@ -103,7 +88,7 @@
     "game_over": {
       "_notes": "current_player == 0",
       "label": "Game Over",
-      "start": "0x326",
+      "start": "0x324",
       "encoding": "bool",
       "invert": true
     }
