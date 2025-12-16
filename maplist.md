@@ -535,48 +535,49 @@
 * [Super Bowl][176] _suprbowl_
 * [Supersonic][100] _sst_
 * [Supersonic (7-digit conversion rev. 20)][130] _sstb_
-* [Swords of Fury (L-2)][177] _swrds_l2_
+* [Surf 'n Safari][177] _surfnsaf_
+* [Swords of Fury (L-2)][178] _swrds_l2_
 * [TX-Sector][8] _txsector_
 * [TX-Sector (Free Play)][8] _txsectfp_
 * [TX-Sector (French Free Play)][8] _txsecffp_
 * [TX-Sector (German Free Play)][8] _txsecgfp_
-* [Tag-Team Pinball][178] _tagteam_
-* [Tag-Team Pinball (Free Play)][178] _tagtemfp_
-* [Tag-Team Pinball (German Free Play)][178] _tagtmgfp_
-* [Tag-Team Pinball (rev. 2 Free Play)][178] _tagtem2f_
-* [Tag-Team Pinball (rev. 2)][178] _tagteam2_
-* [Tales of the Arabian Nights (1.4 / S1.1)][179] _totan_14_
-* [Taxi (Lola) (L-4)][180] _taxi_l4_
-* [Terminator 2: Judgment Day (D-8 LED Ghost Fix)][181] _t2_d8_
-* [Terminator 2: Judgment Day (L-8)][181] _t2_l8_
-* [Terminator 2: Judgment Day (L-81 Attract Sound patch)][181] _t2_l81_
-* [Terminator 2: Judgment Day (L-82 Attract Score patch)][181] _t2_l82_
-* [Terminator 2: Judgment Day (L-83 Profanity, bugfix/MOD, LED Ghost Fix)][181] _t2_l83_
-* [Terminator 2: Judgment Day (L-84 Profanity, bugfix/MOD, LED Ghost Fix)][181] _t2_l84_
-* [Theatre of Magic (1.3X)][182] _tom_13_
-* [Theatre of Magic (1.3XC Competition MOD)][182] _tom_13c_
-* [Theatre of Magic (1.4H Coin Play)][182] _tom_14hb_
-* [Theatre of Magic (1.4H)][182] _tom_14h_
-* [Theatre of Magic (2.0 Competition MOD)][182] _tom_20_
+* [Tag-Team Pinball][179] _tagteam_
+* [Tag-Team Pinball (Free Play)][179] _tagtemfp_
+* [Tag-Team Pinball (German Free Play)][179] _tagtmgfp_
+* [Tag-Team Pinball (rev. 2 Free Play)][179] _tagtem2f_
+* [Tag-Team Pinball (rev. 2)][179] _tagteam2_
+* [Tales of the Arabian Nights (1.4 / S1.1)][180] _totan_14_
+* [Taxi (Lola) (L-4)][181] _taxi_l4_
+* [Terminator 2: Judgment Day (D-8 LED Ghost Fix)][182] _t2_d8_
+* [Terminator 2: Judgment Day (L-8)][182] _t2_l8_
+* [Terminator 2: Judgment Day (L-81 Attract Sound patch)][182] _t2_l81_
+* [Terminator 2: Judgment Day (L-82 Attract Score patch)][182] _t2_l82_
+* [Terminator 2: Judgment Day (L-83 Profanity, bugfix/MOD, LED Ghost Fix)][182] _t2_l83_
+* [Terminator 2: Judgment Day (L-84 Profanity, bugfix/MOD, LED Ghost Fix)][182] _t2_l84_
+* [Theatre of Magic (1.3X)][183] _tom_13_
+* [Theatre of Magic (1.3XC Competition MOD)][183] _tom_13c_
+* [Theatre of Magic (1.4H Coin Play)][183] _tom_14hb_
+* [Theatre of Magic (1.4H)][183] _tom_14h_
+* [Theatre of Magic (2.0 Competition MOD)][183] _tom_20_
 * [Thunderball (P-2 Prototype)][44] _thund_p2_
 * [Thunderball (P-3 Prototype)][44] _thund_p3_
 * [Time Fantasy (L-5)][14] _tmfnt_l5_
 * [Time Machine (1.8 German)][152] _tmac_g18_
 * [Time Machine (1.8)][152] _tmac_a18_
 * [Time Machine (2.4)][152] _tmac_a24_
-* [Time Machine (Zaccaria)][183] _tmachzac_
+* [Time Machine (Zaccaria)][184] _tmachzac_
 * [Time Warp (L-2 Free Play Fix)][24] _tmwrp_l2ff_
 * [Time Warp (L-2)][24] _tmwrp_l2_
 * [Time Warp (L-3 Free Play Fix)][24] _tmwrp_l3ff_
 * [Time Warp (L-3)][24] _tmwrp_l3_
 * [Time Warp (T-2 Ted Estes)][24] _tmwrp_t2_
 * [Time Warp (T-2 Ted Estes, Free Play Fix)][24] _tmwrp_t2ff_
-* [Tommy Pinball Wizard, The Who's (4.00)][184] _tomy_400_
-* [Tommy Pinball Wizard, The Who's (5.00 unofficial MOD)][184] _tomy_500_
+* [Tommy Pinball Wizard, The Who's (4.00)][185] _tomy_400_
+* [Tommy Pinball Wizard, The Who's (5.00 unofficial MOD)][185] _tomy_500_
 * [Torpedo Alley (1.6)][152] _torp_a16_
 * [Torpedo Alley (2.1 Europe)][152] _torp_e21_
-* [Transformers (V1.8)][185] _tf_180_
-* [Transporter the Rescue (L-3)][186] _tsptr_l3_
+* [Transformers (V1.8)][186] _tf_180_
+* [Transporter the Rescue (L-3)][187] _tsptr_l3_
 * [Tri Zone (L-1 Free Play Fix)][24] _trizn_l1ff_
 * [Tri Zone (L-1)][24] _trizn_l1_
 * [Tri Zone (T-1 Ted Estes)][24] _trizn_t1_
@@ -584,45 +585,45 @@
 * [Trident][39] _trident_
 * [Trident (Old Free Play)][40] _tridenfp_
 * [Trident (Old)][39] _tridenta_
-* [Twilight Zone (9.2)][187] _tz_92_
-* [Twilight Zone (9.3 LED Ghost Fix)][187] _tz_93_
-* [Twilight Zone (9.4CH Coin Play)][188] _tz_94ch_
-* [Twilight Zone (9.4H)][188] _tz_94h_
+* [Twilight Zone (9.2)][188] _tz_92_
+* [Twilight Zone (9.3 LED Ghost Fix)][188] _tz_93_
+* [Twilight Zone (9.4CH Coin Play)][189] _tz_94ch_
+* [Twilight Zone (9.4H)][189] _tz_94h_
 * [Varkon (L-1)][14] _vrkon_l1_
 * [Vector][10] _vector_
-* [Victory][189] _victory_
-* [Victory (1.01 tournament/competition MOD)][189] _victr101_
-* [Victory (1.1 tournament/competition MOD)][189] _victr11_
-* [Victory (1.2 tournament/competition MOD)][189] _victr12_
-* [Victory (1.3 tournament/competition MOD)][189] _victr13_
-* [Victory (Free Play)][189] _victryfp_
-* [Victory (French Free Play)][189] _victrffp_
-* [Victory (German Free Play)][189] _victrgfp_
+* [Victory][190] _victory_
+* [Victory (1.01 tournament/competition MOD)][190] _victr101_
+* [Victory (1.1 tournament/competition MOD)][190] _victr11_
+* [Victory (1.2 tournament/competition MOD)][190] _victr12_
+* [Victory (1.3 tournament/competition MOD)][190] _victr13_
+* [Victory (Free Play)][190] _victryfp_
+* [Victory (French Free Play)][190] _victrffp_
+* [Victory (German Free Play)][190] _victrgfp_
 * [Viking][53] _viking_
 * [Viking (7-digit conversion)][54] _vikingb_
 * [Viper][56] _viper_
 * [Voltan Escapes Cosmic Doom][100] _voltan_
 * [Voltan Escapes Cosmic Doom (7-digit conversion rev. 20)][130] _voltanb_
-* [WHO Dunnit (1.2 Elevator text fix)][190] _wd_12p_
-* [WHO Dunnit (1.2 German Sound / Elevator text fix)][190] _wd_12gp_
-* [WHO Dunnit (1.2 German Sound)][190] _wd_12g_
-* [WHO Dunnit (1.2)][190] _wd_12_
+* [WHO Dunnit (1.2 Elevator text fix)][191] _wd_12p_
+* [WHO Dunnit (1.2 German Sound / Elevator text fix)][191] _wd_12gp_
+* [WHO Dunnit (1.2 German Sound)][191] _wd_12g_
+* [WHO Dunnit (1.2)][191] _wd_12_
 * [Warlok (L-3)][14] _wrlok_l3_
-* [Whirlwind (LA-3)][191] _whirl_l3_
-* [White Water (D-5 LED Ghost Fix)][192] _ww_d5_
-* [White Water (L-5)][192] _ww_l5_
-* [White Water (LH-6 Coin Play)][193] _ww_lh6c_
-* [White Water (LH-6)][193] _ww_lh6_
+* [Whirlwind (LA-3)][192] _whirl_l3_
+* [White Water (D-5 LED Ghost Fix)][193] _ww_d5_
+* [White Water (L-5)][193] _ww_l5_
+* [White Water (LH-6 Coin Play)][194] _ww_lh6c_
+* [White Water (LH-6)][194] _ww_lh6_
 * [Wild Fyre][39] _wildfyre_
 * [Wild Fyre (Free Play)][40] _wildfyfp_
-* [World Cup (L-1)][194] _wldcp_l1_
-* [World Cup Soccer (DX-2 LED Ghost Fix)][195] _wcs_d2_
-* [World Cup Soccer (LX-2)][195] _wcs_l2_
-* [World Cup Soccer (LX-3C Competition MOD)][195] _wcs_l3c_
+* [World Cup (L-1)][195] _wldcp_l1_
+* [World Cup Soccer (DX-2 LED Ghost Fix)][196] _wcs_d2_
+* [World Cup Soccer (LX-2)][196] _wcs_l2_
+* [World Cup Soccer (LX-3C Competition MOD)][196] _wcs_l3c_
 * [X's & O's][10] _xsandos_
 * [X's & O's (Free Play)][10] _xsandosa_
-* [Xenon][196] _xenon_
-* [Xenon (French)][196] _xenonf_
+* [Xenon][197] _xenon_
+* [Xenon (French)][197] _xenonf_
 
 [1]: maps/williams/wpc/tafg_lx3.map.json
 [2]: maps/williams/wpc/taf_l5.map.json
@@ -800,23 +801,24 @@
 [174]: maps/williams/system4/stlwr_l2.map.json
 [175]: maps/zaccaria/strike.map.json
 [176]: maps/bally/as-2518-35/suprbowl.map.json
-[177]: maps/williams/system11/swrds_l2.map.json
-[178]: maps/gottlieb/system80b/tagteam.map.json
-[179]: maps/williams/wpc/totan_14.map.json
-[180]: maps/williams/system11/taxi_l4.map.json
-[181]: maps/williams/wpc/t2_l8.map.json
-[182]: maps/williams/wpc/tom_13.map.json
-[183]: maps/zaccaria/gen2/tmachzac.map.json
-[184]: maps/dataeast/version3/tomy_400.map.json
-[185]: maps/stern/sam/tf_180.map.json
-[186]: maps/williams/system11/tsptr_l3.map.json
-[187]: maps/williams/wpc/tz_92.map.json
-[188]: maps/williams/wpc/tz_94h.map.json
-[189]: maps/gottlieb/system80b/victory.map.json
-[190]: maps/williams/wpc/wd_12.map.json
-[191]: maps/williams/system11/whirl_l3.map.json
-[192]: maps/williams/wpc/ww_l5.map.json
-[193]: maps/williams/wpc/ww_lh6.map.json
-[194]: maps/williams/system3/wldcp_l1.map.json
-[195]: maps/williams/wpc/wcs_l2.map.json
-[196]: maps/bally/as-2518-35/xenon.map.json
+[177]: maps/gottlieb/system3/surfnsaf.map.json
+[178]: maps/williams/system11/swrds_l2.map.json
+[179]: maps/gottlieb/system80b/tagteam.map.json
+[180]: maps/williams/wpc/totan_14.map.json
+[181]: maps/williams/system11/taxi_l4.map.json
+[182]: maps/williams/wpc/t2_l8.map.json
+[183]: maps/williams/wpc/tom_13.map.json
+[184]: maps/zaccaria/gen2/tmachzac.map.json
+[185]: maps/dataeast/version3/tomy_400.map.json
+[186]: maps/stern/sam/tf_180.map.json
+[187]: maps/williams/system11/tsptr_l3.map.json
+[188]: maps/williams/wpc/tz_92.map.json
+[189]: maps/williams/wpc/tz_94h.map.json
+[190]: maps/gottlieb/system80b/victory.map.json
+[191]: maps/williams/wpc/wd_12.map.json
+[192]: maps/williams/system11/whirl_l3.map.json
+[193]: maps/williams/wpc/ww_l5.map.json
+[194]: maps/williams/wpc/ww_lh6.map.json
+[195]: maps/williams/system3/wldcp_l1.map.json
+[196]: maps/williams/wpc/wcs_l2.map.json
+[197]: maps/bally/as-2518-35/xenon.map.json
