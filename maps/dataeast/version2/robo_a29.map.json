@@ -8,7 +8,7 @@
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 3,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2016 by Horsepin",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -59,6 +59,11 @@
       "label": "Maximum Credits",
       "start": "0x1F31",
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": "0x1F47",
+      "encoding": "bool"
     },
     "current_player": {
       "label": "Current Player",
