@@ -663,8 +663,8 @@
 [36]: maps/williams/wpc/congo_21.map.json
 [37]: maps/williams/system3/cntct_l1.map.json
 [38]: maps/williams/wpc/corv_21.map.json
-[39]: maps/stern/stern-m100.map.json
-[40]: maps/stern/stern-m100-freeplay.map.json
+[39]: maps/stern/m100/generic.map.json
+[40]: maps/stern/m100/freeplay.map.json
 [41]: maps/williams/wpc/cftbl_l4.map.json
 [42]: maps/gottlieb/system3/cueball.map.json
 [43]: maps/williams/system11/cycln_l5.map.json
