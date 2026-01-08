@@ -591,39 +591,40 @@
 * [Twilight Zone (9.4H)][189] _tz_94h_
 * [Varkon (L-1)][14] _vrkon_l1_
 * [Vector][10] _vector_
-* [Victory][190] _victory_
-* [Victory (1.01 tournament/competition MOD)][190] _victr101_
-* [Victory (1.1 tournament/competition MOD)][190] _victr11_
-* [Victory (1.2 tournament/competition MOD)][190] _victr12_
-* [Victory (1.3 tournament/competition MOD)][190] _victr13_
-* [Victory (Free Play)][190] _victryfp_
-* [Victory (French Free Play)][190] _victrffp_
-* [Victory (German Free Play)][190] _victrgfp_
+* [Vegas][190] _vegas_
+* [Victory][191] _victory_
+* [Victory (1.01 tournament/competition MOD)][191] _victr101_
+* [Victory (1.1 tournament/competition MOD)][191] _victr11_
+* [Victory (1.2 tournament/competition MOD)][191] _victr12_
+* [Victory (1.3 tournament/competition MOD)][191] _victr13_
+* [Victory (Free Play)][191] _victryfp_
+* [Victory (French Free Play)][191] _victrffp_
+* [Victory (German Free Play)][191] _victrgfp_
 * [Viking][53] _viking_
 * [Viking (7-digit conversion)][54] _vikingb_
 * [Viper][56] _viper_
 * [Voltan Escapes Cosmic Doom][100] _voltan_
 * [Voltan Escapes Cosmic Doom (7-digit conversion rev. 20)][130] _voltanb_
-* [WHO Dunnit (1.2 Elevator text fix)][191] _wd_12p_
-* [WHO Dunnit (1.2 German Sound / Elevator text fix)][191] _wd_12gp_
-* [WHO Dunnit (1.2 German Sound)][191] _wd_12g_
-* [WHO Dunnit (1.2)][191] _wd_12_
+* [WHO Dunnit (1.2 Elevator text fix)][192] _wd_12p_
+* [WHO Dunnit (1.2 German Sound / Elevator text fix)][192] _wd_12gp_
+* [WHO Dunnit (1.2 German Sound)][192] _wd_12g_
+* [WHO Dunnit (1.2)][192] _wd_12_
 * [Warlok (L-3)][14] _wrlok_l3_
-* [Whirlwind (LA-3)][192] _whirl_l3_
-* [White Water (D-5 LED Ghost Fix)][193] _ww_d5_
-* [White Water (L-5)][193] _ww_l5_
-* [White Water (LH-6 Coin Play)][194] _ww_lh6c_
-* [White Water (LH-6)][194] _ww_lh6_
+* [Whirlwind (LA-3)][193] _whirl_l3_
+* [White Water (D-5 LED Ghost Fix)][194] _ww_d5_
+* [White Water (L-5)][194] _ww_l5_
+* [White Water (LH-6 Coin Play)][195] _ww_lh6c_
+* [White Water (LH-6)][195] _ww_lh6_
 * [Wild Fyre][39] _wildfyre_
 * [Wild Fyre (Free Play)][40] _wildfyfp_
-* [World Cup (L-1)][195] _wldcp_l1_
-* [World Cup Soccer (DX-2 LED Ghost Fix)][196] _wcs_d2_
-* [World Cup Soccer (LX-2)][196] _wcs_l2_
-* [World Cup Soccer (LX-3C Competition MOD)][196] _wcs_l3c_
+* [World Cup (L-1)][196] _wldcp_l1_
+* [World Cup Soccer (DX-2 LED Ghost Fix)][197] _wcs_d2_
+* [World Cup Soccer (LX-2)][197] _wcs_l2_
+* [World Cup Soccer (LX-3C Competition MOD)][197] _wcs_l3c_
 * [X's & O's][10] _xsandos_
 * [X's & O's (Free Play)][10] _xsandosa_
-* [Xenon][197] _xenon_
-* [Xenon (French)][197] _xenonf_
+* [Xenon][198] _xenon_
+* [Xenon (French)][198] _xenonf_
 
 [1]: maps/williams/wpc/tafg_lx3.map.json
 [2]: maps/williams/wpc/taf_l5.map.json
@@ -814,11 +815,12 @@
 [187]: maps/williams/system11/tsptr_l3.map.json
 [188]: maps/williams/wpc/tz_92.map.json
 [189]: maps/williams/wpc/tz_94h.map.json
-[190]: maps/gottlieb/system80b/victory.map.json
-[191]: maps/williams/wpc/wd_12.map.json
-[192]: maps/williams/system11/whirl_l3.map.json
-[193]: maps/williams/wpc/ww_l5.map.json
-[194]: maps/williams/wpc/ww_lh6.map.json
-[195]: maps/williams/system3/wldcp_l1.map.json
-[196]: maps/williams/wpc/wcs_l2.map.json
-[197]: maps/bally/as-2518-35/xenon.map.json
+[190]: maps/gottlieb/system3/vegas.map.json
+[191]: maps/gottlieb/system80b/victory.map.json
+[192]: maps/williams/wpc/wd_12.map.json
+[193]: maps/williams/system11/whirl_l3.map.json
+[194]: maps/williams/wpc/ww_l5.map.json
+[195]: maps/williams/wpc/ww_lh6.map.json
+[196]: maps/williams/system3/wldcp_l1.map.json
+[197]: maps/williams/wpc/wcs_l2.map.json
+[198]: maps/bally/as-2518-35/xenon.map.json
