@@ -4,11 +4,12 @@
     "0.2: Switch from `packed` to `nibble`;",
     "     added `mask` to initials to get uppercase (Tom Collins)",
     "(only some entries have low nibble, so don't set _nibble for entire file)",
-    "2025-11: Tom Collins added more game state"
+    "2025-11: Tom Collins added more game state",
+    "2026-01: v5, Tom Collins changed score addresses to hex"
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 4,
+    "version": 5,
     "copyright": [
       "Copyright (C) 2016 by Horsepin",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -23,28 +24,28 @@
     "scores": [
       {
         "label": "Player 1",
-        "start": 423,
+        "start": "0x1A7",
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
       },
       {
         "label": "Player 2",
-        "start": 589,
+        "start": "0x24D",
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
       },
       {
         "label": "Player 3",
-        "start": 755,
+        "start": "0x2F3",
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
       },
       {
         "label": "Player 4",
-        "start": 921,
+        "start": "0x399",
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
