@@ -1,11 +1,12 @@
 {
   "_notes": [
+    "Vegas (1990), Gottlieb System 3, Alphanumeric, 8-digit scores",
     "Audits/Adjustments stored in triplicate at 0x680, 0x700, 0x780",
     "Based on surfnsaf.map.json."
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 3,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],

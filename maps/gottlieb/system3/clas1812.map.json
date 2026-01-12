@@ -1,19 +1,19 @@
 {
   "_notes": [
-    "Surf 'n Safari (1991), Gottlieb System 3, Alphanumeric, 9-digit scores",
+    "Class of 1812 (1991), Gottlieb System 3, Alphanumeric, 8-digit scores",
     "Audits/Adjustments stored in triplicate at 0x680, 0x700, 0x780",
-    "Based on cueball.map.json and the Gottlieb System 80B maps."
+    "Based on cactjack.map.json."
   ],
   "_fileformat": 0.7,
   "_metadata": {
-    "version": 5,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
     "platform": "gottlieb-system3",
     "roms": [
-      "surfnsaf"
+      "clas1812"
     ]
   },
   "game_state": {
@@ -22,65 +22,64 @@
         "label": "Player 1",
         "encoding": "bcd",
         "nibble": "low",
-        "length": 9,
+        "length": 8,
         "start": "0x001"
       },
       {
         "label": "Player 2",
         "encoding": "bcd",
         "nibble": "low",
-        "length": 9,
-        "start": "0x00C"
+        "length": 8,
+        "start": "0x00D"
       },
       {
         "label": "Player 3",
         "encoding": "bcd",
         "nibble": "low",
-        "length": 9,
+        "length": 8,
         "start": "0x015"
       },
       {
-        "_notes": "Ignore if player_count < 4 (displaying 'BALL - X')",
         "label": "Player 4",
         "encoding": "bcd",
         "nibble": "low",
-        "length": 9,
-        "start": "0x020"
+        "length": 8,
+        "start": "0x021"
       }
     ],
     "credits": {
-      "_notes": "mirrored to 0x53/0x54 (ascii), 0x5B1, and 0x642 as well",
+      "_notes": "mirrored to 0x1E/0x1F (ascii), 0x5B1, and 0x642 as well",
       "label": "Credits",
       "start": "0x490",
       "encoding": "bcd"
     },
     "max_credits": {
       "label": "Max Credits",
-      "start": "0x6BF",
+      "start": "0x6BD",
       "encoding": "bcd"
     },
     "free_play": {
       "label": "Free Play",
-      "start": "0x6CA",
+      "start": "0x6CB",
       "encoding": "bool"
     },
     "current_ball": {
       "_notes": "set to 0 when game over; stores ASCII value (0x30 - 0x35)",
       "label": "Ball",
-      "start": "0x52",
+      "start": "0x0B",
       "mask": "0x0F",
       "encoding": "bcd"
     },
     "ball_count": {
       "label": "Ball Count",
-      "start": "0x6C1",
+      "start": "0x6BF",
       "encoding": "bcd"
     },
     "current_player": {
       "_notes": "0-3; bit 7 (0x80) sometimes set?",
       "label": "Current Player",
       "short_label": "P#",
-      "start": "0x35C",
+      "start": "0x343",
       "encoding": "int",
       "mask": "0x0F",
       "offset": 1
@@ -89,12 +88,12 @@
       "_notes": "set to 0 when game over",
       "label": "Player Count",
       "short_label": "Players",
-      "start": "0x35B",
+      "start": "0x342",
       "encoding": "int"
     },
     "game_over": {
       "label": "Game Over",
-      "start": "0x35B",
+      "start": "0x342",
       "encoding": "bool",
       "invert": true
     }
@@ -111,8 +110,7 @@
       "score": {
         "encoding": "bcd",
         "length": 4,
-        "start": "0x69A",
-        "scale": 10
+        "start": "0x69A"
       }
     },
     {
@@ -126,8 +124,7 @@
       "score": {
         "encoding": "bcd",
         "length": 4,
-        "start": "0x69E",
-        "scale": 10
+        "start": "0x69E"
       }
     },
     {
@@ -141,8 +138,7 @@
       "score": {
         "encoding": "bcd",
         "length": 4,
-        "start": "0x6A2",
-        "scale": 10
+        "start": "0x6A2"
       }
     },
     {
@@ -156,8 +152,7 @@
       "score": {
         "encoding": "bcd",
         "length": 4,
-        "start": "0x6A6",
-        "scale": 10
+        "start": "0x6A6"
       }
     },
     {
@@ -171,22 +166,7 @@
       "score": {
         "encoding": "bcd",
         "length": 4,
-        "start": "0x6AA",
-        "scale": 10
-      }
-    }
-  ],
-  "mode_champions": [
-    {
-      "label": "Rapids Record",
-      "score": {
-        "start": "0x6D7",
-        "encoding": "bcd"
-      },
-      "initials": {
-        "start": "0x128",
-        "length": 3,
-        "encoding": "ch"
+        "start": "0x6AA"
       }
     }
   ]

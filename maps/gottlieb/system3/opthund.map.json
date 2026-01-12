@@ -1,8 +1,8 @@
 {
   "_notes": [
-    "Surf 'n Safari (1991), Gottlieb System 3, Alphanumeric, 9-digit scores",
+    "Operation: Thunder (1992), Gottlieb System 3, Alphanumeric, 9-digit scores",
     "Audits/Adjustments stored in triplicate at 0x680, 0x700, 0x780",
-    "Based on cueball.map.json and the Gottlieb System 80B maps."
+    "Based on surfnsaf.map.json."
   ],
   "_fileformat": 0.7,
   "_metadata": {
@@ -13,7 +13,7 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "gottlieb-system3",
     "roms": [
-      "surfnsaf"
+      "opthund"
     ]
   },
   "game_state": {
@@ -56,12 +56,12 @@
     },
     "max_credits": {
       "label": "Max Credits",
-      "start": "0x6BF",
+      "start": "0x6C0",
       "encoding": "bcd"
     },
     "free_play": {
       "label": "Free Play",
-      "start": "0x6CA",
+      "start": "0x6CB",
       "encoding": "bool"
     },
     "current_ball": {
@@ -73,14 +73,14 @@
     },
     "ball_count": {
       "label": "Ball Count",
-      "start": "0x6C1",
+      "start": "0x6C2",
       "encoding": "bcd"
     },
     "current_player": {
       "_notes": "0-3; bit 7 (0x80) sometimes set?",
       "label": "Current Player",
       "short_label": "P#",
-      "start": "0x35C",
+      "start": "0x35D",
       "encoding": "int",
       "mask": "0x0F",
       "offset": 1
@@ -89,12 +89,12 @@
       "_notes": "set to 0 when game over",
       "label": "Player Count",
       "short_label": "Players",
-      "start": "0x35B",
+      "start": "0x35C",
       "encoding": "int"
     },
     "game_over": {
       "label": "Game Over",
-      "start": "0x35B",
+      "start": "0x35C",
       "encoding": "bool",
       "invert": true
     }
@@ -178,11 +178,7 @@
   ],
   "mode_champions": [
     {
-      "label": "Rapids Record",
-      "score": {
-        "start": "0x6D7",
-        "encoding": "bcd"
-      },
+      "label": "Five-Star General",
       "initials": {
         "start": "0x128",
         "length": 3,
