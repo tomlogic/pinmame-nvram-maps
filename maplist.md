@@ -334,9 +334,15 @@
 * [Millionaire (L-3)][119] _milln_l3_
 * [Monday Night Football (2.7, 50cts)][120] _mnfb_c27_
 * [Monday Night Football (2.9, 50cts)][120] _mnfb_c29_
-* [Monster Bash (1.0)][121] _mb_10_
-* [Monster Bash (1.06)][122] _mb_106_
-* [Monster Bash (1.06b)][122] _mb_106b_
+* [Monopoly (3.03)][121] _monopole_
+* [Monopoly (3.20 French)][121] _monopolf_
+* [Monopoly (3.20 German)][121] _monopolg_
+* [Monopoly (3.20 Italian)][121] _monopoli_
+* [Monopoly (3.20 Spanish)][121] _monopoll_
+* [Monopoly (3.20)][121] _monopoly_
+* [Monster Bash (1.0)][122] _mb_10_
+* [Monster Bash (1.06)][123] _mb_106_
+* [Monster Bash (1.06b)][123] _mb_106b_
 * [Monte Carlo][88] _mntecrlo_
 * [Monte Carlo (Free Play)][88] _mntecrfp_
 * [Monte Carlo (French Free Play)][88] _mntcrffp_
@@ -346,166 +352,166 @@
 * [Monte Carlo (rev. 1 Free Play)][88] _mntcrafp_
 * [Monte Carlo (rev. 2 Free Play)][88] _mntcr2fp_
 * [Monte Carlo (rev. 2 Millions option, Free Play)][88] _mntcrmfp_
-* [Mousin' Around! (LA-4)][123] _mousn_l4_
+* [Mousin' Around! (LA-4)][124] _mousn_l4_
 * [Mr. & Mrs. Pac-Man Pinball][10] _m_mpac_
 * [Mr. & Mrs. Pac-Man Pinball (alternate version)][10] _m_mpacb_
 * [Mystic][58] _mystic_
 * [Mystic (7-digit conversion)][59] _mysticb_
-* [NBA Fastbreak (3.1 / S3.0 English/German)][124] _nbaf_31_
-* [NFL][125] _nfl_
-* [New Wave][126] _newwave_
+* [NBA Fastbreak (3.1 / S3.0 English/German)][125] _nbaf_31_
+* [NFL][126] _nfl_
+* [New Wave][127] _newwave_
 * [Night Moves][12] _nmoves_
 * [Night Moves (Free Play)][12] _nmovesfp_
 * [Night Rider (rev. 20)][20] _nightr20_
 * [Night Rider (rev. 21)][20] _nightrdr_
-* [Nine Ball][127] _nineball_
+* [Nine Ball][128] _nineball_
 * [Nitro Ground Shaker][58] _ngndshkr_
 * [Nitro Ground Shaker (7-digit conversion)][59] _ngndshkb_
-* [No Fear: Dangerous Sports (2.3X Export / S1.1)][128] _nf_23x_
-* [No Good Gofers (1.3)][129] _ngg_13_
+* [No Fear: Dangerous Sports (2.3X Export / S1.1)][129] _nf_23x_
+* [No Good Gofers (1.3)][130] _ngg_13_
 * [Nugent][43] _nugent_
 * [Nugent (Free Play)][44] _nugentfp_
-* [Operation Thunder][130] _opthund_
-* [Orbitor 1][131] _orbitor1_
+* [Operation Thunder][131] _opthund_
+* [Orbitor 1][132] _orbitor1_
 * [Paragon][106] _paragon_
-* [Party Zone, The (D-3 LED Ghost Fix)][132] _pz_d3_
-* [Party Zone, The (F-4 Fliptronic)][133] _pz_f4_
-* [Party Zone, The (F-5 LED Ghost Fix)][133] _pz_f5_
-* [Party Zone, The (L-3)][132] _pz_l3_
-* [Phantom of the Opera, The (2.9)][134] _poto_a29_
-* [Phantom of the Opera, The (3.1)][134] _poto_a31_
-* [Phantom of the Opera, The (3.2)][134] _poto_a32_
+* [Party Zone, The (D-3 LED Ghost Fix)][133] _pz_d3_
+* [Party Zone, The (F-4 Fliptronic)][134] _pz_f4_
+* [Party Zone, The (F-5 LED Ghost Fix)][134] _pz_f5_
+* [Party Zone, The (L-3)][133] _pz_l3_
+* [Phantom of the Opera, The (2.9)][135] _poto_a29_
+* [Phantom of the Opera, The (3.1)][135] _poto_a31_
+* [Phantom of the Opera, The (3.2)][135] _poto_a32_
 * [Pharaoh (L-2)][14] _pharo_l2_
-* [Phoenix (L-1)][135] _phnix_l1_
-* [Pin-Bot (L-5)][136] _pb_l5_
+* [Phoenix (L-1)][136] _phnix_l1_
+* [Pin-Bot (L-5)][137] _pb_l5_
 * [Pinball][43] _pinball_
 * [Pinball (Free Play)][44] _pinbalfp_
-* [Pinball Champ][137] _pinchamp_
+* [Pinball Champ][138] _pinchamp_
 * [Playboy][106] _playboy_
-* [Playboy (7-digit conversion rev. 20)][138] _playboyb_
-* [Playboy 35th Anniversary (2.4)][139] _play_a24_
-* [Pokerino (L-1)][140] _pkrno_l1_
-* [Police Force (LA-4)][141] _polic_l4_
-* [Pool Sharks (LA-7)][142] _pool_l7_
-* [Popeye Saves The Earth (DX-5 LED Ghost Fix)][143] _pop_dx5_
-* [Popeye Saves The Earth (LX-5)][143] _pop_lx5_
+* [Playboy (7-digit conversion rev. 20)][139] _playboyb_
+* [Playboy 35th Anniversary (2.4)][140] _play_a24_
+* [Pokerino (L-1)][141] _pkrno_l1_
+* [Police Force (LA-4)][142] _polic_l4_
+* [Pool Sharks (LA-7)][143] _pool_l7_
+* [Popeye Saves The Earth (DX-5 LED Ghost Fix)][144] _pop_dx5_
+* [Popeye Saves The Earth (LX-5)][144] _pop_lx5_
 * [Power Play][20] _pwerplay_
 * [Quicksilver][17] _quicksil_
-* [Radical! (L-1)][144] _radcl_l1_
-* [Rapid Fire][145] _rapidfir_
+* [Radical! (L-1)][145] _radcl_l1_
+* [Rapid Fire][146] _rapidfir_
 * [Rat Race (L-1)][49] _ratrc_l1_
-* [Raven][146] _raven_
-* [Raven (Free Play)][146] _ravenfp_
-* [Raven (German Free Play)][146] _ravengfp_
-* [Raven (rev. 1 Free Play)][146] _ravenafp_
-* [Red and Ted's Road Show (L-6)][147] _rs_l6_
-* [Red and Ted's Road Show (L-6C Competition MOD)][147] _rs_l6c_
-* [Ripley's Believe It or Not! (3.00 French)][148] _rip300f_
-* [Ripley's Believe It or Not! (3.00 German)][148] _rip300g_
-* [Ripley's Believe It or Not! (3.00 Italian)][148] _rip300i_
-* [Ripley's Believe It or Not! (3.00 Spanish)][148] _rip300l_
-* [Ripley's Believe It or Not! (3.00)][148] _rip300_
-* [Ripley's Believe It or Not! (3.01 French)][149] _rip301f_
-* [Ripley's Believe It or Not! (3.01 German)][149] _rip301g_
-* [Ripley's Believe It or Not! (3.01 Italian)][149] _rip301i_
-* [Ripley's Believe It or Not! (3.01 Spanish)][149] _rip301l_
-* [Ripley's Believe It or Not! (3.01)][149] _rip301_
-* [Ripley's Believe It or Not! (3.02 French)][149] _rip302f_
-* [Ripley's Believe It or Not! (3.02 German)][149] _rip302g_
-* [Ripley's Believe It or Not! (3.02 Italian)][149] _rip302i_
-* [Ripley's Believe It or Not! (3.02 Spanish)][149] _rip302l_
-* [Ripley's Believe It or Not! (3.02)][149] _rip302_
-* [Ripley's Believe It or Not! (3.10 French)][149] _rip310f_
-* [Ripley's Believe It or Not! (3.10 German)][149] _rip310g_
-* [Ripley's Believe It or Not! (3.10 Italian)][149] _rip310i_
-* [Ripley's Believe It or Not! (3.10 Spanish)][149] _rip310l_
-* [Ripley's Believe It or Not! (3.10)][149] _rip310_
-* [Ripley's Believe It or Not! (3.20 French)][149] _ripleysf_
-* [Ripley's Believe It or Not! (3.20 German)][149] _ripleysg_
-* [Ripley's Believe It or Not! (3.20 Italian)][149] _ripleysi_
-* [Ripley's Believe It or Not! (3.20 Spanish)][149] _ripleysl_
-* [Ripley's Believe It or Not! (3.20)][149] _ripleys_
-* [Riverboat Gambler (L-3)][150] _rvrbt_l3_
-* [Road Kings (L-4)][151] _rdkng_l4_
+* [Raven][147] _raven_
+* [Raven (Free Play)][147] _ravenfp_
+* [Raven (German Free Play)][147] _ravengfp_
+* [Raven (rev. 1 Free Play)][147] _ravenafp_
+* [Red and Ted's Road Show (L-6)][148] _rs_l6_
+* [Red and Ted's Road Show (L-6C Competition MOD)][148] _rs_l6c_
+* [Ripley's Believe It or Not! (3.00 French)][149] _rip300f_
+* [Ripley's Believe It or Not! (3.00 German)][149] _rip300g_
+* [Ripley's Believe It or Not! (3.00 Italian)][149] _rip300i_
+* [Ripley's Believe It or Not! (3.00 Spanish)][149] _rip300l_
+* [Ripley's Believe It or Not! (3.00)][149] _rip300_
+* [Ripley's Believe It or Not! (3.01 French)][150] _rip301f_
+* [Ripley's Believe It or Not! (3.01 German)][150] _rip301g_
+* [Ripley's Believe It or Not! (3.01 Italian)][150] _rip301i_
+* [Ripley's Believe It or Not! (3.01 Spanish)][150] _rip301l_
+* [Ripley's Believe It or Not! (3.01)][150] _rip301_
+* [Ripley's Believe It or Not! (3.02 French)][150] _rip302f_
+* [Ripley's Believe It or Not! (3.02 German)][150] _rip302g_
+* [Ripley's Believe It or Not! (3.02 Italian)][150] _rip302i_
+* [Ripley's Believe It or Not! (3.02 Spanish)][150] _rip302l_
+* [Ripley's Believe It or Not! (3.02)][150] _rip302_
+* [Ripley's Believe It or Not! (3.10 French)][150] _rip310f_
+* [Ripley's Believe It or Not! (3.10 German)][150] _rip310g_
+* [Ripley's Believe It or Not! (3.10 Italian)][150] _rip310i_
+* [Ripley's Believe It or Not! (3.10 Spanish)][150] _rip310l_
+* [Ripley's Believe It or Not! (3.10)][150] _rip310_
+* [Ripley's Believe It or Not! (3.20 French)][150] _ripleysf_
+* [Ripley's Believe It or Not! (3.20 German)][150] _ripleysg_
+* [Ripley's Believe It or Not! (3.20 Italian)][150] _ripleysi_
+* [Ripley's Believe It or Not! (3.20 Spanish)][150] _ripleysl_
+* [Ripley's Believe It or Not! (3.20)][150] _ripleys_
+* [Riverboat Gambler (L-3)][151] _rvrbt_l3_
+* [Road Kings (L-4)][152] _rdkng_l4_
 * [Robo-War][8] _robowars_
 * [Robo-War (Free Play)][8] _robowrfp_
 * [Robo-War (French Free Play)][8] _robowffp_
-* [Robocop (2.9)][152] _robo_a29_
-* [Robocop (3.0)][153] _robo_a30_
-* [Robocop (3.4)][154] _robo_a34_
-* [Robot][155] _robot_
+* [Robocop (2.9)][153] _robo_a29_
+* [Robocop (3.0)][154] _robo_a30_
+* [Robocop (3.4)][155] _robo_a34_
+* [Robot][156] _robot_
 * [Rock][25] _rock_
 * [Rock (Free Play)][25] _rockfp_
 * [Rock (German Free Play)][25] _rockgfp_
 * [Rock Encore][25] _rock_enc_
 * [Rock Encore (Free Play)][25] _rock_efp_
 * [Rock Encore (German Free Play)][25] _rockegfp_
-* [Rollergames (LA-2)][156] _rollr_l2_
+* [Rollergames (LA-2)][157] _rollr_l2_
 * [Rolling Stones][58] _rollston_
 * [Rolling Stones (7-digit conversion)][59] _rollstob_
-* [Safe Cracker (0.91 Prototype / S1.0)][157] _sc_091_
-* [Safe Cracker (1.8 / S1.1)][158] _sc_18s11_
-* [Safe Cracker (1.8 / S2.4 German)][158] _sc_18s2_
-* [Scared Stiff (1.5)][159] _ss_15_
+* [Safe Cracker (0.91 Prototype / S1.0)][158] _sc_091_
+* [Safe Cracker (1.8 / S1.1)][159] _sc_18s11_
+* [Safe Cracker (1.8 / S2.4 German)][159] _sc_18s2_
+* [Scared Stiff (1.5)][160] _ss_15_
 * [Scorpion (L-1 Free Play Fix)][24] _scrpn_l1ff_
 * [Scorpion (L-1)][24] _scrpn_l1_
 * [Scorpion (T-1 Ted Estes)][24] _scrpn_t1_
 * [Scorpion (T-1 Ted Estes, Free Play Fix)][24] _scrpn_t1ff_
 * [Seawitch][17] _seawitch_
-* [Secret Service (2.6)][160] _ssvc_a26_
-* [Secret Service (2.6, alternate sound)][160] _ssvc_b26_
-* [Secret Service (4.0 Europe)][160] _ssvc_e40_
-* [Secret Service (4.2, alternate sound)][160] _ssvc_a42_
+* [Secret Service (2.6)][161] _ssvc_a26_
+* [Secret Service (2.6, alternate sound)][161] _ssvc_b26_
+* [Secret Service (4.0 Europe)][161] _ssvc_e40_
+* [Secret Service (4.2, alternate sound)][161] _ssvc_a42_
 * [Sexy Girl][106] _sexygirl_
-* [Shadow, The (DX-5 LED Ghost Fix)][161] _ts_dx5_
-* [Shadow, The (LX-5)][161] _ts_lx5_
-* [Shooting the Rapids][162] _strapids_
-* [Silver Slugger][163] _silvslug_
+* [Shadow, The (DX-5 LED Ghost Fix)][162] _ts_dx5_
+* [Shadow, The (LX-5)][162] _ts_lx5_
+* [Shooting the Rapids][163] _strapids_
+* [Silver Slugger][164] _silvslug_
 * [Silverball Mania][58] _slbmania_
 * [Silverball Mania (7-digit conversion)][59] _slbmanib_
 * [Silverball Mania (Horseshoe No Spotting MOD rev. 13)][58] _slbmanid_
 * [Silverball Mania (Horseshoe Spot MOD rev. 13)][58] _slbmanic_
-* [Simpsons Pinball Party, The (5.00 French)][164] _simpprtf_
-* [Simpsons Pinball Party, The (5.00 German)][164] _simpprtg_
-* [Simpsons Pinball Party, The (5.00 Italian)][164] _simpprti_
-* [Simpsons Pinball Party, The (5.00 Spanish)][164] _simpprtl_
-* [Simpsons Pinball Party, The (5.00)][164] _simpprty_
-* [Six Million Dollar Man, The][165] _smman_
-* [Six Million Dollar Man, The (Free Play rev. 3)][166] _smmanc_
-* [Skateball][167] _skatebll_
-* [Soccer Kings][168] _socrking_
+* [Simpsons Pinball Party, The (5.00 French)][165] _simpprtf_
+* [Simpsons Pinball Party, The (5.00 German)][165] _simpprtg_
+* [Simpsons Pinball Party, The (5.00 Italian)][165] _simpprti_
+* [Simpsons Pinball Party, The (5.00 Spanish)][165] _simpprtl_
+* [Simpsons Pinball Party, The (5.00)][165] _simpprty_
+* [Six Million Dollar Man, The][166] _smman_
+* [Six Million Dollar Man, The (Free Play rev. 3)][167] _smmanc_
+* [Skateball][168] _skatebll_
+* [Soccer Kings][169] _socrking_
 * [Solar Fire (L-2)][14] _solar_l2_
-* [Sopranos, The (1.07 French)][169] _sopr107f_
-* [Sopranos, The (1.07 German)][169] _sopr107g_
-* [Sopranos, The (1.07 Italian)][169] _sopr107i_
-* [Sopranos, The (1.07 Spanish)][169] _sopr107l_
-* [Sopranos, The (2.04)][169] _sopr204_
-* [Sopranos, The (3.00 French)][169] _sopr300f_
-* [Sopranos, The (3.00 German)][169] _sopr300g_
-* [Sopranos, The (3.00 Italian)][169] _sopr300i_
-* [Sopranos, The (3.00 Spanish)][169] _sopr300l_
-* [Sopranos, The (3.00)][169] _sopr300_
-* [Sopranos, The (3.00, alternative sound)][169] _soprano3_
-* [Sopranos, The (4.00 French)][169] _sopr400f_
-* [Sopranos, The (4.00 German)][169] _sopr400g_
-* [Sopranos, The (4.00 Italian)][169] _sopr400i_
-* [Sopranos, The (4.00 Spanish)][169] _sopr400l_
-* [Sopranos, The (4.00)][169] _sopr400_
-* [Sopranos, The (5.00 French)][169] _sopranof_
-* [Sopranos, The (5.00 German)][169] _sopranog_
-* [Sopranos, The (5.00 Italian)][169] _sopranoi_
-* [Sopranos, The (5.00 Spanish)][169] _sopranol_
-* [Sopranos, The (5.00)][169] _sopranos_
-* [Sorcerer (L-1)][170] _sorcr_l1_
-* [Sorcerer (L-2)][170] _sorcr_l2_
-* [South Park (1.03)][171] _sprk_103_
+* [Sopranos, The (1.07 French)][170] _sopr107f_
+* [Sopranos, The (1.07 German)][170] _sopr107g_
+* [Sopranos, The (1.07 Italian)][170] _sopr107i_
+* [Sopranos, The (1.07 Spanish)][170] _sopr107l_
+* [Sopranos, The (2.04)][170] _sopr204_
+* [Sopranos, The (3.00 French)][170] _sopr300f_
+* [Sopranos, The (3.00 German)][170] _sopr300g_
+* [Sopranos, The (3.00 Italian)][170] _sopr300i_
+* [Sopranos, The (3.00 Spanish)][170] _sopr300l_
+* [Sopranos, The (3.00)][170] _sopr300_
+* [Sopranos, The (3.00, alternative sound)][170] _soprano3_
+* [Sopranos, The (4.00 French)][170] _sopr400f_
+* [Sopranos, The (4.00 German)][170] _sopr400g_
+* [Sopranos, The (4.00 Italian)][170] _sopr400i_
+* [Sopranos, The (4.00 Spanish)][170] _sopr400l_
+* [Sopranos, The (4.00)][170] _sopr400_
+* [Sopranos, The (5.00 French)][170] _sopranof_
+* [Sopranos, The (5.00 German)][170] _sopranog_
+* [Sopranos, The (5.00 Italian)][170] _sopranoi_
+* [Sopranos, The (5.00 Spanish)][170] _sopranol_
+* [Sopranos, The (5.00)][170] _sopranos_
+* [Sorcerer (L-1)][171] _sorcr_l1_
+* [Sorcerer (L-2)][171] _sorcr_l2_
+* [South Park (1.03)][172] _sprk_103_
 * [Space Invaders][58] _spaceinv_
 * [Space Invaders (7-digit conversion)][59] _spaceinb_
 * [Space Shuttle (L-7)][39] _sshtl_l7_
-* [Space Station (L-5)][172] _spstn_l5_
-* [Speakeasy][173] _speakesy_
-* [Speakeasy (4 Players)][174] _speakes4_
-* [Spectrum (rev. 4)][175] _spectru4_
+* [Space Station (L-5)][173] _spstn_l5_
+* [Speakeasy][174] _speakesy_
+* [Speakeasy (4 Players)][175] _speakes4_
+* [Spectrum (rev. 4)][176] _spectru4_
 * [Split Second][61] _splitsec_
 * [Spring Break][8] _sprbreak_
 * [Spring Break (Free Play)][8] _sprbrkfp_
@@ -515,79 +521,79 @@
 * [Spring Break (rev. 1 Free Play)][8] _sprbrafp_
 * [Spy Hunter][10] _spyhuntr_
 * [Star Gazer][17] _stargzr_
-* [Star God (alternate sound)][176] _stargoda_
+* [Star God (alternate sound)][177] _stargoda_
 * [Star Light (L-1)][49] _strlt_l1_
 * [Star Trek][106] _startrek_
-* [Star Trek (7-digit conversion rev. 20)][138] _startreb_
-* [Star Trek (Stern) (V1.62)][177] _st_162_
-* [Star Trek (Stern) Limited Edition (V1.61)][178] _st_161h_
-* [Star Trek (Stern) Limited Edition (V1.62)][179] _st_162h_
-* [Star Trek 25th Anniversary (1.17)][180] _trek_117_
-* [Star Trek 25th Anniversary (1.20)][180] _trek_120_
-* [Star Trek 25th Anniversary (2.00)][180] _trek_200_
-* [Star Trek 25th Anniversary (2.01)][180] _trek_201_
-* [Star Trek 25th Anniversary (3.00 unofficial MOD)][180] _trek_300_
-* [Star Trek: The Next Generation (DX-7 LED Ghost Fix, Sound L-1)][181] _sttng_d7_
-* [Star Trek: The Next Generation (DX-7 LED Ghost Fix, Special Sound L-1)][181] _sttng_dx_
-* [Star Trek: The Next Generation (LX-7, Sound L-1)][181] _sttng_l7_
-* [Star Trek: The Next Generation (LX-7, Special Sound L-1)][181] _sttng_x7_
-* [Star Trek: The Next Generation (LX-7C Competition MOD)][181] _sttng_l7c_
-* [Star Wars Trilogy Special Edition, The (4.03)][182] _swtril43_
+* [Star Trek (7-digit conversion rev. 20)][139] _startreb_
+* [Star Trek (Stern) (V1.62)][178] _st_162_
+* [Star Trek (Stern) Limited Edition (V1.61)][179] _st_161h_
+* [Star Trek (Stern) Limited Edition (V1.62)][180] _st_162h_
+* [Star Trek 25th Anniversary (1.17)][181] _trek_117_
+* [Star Trek 25th Anniversary (1.20)][181] _trek_120_
+* [Star Trek 25th Anniversary (2.00)][181] _trek_200_
+* [Star Trek 25th Anniversary (2.01)][181] _trek_201_
+* [Star Trek 25th Anniversary (3.00 unofficial MOD)][181] _trek_300_
+* [Star Trek: The Next Generation (DX-7 LED Ghost Fix, Sound L-1)][182] _sttng_d7_
+* [Star Trek: The Next Generation (DX-7 LED Ghost Fix, Special Sound L-1)][182] _sttng_dx_
+* [Star Trek: The Next Generation (LX-7, Sound L-1)][182] _sttng_l7_
+* [Star Trek: The Next Generation (LX-7, Special Sound L-1)][182] _sttng_x7_
+* [Star Trek: The Next Generation (LX-7C Competition MOD)][182] _sttng_l7c_
+* [Star Wars Trilogy Special Edition, The (4.03)][183] _swtril43_
 * [Stars][43] _stars_
 * [Stars (Free Play)][44] _starsfp_
-* [Stellar Wars (L-2)][183] _stlwr_l2_
+* [Stellar Wars (L-2)][184] _stlwr_l2_
 * [Stingray][43] _stingray_
 * [Stingray (Free Play)][44] _stingrfp_
-* [Strike][184] _strike_
-* [Striker Xtreme (1.02)][125] _strikext_
+* [Strike][185] _strike_
+* [Striker Xtreme (1.02)][126] _strikext_
 * [Strikes and Spares][20] _stk_sprs_
-* [Super Bowl][185] _suprbowl_
+* [Super Bowl][186] _suprbowl_
 * [Supersonic][106] _sst_
-* [Supersonic (7-digit conversion rev. 20)][138] _sstb_
-* [Surf 'n Safari][186] _surfnsaf_
-* [Swords of Fury (L-2)][187] _swrds_l2_
+* [Supersonic (7-digit conversion rev. 20)][139] _sstb_
+* [Surf 'n Safari][187] _surfnsaf_
+* [Swords of Fury (L-2)][188] _swrds_l2_
 * [TX-Sector][8] _txsector_
 * [TX-Sector (Free Play)][8] _txsectfp_
 * [TX-Sector (French Free Play)][8] _txsecffp_
 * [TX-Sector (German Free Play)][8] _txsecgfp_
-* [Tag-Team Pinball][188] _tagteam_
-* [Tag-Team Pinball (Free Play)][188] _tagtemfp_
-* [Tag-Team Pinball (German Free Play)][188] _tagtmgfp_
-* [Tag-Team Pinball (rev. 2 Free Play)][188] _tagtem2f_
-* [Tag-Team Pinball (rev. 2)][188] _tagteam2_
-* [Tales of the Arabian Nights (1.4 / S1.1)][189] _totan_14_
-* [Taxi (Lola) (L-4)][190] _taxi_l4_
-* [Terminator 2: Judgment Day (D-8 LED Ghost Fix)][191] _t2_d8_
-* [Terminator 2: Judgment Day (L-8)][191] _t2_l8_
-* [Terminator 2: Judgment Day (L-81 Attract Sound patch)][191] _t2_l81_
-* [Terminator 2: Judgment Day (L-82 Attract Score patch)][191] _t2_l82_
-* [Terminator 2: Judgment Day (L-83 Profanity, bugfix/MOD, LED Ghost Fix)][191] _t2_l83_
-* [Terminator 2: Judgment Day (L-84 Profanity, bugfix/MOD, LED Ghost Fix)][191] _t2_l84_
-* [Theatre of Magic (1.3X)][192] _tom_13_
-* [Theatre of Magic (1.3XC Competition MOD)][192] _tom_13c_
-* [Theatre of Magic (1.4H Coin Play)][192] _tom_14hb_
-* [Theatre of Magic (1.4H)][192] _tom_14h_
-* [Theatre of Magic (2.0 Competition MOD)][192] _tom_20_
+* [Tag-Team Pinball][189] _tagteam_
+* [Tag-Team Pinball (Free Play)][189] _tagtemfp_
+* [Tag-Team Pinball (German Free Play)][189] _tagtmgfp_
+* [Tag-Team Pinball (rev. 2 Free Play)][189] _tagtem2f_
+* [Tag-Team Pinball (rev. 2)][189] _tagteam2_
+* [Tales of the Arabian Nights (1.4 / S1.1)][190] _totan_14_
+* [Taxi (Lola) (L-4)][191] _taxi_l4_
+* [Terminator 2: Judgment Day (D-8 LED Ghost Fix)][192] _t2_d8_
+* [Terminator 2: Judgment Day (L-8)][192] _t2_l8_
+* [Terminator 2: Judgment Day (L-81 Attract Sound patch)][192] _t2_l81_
+* [Terminator 2: Judgment Day (L-82 Attract Score patch)][192] _t2_l82_
+* [Terminator 2: Judgment Day (L-83 Profanity, bugfix/MOD, LED Ghost Fix)][192] _t2_l83_
+* [Terminator 2: Judgment Day (L-84 Profanity, bugfix/MOD, LED Ghost Fix)][192] _t2_l84_
+* [Theatre of Magic (1.3X)][193] _tom_13_
+* [Theatre of Magic (1.3XC Competition MOD)][193] _tom_13c_
+* [Theatre of Magic (1.4H Coin Play)][193] _tom_14hb_
+* [Theatre of Magic (1.4H)][193] _tom_14h_
+* [Theatre of Magic (2.0 Competition MOD)][193] _tom_20_
 * [Thunderball (P-2 Prototype)][49] _thund_p2_
 * [Thunderball (P-3 Prototype)][49] _thund_p3_
 * [Time Fantasy (L-5)][14] _tmfnt_l5_
-* [Time Machine (1.8 German)][160] _tmac_g18_
-* [Time Machine (1.8)][160] _tmac_a18_
-* [Time Machine (2.4)][160] _tmac_a24_
-* [Time Machine (Zaccaria)][193] _tmachzac_
+* [Time Machine (1.8 German)][161] _tmac_g18_
+* [Time Machine (1.8)][161] _tmac_a18_
+* [Time Machine (2.4)][161] _tmac_a24_
+* [Time Machine (Zaccaria)][194] _tmachzac_
 * [Time Warp (L-2 Free Play Fix)][24] _tmwrp_l2ff_
 * [Time Warp (L-2)][24] _tmwrp_l2_
 * [Time Warp (L-3 Free Play Fix)][24] _tmwrp_l3ff_
 * [Time Warp (L-3)][24] _tmwrp_l3_
 * [Time Warp (T-2 Ted Estes)][24] _tmwrp_t2_
 * [Time Warp (T-2 Ted Estes, Free Play Fix)][24] _tmwrp_t2ff_
-* [Title Fight][194] _tfight_
-* [Tommy Pinball Wizard, The Who's (4.00)][195] _tomy_400_
-* [Tommy Pinball Wizard, The Who's (5.00 unofficial MOD)][195] _tomy_500_
-* [Torpedo Alley (1.6)][160] _torp_a16_
-* [Torpedo Alley (2.1 Europe)][160] _torp_e21_
-* [Transformers (V1.8)][196] _tf_180_
-* [Transporter the Rescue (L-3)][197] _tsptr_l3_
+* [Title Fight][195] _tfight_
+* [Tommy Pinball Wizard, The Who's (4.00)][196] _tomy_400_
+* [Tommy Pinball Wizard, The Who's (5.00 unofficial MOD)][196] _tomy_500_
+* [Torpedo Alley (1.6)][161] _torp_a16_
+* [Torpedo Alley (2.1 Europe)][161] _torp_e21_
+* [Transformers (V1.8)][197] _tf_180_
+* [Transporter the Rescue (L-3)][198] _tsptr_l3_
 * [Tri Zone (L-1 Free Play Fix)][24] _trizn_l1ff_
 * [Tri Zone (L-1)][24] _trizn_l1_
 * [Tri Zone (T-1 Ted Estes)][24] _trizn_t1_
@@ -595,46 +601,46 @@
 * [Trident][43] _trident_
 * [Trident (Old Free Play)][44] _tridenfp_
 * [Trident (Old)][43] _tridenta_
-* [Twilight Zone (9.2)][198] _tz_92_
-* [Twilight Zone (9.3 LED Ghost Fix)][198] _tz_93_
-* [Twilight Zone (9.4CH Coin Play)][199] _tz_94ch_
-* [Twilight Zone (9.4H)][199] _tz_94h_
+* [Twilight Zone (9.2)][199] _tz_92_
+* [Twilight Zone (9.3 LED Ghost Fix)][199] _tz_93_
+* [Twilight Zone (9.4CH Coin Play)][200] _tz_94ch_
+* [Twilight Zone (9.4H)][200] _tz_94h_
 * [Varkon (L-1)][14] _vrkon_l1_
 * [Vector][10] _vector_
-* [Vegas][200] _vegas_
-* [Victory][201] _victory_
-* [Victory (1.01 tournament/competition MOD)][201] _victr101_
-* [Victory (1.1 tournament/competition MOD)][201] _victr11_
-* [Victory (1.2 tournament/competition MOD)][201] _victr12_
-* [Victory (1.3 tournament/competition MOD)][201] _victr13_
-* [Victory (Free Play)][201] _victryfp_
-* [Victory (French Free Play)][201] _victrffp_
-* [Victory (German Free Play)][201] _victrgfp_
+* [Vegas][201] _vegas_
+* [Victory][202] _victory_
+* [Victory (1.01 tournament/competition MOD)][202] _victr101_
+* [Victory (1.1 tournament/competition MOD)][202] _victr11_
+* [Victory (1.2 tournament/competition MOD)][202] _victr12_
+* [Victory (1.3 tournament/competition MOD)][202] _victr13_
+* [Victory (Free Play)][202] _victryfp_
+* [Victory (French Free Play)][202] _victrffp_
+* [Victory (German Free Play)][202] _victrgfp_
 * [Viking][58] _viking_
 * [Viking (7-digit conversion)][59] _vikingb_
 * [Viper][61] _viper_
 * [Voltan Escapes Cosmic Doom][106] _voltan_
-* [Voltan Escapes Cosmic Doom (7-digit conversion rev. 20)][138] _voltanb_
-* [WHO Dunnit (1.2 Elevator text fix)][202] _wd_12p_
-* [WHO Dunnit (1.2 German Sound / Elevator text fix)][202] _wd_12gp_
-* [WHO Dunnit (1.2 German Sound)][202] _wd_12g_
-* [WHO Dunnit (1.2)][202] _wd_12_
+* [Voltan Escapes Cosmic Doom (7-digit conversion rev. 20)][139] _voltanb_
+* [WHO Dunnit (1.2 Elevator text fix)][203] _wd_12p_
+* [WHO Dunnit (1.2 German Sound / Elevator text fix)][203] _wd_12gp_
+* [WHO Dunnit (1.2 German Sound)][203] _wd_12g_
+* [WHO Dunnit (1.2)][203] _wd_12_
 * [Warlok (L-3)][14] _wrlok_l3_
-* [Whirlwind (LA-3)][203] _whirl_l3_
-* [White Water (D-5 LED Ghost Fix)][204] _ww_d5_
-* [White Water (L-5)][204] _ww_l5_
-* [White Water (LH-6 Coin Play)][205] _ww_lh6c_
-* [White Water (LH-6)][205] _ww_lh6_
+* [Whirlwind (LA-3)][204] _whirl_l3_
+* [White Water (D-5 LED Ghost Fix)][205] _ww_d5_
+* [White Water (L-5)][205] _ww_l5_
+* [White Water (LH-6 Coin Play)][206] _ww_lh6c_
+* [White Water (LH-6)][206] _ww_lh6_
 * [Wild Fyre][43] _wildfyre_
 * [Wild Fyre (Free Play)][44] _wildfyfp_
-* [World Cup (L-1)][206] _wldcp_l1_
-* [World Cup Soccer (DX-2 LED Ghost Fix)][207] _wcs_d2_
-* [World Cup Soccer (LX-2)][207] _wcs_l2_
-* [World Cup Soccer (LX-3C Competition MOD)][207] _wcs_l3c_
+* [World Cup (L-1)][207] _wldcp_l1_
+* [World Cup Soccer (DX-2 LED Ghost Fix)][208] _wcs_d2_
+* [World Cup Soccer (LX-2)][208] _wcs_l2_
+* [World Cup Soccer (LX-3C Competition MOD)][208] _wcs_l3c_
 * [X's & O's][10] _xsandos_
 * [X's & O's (Free Play)][10] _xsandosa_
-* [Xenon][208] _xenon_
-* [Xenon (French)][208] _xenonf_
+* [Xenon][209] _xenon_
+* [Xenon (French)][209] _xenonf_
 
 [1]: maps/williams/wpc/tafg_lx3.map.json
 [2]: maps/williams/wpc/taf_l5.map.json
@@ -756,91 +762,92 @@
 [118]: maps/williams/wpc/mm_109.map.json
 [119]: maps/williams/system11/milln_l3.map.json
 [120]: maps/dataeast/version2/mnfb_c27.map.json
-[121]: maps/williams/wpc/mb_10.map.json
-[122]: maps/williams/wpc/mb_106.map.json
-[123]: maps/williams/system11/mousn_l4.map.json
-[124]: maps/williams/wpc/nbaf_31.map.json
-[125]: maps/stern/whitestar/strikext.map.json
-[126]: maps/bally/as-2518-35/newwave.map.json
-[127]: maps/stern/m200/nineball.map.json
-[128]: maps/williams/wpc/nf_23x.map.json
-[129]: maps/williams/wpc/ngg_13.map.json
-[130]: maps/gottlieb/system3/opthund.map.json
-[131]: maps/stern/m200/orbitor1.map.json
-[132]: maps/williams/wpc/pz_l3.map.json
-[133]: maps/williams/wpc/pz_f4.map.json
-[134]: maps/dataeast/version2/poto_a32.map.json
-[135]: maps/williams/system4/phnix_l1.map.json
-[136]: maps/williams/system11/pb_l5.map.json
-[137]: maps/zaccaria/gen2/pinchamp.map.json
-[138]: maps/bally/as-2518-35/system-rom-30-7digit.map.json
-[139]: maps/dataeast/version2/play_a24.map.json
-[140]: maps/williams/system4/pkrno_l1.map.json
-[141]: maps/williams/system11/polic_l4.map.json
-[142]: maps/williams/system11/pool_l7.map.json
-[143]: maps/williams/wpc/pop_lx5.map.json
-[144]: maps/williams/system11/radcl_l1.map.json
-[145]: maps/bally/as-2518-35/rapidfir.map.json
-[146]: maps/gottlieb/system80b/raven.map.json
-[147]: maps/williams/wpc/rs_l6.map.json
-[148]: maps/stern/whitestar/rip300.map.json
-[149]: maps/stern/whitestar/ripleys.map.json
-[150]: maps/williams/system11/rvrbt_l3.map.json
-[151]: maps/williams/system11/rdkng_l4.map.json
-[152]: maps/dataeast/version2/robo_a29.map.json
-[153]: maps/dataeast/version2/robo_a30.map.json
-[154]: maps/dataeast/version2/robo_a34.map.json
-[155]: maps/zaccaria/gen2/robot.map.json
-[156]: maps/williams/system11/rollr_l2.map.json
-[157]: maps/williams/wpc/sc_091.map.json
-[158]: maps/williams/wpc/sc_18.map.json
-[159]: maps/williams/wpc/ss_15.map.json
-[160]: maps/dataeast/version2/generic.map.json
-[161]: maps/williams/wpc/ts_lx5.map.json
-[162]: maps/zaccaria/gen1/strapids.map.json
-[163]: maps/gottlieb/system3/silvslug.map.json
-[164]: maps/stern/whitestar/simpprty.map.json
-[165]: maps/bally/as-2518-35/smman.map.json
-[166]: maps/bally/as-2518-35/smmanc.map.json
-[167]: maps/bally/as-2518-35/skatebll.map.json
-[168]: maps/zaccaria/gen2/socrking.map.json
-[169]: maps/stern/whitestar/sopranos.map.json
-[170]: maps/williams/system9/sorcr_l2.map.json
-[171]: maps/sega/whitestar/sprk_103.map.json
-[172]: maps/williams/system11/spstn_l5.map.json
-[173]: maps/bally/as-2518-35/speakesy.map.json
-[174]: maps/bally/as-2518-35/speakes4.map.json
-[175]: maps/bally/as-2518-35/spectrum.map.json
-[176]: maps/zaccaria/gen1/stargoda.map.json
-[177]: maps/stern/sam/st_162.map.json
-[178]: maps/stern/sam/st_161h.map.json
-[179]: maps/stern/sam/st_162h.map.json
-[180]: maps/dataeast/version3/trek_201.map.json
-[181]: maps/williams/wpc/sttng_l7.map.json
-[182]: maps/sega/whitestar/swtril43.map.json
-[183]: maps/williams/system4/stlwr_l2.map.json
-[184]: maps/zaccaria/strike.map.json
-[185]: maps/bally/as-2518-35/suprbowl.map.json
-[186]: maps/gottlieb/system3/surfnsaf.map.json
-[187]: maps/williams/system11/swrds_l2.map.json
-[188]: maps/gottlieb/system80b/tagteam.map.json
-[189]: maps/williams/wpc/totan_14.map.json
-[190]: maps/williams/system11/taxi_l4.map.json
-[191]: maps/williams/wpc/t2_l8.map.json
-[192]: maps/williams/wpc/tom_13.map.json
-[193]: maps/zaccaria/gen2/tmachzac.map.json
-[194]: maps/gottlieb/system3/tfight.map.json
-[195]: maps/dataeast/version3/tomy_400.map.json
-[196]: maps/stern/sam/tf_180.map.json
-[197]: maps/williams/system11/tsptr_l3.map.json
-[198]: maps/williams/wpc/tz_92.map.json
-[199]: maps/williams/wpc/tz_94h.map.json
-[200]: maps/gottlieb/system3/vegas.map.json
-[201]: maps/gottlieb/system80b/victory.map.json
-[202]: maps/williams/wpc/wd_12.map.json
-[203]: maps/williams/system11/whirl_l3.map.json
-[204]: maps/williams/wpc/ww_l5.map.json
-[205]: maps/williams/wpc/ww_lh6.map.json
-[206]: maps/williams/system3/wldcp_l1.map.json
-[207]: maps/williams/wpc/wcs_l2.map.json
-[208]: maps/bally/as-2518-35/xenon.map.json
+[121]: maps/stern/whitestar/monopoly.map.json
+[122]: maps/williams/wpc/mb_10.map.json
+[123]: maps/williams/wpc/mb_106.map.json
+[124]: maps/williams/system11/mousn_l4.map.json
+[125]: maps/williams/wpc/nbaf_31.map.json
+[126]: maps/stern/whitestar/strikext.map.json
+[127]: maps/bally/as-2518-35/newwave.map.json
+[128]: maps/stern/m200/nineball.map.json
+[129]: maps/williams/wpc/nf_23x.map.json
+[130]: maps/williams/wpc/ngg_13.map.json
+[131]: maps/gottlieb/system3/opthund.map.json
+[132]: maps/stern/m200/orbitor1.map.json
+[133]: maps/williams/wpc/pz_l3.map.json
+[134]: maps/williams/wpc/pz_f4.map.json
+[135]: maps/dataeast/version2/poto_a32.map.json
+[136]: maps/williams/system4/phnix_l1.map.json
+[137]: maps/williams/system11/pb_l5.map.json
+[138]: maps/zaccaria/gen2/pinchamp.map.json
+[139]: maps/bally/as-2518-35/system-rom-30-7digit.map.json
+[140]: maps/dataeast/version2/play_a24.map.json
+[141]: maps/williams/system4/pkrno_l1.map.json
+[142]: maps/williams/system11/polic_l4.map.json
+[143]: maps/williams/system11/pool_l7.map.json
+[144]: maps/williams/wpc/pop_lx5.map.json
+[145]: maps/williams/system11/radcl_l1.map.json
+[146]: maps/bally/as-2518-35/rapidfir.map.json
+[147]: maps/gottlieb/system80b/raven.map.json
+[148]: maps/williams/wpc/rs_l6.map.json
+[149]: maps/stern/whitestar/rip300.map.json
+[150]: maps/stern/whitestar/ripleys.map.json
+[151]: maps/williams/system11/rvrbt_l3.map.json
+[152]: maps/williams/system11/rdkng_l4.map.json
+[153]: maps/dataeast/version2/robo_a29.map.json
+[154]: maps/dataeast/version2/robo_a30.map.json
+[155]: maps/dataeast/version2/robo_a34.map.json
+[156]: maps/zaccaria/gen2/robot.map.json
+[157]: maps/williams/system11/rollr_l2.map.json
+[158]: maps/williams/wpc/sc_091.map.json
+[159]: maps/williams/wpc/sc_18.map.json
+[160]: maps/williams/wpc/ss_15.map.json
+[161]: maps/dataeast/version2/generic.map.json
+[162]: maps/williams/wpc/ts_lx5.map.json
+[163]: maps/zaccaria/gen1/strapids.map.json
+[164]: maps/gottlieb/system3/silvslug.map.json
+[165]: maps/stern/whitestar/simpprty.map.json
+[166]: maps/bally/as-2518-35/smman.map.json
+[167]: maps/bally/as-2518-35/smmanc.map.json
+[168]: maps/bally/as-2518-35/skatebll.map.json
+[169]: maps/zaccaria/gen2/socrking.map.json
+[170]: maps/stern/whitestar/sopranos.map.json
+[171]: maps/williams/system9/sorcr_l2.map.json
+[172]: maps/sega/whitestar/sprk_103.map.json
+[173]: maps/williams/system11/spstn_l5.map.json
+[174]: maps/bally/as-2518-35/speakesy.map.json
+[175]: maps/bally/as-2518-35/speakes4.map.json
+[176]: maps/bally/as-2518-35/spectrum.map.json
+[177]: maps/zaccaria/gen1/stargoda.map.json
+[178]: maps/stern/sam/st_162.map.json
+[179]: maps/stern/sam/st_161h.map.json
+[180]: maps/stern/sam/st_162h.map.json
+[181]: maps/dataeast/version3/trek_201.map.json
+[182]: maps/williams/wpc/sttng_l7.map.json
+[183]: maps/sega/whitestar/swtril43.map.json
+[184]: maps/williams/system4/stlwr_l2.map.json
+[185]: maps/zaccaria/strike.map.json
+[186]: maps/bally/as-2518-35/suprbowl.map.json
+[187]: maps/gottlieb/system3/surfnsaf.map.json
+[188]: maps/williams/system11/swrds_l2.map.json
+[189]: maps/gottlieb/system80b/tagteam.map.json
+[190]: maps/williams/wpc/totan_14.map.json
+[191]: maps/williams/system11/taxi_l4.map.json
+[192]: maps/williams/wpc/t2_l8.map.json
+[193]: maps/williams/wpc/tom_13.map.json
+[194]: maps/zaccaria/gen2/tmachzac.map.json
+[195]: maps/gottlieb/system3/tfight.map.json
+[196]: maps/dataeast/version3/tomy_400.map.json
+[197]: maps/stern/sam/tf_180.map.json
+[198]: maps/williams/system11/tsptr_l3.map.json
+[199]: maps/williams/wpc/tz_92.map.json
+[200]: maps/williams/wpc/tz_94h.map.json
+[201]: maps/gottlieb/system3/vegas.map.json
+[202]: maps/gottlieb/system80b/victory.map.json
+[203]: maps/williams/wpc/wd_12.map.json
+[204]: maps/williams/system11/whirl_l3.map.json
+[205]: maps/williams/wpc/ww_l5.map.json
+[206]: maps/williams/wpc/ww_lh6.map.json
+[207]: maps/williams/system3/wldcp_l1.map.json
+[208]: maps/williams/wpc/wcs_l2.map.json
+[209]: maps/bally/as-2518-35/xenon.map.json
