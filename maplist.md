@@ -269,8 +269,14 @@
 * [Jokerz (L-6)][102] _jokrz_l6_
 * [Joust (L-2)][14] _jst_l2_
 * [Judge Dredd (D-1 LED Ghost Fix)][103] _jd_d1_
+* [Judge Dredd (D-4 LED Ghost Fix)][103] _jd_d4_
+* [Judge Dredd (D-5 LED Ghost Fix)][103] _jd_d5_
+* [Judge Dredd (D-6 LED Ghost Fix)][103] _jd_d6_
 * [Judge Dredd (D-7 LED Ghost Fix)][104] _jd_d7_
 * [Judge Dredd (L-1)][103] _jd_l1_
+* [Judge Dredd (L-4)][103] _jd_l4_
+* [Judge Dredd (L-5)][103] _jd_l5_
+* [Judge Dredd (L-6)][103] _jd_l6_
 * [Judge Dredd (L-7)][104] _jd_l7_
 * [Jungle Lord (L-2)][14] _jngld_l2_
 * [Junk Yard (1.2)][105] _jy_12_

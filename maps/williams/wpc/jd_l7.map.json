@@ -2,12 +2,12 @@
   "_notes": [
     "Compiled by Tom Collins using template-wpc.json.",
     "WPC 20020, SYS 3.08 REV 0.7 (jd_l7)",
-    "jd_l1 and jd_l7 have slightly different audits",
+    "L-1, L-4, L-5, and L-6 have slightly different audits than L-7",
     "2025-07-07 Tom Collins added automated audits"
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 3,
+    "version": 4,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-wpc-12K",
@@ -413,7 +413,8 @@
         "label": "MINUTES ON",
         "start": 6335,
         "encoding": "int",
-        "length": 3
+        "length": 3,
+        "units": "minutes"
       },
       "23": {
         "label": "BALLS PLAYED",
