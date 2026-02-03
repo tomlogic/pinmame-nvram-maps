@@ -5,9 +5,9 @@
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 1,
+    "version": 2,
     "copyright": [
-      "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
+      "Copyright (C) 2026 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
     "platform": "whitestar",
@@ -99,6 +99,7 @@
     {
       "label": "#1",
       "initials": {
+        "_notes": "3-letter initials have an extra byte for the player token",
         "start": "0x14EA",
         "encoding": "ch",
         "length": 10
