@@ -1,7 +1,7 @@
 {
   "_notes": [
     "Created by Tom Collins, based on btmn_106 (by Dave horsepin/Tom Collins)",
-    "High Scores for trek_110/trek_11a: Initials -0x1F, scores -0x20"
+    "2026-02-06 split off from trek_201"
   ],
   "_fileformat": 0.8,
   "_metadata": {
@@ -13,9 +13,7 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "dataeast",
     "roms": [
-      "trek_200",
-      "trek_201",
-      "trek_300"
+      "trek_120"
     ]
   },
   "game_state": {
@@ -24,44 +22,44 @@
         "label": "Player 1",
         "encoding": "bcd",
         "offsets": [
-          "0x1BE",
-          "0x1AE",
-          "0x1AF",
-          "0x1B0",
-          "0x1B1"
+          "0x1BB",
+          "0x1AB",
+          "0x1AC",
+          "0x1AD",
+          "0x1AE"
         ]
       },
       {
         "label": "Player 2",
         "encoding": "bcd",
         "offsets": [
-          "0x1BF",
-          "0x1B2",
-          "0x1B3",
-          "0x1B4",
-          "0x1B5"
+          "0x1BC",
+          "0x1AF",
+          "0x1B0",
+          "0x1B1",
+          "0x1B2"
         ]
       },
       {
         "label": "Player 3",
         "encoding": "bcd",
         "offsets": [
-          "0x1C0",
-          "0x1B6",
-          "0x1B7",
-          "0x1B8",
-          "0x1B9"
+          "0x1BD",
+          "0x1B3",
+          "0x1B4",
+          "0x1B5",
+          "0x1B6"
         ]
       },
       {
         "label": "Player 4",
         "encoding": "bcd",
         "offsets": [
-          "0x1C1",
-          "0x1BA",
-          "0x1BB",
-          "0x1BC",
-          "0x1BD"
+          "0x1BE",
+          "0x1B7",
+          "0x1B8",
+          "0x1B9",
+          "0x1BA"
         ]
       }
     ],
@@ -83,7 +81,7 @@
     },
     "player_count": {
       "label": "Player Count",
-      "start": "0x1A2",
+      "start": "0x19F",
       "encoding": "int"
     },
     "ball_count": {
@@ -93,18 +91,18 @@
     },
     "current_player": {
       "label": "Player",
-      "start": "0x19F",
+      "start": "0x19C",
       "encoding": "int"
     },
     "current_ball": {
       "label": "Ball",
-      "start": "0x1A0",
+      "start": "0x19D",
       "encoding": "int"
     },
     "game_over": {
       "_notes": "game is over if current player/ball is 0",
       "label": "Game Over",
-      "start": "0x19F",
+      "start": "0x19C",
       "encoding": "bool",
       "invert": true
     }
