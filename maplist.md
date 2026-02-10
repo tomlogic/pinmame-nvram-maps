@@ -57,6 +57,8 @@
 * [Batman Forever (4.0 Swiss)][16] _bmf_ch_
 * [Batman Forever (4.0 Timed Play)][16] _bmf_time_
 * [Batman Forever (4.0)][16] _batmanf_
+* [Batman Forever (5.0 unofficial MOD)][16] _batmanf5_
+* [Batman Forever (5.01 unofficial MOD)][16] _batmanf501_
 * [Baywatch (4.00 Dutch)][17] _bay_d400_
 * [Baywatch (4.00 English)][17] _bay_e400_
 * [Baywatch (4.00)][17] _baywatch_
