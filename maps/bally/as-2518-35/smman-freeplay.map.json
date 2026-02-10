@@ -4,12 +4,13 @@
     "The Six Million Dollar Man (Bally 1978)",
     "https://www.ipdb.org/machine.cgi?id=2165",
     "https://opdb.org/machines/4721",
-    "Bally MPU AS-2518-35 (U6: 720-30_6.716)",
-    "Six players"
+    "Bally MPU AS-2518-35 (U6: strekc.u16/strekd.u16)",
+    "Six players, 6-digit score display, Free Play (/10 scoring on 'd' ROMs)",
+    "Oliver's ROMs: https://www.pinball4you.ch/okaegi/pro_soft.html"
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 2,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -17,7 +18,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
-      "smmanc"
+      "smmanc",
+      "smmand"
     ]
   },
   "game_state": {
@@ -146,6 +148,25 @@
         30,
         35,
         40
+      ]
+    },
+    "free_play": {
+      "label": "Free Play",
+      "encoding": "dipsw",
+      "offsets": [
+        19,
+        18,
+        17
+      ],
+      "values": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
       ]
     },
     "game_over": {

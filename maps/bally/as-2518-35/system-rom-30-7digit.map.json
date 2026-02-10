@@ -1,16 +1,22 @@
 {
   "_notes": [
-    "Compiled by Francis De Brabandere.",
-    "Playboy (Bally 1978)",
-    "https://www.ipdb.org/machine.cgi?id=1823",
-    "https://opdb.org/machines/175",
-    "Bally MPU AS-2518-35",
+    "Bally MPU AS-2518-35 (with modified U6 System ROMs: 3032d7.bin)",
     "7-digit score display",
+    "Game                          Mfg    Date   IPDB   OPDB",
+    "----------------------------  -----  ----   ----   ----",
+    "KISS                          Bally  1979   1386   1225",
+    "Paragon                       Bally  1979   1755    296",
+    "Playboy                       Bally  1978   1823    175",
+    "Sexy Girl                     Arkon  1980   2106   1058",
+    "Supersonic                    Bally  1979   2455   1881",
+    "Star Trek                     Bally  1979   2355    473",
+    "Voltan Escapes Cosmic Doom    Bally  1979   2744    134",
+    "Originally compiled by Francis De Brabandere.",
     "By default the credits are not shown, set dip switch 27 to show them."
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 1,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -18,6 +24,9 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
+      "kissb",
+      "kisse",
+      "paragonb",
       "playboyb",
       "sstb",
       "startreb",
