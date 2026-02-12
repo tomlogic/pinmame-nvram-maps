@@ -7,7 +7,7 @@
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 1,
+    "version": 2,
     "copyright": "Copyright (C) 2025 by Tom Collins <tom@tomlogic.com>",
     "license": "GNU Lesser General Public License v3.0",
     "platform": "williams-system4",
@@ -75,6 +75,14 @@
       "start": "0x010A",
       "length": 2,
       "encoding": "bcd"
+    },
+    "free_play": {
+      "_notes": "free play enabled when max_credits==0",
+      "label": "Free Play",
+      "start": "0x010A",
+      "length": 2,
+      "encoding": "bool",
+      "invert": true
     },
     "game_over": {
       "label": "Game Over",

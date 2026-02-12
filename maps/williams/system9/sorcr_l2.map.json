@@ -7,7 +7,7 @@
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 3,
+    "version": 5,
     "copyright": [
       "Copyright (C) 2022 https://github.com/horseyhorsey",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -80,6 +80,13 @@
       "label": "Max Credits",
       "start": "0x79A",
       "encoding": "bcd"
+    },
+    "free_play": {
+      "_notes": "free play enabled when max_credits==0",
+      "label": "Free Play",
+      "start": "0x79A",
+      "encoding": "bool",
+      "invert": true
     },
     "current_ball": {
       "label": "Ball",
