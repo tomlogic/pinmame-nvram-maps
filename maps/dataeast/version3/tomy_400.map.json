@@ -1,11 +1,11 @@
 {
   "_notes": [
-    "Originally compiled by Horsepin.",
-    "Updated from gnr_300 by Tom Collins"
+    "The Who's Tommy Pinball Wizard [Data East 1994]",
+    "Originally compiled by Horsepin.  Updated from gnr_300 by Tom Collins."
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 3,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2016 by Horsepin>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -13,6 +13,9 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "dataeast",
     "roms": [
+      "tomy_102",
+      "tomy_102be",
+      "tomy_301g",
       "tomy_400",
       "tomy_500"
     ]

@@ -1,11 +1,12 @@
 {
   "_notes": [
+    "Star Trek 25th Anniversary [Data East, 1991]",
     "Created by Tom Collins, based on btmn_106 (by Dave horsepin/Tom Collins)",
     "2026-02-06 split off from trek_201"
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 3,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2016 by Dave horsepin <horse@horsesoft.uk>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
