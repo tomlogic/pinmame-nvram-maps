@@ -5,7 +5,7 @@
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 4,
+    "version": 5,
     "copyright": [
       "Copyright (C) 2026 by Tom Collins <tom@scorbit.io>"
     ],
@@ -61,7 +61,7 @@
     },
     "player_count": {
       "label": "Player Count",
-      "start": "0x03C7",
+      "start": "0x03C8",
       "encoding": "int"
     },
     "ball_count": {
@@ -71,7 +71,7 @@
     },
     "current_player": {
       "label": "Player",
-      "start": "0x03C8",
+      "start": "0x03C7",
       "encoding": "int"
     },
     "current_ball": {
@@ -82,7 +82,7 @@
     "game_over": {
       "_notes": "game is over if current player/ball is 0",
       "label": "Game Over",
-      "start": "0x03C8",
+      "start": "0x03C7",
       "encoding": "bool",
       "invert": true
     }
