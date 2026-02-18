@@ -728,21 +728,24 @@
 * [WWF Royal Rumble (1.03)][228] _wwfr_103_
 * [WWF Royal Rumble (1.06)][228] _wwfr_106_
 * [Warlok (L-3)][19] _wrlok_l3_
-* [Whirlwind (LA-3)][229] _whirl_l3_
-* [White Water (D-5 LED Ghost Fix)][230] _ww_d5_
-* [White Water (L-5)][230] _ww_l5_
-* [White Water (LH-6 Coin Play)][231] _ww_lh6c_
-* [White Water (LH-6)][231] _ww_lh6_
+* [Waterworld (rev. 2)][229] _waterwl2_
+* [Waterworld (rev. 3)][229] _waterwld_
+* [Waterworld (rev. 5)][229] _waterwl5_
+* [Whirlwind (LA-3)][230] _whirl_l3_
+* [White Water (D-5 LED Ghost Fix)][231] _ww_d5_
+* [White Water (L-5)][231] _ww_l5_
+* [White Water (LH-6 Coin Play)][232] _ww_lh6c_
+* [White Water (LH-6)][232] _ww_lh6_
 * [Wild Fyre][50] _wildfyre_
 * [Wild Fyre (Free Play)][51] _wildfyfp_
-* [World Cup (L-1)][232] _wldcp_l1_
-* [World Cup Soccer (DX-2 LED Ghost Fix)][233] _wcs_d2_
-* [World Cup Soccer (LX-2)][233] _wcs_l2_
-* [World Cup Soccer (LX-3C Competition MOD)][233] _wcs_l3c_
+* [World Cup (L-1)][233] _wldcp_l1_
+* [World Cup Soccer (DX-2 LED Ghost Fix)][234] _wcs_d2_
+* [World Cup Soccer (LX-2)][234] _wcs_l2_
+* [World Cup Soccer (LX-3C Competition MOD)][234] _wcs_l3c_
 * [X's & O's][13] _xsandos_
 * [X's & O's (Free Play)][13] _xsandosa_
-* [Xenon][234] _xenon_
-* [Xenon (French)][234] _xenonf_
+* [Xenon][235] _xenon_
+* [Xenon (French)][235] _xenonf_
 
 [1]: maps/dataeast/version3/lw3_208.map.json
 [2]: maps/williams/wpc/tafg_lx3.map.json
@@ -972,9 +975,10 @@
 [226]: maps/gottlieb/system80b/victory.map.json
 [227]: maps/williams/wpc/wd_12.map.json
 [228]: maps/dataeast/version3/wwfr_106.map.json
-[229]: maps/williams/system11/whirl_l3.map.json
-[230]: maps/williams/wpc/ww_l5.map.json
-[231]: maps/williams/wpc/ww_lh6.map.json
-[232]: maps/williams/system3/wldcp_l1.map.json
-[233]: maps/williams/wpc/wcs_l2.map.json
-[234]: maps/bally/as-2518-35/xenon.map.json
+[229]: maps/gottlieb/system3/waterwld.map.json
+[230]: maps/williams/system11/whirl_l3.map.json
+[231]: maps/williams/wpc/ww_l5.map.json
+[232]: maps/williams/wpc/ww_lh6.map.json
+[233]: maps/williams/system3/wldcp_l1.map.json
+[234]: maps/williams/wpc/wcs_l2.map.json
+[235]: maps/bally/as-2518-35/xenon.map.json
