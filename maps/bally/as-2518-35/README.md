@@ -9,3 +9,6 @@ From "Quench" on Pinside:
 > coins/credits settings (only uses the "Off" setting for both of these
 > particular switches).
 > The "720-35" and "720-37" U6 ROMs are otherwise identical.
+
+Another useful Pinside thread with information from Quench:
+    https://pinside.com/pinball/forum/topic/nvram-memory-structure-of-early-bally-games

@@ -1,7 +1,8 @@
 {
   "_notes": [
     "Bally MPU AS-2518-35 (with U6 System ROM: 720-53_6/720-5332)",
-    "7-digit score display",
+    "7-digit score display -- Free Play version of ROMs",
+    "See https://www.pinball4you.ch/okaegi/pro_soft.html for details.",
     "Game                          Mfg    Date   IPDB   OPDB",
     "----------------------------  -----  ----   ----   ----",
     "BMX                           Bally  1983   335   431",
@@ -20,7 +21,7 @@
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 4,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -28,19 +29,17 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
-      "bmx",
-      "cybrnaut",
-      "elektra",
-      "fathom",
-      "fbclass",
-      "kosteel",
-      "m_mpac",
-      "m_mpacb",
-      "medusa",
-      "medusaf",
-      "spyhuntr",
-      "vector",
-      "xsandos"
+      "bmxa",
+      "cybrnaua",
+      "elektraa",
+      "fathoma",
+      "fbclassa",
+      "kosteela",
+      "m_mpaca",
+      "medusaa",
+      "spyhunta",
+      "vectora",
+      "xsandosa"
     ]
   },
   "game_state": {
@@ -149,6 +148,20 @@
         15,
         25,
         40
+      ]
+    },
+    "free_play": {
+      "label": "Free Play",
+      "encoding": "dipsw",
+      "offsets": [
+        26,
+        25
+      ],
+      "values": [
+        false,
+        false,
+        false,
+        true
       ]
     },
     "game_over": {
