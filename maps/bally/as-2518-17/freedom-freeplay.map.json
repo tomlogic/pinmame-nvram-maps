@@ -1,18 +1,10 @@
 {
   "_notes": [
-    "Bally MPU AS-2518-17 (U6: 720-20_6 and 720-21_6)",
-    "6-digit score display.  Based on system-rom-20 map.",
-    "Quench's Free Play ROMs, used on Weebly MPU boards.",
-    "Same as system-rom-20.map.json except platform/roms/free_play.",
-    "Game                          Mfg    Date   IPDB   OPDB",
-    "----------------------------  -----  ----   ----   ----",
-    "Black Jack                    Bally  1978    309    245",
-    "Bobby Orr Power Play          Bally  1978   1858    400",
-    "Eight Ball                    Bally  1977    760    430",
-    "Evel Knievel                  Bally  1977   4499   1422",
-    "Mata Hari                     Bally  1978   4501    236",
-    "Night Rider                   Bally  1977   4497    874",
-    "Strikes and Spares            Bally  1978   2406   1818"
+    "Bally MPU AS-2518-17 6-digit score display",
+    "Freedom (Bally 1981)",
+    "Quench's Free Play ROM, used on Weebly MPU boards.",
+    "https://www.ipdb.org/machine.cgi?id=4500",
+    "https://opdb.org/machines/931"
   ],
   "_fileformat": 0.8,
   "_metadata": {
@@ -24,20 +16,13 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-17-4K",
     "roms": [
-      "eightblc",
-      "evelknic",
-      "freedomb",
-      "nightrdc",
-      "blackjcd",
-      "pwerplac",
-      "mataharc",
-      "stk_sprc"
+      "freedoma"
     ]
   },
   "game_state": {
     "credits": {
       "label": "Credits",
-      "start": "0x02D5",
+      "start": "0x02DB",
       "length": 2,
       "encoding": "bcd"
     },
@@ -179,7 +164,7 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": "0x02CF",
+        "start": "0x02F3",
         "encoding": "bcd",
         "length": 6
       }
@@ -187,69 +172,62 @@
   ],
   "audits": {
     "Bookkeeping functions": {
+      "01": {
+        "label": "Coin Chute #1",
+        "start": "0x02BD",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
+      "02": {
+        "label": "Coin Chute #2",
+        "start": "0x02C3",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
+      "03": {
+        "label": "Coin Chute #3",
+        "start": "0x02C9",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
+      "04": {
+        "label": "Total Plays",
+        "start": "0x02CF",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
       "05": {
-        "label": "Current Credits",
+        "_notes": "No docs for Freedom ",
+        "label": "Unknown Audit",
         "start": "0x02D5",
         "length": 6,
         "encoding": "bcd",
         "min": 0,
-        "max": 40
+        "max": 999999
       },
       "06": {
-        "label": "Total Plays (Paid and Free Games)",
+        "label": "Current Credits",
         "start": "0x02DB",
         "length": 6,
         "encoding": "bcd",
         "min": 0,
-        "max": 999999
-      },
-      "07": {
-        "label": "Total Replays (Free Games)",
-        "start": "0x02E1",
-        "length": 6,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 999999
-      },
-      "08": {
-        "label": "HSTD Achieved",
-        "start": "0x02E7",
-        "length": 6,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 999999
-      },
-      "09": {
-        "label": "Coin Chute #1",
-        "start": "0x02ED",
-        "length": 6,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 999999
-      },
-      "10": {
-        "label": "Coin Chute #2",
-        "start": "0x02F3",
-        "length": 6,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 999999
-      },
-      "11": {
-        "label": "Coin Chute #3",
-        "start": "0x02F9",
-        "length": 6,
-        "encoding": "bcd",
-        "min": 0,
-        "max": 999999
+        "max": 40
       }
     }
   },
   "adjustments": {
     "High score functions": {
-      "01": {
+      "07": {
         "label": "Replay Level 1",
-        "start": "0x02BD",
+        "start": "0x02E1",
         "encoding": "bcd",
         "length": 6,
         "min": 0,
@@ -260,9 +238,9 @@
         },
         "multiple_of": 2000
       },
-      "02": {
+      "08": {
         "label": "Replay Level 2",
-        "start": "0x02C3",
+        "start": "0x02E7",
         "encoding": "bcd",
         "length": 6,
         "min": 0,
@@ -273,9 +251,9 @@
         },
         "multiple_of": 2000
       },
-      "03": {
+      "09": {
         "label": "Replay Level 3",
-        "start": "0x02C9",
+        "start": "0x02ED",
         "encoding": "bcd",
         "length": 6,
         "min": 0,
@@ -286,9 +264,9 @@
         },
         "multiple_of": 2000
       },
-      "04": {
+      "10": {
         "label": "High score to date",
-        "start": "0x02CF",
+        "start": "0x02F3",
         "encoding": "bcd",
         "length": 6,
         "min": 0,

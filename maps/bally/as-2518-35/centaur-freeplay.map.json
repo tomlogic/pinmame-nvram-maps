@@ -1,7 +1,7 @@
 {
   "_notes": [
     "Compiled by Francis De Brabandere.",
-    "Centaur (Bally 1981)",
+    "Centaur (Bally 1981) -- Free Play version of ROMs",
     "https://www.ipdb.org/machine.cgi?id=476",
     "https://opdb.org/machines/409",
     "Bally MPU AS-2518-35 (U6: 720-53_6.732)",
@@ -11,7 +11,7 @@
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 4,
+    "version": 3,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -19,7 +19,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
-      "centaur"
+      "centaura",
+      "centaurb"
     ]
   },
   "game_state": {
@@ -128,6 +129,20 @@
         15,
         25,
         40
+      ]
+    },
+    "free_play": {
+      "label": "Free Play",
+      "encoding": "dipsw",
+      "offsets": [
+        26,
+        25
+      ],
+      "values": [
+        false,
+        false,
+        false,
+        true
       ]
     },
     "game_over": {

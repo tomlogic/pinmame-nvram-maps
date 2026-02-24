@@ -1,17 +1,17 @@
 {
   "_notes": [
-    "Compiled by Francis De Brabandere.",
-    "Centaur (Bally 1981)",
-    "https://www.ipdb.org/machine.cgi?id=476",
-    "https://opdb.org/machines/409",
-    "Bally MPU AS-2518-35 (U6: 720-53_6.732)",
-    "7-digit score display",
-    "centaura is the free play version.",
+    "Bally MPU AS-2518-35 (with U6 System ROM: 720-52_6.732)",
+    "7-digit score display -- Free Play version of ROMs",
+    "Game                          Mfg    Date   IPDB   OPDB",
+    "----------------------------  -----  ----   ----   ----",
+    "Fireball II                   Bally  1981    854   1790",
+    "Flash Gordon                  Bally  1981    874     16",
+    "Originally compiled by Francis De Brabandere.",
     "By default the credits are not shown, set dip switch 27 to show them."
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 4,
+    "version": 2,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -19,7 +19,11 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "bally-35-8K",
     "roms": [
-      "centaur"
+      "fball_ia",
+      "flashgda",
+      "flashgfa",
+      "flashgva",
+      "flashgvffp"
     ]
   },
   "game_state": {
@@ -88,18 +92,16 @@
     "current_ball": {
       "label": "Current Ball",
       "start": "0x0B",
-      "nibble": "high",
       "encoding": "bcd"
     },
     "player_count": {
       "label": "Players",
-      "start": "0x0B",
-      "nibble": "low",
+      "start": "0x0C",
       "encoding": "bcd"
     },
     "current_player": {
       "label": "Current Player",
-      "start": "0x0C",
+      "start": "0x0D",
       "encoding": "bcd"
     },
     "ball_count": {
@@ -130,6 +132,20 @@
         40
       ]
     },
+    "free_play": {
+      "label": "Free Play",
+      "encoding": "dipsw",
+      "offsets": [
+        26,
+        25
+      ],
+      "values": [
+        false,
+        false,
+        false,
+        true
+      ]
+    },
     "game_over": {
       "_notes": "reading 'game over' lamp",
       "label": "Game Over",
@@ -150,6 +166,7 @@
   "high_scores": [
     {
       "label": "High Score",
+      "_notes": "Shown as adjustment 04.",
       "short_label": "HS",
       "score": {
         "start": "0x02A6",
@@ -251,7 +268,7 @@
     }
   },
   "adjustments": {
-    "High score functions": {
+    "Adjustments": {
       "01": {
         "label": "Replay Level 1",
         "start": "0x0291",
@@ -291,48 +308,38 @@
         },
         "multiple_of": 10000
       },
-      "04": {
-        "label": "High score to date",
-        "start": "0x02A6",
-        "encoding": "bcd",
-        "length": 7,
-        "min": 0,
-        "max": 9990000
-      }
-    },
-    "Game Adjustments": {
       "16": {
-        "label": "High Score award #1",
+        "label": "Special/Extra Ball Awards",
         "start": "0x02FA",
-        "encoding": "bcd",
-        "min": 0,
-        "max": 3,
-        "special_values": {
-          "0": "No Award",
-          "1": "Novelty",
-          "2": "Extra Ball",
-          "3": "Replay"
-        }
+        "encoding": "enum",
+        "values": [
+          "none",
+          "Special=50K, Extra Ball=25K",
+          "Special & Extra Ball=Extra Ball",
+          "Special=Replay, Extra Ball=Extra Ball"
+        ]
       },
       "17": {
-        "label": "High Score award #2",
+        "label": "Replay Award",
         "start": "0x02FB",
-        "encoding": "bcd",
-        "min": 0,
-        "max": 3,
-        "special_values": {
-          "0": "No Award",
-          "1": "No Award",
-          "2": "Extra Ball",
-          "3": "Replay"
-        }
+        "encoding": "enum",
+        "values": [
+          "none",
+          "25K",
+          "Extra Ball",
+          "Replay"
+        ]
       },
       "18": {
-        "label": "???",
+        "label": "Sound Option",
         "start": "0x02FC",
-        "encoding": "bcd",
-        "min": 0,
-        "max": 3
+        "encoding": "enum",
+        "values": [
+          "chimes without feature background",
+          "chimes with background",
+          "scoring with noise effect without background",
+          "scoring with noise effect and background"
+        ]
       },
       "19": {
         "label": "HSTD Award",
@@ -341,21 +348,6 @@
         "min": 0,
         "max": 3,
         "suffix": " credits"
-      },
-      "20": {
-        "label": "???",
-        "start": "0x02FE",
-        "encoding": "int",
-        "min": 0,
-        "max": 15
-      },
-      "21": {
-        "label": "???",
-        "start": "0x02FF",
-        "length": 1,
-        "encoding": "int",
-        "min": 0,
-        "max": 15
       }
     }
   }
