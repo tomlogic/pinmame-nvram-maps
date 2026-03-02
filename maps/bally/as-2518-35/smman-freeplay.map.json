@@ -1,62 +1,28 @@
 {
   "_notes": [
-    "2023-10 Initial version by Tom Collins.  Required new `nibble` attribute.",
-    "NVRAM file mapped to memory address 0x200 in PinMAME",
-    "Valid for all Stern M-100 MPU games.",
-    "ROMs with 'fp' suffix use DIP switch 20 to enable Free Play (instead of credit display on/off).",
-    "Untested with blkshpsq (Astro game), draculc/wildfyrc (mod), stars/starsb7 (mod), stingrab (mod).",
-    "Won't work with larger, modified ROMs: magicb, princesb."
+    "Compiled by Francis De Brabandere.",
+    "The Six Million Dollar Man (Bally 1978)",
+    "https://www.ipdb.org/machine.cgi?id=2165",
+    "https://opdb.org/machines/4721",
+    "Bally MPU AS-2518-35 (U6: strekc.u16/strekd.u16)",
+    "Six players, 6-digit score display, Free Play (/10 scoring on 'd' ROMs)",
+    "Oliver's ROMs: https://www.pinball4you.ch/okaegi/pro_soft.html"
   ],
   "_fileformat": 0.8,
   "_metadata": {
     "version": 3,
     "copyright": [
-      "Copyright (C) 2023 by Tom Collins <tom@tomlogic.com>",
+      "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "stern-m100",
+    "platform": "bally-35-8K",
     "roms": [
-      "draculfp",
-      "hothanfp",
-      "lectrofp",
-      "magicfp",
-      "memlanfp",
-      "nugentfp",
-      "pinbalfp",
-      "princefp",
-      "starsfp",
-      "stingrfp",
-      "tridenfp",
-      "wildfyfp"
+      "smmanc",
+      "smmand"
     ]
   },
   "game_state": {
-    "free_play": {
-      "label": "Free Play",
-      "encoding": "dipsw",
-      "offsets": [
-        20
-      ],
-      "values": [
-        false,
-        true
-      ]
-    },
-    "match": {
-      "label": "Match",
-      "start": "0x0236",
-      "length": 2,
-      "encoding": "bcd",
-      "_notes": "during a game, shows current ball (1-5)",
-      "special_values": {
-        "1": "n/a",
-        "2": "n/a",
-        "3": "n/a",
-        "4": "n/a",
-        "5": "n/a"
-      }
-    },
     "credits": {
       "label": "Credits",
       "start": "0x02D5",
@@ -87,54 +53,78 @@
         "start": "0x0230",
         "encoding": "bcd",
         "length": 6
+      },
+      {
+        "label": "Player 5",
+        "start": "0x0218",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Player 6",
+        "start": "0x0212",
+        "encoding": "bcd",
+        "length": 6
       }
     ],
     "final_scores": [
       {
-        "label": "Final P1",
-        "start": "0x023C",
+        "label": "Final Score P1",
+        "start": "0x0249",
         "encoding": "bcd",
         "length": 6
       },
       {
-        "label": "Final P2",
-        "start": "0x0242",
+        "label": "Final Score P2",
+        "start": "0x024F",
         "encoding": "bcd",
         "length": 6
       },
       {
-        "label": "Final P3",
-        "start": "0x0248",
+        "label": "Final Score P3",
+        "start": "0x0255",
         "encoding": "bcd",
         "length": 6
       },
       {
-        "label": "Final P4",
-        "start": "0x024E",
+        "label": "Final Score P4",
+        "start": "0x025B",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final Score P5",
+        "start": "0x0243",
+        "encoding": "bcd",
+        "length": 6
+      },
+      {
+        "label": "Final Score P6",
+        "start": "0x023D",
         "encoding": "bcd",
         "length": 6
       }
     ],
     "current_ball": {
       "label": "Current Ball",
-      "start": "0x13",
+      "start": "0x12",
       "encoding": "bcd"
     },
     "player_count": {
       "label": "Players",
-      "start": "0x14",
+      "start": "0x13",
       "encoding": "bcd"
     },
     "current_player": {
       "label": "Current Player",
-      "start": "0x15",
+      "start": "0x14",
       "encoding": "bcd"
     },
     "ball_count": {
       "label": "Ball Count",
       "encoding": "dipsw",
       "offsets": [
-        7
+        16
       ],
       "values": [
         3,
@@ -160,6 +150,25 @@
         40
       ]
     },
+    "free_play": {
+      "label": "Free Play",
+      "encoding": "dipsw",
+      "offsets": [
+        19,
+        18,
+        17
+      ],
+      "values": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ]
+    },
     "game_over": {
       "_notes": "reading 'game over' lamp",
       "label": "Game Over",
@@ -183,82 +192,68 @@
       "short_label": "HS",
       "score": {
         "start": "0x02CF",
-        "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "length": 6
       }
     }
   ],
-  "adjustments": {
-    "Adjustments": {
-      "01": {
-        "label": "Replay 1",
-        "start": "0x02BD",
-        "length": 6,
-        "encoding": "bcd"
-      },
-      "02": {
-        "label": "Replay 2",
-        "start": "0x02C3",
-        "length": 6,
-        "encoding": "bcd"
-      },
-      "03": {
-        "label": "Replay 3",
-        "start": "0x02C9",
-        "length": 6,
-        "encoding": "bcd"
-      },
-      "04": {
-        "label": "High Score",
-        "start": "0x02CF",
-        "length": 6,
-        "encoding": "bcd"
-      }
-    }
-  },
   "audits": {
-    "Audits": {
+    "Bookkeeping functions": {
       "05": {
-        "label": "Credits",
+        "label": "Current Credits",
         "start": "0x02D5",
-        "length": 2,
-        "encoding": "bcd"
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 40
       },
       "06": {
-        "label": "Total Plays",
+        "label": "Total Plays (Paid and Free Games)",
         "start": "0x02DB",
         "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
       },
       "07": {
-        "label": "Total Replays",
+        "label": "Total Replays (Free Games)",
         "start": "0x02E1",
         "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
       },
       "08": {
-        "label": "HSTD Beaten",
+        "label": "HSTD Achieved",
         "start": "0x02E7",
         "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
       },
       "09": {
-        "label": "Coin Chute 2",
+        "label": "Coin Chute #1",
         "start": "0x02ED",
         "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
       },
       "10": {
-        "label": "Coin Chute 1",
+        "label": "Coin Chute #2",
         "start": "0x02F3",
         "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
       },
       "11": {
-        "label": "Coin Chute 3",
+        "label": "Coin Chute #3",
         "start": "0x02F9",
         "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
       }
     }
   }

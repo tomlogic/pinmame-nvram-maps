@@ -4,7 +4,7 @@
     "6-digit score display",
     "Game                          Mfg    Date   IPDB   OPDB",
     "----------------------------  -----  ----   ----   ----",
-    "Kiss                          Bally  1979   1386   1225",
+    "KISS                          Bally  1979   1386   1225",
     "Paragon                       Bally  1979   1755    296",
     "Playboy                       Bally  1978   1823    175",
     "Sexy Girl                     Arkon  1980   2106   1058",
@@ -15,7 +15,7 @@
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 2,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"

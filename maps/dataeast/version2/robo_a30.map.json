@@ -4,11 +4,12 @@
     "0.2: Switch from `packed` to `nibble`;",
     "     added `mask` to initials to get uppercase (Tom Collins)",
     "(only some entries have low nibble, so don't set _nibble for entire file)",
-    "2025-11: Tom Collins added more game state"
+    "2025-11: Tom Collins added more game state",
+    "2026-01: v5, Tom Collins fixed score addresses"
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 3,
+    "version": 5,
     "copyright": [
       "Copyright (C) 2016 by Horsepin",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -23,28 +24,28 @@
     "scores": [
       {
         "label": "Player 1",
-        "start": 423,
+        "start": "0x1A6",
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
       },
       {
         "label": "Player 2",
-        "start": 589,
+        "start": "0x24B",
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
       },
       {
         "label": "Player 3",
-        "start": 755,
+        "start": "0x2F0",
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
       },
       {
         "label": "Player 4",
-        "start": 921,
+        "start": "0x395",
         "encoding": "bcd",
         "length": 7,
         "nibble": "low"
@@ -59,6 +60,11 @@
       "label": "Maximum Credits",
       "start": "0x1F31",
       "encoding": "int"
+    },
+    "free_play": {
+      "label": "Free Play",
+      "start": "0x1F47",
+      "encoding": "bool"
     },
     "current_player": {
       "label": "Current Player",

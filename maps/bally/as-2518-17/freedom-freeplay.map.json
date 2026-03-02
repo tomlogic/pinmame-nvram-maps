@@ -1,54 +1,28 @@
 {
   "_notes": [
-    "2023-10 Initial version by Tom Collins.  Required new `nibble` attribute.",
-    "NVRAM file mapped to memory address 0x200 in PinMAME",
-    "Valid for all Stern M-100 MPU games.  See stern-m100-freeplay for 'fp' ROMs.",
-    "Untested with blkshpsq (Astro game), draculc/wildfyrc (mod), stars/starsb7 (mod), stingrab (mod).",
-    "Won't work with larger, modified ROMs: magicb, princesb."
+    "Bally MPU AS-2518-17 6-digit score display",
+    "Freedom (Bally 1981)",
+    "Quench's Free Play ROM, used on Weebly MPU boards.",
+    "https://www.ipdb.org/machine.cgi?id=4500",
+    "https://opdb.org/machines/931"
   ],
   "_fileformat": 0.8,
   "_metadata": {
     "version": 3,
     "copyright": [
-      "Copyright (C) 2023 by Tom Collins <tom@tomlogic.com>",
+      "Copyright (C) 2024 by Francis De Brabandere <francisdb@gmail.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
     ],
     "license": "GNU Lesser General Public License v3.0",
-    "platform": "stern-m100",
+    "platform": "bally-17-4K",
     "roms": [
-      "dracula",
-      "hothand",
-      "lectrono",
-      "magic",
-      "memlane",
-      "nugent",
-      "pinball",
-      "princess",
-      "stars",
-      "stingray",
-      "trident",
-      "tridenta",
-      "wildfyre"
+      "freedoma"
     ]
   },
   "game_state": {
-    "match": {
-      "label": "Match",
-      "start": "0x0236",
-      "length": 2,
-      "encoding": "bcd",
-      "_notes": "during a game, shows current ball (1-5)",
-      "special_values": {
-        "1": "n/a",
-        "2": "n/a",
-        "3": "n/a",
-        "4": "n/a",
-        "5": "n/a"
-      }
-    },
     "credits": {
       "label": "Credits",
-      "start": "0x02D5",
+      "start": "0x02DB",
       "length": 2,
       "encoding": "bcd"
     },
@@ -123,7 +97,7 @@
       "label": "Ball Count",
       "encoding": "dipsw",
       "offsets": [
-        7
+        16
       ],
       "values": [
         3,
@@ -149,6 +123,25 @@
         40
       ]
     },
+    "free_play": {
+      "label": "Free Play",
+      "encoding": "dipsw",
+      "offsets": [
+        19,
+        18,
+        17
+      ],
+      "values": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ]
+    },
     "game_over": {
       "_notes": "reading 'game over' lamp",
       "label": "Game Over",
@@ -171,83 +164,113 @@
       "label": "High Score",
       "short_label": "HS",
       "score": {
-        "start": "0x02CF",
-        "length": 6,
-        "encoding": "bcd"
+        "start": "0x02F3",
+        "encoding": "bcd",
+        "length": 6
       }
     }
   ],
-  "adjustments": {
-    "Adjustments": {
+  "audits": {
+    "Bookkeeping functions": {
       "01": {
-        "label": "Replay 1",
+        "label": "Coin Chute #1",
         "start": "0x02BD",
         "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
       },
       "02": {
-        "label": "Replay 2",
+        "label": "Coin Chute #2",
         "start": "0x02C3",
         "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
       },
       "03": {
-        "label": "Replay 3",
+        "label": "Coin Chute #3",
         "start": "0x02C9",
         "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
       },
       "04": {
-        "label": "High Score",
+        "label": "Total Plays",
         "start": "0x02CF",
         "length": 6,
-        "encoding": "bcd"
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
+      "05": {
+        "_notes": "No docs for Freedom ",
+        "label": "Unknown Audit",
+        "start": "0x02D5",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 999999
+      },
+      "06": {
+        "label": "Current Credits",
+        "start": "0x02DB",
+        "length": 6,
+        "encoding": "bcd",
+        "min": 0,
+        "max": 40
       }
     }
   },
-  "audits": {
-    "Audits": {
-      "05": {
-        "label": "Credits",
-        "start": "0x02D5",
-        "length": 2,
-        "encoding": "bcd"
-      },
-      "06": {
-        "label": "Total Plays",
-        "start": "0x02DB",
-        "length": 6,
-        "encoding": "bcd"
-      },
+  "adjustments": {
+    "High score functions": {
       "07": {
-        "label": "Total Replays",
+        "label": "Replay Level 1",
         "start": "0x02E1",
+        "encoding": "bcd",
         "length": 6,
-        "encoding": "bcd"
+        "min": 0,
+        "max": 998000,
+        "default": 0,
+        "special_values": {
+          "0": "OFF"
+        },
+        "multiple_of": 2000
       },
       "08": {
-        "label": "HSTD Beaten",
+        "label": "Replay Level 2",
         "start": "0x02E7",
+        "encoding": "bcd",
         "length": 6,
-        "encoding": "bcd"
+        "min": 0,
+        "max": 998000,
+        "default": 0,
+        "special_values": {
+          "0": "OFF"
+        },
+        "multiple_of": 2000
       },
       "09": {
-        "label": "Coin Chute 2",
+        "label": "Replay Level 3",
         "start": "0x02ED",
+        "encoding": "bcd",
         "length": 6,
-        "encoding": "bcd"
+        "min": 0,
+        "max": 998000,
+        "default": 0,
+        "special_values": {
+          "0": "OFF"
+        },
+        "multiple_of": 2000
       },
       "10": {
-        "label": "Coin Chute 1",
+        "label": "High score to date",
         "start": "0x02F3",
+        "encoding": "bcd",
         "length": 6,
-        "encoding": "bcd"
-      },
-      "11": {
-        "label": "Coin Chute 3",
-        "start": "0x02F9",
-        "length": 6,
-        "encoding": "bcd"
+        "min": 0,
+        "max": 999000
       }
     }
   }

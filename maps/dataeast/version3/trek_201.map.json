@@ -1,11 +1,12 @@
 {
   "_notes": [
+    "Star Trek 25th Anniversary [Data East, 1991]",
     "Created by Tom Collins, based on btmn_106 (by Dave horsepin/Tom Collins)",
     "High Scores for trek_110/trek_11a: Initials -0x1F, scores -0x20"
   ],
   "_fileformat": 0.8,
   "_metadata": {
-    "version": 2,
+    "version": 4,
     "copyright": [
       "Copyright (C) 2016 by Dave horsepin <horse@horsesoft.uk>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -13,8 +14,6 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "dataeast",
     "roms": [
-      "trek_117",
-      "trek_120",
       "trek_200",
       "trek_201",
       "trek_300"
