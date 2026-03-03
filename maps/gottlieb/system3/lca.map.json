@@ -13,7 +13,8 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "gottlieb-system3-32K",
     "roms": [
-      "lca"
+      "lca",
+      "lca2"
     ]
   },
   "game_state": {

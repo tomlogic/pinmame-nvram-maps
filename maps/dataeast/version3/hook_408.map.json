@@ -17,6 +17,7 @@
       "hook_404",
       "hook_408",
       "hook_500",
+      "hook_501",
       "hook_e406",
       "hook_f401"
     ]

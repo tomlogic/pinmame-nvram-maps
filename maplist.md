@@ -306,6 +306,7 @@
 * [Hook (4.06 English)][112] _hook_e406_
 * [Hook (4.08)][112] _hook_408_
 * [Hook (5.00 unofficial MOD)][112] _hook_500_
+* [Hook (5.01 unofficial MOD)][112] _hook_501_
 * [Hoops][113] _hoops_
 * [Hot Hand][55] _hothand_
 * [Hot Hand (Free Play)][56] _hothanfp_
@@ -378,6 +379,7 @@
 * [Lethal Weapon 3 (2.08)][1] _lw3_208_
 * [Lightning][73] _lightnin_
 * [Lights, Camera, Action][136] _lca_
+* [Lights, Camera, Action (rev. 2)][136] _lca2_
 * [Lord of the Rings, The (10.00 French)][137] _lotr_fr_
 * [Lord of the Rings, The (10.00 German)][137] _lotr_gr_
 * [Lord of the Rings, The (10.00 Italian)][137] _lotr_it_
