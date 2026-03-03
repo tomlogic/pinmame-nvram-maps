@@ -13,7 +13,7 @@
     "license": "GNU Lesser General Public License v3.0",
     "platform": "gottlieb-system3-32K",
     "roms": [
-      "lca"
+      "lca2"
     ]
   },
   "game_state": {
@@ -79,7 +79,7 @@
       "_notes": "0-3; bit 7 (0x80) sometimes set?",
       "label": "Current Player",
       "short_label": "P#",
-      "start": "0x34B",
+      "start": "0x353",
       "encoding": "int",
       "mask": "0x0F",
       "offset": 1
@@ -88,12 +88,12 @@
       "_notes": "set to 0 when game over",
       "label": "Player Count",
       "short_label": "Players",
-      "start": "0x34A",
+      "start": "0x352",
       "encoding": "int"
     },
     "game_over": {
       "label": "Game Over",
-      "start": "0x34A",
+      "start": "0x352",
       "encoding": "bool",
       "invert": true
     }
