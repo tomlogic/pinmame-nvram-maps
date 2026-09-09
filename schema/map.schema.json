@@ -512,9 +512,8 @@
           ],
           "default": 8
         },
-        "groupings": {
-          "type": "integer",
-          "minimum": 1
+        "repeat": {
+          "$ref": "#/$defs/repeat"
         },
         "checksum": {
           "description": "Location of the checksum when it is not adjacent to the checksummed range.",
@@ -537,15 +536,23 @@
         "_notes": {
           "$ref": "#/$defs/notes"
         },
+        "repeat": {
+          "$ref": "#/$defs/repeat"
+        },
         "label": {
           "type": "string"
+        },
+        "start": {
+          "description": "Starting address for first mirrored area (default=0x0000).",
+          "$ref": "#/$defs/intOrHex",
+          "default": 0
         },
         "length": {
           "description": "Length (in addresses) of mirrored memory region.",
           "$ref": "#/$defs/length"
         },
-        "addresses": {
-          "description": "Starting address for each memory region mirrored.",
+        "offsets": {
+          "description": "Offsets from `start` for each memory region mirrored.",
           "type": "array",
           "minItems": 2,
           "items": {
@@ -555,7 +562,25 @@
       },
       "required": [
         "length",
-        "addresses"
+        "offsets"
+      ],
+      "additionalProperties": false
+    },
+    "repeat": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "description": "number of times to repeat this entry",
+          "$ref": "#/$defs/intOrHex"
+        },
+        "step": {
+          "description": "amount added to `start` on each repetition",
+          "$ref": "#/$defs/intOrHex"
+        }
+      },
+      "required": [
+        "count",
+        "step"
       ],
       "additionalProperties": false
     }

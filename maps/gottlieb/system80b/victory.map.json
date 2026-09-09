@@ -10,7 +10,7 @@
   ],
   "_fileformat": 0.9,
   "_metadata": {
-    "version": 4,
+    "version": 5,
     "copyright": [
       "Copyright (C) 2024 by Tom Collins <tom@tomlogic.com>",
       "Copyright (C) 2025 by Tom Collins <tom@scorbit.io>"
@@ -73,11 +73,12 @@
       "mirror": [
         {
           "label": "Adjustments",
+          "start": "0x1800",
           "length": 61,
-          "addresses": [
-            "0x1800",
-            "0x183D",
-            "0x187A"
+          "offsets": [
+            0,
+            61,
+            122
           ]
         }
       ]
